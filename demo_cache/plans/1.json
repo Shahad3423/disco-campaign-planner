@@ -1,7 +1,7 @@
 {
  "brief": "We sell premium dog food for senior dogs, targeting owners who care about joint health and longevity. Grain-free, vet-formulated, subscription-based.",
  "profile": {
-  "business_summary": "Subscription-based premium dog food brand specializing in grain-free, vet-formulated formulas for senior dogs with a focus on joint health and longevity.",
+  "business_summary": "DTC brand selling premium grain-free, vet-formulated dog food for senior dogs, focused on joint health and longevity on a subscription basis.",
   "product": "Senior dog food",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -10,42 +10,48 @@
   "target_gender": "any",
   "target_age_range": null,
   "stated_claims": [
-   "premium dog food for senior dogs",
-   "targeting joint health and longevity",
-   "grain-free",
-   "vet-formulated",
-   "subscription-based"
+   "Premium dog food for senior dogs",
+   "Grain-free",
+   "Vet-formulated",
+   "Targets owners who care about joint health and longevity"
   ],
+  "claims_needing_substantiation": [],
   "values": [
-   "grain-free",
-   "vet-formulated"
+   "Health",
+   "Longevity",
+   "Quality"
   ],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "pet_food",
     "weight": 1.0,
-    "why": "Direct category match for dog food."
+    "why": "Core product category being sold."
+   },
+   {
+    "tag": "subscription",
+    "weight": 1.0,
+    "why": "The product is offered on a subscription model."
    },
    {
     "tag": "pet",
     "weight": 1.0,
-    "why": "Core category for dog owners."
+    "why": "Core category for pet products."
    },
    {
     "tag": "pet_supplies",
     "weight": 0.5,
-    "why": "Adjacent category with shoppers who own pets."
+    "why": "Adjacent category for pet owners."
    },
    {
     "tag": "pet_pharmacy",
-    "weight": 0.5,
-    "why": "Shoppers buying pet health and pharmacy products care about joint health and vet formulations."
+    "weight": 0.333,
+    "why": "Adjacent category for health-focused pet products like joint care."
    },
    {
-    "tag": "subscription",
-    "weight": 0.5,
-    "why": "Business model alignment for recurring post-purchase offers."
+    "tag": "wellness_dtc",
+    "weight": 0.167,
+    "why": "Focuses on health and longevity benefits"
    }
   ],
   "competing_tags": [
@@ -55,78 +61,139 @@
    "pet_food",
    "pet_health",
    "pet_supplies",
-   "subscription_services"
+   "subscription_boxes"
   ],
-  "persona_conflicts": [
-   {
-    "persona_id": "persona_010",
-    "conflict": "disinterested_in 'subscription-only'",
-    "evidence": "subscription-based model"
-   },
-   {
-    "persona_id": "persona_008",
-    "conflict": "disinterested_in 'vague premium positioning'",
-    "evidence": "described as 'premium dog food'"
-   }
-  ],
+  "persona_conflicts": [],
   "note_signals": [
    {
     "publisher_id": "pub_007",
     "alignment": 1,
-    "why": "Subscription-heavy audience with health-conscious pet owners responsive to premium positioning."
+    "why": "Subscription-heavy pet publisher whose owners are health-conscious about pets and responsive to premium positioning."
    },
    {
     "publisher_id": "pub_009",
     "alignment": 1,
-    "why": "Largest pet audience with strong repeat-purchase behavior."
+    "why": "Largest pet audience in the catalog with broad demographics and repeat-purchase behavior."
    },
    {
     "publisher_id": "pub_018",
     "alignment": 1,
-    "why": "Millennial dog owners treating pets as family are highly aligned with senior pet health care."
+    "why": "Pet publisher catering to millennials treating dogs as family, aligning well with premium senior dog care."
    }
   ],
-  "confidence": 0.95,
+  "confidence": 0.83,
   "gate": "proceed",
-  "gate_reason": "Product line, target audience, key product benefits, and business model are clearly defined.",
+  "gate_reason": "Clear product, audience, and purchase model provided, enabling effective campaign planning.",
   "missing_info": [
    "price_point_usd",
-   "target_age_range"
+   "profit_margin"
   ],
   "clarifying_questions": [
-   "What is the average monthly subscription price for the dog food?",
-   "Do you offer one-time trial orders or starter packs alongside subscriptions?"
-  ]
+   "What is the exact price point or average order value for your dog food subscription?",
+   "What is your target profit margin or allowable CPA?"
+  ],
+  "tag_stability": {
+   "pet": 1.0,
+   "pet_food": 1.0,
+   "subscription": 1.0,
+   "pet_supplies": 1.0,
+   "pet_pharmacy": 0.67,
+   "wellness_dtc": 0.67
+  },
+  "sample_agreement": 0.78,
+  "competing_tag_share": {
+   "pet_food": 1.0
+  }
  },
  "publishers": [
   {
-   "publisher_id": "pub_018",
-   "publisher_name": "Tailcrate",
-   "score": 0.5732,
+   "publisher_id": "pub_007",
+   "publisher_name": "Pawline",
+   "score": 0.3086,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_supplies (multiplier)"
+     "detail": "matches pet_food, subscription, pet, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.9395454545454547,
      "weight": 0.35,
+     "detail": "reaches The Pet Parent best (host fit 0.93)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Subscription-heavy pet publisher whose owners are health-conscious about pets and responsive to premium positioning."
+    },
+    {
+     "name": "scale",
+     "value": 0.1584725731116732,
+     "weight": 0.05,
+     "detail": "4.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells pet_food (100% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches pet_food, subscription, pet, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food (100% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_018",
+   "publisher_name": "Tailcrate",
+   "score": 0.2835,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "matches subscription, pet, pet_supplies (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8082272727272728,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.85)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Millennial dog owners treating pets as family are highly aligned with senior pet health care."
+     "weight": 0.2,
+     "detail": "Pet publisher catering to millennials treating dogs as family, aligning well with premium senior dog care."
     },
     {
      "name": "scale",
@@ -143,84 +210,42 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
-  },
-  {
-   "publisher_id": "pub_007",
-   "publisher_name": "Pawline",
-   "score": 0.3141,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches pet_food, pet, subscription, pet_supplies (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 0.35,
-     "detail": "host income mid-high suits premium"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Subscription-heavy audience with health-conscious pet owners responsive to premium positioning."
-    },
-    {
-     "name": "scale",
-     "value": 0.1584725731116732,
-     "weight": 0.05,
-     "detail": "4.8M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells pet_food; may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches pet_food, pet, subscription, pet_supplies (multiplier); strongest supporting signal price_fit (host income mid-high suits premium). Flags: competitor_conflict: host sells pet_food; may block the ad"
+   "reason": "Recommended: matches subscription, pet, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_009",
    "publisher_name": "Ruffco",
-   "score": 0.2711,
+   "score": 0.236,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_food, pet, pet_supplies, pet_pharmacy (multiplier)"
+     "detail": "matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.9530000000000001,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.95)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Largest pet audience with strong repeat-purchase behavior."
+     "weight": 0.2,
+     "detail": "Largest pet audience in the catalog with broad demographics and repeat-purchase behavior."
     },
     {
      "name": "scale",
@@ -236,15 +261,67 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells pet_food; may block the ad"
+    "competitor_conflict: host sells pet_food (100% of samples agree); may block the ad"
    ],
+   "recommended": true,
+   "reason": "Recommended: matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier); strongest supporting signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food (100% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.1273,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.267,
+     "weight": 1.0,
+     "detail": "matches subscription, wellness_dtc (category only) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5630000000000001,
+     "weight": 0.35,
+     "detail": "reaches The Pet Parent best (host fit 0.55)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.11921246038064834,
+     "weight": 0.05,
+     "detail": "4.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.27 below cutoff 0.29; weakest signal price_fit (host income mid below mid-high needed for premium). Flags: competitor_conflict: host sells pet_food; may block the ad"
+   "reason": "Excluded: score 0.13 below cutoff 0.15; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_015",
    "publisher_name": "Kitchenly",
-   "score": 0.0979,
+   "score": 0.0872,
    "components": [
     {
      "name": "category_fit",
@@ -255,19 +332,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8066363636363637,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -288,55 +371,9 @@
    "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
   },
   {
-   "publisher_id": "pub_002",
-   "publisher_name": "Movewell",
-   "score": 0.0968,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.15,
-     "weight": 1.0,
-     "detail": "matches subscription (attribute tags only) (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 0.35,
-     "detail": "host income mid-high suits premium"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.6060874465244197,
-     "weight": 0.05,
-     "detail": "22.0M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [],
-   "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
-  },
-  {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.0951,
+   "score": 0.0802,
    "components": [
     {
      "name": "category_fit",
@@ -347,19 +384,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7095454545454545,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -380,9 +423,9 @@
    "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
   },
   {
-   "publisher_id": "pub_012",
-   "publisher_name": "Daily Form",
-   "score": 0.0931,
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.0776,
    "components": [
     {
      "name": "category_fit",
@@ -393,26 +436,32 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.623,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.60)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
      "name": "scale",
-     "value": 0.11921246038064834,
+     "value": 0.6060874465244197,
      "weight": 0.05,
-     "detail": "4.2M monthly impressions"
+     "detail": "22.0M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -439,19 +488,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.601909090909091,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.55)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -485,19 +540,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7200000000000001,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -531,19 +592,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.3648181818181818,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.39)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -577,19 +644,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.307,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.31)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -623,19 +696,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6158636363636364,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -669,19 +748,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7730000000000001,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.77)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -715,19 +800,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7158636363636363,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -761,19 +852,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.4082727272727273,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.42)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -807,19 +904,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6858636363636365,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -853,19 +956,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6325454545454546,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -899,19 +1008,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7418636363636364,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -945,19 +1060,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.4756363636363637,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Pet Parent best (host fit 0.47)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -991,19 +1112,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.623,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Pet Parent best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1031,11 +1158,12 @@
    "score": 0.72,
    "selected": true,
    "reasons": [
-    "category affinity 1.00 (pet_food, pet_health, pet_supplies)",
+    "category affinity 1.00 (pet_food, pet_health, pet_supplies, subscription_boxes)",
     "price fit 0.90 (premium product vs low-medium price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
     "pub_007",
     "pub_018"
    ]
@@ -1052,22 +1180,8 @@
    ],
    "best_publishers": [
     "pub_007",
+    "pub_009",
     "pub_018"
-   ]
-  },
-  {
-   "persona_id": "persona_007",
-   "persona_name": "The Convenience-First Millennial",
-   "score": 0.336,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.60 (subscription_services)",
-    "price fit 0.70 (premium product vs medium price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_018",
-    "pub_007"
    ]
   },
   {
@@ -1082,6 +1196,7 @@
    ],
    "best_publishers": [
     "pub_018",
+    "pub_009",
     "pub_007"
    ]
   },
@@ -1097,6 +1212,7 @@
    ],
    "best_publishers": [
     "pub_018",
+    "pub_009",
     "pub_007"
    ]
   },
@@ -1111,6 +1227,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
     "pub_007",
     "pub_018"
    ]
@@ -1126,6 +1243,23 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
+    "pub_018",
+    "pub_007"
+   ]
+  },
+  {
+   "persona_id": "persona_007",
+   "persona_name": "The Convenience-First Millennial",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (premium product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_009",
     "pub_018",
     "pub_007"
    ]
@@ -1136,12 +1270,12 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "EXCLUDED: conflicts with 'disinterested_in 'vague premium positioning'' because the brief says: described as 'premium dog food'",
     "category affinity 0.00 (no shared interests)",
     "price fit 0.35 (premium product vs high price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
     "pub_007",
     "pub_018"
    ]
@@ -1157,6 +1291,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
     "pub_018",
     "pub_007"
    ]
@@ -1167,12 +1302,12 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "EXCLUDED: conflicts with 'disinterested_in 'subscription-only'' because the brief says: subscription-based model",
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (premium product vs low price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_009",
     "pub_007",
     "pub_018"
    ]
@@ -1181,45 +1316,29 @@
  "creatives": [
   {
    "persona_id": "persona_004",
-   "headline": "{first_name}, feed your dog like family",
-   "body": "Vet-formulated, grain-free nutrition targeting joint health and longevity. Premium food for your loyal companion.",
+   "headline": "{first_name}, feed your dog's joint health",
+   "body": "Discover vet-formulated, grain-free nutrition crafted for senior dogs who deserve the absolute best.",
    "cta": "Explore Menu",
-   "headline_no_name": "Feed your senior dog like family",
+   "headline_no_name": "Nourish your senior dog's joint health",
    "angle": "ingredient transparency",
    "claims_used": [
-    "premium dog food for senior dogs",
-    "targeting joint health and longevity",
-    "grain-free",
-    "vet-formulated"
+    "Vet-formulated",
+    "Grain-free",
+    "Premium dog food for senior dogs",
+    "Targets owners who care about joint health and longevity"
    ]
   },
   {
    "persona_id": "persona_002",
-   "headline": "Never run out of senior dog food again",
-   "body": "Set up a flexible subscription for vet-formulated, grain-free senior meals designed to support joint health and longevity.",
+   "headline": "{first_name}, keep mealtime simple",
+   "body": "Set up a convenient subscription for premium grain-free food designed to support your senior dog's longevity.",
    "cta": "Subscribe Now",
-   "headline_no_name": "Never run out of senior dog food again",
+   "headline_no_name": "Keep mealtime simple with auto-delivery",
    "angle": "time-saving",
    "claims_used": [
-    "subscription-based",
-    "vet-formulated",
-    "grain-free",
-    "targeting joint health and longevity"
-   ]
-  },
-  {
-   "persona_id": "persona_007",
-   "headline": "Automate your senior dog food delivery",
-   "body": "Get premium dog food for senior dogs delivered on repeat. Vet-formulated, grain-free meals focused on joint health.",
-   "cta": "Get Started",
-   "headline_no_name": "Automate your senior dog food delivery",
-   "angle": "subscription perks",
-   "claims_used": [
-    "subscription-based",
-    "premium dog food for senior dogs",
-    "vet-formulated",
-    "grain-free",
-    "targeting joint health and longevity"
+    "Premium dog food for senior dogs",
+    "Grain-free",
+    "Targets owners who care about joint health and longevity"
    ]
   }
  ],
@@ -1235,16 +1354,7 @@
   },
   {
    "persona_id": "persona_002",
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_007",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1256,8 +1366,8 @@
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "Subscription-based premium dog food brand specializing in grain-free, vet-formulated formulas for senior dogs with a focus on joint health and longevity.",
-  "confidence": 0.95,
+  "advertiser_summary": "DTC brand selling premium grain-free, vet-formulated dog food for senior dogs, focused on joint health and longevity on a subscription basis.",
+  "confidence": 0.83,
   "objective": "acquisition",
   "economics": {
    "price_usd": 90.0,
@@ -1287,77 +1397,97 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 2930.0,
+   "monthly_budget_usd": 4740.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 97.67,
+   "daily_cap_usd": 158.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 2925.88,
+   "learning_budget_needed_usd": 4736.47,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
-     "publisher_id": "pub_018",
-     "publisher_name": "Tailcrate",
-     "share": 0.646,
-     "budget_usd": 1892.79,
-     "cpc_bid_usd": 4.76,
-     "expected_clicks": {
-      "low": 318.0,
-      "mid": 398.0,
-      "high": 477.0
-     },
-     "expected_conversions": {
-      "low": 8.4,
-      "mid": 16.7,
-      "high": 27.8
-     },
-     "capacity_usd": 33586.56,
-     "requires_host_approval": false,
-     "rationale": "score 0.57 -> fit x1.40 on CTR/CVR; bid $4.76"
-    },
-    {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.354,
-     "budget_usd": 1037.21,
-     "cpc_bid_usd": 3.53,
+     "share": 0.373,
+     "budget_usd": 1766.41,
+     "cpc_bid_usd": 4.76,
+     "start_bid_usd": 3.33,
      "expected_clicks": {
-      "low": 235.0,
-      "mid": 294.0,
-      "high": 353.0
+      "low": 297.0,
+      "mid": 371.0,
+      "high": 445.0
      },
      "expected_conversions": {
-      "low": 4.6,
-      "mid": 9.2,
-      "high": 15.3
+      "low": 7.8,
+      "mid": 15.6,
+      "high": 26.0
      },
-     "capacity_usd": 4222.64,
+     "capacity_usd": 7676.93,
      "requires_host_approval": true,
-     "rationale": "score 0.31 -> fit x1.04 on CTR/CVR; bid $3.53; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.31 -> fit x1.40 on CTR/CVR; max bid $4.76 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_018",
+     "publisher_name": "Tailcrate",
+     "share": 0.342,
+     "budget_usd": 1622.74,
+     "cpc_bid_usd": 4.54,
+     "start_bid_usd": 3.18,
+     "expected_clicks": {
+      "low": 286.0,
+      "mid": 357.0,
+      "high": 429.0
+     },
+     "expected_conversions": {
+      "low": 7.2,
+      "mid": 14.3,
+      "high": 23.9
+     },
+     "capacity_usd": 30545.38,
+     "requires_host_approval": false,
+     "rationale": "score 0.28 -> fit x1.33 on CTR/CVR; max bid $4.54 (break-even at target CPA), start at 70% and raise only if under-delivering"
+    },
+    {
+     "publisher_id": "pub_009",
+     "publisher_name": "Ruffco",
+     "share": 0.285,
+     "budget_usd": 1350.85,
+     "cpc_bid_usd": 4.12,
+     "start_bid_usd": 2.88,
+     "expected_clicks": {
+      "low": 262.0,
+      "mid": 328.0,
+      "high": 393.0
+     },
+     "expected_conversions": {
+      "low": 6.0,
+      "mid": 11.9,
+      "high": 19.9
+     },
+     "capacity_usd": 74289.83,
+     "requires_host_approval": true,
+     "rationale": "score 0.24 -> fit x1.21 on CTR/CVR; max bid $4.12 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     }
    ],
    "warnings": [
-    "No budget given: recommending $2,930, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $4,740, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
    "publishers_include": [
     "pub_007",
+    "pub_009",
     "pub_018"
    ],
    "publishers_exclude": [
     {
-     "id": "pub_009",
-     "reason": "Excluded: score 0.27 below cutoff 0.29; weakest signal price_fit (host income mid below mid-high needed for premium). Flags: competitor_conflict: host sells pet_food; may block the ad"
+     "id": "pub_012",
+     "reason": "Excluded: score 0.13 below cutoff 0.15; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
-    },
-    {
-     "id": "pub_002",
      "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
@@ -1365,7 +1495,7 @@
      "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
-     "id": "pub_012",
+     "id": "pub_002",
      "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
@@ -1423,8 +1553,7 @@
    ],
    "personas": [
     "persona_004",
-    "persona_002",
-    "persona_007"
+    "persona_002"
    ],
    "geo": "US (no advertiser geo restriction stated)",
    "serve_time_signals": {
@@ -1441,12 +1570,13 @@
     "variant_id": "v1",
     "persona_id": "persona_004",
     "publisher_ids": [
+     "pub_009",
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, feed your dog like family",
-    "headline_no_name": "Feed your senior dog like family",
-    "body": "Vet-formulated, grain-free nutrition targeting joint health and longevity. Premium food for your loyal companion.",
+    "headline_template": "{first_name}, feed your dog's joint health",
+    "headline_no_name": "Nourish your senior dog's joint health",
+    "body": "Discover vet-formulated, grain-free nutrition crafted for senior dogs who deserve the absolute best.",
     "cta": "Explore Menu"
    },
    {
@@ -1454,24 +1584,13 @@
     "persona_id": "persona_002",
     "publisher_ids": [
      "pub_007",
+     "pub_009",
      "pub_018"
     ],
-    "headline_template": "Never run out of senior dog food again",
-    "headline_no_name": "Never run out of senior dog food again",
-    "body": "Set up a flexible subscription for vet-formulated, grain-free senior meals designed to support joint health and longevity.",
+    "headline_template": "{first_name}, keep mealtime simple",
+    "headline_no_name": "Keep mealtime simple with auto-delivery",
+    "body": "Set up a convenient subscription for premium grain-free food designed to support your senior dog's longevity.",
     "cta": "Subscribe Now"
-   },
-   {
-    "variant_id": "v3",
-    "persona_id": "persona_007",
-    "publisher_ids": [
-     "pub_018",
-     "pub_007"
-    ],
-    "headline_template": "Automate your senior dog food delivery",
-    "headline_no_name": "Automate your senior dog food delivery",
-    "body": "Get premium dog food for senior dogs delivered on repeat. Vet-formulated, grain-free meals focused on joint health.",
-    "cta": "Get Started"
    }
   ],
   "frequency_cap": {
@@ -1480,14 +1599,15 @@
   },
   "guardrails": {
    "claims_allowed": [
-    "premium dog food for senior dogs",
-    "targeting joint health and longevity",
-    "grain-free",
-    "vet-formulated",
-    "subscription-based"
+    "Premium dog food for senior dogs",
+    "Grain-free",
+    "Vet-formulated",
+    "Targets owners who care about joint health and longevity"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_007"
+    "pub_007",
+    "pub_009"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1502,13 +1622,13 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the average monthly subscription price for the dog food?",
-   "Do you offer one-time trial orders or starter packs alongside subscriptions?"
+   "What is the exact price point or average order value for your dog food subscription?",
+   "What is your target profit margin or allowable CPA?"
   ]
  },
  "timings_s": {
-  "intake": 0.0,
-  "matching": 0.01,
+  "intake": 0.02,
+  "matching": 0.0,
   "creative": 0.0
  },
  "creative_log": {

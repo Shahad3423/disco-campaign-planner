@@ -137,9 +137,27 @@ def default_provider() -> Provider:
 
 
 def _extract_json(text: str) -> str:
-    """Models sometimes wrap JSON in ``` fences or add a sentence; keep the object."""
-    match = re.search(r"\{.*\}", text, re.DOTALL)
+    """Models sometimes wrap JSON in ``` fences or add a sentence; keep the JSON value."""
+    match = re.search(r"[\[{].*[\]}]", text, re.DOTALL)
     return match.group(0) if match else text
+
+
+def _coerce(raw: str, schema: type[BaseModel]) -> str:
+    """Fix the most common shape slip: for a wrapper schema with one list field (e.g.
+    ReviewSet.reviews), models sometimes return the bare list, or a single item."""
+    list_fields = [n for n, f in schema.model_fields.items() if getattr(f.annotation, "__origin__", None) is list]
+    if len(schema.model_fields) != 1 or len(list_fields) != 1:
+        return raw
+    field = list_fields[0]
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        return raw
+    if isinstance(data, list):
+        return json.dumps({field: data})
+    if isinstance(data, dict) and field not in data:
+        return json.dumps({field: [data]})
+    return raw
 
 
 def generate(
@@ -161,7 +179,7 @@ def generate(
     for _attempt in range(2):
         raw = provider.complete(system, prompt + last_error, temperature)
         try:
-            result = schema.model_validate_json(_extract_json(raw))
+            result = schema.model_validate_json(_coerce(_extract_json(raw), schema))
             break
         except ValidationError as e:
             last_error = f"\n\nYour previous answer failed validation:\n{e}\nFix it."

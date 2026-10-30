@@ -1,17 +1,18 @@
 {
  "brief": "B2B SaaS for dental practices. We automate their patient recall workflow.",
  "profile": {
-  "business_summary": "B2B SaaS provider offering patient recall workflow automation software tailored for dental practices.",
-  "product": "Patient recall workflow automation software for dental practices",
+  "business_summary": "B2B SaaS for dental practices that automates their patient recall workflow.",
+  "product": "B2B SaaS software for dental practices",
   "is_consumer_product": false,
   "price_point_usd": null,
   "price_tier": "unknown",
-  "purchase_model": "subscription",
+  "purchase_model": "unknown",
   "target_gender": "unknown",
   "target_age_range": null,
   "stated_claims": [
-   "Automates patient recall workflows for dental practices"
+   "We automate their patient recall workflow."
   ],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
   "relevant_tags": [],
@@ -19,16 +20,21 @@
   "persona_affinity_tags": [],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 1.0,
+  "confidence": 0.5,
   "gate": "off_network",
-  "gate_reason": "The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement.",
+  "gate_reason": "This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy.",
   "missing_info": [
-   "DTC consumer product offering",
-   "Consumer pricing and target audience"
+   "price_point_usd",
+   "price_tier",
+   "purchase_model",
+   "target_gender",
+   "target_age_range",
+   "values"
   ],
-  "clarifying_questions": [
-   "Do you offer any direct-to-consumer health or oral care products suitable for post-purchase DTC shoppers?"
-  ]
+  "clarifying_questions": [],
+  "tag_stability": {},
+  "sample_agreement": 0.0,
+  "competing_tag_share": {}
  },
  "publishers": [
   {
@@ -45,19 +51,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -75,7 +87,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_002",
@@ -91,19 +103,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -121,7 +139,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_003",
@@ -137,19 +155,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -167,7 +191,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_004",
@@ -183,19 +207,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -213,7 +243,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_005",
@@ -229,19 +259,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -259,7 +295,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_006",
@@ -275,19 +311,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -305,7 +347,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_007",
@@ -321,19 +363,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -351,7 +399,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_008",
@@ -367,19 +415,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -397,7 +451,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_009",
@@ -413,19 +467,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -443,7 +503,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_010",
@@ -459,19 +519,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -489,7 +555,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_011",
@@ -505,19 +571,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -535,7 +607,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_012",
@@ -551,19 +623,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -581,7 +659,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_013",
@@ -597,19 +675,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -627,7 +711,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_014",
@@ -643,19 +727,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -673,7 +763,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_015",
@@ -689,19 +779,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -719,7 +815,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_016",
@@ -735,19 +831,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -765,7 +867,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_017",
@@ -781,19 +883,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -811,7 +919,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_018",
@@ -827,19 +935,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -857,7 +971,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_019",
@@ -873,19 +987,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -903,7 +1023,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   },
   {
    "publisher_id": "pub_020",
@@ -919,19 +1039,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -949,7 +1075,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+   "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
   }
  ],
  "personas": [
@@ -1080,8 +1206,8 @@
   "schema_version": "1.0",
   "status": "not_eligible",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "B2B SaaS provider offering patient recall workflow automation software tailored for dental practices.",
-  "confidence": 1.0,
+  "advertiser_summary": "B2B SaaS for dental practices that automates their patient recall workflow.",
+  "confidence": 0.5,
   "objective": "acquisition",
   "economics": null,
   "pricing": null,
@@ -1091,83 +1217,83 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_002",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_003",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_004",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_005",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_006",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_007",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_008",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_009",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_010",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_011",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_012",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_013",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_014",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_015",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_016",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_017",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_018",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_019",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     },
     {
      "id": "pub_020",
-     "reason": "Not recommended: The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement."
+     "reason": "Not recommended: This is B2B software for dental practices, not a consumer product that a DTC checkout shopper could buy."
     }
    ],
    "personas": [],
@@ -1188,8 +1314,9 @@
   },
   "guardrails": {
    "claims_allowed": [
-    "Automates patient recall workflows for dental practices"
+    "We automate their patient recall workflow."
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1203,9 +1330,7 @@
    "holdout": "10% of eligible impressions withheld to measure incremental lift",
    "review_after_days": 14
   },
-  "open_questions": [
-   "Do you offer any direct-to-consumer health or oral care products suitable for post-purchase DTC shoppers?"
-  ]
+  "open_questions": []
  },
  "timings_s": {
   "intake": 0.0,

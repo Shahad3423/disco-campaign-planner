@@ -1,0 +1,57 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, match your room's vibe",
+      "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances. Pure aesthetic upgrade.",
+      "cta": "Shop Candles",
+      "headline_no_name": "Match your room's vibe",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Hand-poured Vermont craftsmanship",
+      "body": "Natural soy wax candles poured by hand in Vermont. Crafted in small batches with no synthetic fragrances.",
+      "cta": "Explore Collection",
+      "headline_no_name": "Hand-poured Vermont craftsmanship",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Clean burn, natural soy wax",
+      "body": "Small-batch candles poured by hand in Vermont using natural soy wax and absolutely no synthetic fragrances.",
+      "cta": "Discover More",
+      "headline_no_name": "Clean burn, natural soy wax",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The ultimate gift, ready to impress",
+      "body": "Hand-poured in Vermont in small batches with natural soy wax and no synthetic fragrances. A favorite for gifting.",
+      "cta": "Find the Gift",
+      "headline_no_name": "The ultimate gift, ready to impress",
+      "angle": "giftable",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances",
+        "Mostly bought as gifts"
+      ]
+    }
+  ]
+}

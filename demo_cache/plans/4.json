@@ -1,13 +1,13 @@
 {
  "brief": "Small-batch candles poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Mostly bought as gifts.",
  "profile": {
-  "business_summary": "Hand-poured, small-batch candles made in Vermont from natural soy wax with no synthetic fragrances, primarily purchased as gifts.",
-  "product": "Small-batch hand-poured soy wax candles",
+  "business_summary": "Small-batch candles poured by hand in Vermont, made with natural soy wax and no synthetic fragrances, mostly bought as gifts.",
+  "product": "Hand-poured soy candles",
   "is_consumer_product": true,
   "price_point_usd": null,
   "price_tier": "unknown",
   "purchase_model": "gift",
-  "target_gender": "unknown",
+  "target_gender": "any",
   "target_age_range": null,
   "stated_claims": [
    "Small-batch candles poured by hand in Vermont",
@@ -15,118 +15,122 @@
    "No synthetic fragrances",
    "Mostly bought as gifts"
   ],
+  "claims_needing_substantiation": [],
   "values": [
-   "handcrafted",
-   "small-batch",
    "natural",
-   "non-toxic"
+   "small_batch"
   ],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "gifting",
     "weight": 1.0,
-    "why": "Product is explicitly noted as mostly bought as gifts."
+    "why": "The advertiser states they are mostly bought as gifts."
    },
    {
     "tag": "home",
     "weight": 1.0,
-    "why": "Candles are core home decor and home fragrance products."
+    "why": "Candles are a core home decor and household product."
    },
    {
     "tag": "natural",
-    "weight": 0.5,
-    "why": "Uses natural soy wax."
-   },
-   {
-    "tag": "non_toxic",
-    "weight": 0.5,
-    "why": "Contains no synthetic fragrances."
+    "weight": 1.0,
+    "why": "Made with natural soy wax and no synthetic fragrances."
    },
    {
     "tag": "sustainable",
     "weight": 0.5,
-    "why": "Natural soy wax and handcrafted small-batch production appeal to sustainable shoppers."
+    "why": "Small-batch natural soy candles align with sustainable living."
    },
    {
     "tag": "spa",
-    "weight": 0.25,
-    "why": "Aromatherapy and candles complement spa and relaxation environments."
+    "weight": 0.333,
+    "why": "Candles fit well into self-care and spa-like home atmospheres."
    }
   ],
   "competing_tags": [],
   "persona_affinity_tags": [
    "home_decor",
    "home_goods",
-   "small_batch",
-   "wellness"
+   "small_batch"
   ],
   "persona_conflicts": [],
   "note_signals": [
    {
     "publisher_id": "pub_010",
     "alignment": 1,
-    "why": "Strong Nov-Dec gifting uplift aligns perfectly with planning date (Oct 30) and gift-heavy purchase intent."
-   },
-   {
-    "publisher_id": "pub_011",
-    "alignment": 1,
-    "why": "Design-conscious home audience has strong cross-sell affinity for home fragrance and craft items."
+    "why": "Strong gifting season uplift aligns with candles mostly bought as gifts."
    },
    {
     "publisher_id": "pub_014",
     "alignment": 1,
-    "why": "Non-toxic, sustainability-motivated audience buying for gifting and life events."
+    "why": "Hearthstone Goods buyers value home life events and non-toxic home goods."
    },
    {
-    "publisher_id": "pub_004",
+    "publisher_id": "pub_011",
     "alignment": 1,
-    "why": "Affluent demographic that responds well to quality craftsmanship and giftable items."
+    "why": "Design-conscious urban/suburban buyers align with home fragrance products."
    }
   ],
-  "confidence": 0.95,
+  "confidence": 0.8,
   "gate": "proceed",
-  "gate_reason": "Clear product category, core values, and primary use case (gifting/home) allow immediate targeting planning.",
+  "gate_reason": "Product, category, and positioning are clear, though price and precise margin details are missing.",
   "missing_info": [
-   "Retail price / AOV",
-   "Shipping times and fulfillment SLAs",
-   "Availability of gift options or bundled sets"
+   "price_point_usd",
+   "price_tier",
+   "margin"
   ],
   "clarifying_questions": [
-   "What is the price point or average order value for your candle orders?",
-   "Do you offer dedicated gift packaging or custom gift messaging options?",
-   "What is your standard fulfillment/turnaround time for orders?"
-  ]
+   "What is the retail price of your candles?",
+   "What is your target customer demographic or age range?",
+   "What is your gross margin or target CPA for the ad network?"
+  ],
+  "tag_stability": {
+   "home": 1.0,
+   "gifting": 1.0,
+   "natural": 1.0,
+   "sustainable": 1.0,
+   "non_toxic": 0.33,
+   "spa": 0.67
+  },
+  "sample_agreement": 0.77,
+  "competing_tag_share": {}
  },
  "publishers": [
   {
    "publisher_id": "pub_014",
    "publisher_name": "Hearthstone Goods",
-   "score": 0.67,
+   "score": 0.2543,
    "components": [
     {
      "name": "category_fit",
-     "value": 1.0,
+     "value": 0.5,
      "weight": 1.0,
-     "detail": "matches home, non_toxic (multiplier)"
+     "detail": "matches home (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5047692307692307,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Non-toxic, sustainability-motivated audience buying for gifting and life events."
+     "weight": 0.2,
+     "detail": "Hearthstone Goods buyers value home life events and non-toxic home goods."
     },
     {
      "name": "scale",
@@ -143,36 +147,42 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home, non_toxic (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.6037,
+   "score": 0.229,
    "components": [
     {
      "name": "category_fit",
-     "value": 1.0,
+     "value": 0.5,
      "weight": 1.0,
-     "detail": "matches home (multiplier)"
+     "detail": "matches home (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5070769230769231,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Design-conscious home audience has strong cross-sell affinity for home fragrance and craft items."
+     "weight": 0.2,
+     "detail": "Design-conscious urban/suburban buyers align with home fragrance products."
     },
     {
      "name": "scale",
@@ -189,35 +199,41 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.1371,
+   "score": 0.132,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.25,
+     "value": 0.333,
      "weight": 1.0,
-     "detail": "matches spa (multiplier)"
+     "detail": "matches spa (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5099999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.67)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -234,13 +250,13 @@
     }
    ],
    "flags": [],
-   "recommended": false,
-   "reason": "Excluded: score 0.14 below cutoff 0.34; weakest signal category_fit (matches spa (multiplier))."
+   "recommended": true,
+   "reason": "Recommended: matches spa (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.1021,
+   "score": 0.0826,
    "components": [
     {
      "name": "category_fit",
@@ -251,20 +267,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.63,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.92)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Strong Nov-Dec gifting uplift aligns perfectly with planning date (Oct 30) and gift-heavy purchase intent."
+     "weight": 0.2,
+     "detail": "Strong gifting season uplift aligns with candles mostly bought as gifts."
     },
     {
      "name": "scale",
@@ -284,55 +306,9 @@
    "reason": "Excluded: matches gifting (attribute tags only) (multiplier) for this product."
   },
   {
-   "publisher_id": "pub_008",
-   "publisher_name": "Pantrygood",
-   "score": 0.0816,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.15,
-     "weight": 1.0,
-     "detail": "matches natural (attribute tags only) (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.3858013051641558,
-     "weight": 0.05,
-     "detail": "10.4M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.3,
-     "weight": 0.1,
-     "detail": "host not gifting-oriented"
-    }
-   ],
-   "flags": [],
-   "recommended": false,
-   "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
-  },
-  {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.0804,
+   "score": 0.0614,
    "components": [
     {
      "name": "category_fit",
@@ -343,19 +319,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5946153846153845,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.85)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -376,9 +358,61 @@
    "reason": "Excluded: matches sustainable (attribute tags only) (multiplier) for this product."
   },
   {
+   "publisher_id": "pub_008",
+   "publisher_name": "Pantrygood",
+   "score": 0.0589,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.15,
+     "weight": 1.0,
+     "detail": "matches natural (attribute tags only) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5063846153846153,
+     "weight": 0.35,
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.3858013051641558,
+     "weight": 0.05,
+     "detail": "10.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.3,
+     "weight": 0.1,
+     "detail": "host not gifting-oriented"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
+  },
+  {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.079,
+   "score": 0.0585,
    "components": [
     {
      "name": "category_fit",
@@ -389,19 +423,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5467692307692307,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -435,19 +475,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5537692307692307,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -481,19 +527,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5811538461538461,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -527,20 +579,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5338461538461539,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Affluent Classic best (host fit 0.73)"
     },
     {
      "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Affluent demographic that responds well to quality craftsmanship and giftable items."
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
     },
     {
      "name": "scale",
@@ -573,19 +631,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5352307692307692,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Affluent Classic best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -619,19 +683,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.57,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -665,19 +735,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5336153846153846,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -711,19 +787,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5887692307692306,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.75)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -757,19 +839,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5596153846153845,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -803,19 +891,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6568461538461537,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.98)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -849,19 +943,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.525076923076923,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -895,19 +995,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5430769230769231,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -941,19 +1047,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6801538461538461,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.99)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -987,19 +1099,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6257692307692306,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.83)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1033,21 +1151,7 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011"
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "persona_name": "The Wellness Optimizer",
-   "score": 0.336,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.60 (wellness)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_014",
+    "pub_003",
     "pub_011"
    ]
   },
@@ -1063,6 +1167,7 @@
    ],
    "best_publishers": [
     "pub_014",
+    "pub_003",
     "pub_011"
    ]
   },
@@ -1078,6 +1183,7 @@
    ],
    "best_publishers": [
     "pub_011",
+    "pub_003",
     "pub_014"
    ]
   },
@@ -1092,8 +1198,25 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_003",
     "pub_011",
     "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "persona_name": "The Wellness Optimizer",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_014",
+    "pub_003",
+    "pub_011"
    ]
   },
   {
@@ -1108,6 +1231,7 @@
    ],
    "best_publishers": [
     "pub_011",
+    "pub_003",
     "pub_014"
    ]
   },
@@ -1122,6 +1246,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_003",
     "pub_011",
     "pub_014"
    ]
@@ -1138,6 +1263,7 @@
    ],
    "best_publishers": [
     "pub_011",
+    "pub_003",
     "pub_014"
    ]
   },
@@ -1152,6 +1278,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_003",
     "pub_014",
     "pub_011"
    ]
@@ -1168,6 +1295,7 @@
    ],
    "best_publishers": [
     "pub_011",
+    "pub_003",
     "pub_014"
    ]
   }
@@ -1175,10 +1303,10 @@
  "creatives": [
   {
    "persona_id": "persona_003",
-   "headline": "{first_name}, light your aesthetic",
-   "body": "Small-batch candles poured by hand in Vermont with natural soy wax and no synthetic fragrances. Major room vibe.",
-   "cta": "Shop candles",
-   "headline_no_name": "Light your aesthetic",
+   "headline": "{first_name}, match your room's vibe",
+   "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances. Pure aesthetic upgrade.",
+   "cta": "Shop Candles",
+   "headline_no_name": "Match your room's vibe",
    "angle": "aesthetic-forward",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1187,24 +1315,11 @@
    ]
   },
   {
-   "persona_id": "persona_001",
-   "headline": "Clean burn for your space",
-   "body": "Crafted with natural soy wax and absolutely no synthetic fragrances. Poured by hand in Vermont.",
-   "cta": "Explore candles",
-   "headline_no_name": "Clean burn for your space",
-   "angle": "ingredient transparency",
-   "claims_used": [
-    "Natural soy wax",
-    "No synthetic fragrances",
-    "Small-batch candles poured by hand in Vermont"
-   ]
-  },
-  {
    "persona_id": "persona_005",
-   "headline": "Vermont craftsmanship",
-   "body": "Small-batch candles poured by hand in Vermont using natural soy wax with no synthetic fragrances.",
-   "cta": "View collection",
-   "headline_no_name": "Vermont craftsmanship",
+   "headline": "Traditional Vermont craftsmanship",
+   "body": "Small-batch candles poured by hand in Vermont, featuring natural soy wax and no synthetic fragrances.",
+   "cta": "Explore collection",
+   "headline_no_name": "Traditional Vermont craftsmanship",
    "angle": "craftsmanship",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1214,10 +1329,10 @@
   },
   {
    "persona_id": "persona_006",
-   "headline": "Natural soy, zero synthetic fragrances",
-   "body": "Transparently simple ingredients: hand-poured in small batches in Vermont using natural soy wax with no synthetic additives.",
-   "cta": "See Details",
-   "headline_no_name": "Natural soy, zero synthetic fragrances",
+   "headline": "Natural soy wax and zero synthetics",
+   "body": "Small-batch candles poured by hand in Vermont made with natural soy wax and no synthetic fragrances.",
+   "cta": "Learn more",
+   "headline_no_name": "Natural soy wax and zero synthetics",
    "angle": "specific sustainability claims",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1227,16 +1342,16 @@
   },
   {
    "persona_id": "persona_010",
-   "headline": "The perfect gift",
-   "body": "Mostly bought as gifts, these small-batch candles feature natural soy wax and no synthetic fragrances.",
-   "cta": "Gift now",
-   "headline_no_name": "The perfect gift",
+   "headline": "The ultimate gift, ready to impress",
+   "body": "Hand-poured in Vermont in small batches with natural soy wax and no synthetic fragrances. A favorite for gifting.",
+   "cta": "Find the Gift",
+   "headline_no_name": "The ultimate gift, ready to impress",
    "angle": "giftable",
    "claims_used": [
-    "Mostly bought as gifts",
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
-    "No synthetic fragrances"
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
    ]
   }
  ],
@@ -1251,15 +1366,6 @@
    "passed": true
   },
   {
-   "persona_id": "persona_001",
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
    "persona_id": "persona_005",
    "persona_fit": 5,
    "claims_ok": true,
@@ -1271,16 +1377,11 @@
   {
    "persona_id": "persona_006",
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "Transparently simple ingredients",
-    "no synthetic additives"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Adds unstated claims like 'transparently simple ingredients' and 'synthetic additives'"
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_010",
@@ -1296,8 +1397,8 @@
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "Hand-poured, small-batch candles made in Vermont from natural soy wax with no synthetic fragrances, primarily purchased as gifts.",
-  "confidence": 0.95,
+  "advertiser_summary": "Small-batch candles poured by hand in Vermont, made with natural soy wax and no synthetic fragrances, mostly bought as gifts.",
+  "confidence": 0.8,
   "objective": "acquisition",
   "economics": {
    "price_usd": 60.0,
@@ -1326,82 +1427,102 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 670.0,
+   "monthly_budget_usd": 910.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 22.33,
+   "daily_cap_usd": 30.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 667.06,
+   "learning_budget_needed_usd": 914.12,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.526,
-     "budget_usd": 352.44,
+     "share": 0.413,
+     "budget_usd": 376.1,
      "cpc_bid_usd": 0.97,
+     "start_bid_usd": 0.68,
      "expected_clicks": {
-      "low": 291.0,
-      "mid": 363.0,
-      "high": 436.0
+      "low": 310.0,
+      "mid": 388.0,
+      "high": 465.0
      },
      "expected_conversions": {
-      "low": 7.6,
-      "mid": 15.3,
-      "high": 25.4
+      "low": 8.1,
+      "mid": 16.3,
+      "high": 27.1
      },
      "capacity_usd": 2281.44,
      "requires_host_approval": false,
-     "rationale": "score 0.67 -> fit x1.40 on CTR/CVR; bid $0.97"
+     "rationale": "score 0.25 -> fit x1.40 on CTR/CVR; max bid $0.97 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.474,
-     "budget_usd": 317.56,
+     "share": 0.372,
+     "budget_usd": 338.68,
      "cpc_bid_usd": 0.92,
+     "start_bid_usd": 0.64,
      "expected_clicks": {
-      "low": 276.0,
-      "mid": 345.0,
-      "high": 414.0
+      "low": 295.0,
+      "mid": 368.0,
+      "high": 442.0
      },
      "expected_conversions": {
-      "low": 6.8,
-      "mid": 13.7,
-      "high": 22.8
+      "low": 7.3,
+      "mid": 14.6,
+      "high": 24.3
      },
-     "capacity_usd": 2624.76,
+     "capacity_usd": 2623.92,
      "requires_host_approval": false,
-     "rationale": "score 0.60 -> fit x1.32 on CTR/CVR; bid $0.92"
+     "rationale": "score 0.23 -> fit x1.32 on CTR/CVR; max bid $0.92 (break-even at target CPA), start at 70% and raise only if under-delivering"
+    },
+    {
+     "publisher_id": "pub_003",
+     "publisher_name": "Studiogrid",
+     "share": 0.215,
+     "budget_usd": 195.22,
+     "cpc_bid_usd": 0.7,
+     "start_bid_usd": 0.49,
+     "expected_clicks": {
+      "low": 223.0,
+      "mid": 279.0,
+      "high": 335.0
+     },
+     "expected_conversions": {
+      "low": 4.2,
+      "mid": 8.5,
+      "high": 14.2
+     },
+     "capacity_usd": 5799.15,
+     "requires_host_approval": false,
+     "rationale": "score 0.13 -> fit x1.02 on CTR/CVR; max bid $0.70 (break-even at target CPA), start at 70% and raise only if under-delivering"
     }
    ],
    "warnings": [
-    "No budget given: recommending $670, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $910, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
    "publishers_include": [
+    "pub_003",
     "pub_011",
     "pub_014"
    ],
    "publishers_exclude": [
     {
-     "id": "pub_003",
-     "reason": "Excluded: score 0.14 below cutoff 0.34; weakest signal category_fit (matches spa (multiplier))."
-    },
-    {
      "id": "pub_010",
      "reason": "Excluded: matches gifting (attribute tags only) (multiplier) for this product."
     },
     {
-     "id": "pub_008",
-     "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
-    },
-    {
      "id": "pub_017",
      "reason": "Excluded: matches sustainable (attribute tags only) (multiplier) for this product."
+    },
+    {
+     "id": "pub_008",
+     "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
     },
     {
      "id": "pub_016",
@@ -1462,7 +1583,6 @@
    ],
    "personas": [
     "persona_003",
-    "persona_001",
     "persona_005",
     "persona_006",
     "persona_010"
@@ -1483,60 +1603,52 @@
     "persona_id": "persona_003",
     "publisher_ids": [
      "pub_014",
+     "pub_003",
      "pub_011"
     ],
-    "headline_template": "{first_name}, light your aesthetic",
-    "headline_no_name": "Light your aesthetic",
-    "body": "Small-batch candles poured by hand in Vermont with natural soy wax and no synthetic fragrances. Major room vibe.",
-    "cta": "Shop candles"
+    "headline_template": "{first_name}, match your room's vibe",
+    "headline_no_name": "Match your room's vibe",
+    "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances. Pure aesthetic upgrade.",
+    "cta": "Shop Candles"
    },
    {
     "variant_id": "v2",
-    "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_014",
-     "pub_011"
-    ],
-    "headline_template": "Clean burn for your space",
-    "headline_no_name": "Clean burn for your space",
-    "body": "Crafted with natural soy wax and absolutely no synthetic fragrances. Poured by hand in Vermont.",
-    "cta": "Explore candles"
-   },
-   {
-    "variant_id": "v3",
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_014",
+     "pub_003",
      "pub_011"
     ],
-    "headline_template": "Vermont craftsmanship",
-    "headline_no_name": "Vermont craftsmanship",
-    "body": "Small-batch candles poured by hand in Vermont using natural soy wax with no synthetic fragrances.",
-    "cta": "View collection"
+    "headline_template": "Traditional Vermont craftsmanship",
+    "headline_no_name": "Traditional Vermont craftsmanship",
+    "body": "Small-batch candles poured by hand in Vermont, featuring natural soy wax and no synthetic fragrances.",
+    "cta": "Explore collection"
    },
    {
-    "variant_id": "v4",
+    "variant_id": "v3",
     "persona_id": "persona_006",
     "publisher_ids": [
      "pub_011",
+     "pub_003",
      "pub_014"
     ],
-    "headline_template": "Natural soy, zero synthetic fragrances",
-    "headline_no_name": "Natural soy, zero synthetic fragrances",
-    "body": "Transparently simple ingredients: hand-poured in small batches in Vermont using natural soy wax with no synthetic additives.",
-    "cta": "See Details"
+    "headline_template": "Natural soy wax and zero synthetics",
+    "headline_no_name": "Natural soy wax and zero synthetics",
+    "body": "Small-batch candles poured by hand in Vermont made with natural soy wax and no synthetic fragrances.",
+    "cta": "Learn more"
    },
    {
-    "variant_id": "v5",
+    "variant_id": "v4",
     "persona_id": "persona_010",
     "publisher_ids": [
+     "pub_003",
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "The perfect gift",
-    "headline_no_name": "The perfect gift",
-    "body": "Mostly bought as gifts, these small-batch candles feature natural soy wax and no synthetic fragrances.",
-    "cta": "Gift now"
+    "headline_template": "The ultimate gift, ready to impress",
+    "headline_no_name": "The ultimate gift, ready to impress",
+    "body": "Hand-poured in Vermont in small batches with natural soy wax and no synthetic fragrances. A favorite for gifting.",
+    "cta": "Find the Gift"
    }
   ],
   "frequency_cap": {
@@ -1550,6 +1662,7 @@
     "No synthetic fragrances",
     "Mostly bought as gifts"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1564,20 +1677,21 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the price point or average order value for your candle orders?",
-   "Do you offer dedicated gift packaging or custom gift messaging options?",
-   "What is your standard fulfillment/turnaround time for orders?"
+   "What is the retail price of your candles?",
+   "What is your target customer demographic or age range?",
+   "What is your gross margin or target CPA for the ad network?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 18.17
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_006"
+   "persona_003",
+   "persona_010"
   ]
  }
 }

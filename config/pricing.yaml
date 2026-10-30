@@ -51,6 +51,7 @@ budget:
   exploration_share: 0.15         # reserve for lower-ranked hosts so we learn, not just exploit
   stop_loss: {cpa_multiple: 2.0, min_clicks: 150}
   gifting_front_load: 1.3         # daily pacing multiplier inside an active gifting moment
+  start_bid_fraction: 0.7         # open below the break-even max CPC; real CVR decides whether to raise
 
 pricing_models:
   # D2: which pricing model we recommend, by goal and by maturity

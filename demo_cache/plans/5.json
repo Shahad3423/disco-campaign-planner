@@ -1,7 +1,7 @@
 {
  "brief": "We help people feel better.",
  "profile": {
-  "business_summary": "The advertiser states a general mission to 'help people feel better', but provides no specific details about their product, pricing, business model, or target audience.",
+  "business_summary": "An unspecified business whose stated purpose is helping people feel better.",
   "product": "unknown",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -12,85 +12,38 @@
   "stated_claims": [
    "We help people feel better."
   ],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
-  "relevant_tags": [
-   {
-    "tag": "wellness_dtc",
-    "weight": 0.25,
-    "why": "General health/wellness mission implied, though no specific product is defined."
-   }
-  ],
+  "relevant_tags": [],
   "competing_tags": [],
-  "persona_affinity_tags": [
-   "wellness"
-  ],
+  "persona_affinity_tags": [],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 0.2,
+  "confidence": 0.46,
   "gate": "clarify",
-  "gate_reason": "The description provides a high-level outcome ('help people feel better') but lacks specific information about the product type, pricing, purchase model, and target audience necessary to plan targeting.",
+  "gate_reason": "The advertiser provided only a generic tagline ('We help people feel better.') with no information about the actual product, category, pricing, or target audience.",
   "missing_info": [
-   "Specific product or service being sold",
-   "Price point and price tier",
-   "Purchase model (one-time vs subscription)",
-   "Target audience demographics and gender",
-   "Fulfillment and shipping details"
+   "product",
+   "price_point_usd",
+   "price_tier",
+   "purchase_model",
+   "target_gender",
+   "target_age_range",
+   "values",
+   "fulfillment_notes"
   ],
   "clarifying_questions": [
-   "What specific product or service do you sell?",
-   "What is the average price point and purchase model (one-time vs. subscription)?",
-   "Who is your primary target customer?",
-   "Is this a physical direct-to-consumer product shipped to customers?"
-  ]
+   "What specific product or service are you selling?",
+   "What is the price of your product?",
+   "Is your product a one-time purchase or a subscription?",
+   "Who is your target customer?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": 0.0,
+  "competing_tag_share": {}
  },
  "publishers": [
-  {
-   "publisher_id": "pub_012",
-   "publisher_name": "Daily Form",
-   "score": 0.1377,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.25,
-     "weight": 1.0,
-     "detail": "matches wellness_dtc (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.11921246038064834,
-     "weight": 0.05,
-     "detail": "4.2M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [],
-   "recommended": false,
-   "reason": "Excluded: score 0.14 below cutoff 0.15; weakest signal category_fit (matches wellness_dtc (multiplier))."
-  },
   {
    "publisher_id": "pub_001",
    "publisher_name": "Swiftcart",
@@ -105,19 +58,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -151,19 +110,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -197,19 +162,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -243,19 +214,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -289,19 +266,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -335,19 +318,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -381,19 +370,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -427,19 +422,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -473,19 +474,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -519,19 +526,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -565,19 +578,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -585,6 +604,58 @@
      "value": 0.07388998640181474,
      "weight": 0.05,
      "detail": "3.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "no plausible personas yet"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.11921246038064834,
+     "weight": 0.05,
+     "detail": "4.2M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -611,19 +682,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -657,19 +734,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -703,19 +786,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -749,19 +838,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -795,19 +890,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -841,19 +942,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -887,19 +994,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -933,19 +1046,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -970,10 +1089,10 @@
   {
    "persona_id": "persona_001",
    "persona_name": "The Wellness Optimizer",
-   "score": 0.336,
-   "selected": true,
+   "score": 0.0,
+   "selected": false,
    "reasons": [
-    "category affinity 0.60 (wellness)",
+    "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (unknown product vs low price sensitivity)",
     "audience fit 0.80"
    ],
@@ -1088,36 +1207,14 @@
    "best_publishers": []
   }
  ],
- "creatives": [
-  {
-   "persona_id": "persona_001",
-   "headline": "System upgrade for your routine",
-   "body": "We help people feel better. Discover a purposeful addition designed to support your daily wellness optimization goals.",
-   "cta": "Learn more",
-   "headline_no_name": "System upgrade for your routine",
-   "angle": "outcome-focused",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  }
- ],
- "reviews": [
-  {
-   "persona_id": "persona_001",
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  }
- ],
+ "creatives": [],
+ "reviews": [],
  "config": {
   "schema_version": "1.0",
   "status": "needs_clarification",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "The advertiser states a general mission to 'help people feel better', but provides no specific details about their product, pricing, business model, or target audience.",
-  "confidence": 0.2,
+  "advertiser_summary": "An unspecified business whose stated purpose is helping people feel better.",
+  "confidence": 0.46,
   "objective": "acquisition",
   "economics": null,
   "pricing": null,
@@ -1125,10 +1222,6 @@
   "targeting": {
    "publishers_include": [],
    "publishers_exclude": [
-    {
-     "id": "pub_012",
-     "reason": "Excluded: score 0.14 below cutoff 0.15; weakest signal category_fit (matches wellness_dtc (multiplier))."
-    },
     {
      "id": "pub_001",
      "reason": "Excluded: no category link (multiplier) for this product."
@@ -1174,6 +1267,10 @@
      "reason": "Excluded: no category link (multiplier) for this product."
     },
     {
+     "id": "pub_012",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
      "id": "pub_013",
      "reason": "Excluded: no category link (multiplier) for this product."
     },
@@ -1206,9 +1303,7 @@
      "reason": "Excluded: no category link (multiplier) for this product."
     }
    ],
-   "personas": [
-    "persona_001"
-   ],
+   "personas": [],
    "geo": "US (no advertiser geo restriction stated)",
    "serve_time_signals": {
     "platform": "publisher_id -> cart prior (category, AOV)",
@@ -1219,17 +1314,7 @@
     "Halloween"
    ]
   },
-  "creatives": [
-   {
-    "variant_id": "v1",
-    "persona_id": "persona_001",
-    "publisher_ids": [],
-    "headline_template": "System upgrade for your routine",
-    "headline_no_name": "System upgrade for your routine",
-    "body": "We help people feel better. Discover a purposeful addition designed to support your daily wellness optimization goals.",
-    "cta": "Learn more"
-   }
-  ],
+  "creatives": [],
   "frequency_cap": {
    "per_shopper_per_day": 1,
    "per_shopper_per_week": 3
@@ -1238,6 +1323,7 @@
    "claims_allowed": [
     "We help people feel better."
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1252,19 +1338,15 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What specific product or service do you sell?",
-   "What is the average price point and purchase model (one-time vs. subscription)?",
-   "Who is your primary target customer?",
-   "Is this a physical direct-to-consumer product shipped to customers?"
+   "What specific product or service are you selling?",
+   "What is the price of your product?",
+   "Is your product a one-time purchase or a subscription?",
+   "Who is your target customer?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.0,
-  "creative": 8.26
+  "matching": 0.0
  },
- "creative_log": {
-  "rounds": 1,
-  "rewritten": []
- }
+ "creative_log": {}
 }

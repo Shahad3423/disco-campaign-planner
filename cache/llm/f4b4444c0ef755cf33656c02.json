@@ -1,0 +1,29 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Elevated clean without the plastic waste",
+      "body": "Discover refillable, concentrated cleaning products designed to replace single-use plastic bottles with lasting quality.",
+      "cta": "Shop Refills",
+      "headline_no_name": "Elevated clean without the plastic waste",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A practical eco-gift for the home",
+      "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands.",
+      "cta": "Explore Sets",
+      "headline_no_name": "A practical eco-gift for the home",
+      "angle": "giftable",
+      "claims_used": [
+        "Skip the single-use plastic bottles",
+        "Refillable, concentrated cleaning products",
+        "Works as well as the big brands"
+      ]
+    }
+  ]
+}

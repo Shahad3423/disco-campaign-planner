@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, upgrade your workout gear",
+      "body": "Discover sustainable activewear for women crafted from recycled ocean plastic. Premium active options built for your routine.",
+      "cta": "Shop Now",
+      "headline_no_name": "Upgrade your workout gear today",
+      "angle": "ingredient transparency and outcome-focused performance",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Performance activewear made for training",
+      "body": "Fuel your active lifestyle with sustainable activewear for women made from recycled ocean plastic.",
+      "cta": "Explore Gear",
+      "headline_no_name": "Performance activewear made for training",
+      "angle": "technical fabrics and performance apparel",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, shop conscious activewear",
+      "body": "Support sustainability with sustainable activewear for women made from recycled ocean plastic. Ditch fast fashion for good.",
+      "cta": "See The Collection",
+      "headline_no_name": "Shop conscious activewear today",
+      "angle": "specific sustainability claims and eco-friendly choices",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    }
+  ]
+}

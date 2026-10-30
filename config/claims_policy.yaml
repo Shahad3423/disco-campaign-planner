@@ -1,0 +1,14 @@
+# Regulated claims (FTC substantiation / FDA rules, simplified). Copy may NOT contain these
+# even if the advertiser states them: stating a claim is not substantiating it.
+# Matched case-insensitively as regular expressions against claims and ad copy.
+blocked_until_substantiated:
+  - name: medical / clinical proof
+    patterns: ['clinically (proven|tested|shown)', 'doctor[- ]recommended', 'vet[- ]recommended', 'scientifically proven', 'studies show']
+  - name: government approval
+    patterns: ['fda[- ]?(approved|cleared|certified)', 'usda[- ]approved', 'government[- ]approved']
+  - name: disease / treatment
+    patterns: ['\bcures?\b', '\btreats?\b (?:arthritis|anxiety|depression|disease|cancer|diabetes)', '\bheals?\b', 'prevents? (?:disease|cancer|illness)']
+  - name: weight loss / body outcomes
+    patterns: ['weight[- ]loss', 'lose (?:weight|\d+ ?(?:lbs?|pounds|kg))', 'burns? fat', 'fat[- ]burning']
+  - name: guarantees and superlatives
+    patterns: ['guaranteed (?:results|to)', '#1\b', 'number one', "world'?s best", '100% effective']

@@ -1,7 +1,7 @@
 {
  "brief": "Workout supplements: pre-workout, creatine, protein. We compete on price, not on marketing. Same formulations as the expensive brands for half the cost.",
  "profile": {
-  "business_summary": "Sells workout supplements including pre-workout, creatine, and protein, competing on price with same formulations as expensive brands for half the cost.",
+  "business_summary": "An affordable workout supplement brand offering pre-workout, creatine, and protein formulations identical to expensive brands at half the cost.",
   "product": "Workout supplements (pre-workout, creatine, protein)",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -13,28 +13,32 @@
    "We compete on price, not on marketing.",
    "Same formulations as the expensive brands for half the cost."
   ],
-  "values": [],
+  "claims_needing_substantiation": [],
+  "values": [
+   "value",
+   "affordability"
+  ],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "supplements",
     "weight": 1.0,
-    "why": "Core product category for workout supplements like protein and creatine."
+    "why": "The core product category is workout supplements."
    },
    {
     "tag": "fitness_classes",
-    "weight": 0.5,
-    "why": "Shoppers attending fitness classes are a strong adjacent audience for workout supplements."
+    "weight": 0.417,
+    "why": "Attendees of fitness classes are frequent users of workout supplements."
    },
    {
     "tag": "activewear",
-    "weight": 0.5,
-    "why": "Activewear buyers overlap heavily with fitness and workout supplement consumers."
+    "weight": 0.417,
+    "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
    },
    {
     "tag": "wellness_dtc",
-    "weight": 0.5,
-    "why": "Adjacent category for health and wellness oriented consumable products."
+    "weight": 0.333,
+    "why": "Supplements fall under general wellness and health products."
    }
   ],
   "competing_tags": [
@@ -42,15 +46,21 @@
   ],
   "persona_affinity_tags": [
    "fitness",
-   "supplements",
-   "recovery"
+   "recovery",
+   "supplements"
   ],
-  "persona_conflicts": [],
+  "persona_conflicts": [
+   {
+    "persona_id": "persona_005",
+    "conflict": "disinterested_in = 'loud aesthetics', 'influencer positioning'; prefers quality and craftsmanship",
+    "evidence": "Focuses on competing purely on price ('half the cost') rather than quality or craftsmanship."
+   }
+  ],
   "note_signals": [
    {
     "publisher_id": "pub_002",
     "alignment": 1,
-    "why": "Movewell's audience is fitness-engaged with strong wellness crossover."
+    "why": "Movewell has fitness-engaged shoppers who crossover with wellness."
    },
    {
     "publisher_id": "pub_003",
@@ -60,50 +70,122 @@
    {
     "publisher_id": "pub_012",
     "alignment": 1,
-    "why": "Daily Form has a supplement-focused audience."
+    "why": "Daily Form has a science-forward wellness audience interested in supplements."
    }
   ],
-  "confidence": 0.9,
+  "confidence": 0.84,
   "gate": "proceed",
-  "gate_reason": "Product and value proposition are clear, but exact pricing and purchase model specifics are missing.",
+  "gate_reason": "The product and value proposition are clearly stated, allowing us to target fitness and wellness audiences effectively.",
   "missing_info": [
    "price_point_usd",
-   "target_age_range"
+   "target_age_range",
+   "margin"
   ],
   "clarifying_questions": [
-   "What is the exact price point or average order value for your products?",
-   "Do you offer subscription options or is it strictly one-time purchases?"
-  ]
+   "What is the exact price point or average order value of your supplement products?",
+   "Do you offer subscriptions or only one-time purchases?",
+   "What is your target customer demographic (age or gender skew, if any)?"
+  ],
+  "tag_stability": {
+   "supplements": 1.0,
+   "activewear": 1.0,
+   "wellness_dtc": 0.67,
+   "fitness_classes": 1.0
+  },
+  "sample_agreement": 0.83,
+  "competing_tag_share": {
+   "supplements": 1.0
+  }
  },
  "publishers": [
   {
-   "publisher_id": "pub_002",
-   "publisher_name": "Movewell",
-   "score": 0.3602,
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.3035,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.5,
+     "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear (multiplier)"
+     "detail": "matches supplements, wellness_dtc (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.90875,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.87)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Movewell's audience is fitness-engaged with strong wellness crossover."
+     "weight": 0.2,
+     "detail": "Daily Form has a science-forward wellness audience interested in supplements."
+    },
+    {
+     "name": "scale",
+     "value": 0.11921246038064834,
+     "weight": 0.05,
+     "detail": "4.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells supplements (100% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5)). Flags: competitor_conflict: host sells supplements (100% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.2761,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.417,
+     "weight": 1.0,
+     "detail": "matches activewear (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8000833333333334,
+     "weight": 0.35,
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.84)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Movewell has fitness-engaged shoppers who crossover with wellness."
     },
     {
      "name": "scale",
@@ -120,35 +202,41 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches activewear (multiplier); strongest supporting signal price_fit (host income mid-high suits budget)."
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.3566,
+   "score": 0.255,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.5,
+     "value": 0.417,
      "weight": 1.0,
-     "detail": "matches fitness_classes (multiplier)"
+     "detail": "matches fitness_classes (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6587499999999998,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "Studiogrid users are actively spending on fitness and self-care."
     },
     {
@@ -166,83 +254,41 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches fitness_classes (multiplier); strongest supporting signal price_fit (host income high suits budget)."
-  },
-  {
-   "publisher_id": "pub_012",
-   "publisher_name": "Daily Form",
-   "score": 0.3132,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches supplements, wellness_dtc (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 0.35,
-     "detail": "host income mid-high suits budget"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Daily Form has a supplement-focused audience."
-    },
-    {
-     "name": "scale",
-     "value": 0.11921246038064834,
-     "weight": 0.05,
-     "detail": "4.2M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells supplements; may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches supplements, wellness_dtc (multiplier); strongest supporting signal price_fit (host income mid-high suits budget). Flags: competitor_conflict: host sells supplements; may block the ad"
+   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.3129,
+   "score": 0.2337,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.5,
+     "value": 0.417,
      "weight": 1.0,
-     "detail": "matches activewear (multiplier)"
+     "detail": "matches activewear (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8167500000000001,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.94)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -260,7 +306,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches activewear (multiplier); strongest supporting signal price_fit (host income mid-high suits budget)."
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -276,19 +322,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5766666666666668,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -322,19 +374,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.3713333333333333,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.45)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -368,19 +426,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.37074999999999997,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.46)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -414,19 +478,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6021666666666667,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -460,19 +530,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.62325,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.63)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -506,19 +582,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6604166666666667,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.63)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -552,19 +634,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6934166666666667,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -598,19 +686,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.69675,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -644,19 +738,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6619999999999999,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.64)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -690,19 +790,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5604166666666667,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.53)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -736,19 +842,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.657,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -782,19 +894,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6625833333333333,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.64)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -828,19 +946,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6475833333333333,
      "weight": 0.35,
-     "detail": "host income high suits budget"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -874,19 +998,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6884166666666668,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.67)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -920,19 +1050,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6445833333333333,
      "weight": 0.35,
-     "detail": "host income mid suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.59)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -966,19 +1102,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8354166666666666,
      "weight": 0.35,
-     "detail": "host income mid-high suits budget"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.93)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1086,6 +1228,7 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
+    "EXCLUDED: conflicts with 'disinterested_in = 'loud aesthetics', 'influencer positioning'; prefers quality and craftsmanship' because the brief says: Focuses on competing purely on price ('half the cost') rather than quality or craftsmanship.",
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (budget product vs low price sensitivity)",
     "audience fit 0.80"
@@ -1164,10 +1307,10 @@
  "creatives": [
   {
    "persona_id": "persona_009",
-   "headline": "Fuel your next session, {first_name}",
-   "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+   "headline": "Upgrade your stack for less, {first_name}",
+   "body": "Same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
    "cta": "Shop & Save",
-   "headline_no_name": "Fuel your next hard workout",
+   "headline_no_name": "Upgrade your stack for half the cost",
    "angle": "performance claims",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
@@ -1176,10 +1319,10 @@
   },
   {
    "persona_id": "persona_001",
-   "headline": "Optimize your stack for half the cost",
-   "body": "Same formulations as the expensive brands. We compete on price, not on marketing so you only pay for what works.",
+   "headline": "Optimize your stack, {first_name}",
+   "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
    "cta": "View Formulations",
-   "headline_no_name": "Optimize your stack for half the cost",
+   "headline_no_name": "Optimize your supplement stack",
    "angle": "ingredient transparency",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
@@ -1199,7 +1342,7 @@
   },
   {
    "persona_id": "persona_001",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1211,8 +1354,8 @@
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "Sells workout supplements including pre-workout, creatine, and protein, competing on price with same formulations as expensive brands for half the cost.",
-  "confidence": 0.9,
+  "advertiser_summary": "An affordable workout supplement brand offering pre-workout, creatine, and protein formulations identical to expensive brands at half the cost.",
+  "confidence": 0.84,
   "objective": "acquisition",
   "economics": {
    "price_usd": 25.0,
@@ -1242,99 +1385,103 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1620.0,
+   "monthly_budget_usd": 1570.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 54.0,
+   "daily_cap_usd": 52.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1620.0,
+   "learning_budget_needed_usd": 1570.59,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
-     "publisher_id": "pub_002",
-     "publisher_name": "Movewell",
-     "share": 0.268,
-     "budget_usd": 434.53,
+     "publisher_id": "pub_012",
+     "publisher_name": "Daily Form",
+     "share": 0.284,
+     "budget_usd": 446.03,
      "cpc_bid_usd": 1.19,
+     "start_bid_usd": 0.83,
      "expected_clicks": {
-      "low": 292.0,
-      "mid": 365.0,
-      "high": 438.0
+      "low": 300.0,
+      "mid": 375.0,
+      "high": 450.0
      },
      "expected_conversions": {
-      "low": 7.7,
-      "mid": 15.3,
-      "high": 25.6
+      "low": 7.9,
+      "mid": 15.7,
+      "high": 26.2
      },
-     "capacity_usd": 21991.2,
+     "capacity_usd": 1679.33,
+     "requires_host_approval": true,
+     "rationale": "score 0.30 -> fit x1.40 on CTR/CVR; max bid $1.19 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_002",
+     "publisher_name": "Movewell",
+     "share": 0.258,
+     "budget_usd": 405.76,
+     "cpc_bid_usd": 1.13,
+     "start_bid_usd": 0.79,
+     "expected_clicks": {
+      "low": 287.0,
+      "mid": 359.0,
+      "high": 431.0
+     },
+     "expected_conversions": {
+      "low": 7.2,
+      "mid": 14.3,
+      "high": 23.8
+     },
+     "capacity_usd": 19805.11,
      "requires_host_approval": false,
-     "rationale": "score 0.36 -> fit x1.40 on CTR/CVR; bid $1.19"
+     "rationale": "score 0.28 -> fit x1.33 on CTR/CVR; max bid $1.13 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.266,
-     "budget_usd": 430.18,
-     "cpc_bid_usd": 1.19,
+     "share": 0.239,
+     "budget_usd": 374.75,
+     "cpc_bid_usd": 1.09,
+     "start_bid_usd": 0.76,
      "expected_clicks": {
-      "low": 289.0,
-      "mid": 361.0,
-      "high": 434.0
-     },
-     "expected_conversions": {
-      "low": 7.5,
-      "mid": 15.1,
-      "high": 25.2
-     },
-     "capacity_usd": 13516.92,
-     "requires_host_approval": false,
-     "rationale": "score 0.36 -> fit x1.39 on CTR/CVR; bid $1.19"
-    },
-    {
-     "publisher_id": "pub_012",
-     "publisher_name": "Daily Form",
-     "share": 0.233,
-     "budget_usd": 377.83,
-     "cpc_bid_usd": 1.11,
-     "expected_clicks": {
-      "low": 272.0,
-      "mid": 340.0,
-      "high": 408.0
+      "low": 275.0,
+      "mid": 344.0,
+      "high": 413.0
      },
      "expected_conversions": {
       "low": 6.6,
-      "mid": 13.2,
-      "high": 22.1
+      "mid": 13.1,
+      "high": 21.9
      },
-     "capacity_usd": 1449.64,
-     "requires_host_approval": true,
-     "rationale": "score 0.31 -> fit x1.30 on CTR/CVR; bid $1.11; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 11315.08,
+     "requires_host_approval": false,
+     "rationale": "score 0.26 -> fit x1.27 on CTR/CVR; max bid $1.09 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.233,
-     "budget_usd": 377.47,
-     "cpc_bid_usd": 1.1,
+     "share": 0.219,
+     "budget_usd": 343.45,
+     "cpc_bid_usd": 1.04,
+     "start_bid_usd": 0.73,
      "expected_clicks": {
-      "low": 275.0,
-      "mid": 343.0,
-      "high": 412.0
+      "low": 264.0,
+      "mid": 330.0,
+      "high": 396.0
      },
      "expected_conversions": {
-      "low": 6.7,
-      "mid": 13.3,
-      "high": 22.2
+      "low": 6.0,
+      "mid": 12.0,
+      "high": 20.1
      },
-     "capacity_usd": 4957.06,
+     "capacity_usd": 4400.99,
      "requires_host_approval": false,
-     "rationale": "score 0.31 -> fit x1.29 on CTR/CVR; bid $1.10"
+     "rationale": "score 0.23 -> fit x1.22 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70% and raise only if under-delivering"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,620, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,570, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
@@ -1433,9 +1580,9 @@
      "pub_012",
      "pub_002"
     ],
-    "headline_template": "Fuel your next session, {first_name}",
-    "headline_no_name": "Fuel your next hard workout",
-    "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+    "headline_template": "Upgrade your stack for less, {first_name}",
+    "headline_no_name": "Upgrade your stack for half the cost",
+    "body": "Same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
     "cta": "Shop & Save"
    },
    {
@@ -1446,9 +1593,9 @@
      "pub_002",
      "pub_003"
     ],
-    "headline_template": "Optimize your stack for half the cost",
-    "headline_no_name": "Optimize your stack for half the cost",
-    "body": "Same formulations as the expensive brands. We compete on price, not on marketing so you only pay for what works.",
+    "headline_template": "Optimize your stack, {first_name}",
+    "headline_no_name": "Optimize your supplement stack",
+    "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
     "cta": "View Formulations"
    }
   ],
@@ -1461,6 +1608,7 @@
     "We compete on price, not on marketing.",
     "Same formulations as the expensive brands for half the cost."
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
     "pub_012"
    ],
@@ -1477,14 +1625,15 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the exact price point or average order value for your products?",
-   "Do you offer subscription options or is it strictly one-time purchases?"
+   "What is the exact price point or average order value of your supplement products?",
+   "Do you offer subscriptions or only one-time purchases?",
+   "What is your target customer demographic (age or gender skew, if any)?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 5.75
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 1,

@@ -1,7 +1,7 @@
 {
  "brief": "We make a non-alcoholic sparkling drink with adaptogens. It's for people who want to feel good without a hangover, kind of like a functional cocktail alternative.",
  "profile": {
-  "business_summary": "Produces a non-alcoholic sparkling beverage formulated with adaptogens, marketed as a functional alternative to cocktails for hangover-free relaxation.",
+  "business_summary": "An advertiser making a non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative for people who want to feel good without a hangover.",
   "product": "Non-alcoholic sparkling drink with adaptogens",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -11,126 +11,174 @@
   "target_age_range": null,
   "stated_claims": [
    "Non-alcoholic sparkling drink with adaptogens",
-   "Feel good without a hangover",
-   "Functional cocktail alternative"
+   "For people who want to feel good without a hangover",
+   "Kind of like a functional cocktail alternative"
   ],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "functional_beverages",
     "weight": 1.0,
-    "why": "Direct product category fit for functional non-alcoholic drinks."
+    "why": "The drink contains adaptogens and functions as a cocktail alternative."
    },
    {
     "tag": "beverages",
     "weight": 1.0,
-    "why": "Core drink product category."
-   },
-   {
-    "tag": "soda_alternative",
-    "weight": 0.5,
-    "why": "Serves as a healthier alternative to traditional soda or alcoholic beverages."
+    "why": "The product is a sparkling drink."
    },
    {
     "tag": "wellness_dtc",
     "weight": 0.5,
-    "why": "Appeals to health and wellness consumers seeking adaptogenic benefits."
+    "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
    },
    {
-    "tag": "gut_health",
-    "weight": 0.25,
-    "why": "Adjacent functional beverage interest area."
-   },
-   {
-    "tag": "supplements",
-    "weight": 0.25,
-    "why": "Contains adaptogens, overlapping with dietary supplement interests."
-   },
-   {
-    "tag": "groceries",
-    "weight": 0.25,
-    "why": "Consumable packaged beverage."
+    "tag": "soda_alternative",
+    "weight": 0.5,
+    "why": "It is a non-alcoholic sparkling drink that can serve as an alternative beverage option."
    }
   ],
   "competing_tags": [
+   "alcohol",
    "functional_beverages",
-   "soda_alternative",
-   "beverages"
+   "soda_alternative"
   ],
   "persona_affinity_tags": [
    "functional_beverages",
-   "wellness",
    "recovery",
-   "gourmet_food",
-   "organic_grocery"
+   "wellness"
   ],
   "persona_conflicts": [],
   "note_signals": [
    {
-    "publisher_id": "pub_020",
-    "alignment": 1,
-    "why": "Direct category match with strong overlap in functional beverages and wellness."
-   },
-   {
-    "publisher_id": "pub_008",
-    "alignment": 1,
-    "why": "Values-driven grocery audience interested in wellness and clean ingredients."
-   },
-   {
     "publisher_id": "pub_001",
     "alignment": 1,
-    "why": "Late-night traffic and alcohol category buyers present strong non-alcoholic cocktail alternative cross-sell."
+    "why": "High-frequency impulse shoppers on an instant delivery platform are a great fit for a ready-to-drink beverage."
    },
    {
-    "publisher_id": "pub_003",
+    "publisher_id": "pub_020",
     "alignment": 1,
-    "why": "Self-care focused active consumers are key target audience for functional hangover-free drinks."
+    "why": "Strong overlap with health-curious and functional beverage shoppers."
    }
   ],
-  "confidence": 0.9,
-  "gate": "proceed",
-  "gate_reason": "Clear product definition, functional benefits, and distinct audience positioning allowed straightforward tag mapping.",
+  "confidence": 0.84,
+  "gate": "clarify",
+  "gate_reason": "The product, category, and general audience are clear, but exact pricing, margin, and purchase model (one-time vs. subscription) are missing.",
   "missing_info": [
    "price_point_usd",
    "price_tier",
-   "purchase_model (one-time vs subscription options)",
-   "target demographics"
+   "target_age_range",
+   "fulfillment_notes",
+   "specific ingredients or adaptogens used"
   ],
   "clarifying_questions": [
-   "What is the retail price per unit or pack?",
-   "Do you offer subscription options or single unit/pack purchases?",
-   "What is your target demographic or core customer profile?"
-  ]
+   "What is the retail price per can or per pack?",
+   "Is this available as a one-time purchase, a subscription, or both?",
+   "What is your primary campaign goal (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {
+   "beverages": 1.0,
+   "functional_beverages": 1.0,
+   "soda_alternative": 1.0,
+   "wellness_dtc": 1.0,
+   "alcohol": 0.33
+  },
+  "sample_agreement": 0.87,
+  "competing_tag_share": {
+   "alcohol": 0.33,
+   "functional_beverages": 1.0,
+   "soda_alternative": 0.33
+  }
  },
  "publishers": [
   {
-   "publisher_id": "pub_012",
-   "publisher_name": "Daily Form",
-   "score": 0.2961,
+   "publisher_id": "pub_020",
+   "publisher_name": "Pop & Sip",
+   "score": 0.2544,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.5375,
+     "value": 1.0,
      "weight": 1.0,
-     "detail": "matches wellness_dtc, supplements (multiplier)"
+     "detail": "matches functional_beverages, beverages, soda_alternative (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.831,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.93)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Strong overlap with health-curious and functional beverage shoppers."
+    },
+    {
+     "name": "scale",
+     "value": 0.1820062580736496,
+     "weight": 0.05,
+     "detail": "5.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells functional_beverages, soda_alternative (100% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches functional_beverages, beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells functional_beverages, soda_alternative (100% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.2432,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches wellness_dtc (category only) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.834,
+     "weight": 0.35,
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.87)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -148,84 +196,42 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches wellness_dtc, supplements (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
-  },
-  {
-   "publisher_id": "pub_020",
-   "publisher_name": "Pop & Sip",
-   "score": 0.2831,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches functional_beverages, beverages, soda_alternative, gut_health (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Direct category match with strong overlap in functional beverages and wellness."
-    },
-    {
-     "name": "scale",
-     "value": 0.1820062580736496,
-     "weight": 0.05,
-     "detail": "5.2M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells beverages, functional_beverages, soda_alternative; may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches functional_beverages, beverages, soda_alternative, gut_health (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells beverages, functional_beverages, soda_alternative; may block the ad"
+   "reason": "Recommended: matches wellness_dtc (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
    "publisher_name": "Swiftcart",
-   "score": 0.1675,
+   "score": 0.0,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.25,
+     "value": 0.0,
      "weight": 1.0,
-     "detail": "matches groceries (multiplier)"
+     "detail": "no category link (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6158999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Late-night traffic and alcohol category buyers present strong non-alcoholic cocktail alternative cross-sell."
+     "weight": 0.2,
+     "detail": "High-frequency impulse shoppers on an instant delivery platform are a great fit for a ready-to-drink beverage."
     },
     {
      "name": "scale",
@@ -240,101 +246,11 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches groceries (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
-  },
-  {
-   "publisher_id": "pub_008",
-   "publisher_name": "Pantrygood",
-   "score": 0.1598,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.25,
-     "weight": 1.0,
-     "detail": "matches groceries (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Values-driven grocery audience interested in wellness and clean ingredients."
-    },
-    {
-     "name": "scale",
-     "value": 0.3858013051641558,
-     "weight": 0.05,
-     "detail": "10.4M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
+   "flags": [
+    "competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
    ],
-   "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches groceries (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
-  },
-  {
-   "publisher_id": "pub_015",
-   "publisher_name": "Kitchenly",
-   "score": 0.1456,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.25,
-     "weight": 1.0,
-     "detail": "matches groceries (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.7508824789306602,
-     "weight": 0.05,
-     "detail": "36.0M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.15 below cutoff 0.15; weakest signal category_fit (matches groceries (multiplier))."
+   "reason": "Excluded: no category link (multiplier) for this product. Flags: competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_002",
@@ -350,19 +266,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7152,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.84)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -396,20 +318,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5888,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Self-care focused active consumers are key target audience for functional hangover-free drinks."
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
     },
     {
      "name": "scale",
@@ -442,19 +370,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.3991,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.46)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -488,19 +422,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.39969999999999994,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.46)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -534,19 +474,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.563,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -580,19 +526,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5571,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.63)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -600,6 +552,58 @@
      "value": 0.1584725731116732,
      "weight": 0.05,
      "detail": "4.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_008",
+   "publisher_name": "Pantrygood",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5882999999999998,
+     "weight": 0.35,
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.63)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.3858013051641558,
+     "weight": 0.05,
+     "detail": "10.4M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -626,19 +630,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6322,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -672,19 +682,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6312,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -718,19 +734,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5883999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.64)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -764,19 +786,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6884,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.98)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -810,19 +838,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5898999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -830,6 +864,58 @@
      "value": 0.0,
      "weight": 0.05,
      "detail": "2.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_015",
+   "publisher_name": "Kitchenly",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5878,
+     "weight": 0.35,
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.64)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.7508824789306602,
+     "weight": 0.05,
+     "detail": "36.0M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -856,19 +942,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5923,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -902,19 +994,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7101999999999998,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.94)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -948,19 +1046,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6336999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Fitness Enthusiast best (host fit 0.67)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -994,19 +1098,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7486999999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.99)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1029,22 +1139,6 @@
  ],
  "personas": [
   {
-   "persona_id": "persona_001",
-   "persona_name": "The Wellness Optimizer",
-   "score": 0.448,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.80 (organic_grocery, wellness)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_012",
-    "pub_020",
-    "pub_008"
-   ]
-  },
-  {
    "persona_id": "persona_009",
    "persona_name": "The Fitness Enthusiast",
    "score": 0.448,
@@ -1056,8 +1150,22 @@
    ],
    "best_publishers": [
     "pub_020",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "persona_name": "The Wellness Optimizer",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (wellness)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
     "pub_012",
-    "pub_001"
+    "pub_020"
    ]
   },
   {
@@ -1072,40 +1180,7 @@
    ],
    "best_publishers": [
     "pub_020",
-    "pub_001",
     "pub_012"
-   ]
-  },
-  {
-   "persona_id": "persona_006",
-   "persona_name": "The Sustainability Buyer",
-   "score": 0.336,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.60 (organic_grocery)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_020",
-    "pub_008",
-    "pub_012"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "persona_name": "The Gifter",
-   "score": 0.336,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.60 (gourmet_food)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_008",
-    "pub_020",
-    "pub_001"
    ]
   },
   {
@@ -1119,9 +1194,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_008",
-    "pub_001",
-    "pub_020"
+    "pub_020",
+    "pub_012"
    ]
   },
   {
@@ -1135,9 +1209,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_008",
     "pub_020",
-    "pub_001"
+    "pub_012"
    ]
   },
   {
@@ -1152,8 +1225,22 @@
    ],
    "best_publishers": [
     "pub_012",
+    "pub_020"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "persona_name": "The Sustainability Buyer",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
     "pub_020",
-    "pub_008"
+    "pub_012"
    ]
   },
   {
@@ -1167,9 +1254,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_001",
     "pub_020",
-    "pub_008"
+    "pub_012"
    ]
   },
   {
@@ -1183,82 +1269,68 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_008",
-    "pub_001",
+    "pub_012",
+    "pub_020"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "persona_name": "The Gifter",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_020",
     "pub_012"
    ]
   }
  ],
  "creatives": [
   {
-   "persona_id": "persona_001",
-   "headline": "{first_name}, optimize your evening routine",
-   "body": "Try the functional cocktail alternative crafted with adaptogens. Feel good without a hangover so you never miss a morning workout.",
+   "persona_id": "persona_009",
+   "headline": "{first_name}, fuel your recovery without the hangover",
+   "body": "A non-alcoholic sparkling drink with adaptogens. Keep your performance on track and feel good without a hangover.",
    "cta": "Shop Now",
-   "headline_no_name": "Optimize your evening routine",
-   "angle": "outcome-focused",
+   "headline_no_name": "Fuel your recovery without the hangover",
+   "angle": "performance claims",
    "claims_used": [
-    "Functional cocktail alternative",
     "Non-alcoholic sparkling drink with adaptogens",
-    "Feel good without a hangover"
+    "For people who want to feel good without a hangover"
    ]
   },
   {
-   "persona_id": "persona_009",
-   "headline": "Fuel recovery without the hangover",
-   "body": "Keep your training on track with this non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for active days.",
-   "cta": "Try It",
-   "headline_no_name": "Fuel recovery without the hangover",
-   "angle": "performance claims",
+   "persona_id": "persona_001",
+   "headline": "Optimize your routine with functional adaptogens",
+   "body": "A non-alcoholic sparkling drink with adaptogens, designed for people who want to feel good without a hangover.",
+   "cta": "Discover More",
+   "headline_no_name": "Optimize your routine with functional adaptogens",
+   "angle": "outcome-focused",
    "claims_used": [
-    "Feel good without a hangover",
     "Non-alcoholic sparkling drink with adaptogens",
-    "Functional cocktail alternative"
+    "For people who want to feel good without a hangover"
    ]
   },
   {
    "persona_id": "persona_003",
-   "headline": "Spooky season sips with zero hangover",
-   "body": "Meet the ultimate functional cocktail alternative. A non-alcoholic sparkling drink with adaptogens designed to keep your vibe high.",
-   "cta": "Explore",
-   "headline_no_name": "Spooky season sips with zero hangover",
+   "headline": "The ultimate Halloween mocktail alternative",
+   "body": "A non-alcoholic sparkling drink with adaptogens. Kind of like a functional cocktail alternative to vibe with tonight.",
+   "cta": "Grab Yours",
+   "headline_no_name": "The ultimate Halloween mocktail alternative",
    "angle": "aesthetic-forward",
    "claims_used": [
-    "Feel good without a hangover",
-    "Functional cocktail alternative",
-    "Non-alcoholic sparkling drink with adaptogens"
-   ]
-  },
-  {
-   "persona_id": "persona_006",
-   "headline": "Clean ingredients in every can",
-   "body": "Enjoy a functional cocktail alternative with transparent, plant-based adaptogens.",
-   "cta": "Shop Now",
-   "headline_no_name": "Clean ingredients in every can",
-   "angle": "ingredient transparency",
-   "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
-    "Functional cocktail alternative"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "headline": "The ultimate party drink present",
-   "body": "Gift a functional cocktail alternative everyone can enjoy. This non-alcoholic sparkling drink with adaptogens lets them feel good.",
-   "cta": "Shop Gifts",
-   "headline_no_name": "The ultimate party drink present",
-   "angle": "giftable",
-   "claims_used": [
-    "Functional cocktail alternative",
-    "Non-alcoholic sparkling drink with adaptogens",
-    "Feel good without a hangover"
+    "Kind of like a functional cocktail alternative"
    ]
   }
  ],
  "reviews": [
   {
-   "persona_id": "persona_001",
-   "persona_fit": 5,
+   "persona_id": "persona_009",
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1266,8 +1338,8 @@
    "passed": true
   },
   {
-   "persona_id": "persona_009",
-   "persona_fit": 5,
+   "persona_id": "persona_001",
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1280,38 +1352,18 @@
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_006",
-   "persona_fit": 3,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "transparent, plant-based adaptogens"
-   ],
-   "distinct_from_others": true,
    "issues": [
-    "Added 'plant-based' and 'transparent' which are not in stated claims"
+    "Uses a holiday reference (Halloween) which may limit seasonality"
    ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_010",
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
    "passed": true
   }
  ],
  "config": {
   "schema_version": "1.0",
-  "status": "draft",
+  "status": "needs_clarification",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "Produces a non-alcoholic sparkling beverage formulated with adaptogens, marketed as a functional alternative to cocktails for hangover-free relaxation.",
-  "confidence": 0.9,
+  "advertiser_summary": "An advertiser making a non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative for people who want to feel good without a hangover.",
+  "confidence": 0.84,
   "objective": "acquisition",
   "economics": {
    "price_usd": 60.0,
@@ -1341,112 +1393,72 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 2690.0,
+   "monthly_budget_usd": 1540.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 89.67,
+   "daily_cap_usd": 51.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 2692.94,
+   "learning_budget_needed_usd": 1535.29,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
-     "publisher_id": "pub_012",
-     "publisher_name": "Daily Form",
-     "share": 0.327,
-     "budget_usd": 878.66,
-     "cpc_bid_usd": 2.2,
-     "expected_clicks": {
-      "low": 320.0,
-      "mid": 399.0,
-      "high": 479.0
-     },
-     "expected_conversions": {
-      "low": 8.4,
-      "mid": 16.8,
-      "high": 28.0
-     },
-     "capacity_usd": 7761.6,
-     "requires_host_approval": false,
-     "rationale": "score 0.30 -> fit x1.40 on CTR/CVR; bid $2.20"
-    },
-    {
      "publisher_id": "pub_020",
      "publisher_name": "Pop & Sip",
-     "share": 0.312,
-     "budget_usd": 840.09,
-     "cpc_bid_usd": 2.15,
+     "share": 0.511,
+     "budget_usd": 787.33,
+     "cpc_bid_usd": 2.2,
+     "start_bid_usd": 1.54,
      "expected_clicks": {
-      "low": 313.0,
-      "mid": 391.0,
-      "high": 469.0
+      "low": 286.0,
+      "mid": 358.0,
+      "high": 429.0
      },
      "expected_conversions": {
-      "low": 8.0,
-      "mid": 16.0,
-      "high": 26.7
+      "low": 7.5,
+      "mid": 15.0,
+      "high": 25.1
      },
-     "capacity_usd": 3662.24,
+     "capacity_usd": 3843.84,
      "requires_host_approval": true,
-     "rationale": "score 0.28 -> fit x1.36 on CTR/CVR; bid $2.15; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.25 -> fit x1.40 on CTR/CVR; max bid $2.20 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     },
     {
-     "publisher_id": "pub_001",
-     "publisher_name": "Swiftcart",
-     "share": 0.185,
-     "budget_usd": 497.05,
-     "cpc_bid_usd": 1.66,
+     "publisher_id": "pub_012",
+     "publisher_name": "Daily Form",
+     "share": 0.489,
+     "budget_usd": 752.67,
+     "cpc_bid_usd": 2.15,
+     "start_bid_usd": 1.5,
      "expected_clicks": {
-      "low": 240.0,
-      "mid": 299.0,
-      "high": 359.0
+      "low": 280.0,
+      "mid": 350.0,
+      "high": 420.0
      },
      "expected_conversions": {
-      "low": 4.7,
-      "mid": 9.5,
-      "high": 15.8
+      "low": 7.2,
+      "mid": 14.3,
+      "high": 23.9
      },
-     "capacity_usd": 88060.53,
+     "capacity_usd": 7394.38,
      "requires_host_approval": false,
-     "rationale": "score 0.17 -> fit x1.05 on CTR/CVR; bid $1.66"
-    },
-    {
-     "publisher_id": "pub_008",
-     "publisher_name": "Pantrygood",
-     "share": 0.176,
-     "budget_usd": 474.2,
-     "cpc_bid_usd": 1.62,
-     "expected_clicks": {
-      "low": 234.0,
-      "mid": 293.0,
-      "high": 351.0
-     },
-     "expected_conversions": {
-      "low": 4.5,
-      "mid": 9.1,
-      "high": 15.1
-     },
-     "capacity_usd": 10429.71,
-     "requires_host_approval": false,
-     "rationale": "score 0.16 -> fit x1.03 on CTR/CVR; bid $1.62"
+     "rationale": "score 0.24 -> fit x1.36 on CTR/CVR; max bid $2.15 (break-even at target CPA), start at 70% and raise only if under-delivering"
     }
    ],
    "warnings": [
-    "No budget given: recommending $2,690, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,540, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
    "publishers_include": [
-    "pub_001",
-    "pub_008",
     "pub_012",
     "pub_020"
    ],
    "publishers_exclude": [
     {
-     "id": "pub_015",
-     "reason": "Excluded: score 0.15 below cutoff 0.15; weakest signal category_fit (matches groceries (multiplier))."
+     "id": "pub_001",
+     "reason": "Excluded: no category link (multiplier) for this product. Flags: competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
     },
     {
      "id": "pub_002",
@@ -1473,6 +1485,10 @@
      "reason": "Excluded: no category link (multiplier) for this product."
     },
     {
+     "id": "pub_008",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
      "id": "pub_009",
      "reason": "Excluded: no category link (multiplier) for this product."
     },
@@ -1493,6 +1509,10 @@
      "reason": "Excluded: no category link (multiplier) for this product."
     },
     {
+     "id": "pub_015",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
      "id": "pub_016",
      "reason": "Excluded: no category link (multiplier) for this product."
     },
@@ -1510,11 +1530,9 @@
     }
    ],
    "personas": [
-    "persona_001",
     "persona_009",
-    "persona_003",
-    "persona_006",
-    "persona_010"
+    "persona_001",
+    "persona_003"
    ],
    "geo": "US (no advertiser geo restriction stated)",
    "serve_time_signals": {
@@ -1529,68 +1547,39 @@
   "creatives": [
    {
     "variant_id": "v1",
-    "persona_id": "persona_001",
+    "persona_id": "persona_009",
     "publisher_ids": [
-     "pub_012",
      "pub_020",
-     "pub_008"
+     "pub_012"
     ],
-    "headline_template": "{first_name}, optimize your evening routine",
-    "headline_no_name": "Optimize your evening routine",
-    "body": "Try the functional cocktail alternative crafted with adaptogens. Feel good without a hangover so you never miss a morning workout.",
+    "headline_template": "{first_name}, fuel your recovery without the hangover",
+    "headline_no_name": "Fuel your recovery without the hangover",
+    "body": "A non-alcoholic sparkling drink with adaptogens. Keep your performance on track and feel good without a hangover.",
     "cta": "Shop Now"
    },
    {
     "variant_id": "v2",
-    "persona_id": "persona_009",
+    "persona_id": "persona_001",
     "publisher_ids": [
-     "pub_020",
      "pub_012",
-     "pub_001"
+     "pub_020"
     ],
-    "headline_template": "Fuel recovery without the hangover",
-    "headline_no_name": "Fuel recovery without the hangover",
-    "body": "Keep your training on track with this non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for active days.",
-    "cta": "Try It"
+    "headline_template": "Optimize your routine with functional adaptogens",
+    "headline_no_name": "Optimize your routine with functional adaptogens",
+    "body": "A non-alcoholic sparkling drink with adaptogens, designed for people who want to feel good without a hangover.",
+    "cta": "Discover More"
    },
    {
     "variant_id": "v3",
     "persona_id": "persona_003",
     "publisher_ids": [
      "pub_020",
-     "pub_001",
      "pub_012"
     ],
-    "headline_template": "Spooky season sips with zero hangover",
-    "headline_no_name": "Spooky season sips with zero hangover",
-    "body": "Meet the ultimate functional cocktail alternative. A non-alcoholic sparkling drink with adaptogens designed to keep your vibe high.",
-    "cta": "Explore"
-   },
-   {
-    "variant_id": "v4",
-    "persona_id": "persona_006",
-    "publisher_ids": [
-     "pub_020",
-     "pub_008",
-     "pub_012"
-    ],
-    "headline_template": "Clean ingredients in every can",
-    "headline_no_name": "Clean ingredients in every can",
-    "body": "Enjoy a functional cocktail alternative with transparent, plant-based adaptogens.",
-    "cta": "Shop Now"
-   },
-   {
-    "variant_id": "v5",
-    "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_008",
-     "pub_020",
-     "pub_001"
-    ],
-    "headline_template": "The ultimate party drink present",
-    "headline_no_name": "The ultimate party drink present",
-    "body": "Gift a functional cocktail alternative everyone can enjoy. This non-alcoholic sparkling drink with adaptogens lets them feel good.",
-    "cta": "Shop Gifts"
+    "headline_template": "The ultimate Halloween mocktail alternative",
+    "headline_no_name": "The ultimate Halloween mocktail alternative",
+    "body": "A non-alcoholic sparkling drink with adaptogens. Kind of like a functional cocktail alternative to vibe with tonight.",
+    "cta": "Grab Yours"
    }
   ],
   "frequency_cap": {
@@ -1600,9 +1589,10 @@
   "guardrails": {
    "claims_allowed": [
     "Non-alcoholic sparkling drink with adaptogens",
-    "Feel good without a hangover",
-    "Functional cocktail alternative"
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
     "pub_020"
    ],
@@ -1619,20 +1609,18 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the retail price per unit or pack?",
-   "Do you offer subscription options or single unit/pack purchases?",
-   "What is your target demographic or core customer profile?"
+   "What is the retail price per can or per pack?",
+   "Is this available as a one-time purchase, a subscription, or both?",
+   "What is your primary campaign goal (e.g., ROAS, new customer acquisition)?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 18.34
+  "creative": 0.0
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   "persona_006"
-  ]
+  "rounds": 1,
+  "rewritten": []
  }
 }

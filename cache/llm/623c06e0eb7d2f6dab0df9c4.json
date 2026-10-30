@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Hand-poured Vermont candles for your space",
+      "body": "Small-batch candles poured by hand in Vermont with natural soy wax and no synthetic fragrances.",
+      "cta": "Shop candles",
+      "headline_no_name": "Hand-poured Vermont candles for your space",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Traditional Vermont craftsmanship",
+      "body": "Small-batch candles poured by hand in Vermont, featuring natural soy wax and no synthetic fragrances.",
+      "cta": "Explore collection",
+      "headline_no_name": "Traditional Vermont craftsmanship",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Natural soy wax and zero synthetics",
+      "body": "Small-batch candles poured by hand in Vermont made with natural soy wax and no synthetic fragrances.",
+      "cta": "Learn more",
+      "headline_no_name": "Natural soy wax and zero synthetics",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A thoughtful gift made in Vermont",
+      "body": "These are mostly bought as gifts. Small-batch candles poured by hand in Vermont with natural soy wax.",
+      "cta": "Find a gift",
+      "headline_no_name": "A thoughtful gift made in Vermont",
+      "angle": "giftable",
+      "claims_used": [
+        "Mostly bought as gifts",
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax"
+      ]
+    }
+  ]
+}

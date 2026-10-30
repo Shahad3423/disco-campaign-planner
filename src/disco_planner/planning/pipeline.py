@@ -102,6 +102,7 @@ def run(
         frequency_cap=catalog.config("pricing")["network"]["frequency_cap"],
         guardrails={
             "claims_allowed": profile.stated_claims,
+            "claims_blocked_pending_substantiation": profile.claims_needing_substantiation,
             "competitor_hosts_need_approval": [s.publisher_id for s in scores if s.recommended and s.flags],
             "stop_loss": catalog.config("pricing")["budget"]["stop_loss"],
             "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name",

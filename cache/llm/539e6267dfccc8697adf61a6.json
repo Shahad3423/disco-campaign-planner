@@ -1,0 +1,15 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Fails to include discount-forward messaging, bundle offers, or specific value articulation required by the value-conscious persona."
+      ],
+      "passed": false
+    }
+  ]
+}

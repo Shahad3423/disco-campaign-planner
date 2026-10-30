@@ -1,0 +1,69 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, skip single-use plastic bottles",
+      "body": "Make your cleaning routine sustainable. Our refillable, concentrated formulas deliver performance that works as well as the big brands.",
+      "cta": "Shop Refills",
+      "headline_no_name": "Skip single-use plastic bottles today",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Skip the single-use plastic bottles",
+        "Refillable, concentrated cleaning products",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, stock up on easy refills",
+      "body": "Save time and skip the single-use plastic bottles with our refillable, concentrated cleaning products that work as well as the big brands.",
+      "cta": "Get Started",
+      "headline_no_name": "Stock up on easy refills",
+      "angle": "time-saving",
+      "claims_used": [
+        "Skip the single-use plastic bottles",
+        "Refillable, concentrated cleaning products",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, elevate your cleaning routine",
+      "body": "Invest in refillable, concentrated cleaning products. Skip the single-use plastic bottles while getting performance equal to big brands.",
+      "cta": "Explore Collection",
+      "headline_no_name": "Elevate your cleaning routine",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, get more value from cleaning",
+      "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands for less waste.",
+      "cta": "Shop Bundles",
+      "headline_no_name": "Get more value from cleaning",
+      "angle": "clear value props",
+      "claims_used": [
+        "Skip the single-use plastic bottles",
+        "Refillable, concentrated cleaning products",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, prep your home for Halloween",
+      "body": "Skip the single-use plastic bottles this season with refillable, concentrated cleaning products that work as well as the big brands.",
+      "cta": "Shop Gift Sets",
+      "headline_no_name": "Prep your home for Halloween",
+      "angle": "giftable",
+      "claims_used": [
+        "Skip the single-use plastic bottles",
+        "Refillable, concentrated cleaning products",
+        "Works as well as the big brands"
+      ]
+    }
+  ]
+}

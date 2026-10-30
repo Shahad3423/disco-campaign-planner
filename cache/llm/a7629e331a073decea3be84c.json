@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, fuel your routine right",
+      "body": "Upgrade your nutrition stack with protein bars that don't taste like cardboard.",
+      "cta": "Shop Protein Bars",
+      "headline_no_name": "Fuel your daily routine right",
+      "angle": "ingredient transparency and outcome-focused",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Power your next heavy workout",
+      "body": "Reach for protein bars that don't taste like cardboard when you need peak performance.",
+      "cta": "Get Fuel",
+      "headline_no_name": "Power your next heavy workout",
+      "angle": "performance claims",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A sweet Halloween surprise",
+      "body": "Share protein bars that don't taste like cardboard with friends this season.",
+      "cta": "Send Gift",
+      "headline_no_name": "A sweet Halloween surprise",
+      "angle": "giftable",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}

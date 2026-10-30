@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, upgrade your space",
+      "body": "Ditch the basic bedroom. Discover actually-breathable stuff made in Portugal with a grown-up aesthetic alternative to Brooklinen.",
+      "cta": "Shop the vibe",
+      "headline_no_name": "Upgrade your space with this vibe",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "A mature aesthetic for your home",
+      "body": "Experience actually-breathable stuff made in Portugal. A refined, grown-up aesthetic alternative to Brooklinen or Parachute.",
+      "cta": "Explore the collection",
+      "headline_no_name": "A mature aesthetic for your home",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Crafted responsibly in Portugal",
+      "body": "Invest in actually-breathable stuff made in Portugal, offering a mindful, grown-up aesthetic alternative to Brooklinen or Parachute.",
+      "cta": "Discover origin",
+      "headline_no_name": "Crafted responsibly in Portugal",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Give a grown-up aesthetic",
+      "body": "Surprise them with actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to Brooklinen.",
+      "cta": "Shop gifts",
+      "headline_no_name": "Give a grown-up aesthetic",
+      "angle": "giftable",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    }
+  ]
+}

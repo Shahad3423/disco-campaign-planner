@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "For {first_name} and your pack",
+      "body": "Know every single ingredient that goes into your dogs' bowls. Quality nutrition for family members who happen to have four legs.",
+      "cta": "See Ingredients",
+      "headline_no_name": "For you and your furry pack",
+      "angle": "ingredient transparency",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Make feeding time simple",
+      "body": "Skip the heavy lifting and store trips. Get premium dog food delivered right to your door with flexible, easy subscriptions.",
+      "cta": "Start Saving Time",
+      "headline_no_name": "Make feeding time simple",
+      "angle": "time-saving",
+      "claims_used": []
+    }
+  ]
+}

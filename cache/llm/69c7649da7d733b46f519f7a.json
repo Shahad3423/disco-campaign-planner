@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, try this new kind of thing for moms",
+      "body": "Discover a brand new kind of thing for moms. Get yours today and see why other shoppers love it.",
+      "cta": "Shop Now",
+      "headline_no_name": "Try this new kind of thing for moms",
+      "angle": "discount-forward",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}
