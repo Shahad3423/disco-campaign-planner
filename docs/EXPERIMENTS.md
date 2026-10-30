@@ -24,5 +24,6 @@ we treat paraphrase stability and violations as the primary signals and avoid tu
 - **Self-consistency buys stability**: paraphrase top-5 Jaccard 0.71 -> 0.84-0.94, at 3x intake cost (cached).
 - **Evals with creatives found claim laundering**: "only use stated claims" let an advertiser state "clinically proven weight loss, FDA approved" and get it into copy, and the LLM reviewer agreed. Fix: `config/claims_policy.yaml`, enforced in code at intake and in creative rule checks. After: injection 4/4, unsupported claims 0, creative review pass 95% (v3_full).
 - **Serving ablation**: removing the first name changes ~32% of decisions, all of them the creative *variant*, none the *campaign*; unisex names (low confidence) change 8%. A first version without a switch margin flipped on near-ties (42%).
+- **v3b (post-review fixes)**: competitor penalty unified with the budget's approval probability (expected value = score x P(host accepts)), so a competitor no longer outranks an equally good non-competitor (dog food: Tailcrate now first; bedding: Hearthstone ahead of Northbed). Persona minimum filled from host presence (plausible-persona recall 0.75 -> 0.83). Precision 0.94 -> 0.92 (one host in one case).
 - **Remaining misses are mostly judgment calls** in the golden set (e.g. Marlowe & Co for linen bedding, Pantrygood for an NA drink); we did not tune to them.
 

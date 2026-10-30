@@ -58,3 +58,13 @@ def test_expensive_product_penalised_on_low_aov_host():
     scores = by_id(rank_publishers(shells, TODAY))
     price = lambda pid: next(c.value for c in scores[pid].components if c.name == "price_fit")
     assert price("pub_017") > price("pub_002")  # $118 AOV mid-high beats $78 AOV
+
+
+def test_competitor_penalty_equals_expected_value_of_approval():
+    # Same profile scored with and without the competitor tag: the ratio must equal the
+    # approval probability from pricing.yaml (one source of truth with the budget).
+    from disco_planner.data import catalog
+    with_comp = by_id(rank_publishers(dog_food_profile(), TODAY))["pub_007"].score
+    without = by_id(rank_publishers(dog_food_profile(competing_tags=[]), TODAY))["pub_007"].score
+    approval = catalog.config("pricing")["priors"]["competitor_approval_probability"]
+    assert abs(with_comp / without - approval) < 0.01

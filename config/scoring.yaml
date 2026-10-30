@@ -21,7 +21,7 @@ category:
   attribute_bonus: 0.10       # per attribute tag (x its weight), e.g. sustainable
 
 penalties:
-  competitor_conflict: 0.45   # host sells the same thing; host likely blocks us (D1)
+  # competitor_conflict: now = pricing.yaml priors.competitor_approval_probability (expected value)
   notes_misaligned: 0.80      # applied when notes_fit alignment == -1
 
 recommend:

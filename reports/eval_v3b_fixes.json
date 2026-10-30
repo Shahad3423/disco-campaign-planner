@@ -1,0 +1,398 @@
+{
+ "aggregate": {
+  "n": 15,
+  "gate_accuracy": 0.867,
+  "gate_accuracy_incl_adjacent": 1.0,
+  "must_include_recall@5": 0.7,
+  "must_exclude_violations": 1,
+  "precision": 0.924,
+  "competitor_flag_recall": 0.875,
+  "implausible_personas_selected": 5,
+  "plausible_persona_recall": 0.833,
+  "budget_invariants_ok": 1.0,
+  "wall_time_s": 0.1
+ },
+ "cases": [
+  {
+   "id": 1,
+   "difficulty": "medium",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.83,
+   "recommended": [
+    "pub_018",
+    "pub_007",
+    "pub_009"
+   ],
+   "must_include_recall": 1.0,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_002",
+    "persona_004",
+    "persona_007"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 0.6666666666666666,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 2,
+   "difficulty": "medium",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.85,
+   "recommended": [
+    "pub_016",
+    "pub_003",
+    "pub_004",
+    "pub_005",
+    "pub_002",
+    "pub_010"
+   ],
+   "must_include_recall": 1.0,
+   "must_exclude_violations": [
+    "pub_005"
+   ],
+   "precision": 0.5,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_001",
+    "persona_006",
+    "persona_009"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 3,
+   "difficulty": "hard",
+   "gate": "clarify",
+   "expected_gate": "proceed",
+   "gate_ok": false,
+   "gate_adjacent": true,
+   "confidence": 0.84,
+   "recommended": [
+    "pub_012",
+    "pub_020"
+   ],
+   "must_include_recall": 0.0,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_001",
+    "persona_003",
+    "persona_009"
+   ],
+   "implausible_selected": [
+    "persona_001"
+   ],
+   "plausible_recall": 0.6666666666666666,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 4,
+   "difficulty": "easy",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.8,
+   "recommended": [
+    "pub_014",
+    "pub_011",
+    "pub_003"
+   ],
+   "must_include_recall": 0.6666666666666666,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": null,
+   "personas_selected": [
+    "persona_003",
+    "persona_005",
+    "persona_006",
+    "persona_010"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 5,
+   "difficulty": "hard",
+   "gate": "clarify",
+   "expected_gate": "clarify",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.46,
+   "recommended": [],
+   "must_include_recall": null,
+   "must_exclude_violations": [],
+   "precision": null,
+   "competitor_flag_recall": null,
+   "personas_selected": [
+    "persona_001",
+    "persona_002",
+    "persona_003"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": null
+  },
+  {
+   "id": 6,
+   "difficulty": "hard",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.79,
+   "recommended": [
+    "pub_002",
+    "pub_017",
+    "pub_016"
+   ],
+   "must_include_recall": 1.0,
+   "must_exclude_violations": [],
+   "precision": 0.6666666666666666,
+   "competitor_flag_recall": null,
+   "personas_selected": [
+    "persona_001",
+    "persona_005",
+    "persona_009",
+    "persona_010"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 7,
+   "difficulty": "easy",
+   "gate": "off_network",
+   "expected_gate": "off_network",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.5,
+   "recommended": [],
+   "must_include_recall": null,
+   "must_exclude_violations": [],
+   "precision": null,
+   "competitor_flag_recall": null,
+   "personas_selected": [],
+   "implausible_selected": [],
+   "plausible_recall": null
+  },
+  {
+   "id": 8,
+   "difficulty": "hard",
+   "gate": "clarify",
+   "expected_gate": "clarify",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.72,
+   "recommended": [],
+   "must_include_recall": null,
+   "must_exclude_violations": [],
+   "precision": null,
+   "competitor_flag_recall": null,
+   "personas_selected": [
+    "persona_001",
+    "persona_002",
+    "persona_008"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 1.0
+  },
+  {
+   "id": 9,
+   "difficulty": "medium",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.84,
+   "recommended": [
+    "pub_001",
+    "pub_014",
+    "pub_011"
+   ],
+   "must_include_recall": 0.5,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_002",
+    "persona_005",
+    "persona_006",
+    "persona_008",
+    "persona_010"
+   ],
+   "implausible_selected": [
+    "persona_010"
+   ],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 10,
+   "difficulty": "hard",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.84,
+   "recommended": [
+    "pub_005",
+    "pub_004",
+    "pub_016"
+   ],
+   "must_include_recall": 1.0,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": null,
+   "personas_selected": [
+    "persona_005",
+    "persona_006",
+    "persona_010"
+   ],
+   "implausible_selected": [
+    "persona_010"
+   ],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 11,
+   "difficulty": "medium",
+   "gate": "clarify",
+   "expected_gate": "proceed",
+   "gate_ok": false,
+   "gate_adjacent": true,
+   "confidence": 0.78,
+   "recommended": [
+    "pub_012",
+    "pub_003"
+   ],
+   "must_include_recall": 0.3333333333333333,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 0.0,
+   "personas_selected": [
+    "persona_001",
+    "persona_009",
+    "persona_010"
+   ],
+   "implausible_selected": [
+    "persona_001"
+   ],
+   "plausible_recall": 0.3333333333333333,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 12,
+   "difficulty": "hard",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.88,
+   "recommended": [
+    "pub_009",
+    "pub_007",
+    "pub_018"
+   ],
+   "must_include_recall": null,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_002",
+    "persona_004",
+    "persona_008"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 0.6666666666666666,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 13,
+   "difficulty": "medium",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.84,
+   "recommended": [
+    "pub_002",
+    "pub_012",
+    "pub_003",
+    "pub_017"
+   ],
+   "must_include_recall": 1.0,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_001",
+    "persona_008",
+    "persona_009"
+   ],
+   "implausible_selected": [
+    "persona_001"
+   ],
+   "plausible_recall": 1.0,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 14,
+   "difficulty": "medium",
+   "gate": "proceed",
+   "expected_gate": "proceed",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.74,
+   "recommended": [
+    "pub_014",
+    "pub_011"
+   ],
+   "must_include_recall": 0.5,
+   "must_exclude_violations": [],
+   "precision": 1.0,
+   "competitor_flag_recall": 1.0,
+   "personas_selected": [
+    "persona_003",
+    "persona_005",
+    "persona_006",
+    "persona_010"
+   ],
+   "implausible_selected": [],
+   "plausible_recall": 0.6666666666666666,
+   "budget_invariants_ok": true
+  },
+  {
+   "id": 15,
+   "difficulty": "easy",
+   "gate": "reject_low_signal",
+   "expected_gate": "reject_low_signal",
+   "gate_ok": true,
+   "gate_adjacent": false,
+   "confidence": 0.33,
+   "recommended": [],
+   "must_include_recall": null,
+   "must_exclude_violations": [],
+   "precision": null,
+   "competitor_flag_recall": null,
+   "personas_selected": [],
+   "implausible_selected": [],
+   "plausible_recall": null
+  }
+ ],
+ "robustness": null
+}
