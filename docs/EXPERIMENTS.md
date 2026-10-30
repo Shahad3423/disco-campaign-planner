@@ -27,3 +27,12 @@ we treat paraphrase stability and violations as the primary signals and avoid tu
 - **v3b (post-review fixes)**: competitor penalty unified with the budget's approval probability (expected value = score x P(host accepts)), so a competitor no longer outranks an equally good non-competitor (dog food: Tailcrate now first; bedding: Hearthstone ahead of Northbed). Persona minimum filled from host presence (plausible-persona recall 0.75 -> 0.83). Precision 0.94 -> 0.92 (one host in one case).
 - **Remaining misses are mostly judgment calls** in the golden set (e.g. Marlowe & Co for linen bedding, Pantrygood for an NA drink); we did not tune to them.
 
+
+## Holdout (100 real brands, written blind) — partial
+Free-tier quota ran out after 28 briefs (all in-catalog). On those: 28/28 gates match the writer's
+expectation; weak-fit fired for Litter-Robot (~$700) and Quince. Two findings, both fixed or queued:
+- **The LLM over-filled `claims_needing_substantiation`** ("self-cleaning", "fair trade", "bond repair"),
+  silently removing legitimate selling points from copy. The field is now code-owned: only
+  `config/claims_policy.yaml` patterns block; everything else returns to the allowed claims (tested).
+- **Apparel hosts appear in ~40% of plans** (13 of the 28 briefs are apparel) and some briefs that state
+  "women 22-40" still get a 50-70 host in a 6-host list; to judge on the full 100 before changing the cap.
