@@ -1,0 +1,91 @@
+# US retail moments for 2026-2027.
+# intensity = 1.0 from `start` to `end`; before `start` it ramps up over `lead_days`
+# (the shopping window before the moment), and it is 0 outside.
+# `tags` use the catalog vocabulary (publisher categories/subcategories in data/publishers.json);
+# `boosts_personas` are ids from data/shopper_personas.json; `gifting: true` feeds gift_signal.
+# Dates are approximate for floating events (Prime-Day-style sales, back-to-school).
+events:
+  - name: Valentine's Day
+    windows: [[2026-02-14, 2026-02-14], [2027-02-14, 2027-02-14]]
+    lead_days: 14
+    gifting: true
+    tags: [beauty, skincare, makeup, gifting, intimates, meal_kits]
+    boosts_personas: [persona_010, persona_003]
+  - name: Mother's Day
+    windows: [[2026-05-10, 2026-05-10], [2027-05-09, 2027-05-09]]
+    lead_days: 14
+    gifting: true
+    tags: [beauty, skincare, apparel, gifting, spa, home]
+    boosts_personas: [persona_010, persona_005]
+  - name: Father's Day
+    windows: [[2026-06-21, 2026-06-21], [2027-06-20, 2027-06-20]]
+    lead_days: 14
+    gifting: true
+    tags: [apparel, socks, gifting, cookware, groceries]
+    boosts_personas: [persona_010]
+  - name: Earth Day
+    windows: [[2026-04-22, 2026-04-22], [2027-04-22, 2027-04-22]]
+    lead_days: 7
+    gifting: false
+    tags: [sustainable, non_toxic, organic, natural]
+    boosts_personas: [persona_006]
+  - name: Summer
+    windows: [[2026-06-20, 2026-09-22], [2027-06-20, 2027-09-22]]
+    lead_days: 7
+    gifting: false
+    tags: [functional_beverages, soda_alternative, activewear, beauty, groceries]
+    boosts_personas: [persona_009, persona_003]
+  - name: Prime-Day-style July sales
+    windows: [[2026-07-14, 2026-07-15], [2027-07-13, 2027-07-14]]
+    lead_days: 5
+    gifting: false
+    tags: [apparel, home, household, beauty]
+    boosts_personas: [persona_008]
+  - name: Back to school
+    windows: [[2026-07-20, 2026-09-07], [2027-07-19, 2027-09-06]]
+    lead_days: 7
+    gifting: false
+    tags: [apparel, shoes, household, meal_kits, convenience]
+    boosts_personas: [persona_002, persona_008, persona_003]
+  - name: Halloween
+    windows: [[2026-10-31, 2026-10-31], [2027-10-31, 2027-10-31]]
+    lead_days: 14
+    gifting: false
+    tags: [convenience, alcohol, household, beverages]
+    boosts_personas: [persona_002, persona_003]
+  - name: Black Friday / Cyber Monday
+    windows: [[2026-11-27, 2026-11-30], [2027-11-26, 2027-11-29]]
+    lead_days: 14
+    gifting: true
+    tags: [apparel, home, bedding, cookware, beauty, gifting, subscription]
+    boosts_personas: [persona_010, persona_008]
+  - name: Hanukkah
+    windows: [[2026-12-04, 2026-12-12], [2027-12-24, 2028-01-01]]
+    lead_days: 14
+    gifting: true
+    tags: [gifting, home, cookware, apparel]
+    boosts_personas: [persona_010]
+  - name: Christmas
+    windows: [[2026-12-25, 2026-12-25], [2027-12-25, 2027-12-25]]
+    lead_days: 45
+    gifting: true
+    tags: [gifting, socks, underwear, bedding, cookware, skincare, apparel, home]
+    boosts_personas: [persona_010, persona_005]
+  - name: New Year resolutions (fitness and wellness)
+    windows: [[2026-01-01, 2026-01-31], [2027-01-01, 2027-01-31]]
+    lead_days: 5
+    gifting: false
+    tags: [activewear, fitness_classes, yoga, vitamins, supplements, wellness, gut_health]
+    boosts_personas: [persona_001, persona_009]
+  - name: Dry January
+    windows: [[2026-01-01, 2026-01-31], [2027-01-01, 2027-01-31]]
+    lead_days: 3
+    gifting: false
+    tags: [functional_beverages, soda_alternative, gut_health, wellness]
+    boosts_personas: [persona_001, persona_009]
+  - name: Ski season
+    windows: [[2026-01-01, 2026-03-31], [2026-12-01, 2027-03-31]]
+    lead_days: 14
+    gifting: false
+    tags: [activewear, outerwear, socks, shoes]
+    boosts_personas: [persona_009]

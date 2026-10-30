@@ -1,0 +1,5 @@
+# Only needed to rebuild data/reference/*.csv (scripts/build_reference_tables.py)
+-r requirements.txt
+pandas
+requests
+pyreadr

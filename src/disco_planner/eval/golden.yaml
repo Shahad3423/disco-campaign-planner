@@ -1,0 +1,551 @@
+# Blind hand-labeled golden set; see README.md in this directory.
+# Labeled 2026-10-30, independent of any scoring or ranking code.
+- id: 1
+  text: We sell premium dog food for senior dogs, targeting owners who care about joint health and longevity.
+    Grain-free, vet-formulated, subscription-based.
+  expected_gate: proceed
+  must_include:
+  - pub_018
+  nice_to_have:
+  - pub_015
+  - pub_008
+  must_exclude:
+  - pub_005
+  - pub_013
+  - pub_019
+  - pub_004
+  competitor_conflict:
+  - pub_007
+  - pub_009
+  plausible_personas:
+  - persona_004
+  - persona_002
+  - persona_001
+  implausible_personas:
+  - persona_008
+  - persona_010
+  claims_to_watch:
+  - Do not say 'vet-recommended' or 'vet-approved'; the brief only says vet-formulated.
+  - Do not promise to cure, treat, or reverse arthritis or joint disease, or add lifespan guarantees;
+    'joint health' and 'longevity' are the advertiser's framing, keep it supportive.
+  - Do not invent clinical studies, ingredient percentages (glucosamine doses etc.), prices, or discounts.
+  - Grain-free, subscription, and vet-formulated are the only product facts available.
+  rationale: Premium subscription dog food is directly sold by pub_007 Pawline (pet_food, subscription,
+    'responsive to premium positioning') and pub_009 Ruffco (pet_food), so per D1 both are competitor
+    conflicts that should be flagged and down-ranked, not ranked first. The best non-competing dog-owner
+    audience is pub_018 Tailcrate (pet_supplies/toys/treats, 'treating dogs as family'), though its AOV
+    of $35 and 'fun, playful' voice fit senior joint-health messaging only loosely and treats are adjacent.
+    Ranking Pawline/Ruffco with a conflict flag is defensible; ranking them above all non-conflicting
+    options is not.
+  difficulty: medium
+- id: 2
+  text: A sustainable activewear brand for women. Made from recycled ocean plastic. Price point sits between
+    Lululemon and Girlfriend Collective.
+  expected_gate: proceed
+  must_include:
+  - pub_003
+  - pub_016
+  nice_to_have:
+  - pub_017
+  - pub_012
+  - pub_008
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_005
+  competitor_conflict:
+  - pub_002
+  - pub_017
+  plausible_personas:
+  - persona_006
+  - persona_009
+  - persona_001
+  implausible_personas:
+  - persona_008
+  - persona_005
+  claims_to_watch:
+  - Only claim 'recycled ocean plastic' as stated; do not invent a recycled-content percentage, certifications
+    (B Corp, bluesign, GRS), or carbon-neutral claims. persona_006 is skeptical of greenwashing and wants
+    specific claims.
+  - Do not name or compare to Lululemon or Girlfriend Collective in copy, or claim to be better than them;
+    the price positioning is only 'between' them.
+  - Do not state an exact price or discount.
+  rationale: pub_002 Movewell (apparel/activewear, 82% female, 25-44) is the closest audience but sells
+    activewear, so it is a direct competitor; pub_017 Cloudfoot (shoes, activewear, sustainable) is a
+    partial overlap. Non-competing women with fitness/sustainability intent are pub_003 Studiogrid (74%
+    female, high income, fitness_classes/yoga) and pub_016 Stride & Stem (94% female, sustainable, $142
+    AOV matching a mid-premium price point). persona_008 (price_sensitivity high) is a poor fit for a
+    premium-positioned brand.
+  difficulty: medium
+- id: 3
+  text: We make a non-alcoholic sparkling drink with adaptogens. It's for people who want to feel good
+    without a hangover, kind of like a functional cocktail alternative.
+  expected_gate: proceed
+  must_include:
+  - pub_008
+  nice_to_have:
+  - pub_001
+  - pub_003
+  - pub_013
+  - pub_012
+  - pub_002
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_005
+  competitor_conflict:
+  - pub_020
+  plausible_personas:
+  - persona_003
+  - persona_009
+  - persona_007
+  implausible_personas:
+  - persona_001
+  - persona_005
+  - persona_008
+  claims_to_watch:
+  - 'Make no health claims: do not claim adaptogens reduce stress, improve focus or mood, or ''detox'';
+    do not claim to cure or prevent hangovers beyond the plain fact that it contains no alcohol.'
+  - Do not name specific adaptogens, doses, sugar/calorie figures, or 'sober' as a medical state; none
+    are in the brief.
+  - pub_012 Daily Form's audience is 'skeptical of unsubstantiated health claims', so any claim-heavy
+    copy there is a risk.
+  - 'pub_001 Swiftcart has an ''alcohol'' subcategory: avoid copy that disparages drinking or targets
+    minors.'
+  rationale: pub_020 Pop & Sip (functional_beverages, soda_alternative; 'health-curious but indulgence-seeking')
+    is the best audience match but sells a directly competing product, so it is flagged. pub_008 Pantrygood
+    (natural, 'responsive to clean-ingredient, sustainability, and wellness claims', 28-48, high income)
+    is the clear non-competing fit. pub_001 Swiftcart (alcohol subcategory, late-night spike, 18-34) has
+    the right moment for an alcohol alternative but an alcohol retailer may not accept 'drink without
+    the hangover' framing, and it is a general grocer, so it is only nice-to-have. pub_012 Daily Form
+    is risky because adaptogen benefits are weakly substantiated.
+  difficulty: hard
+- id: 4
+  text: Small-batch candles poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Mostly
+    bought as gifts.
+  expected_gate: proceed
+  must_include:
+  - pub_014
+  - pub_010
+  - pub_011
+  nice_to_have:
+  - pub_013
+  - pub_004
+  - pub_005
+  - pub_008
+  - pub_003
+  - pub_020
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  competitor_conflict: []
+  plausible_personas:
+  - persona_010
+  - persona_005
+  - persona_003
+  - persona_006
+  implausible_personas:
+  - persona_008
+  - persona_009
+  claims_to_watch:
+  - '''Natural soy wax, no synthetic fragrances'' are the supported claims; do not claim ''non-toxic'',
+    ''clean-burning'', ''eco-friendly'', ''organic'', or specific burn times.'
+  - Say hand-poured in Vermont only; do not claim ingredients are sourced in Vermont or invent heritage
+    or founding stories.
+  - Do not promise delivery before a holiday date or free shipping; no shipping terms in the brief.
+  rationale: No publisher sells candles, so there is no competitor conflict. 'Mostly bought as gifts'
+    plus today being 2026-10-30 points at pub_010 Heartfoot (gifting subcategory, 'strong gifting season
+    uplift (Nov-Dec)') and pub_014 Hearthstone Goods (home, 'gifting and new-home life events drive purchase',
+    $198 AOV, non_toxic). pub_011 Northbed (home textiles, design-conscious, high income) is a natural
+    home-category audience. persona_010 Gifter is the headline persona; persona_008 (price_sensitivity
+    high) is weakly fit for premium handmade.
+  difficulty: easy
+- id: 5
+  text: We help people feel better.
+  expected_gate: clarify
+  must_include: []
+  nice_to_have:
+  - pub_003
+  - pub_012
+  - pub_020
+  - pub_008
+  must_exclude: []
+  competitor_conflict: []
+  plausible_personas: []
+  implausible_personas: []
+  claims_to_watch:
+  - Do not infer a product category, health or medical benefit, or audience from 'feel better'; any exploratory
+    draft must be labeled as such and make no wellness-outcome claims.
+  - Do not invent a price, subscription, or persona.
+  rationale: '''We help people feel better'' has no product, price, audience, or goal; it could be mental
+    health, supplements, a service, or an app. Per D7 the system should ask 2-4 questions (what is it,
+    who buys it, price) rather than rank. The nice-to-haves (Studiogrid, Daily Form, Pop & Sip, Pantrygood)
+    are only the wellness-adjacent publishers an exploratory draft might surface; no placement is safe
+    enough to require.'
+  difficulty: hard
+- id: 6
+  text: Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear. Starts
+    at $650, goes up from there.
+  expected_gate: proceed
+  must_include:
+  - pub_017
+  nice_to_have:
+  - pub_002
+  - pub_011
+  - pub_014
+  - pub_003
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_001
+  - pub_005
+  competitor_conflict: []
+  plausible_personas:
+  - persona_009
+  - persona_001
+  implausible_personas:
+  - persona_008
+  - persona_003
+  - persona_007
+  claims_to_watch:
+  - Do not invent waterproof/breathability ratings (e.g. 20k mm), Gore-Tex or other membrane names, or
+    weights.
+  - Do not make safety claims such as 'avalanche safe' or 'keeps you safe'; do not claim official ski-patrol
+    certification or sponsorship beyond 'what patrollers wear'.
+  - Price is 'starts at $650'; do not state discounts or exact SKU prices, and do not claim sustainability
+    or warranty.
+  rationale: 'Price is the central difficulty: the highest AOV in the catalog is $198 (pub_014 Hearthstone
+    Goods) and the highest apparel AOV is $142 (pub_016), so a $650 shell is 3-5x what any checkout audience
+    just spent and the system should say so. Best available audience is pub_017 Cloudfoot (activewear,
+    mid-high income, US-West/Northeast, $118 AOV); pub_005 Linden Park is the highest-AOV apparel publisher
+    ($128) but a 50-70 conservative women''s audience, so matching on AOV alone is wrong. No publisher
+    sells outerwear, so there is no clear competitor conflict. Low expected reach is acceptable; persona_009
+    (technical fabrics, performance claims) is the only strong persona.'
+  difficulty: hard
+- id: 7
+  text: B2B SaaS for dental practices. We automate their patient recall workflow.
+  expected_gate: off_network
+  must_include: []
+  nice_to_have: []
+  must_exclude: &id001
+  - pub_001
+  - pub_002
+  - pub_003
+  - pub_004
+  - pub_005
+  - pub_006
+  - pub_007
+  - pub_008
+  - pub_009
+  - pub_010
+  - pub_011
+  - pub_012
+  - pub_013
+  - pub_014
+  - pub_015
+  - pub_016
+  - pub_017
+  - pub_018
+  - pub_019
+  - pub_020
+  competitor_conflict: []
+  plausible_personas: []
+  implausible_personas: &id002
+  - persona_001
+  - persona_002
+  - persona_003
+  - persona_004
+  - persona_005
+  - persona_006
+  - persona_007
+  - persona_008
+  - persona_009
+  - persona_010
+  claims_to_watch:
+  - Do not generate consumer-facing creative; there are no shoppers to target.
+  rationale: B2B SaaS for dental practices sells to business owners, not to consumers on a post-purchase
+    thank-you page. Per D7 the system should say Disco's consumer checkout audience is not a fit and return
+    zero publishers. Every catalog publisher is a consumer DTC brand, so all are must_exclude.
+  difficulty: easy
+- id: 8
+  text: A new kind of thing for moms.
+  expected_gate: clarify
+  must_include: []
+  nice_to_have:
+  - pub_015
+  - pub_006
+  - pub_008
+  must_exclude: []
+  competitor_conflict: []
+  plausible_personas:
+  - persona_002
+  - persona_008
+  implausible_personas: []
+  claims_to_watch:
+  - Do not invent the product category, child ages, 'new mom' or postpartum framing, or any safety/health
+    claim about children or babies.
+  - Do not invent a price or benefit; 'a new kind of thing' states none.
+  rationale: '''A new kind of thing for moms'' gives an audience (moms) but no product, price, or goal.
+    Per D7 the system should ask what the product is and who exactly buys it. If an exploratory draft
+    is shown, family-oriented publishers like pub_015 Kitchenly (family households) and pub_006 Everbody
+    (female 99%, 30-55) are plausible, but nothing is strong enough to require. persona_002 Busy Parent
+    and persona_008 are the plausible personas.'
+  difficulty: hard
+- id: 9
+  text: Refillable, concentrated cleaning products. Skip the single-use plastic bottles. Works as well
+    as the big brands. We want to show up where people who already care about sustainability are checking
+    out.
+  expected_gate: proceed
+  must_include:
+  - pub_008
+  - pub_014
+  nice_to_have:
+  - pub_016
+  - pub_017
+  - pub_010
+  - pub_011
+  - pub_015
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_019
+  competitor_conflict:
+  - pub_001
+  plausible_personas:
+  - persona_006
+  - persona_008
+  - persona_002
+  implausible_personas:
+  - persona_009
+  - persona_010
+  claims_to_watch:
+  - '''Works as well as the big brands'' is a comparative performance claim; keep it attributed to the
+    advertiser, do not add test results, kill rates, or ''dermatologist tested''.'
+  - Do not use unspecified 'eco-friendly', 'non-toxic', 'biodegradable', or 'zero waste' (concentrates
+    still ship in packaging); persona_006 is skeptical of vague eco claims.
+  - Do not invent plastic-saved numbers or certifications.
+  rationale: 'The advertiser explicitly wants sustainability-minded checkouts: pub_008 Pantrygood (''responsive
+    to clean-ingredient, sustainability, and wellness claims'') and pub_014 Hearthstone Goods (''sustainability-motivated
+    kitchen buyers'', non_toxic) are the clear fits. pub_001 Swiftcart lists a ''household'' subcategory,
+    so it likely sells conventional cleaning products and is a soft competitor; its audience is also not
+    sustainability-led. pub_016, 017 and 010 (social-good messaging) share the values signal. persona_006
+    (refillable_products affinity) is the top persona.'
+  difficulty: medium
+- id: 10
+  text: Custom-fit leather handbags, Italian-made, handcrafted in Florence. Minimum order ships in 6 weeks.
+    Average price point $1,200.
+  expected_gate: proceed
+  must_include:
+  - pub_005
+  - pub_004
+  nice_to_have:
+  - pub_016
+  - pub_014
+  - pub_003
+  - pub_011
+  must_exclude:
+  - pub_001
+  - pub_007
+  - pub_009
+  - pub_018
+  competitor_conflict: []
+  plausible_personas:
+  - persona_005
+  implausible_personas:
+  - persona_010
+  - persona_007
+  - persona_008
+  - persona_002
+  - persona_003
+  claims_to_watch:
+  - Disclose or at least do not contradict the 6-week minimum lead time; today is 2026-10-30 so orders
+    now arrive about 2026-12-11, and orders after about mid-November will not arrive by Dec 25. Do not
+    claim 'in time for the holidays', 'fast shipping', or 'last-minute gift'.
+  - Do not promise free returns (custom-fit is typically final-sale) or a warranty; do not invent a brand
+    heritage or leather certifications.
+  - Do not call it 'affordable luxury' or show discounts; price point is $1,200.
+  rationale: 'At $1,200 the product is 6x the highest catalog AOV ($198), so the only credible audiences
+    are the older affluent women''s publishers: pub_005 Linden Park ($128, ''highest-AOV apparel'', income
+    high) and pub_004 Marlowe & Co. ($112, ''responds to quality messaging''). persona_005 Affluent Classic
+    (craftsmanship, heritage, low price sensitivity) fits. persona_010 Gifter is a trap: gifting-season
+    logic is tempting, but the Gifter prefers ''last-minute shipping'' and the 6-week lead time breaks
+    it; persona_007 is disinterested in ''delayed fulfillment''; persona_008 and persona_002 reject luxury
+    positioning. No publisher sells handbags.'
+  difficulty: hard
+- id: 11
+  text: We sell protein bars that don't taste like cardboard. That's basically the whole pitch.
+  expected_gate: proceed
+  must_include:
+  - pub_002
+  - pub_003
+  - pub_020
+  nice_to_have:
+  - pub_012
+  - pub_015
+  - pub_017
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_005
+  competitor_conflict:
+  - pub_001
+  - pub_008
+  plausible_personas:
+  - persona_009
+  - persona_007
+  - persona_002
+  implausible_personas:
+  - persona_001
+  - persona_005
+  claims_to_watch:
+  - Do not state protein grams, sugar, calories, or 'clean ingredients', 'natural', 'healthy', or 'gluten-free';
+    none are in the brief.
+  - '''Don''t taste like cardboard'' is the advertiser''s own tone; do not claim ''best-tasting'' or taste-test
+    rankings.'
+  - Do not promise muscle or weight-loss results.
+  rationale: Product is clear (protein bars) though price and audience are not. Fitness-engaged pub_002
+    Movewell, pub_003 Studiogrid and pub_020 Pop & Sip ('health-curious but indulgence-seeking', which
+    matches the taste pitch) do not sell bars. pub_001 Swiftcart and pub_008 Pantrygood sell groceries/snacks
+    and likely stock bars, so they are soft conflicts (not confirmed by catalog fields). persona_001 is
+    flagged implausible because she is disinterested in 'ultra-processed food'; this is the least certain
+    persona call.
+  difficulty: medium
+- id: 12
+  text: A subscription box for new cat owners. First three months of their cat's life. Toys, food samples,
+    a little booklet about what to expect.
+  expected_gate: proceed
+  must_include: []
+  nice_to_have:
+  - pub_015
+  - pub_010
+  - pub_014
+  must_exclude:
+  - pub_005
+  - pub_013
+  - pub_019
+  - pub_004
+  competitor_conflict:
+  - pub_018
+  - pub_007
+  - pub_009
+  plausible_personas:
+  - persona_004
+  - persona_002
+  - persona_007
+  implausible_personas:
+  - persona_010
+  claims_to_watch:
+  - 'The brief says ''first three months of their cat''s life'': ambiguous between kitten age and first
+    three months of ownership; do not assume ''kitten'' or ''adopted''.'
+  - Do not say 'vet-approved' or 'complete nutrition' for food samples, and do not give medical advice
+    from the booklet.
+  - Avoid dog-family phrasing carried over from the Tailcrate audience ('fur baby' for dogs); copy must
+    be cat-specific.
+  - Do not invent price, item counts, or free shipping.
+  rationale: 'Every pet publisher is a conflict or mismatch: pub_018 Tailcrate sells subscription toys/treats
+    but its notes say ''treating dogs as family'' (dog-centric, so audience mismatch and product overlap),
+    pub_007 Pawline sells pet food/supplies subscription, and pub_009 Ruffco sells pet food/supplies.
+    All three are flagged; none is excluded because they hold the only pet-owner audiences, but a system
+    should not claim a clean fit. Because no clearly clean placement exists, must_include is empty and
+    the system is graded mainly on flagging conflicts and not writing dog copy. Non-pet nice-to-haves:
+    Kitchenly (household/family), Heartfoot (gifting, social-good), Hearthstone (new-home life events).'
+  difficulty: hard
+- id: 13
+  text: 'Workout supplements: pre-workout, creatine, protein. We compete on price, not on marketing. Same
+    formulations as the expensive brands for half the cost.'
+  expected_gate: proceed
+  must_include:
+  - pub_002
+  - pub_003
+  nice_to_have:
+  - pub_017
+  - pub_001
+  - pub_020
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_005
+  - pub_004
+  competitor_conflict:
+  - pub_012
+  plausible_personas:
+  - persona_009
+  - persona_008
+  implausible_personas:
+  - persona_001
+  - persona_005
+  - persona_003
+  claims_to_watch:
+  - '''Same formulations as the expensive brands for half the cost'' is an unverifiable equivalence claim;
+    do not state it as fact, name competitors, or claim third-party testing, NSF/GMP certification, or
+    ''clinically dosed''.'
+  - Do not promise muscle gain or performance results; do not invent a price or a savings figure beyond
+    'half the cost' as the advertiser's claim.
+  - pub_012 Daily Form's audience is 'skeptical of unsubstantiated health claims'; strongly avoid claim-heavy
+    copy there.
+  rationale: pub_012 Daily Form (supplements, vitamins, subscription) sells directly competing products
+    and its audience is skeptical of unsubstantiated claims, so it is a flagged conflict. Fitness-engaged
+    pub_002 Movewell and pub_003 Studiogrid are the clean fits; pub_001 Swiftcart (mid income, impulse)
+    suits a price-led pitch. persona_009 and persona_008 (high price sensitivity, 'discount-forward')
+    are plausible; persona_001 (low sensitivity, wants evidence-backed products) is not.
+  difficulty: medium
+- id: 14
+  text: Bedding. Linen. Actually-breathable stuff made in Portugal. Our customers are mostly people who
+    got tired of the Brooklinen/Parachute aesthetic and want something a little more grown-up.
+  expected_gate: proceed
+  must_include:
+  - pub_014
+  - pub_004
+  nice_to_have:
+  - pub_005
+  - pub_016
+  - pub_010
+  - pub_003
+  must_exclude:
+  - pub_007
+  - pub_009
+  - pub_018
+  - pub_019
+  competitor_conflict:
+  - pub_011
+  plausible_personas:
+  - persona_005
+  - persona_001
+  - persona_010
+  implausible_personas:
+  - persona_008
+  - persona_002
+  claims_to_watch:
+  - '''Actually-breathable'' is the supported claim; do not add ''temperature-regulating'', ''hypoallergenic'',
+    ''better sleep'', thread count, or certifications such as OEKO-TEX or European Flax.'
+  - Say made in Portugal only; do not claim 'sustainable' or 'organic' since the brief does not.
+  - Do not name Brooklinen or Parachute or disparage them; 'grown-up' is the advertiser's positioning.
+  rationale: 'pub_011 Northbed sells bedding (home_textiles), so per D1 it is the named competitor example.
+    ''More grown-up'' than the Brooklinen/Parachute aesthetic points at older affluent audiences: pub_004
+    Marlowe & Co. (''responds to quality messaging'') and pub_005 Linden Park, plus pub_014 Hearthstone
+    Goods (home, $198 AOV, high income). persona_005 (home_goods, craftsmanship) fits and persona_001
+    (sleep tracking) is plausible if claims stay evidence-neutral. Whether to require pub_005 beside pub_004
+    is a toss-up, so only pub_004 is required.'
+  difficulty: medium
+- id: 15
+  text: idk just try it
+  expected_gate: reject_low_signal
+  must_include: []
+  nice_to_have: []
+  must_exclude: *id001
+  competitor_conflict: []
+  plausible_personas: []
+  implausible_personas: *id002
+  claims_to_watch:
+  - Produce no creative; do not guess a product.
+  rationale: '''idk just try it'' contains no product, audience, price, or goal. Per D7 the system should
+    return a meaningless-input response with no publishers and no draft. All publishers are must_exclude
+    because any ranking would be invented.'
+  difficulty: easy
