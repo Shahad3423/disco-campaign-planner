@@ -1,0 +1,116 @@
+{
+  "business_summary": "App-based provider of renters and pet insurance starting at $5 a month, targeting new renters and recent pet adopters.",
+  "product": "Renters and pet insurance",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Renters and pet insurance starting at about $5 a month",
+    "all by app"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "convenience",
+    "affordability"
+  ],
+  "fulfillment_notes": "Insurance services delivered digitally via mobile application.",
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet insurance offering."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Renters insurance is directly related to home and living spaces."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "App-based management appeals to convenience-oriented consumers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Insurance is billed on a monthly recurring subscription model."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Shoppers buying pet supplies are pet owners who may need pet insurance."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Shoppers buying pet food are pet owners who may need pet insurance."
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Shoppers buying pet medications are highly likely to value pet health insurance."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "pet_health",
+    "pet_supplies",
+    "pet_food",
+    "convenience",
+    "subscription_services",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_004",
+      "conflict": "disinterested_in: ultra-cheap positioning",
+      "evidence": "starting at about $5 a month"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Health-conscious pet owners are highly aligned with pet health insurance."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog provides excellent scale for pet insurance."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennials treating dogs as family are highly likely to invest in pet insurance."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Urban/suburban home buyers and renters are prime targets for renters insurance."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events are key triggers for purchasing renters insurance."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing model, and target audiences (renters and pet owners) are clearly defined and map well to our publisher network.",
+  "missing_info": [
+    "Geographic availability (state-by-state insurance regulations)",
+    "Target age range",
+    "Target gender"
+  ],
+  "clarifying_questions": [
+    "Are your insurance products available nationwide, or only in specific US states?",
+    "Do you offer a bundle discount if a user purchases both renters and pet insurance?",
+    "Is there a specific age demographic (e.g., Gen Z/Millennial) you want to prioritize for the app-based delivery?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

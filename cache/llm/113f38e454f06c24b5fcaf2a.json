@@ -1,0 +1,111 @@
+{
+  "business_summary": "Colorful outdoor gear brand selling packs, jackets, and duffels. Certified B Corp featuring 'Del Dia' one-of-a-kind items with average order values between $90 and $250.",
+  "product": "Outdoor gear (packs, jackets, duffels)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Certified B Corp",
+    "Colorful outdoor gear - packs, jackets, duffels",
+    "Lots of 'Del Dia' one-of-a-kind items",
+    "Orders $90-250"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainability",
+    "ethical manufacturing",
+    "social responsibility"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Sells jackets, which are a core apparel category."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Outdoor gear and jackets are highly adjacent to activewear and fitness lifestyles."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Certified B Corp status directly appeals to sustainable shoppers."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Outdoor jackets and packs fit casual, everyday use."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Unique, colorful duffels and packs make excellent high-quality gifts."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "travel",
+    "activewear",
+    "apparel",
+    "fitness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: loud aesthetics, trendy language; prefers: understated, craftsmanship",
+      "evidence": "Brand features 'colorful outdoor gear' and 'one-of-a-kind' items, which directly clash with understated, classic aesthetics."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers align well with active outdoor gear."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility directly conflicts with colorful, loud, one-of-a-kind outdoor gear."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to sustainability claims align with a certified B Corp."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience responds to social-good messaging, aligning with B Corp certification."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Comfort and sustainability messaging aligns with B Corp outdoor gear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, price range, and brand values are clearly defined, allowing for immediate planning and targeting.",
+  "missing_info": [
+    "Specific individual product price points",
+    "Target demographics (gender, age)",
+    "Primary marketing goal (e.g., customer acquisition vs. brand awareness)"
+  ],
+  "clarifying_questions": [
+    "What is the average price of an individual item (e.g., a jacket vs. a pack)?",
+    "Are your products designed for a specific gender, or are they entirely unisex?",
+    "Is your primary goal on the network customer acquisition (conversions) or brand awareness?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

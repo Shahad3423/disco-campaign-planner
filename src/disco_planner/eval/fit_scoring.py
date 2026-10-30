@@ -34,8 +34,12 @@ from disco_planner.planning.publisher_scoring import rank_publishers
 TODAY = date(2026, 10, 30)
 REPORTS = catalog.REPO_ROOT / "reports"
 QUALITY = ["audience_fit", "persona_fit", "notes_fit", "scale", "seasonality"]
-EPS = 1e-3
-PRIOR_STRENGTH = 2.0   # lambda in sum (theta - theta0)^2; larger = trust the hand-set config more
+# Specification choices, from the grid in reports/fit_scoring.md:
+# EPS floors components before log(). At 1e-3 a zero category fit becomes log = -6.9, and the few judge
+# answers that prefer a no-link host make the fitter flatten the relevance exponent to escape huge log-loss
+# penalties: lower loss, WORSE ranking and golden precision. 0.15 bounds that.
+EPS = 0.15
+PRIOR_STRENGTH = 50.0  # lambda in sum (theta - theta0)^2; with ~330 labels a weak prior overfits
 
 
 def components(plan) -> dict[str, np.ndarray]:

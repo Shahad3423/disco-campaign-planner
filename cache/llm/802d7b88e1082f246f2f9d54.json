@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, custom-fit protection made in the USA.",
+      "body": "Discover custom-fit floor liners and cargo mats, made in the USA. Understated, classic sets are available for $150-250.",
+      "cta": "Shop custom sets",
+      "headline_no_name": "Custom-fit protection made in the USA.",
+      "angle": "understated quality and classic craftsmanship",
+      "claims_used": [
+        "Custom-fit floor liners and cargo mats",
+        "Made in USA",
+        "Sets are $150-250"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, the perfect gift for a new vehicle.",
+      "body": "Gift a complete set of custom-fit floor liners and cargo mats. Made in the USA, premium sets are $150-250.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The perfect gift for a new vehicle.",
+      "angle": "premium gift-focused appeal",
+      "claims_used": [
+        "Custom-fit floor liners and cargo mats",
+        "Made in USA",
+        "Sets are $150-250"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, support local USA manufacturing.",
+      "body": "Choose custom-fit floor liners and cargo mats made in the USA. Support local production with complete sets from $150-250.",
+      "cta": "Shop USA-made sets",
+      "headline_no_name": "Support local USA manufacturing.",
+      "angle": "supply chain transparency and local ethical manufacturing",
+      "claims_used": [
+        "Custom-fit floor liners and cargo mats",
+        "Made in USA",
+        "Sets are $150-250"
+      ]
+    }
+  ]
+}

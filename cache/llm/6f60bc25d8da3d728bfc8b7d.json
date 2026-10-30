@@ -1,0 +1,113 @@
+{
+  "business_summary": "A premium direct-to-consumer subscription service offering low-sugar, lab-tested natural wines delivered monthly for approximately $160 per box, targeted at wellness-conscious adults aged 21 and older.",
+  "product": "Natural wine subscription box",
+  "is_consumer_product": true,
+  "price_point_usd": 160.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "21+",
+  "stated_claims": [
+    "Low-sugar",
+    "Lab-tested natural wines",
+    "Shipped monthly"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural",
+    "wellness",
+    "low-sugar"
+  ],
+  "fulfillment_notes": "Ship to states we're licensed in only.",
+  "relevant_tags": [
+    {
+      "tag": "alcohol",
+      "weight": 1.0,
+      "why": "Core product is natural wine."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Wine is an alcoholic beverage."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business model is a monthly recurring shipment."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "The product is explicitly marketed as natural wine."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Targets adults who care about wellness with low-sugar, lab-tested attributes."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "Natural, clean-ingredient wines align heavily with organic lifestyle buyers."
+    }
+  ],
+  "competing_tags": [
+    "alcohol"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "premium_grocery",
+    "subscription_boxes",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only products",
+      "evidence": "shipped monthly subscription box"
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in premium positioning and high price sensitivity",
+      "evidence": "$160-ish a box"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart sells alcohol directly, making them a direct category competitor."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven audience responds well to clean-ingredient, natural, and wellness claims."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form's science-forward wellness audience will appreciate the 'lab-tested' product claim."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's health-curious but indulgence-seeking audience perfectly matches a low-sugar wellness wine."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The core product, pricing, subscription model, target audience, and compliance boundaries are clearly defined.",
+  "missing_info": [
+    "Exact list of licensed shipping states",
+    "Number of bottles included in each box",
+    "Specific lab-testing certifications or details"
+  ],
+  "clarifying_questions": [
+    "Which specific US states are you currently licensed to ship to?",
+    "How many bottles of wine are included in the $160 monthly box?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

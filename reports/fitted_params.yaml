@@ -1,0 +1,35 @@
+cv:
+  fitted:
+    accuracy: 0.777
+    log_loss: 0.504
+  hand_set:
+    accuracy: 0.774
+    log_loss: 0.516
+fitted:
+  price_exponent: 0.607
+  quality_p: 0.995
+  quality_weights:
+    audience_fit: 0.298
+    notes_fit: 0.208
+    persona_fit: 0.343
+    scale: 0.05
+    seasonality: 0.1
+  relevance_exponent: 0.788
+golden:
+  fitted:
+    precision: 0.97
+    recall: 0.65
+    top5_change_vs_hand_set: 0.108
+  hand_set:
+    precision: 0.97
+    recall: 0.6
+hand_set:
+  price_exponent: 0.5
+  quality_p: 1.0
+  quality_weights:
+    audience_fit: 0.3
+    notes_fit: 0.2
+    persona_fit: 0.35
+    scale: 0.05
+    seasonality: 0.1
+  relevance_exponent: 1.0

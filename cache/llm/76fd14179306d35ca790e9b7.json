@@ -1,0 +1,109 @@
+{
+  "business_summary": "Certified B Corp brand offering colorful, sustainable outdoor gear including packs, jackets, and duffels. Known for their unique 'Del Dia' one-of-a-kind product line with average order values ranging from $90 to $250.",
+  "product": "Colorful outdoor gear (packs, jackets, duffels)",
+  "is_consumer_product": true,
+  "price_point_usd": 170.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Certified B Corp",
+    "Colorful outdoor gear - packs, jackets, duffels",
+    "Lots of 'Del Dia' one-of-a-kind items"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainable",
+    "ethical sourcing",
+    "uniqueness"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Advertiser is a certified B Corp and focuses on sustainably minded products."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Advertiser sells jackets as a core product offering."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Outdoor gear and jackets strongly appeal to activewear consumers."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "One-of-a-kind 'Del Dia' items make excellent, unique gifts."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "travel",
+    "activewear",
+    "apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in loud aesthetics, prefers understated design",
+      "evidence": "Advertiser offers 'colorful outdoor gear' and 'one-of-a-kind' items, which clashes with conservative, understated tastes."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers have strong alignment with outdoor performance gear and jackets."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility conflicts heavily with 'colorful' and highly vibrant 'Del Dia' aesthetics."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers who respond to sustainability claims will align with B Corp certification."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience responds strongly to social-good messaging, aligning perfectly with B Corp values."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Minimalist aesthetic conflicts with colorful, multi-colored one-of-a-kind gear."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent professionals seeking comfort and sustainability are a prime demographic for premium outdoor gear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, brand values, and target audience are clearly defined and align well with several network publishers.",
+  "missing_info": [
+    "Target demographics (age, specific gender split if any)",
+    "Margin profile or target CPA",
+    "Current introductory offer or discount for new customers"
+  ],
+  "clarifying_questions": [
+    "Who is your primary target demographic in terms of age and gender?",
+    "What is your target customer acquisition cost (CAC) or CPA for these campaigns?",
+    "Do you offer an introductory discount or gift-with-purchase for first-time buyers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

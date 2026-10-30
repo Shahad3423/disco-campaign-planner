@@ -1,0 +1,94 @@
+{
+  "business_summary": "Hemp-extract CBD brand offering gummies, oils, and creams priced between $40 and $90, targeting stress relief, sleep support, and exercise recovery.",
+  "product": "Hemp-extract CBD gummies, oil and creams",
+  "is_consumer_product": true,
+  "price_point_usd": 65.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hemp-extract CBD gummies, oil and creams",
+    "$40-90 a bottle",
+    "Stress, sleep, exercise recovery"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "CBD gummies and oils are ingested dietary supplements for health and wellness."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "CBD products are core offerings in the direct-to-consumer wellness space."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "CBD creams are topical applications adjacent to skincare and body care."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 0.5,
+      "why": "Gummies and oils are frequently purchased by vitamin consumers."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Hemp-extract is a plant-derived natural ingredient."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "wellness_dtc"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "price_sensitivity=high",
+      "evidence": "$40-90 a bottle is a premium price point that conflicts with value-conscious shoppers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are highly aligned with the exercise recovery use case."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on self-care and fitness align well with stress, sleep, and recovery products."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Science-forward audience skeptical of unsubstantiated health claims may reject CBD claims without clinical backing."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target use cases are clearly defined, allowing for immediate planning. Platform restrictions on CBD can be managed programmatically.",
+  "missing_info": [
+    "Subscription options availability",
+    "Organic or third-party testing certifications",
+    "Shipping restrictions by state"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription model for your CBD products?",
+    "Are your products third-party lab tested or certified organic?",
+    "Are there any specific US states you cannot ship your CBD products to?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

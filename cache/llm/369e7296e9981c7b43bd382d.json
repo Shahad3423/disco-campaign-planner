@@ -1,0 +1,108 @@
+{
+  "business_summary": "Certified B Corp selling colorful, sustainable outdoor gear including packs, jackets, and duffels, featuring unique 'Del Dia' one-of-a-kind items.",
+  "product": "Outdoor gear (packs, jackets, duffels)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Certified B Corp",
+    "Colorful outdoor gear - packs, jackets, duffels",
+    "Lots of 'Del Dia' one-of-a-kind items",
+    "Orders $90-250"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Sustainability",
+    "Social Responsibility",
+    "Uniqueness"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "The advertiser is a certified B Corp, which directly appeals to sustainability-minded shoppers."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.75,
+      "why": "They sell outdoor jackets, which falls under general apparel."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.75,
+      "why": "Outdoor gear and jackets align closely with activewear and outdoor lifestyle interests."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "One-of-a-kind 'Del Dia' items and colorful packs make highly attractive, unique gifts."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Colorful outdoor gear and casual jackets fit a relaxed, everyday casual aesthetic."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "travel",
+    "activewear",
+    "apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in loud aesthetics, prefers understated craftsmanship",
+      "evidence": "Advertiser highlights 'Colorful outdoor gear' and 'one-of-a-kind items', which clash with understated, conservative tastes."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers have strong crossover with active outdoor gear and apparel."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's conservative brand sensibility directly conflicts with the advertiser's loud, colorful, and unique aesthetic."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven organic/natural shoppers are highly responsive to certified B Corp and sustainability claims."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience responds strongly to social-good messaging, aligning perfectly with a certified B Corp."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Comfort and sustainability messaging resonates well with their tech-adjacent urban professional audience."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price tier, and core values (sustainability, B Corp status) are clearly stated, allowing for accurate targeting across activewear and sustainable publishers.",
+  "missing_info": [
+    "Individual item price points",
+    "Target gender demographics",
+    "Primary marketing goal (e.g., high AOV vs. volume)"
+  ],
+  "clarifying_questions": [
+    "What is the average price of a single pack or jacket?",
+    "Does your target audience skew towards any specific gender or age demographic?",
+    "Are you looking to drive volume on lower-priced items or focus on higher-ticket duffels and jackets?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

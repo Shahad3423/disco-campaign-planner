@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your recovery and sleep.",
+      "body": "Support your sleep, stress, and exercise recovery with premium hemp-extract CBD gummies, oil, and creams from $40 to $90.",
+      "cta": "Shop CBD gummies",
+      "headline_no_name": "Optimize your recovery and sleep.",
+      "angle": "outcome-focused system optimization for sleep and exercise recovery",
+      "claims_used": [
+        "Hemp-extract CBD gummies, oil and creams",
+        "$40-90 a bottle",
+        "Stress, sleep, exercise recovery"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your exercise recovery, {first_name}.",
+      "body": "Bounce back faster. Use our hemp-extract CBD gummies, oil, and creams for targeted exercise recovery and sleep support. Bottles $40-$90.",
+      "cta": "Shop recovery creams",
+      "headline_no_name": "Fuel your exercise recovery.",
+      "angle": "performance and exercise recovery focus for active lifestyles",
+      "claims_used": [
+        "Hemp-extract CBD gummies, oil and creams",
+        "$40-90 a bottle",
+        "Stress, sleep, exercise recovery"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, no tricks, just treats for your stress.",
+      "body": "This Halloween, chill out with our hemp-extract CBD gummies, oil, and creams. Sleep well and manage stress from $40-$90 a bottle.",
+      "cta": "Shop CBD gummies",
+      "headline_no_name": "No tricks, just treats for your stress.",
+      "angle": "playful Halloween theme focusing on aesthetic vibe and stress relief",
+      "claims_used": [
+        "Hemp-extract CBD gummies, oil and creams",
+        "$40-90 a bottle",
+        "Stress, sleep, exercise recovery"
+      ]
+    }
+  ]
+}

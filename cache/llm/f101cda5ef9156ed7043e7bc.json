@@ -1,0 +1,74 @@
+{
+  "business_summary": "Direct-to-consumer prescription eyewear brand offering prescription glasses starting at $95 including lenses, with a free home try-on program of 5 frames.",
+  "product": "prescription glasses",
+  "is_consumer_product": true,
+  "price_point_usd": 95.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Prescription glasses starting at $95 including lenses",
+    "Free home try-on of 5 frames"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Free home try-on of 5 frames",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Eyewear is a major fashion accessory worn daily, aligning well with apparel shoppers."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The home try-on and online purchasing flow represents a classic direct-to-consumer model."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "Prescription lenses are custom-tailored to the individual customer's vision needs."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "multi-step purchases",
+      "evidence": "free home try-on of 5 frames"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab's audience values personalization, which aligns well with custom prescription lenses."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline's younger demographic views glasses as a high-identity fashion and aesthetic accessory."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and home try-on mechanism are clearly defined, making it highly actionable for planning.",
+  "missing_info": [
+    "shipping costs and transit times",
+    "availability of specialized lenses (progressives, blue light, etc.)",
+    "return and exchange policy details"
+  ],
+  "clarifying_questions": [
+    "What is the average turnaround time from ordering the home try-on to receiving the final prescription glasses?",
+    "Do you offer progressive or blue-light blocking lenses, and is there an additional charge for them?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

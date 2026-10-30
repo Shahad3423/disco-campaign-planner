@@ -1,0 +1,72 @@
+{
+  "business_summary": "Custom-fit floor liners and cargo mats made in the USA, priced between $150-250, targeting recent new vehicle buyers.",
+  "product": "Custom-fit floor liners and cargo mats",
+  "is_consumer_product": true,
+  "price_point_usd": 200.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Custom-fit floor liners and cargo mats",
+    "Made in USA",
+    "Sets are $150-250"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Made in USA"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "The product is custom-fit to specific vehicle models, requiring a personalized selection process."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The brand operates as a direct-to-consumer utility accessory provider."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel",
+    "family_products",
+    "household"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency, instant-delivery, and impulse-friendly shoppers are unlikely to buy high-ticket, custom-fit automotive accessories on impulse."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events often correlate with other major life purchases, such as buying a new vehicle."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households are a prime demographic for heavy-duty floor liners to protect vehicle interiors from spills and dirt."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Vehicle compatibility list",
+    "Fulfillment and shipping times",
+    "Return policy for custom-fit items"
+  ],
+  "clarifying_questions": [
+    "Do you cover all major vehicle makes and models, or is there a specific focus (e.g., SUVs, trucks)?",
+    "What is the average production and shipping time for custom-fit orders?",
+    "Do you offer a lifetime warranty or specific satisfaction guarantee on these sets?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

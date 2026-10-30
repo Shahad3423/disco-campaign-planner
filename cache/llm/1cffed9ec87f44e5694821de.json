@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "A simpler way to shop for glasses, {first_name}",
+      "body": "Skip the store. Get a free home try-on of 5 frames to test in your own time, with prescription glasses starting at $95 including lenses.",
+      "cta": "Order free try-on",
+      "headline_no_name": "A simpler way to shop for prescription glasses",
+      "angle": "time-saving",
+      "claims_used": [
+        "Free home try-on of 5 frames",
+        "Prescription glasses starting at $95 including lenses"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Switch up your look this Halloween, {first_name}",
+      "body": "No tricks, just treats. Test 5 frames with our free home try-on program. Complete prescription glasses start at just $95.",
+      "cta": "Order 5 free frames",
+      "headline_no_name": "Switch up your look this Halloween",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Free home try-on of 5 frames",
+        "Prescription glasses starting at $95 including lenses"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Quality prescription glasses from $95, {first_name}",
+      "body": "Get prescription glasses starting at $95 including lenses. Try 5 frames at home for free before you buy to find your perfect fit.",
+      "cta": "Shop $95 glasses",
+      "headline_no_name": "Quality prescription glasses starting at $95",
+      "angle": "clear value props",
+      "claims_used": [
+        "Prescription glasses starting at $95 including lenses",
+        "Free home try-on of 5 frames"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The gift of a new look, {first_name}",
+      "body": "Treat someone to prescription glasses starting at $95 including lenses. Let them test 5 frames at home for free first.",
+      "cta": "Order a free try-on",
+      "headline_no_name": "Give the gift of a brand new look",
+      "angle": "giftable",
+      "claims_used": [
+        "Prescription glasses starting at $95 including lenses",
+        "Free home try-on of 5 frames"
+      ]
+    }
+  ]
+}

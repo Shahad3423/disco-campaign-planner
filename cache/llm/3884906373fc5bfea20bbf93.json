@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of a new look",
+      "body": "Treat them to a premium style upgrade. Send a free home try-on of 5 frames. Prescription glasses start at $95 including lenses.",
+      "cta": "Gift a try-on box",
+      "headline_no_name": "Give the gift of a new look",
+      "angle": "giftable",
+      "claims_used": [
+        "Prescription glasses starting at $95 including lenses",
+        "Free home try-on of 5 frames"
+      ]
+    }
+  ]
+}

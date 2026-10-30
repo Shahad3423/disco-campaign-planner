@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, protect your home & pets in minutes",
+      "body": "Skip the paperwork. Get renters and pet insurance starting at about $5 a month, all by app. Quick, simple, and hassle-free.",
+      "cta": "Get app coverage",
+      "headline_no_name": "Protect your home and pets in minutes",
+      "angle": "time-saving and easy onboarding",
+      "claims_used": [
+        "Renters and pet insurance starting at about $5 a month",
+        "all by app"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, instant insurance is just a tap away",
+      "body": "No phone calls or long forms. Get renters and pet insurance starting at about $5 a month, managed all by app for ultimate speed.",
+      "cta": "Start in the app",
+      "headline_no_name": "Instant insurance is just a tap away",
+      "angle": "speed and frictionlessness",
+      "claims_used": [
+        "Renters and pet insurance starting at about $5 a month",
+        "all by app"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose 100% paperless protection",
+      "body": "Protect your home and pets with zero paper waste. Get renters and pet insurance starting at about $5 a month, managed all by app.",
+      "cta": "Get paperless cover",
+      "headline_no_name": "Choose 100% paperless protection",
+      "angle": "digital-only and zero-paper delivery",
+      "claims_used": [
+        "Renters and pet insurance starting at about $5 a month",
+        "all by app"
+      ]
+    }
+  ]
+}
