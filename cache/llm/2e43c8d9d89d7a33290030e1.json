@@ -1,0 +1,55 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The persona specifically avoids vague eco claims and prefers specific sustainability claims or certifications. Simply labeling the materials as 'sustainable' without further detail or proof does not fit this preference."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad uses the word 'optimize' but fails to provide any science-backed or outcome-focused claims that this persona prefers."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad lacks any discount-forward messaging, bundle offers, or reviews which this persona prefers. The 'Halloween' headline is also irrelevant to value-conscious shopping."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

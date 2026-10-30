@@ -1,0 +1,101 @@
+{
+  "business_summary": "Soft, performance-y everyday clothing for men and women designed to transition from the gym to daily activities.",
+  "product": "Everyday performance clothing",
+  "is_consumer_product": true,
+  "price_point_usd": 77.5,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Soft, performance-y everyday clothing",
+    "Go from gym to coffee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Everyday wear bridging workout and casual settings."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Target audience includes guys."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Target audience includes gals."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Active fitness-goers are key buyers of premium activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Strongly aligned fitness subcategory."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in premium-only or luxury positioning",
+      "evidence": "Joggers around $90, shorts $65"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged activewear shoppers which is a perfect match."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid has users actively spending on self-care and fitness."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot targets comfortable apparel and activewear buyers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The brand has a clear product line, target audience, and pricing indicators to begin targeting.",
+  "missing_info": [
+    "Shipping rates and delivery times",
+    "Return and exchange policies",
+    "Core sustainability claims, if any"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping or free returns?",
+    "What is your primary conversion goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

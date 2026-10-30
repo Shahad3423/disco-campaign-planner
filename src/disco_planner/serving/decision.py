@@ -51,6 +51,9 @@ class ServeDecision(BaseModel):
     cta: str | None = None
     name_used: bool = False
     reasons: list[str] = Field(default_factory=list)
+    # Every eligible campaign before the auction (bids are private to advertisers; this is Disco's
+    # own view, used for auction insights, never shown to an advertiser per rival).
+    bid_landscape: list[dict] = Field(default_factory=list)
 
 
 def _cfg() -> dict:
@@ -264,6 +267,10 @@ def serve(
             reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
                      *ctx_why, f"bid {breakdown}", f"{'name inserted' if used else 'no-name headline'}"],
         ))
+    landscape = [
+        {"campaign": o.campaign, "pricing_model": o.pricing_model, "bid": o.bid, "expected_ctr": o.expected_ctr, "ecpm": o.ecpm}
+        for o in sorted(offers, key=lambda o: -o.ecpm)
+    ]
     offers, auction_notes = run_auction(offers, cfg["auction"])
     reasons += auction_notes
     if not offers:
@@ -271,7 +278,7 @@ def serve(
     top_offer = offers[0] if offers else None
     return ServeDecision(
         persona_posterior={catalog.persona_by_id()[k].name: v for k, v in posterior.items()},
-        uncertain=uncertain, offers=offers,
+        uncertain=uncertain, offers=offers, bid_landscape=landscape,
         headline=top_offer.headline if top_offer else None, body=top_offer.body if top_offer else None,
         cta=top_offer.cta if top_offer else None, name_used="name inserted" in (top_offer.reasons if top_offer else []),
         reasons=reasons + ([f"auction: ranked by eCPM = final bid x expected CTR x 1000, second-price per slot (bid phase: {phase})"] if offers else []),

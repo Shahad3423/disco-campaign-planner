@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your training, {first_name}.",
+      "body": "Optimize your physical training. Our lifting and training apparel supports your movement. Enjoy a first-order discount.",
+      "cta": "Shop training gear",
+      "headline_no_name": "Optimize your training sessions.",
+      "angle": "outcome-focused physical performance optimization",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "First-order discount"
+      ]
+    }
+  ]
+}

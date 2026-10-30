@@ -1,0 +1,101 @@
+{
+  "business_summary": "DTC apparel brand offering high-quality apparel made from luxury materials like cashmere and silk without traditional retail markups, targeting women aged 30 and older.",
+  "product": "Cashmere and silk apparel",
+  "is_consumer_product": true,
+  "price_point_usd": 55.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "30+",
+  "stated_claims": [
+    "Cashmere sweaters for $50",
+    "Silk for $60",
+    "Luxury materials without the markup"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Affordable luxury",
+    "High-quality materials"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The advertiser sells sweaters and silk garments."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "The primary target demographic is women 30+."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Cashmere and silk wardrobe pieces strongly align with classic style preferences."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Sweaters and silk tops serve as premium wardrobe basics."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Silk and cashmere are highly relevant for professional and business-casual dressing."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "The target demographic focuses on women 30 and older."
+    }
+  ],
+  "competing_tags": [
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "premium_basics",
+    "fashion"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Their audience of older, affluent women who respond to quality messaging is a perfect match for affordable luxury cashmere and silk."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "As a high-AOV apparel publisher with a conservative brand sensibility, their audience has a strong affinity for classic luxury materials."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Cashmere and silk are premium, highly giftable items, aligning well with their strong holiday gifting audience."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women frequently wear silk and cashmere as part of their workwear wardrobe."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price points, and target demographics are clearly defined, allowing for immediate placement planning.",
+  "missing_info": [
+    "brand name",
+    "sourcing/sustainability practices",
+    "return and shipping policies"
+  ],
+  "clarifying_questions": [
+    "What is your brand name?",
+    "Do you offer free shipping or a specific return policy that we can highlight?",
+    "Are your products sourced sustainably or ethically?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

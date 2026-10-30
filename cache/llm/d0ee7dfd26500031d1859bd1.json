@@ -1,0 +1,104 @@
+{
+  "business_summary": "Shapewear, loungewear, and underwear brand featuring inclusive sizing (XXS-5X), targeting women aged 22-40 who purchase during drop releases and are not discount-driven shoppers.",
+  "product": "Shapewear, loungewear, and underwear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "Inclusive sizing XXS-5X",
+    "Shapewear, loungewear and underwear"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Size inclusivity"
+  ],
+  "fulfillment_notes": "Products are sold primarily via drops.",
+  "relevant_tags": [
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Core product category offered by the advertiser."
+    },
+    {
+      "tag": "intimates",
+      "weight": 1.0,
+      "why": "Core product category encompassing shapewear and underwear."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Broad category covering loungewear and underwear."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Primary target demographic is women aged 22-40."
+    },
+    {
+      "tag": "plus_size",
+      "weight": 1.0,
+      "why": "Advertiser explicitly highlights inclusive sizing from XXS to 5X."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Underwear and simple loungewear are highly adjacent to daily basics."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Loungewear is a form of casual apparel."
+    }
+  ],
+  "competing_tags": [
+    "underwear",
+    "intimates"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Prefers discount-forward and clear value props; highly price-sensitive.",
+      "evidence": "Don't send us people who only shop discount."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_006",
+      "alignment": 1,
+      "why": "Everbody features inclusive sizing across their full range, aligning perfectly with the advertiser's XXS-5X offering."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. targets older, mid-life women, whereas the advertiser's core demographic is younger women aged 22-40."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a conservative brand sensibility and older demographic, which conflicts with the advertiser's drop-based, youth-focused model."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product categories, target demographic, and sizing parameters are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) or typical price point for your items?",
+    "Are your products primarily one-time purchases, or do you offer any subscription options?",
+    "What is your primary campaign goal (e.g., customer acquisition, brand awareness)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

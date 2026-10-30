@@ -1,0 +1,109 @@
+{
+  "business_summary": "DTC brand offering hemp oil and chews formulated for anxious or older dogs, featuring a vet recommendation and a 30-day guarantee.",
+  "product": "Hemp oil and chews for dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-recommended",
+    "30-day guarantee",
+    "Hemp oil and chews for anxious or older dogs"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the products are exclusively for dogs."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core category; hemp oil and chews are pet wellness supplies."
+    },
+    {
+      "tag": "treats",
+      "weight": 1.0,
+      "why": "Core product form; the advertiser sells chews for dogs."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Hemp oil and anxiety chews function as dietary/wellness supplements for pets."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent category; pet wellness aligns closely with general DTC wellness shoppers."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Hemp-based remedies strongly appeal to consumers seeking natural health alternatives."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies",
+    "treats"
+  ],
+  "persona_affinity_tags": [
+    "pet_health",
+    "pet_supplies",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in performance claims without vibe",
+      "evidence": "The advertiser relies heavily on functional, outcome-based claims ('anxious or older dogs', 'vet-recommended') rather than aesthetic-first branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Highly relevant pet audience with health-conscious owners who are responsive to premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior, ideal for consumable pet products."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Audience treats dogs as family and buys treats/supplies, making them highly receptive to anxiety and senior dog care."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility may clash with hemp-derived products due to lingering regulatory or cultural stigmas."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Science-forward audience skeptical of unsubstantiated health claims; hemp/CBD products often face high scrutiny here."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and core claims are clearly defined. We can proceed with matching, though we must clarify their pricing and hemp compliance details.",
+  "missing_info": [
+    "Price point per unit",
+    "Subscription availability",
+    "THC/CBD content and compliance certifications"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of your hemp oil and chews?",
+    "Do you offer these products on a subscription basis, or only as one-time purchases?",
+    "Do your products contain CBD, and do you have independent Certificates of Analysis (COAs) available to satisfy ad network compliance?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

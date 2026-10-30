@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, elevate your studio-to-street wellness.",
+      "body": "Support your wellness practice with premium yoga and studio-to-street apparel. Quality pieces priced from $80 to $130.",
+      "cta": "Shop premium yoga",
+      "headline_no_name": "Elevate your studio-to-street wellness.",
+      "angle": "wellness-focused investment pieces for daily practice",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel",
+        "$80-130 per piece"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, gift a premium, celebrity-adjacent look.",
+      "body": "Give the gift of premium yoga and studio-to-street apparel. Impressive celebrity-adjacent aesthetic pieces priced from $80 to $130.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Gift a premium, celebrity-adjacent look.",
+      "angle": "gifting premium and impressive aesthetic apparel",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel",
+        "$80-130 per piece",
+        "Celebrity-adjacent aesthetic"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, premium apparel for your active lifestyle.",
+      "body": "Premium yoga and studio-to-street apparel for your active routine. Featuring a celebrity-adjacent aesthetic. Pieces from $80 to $130.",
+      "cta": "Shop yoga apparel",
+      "headline_no_name": "Premium apparel for your active lifestyle.",
+      "angle": "active lifestyle framing using premium and aesthetic claims",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel",
+        "$80-130 per piece",
+        "Celebrity-adjacent aesthetic"
+      ]
+    }
+  ]
+}

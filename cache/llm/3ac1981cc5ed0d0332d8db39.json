@@ -1,0 +1,107 @@
+{
+  "business_summary": "DTC apparel brand offering luxury materials like cashmere and silk without the traditional retail markup, targeting women aged 30 and older.",
+  "product": "Cashmere sweaters and silk apparel",
+  "is_consumer_product": true,
+  "price_point_usd": 55.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "30+",
+  "stated_claims": [
+    "Cashmere sweaters for $50",
+    "Silk for $60",
+    "Luxury materials without the markup"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "affordable luxury",
+    "fair pricing"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is sweaters and silk garments."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Explicitly stated best segment is women 30+."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Cashmere and silk are classic wardrobe staples."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Aligns with the 'women 30+' target demographic."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Silk and cashmere sweaters are highly relevant for professional workwear."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "High-quality sweaters and silk tops serve as premium wardrobe basics."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Direct-to-consumer model is implied by 'luxury materials without the markup'."
+    }
+  ],
+  "competing_tags": [
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "premium_basics",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: fast_fashion",
+      "evidence": "Low price points like $50 cashmere and $60 silk may trigger concerns about cheap manufacturing or fast fashion if sourcing transparency is not provided."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Target audience of older affluent women who respond to quality messaging fits cashmere and silk perfectly."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "High-AOV apparel publisher with a conservative brand sensibility aligns well with classic, high-quality materials."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women demographic matches the target for upscale casual and workwear materials like silk."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, materials, and target demographic are clearly stated, allowing for immediate campaign planning.",
+  "missing_info": [
+    "size range availability",
+    "sourcing/sustainability details",
+    "shipping and return policies"
+  ],
+  "clarifying_questions": [
+    "What is your sizing range for these products?",
+    "Are your materials sustainably or ethically sourced?",
+    "Do you offer free shipping or hassle-free returns?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

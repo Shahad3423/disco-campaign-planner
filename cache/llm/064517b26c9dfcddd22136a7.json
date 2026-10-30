@@ -1,0 +1,47 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "transparent pricing, direct to you"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy lacks a genuine playful or aesthetic-forward vibe, simply inserting the word 'aesthetic' which feels forced.",
+        "The Halloween angle ('No tricks') is only present in the fallback headline, leaving the main personalized headline generic."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "transparent pricing"
+      ],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": false
+    }
+  ]
+}

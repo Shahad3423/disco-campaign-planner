@@ -1,0 +1,107 @@
+{
+  "business_summary": "Transparent-pricing DTC apparel brand selling high-quality wardrobe staples including tees, denim, and work-appropriate pants, targeted at mid-career professionals who value ethical sourcing and spend $100-150 per order.",
+  "product": "wardrobe staples (tees, denim, work-appropriate pants)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "30-50",
+  "stated_claims": [
+    "Transparent-pricing wardrobe staples",
+    "Wardrobe staples - tees, denim, work-appropriate pants",
+    "Shopper spends $100-150 per order",
+    "Shopper cares about where stuff is made"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "transparency",
+    "ethical manufacturing",
+    "sustainability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category of the advertiser (clothing, tees, denim, pants)."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Direct match for 'wardrobe staples' and tees."
+    },
+    {
+      "tag": "workwear",
+      "weight": 1.0,
+      "why": "Advertiser explicitly sells 'work-appropriate pants'."
+    },
+    {
+      "tag": "casual",
+      "weight": 1.0,
+      "why": "Product line includes casual wear like tees and denim."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Customer profile 'cares about where stuff is made', aligning with ethical/sustainable sourcing."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The transparent pricing model and wardrobe staple focus is highly typical of DTC brands."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "basics",
+    "workwear",
+    "casual"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "fashion",
+    "premium_basics",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co.'s audience of older professional women seeking workwear/casual apparel strongly aligns with this brand's product mix."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park's high-AOV apparel focus aligns well with the advertiser's $100-150 average order value."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Stride & Stem's professional women audience seeking sustainable options aligns with the workwear product and 'where stuff is made' preference."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's urban professional audience valuing sustainability matches the advertiser's mid-career demographic and sourcing transparency."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The advertiser has a clearly defined product category, target demographic, and clear average order value, allowing for immediate planning.",
+  "missing_info": [
+    "Specific price points for individual items (e.g., tees vs denim)",
+    "Target gender (whether they sell men's, women's, or unisex apparel)",
+    "Specific manufacturing origin details (where the clothes are actually made)"
+  ],
+  "clarifying_questions": [
+    "Do you offer apparel for men, women, or is your line unisex?",
+    "What are the individual price ranges for your tees, denim, and pants?",
+    "Where are your garments manufactured, and are there specific certifications we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

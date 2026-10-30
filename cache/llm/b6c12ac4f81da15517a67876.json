@@ -1,0 +1,113 @@
+{
+  "business_summary": "Lifting and training apparel brand targeting an 18-30 age demographic, offering leggings and tees in the $30-60 price range with a focus on first-order discounts and free shipping thresholds.",
+  "product": "Lifting and training apparel (leggings and tees)",
+  "is_consumer_product": true,
+  "price_point_usd": 45.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "18-30",
+  "stated_claims": [
+    "Lifting and training apparel for a 18-30 crowd",
+    "Leggings and tees in the $30-60 range",
+    "Big on free shipping thresholds",
+    "First-order discount"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Offers free shipping thresholds.",
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category is lifting and training apparel."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is clothing (leggings and tees)."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers taking fitness classes are highly likely to need training apparel."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Clients of personal training are active gym-goers who wear lifting apparel."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Yoga practitioners frequently purchase and wear leggings."
+    },
+    {
+      "tag": "wellness_services",
+      "weight": 0.25,
+      "why": "Weak adjacent interest; fitness and active lifestyles fall under wellness."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, loud aesthetics, influencer positioning; prefers: craftsmanship, heritage",
+      "evidence": "Targeting an 18-30 training crowd with $30-60 leggings and tees is highly likely to use trendy, youth-oriented, or influencer-driven marketing."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are the ideal target audience for lifting and training apparel."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care are highly likely to purchase athletic wear."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older, mid-life women, which conflicts with the advertiser's 18-30 target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience is older, conservative, and high-AOV, which clashes with the 18-30 training demographic and $30-60 price point."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Gen Z and younger millennial audience matches the advertiser's 18-30 target age group perfectly."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Activewear focus and urban professional demographic align well with training apparel."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target age demographic, and promotional strategy are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "primary target gender (if any, e.g., female-focused or unisex)",
+    "exact average order value (AOV)"
+  ],
+  "clarifying_questions": [
+    "Is your apparel line designed primarily for women, men, or is it fully unisex?",
+    "What is your current average order value (AOV), and what is the exact free shipping threshold?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

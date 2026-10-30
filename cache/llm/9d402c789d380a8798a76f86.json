@@ -1,0 +1,119 @@
+{
+  "business_summary": "An athleisure brand offering soft, performance-oriented everyday clothing (including $90 joggers and $65 shorts) designed for both men and women to transition seamlessly from the gym to daily activities.",
+  "product": "everyday activewear clothing",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Soft, performance-y everyday clothing for guys and gals who want to go from gym to coffee."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "The brand's core product category is activewear and everyday performance clothing."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The products sold are physical garments (joggers, shorts)."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Designed as everyday transition-wear (gym to coffee) rather than pure high-performance athletics."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "The clothing is explicitly stated to be for 'guys'."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The clothing is explicitly stated to be for 'gals'."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Joggers and shorts are everyday wardrobe staples/basics."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers who attend fitness classes are highly likely to buy and wear activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Yoga practitioners represent a core demographic for comfortable, transitional activewear."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "premium_basics",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in=['luxury-only messaging', 'vague premium positioning'] and high price sensitivity",
+      "evidence": "Joggers around $90 and shorts around $65 represent a premium price point that will clash with value-conscious consumers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers who cross over with wellness are the exact target audience for premium activewear."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness classes and self-care are highly likely to invest in $90 joggers."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Caters to older affluent women looking for workwear/casual wear, which has low alignment with everyday transitional gym-wear."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and workwear focus do not align well with performance-y gym-to-coffee clothing."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Focus on comfort, activewear, and sustainability for urban professionals matches the gym-to-coffee transition lifestyle."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, target demographic, and core audience requirements are clear and align well with several activewear and fitness publishers.",
+  "missing_info": [
+    "Average Order Value (AOV)",
+    "Fulfillment/shipping terms (e.g., free shipping thresholds)",
+    "Return policy details",
+    "Fabric composition or sustainability details"
+  ],
+  "clarifying_questions": [
+    "What is your typical Average Order Value (AOV)?",
+    "Do you offer free shipping or free returns on orders?",
+    "Are there specific fabric callouts (e.g., recycled materials, organic cotton, moisture-wicking) we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

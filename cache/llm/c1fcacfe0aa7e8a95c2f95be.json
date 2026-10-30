@@ -1,0 +1,125 @@
+{
+  "business_summary": "Heritage-inspired running apparel brand featuring New England feel, offering singlets starting at $58 and jackets at $200+, targeted at serious recreational marathoners aged 30-55 with higher incomes.",
+  "product": "Running apparel (singlets, jackets)",
+  "is_consumer_product": true,
+  "price_point_usd": 58.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "30-55",
+  "stated_claims": [
+    "Running apparel with a heritage, New England feel",
+    "Singlets from $58, jackets $200+"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "heritage"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category is running apparel."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Direct apparel category fit."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness-engaged shoppers at studios will appreciate running apparel."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Target demographic includes male marathoners."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Target demographic includes female marathoners."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Target age range 30-55 aligns with mid-life."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Heritage New England feel aligns with classic style."
+    },
+    {
+      "tag": "shoes",
+      "weight": 0.25,
+      "why": "Adjacent footwear category for runners."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "classic_apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in includes loud aesthetics, but heritage running apparel is generally acceptable; however, if any influencer positioning is used it clashes.",
+      "evidence": "Targeting higher income 30-55 aligns well with Affluent Classic, but no major direct conflict found in brief."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers who buy activewear."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women match the demographic and high AOV."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility matching the heritage positioning."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women who engage with apparel."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Activewear and urban professionals overlap with serious recreational runners."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, pricing, and target audience are clearly defined.",
+  "missing_info": [
+    "exact margin / CAC targets",
+    "specific fabric or performance technical details beyond general heritage feel"
+  ],
+  "clarifying_questions": [
+    "What is your target customer acquisition cost (CAC) or target ROAS?",
+    "Are you primarily focused on men, women, or an equal split of both?",
+    "Do you offer free shipping or return guarantees that we can feature in ad copy?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

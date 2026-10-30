@@ -1,0 +1,89 @@
+{
+  "business_summary": "Modern cat trees, scratchers, and wall-mounted furniture designed for design-conscious apartment dwellers who own cats, featuring an AOV of approximately $150.",
+  "product": "Modern cat furniture (trees, scratchers, wall-mounted furniture)",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+    "AOV is about $150.",
+    "We're after design-conscious apartment dwellers who own cats."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "design-conscious"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core category for cat trees, scratchers, and pet furniture."
+    },
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for cat owners."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "The product is furniture designed to look good in a home, appealing to design-conscious buyers."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.5,
+      "why": "Cat scratchers and trees function as activity and play structures for pets."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "home_decor",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Premium pet positioning aligns perfectly with design-conscious cat owners willing to spend on a $150 AOV."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog, offering high reach for cat owners."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban buyers align well with the advertiser's target demographic of design-conscious apartment dwellers."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": -1,
+      "why": "Tailcrate's audience is specifically noted as dog-focused ('treating dogs as family'), which is less relevant for a cat-only brand."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and price point are clearly defined, allowing for immediate planning and matching.",
+  "missing_info": [
+    "exact price range of individual items",
+    "shipping costs and assembly requirements",
+    "return policy details"
+  ],
+  "clarifying_questions": [
+    "What is the price range for individual cat trees versus smaller scratchers?",
+    "Do these products ship flat-pack requiring customer assembly?",
+    "Do you offer free shipping, or is there a shipping surcharge due to the size/weight of the furniture?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

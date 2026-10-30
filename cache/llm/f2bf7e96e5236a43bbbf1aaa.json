@@ -1,0 +1,71 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "renewable Merino wool and tree-fiber",
+        "lower footprint"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Includes unsupported environmental claims ('renewable', 'lower footprint') that are not backed by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "support your stride",
+        "Designed for your daily movement"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is too generic and lacks the science-backed, evidence-based, or outcome-focused depth preferred by the Wellness Optimizer.",
+        "Includes unsupported physical/ergonomic claims ('support your stride')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "$100 sneakers",
+        "built to last",
+        "long-lasting"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invents a specific price point ($100) and durability claims ('built to last', 'long-lasting') not supported by the stated claims.",
+        "Lacks the discount-forward, bundle, or review-focused elements preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Sustainable"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Includes the unsupported claim 'Sustainable' which is not present in the stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

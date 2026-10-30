@@ -1,0 +1,96 @@
+{
+  "business_summary": "DTC footwear brand selling machine-washable sneakers made from sustainable merino wool and tree-fiber materials for approximately $100, targeting comfort-first consumers of any age.",
+  "product": "Sneakers",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "any",
+  "stated_claims": [
+    "Merino wool and tree-fiber sneakers",
+    "Machine-washable",
+    "Comfort-first"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "comfort",
+    "sustainability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "shoes",
+      "weight": 1.0,
+      "why": "The advertiser's core product is sneakers."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "The shoes are made of sustainable natural materials (merino wool and tree-fiber)."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Comfort-first sneakers are primarily designed for casual everyday wear."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Footwear is closely adjacent to apparel, sharing high audience overlap."
+    },
+    {
+      "tag": "socks",
+      "weight": 0.25,
+      "why": "Socks are a natural, highly complementary accessory to sneakers."
+    }
+  ],
+  "competing_tags": [
+    "shoes"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "sustainable_apparel",
+    "travel",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Direct competitor in the shoes category, which will trigger a publisher block despite highly aligned sustainability notes."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": -1,
+      "why": "Direct competitor in the shoes category, triggering a publisher block despite highly aligned comfort and sustainability notes."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Socks and underwear are highly complementary to sneakers, presenting a strong cross-sell opportunity."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women seeking quality and comfort align well with premium merino wool materials."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, core materials, and key value propositions are clearly defined, enabling immediate mapping to non-competing apparel, sock, and sustainable lifestyle publishers.",
+  "missing_info": [
+    "Exact MSRP",
+    "Shipping costs and return policies",
+    "Target gender split (unisex sizing vs separate men's and women's lines)"
+  ],
+  "clarifying_questions": [
+    "Are your sneakers unisex, or do you offer distinct sizing/styles for men and women?",
+    "What is the exact MSRP, and do you offer free shipping or returns?",
+    "Do you offer any subscription or circular economy/refurbishment options, or is this strictly a one-time purchase?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

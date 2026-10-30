@@ -242,3 +242,14 @@ above its own bid. The host earns its revenue share of what's actually paid. **W
 "bid what a click is worth to you" the sensible strategy, which is what our bid ceiling (break-even CPC)
 assumes. **Why it matters here:** with only the 15 example campaigns no host had more than 3 bidders, so the
 ranking only set order; the 100 holdout brands are loaded as competitors so slots are actually contested.
+
+## D20. Auction insights instead of visible rival bids
+
+Bids are sealed: a campaign states a ceiling once (derived from its target CPA) and Disco's server runs the
+auction per page view, so there is no bid-and-counter-bid between advertisers (that dynamic belongs to
+first-price auctions). With one slot, second price is exactly truthful: bidding your break-even is the best
+strategy, and what you pay depends only on the runner-up. What advertisers get instead is aggregate feedback
+per host (win rate, average price paid, which campaigns they lose to, and the bid that would win 25/50/75%
+of auctions compared with their break-even), so the decision is "raise my target CPA or leave this host".
+Rival names appear (like Google's Auction Insights), rival bids never do (tested). Here the aggregate is
+simulated over sample shoppers; in production it comes from the auction logs.

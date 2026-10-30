@@ -1,0 +1,100 @@
+{
+  "business_summary": "DTC brand selling a premium self-cleaning litter box priced between $500 and $700. The product is a high-ticket, considered purchase that converts well among existing high-spending pet owners, supported by a 90-day trial. The brand prefers targeting multi-cat households.",
+  "product": "Self-cleaning litter box",
+  "is_consumer_product": true,
+  "price_point_usd": 600.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Self-cleaning litter box",
+    "Priced at $500-700",
+    "90-day trial helps conversion",
+    "Converts well with people who already spend on pets",
+    "Prefer multi-cat households"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the product is exclusively for cat owners."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core subcategory; a litter box is a major pet utility/supply."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Litter boxes are prominent home appliances; design-conscious home buyers care about odor and aesthetics."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "The product is a functional household utility."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Self-cleaning functionality is a major time-saving convenience."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies",
+    "pet"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_health",
+    "convenience",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "High price sensitivity and dislike of luxury-only/premium positioning.",
+      "evidence": "The product is a $500-700 'considered purchase'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Premium pet audience responsive to high-end positioning; highly aligned with a $500-700 pet appliance."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior, ideal for finding high-spending pet owners."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Focused on impulse-friendly, high-frequency, low-AOV convenience purchases, which clashes with a $500-700 considered purchase."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": -1,
+      "why": "Audience is specifically noted as treating 'dogs' as family, whereas litter boxes are exclusively for cats."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and trial offer are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Whether there are recurring consumable components (e.g., proprietary litter, bags, or filters) that represent a subscription model.",
+    "Shipping costs and delivery times for a large, heavy item."
+  ],
+  "clarifying_questions": [
+    "Does the litter box require proprietary accessories or consumables (like specific bags, filters, or litter) that customers must purchase regularly?",
+    "What are the shipping costs and average delivery times for this unit?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

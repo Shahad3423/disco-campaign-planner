@@ -330,6 +330,28 @@ def render_creatives(plan: CampaignPlan) -> None:
 # ------------------------------------------------------------------ campaign config
 
 
+def render_auction_insights(plan: CampaignPlan) -> None:
+    """Aggregate feedback an advertiser can act on without ever seeing a rival's bid."""
+    from disco_planner.serving.insights import auction_insights
+
+    st.markdown("**Auction insights** <span class='muted'>(sealed bids: you see win rate, price paid and what it would take, never a rival's bid)</span>",
+                unsafe_allow_html=True)
+    key = f"insights_{plan.brief[:60]}"
+    rivals = [p for p in load_all_cached_plans() + load_holdout_plans() if (p.profile.product or p.brief[:40]) != (plan.profile.product or plan.brief[:40])]
+    if st.button(f"Simulate against {len(rivals)} competing campaigns", key=f"btn_{key}"):
+        st.session_state[key] = [i.model_dump() for i in auction_insights(plan, rivals)]
+    rows = st.session_state.get(key)
+    if rows:
+        df = pd.DataFrame([{
+            "host": r["publisher_name"], "win_rate": r["win_rate"], "avg_price_paid": r["avg_price_paid"], "your_bid": r["avg_bid"],
+            "break_even_max": r["max_bid"], "rivals_here": r["competitors_on_host"],
+            "top_rival": ", ".join(f"{n} ({s:.0%})" for n, s in r["top_rivals"][:2]),
+            "bid_for_50%_wins": r["bid_for_win_rate"].get("50%"), "verdict": r["verdict"], "what to do": r["suggestion"],
+        } for r in rows])
+        st.dataframe(df, hide_index=True, width="stretch", column_config={
+            "win_rate": st.column_config.ProgressColumn("win rate", min_value=0, max_value=1, format="%.0f%%" if False else "%.2f")})
+
+
 def render_config(plan: CampaignPlan) -> None:
     cfg = plan.config
     st.subheader("Campaign config")
@@ -371,6 +393,8 @@ def render_config(plan: CampaignPlan) -> None:
         st.dataframe(pd.DataFrame(bs.phases), hide_index=True, width="stretch")
         if bs.adjustments:
             st.dataframe(pd.DataFrame([a.model_dump() for a in bs.adjustments]), hide_index=True, width="stretch")
+    if cfg.budget and cfg.budget.allocations:
+        render_auction_insights(plan)
     for q in cfg.open_questions:
         st.markdown(f"- Open question: {q}")
     with st.expander("Full CampaignConfig JSON"):

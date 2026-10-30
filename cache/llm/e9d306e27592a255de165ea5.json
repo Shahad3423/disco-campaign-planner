@@ -1,0 +1,62 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Ethical wardrobe staples",
+        "how it's manufactured"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague ethical and manufacturing claims that are unsupported and which this persona is typically skeptical of."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "denim to tees"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invents specific product offerings (denim, tees) not mentioned in the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "classic denim, tees, and pants"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invents specific product offerings (denim, tees, pants) not mentioned in the stated claims, and uses an unsupported product-specific CTA."
+      ],
+      "passed": false
+    }
+  ]
+}

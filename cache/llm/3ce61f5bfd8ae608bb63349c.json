@@ -1,0 +1,46 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Avoid disposable carpet towers",
+        "designed for longevity"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The sustainability buyer persona avoids vague eco claims; framing standard furniture as sustainable solely based on 'longevity' without specific certifications or supply chain transparency is a weak fit.",
+        "The claims that carpet towers are 'disposable' and that this product is specifically designed for 'longevity' are unsupported by the advertiser's stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "business_summary": "Comfort socks and tees with a social-good mission where every purchase results in a donation of an item to someone experiencing homelessness. Average order value is $65, and the products are positioned well for gifting and family multi-packs.",
+  "product": "comfort socks and tees",
+  "is_consumer_product": true,
+  "price_point_usd": 65.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "every purchase donates an item to someone experiencing homelessness",
+    "Great for gifting",
+    "Great for families buying multi-packs"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "social good",
+    "charitable donation",
+    "homelessness support"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "socks",
+      "weight": 1.0,
+      "why": "Advertiser explicitly sells comfort socks as a core product."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Socks and tees are everyday essential basics."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Sells tees and socks, which are apparel items."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Comfort-focused socks and tees are inherently casual wear."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly highlights that the products are great for gifting."
+    }
+  ],
+  "competing_tags": [
+    "socks",
+    "basics"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "premium_basics",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": -1,
+      "why": "Direct competitor in the socks and basics categories, which will likely trigger a publisher block."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven organic grocery audience is highly receptive to social-good and donation-based messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, AOV, core value proposition, and target use cases (gifting and family packs) are clearly defined and ready for matching.",
+  "missing_info": [
+    "individual unit pricing for socks and tees",
+    "whether a subscription model is offered for recurring purchases",
+    "specific fabric or sustainability details beyond 'comfort'"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of a single pair of socks or a single tee?",
+    "Do you offer subscription options for your multi-packs, or are they strictly one-time purchases?",
+    "Are your products unisex, or do you offer separate lines for men, women, and kids?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

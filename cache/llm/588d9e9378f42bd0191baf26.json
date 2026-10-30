@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, help your dog stay calm this Halloween",
+      "body": "Halloween doorbells can be stressful. Support your anxious or older dog with our premium hemp oil and chews.",
+      "cta": "Shop hemp chews",
+      "headline_no_name": "Help your dog stay calm this Halloween",
+      "angle": "Emotional connection combined with seasonal Halloween stress support for anxious dogs",
+      "claims_used": [
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your dog's wellness routine",
+      "body": "Support your anxious or older dog's daily routine with clean, targeted hemp oil and chews designed for their specific needs.",
+      "cta": "Shop hemp oil",
+      "headline_no_name": "Optimize your dog's wellness routine",
+      "angle": "Outcome-focused ingredient transparency for targeted wellness support",
+      "claims_used": [
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simple care for your family dog",
+      "body": "Keep your anxious or older dog calm and comfortable with our easy-to-serve hemp oil and chews.",
+      "cta": "Shop hemp chews",
+      "headline_no_name": "Simple care for your family dog",
+      "angle": "Convenience and simple routine integration for busy households",
+      "claims_used": [
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    }
+  ]
+}

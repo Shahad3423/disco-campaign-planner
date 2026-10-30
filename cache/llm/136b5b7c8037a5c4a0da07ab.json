@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, meet our Merino wool & tree-fiber sneakers",
+      "body": "Made from renewable Merino wool and tree-fiber. These comfort-first sneakers are fully machine-washable for a lower footprint.",
+      "cta": "Shop Merino Sneakers",
+      "headline_no_name": "Meet our Merino wool & tree-fiber sneakers",
+      "angle": "Specific material transparency using Merino wool and tree-fiber to demonstrate sustainable practices without greenwashing",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, support your stride with comfort-first shoes",
+      "body": "Designed for your daily movement. Experience comfort-first Merino wool and tree-fiber sneakers that are fully machine-washable.",
+      "cta": "Shop Comfort Shoes",
+      "headline_no_name": "Support your stride with comfort-first shoes",
+      "angle": "Outcome-focused comfort supporting daily physical activity and movement",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, get premium $100 sneakers built to last",
+      "body": "Enjoy comfort-first Merino wool and tree-fiber sneakers. They are machine-washable, making them easy to keep clean and long-lasting.",
+      "cta": "Shop $100 Sneakers",
+      "headline_no_name": "Get premium $100 sneakers built to last",
+      "angle": "Clear value articulation highlighting longevity through machine-washability and the $100 price point",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    }
+  ]
+}

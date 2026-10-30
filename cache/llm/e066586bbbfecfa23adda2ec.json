@@ -1,0 +1,97 @@
+{
+  "business_summary": "A direct-to-consumer apparel brand offering high-quality products made from luxury materials like cashmere and silk at affordable, direct-to-consumer prices without traditional retail markups.",
+  "product": "Cashmere and silk apparel",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "30+",
+  "stated_claims": [
+    "Cashmere sweaters for $50",
+    "silk for $60",
+    "luxury materials without the markup"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "affordable luxury",
+    "transparent pricing"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The brand primarily sells sweaters and silk clothing."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Their best-performing segment is women aged 30+."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Cashmere and silk garments are classic wardrobe staples."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Targeting women aged 30 and older aligns with mid-life demographics."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Sweaters and silk tops serve as premium wardrobe basics."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Silk and cashmere are highly relevant for professional and smart-casual workwear."
+    }
+  ],
+  "competing_tags": [
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "fashion",
+    "premium_basics"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. targets older affluent women who respond to quality messaging, matching this brand's luxury materials and 30+ female demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park has a high-AOV apparel audience with a conservative/classic sensibility, making them prime candidates for affordable luxury materials."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has strong gifting season performance; high-quality cashmere and silk items at accessible price points are highly giftable."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price points, target demographic, and core value proposition are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "average order value (AOV)",
+    "shipping costs and delivery times",
+    "return and exchange policy details",
+    "sourcing and sustainability practices for cashmere and silk"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV)?",
+    "Do you offer free shipping or free returns?",
+    "Are your luxury materials ethically or sustainably sourced?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

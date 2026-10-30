@@ -1,0 +1,57 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy lacks the Gifter's preferred elements such as premium presentation, gift-wrap, or gift sets, and the headline includes self-gifting framing ('for {first_name}') which dilutes the gifting focus."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Know exactly where your clothes come from"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'Know exactly where your clothes come from' implies full supply chain traceability, which is not supported by the advertiser's simple statement of 'Cares about where stuff is made'."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The tone is overly corporate and lacks the playful, aesthetic-forward voice preferred by the Gen Z Aesthete."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "business_summary": "A DTC footwear brand selling machine-washable sneakers made from sustainable materials like Merino wool and tree-fiber, priced around $100, targeting comfort-focused consumers of all ages.",
+  "product": "Merino wool and tree-fiber sneakers",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "any",
+  "stated_claims": [
+    "Merino wool and tree-fiber sneakers",
+    "Machine-washable",
+    "Comfort-first"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "shoes",
+      "weight": 1.0,
+      "why": "Core product category is footwear/sneakers."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Made from eco-friendly materials like tree-fiber and Merino wool."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Footwear is a major subcategory of apparel and shares similar shopper interest."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Comfort-first sneakers are primarily worn for casual everyday use."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.25,
+      "why": "Sneakers are often paired with activewear or used for light activity."
+    }
+  ],
+  "competing_tags": [
+    "shoes"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "apparel",
+    "travel",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Direct competitor in the shoes category, meaning they will block this advertiser on their thank-you page."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": -1,
+      "why": "Direct competitor in the shoes category, meaning they will block this advertiser on their thank-you page."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, sustainability-focused audience will highly resonate with tree-fiber and Merino wool materials."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent audience that responds well to quality messaging and comfort."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and core value propositions are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "shipping costs and fulfillment times",
+    "return policy details",
+    "primary target gender split"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping and returns on your $100 sneakers?",
+    "Is your customer base skewed toward any specific gender, or is it an even split?",
+    "What is your average shipping fulfillment time?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

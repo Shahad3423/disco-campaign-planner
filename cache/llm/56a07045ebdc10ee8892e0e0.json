@@ -1,0 +1,78 @@
+{
+  "business_summary": "A DTC footwear brand offering comfort-focused, machine-washable sneakers made from natural materials like merino wool and tree fiber, priced at approximately $100.",
+  "product": "Merino wool and tree-fiber sneakers",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "any",
+  "stated_claims": [
+    "Merino wool and tree-fiber sneakers",
+    "Machine-washable",
+    "Comfort-first"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "shoes",
+      "weight": 1.0,
+      "why": "The advertiser's product is sneakers."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "The sneakers are made from sustainable natural materials (merino wool and tree fiber)."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Footwear is a primary subcategory of apparel."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Comfort-first everyday sneakers fit a casual lifestyle and wardrobe."
+    }
+  ],
+  "competing_tags": [
+    "shoes"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "apparel",
+    "travel",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Stride & Stem is a shoe publisher whose female professional audience specifically resonates with sustainability and machine-washable claims."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot is a shoe publisher whose audience of urban professionals explicitly responds to comfort and sustainability messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, core claims, and target audience are clearly defined and map well to our network.",
+  "missing_info": [
+    "specific target gender (assumed unisex/any)",
+    "primary conversion goals and acquisition CPA targets"
+  ],
+  "clarifying_questions": [
+    "Are these sneakers unisex, or do you have separate men's and women's collections?",
+    "What is your target cost per acquisition (CPA) or ROAS goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

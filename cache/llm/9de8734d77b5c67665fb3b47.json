@@ -1,0 +1,35 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is too generic for this persona; it lacks the science-backed claims, ingredient/material transparency, or outcome-focused messaging they prefer."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy leans heavily into a 'celebrity-adjacent aesthetic' and fashion, which conflicts with this persona's avoidance of fashion-only positioning. It lacks the performance claims or technical fabric details they prefer."
+      ],
+      "passed": false
+    }
+  ]
+}

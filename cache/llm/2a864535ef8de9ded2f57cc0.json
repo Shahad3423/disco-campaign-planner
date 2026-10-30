@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of luxury",
+      "body": "Delight them with premium cashmere sweaters for $50 and silk for $60. Beautiful, impressive pieces without the traditional retail markup.",
+      "cta": "Shop giftable luxury",
+      "headline_no_name": "Give the gift of luxury",
+      "angle": "giftable",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, upgrade your aesthetic",
+      "body": "Get premium silk for $60 and cashmere sweaters for $50. We believe in transparent pricing and luxury materials without the markup.",
+      "cta": "Shop cashmere & silk",
+      "headline_no_name": "Upgrade your aesthetic",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, discover understated quality",
+      "body": "Timeless apparel crafted from luxury materials without the markup. Enjoy cashmere sweaters for $50 and silk for $60.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Discover understated quality",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, luxury pricing made transparent",
+      "body": "Why pay traditional retail markups? Get premium cashmere sweaters for $50 and silk for $60. Real luxury materials, affordable prices.",
+      "cta": "Shop cashmere & silk",
+      "headline_no_name": "Luxury pricing made transparent",
+      "angle": "discount-forward",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "business_summary": "Fair trade organic cotton underwear, tees and baby clothes. Affordable, around $30 an item. Eco-minded parents especially.",
+  "product": "Fair trade organic cotton underwear, tees, and baby clothes",
+  "is_consumer_product": true,
+  "price_point_usd": 30.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "babies and adults",
+  "stated_claims": [
+    "Fair trade organic cotton underwear, tees and baby clothes",
+    "Affordable, around $30 an item",
+    "Eco-minded parents especially"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "fair trade",
+    "organic",
+    "sustainable",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is clothing (tees, baby clothes)."
+    },
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Specifically sells organic cotton underwear."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Tees and underwear are daily essential basics."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Products are explicitly made of organic cotton."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Fair trade and organic positioning targets eco-minded consumers."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Organic cotton is a natural fiber alternative to synthetics."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Organic baby clothes appeal to parents seeking non-toxic options."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby clothes and high-quality basics are popular gift items."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "underwear",
+    "basics"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "sustainable_apparel",
+    "family_products",
+    "apparel",
+    "premium_basics"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and sustainability claims align perfectly with organic, fair-trade apparel."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Sells basics/underwear and has an audience that responds strongly to social-good messaging (aligns with fair trade)."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Sustainability-motivated buyers and gifting/new-home life events align well with organic baby clothes."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households align well with baby clothes and eco-minded parents."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Audience values sustainability claims, which fits the fair trade and organic cotton positioning."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Comfort and sustainability messaging resonates well with their audience."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "shipping times and costs",
+    "return policy",
+    "whether they offer subscription options for basics"
+  ],
+  "clarifying_questions": [
+    "Do you offer any subscription options or bundle discounts for underwear and tees?",
+    "What are your standard shipping times and return policies?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
