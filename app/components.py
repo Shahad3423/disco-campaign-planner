@@ -183,7 +183,7 @@ def render_understanding(plan: CampaignPlan) -> None:
         st.markdown("**Relevant publisher tags**")
         st.dataframe(
             pd.DataFrame([{"tag": t.tag, "weight": t.weight, "why": t.why} for t in sorted(p.relevant_tags, key=lambda t: -t.weight)]),
-            hide_index=True, use_container_width=True,
+            hide_index=True, width="stretch",
             column_config={"weight": st.column_config.ProgressColumn("weight", min_value=0, max_value=1, format="%.2f")},
         )
     if p.competing_tags:
@@ -209,7 +209,7 @@ def render_economics(plan: CampaignPlan) -> None:
     ]
     df = pd.DataFrame(rows, columns=["item", "value", "source"])
     df["status"] = df["source"].map(lambda s: "assumed" if s in ("tier_default", "category_default", "model") else "provided or derived")
-    st.dataframe(df, hide_index=True, use_container_width=True)
+    st.dataframe(df, hide_index=True, width="stretch")
     if eco.assumptions:
         st.markdown(" ".join(badge("assumed", "assumed") + " " + html.escape(a) + "<br>" for a in eco.assumptions), unsafe_allow_html=True)
 
@@ -243,7 +243,7 @@ def render_publishers(plan: CampaignPlan) -> None:
     if excluded:
         st.dataframe(
             pd.DataFrame([{"publisher": s.publisher_name, "score": round(s.score, 2), "reason": s.reason} for s in excluded]),
-            hide_index=True, use_container_width=True,
+            hide_index=True, width="stretch",
         )
         with st.expander("Score components for excluded publishers"):
             for s in excluded:
@@ -353,7 +353,7 @@ def render_config(plan: CampaignPlan) -> None:
                 "clicks (mid)": a.expected_clicks.mid, "conversions (mid)": a.expected_conversions.mid,
                 "host approval": "needs approval" if a.requires_host_approval else "", "rationale": a.rationale,
             } for a in b.allocations])
-            st.dataframe(df, hide_index=True, use_container_width=True, column_config={
+            st.dataframe(df, hide_index=True, width="stretch", column_config={
                 "share_pct": st.column_config.ProgressColumn("share", min_value=0, max_value=100, format="%d%%"),
             })
             st.bar_chart(df.set_index("publisher")["budget_usd"], color=ACCENT, horizontal=True)
@@ -424,7 +424,7 @@ def feature_rows(features) -> dict[str, list[dict]]:
 def render_features(features) -> None:
     for group, rows in feature_rows(features).items():
         st.markdown(f"**{group}**")
-        st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True, column_config={
+        st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", column_config={
             "confidence": st.column_config.ProgressColumn("confidence", min_value=0, max_value=1, format="%.2f")})
 
 
@@ -448,7 +448,7 @@ def render_decision(decision, plans: list[CampaignPlan]) -> None:
     if isinstance(posterior, dict):
         st.markdown("**Persona posterior**")
         df = pd.DataFrame({"persona": list(posterior), "probability": list(posterior.values())}).sort_values("probability", ascending=False)
-        st.dataframe(df, hide_index=True, use_container_width=True, column_config={
+        st.dataframe(df, hide_index=True, width="stretch", column_config={
             "probability": st.column_config.ProgressColumn("probability", min_value=0, max_value=1, format="%.2f")})
     reasons = data.get("reasons")
     if isinstance(reasons, list):
@@ -504,7 +504,7 @@ def split_markdown(md: str) -> list[tuple[str, object]]:
 def render_eval(path: Path) -> None:
     for kind, content in split_markdown(path.read_text()):
         if kind == "table":
-            st.dataframe(content, hide_index=True, use_container_width=True)
+            st.dataframe(content, hide_index=True, width="stretch")
         else:
             st.markdown(content)
 
