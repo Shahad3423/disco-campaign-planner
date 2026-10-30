@@ -349,7 +349,7 @@ def render_auction_insights(plan: CampaignPlan) -> None:
             "bid_for_50%_wins": r["bid_for_win_rate"].get("50%"), "verdict": r["verdict"], "what to do": r["suggestion"],
         } for r in rows])
         st.dataframe(df, hide_index=True, width="stretch", column_config={
-            "win_rate": st.column_config.ProgressColumn("win rate", min_value=0, max_value=1, format="%.0f%%" if False else "%.2f")})
+            "win_rate": st.column_config.ProgressColumn("win rate", min_value=0, max_value=1, format="%.2f")})
 
 
 def render_config(plan: CampaignPlan) -> None:

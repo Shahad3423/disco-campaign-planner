@@ -1,0 +1,108 @@
+{
+  "business_summary": "A premium capsule wardrobe brand offering high-quality, long-lasting fashion items like leather totes and cashmere wraps, targeting affluent women seeking sustainable alternatives to fast fashion.",
+  "product": "Leather totes, cashmere wraps, and capsule wardrobe pieces",
+  "is_consumer_product": true,
+  "price_point_usd": 300.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fewer, better things",
+    "leather totes, cashmere wraps, capsule wardrobe pieces",
+    "Orders $200-400",
+    "We want affluent women who've outgrown fast fashion"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainability",
+    "quality",
+    "slow fashion"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The advertiser sells capsule wardrobe clothing pieces and accessories."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Explicitly targeting affluent women."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.75,
+      "why": "The philosophy of 'fewer, better things' and outgrowing fast fashion implies a strong slow-fashion/sustainability alignment."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Capsule wardrobe pieces and high-quality wraps/totes fit a timeless, classic aesthetic."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Premium leather totes and capsule clothing are highly relevant for professional women's wardrobes."
+    }
+  ],
+  "competing_tags": [
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "classic_apparel",
+    "sustainable_apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging and vague premium positioning",
+      "evidence": "Advertiser has high average order values ($200-400) and targets 'affluent women' with premium leather and cashmere."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in luxury positioning",
+      "evidence": "Advertiser positions itself as an upscale, premium alternative to fast fashion with high order values ($200-400)."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-AOV premium fashion does not align well with late-night, high-frequency impulse grocery and convenience buyers."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Matches perfectly with older affluent women who respond to quality messaging and high AOV products."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with classic sensibilities aligns directly with premium capsule pieces and affluent buyers."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women who care about sustainability are highly aligned with premium capsule wardrobes and leather work totes."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, target audience, price point, and sustainable value proposition are clearly defined and actionable.",
+  "missing_info": [
+    "specific target age range",
+    "return and shipping policies",
+    "material sourcing details"
+  ],
+  "clarifying_questions": [
+    "Do you have a specific target age range in mind for women who have outgrown fast fashion?",
+    "Do you offer free shipping or returns, given the higher price point of your orders ($200-400)?",
+    "Are there specific sustainable certifications (e.g., LWG leather, certified cashmere) that we can feature in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
