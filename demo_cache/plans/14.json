@@ -88,7 +88,7 @@
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.4518,
+   "score": 0.4755,
    "components": [
     {
      "name": "category_fit",
@@ -106,7 +106,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -137,12 +137,12 @@
     "competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6)). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_014",
    "publisher_name": "Hearthstone Goods",
-   "score": 0.2151,
+   "score": 0.1971,
    "components": [
     {
      "name": "category_fit",
@@ -160,7 +160,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -214,7 +214,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -266,7 +266,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -318,7 +318,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -370,7 +370,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -422,7 +422,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -474,7 +474,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -526,7 +526,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -578,7 +578,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -630,7 +630,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -682,7 +682,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -734,7 +734,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -786,7 +786,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -838,7 +838,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -890,7 +890,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -942,7 +942,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -994,7 +994,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1046,7 +1046,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1098,7 +1098,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1412,69 +1412,69 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 260.0,
+   "monthly_budget_usd": 250.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 48132,
-   "expected_reach": 30082,
+   "expected_impressions": 47870,
+   "expected_reach": 29919,
    "goal_feasible": true,
-   "daily_cap_usd": 8.67,
+   "daily_cap_usd": 8.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 257.65,
+   "learning_budget_needed_usd": 250.59,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.677,
-     "budget_usd": 176.14,
+     "share": 0.707,
+     "budget_usd": 176.74,
      "cpc_bid_usd": 0.43,
      "start_bid_usd": 0.3,
      "expected_clicks": {
-      "low": 328.0,
-      "mid": 410.0,
-      "high": 492.0
+      "low": 329.0,
+      "mid": 411.0,
+      "high": 493.0
      },
      "expected_conversions": {
-      "low": 3.4,
+      "low": 3.5,
       "mid": 6.9,
-      "high": 12.0
+      "high": 12.1
      },
      "capacity_usd": 1300.32,
-     "expected_impressions": 24383,
-     "expected_reach": 15239,
+     "expected_impressions": 24466,
+     "expected_reach": 15291,
      "requires_host_approval": true,
-     "rationale": "score 0.45 -> relative fit x1.40 on CTR/CVR; max bid $0.43 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.48 -> relative fit x1.40 on CTR/CVR; max bid $0.43 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.323,
-     "budget_usd": 83.86,
-     "cpc_bid_usd": 0.3,
+     "share": 0.293,
+     "budget_usd": 73.26,
+     "cpc_bid_usd": 0.28,
      "start_bid_usd": 0.25,
      "expected_clicks": {
-      "low": 224.0,
-      "mid": 280.0,
-      "high": 335.0
+      "low": 209.0,
+      "mid": 262.0,
+      "high": 314.0
      },
      "expected_conversions": {
-      "low": 1.6,
-      "mid": 3.3,
-      "high": 5.8
+      "low": 1.5,
+      "mid": 2.9,
+      "high": 5.1
      },
-     "capacity_usd": 494.36,
-     "expected_impressions": 23749,
-     "expected_reach": 14843,
+     "capacity_usd": 438.23,
+     "expected_impressions": 23404,
+     "expected_reach": 14628,
      "requires_host_approval": false,
-     "rationale": "score 0.22 -> relative fit x0.98 on CTR/CVR; max bid $0.30 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.20 -> relative fit x0.93 on CTR/CVR; max bid $0.28 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $260, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $250, the smallest budget that buys 300 clicks per host."
    ]
   },
   "bid_strategy": {
@@ -1508,7 +1508,7 @@
     {
      "publisher_id": "pub_014",
      "start_bid": 0.25,
-     "max_bid": 0.3,
+     "max_bid": 0.28,
      "floor": 0.25
     }
    ],
@@ -1706,9 +1706,9 @@
   ]
  },
  "timings_s": {
-  "intake": 0.01,
+  "intake": 0.0,
   "matching": 0.0,
-  "creative": 49.4
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,

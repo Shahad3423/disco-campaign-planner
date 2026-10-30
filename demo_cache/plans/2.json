@@ -22,6 +22,11 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "sustainable",
+    "weight": 1.0,
+    "why": "Key product value stated as made from recycled ocean plastic."
+   },
+   {
     "tag": "activewear",
     "weight": 1.0,
     "why": "Core category of the brand's products."
@@ -30,11 +35,6 @@
     "tag": "women",
     "weight": 1.0,
     "why": "Target demographic is women."
-   },
-   {
-    "tag": "sustainable",
-    "weight": 1.0,
-    "why": "Key product value stated as made from recycled ocean plastic."
    },
    {
     "tag": "apparel",
@@ -109,7 +109,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.6628,
+   "score": 0.6778,
    "components": [
     {
      "name": "category_fit",
@@ -127,7 +127,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -158,18 +158,18 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.6)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.6081,
+   "score": 0.6219,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, sustainable, apparel (specific) (multiplier)"
+     "detail": "matches sustainable, activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -181,7 +181,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -212,18 +212,18 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.6)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches sustainable, activewear, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.4072,
+   "score": 0.3877,
    "components": [
     {
      "name": "category_fit",
      "value": 0.7,
      "weight": 1.0,
-     "detail": "matches women, sustainable, apparel (category only) (multiplier)"
+     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -235,7 +235,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -264,12 +264,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.6))."
+   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.3714,
+   "score": 0.3339,
    "components": [
     {
      "name": "category_fit",
@@ -287,7 +287,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -315,13 +315,13 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.6))."
+   "recommended": false,
+   "reason": "Excluded: score 0.33 below cutoff 0.34; weakest signal category_fit (matches yoga, fitness_classes (specific) (multiplier))."
   },
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.3102,
+   "score": 0.2864,
    "components": [
     {
      "name": "category_fit",
@@ -339,7 +339,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -368,12 +368,12 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.31 below cutoff 0.33; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+   "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.3094,
+   "score": 0.2856,
    "components": [
     {
      "name": "category_fit",
@@ -391,7 +391,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -420,12 +420,12 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.31 below cutoff 0.33; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+   "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.2933,
+   "score": 0.2611,
    "components": [
     {
      "name": "category_fit",
@@ -443,7 +443,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -472,12 +472,12 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.29 below cutoff 0.33; weakest signal category_fit (matches apparel (category only) (multiplier))."
+   "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_006",
    "publisher_name": "Everbody",
-   "score": 0.2463,
+   "score": 0.2426,
    "components": [
     {
      "name": "category_fit",
@@ -495,7 +495,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -524,12 +524,12 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.25 below cutoff 0.33; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.6))."
+   "reason": "Excluded: score 0.24 below cutoff 0.34; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.1304,
+   "score": 0.0913,
    "components": [
     {
      "name": "category_fit",
@@ -547,7 +547,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -599,7 +599,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -651,7 +651,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -703,7 +703,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -755,7 +755,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -807,7 +807,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -859,7 +859,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -911,7 +911,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -963,7 +963,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1015,7 +1015,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1067,7 +1067,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1119,7 +1119,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1165,7 +1165,7 @@
    "best_publishers": [
     "pub_016",
     "pub_002",
-    "pub_003"
+    "pub_017"
    ]
   },
   {
@@ -1181,7 +1181,7 @@
    "best_publishers": [
     "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_016"
    ]
   },
   {
@@ -1197,7 +1197,7 @@
    "best_publishers": [
     "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_016"
    ]
   },
   {
@@ -1212,8 +1212,8 @@
    ],
    "best_publishers": [
     "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_016"
    ]
   },
   {
@@ -1243,9 +1243,9 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
-    "pub_003",
     "pub_017",
-    "pub_016"
+    "pub_016",
+    "pub_002"
    ]
   },
   {
@@ -1261,7 +1261,7 @@
    "best_publishers": [
     "pub_016",
     "pub_002",
-    "pub_003"
+    "pub_017"
    ]
   },
   {
@@ -1276,8 +1276,8 @@
    ],
    "best_publishers": [
     "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_016"
    ]
   },
   {
@@ -1415,115 +1415,92 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1690.0,
+   "monthly_budget_usd": 1320.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 95082,
-   "expected_reach": 59426,
+   "expected_impressions": 69047,
+   "expected_reach": 43154,
    "goal_feasible": true,
-   "daily_cap_usd": 56.33,
+   "daily_cap_usd": 44.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1690.59,
+   "learning_budget_needed_usd": 1316.47,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.323,
-     "budget_usd": 546.54,
+     "share": 0.402,
+     "budget_usd": 530.22,
      "cpc_bid_usd": 1.38,
      "start_bid_usd": 0.97,
      "expected_clicks": {
-      "low": 317.0,
-      "mid": 396.0,
-      "high": 475.0
+      "low": 307.0,
+      "mid": 384.0,
+      "high": 461.0
      },
      "expected_conversions": {
-      "low": 5.5,
-      "mid": 11.1,
-      "high": 19.4
+      "low": 5.4,
+      "mid": 10.8,
+      "high": 18.8
      },
      "capacity_usd": 25502.4,
-     "expected_impressions": 23574,
-     "expected_reach": 14734,
+     "expected_impressions": 22870,
+     "expected_reach": 14294,
      "requires_host_approval": true,
-     "rationale": "score 0.66 -> relative fit x1.40 on CTR/CVR; max bid $1.38 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.68 -> relative fit x1.40 on CTR/CVR; max bid $1.38 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.297,
-     "budget_usd": 501.43,
+     "share": 0.369,
+     "budget_usd": 486.49,
      "cpc_bid_usd": 1.31,
      "start_bid_usd": 0.92,
      "expected_clicks": {
-      "low": 306.0,
-      "mid": 383.0,
-      "high": 459.0
+      "low": 297.0,
+      "mid": 371.0,
+      "high": 446.0
      },
      "expected_conversions": {
-      "low": 5.1,
-      "mid": 10.2,
-      "high": 17.9
+      "low": 5.0,
+      "mid": 9.9,
+      "high": 17.3
      },
-     "capacity_usd": 6081.33,
-     "expected_impressions": 23912,
-     "expected_reach": 14945,
+     "capacity_usd": 6081.54,
+     "expected_impressions": 23199,
+     "expected_reach": 14499,
      "requires_host_approval": true,
-     "rationale": "score 0.61 -> relative fit x1.33 on CTR/CVR; max bid $1.31 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.62 -> relative fit x1.33 on CTR/CVR; max bid $1.31 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.199,
-     "budget_usd": 335.77,
-     "cpc_bid_usd": 1.07,
-     "start_bid_usd": 0.75,
+     "share": 0.23,
+     "budget_usd": 303.29,
+     "cpc_bid_usd": 1.04,
+     "start_bid_usd": 0.73,
      "expected_clicks": {
-      "low": 251.0,
-      "mid": 314.0,
-      "high": 377.0
-     },
-     "expected_conversions": {
-      "low": 3.4,
-      "mid": 6.9,
-      "high": 12.0
-     },
-     "capacity_usd": 2242.36,
-     "expected_impressions": 23959,
-     "expected_reach": 14974,
-     "requires_host_approval": false,
-     "rationale": "score 0.41 -> relative fit x1.09 on CTR/CVR; max bid $1.07 (break-even at target CPA), start at 70%"
-    },
-    {
-     "publisher_id": "pub_003",
-     "publisher_name": "Studiogrid",
-     "share": 0.181,
-     "budget_usd": 306.25,
-     "cpc_bid_usd": 1.03,
-     "start_bid_usd": 0.72,
-     "expected_clicks": {
-      "low": 238.0,
-      "mid": 297.0,
-      "high": 357.0
+      "low": 233.0,
+      "mid": 292.0,
+      "high": 350.0
      },
      "expected_conversions": {
       "low": 3.1,
       "mid": 6.2,
-      "high": 10.9
+      "high": 10.8
      },
-     "capacity_usd": 8810.58,
-     "expected_impressions": 23637,
-     "expected_reach": 14773,
+     "capacity_usd": 2111.81,
+     "expected_impressions": 22978,
+     "expected_reach": 14361,
      "requires_host_approval": false,
-     "rationale": "score 0.37 -> relative fit x1.05 on CTR/CVR; max bid $1.03 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.39 -> relative fit x1.06 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,690, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,320, the smallest budget that buys 300 clicks per host."
    ]
   },
   "bid_strategy": {
@@ -1562,14 +1539,8 @@
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.75,
-     "max_bid": 1.07,
-     "floor": 0.25
-    },
-    {
-     "publisher_id": "pub_003",
-     "start_bid": 0.72,
-     "max_bid": 1.03,
+     "start_bid": 0.73,
+     "max_bid": 1.04,
      "floor": 0.25
     }
    ],
@@ -1592,26 +1563,29 @@
   "targeting": {
    "publishers_include": [
     "pub_002",
-    "pub_003",
     "pub_016",
     "pub_017"
    ],
    "publishers_exclude": [
     {
+     "id": "pub_003",
+     "reason": "Excluded: score 0.33 below cutoff 0.34; weakest signal category_fit (matches yoga, fitness_classes (specific) (multiplier))."
+    },
+    {
      "id": "pub_004",
-     "reason": "Excluded: score 0.31 below cutoff 0.33; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+     "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: score 0.31 below cutoff 0.33; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+     "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: score 0.29 below cutoff 0.33; weakest signal category_fit (matches apparel (category only) (multiplier))."
+     "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches apparel (category only) (multiplier))."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: score 0.25 below cutoff 0.33; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.6))."
+     "reason": "Excluded: score 0.24 below cutoff 0.34; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
     },
     {
      "id": "pub_012",
@@ -1684,7 +1658,7 @@
     "publisher_ids": [
      "pub_016",
      "pub_002",
-     "pub_003"
+     "pub_017"
     ],
     "headline_template": "{first_name}, optimize your activewear.",
     "headline_no_name": "Optimize your activewear.",
@@ -1697,7 +1671,7 @@
     "publisher_ids": [
      "pub_017",
      "pub_002",
-     "pub_003"
+     "pub_016"
     ],
     "headline_template": "Activewear built to perform, {first_name}.",
     "headline_no_name": "Activewear built to perform.",
@@ -1710,7 +1684,7 @@
     "publisher_ids": [
      "pub_017",
      "pub_002",
-     "pub_003"
+     "pub_016"
     ],
     "headline_template": "{first_name}, wear the change.",
     "headline_no_name": "Wear the change.",

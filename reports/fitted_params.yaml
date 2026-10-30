@@ -1,20 +1,20 @@
-cv:
+cv_dev:
   fitted:
-    accuracy: 0.777
-    log_loss: 0.504
+    accuracy: 0.705
+    log_loss: 0.56
   hand_set:
-    accuracy: 0.774
-    log_loss: 0.516
+    accuracy: 0.704
+    log_loss: 0.567
 fitted:
-  price_exponent: 0.607
-  quality_p: 0.995
+  price_exponent: 0.572
+  quality_p: 0.987
   quality_weights:
-    audience_fit: 0.298
-    notes_fit: 0.208
-    persona_fit: 0.343
+    audience_fit: 0.299
+    notes_fit: 0.207
+    persona_fit: 0.344
     scale: 0.05
     seasonality: 0.1
-  relevance_exponent: 0.788
+  relevance_exponent: 0.893
 golden:
   fitted:
     precision: 0.97
@@ -33,3 +33,10 @@ hand_set:
     scale: 0.05
     seasonality: 0.1
   relevance_exponent: 1.0
+test:
+  fitted:
+    accuracy: 0.7857142857142857
+    log_loss: 0.5463478186673241
+  hand_set:
+    accuracy: 0.7857142857142857
+    log_loss: 0.5562319514267453

@@ -22,7 +22,7 @@
     "proceed": 55
    },
    "mean_confidence": 0.872,
-   "mean_recommended": 3.345,
+   "mean_recommended": 3.127,
    "weak_fit_rate_when_planned": 0.074
   },
   "out_of_catalog": {
@@ -31,7 +31,7 @@
     "proceed": 30
    },
    "mean_confidence": 0.827,
-   "mean_recommended": 2.033,
+   "mean_recommended": 2.0,
    "weak_fit_rate_when_planned": 0.435
   }
  },
@@ -41,36 +41,36 @@
   "vague": 0.74
  },
  "host_recommendation_share": {
-  "Swiftcart": 0.27,
+  "Swiftcart": 0.25,
   "Daily Form": 0.24,
-  "Hearthstone Goods": 0.24,
-  "Northbed": 0.22,
   "Pantrygood": 0.22,
-  "Movewell": 0.19,
+  "Northbed": 0.2,
+  "Hearthstone Goods": 0.2,
   "Kitchenly": 0.19,
+  "Movewell": 0.18,
   "Cloudfoot": 0.18,
-  "Heartfoot": 0.17,
-  "Marlowe & Co.": 0.14,
-  "Velvetline": 0.14,
+  "Heartfoot": 0.16,
+  "Marlowe & Co.": 0.13,
+  "Velvetline": 0.13,
   "Strandlab": 0.13,
   "Pop & Sip": 0.12,
-  "Everbody": 0.11,
   "Pawline": 0.1,
   "Ruffco": 0.1,
   "Tailcrate": 0.1,
-  "Linden Park": 0.1,
-  "Stride & Stem": 0.1,
-  "Studiogrid": 0.08
+  "Everbody": 0.1,
+  "Linden Park": 0.08,
+  "Stride & Stem": 0.08,
+  "Studiogrid": 0.07
  },
  "hosts_never_recommended": [],
  "creatives": {
   "plans_with_creatives": 92,
   "rule_fail": 0,
-  "review_fail": 62,
+  "review_fail": 63,
   "regulated_claims_in_copy": 0,
   "briefs_with_blocked_claims": 1
  },
- "wall_time_s": 52.0
+ "wall_time_s": 43.4
 }
 ```
 

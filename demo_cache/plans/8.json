@@ -54,7 +54,7 @@
   {
    "publisher_id": "pub_006",
    "publisher_name": "Everbody",
-   "score": 0.1214,
+   "score": 0.0874,
    "components": [
     {
      "name": "category_fit",
@@ -72,7 +72,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -106,7 +106,7 @@
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.1124,
+   "score": 0.081,
    "components": [
     {
      "name": "category_fit",
@@ -124,7 +124,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -158,7 +158,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.1099,
+   "score": 0.0792,
    "components": [
     {
      "name": "category_fit",
@@ -176,7 +176,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -210,7 +210,7 @@
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.1093,
+   "score": 0.0787,
    "components": [
     {
      "name": "category_fit",
@@ -228,7 +228,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -262,7 +262,7 @@
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.1056,
+   "score": 0.076,
    "components": [
     {
      "name": "category_fit",
@@ -280,7 +280,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -314,7 +314,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.0956,
+   "score": 0.0688,
    "components": [
     {
      "name": "category_fit",
@@ -332,7 +332,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -384,7 +384,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -436,7 +436,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -488,7 +488,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -540,7 +540,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -592,7 +592,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -644,7 +644,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -696,7 +696,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -748,7 +748,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -800,7 +800,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -852,7 +852,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -904,7 +904,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -956,7 +956,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1008,7 +1008,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1060,7 +1060,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",

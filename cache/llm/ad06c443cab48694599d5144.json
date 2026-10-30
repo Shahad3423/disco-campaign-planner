@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, fuel your next workout.",
+      "body": "Keep your momentum going with protein bars crafted for your active routine. Perfect for post-workout recovery or daily fueling.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Fuel your next workout.",
+      "angle": "Fitness lifestyle and performance fueling alignment without making unverified claims",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "A treat so good it's almost spooky, {first_name}.",
+      "body": "Upgrade your snack game with protein bars that look as good as they taste. No tricks, just delicious vibes for your daily routine.",
+      "cta": "Grab a starter pack",
+      "headline_no_name": "A treat so good it's almost spooky.",
+      "angle": "Playful, aesthetic-forward Halloween theme emphasizing packaging and visual appeal",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, your daily snack on autopilot.",
+      "body": "Never run out of fuel. Get delicious protein bars delivered straight to your door with a seamless, hassle-free subscription.",
+      "cta": "Start subscription",
+      "headline_no_name": "Your daily snack on autopilot.",
+      "angle": "Convenience, ease of purchase, and subscription-first messaging",
+      "claims_used": []
+    }
+  ]
+}

@@ -23,24 +23,24 @@
     "why": "Includes toys and supplies for cats."
    },
    {
-    "tag": "subscription",
-    "weight": 1.0,
-    "why": "Offered as a subscription service."
-   },
-   {
     "tag": "pet",
     "weight": 1.0,
     "why": "Core category for pet products and services."
    },
    {
-    "tag": "pet_food",
-    "weight": 0.5,
-    "why": "Includes food samples."
+    "tag": "subscription",
+    "weight": 1.0,
+    "why": "Offered as a subscription service."
    },
    {
     "tag": "toys",
     "weight": 0.5,
     "why": "Includes toys for the cat."
+   },
+   {
+    "tag": "pet_food",
+    "weight": 0.5,
+    "why": "Includes food samples."
    },
    {
     "tag": "gifting",
@@ -99,7 +99,7 @@
   {
    "publisher_id": "pub_009",
    "publisher_name": "Ruffco",
-   "score": 0.5658,
+   "score": 0.5955,
    "components": [
     {
      "name": "category_fit",
@@ -117,7 +117,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -146,18 +146,18 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_007",
    "publisher_name": "Pawline",
-   "score": 0.5357,
+   "score": 0.5638,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, subscription, pet, pet_food (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, subscription, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -169,7 +169,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -198,18 +198,18 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, subscription, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches pet_supplies, pet, subscription, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_018",
    "publisher_name": "Tailcrate",
-   "score": 0.5074,
+   "score": 0.534,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, subscription, pet, toys (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, subscription, toys (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -221,7 +221,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -250,12 +250,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, subscription, pet, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches pet_supplies, pet, subscription, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.1089,
+   "score": 0.0784,
    "components": [
     {
      "name": "category_fit",
@@ -273,7 +273,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -307,7 +307,7 @@
   {
    "publisher_id": "pub_015",
    "publisher_name": "Kitchenly",
-   "score": 0.1036,
+   "score": 0.0746,
    "components": [
     {
      "name": "category_fit",
@@ -325,7 +325,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -359,7 +359,7 @@
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.0956,
+   "score": 0.0688,
    "components": [
     {
      "name": "category_fit",
@@ -377,7 +377,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -411,7 +411,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.0933,
+   "score": 0.0672,
    "components": [
     {
      "name": "category_fit",
@@ -429,7 +429,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -463,7 +463,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.0836,
+   "score": 0.0602,
    "components": [
     {
      "name": "category_fit",
@@ -481,7 +481,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -533,7 +533,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -585,7 +585,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -637,7 +637,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -689,7 +689,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -741,7 +741,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -793,7 +793,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -845,7 +845,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -897,7 +897,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -949,7 +949,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1001,7 +1001,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1053,7 +1053,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1105,7 +1105,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1409,8 +1409,8 @@
    "monthly_budget_usd": 2390.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 64858,
-   "expected_reach": 40536,
+   "expected_impressions": 64860,
+   "expected_reach": 40538,
    "goal_feasible": true,
    "daily_cap_usd": 79.67,
    "flight_start": "2026-10-30",
@@ -1424,7 +1424,7 @@
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
      "share": 0.352,
-     "budget_usd": 840.49,
+     "budget_usd": 840.52,
      "cpc_bid_usd": 2.33,
      "start_bid_usd": 1.63,
      "expected_clicks": {
@@ -1441,13 +1441,13 @@
      "expected_impressions": 21472,
      "expected_reach": 13420,
      "requires_host_approval": false,
-     "rationale": "score 0.57 -> relative fit x1.40 on CTR/CVR; max bid $2.33 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.60 -> relative fit x1.40 on CTR/CVR; max bid $2.33 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
      "share": 0.333,
-     "budget_usd": 795.78,
+     "budget_usd": 795.77,
      "cpc_bid_usd": 2.26,
      "start_bid_usd": 1.58,
      "expected_clicks": {
@@ -1460,17 +1460,17 @@
       "mid": 10.5,
       "high": 18.4
      },
-     "capacity_usd": 8835.31,
-     "expected_impressions": 21616,
+     "capacity_usd": 8835.14,
+     "expected_impressions": 21617,
      "expected_reach": 13510,
      "requires_host_approval": false,
-     "rationale": "score 0.54 -> relative fit x1.36 on CTR/CVR; max bid $2.26 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.56 -> relative fit x1.36 on CTR/CVR; max bid $2.26 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_018",
      "publisher_name": "Tailcrate",
      "share": 0.315,
-     "budget_usd": 753.74,
+     "budget_usd": 753.71,
      "cpc_bid_usd": 2.19,
      "start_bid_usd": 1.53,
      "expected_clicks": {
@@ -1483,11 +1483,11 @@
       "mid": 10.0,
       "high": 17.5
      },
-     "capacity_usd": 14541.23,
-     "expected_impressions": 21770,
+     "capacity_usd": 14540.72,
+     "expected_impressions": 21771,
      "expected_reach": 13607,
      "requires_host_approval": false,
-     "rationale": "score 0.51 -> relative fit x1.32 on CTR/CVR; max bid $2.19 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.53 -> relative fit x1.32 on CTR/CVR; max bid $2.19 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [

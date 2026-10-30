@@ -86,7 +86,7 @@
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.1501,
+   "score": 0.1517,
    "components": [
     {
      "name": "category_fit",
@@ -104,7 +104,7 @@
      "name": "price_fit",
      "value": 0.22491537741379983,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $128 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $128 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -135,12 +135,12 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal price_fit (price $1200 vs host AOV $128 (multiplier ^0.6)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal price_fit (price $1200 vs host AOV $128 (multiplier ^0.5)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.1426,
+   "score": 0.1454,
    "components": [
     {
      "name": "category_fit",
@@ -158,7 +158,7 @@
      "name": "price_fit",
      "value": 0.20575853121057233,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $112 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $112 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -194,7 +194,7 @@
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.1273,
+   "score": 0.1286,
    "components": [
     {
      "name": "category_fit",
@@ -212,7 +212,7 @@
      "name": "price_fit",
      "value": 0.24103016545773995,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $142 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $142 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -243,12 +243,12 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, sustainable (category only) (multiplier); strongest supporting signal price_fit (price $1200 vs host AOV $142 (multiplier ^0.6)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel, sustainable (category only) (multiplier); strongest supporting signal price_fit (price $1200 vs host AOV $142 (multiplier ^0.5)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.0982,
+   "score": 0.104,
    "components": [
     {
      "name": "category_fit",
@@ -266,7 +266,7 @@
      "name": "price_fit",
      "value": 0.14913006741598583,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $118; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $118; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -300,7 +300,7 @@
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.0862,
+   "score": 0.0974,
    "components": [
     {
      "name": "category_fit",
@@ -318,7 +318,7 @@
      "name": "price_fit",
      "value": 0.08636002745675772,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -352,7 +352,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.0837,
+   "score": 0.0906,
    "components": [
     {
      "name": "category_fit",
@@ -370,7 +370,7 @@
      "name": "price_fit",
      "value": 0.11316364938047085,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $78; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $78; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -404,7 +404,7 @@
   {
    "publisher_id": "pub_006",
    "publisher_name": "Everbody",
-   "score": 0.071,
+   "score": 0.0789,
    "components": [
     {
      "name": "category_fit",
@@ -422,7 +422,7 @@
      "name": "price_fit",
      "value": 0.0864971743625496,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -451,7 +451,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.07 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.6))."
+   "reason": "Excluded: score 0.08 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -474,7 +474,7 @@
      "name": "price_fit",
      "value": 0.04001111033964903,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $28; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $28; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -526,7 +526,7 @@
      "name": "price_fit",
      "value": 0.10699874805650796,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $42 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $42 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -578,7 +578,7 @@
      "name": "price_fit",
      "value": 0.0991814664570437,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $64; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $64; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -630,7 +630,7 @@
      "name": "price_fit",
      "value": 0.17253536891347807,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $86 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $86 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -682,7 +682,7 @@
      "name": "price_fit",
      "value": 0.07579207946831815,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $73; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $73; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -734,7 +734,7 @@
      "name": "price_fit",
      "value": 0.26532310311866675,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $164 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $164 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -786,7 +786,7 @@
      "name": "price_fit",
      "value": 0.07006475489353997,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $38; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $38; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -838,7 +838,7 @@
      "name": "price_fit",
      "value": 0.06724011889134512,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $61; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $61; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -890,7 +890,7 @@
      "name": "price_fit",
      "value": 0.30083102917607785,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $198 (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $198 (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -942,7 +942,7 @@
      "name": "price_fit",
      "value": 0.10926096262430725,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $74; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $74; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -994,7 +994,7 @@
      "name": "price_fit",
      "value": 0.04642878074324094,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $35; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $35; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1046,7 +1046,7 @@
      "name": "price_fit",
      "value": 0.05731074766897217,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $48; host income mid below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $48; host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1098,7 +1098,7 @@
      "name": "price_fit",
      "value": 0.07489912363955556,
      "weight": 1.0,
-     "detail": "price $1200 vs host AOV $42; host income mid-high below high needed for luxury (multiplier ^0.6)"
+     "detail": "price $1200 vs host AOV $42; host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1404,8 +1404,8 @@
    "monthly_budget_usd": 6350.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 54313,
-   "expected_reach": 33946,
+   "expected_impressions": 54184,
+   "expected_reach": 33865,
    "goal_feasible": true,
    "daily_cap_usd": 211.67,
    "flight_start": "2026-10-30",
@@ -1422,48 +1422,48 @@
     {
      "publisher_id": "pub_005",
      "publisher_name": "Linden Park",
-     "share": 0.436,
-     "budget_usd": 2767.9,
+     "share": 0.434,
+     "budget_usd": 2755.98,
      "cpc_bid_usd": 6.0,
      "start_bid_usd": 4.2,
      "expected_clicks": {
-      "low": 369.0,
-      "mid": 461.0,
-      "high": 554.0
+      "low": 367.0,
+      "mid": 459.0,
+      "high": 551.0
      },
      "expected_conversions": {
-      "low": 6.5,
+      "low": 6.4,
       "mid": 12.9,
-      "high": 22.6
+      "high": 22.5
      },
      "capacity_usd": 31248.0,
-     "expected_impressions": 27459,
-     "expected_reach": 17162,
+     "expected_impressions": 27341,
+     "expected_reach": 17088,
      "requires_host_approval": false,
      "rationale": "score 0.15 -> relative fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_004",
      "publisher_name": "Marlowe & Co.",
-     "share": 0.414,
-     "budget_usd": 2629.6,
+     "share": 0.416,
+     "budget_usd": 2641.52,
      "cpc_bid_usd": 6.0,
      "start_bid_usd": 4.2,
      "expected_clicks": {
-      "low": 351.0,
-      "mid": 438.0,
-      "high": 526.0
+      "low": 352.0,
+      "mid": 440.0,
+      "high": 528.0
      },
      "expected_conversions": {
       "low": 6.0,
-      "mid": 11.9,
-      "high": 20.9
+      "mid": 12.0,
+      "high": 21.1
      },
-     "capacity_usd": 41127.21,
-     "expected_impressions": 26854,
-     "expected_reach": 16784,
+     "capacity_usd": 41331.32,
+     "expected_impressions": 26843,
+     "expected_reach": 16777,
      "requires_host_approval": false,
-     "rationale": "score 0.14 -> relative fit x1.36 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.15 -> relative fit x1.37 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
@@ -1542,7 +1542,7 @@
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: score 0.07 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.6))."
+     "reason": "Excluded: score 0.08 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
     },
     {
      "id": "pub_001",

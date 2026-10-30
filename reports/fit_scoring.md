@@ -1,24 +1,31 @@
 # Fitting the scoring constants from pairwise labels
 
-Labels: 331 order-consistent, decisive LLM-judge pairs over 64 holdout advertisers (prompts/pairwise_judge.md, both orders asked).
+Labels: order-consistent, decisive LLM-judge pairs (prompts/pairwise_judge.md, both orders asked). Fit on 223 DEV pairs; 252 TEST pairs never used to fit.
 
-## Held-out pairwise agreement with the judge (5-fold CV by advertiser)
+## TEST brands (never used to fit): pairwise agreement with the judge
 
 | model | accuracy | log loss |
 |---|---|---|
-| hand-set config (scale only fitted) | 0.774 | 0.516 |
-| fitted (MAP, prior = hand-set) | 0.777 | 0.504 |
+| hand-set config | 0.786 | 0.556 |
+| fitted on dev | 0.786 | 0.546 |
+
+## DEV brands: 5-fold CV by advertiser
+
+| model | accuracy | log loss |
+|---|---|---|
+| hand-set config (scale only fitted) | 0.704 | 0.567 |
+| fitted (MAP, prior = hand-set) | 0.705 | 0.56 |
 
 ## Parameters
 
 | parameter | hand-set | fitted |
 |---|---|---|
-| relevance_exponent | 1.0 | 0.788 |
-| price_exponent | 0.5 | 0.607 |
-| quality_p | 1.0 | 0.995 |
-| weight: audience_fit | 0.3 | 0.298 |
-| weight: persona_fit | 0.35 | 0.343 |
-| weight: notes_fit | 0.2 | 0.208 |
+| relevance_exponent | 1.0 | 0.893 |
+| price_exponent | 0.5 | 0.572 |
+| quality_p | 1.0 | 0.987 |
+| weight: audience_fit | 0.3 | 0.299 |
+| weight: persona_fit | 0.35 | 0.344 |
+| weight: notes_fit | 0.2 | 0.207 |
 | weight: scale | 0.05 | 0.05 |
 | weight: seasonality | 0.1 | 0.1 |
 
@@ -31,26 +38,15 @@ Labels: 331 order-consistent, decisive LLM-judge pairs over 64 holdout advertise
 
 Top-5 change vs hand-set on golden: 0.108
 
-## Specification grid (why EPS = 0.15 and a strong prior)
+## Decision: keep the hand-set values
+The dev-only fit lands next to the hand-set values (relevance 0.89 vs 1.0, price 0.57 vs 0.5, p 0.99 vs 1.0,
+weights unchanged) and does not improve ranking on the TEST brands (accuracy 0.786 both; log loss 0.556 -> 0.546).
+Golden recall +0.05 is one case. Adopting would add false precision, so the config stays hand-set; the result
+is evidence that the hand-set region is where the labels point (flat maximum, as the sensitivity analysis
+predicted). The judge's own order-consistency is 92%, so ~0.79 agreement is close to what this label source allows.
 
-| zero-floor EPS | prior | CV acc hand-set | CV acc fitted | a | b | p | golden precision / recall (fitted) |
-|---|---|---|---|---|---|---|---|
-| 0.001 | 2 | 0.756 | 0.711 | 0.10 | 0.81 | 1.51 | 0.856 / 0.60 |
-| 0.001 | 50 | 0.756 | 0.730 | 0.10 | 0.60 | 1.05 | 0.856 / 0.60 |
-| 0.05 | 2 | 0.756 | 0.752 | 0.13 | 0.41 | 1.47 | 0.886 / 0.60 |
-| 0.05 | 50 | 0.756 | 0.760 | 0.81 | 0.63 | 1.00 | 0.970 / 0.65 |
-| 0.15 | 2 | 0.774 | 0.746 | 0.21 | 0.37 | 1.18 | 0.917 / 0.70 |
-| **0.15** | **50** | 0.774 | **0.777** | 0.79 | 0.61 | 1.00 | **0.970 / 0.65** |
-
-## What we learned
-1. **With a sensible specification the labels agree with the hand-set values** (flat maximum, as the
-   sensitivity analysis predicted): relevance exponent 1.0 -> 0.8, price exponent 0.5 -> 0.6, p stays 1.
-   Adopted, rounded, because they're now label-supported rather than guessed; the gain is within noise.
-2. **A weak prior + a harsh zero floor overfits a mis-specified loss:** log loss improves, ranking accuracy
-   and golden precision get worse. Optimise and judge on the metric you care about (ordering), not only log loss.
-3. **The judge prefers a host with no category link in 28% of the pairs where exactly one has a link**, mostly
-   when choosing between two weak hosts (it weighs audience over a weak category match). Some answers are just
-   odd (hemp oil for dogs -> a women's apparel host). The judge is a noisy labeller, not ground truth: hence the
-   40-pair human sheet (`human_labels_todo.csv`).
-4. **Sample pairs near the decision boundary** (last recommended vs first excluded) next time: a third of these
-   pairs were random, and those mostly order hosts we'd never recommend.
+## Specification lessons (from the earlier grid, fit on all holdout pairs before the split; withdrawn)
+- A harsh zero floor (log of 0.001) plus a weak prior pushed the relevance exponent to its bound (0.1):
+  lower log loss, worse ranking and golden precision (0.97 -> 0.86). Fixed with floor 0.15 and a strong prior.
+- The judge prefers a host with no category link in ~28% of mixed pairs, mostly when ordering two weak hosts;
+  next time, sample pairs near the decision boundary.

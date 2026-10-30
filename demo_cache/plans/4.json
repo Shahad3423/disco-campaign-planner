@@ -23,11 +23,6 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "home",
-    "weight": 1.0,
-    "why": "Candles are a core home decor and household product."
-   },
-   {
     "tag": "natural",
     "weight": 1.0,
     "why": "Made with natural soy wax and no synthetic fragrances."
@@ -36,6 +31,11 @@
     "tag": "gifting",
     "weight": 1.0,
     "why": "The advertiser states they are mostly bought as gifts."
+   },
+   {
+    "tag": "home",
+    "weight": 1.0,
+    "why": "Candles are a core home decor and household product."
    },
    {
     "tag": "sustainable",
@@ -100,7 +100,7 @@
   {
    "publisher_id": "pub_014",
    "publisher_name": "Hearthstone Goods",
-   "score": 0.2776,
+   "score": 0.2543,
    "components": [
     {
      "name": "category_fit",
@@ -118,7 +118,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -147,12 +147,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.2499,
+   "score": 0.229,
    "components": [
     {
      "name": "category_fit",
@@ -170,7 +170,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -199,12 +199,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.1563,
+   "score": 0.132,
    "components": [
     {
      "name": "category_fit",
@@ -222,7 +222,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -251,12 +251,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches spa (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6))."
+   "reason": "Recommended: matches spa (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.1148,
+   "score": 0.0826,
    "components": [
     {
      "name": "category_fit",
@@ -274,7 +274,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -308,7 +308,7 @@
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.0853,
+   "score": 0.0614,
    "components": [
     {
      "name": "category_fit",
@@ -326,7 +326,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -360,7 +360,7 @@
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.0817,
+   "score": 0.0589,
    "components": [
     {
      "name": "category_fit",
@@ -378,7 +378,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -412,7 +412,7 @@
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.0812,
+   "score": 0.0585,
    "components": [
     {
      "name": "category_fit",
@@ -430,7 +430,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -482,7 +482,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -534,7 +534,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -586,7 +586,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -638,7 +638,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -690,7 +690,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -742,7 +742,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -794,7 +794,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -846,7 +846,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -898,7 +898,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -950,7 +950,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1002,7 +1002,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1054,7 +1054,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1106,7 +1106,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1433,85 +1433,85 @@
    "monthly_budget_usd": 370.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 69130,
-   "expected_reach": 43206,
+   "expected_impressions": 70097,
+   "expected_reach": 43811,
    "goal_feasible": true,
    "daily_cap_usd": 12.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 370.59,
+   "learning_budget_needed_usd": 367.06,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.406,
-     "budget_usd": 150.21,
+     "share": 0.413,
+     "budget_usd": 152.92,
      "cpc_bid_usd": 0.39,
      "start_bid_usd": 0.27,
      "expected_clicks": {
-      "low": 308.0,
-      "mid": 385.0,
-      "high": 462.0
+      "low": 314.0,
+      "mid": 392.0,
+      "high": 471.0
      },
      "expected_conversions": {
-      "low": 3.2,
-      "mid": 6.5,
-      "high": 11.3
+      "low": 3.3,
+      "mid": 6.6,
+      "high": 11.5
      },
      "capacity_usd": 917.28,
-     "expected_impressions": 22925,
-     "expected_reach": 14328,
+     "expected_impressions": 23339,
+     "expected_reach": 14587,
      "requires_host_approval": false,
-     "rationale": "score 0.28 -> relative fit x1.40 on CTR/CVR; max bid $0.39 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.25 -> relative fit x1.40 on CTR/CVR; max bid $0.39 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.365,
-     "budget_usd": 135.22,
+     "share": 0.372,
+     "budget_usd": 137.71,
      "cpc_bid_usd": 0.37,
      "start_bid_usd": 0.26,
      "expected_clicks": {
-      "low": 292.0,
-      "mid": 365.0,
-      "high": 439.0
+      "low": 298.0,
+      "mid": 372.0,
+      "high": 447.0
      },
      "expected_conversions": {
       "low": 2.9,
-      "mid": 5.8,
-      "high": 10.1
+      "mid": 5.9,
+      "high": 10.3
      },
-     "capacity_usd": 1055.08,
-     "expected_impressions": 23069,
-     "expected_reach": 14418,
+     "capacity_usd": 1055.27,
+     "expected_impressions": 23489,
+     "expected_reach": 14680,
      "requires_host_approval": false,
-     "rationale": "score 0.25 -> relative fit x1.32 on CTR/CVR; max bid $0.37 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.23 -> relative fit x1.32 on CTR/CVR; max bid $0.37 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.229,
-     "budget_usd": 84.57,
-     "cpc_bid_usd": 0.29,
+     "share": 0.215,
+     "budget_usd": 79.38,
+     "cpc_bid_usd": 0.28,
      "start_bid_usd": 0.25,
      "expected_clicks": {
-      "low": 233.0,
-      "mid": 292.0,
-      "high": 350.0
+      "low": 227.0,
+      "mid": 283.0,
+      "high": 340.0
      },
      "expected_conversions": {
-      "low": 1.8,
-      "mid": 3.7,
-      "high": 6.4
+      "low": 1.7,
+      "mid": 3.5,
+      "high": 6.0
      },
-     "capacity_usd": 2485.74,
-     "expected_impressions": 23136,
-     "expected_reach": 14460,
+     "capacity_usd": 2319.66,
+     "expected_impressions": 23269,
+     "expected_reach": 14543,
      "requires_host_approval": false,
-     "rationale": "score 0.16 -> relative fit x1.05 on CTR/CVR; max bid $0.29 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.13 -> relative fit x1.02 on CTR/CVR; max bid $0.28 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
@@ -1555,7 +1555,7 @@
     {
      "publisher_id": "pub_003",
      "start_bid": 0.25,
-     "max_bid": 0.29,
+     "max_bid": 0.28,
      "floor": 0.25
     }
    ],

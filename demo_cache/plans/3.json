@@ -91,7 +91,7 @@
   {
    "publisher_id": "pub_020",
    "publisher_name": "Pop & Sip",
-   "score": 0.5373,
+   "score": 0.5654,
    "components": [
     {
      "name": "category_fit",
@@ -109,7 +109,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -140,12 +140,12 @@
     "competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches beverages, functional_beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.6)). Flags: competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches beverages, functional_beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.2654,
+   "score": 0.2432,
    "components": [
     {
      "name": "category_fit",
@@ -163,7 +163,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -217,7 +217,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -269,7 +269,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -321,7 +321,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -373,7 +373,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -425,7 +425,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -477,7 +477,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -529,7 +529,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -581,7 +581,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -633,7 +633,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -685,7 +685,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -737,7 +737,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -789,7 +789,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -841,7 +841,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -893,7 +893,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -945,7 +945,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -997,7 +997,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1049,7 +1049,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1101,7 +1101,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.6)"
+     "detail": "price not stated (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1395,69 +1395,69 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1420.0,
+   "monthly_budget_usd": 1390.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 47617,
-   "expected_reach": 29761,
+   "expected_impressions": 47826,
+   "expected_reach": 29891,
    "goal_feasible": true,
-   "daily_cap_usd": 47.33,
+   "daily_cap_usd": 46.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1418.82,
+   "learning_budget_needed_usd": 1390.59,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_020",
      "publisher_name": "Pop & Sip",
-     "share": 0.669,
-     "budget_usd": 950.5,
+     "share": 0.699,
+     "budget_usd": 971.93,
      "cpc_bid_usd": 2.35,
      "start_bid_usd": 1.65,
      "expected_clicks": {
-      "low": 324.0,
-      "mid": 404.0,
-      "high": 485.0
+      "low": 331.0,
+      "mid": 414.0,
+      "high": 496.0
      },
      "expected_conversions": {
-      "low": 9.1,
-      "mid": 18.1,
-      "high": 31.7
+      "low": 9.3,
+      "mid": 18.5,
+      "high": 32.4
      },
      "capacity_usd": 10264.8,
-     "expected_impressions": 24075,
-     "expected_reach": 15047,
+     "expected_impressions": 24618,
+     "expected_reach": 15386,
      "requires_host_approval": true,
-     "rationale": "score 0.54 -> relative fit x1.40 on CTR/CVR; max bid $2.35 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.57 -> relative fit x1.40 on CTR/CVR; max bid $2.35 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.331,
-     "budget_usd": 469.5,
-     "cpc_bid_usd": 1.67,
-     "start_bid_usd": 1.17,
+     "share": 0.301,
+     "budget_usd": 418.07,
+     "cpc_bid_usd": 1.59,
+     "start_bid_usd": 1.11,
      "expected_clicks": {
-      "low": 225.0,
-      "mid": 281.0,
-      "high": 337.0
+      "low": 210.0,
+      "mid": 263.0,
+      "high": 316.0
      },
      "expected_conversions": {
-      "low": 4.5,
-      "mid": 9.0,
-      "high": 15.7
+      "low": 4.0,
+      "mid": 7.9,
+      "high": 13.9
      },
-     "capacity_usd": 4188.04,
-     "expected_impressions": 23542,
-     "expected_reach": 14714,
+     "capacity_usd": 3782.86,
+     "expected_impressions": 23208,
+     "expected_reach": 14505,
      "requires_host_approval": false,
-     "rationale": "score 0.27 -> relative fit x1.00 on CTR/CVR; max bid $1.67 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.24 -> relative fit x0.94 on CTR/CVR; max bid $1.59 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,420, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,390, the smallest budget that buys 300 clicks per host."
    ]
   },
   "bid_strategy": {
@@ -1490,8 +1490,8 @@
     },
     {
      "publisher_id": "pub_012",
-     "start_bid": 1.17,
-     "max_bid": 1.67,
+     "start_bid": 1.11,
+     "max_bid": 1.59,
      "floor": 0.25
     }
    ],

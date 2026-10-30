@@ -24,6 +24,11 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "pet",
+    "weight": 1.0,
+    "why": "Core category for pet products."
+   },
+   {
     "tag": "pet_food",
     "weight": 1.0,
     "why": "Core product category being sold."
@@ -32,11 +37,6 @@
     "tag": "subscription",
     "weight": 1.0,
     "why": "The product is offered on a subscription model."
-   },
-   {
-    "tag": "pet",
-    "weight": 1.0,
-    "why": "Core category for pet products."
    },
    {
     "tag": "pet_supplies",
@@ -109,13 +109,13 @@
   {
    "publisher_id": "pub_007",
    "publisher_name": "Pawline",
-   "score": 0.6707,
+   "score": 0.6858,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_food, subscription, pet, pet_supplies (specific) (multiplier)"
+     "detail": "matches pet, pet_food, subscription, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -127,7 +127,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -158,18 +158,18 @@
     "competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet_food, subscription, pet, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.6)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches pet, pet_food, subscription, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_009",
    "publisher_name": "Ruffco",
-   "score": 0.4808,
+   "score": 0.5243,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier)"
+     "detail": "matches pet, pet_food, pet_supplies, pet_pharmacy (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -181,7 +181,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -212,18 +212,18 @@
     "competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier); strongest supporting signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.6)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches pet, pet_food, pet_supplies, pet_pharmacy (specific) (multiplier); strongest supporting signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_018",
    "publisher_name": "Tailcrate",
-   "score": 0.2879,
+   "score": 0.2835,
    "components": [
     {
      "name": "category_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "matches subscription, pet, pet_supplies (specific) (multiplier)"
+     "detail": "matches pet, subscription, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -235,7 +235,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -266,12 +266,12 @@
     "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
    ],
    "recommended": true,
-   "reason": "Recommended as fallback: matches subscription, pet, pet_supplies (specific) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   "reason": "Recommended as fallback: matches pet, subscription, pet_supplies (specific) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
   },
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.1621,
+   "score": 0.1273,
    "components": [
     {
      "name": "category_fit",
@@ -289,7 +289,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -318,12 +318,12 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.16 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
+   "reason": "Excluded: score 0.13 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_015",
    "publisher_name": "Kitchenly",
-   "score": 0.1246,
+   "score": 0.0872,
    "components": [
     {
      "name": "category_fit",
@@ -341,7 +341,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -375,7 +375,7 @@
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.1146,
+   "score": 0.0802,
    "components": [
     {
      "name": "category_fit",
@@ -393,7 +393,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -427,7 +427,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.1109,
+   "score": 0.0776,
    "components": [
     {
      "name": "category_fit",
@@ -445,7 +445,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -497,7 +497,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -549,7 +549,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -601,7 +601,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -653,7 +653,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -705,7 +705,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -757,7 +757,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -809,7 +809,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -861,7 +861,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -913,7 +913,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -965,7 +965,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits premium (multiplier ^0.6)"
+     "detail": "host income high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1017,7 +1017,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1069,7 +1069,7 @@
      "name": "price_fit",
      "value": 0.42,
      "weight": 1.0,
-     "detail": "host income mid below mid-high needed for premium (multiplier ^0.6)"
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1121,7 +1121,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.6)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -1425,92 +1425,92 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 3100.0,
+   "monthly_budget_usd": 3120.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 73039,
-   "expected_reach": 45649,
+   "expected_impressions": 72231,
+   "expected_reach": 45144,
    "goal_feasible": true,
-   "daily_cap_usd": 103.33,
+   "daily_cap_usd": 104.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 3095.29,
+   "learning_budget_needed_usd": 3116.47,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.466,
-     "budget_usd": 1444.47,
+     "share": 0.459,
+     "budget_usd": 1432.58,
      "cpc_bid_usd": 3.49,
      "start_bid_usd": 2.44,
      "expected_clicks": {
-      "low": 331.0,
-      "mid": 414.0,
-      "high": 497.0
+      "low": 328.0,
+      "mid": 410.0,
+      "high": 493.0
      },
      "expected_conversions": {
-      "low": 6.4,
-      "mid": 12.7,
-      "high": 22.3
+      "low": 6.3,
+      "mid": 12.6,
+      "high": 22.1
      },
      "capacity_usd": 14071.68,
-     "expected_impressions": 24636,
-     "expected_reach": 15398,
+     "expected_impressions": 24433,
+     "expected_reach": 15271,
      "requires_host_approval": true,
-     "rationale": "score 0.67 -> relative fit x1.40 on CTR/CVR; max bid $3.49 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.69 -> relative fit x1.40 on CTR/CVR; max bid $3.49 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
-     "share": 0.334,
-     "budget_usd": 1035.49,
-     "cpc_bid_usd": 2.93,
-     "start_bid_usd": 2.05,
+     "share": 0.351,
+     "budget_usd": 1095.22,
+     "cpc_bid_usd": 3.02,
+     "start_bid_usd": 2.11,
      "expected_clicks": {
-      "low": 283.0,
-      "mid": 353.0,
-      "high": 424.0
+      "low": 290.0,
+      "mid": 363.0,
+      "high": 435.0
      },
      "expected_conversions": {
-      "low": 4.6,
-      "mid": 9.1,
-      "high": 16.0
+      "low": 4.8,
+      "mid": 9.7,
+      "high": 16.9
      },
-     "capacity_usd": 127905.76,
-     "expected_impressions": 25097,
-     "expected_reach": 15685,
+     "capacity_usd": 136116.76,
+     "expected_impressions": 24943,
+     "expected_reach": 15589,
      "requires_host_approval": true,
-     "rationale": "score 0.48 -> relative fit x1.17 on CTR/CVR; max bid $2.93 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.52 -> relative fit x1.21 on CTR/CVR; max bid $3.02 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_018",
      "publisher_name": "Tailcrate",
-     "share": 0.2,
-     "budget_usd": 620.04,
-     "cpc_bid_usd": 2.35,
-     "start_bid_usd": 1.65,
+     "share": 0.19,
+     "budget_usd": 592.21,
+     "cpc_bid_usd": 2.32,
+     "start_bid_usd": 1.62,
      "expected_clicks": {
-      "low": 211.0,
-      "mid": 264.0,
-      "high": 317.0
+      "low": 204.0,
+      "mid": 255.0,
+      "high": 306.0
      },
      "expected_conversions": {
-      "low": 2.7,
-      "mid": 5.5,
-      "high": 9.6
+      "low": 2.6,
+      "mid": 5.2,
+      "high": 9.1
      },
-     "capacity_usd": 11173.66,
-     "expected_impressions": 23306,
-     "expected_reach": 14567,
+     "capacity_usd": 10882.59,
+     "expected_impressions": 22855,
+     "expected_reach": 14285,
      "requires_host_approval": false,
-     "rationale": "score 0.29 -> relative fit x0.94 on CTR/CVR; max bid $2.35 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.28 -> relative fit x0.93 on CTR/CVR; max bid $2.32 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $3,100, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $3,120, the smallest budget that buys 300 clicks per host."
    ]
   },
   "bid_strategy": {
@@ -1543,14 +1543,14 @@
     },
     {
      "publisher_id": "pub_009",
-     "start_bid": 2.05,
-     "max_bid": 2.93,
+     "start_bid": 2.11,
+     "max_bid": 3.02,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_018",
-     "start_bid": 1.65,
-     "max_bid": 2.35,
+     "start_bid": 1.62,
+     "max_bid": 2.32,
      "floor": 0.25
     }
    ],
@@ -1579,7 +1579,7 @@
    "publishers_exclude": [
     {
      "id": "pub_012",
-     "reason": "Excluded: score 0.16 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
+     "reason": "Excluded: score 0.13 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
     },
     {
      "id": "pub_015",
@@ -1737,7 +1737,7 @@
   ]
  },
  "timings_s": {
-  "intake": 0.02,
+  "intake": 0.01,
   "matching": 0.0,
   "creative": 0.0
  },
