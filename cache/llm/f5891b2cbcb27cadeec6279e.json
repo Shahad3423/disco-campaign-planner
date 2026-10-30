@@ -1,0 +1,113 @@
+{
+  "business_summary": "Natural supplements for dogs, specializing in probiotics and hip/joint chews, with a strong business focus on driving auto-ship subscriptions from pet parents.",
+  "product": "Natural dog supplements (probiotics and hip/joint chews)",
+  "is_consumer_product": true,
+  "price_point_usd": 35.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural supplements for dogs",
+    "mostly probiotics and hip/joint chews",
+    "around $35 a bag",
+    "Auto-ship is where we make our money"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the product is exclusively for dogs."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core category; dog supplements fall under pet supplies."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product type, even though it is formulated for pets."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.75,
+      "why": "The advertiser's primary monetization model is auto-ship."
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent category; health-related pet products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Adjacent category; pet owners buying food are highly likely to buy supplements."
+    },
+    {
+      "tag": "treats",
+      "weight": 0.5,
+      "why": "Adjacent category; hip/joint and probiotic chews are often administered like treats."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Product attribute; the supplements are described as natural."
+    }
+  ],
+  "competing_tags": [
+    "pet_pharmacy",
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_health",
+    "pet_supplies",
+    "subscription_services",
+    "supplements"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only']",
+      "evidence": "Auto-ship is where we make our money"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is subscription-heavy and has health-conscious pet owners, making it a perfect match for dog supplements."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior, ideal for driving auto-ship."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate targets millennials treating dogs as family with a subscription model, highly aligned with this product."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and subscription focus are clearly defined, and there are multiple highly aligned pet publishers in the network.",
+  "missing_info": [
+    "Specific target demographics beyond general 'pet parents'",
+    "Shipping costs and policies",
+    "Ingredient sourcing or manufacturing details"
+  ],
+  "clarifying_questions": [
+    "Do you offer a one-time purchase option, or is your checkout strictly subscription-based?",
+    "What are your standard shipping rates and delivery times?",
+    "Are your supplements vet-recommended or clinically tested?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

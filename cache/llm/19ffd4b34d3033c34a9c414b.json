@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, give your pup the very best.",
+      "body": "Treat your furry family member to premium, design-forward dog walking gear made for daily adventures!",
+      "cta": "Shop walking gear",
+      "headline_no_name": "Give your pup the very best.",
+      "angle": "emotional connection to pet as family, focusing on premium quality and design",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Understated style for your dog walks, {first_name}.",
+      "body": "Discover premium, design-forward dog walking gear crafted for daily comfort and lasting aesthetic appeal.",
+      "cta": "Shop premium gear",
+      "headline_no_name": "Understated style for your daily dog walks.",
+      "angle": "classic understated design, focusing on longevity and premium craftsmanship appeal",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, ready for easy family dog walks?",
+      "body": "Upgrade to design-forward dog walking gear that makes getting out the door with kids and pets quick and simple.",
+      "cta": "Shop easy gear",
+      "headline_no_name": "Ready for easy family dog walks?",
+      "angle": "time-saving and family-friendly convenience",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    }
+  ]
+}

@@ -234,10 +234,10 @@ probability, share of voice). CVR was lowered to 1/2/3.5% after checking benchma
 
 ## D19. The page auction: second price, slot effects, reserve
 
-**Decision.** One thank-you page has 3 slots. Eligible campaigns are ranked by eCPM (final bid x expected
+**Decision.** One thank-you page has **one** offer slot (product decision: one clear offer protects the host's page; `slots` is configurable). Eligible campaigns are ranked by eCPM (final bid x expected
 CTR x 1000); anything below a reserve eCPM is dropped (an empty slot beats a weak offer on the host's own
-page); slot CTR is scaled by a position curve (1.0 / 0.75 / 0.55, assumed); each winner pays the
-**generalised second price**: the least that keeps its slot, `next eCPM / (own CTR x 1000) + $0.01`, never
+page); a position curve applies if slots > 1; the winner pays the
+**generalised second price**: the least that still beats the runner-up, `runner-up eCPM / (own CTR x 1000) + $0.01`, never
 above its own bid. The host earns its revenue share of what's actually paid. **Why second price:** it makes
 "bid what a click is worth to you" the sensible strategy, which is what our bid ceiling (break-even CPC)
 assumes. **Why it matters here:** with only the 15 example campaigns no host had more than 3 bidders, so the

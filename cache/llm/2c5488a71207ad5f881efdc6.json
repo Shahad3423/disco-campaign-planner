@@ -1,0 +1,44 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "No tricks, just natural treats for {first_name}'s dog",
+      "body": "Keep your furry family member happy this Halloween with natural probiotics and hip/joint chews for around $35 a bag.",
+      "cta": "Shop natural treats",
+      "headline_no_name": "No tricks, just natural treats for your dog",
+      "angle": "Halloween seasonal theme focusing on emotional connection and natural quality for a pet family member",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, simplify your dog's supplement routine",
+      "body": "Get natural probiotics and hip/joint chews delivered automatically. Set up auto-ship for around $35 a bag and never run out.",
+      "cta": "Start auto-ship",
+      "headline_no_name": "Simplify your dog's supplement routine",
+      "angle": "Frictionless convenience and subscription-first ease",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag",
+        "Auto-ship is where we make our money"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your dog's daily wellness, {first_name}",
+      "body": "Support their system with natural probiotics and hip/joint chews. Natural ingredients for around $35 a bag.",
+      "cta": "Shop natural chews",
+      "headline_no_name": "Optimize your dog's daily wellness",
+      "angle": "Outcome-focused natural system optimization for gut and joint health",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag"
+      ]
+    }
+  ]
+}
