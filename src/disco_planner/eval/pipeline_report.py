@@ -112,7 +112,8 @@ def main() -> None:
     gr = lambda d, k: (d.get("robustness") or {}).get(k)
     lines = ["# Whole-pipeline evaluation: before vs after the scoring changes", "",
              "Changes: competitor = flag + host setting (no score/budget penalty, majority flags, fallback host); "
-             "constants in config; power-mean aggregation; exponents fitted from pairwise labels (relevance 0.8, price 0.6).", "",
+             "constants in config; power-mean aggregation (identical at p=1); exponents kept hand-set (a dev-only fit didn't beat them on test). "
+             "Golden 'before' = eval_v3c (matching only; creative metrics in eval_v3_full).", "",
              "## Golden set (15 examples, blind labels)", "", "| metric | before | after | delta |", "|---|---|---|---|"]
     for k in ("gate_accuracy", "must_include_recall@5", "must_exclude_violations", "precision", "competitor_flag_recall",
               "implausible_personas_selected", "plausible_persona_recall", "budget_invariants_ok",
