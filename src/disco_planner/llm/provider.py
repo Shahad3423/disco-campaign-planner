@@ -25,6 +25,19 @@ T = TypeVar("T", bound=BaseModel)
 CACHE_DIR = REPO_ROOT / "cache" / "llm"
 
 
+def _load_dotenv() -> None:
+    """Tiny .env reader (KEY=value lines) so local runs need no extra dependency."""
+    env = REPO_ROOT / ".env"
+    if env.exists():
+        for line in env.read_text().splitlines():
+            if "=" in line and not line.lstrip().startswith("#"):
+                key, value = line.split("=", 1)
+                os.environ.setdefault(key.strip(), value.strip().strip("'\""))
+
+
+_load_dotenv()
+
+
 class LLMError(RuntimeError):
     pass
 
@@ -41,23 +54,41 @@ class GeminiProvider:
 
     def __init__(self, model: str | None = None):
         from google import genai
-
-        self.model = model or os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-        self._client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-
-    def complete(self, system: str, user: str, temperature: float) -> str:
         from google.genai import types
 
-        resp = self._client.models.generate_content(
-            model=self.model,
-            contents=user,
-            config=types.GenerateContentConfig(
-                system_instruction=system,
-                temperature=temperature,
-                response_mime_type="application/json",
-            ),
+        # Fallback chain: free-tier models get 503 "high demand" and 429 quota errors, so a
+        # busy model shouldn't break the demo. gemini-2.5-flash is retired for new keys.
+        chain = model or os.getenv("GEMINI_MODELS", "gemini-3.5-flash,gemini-flash-lite-latest,gemini-flash-latest")
+        self.models = [m.strip() for m in chain.split(",")]
+        self.model = self.models[0]  # stable id for the cache key
+        self.last_model_used: str | None = None
+        self._client = genai.Client(
+            api_key=os.environ["GEMINI_API_KEY"],
+            http_options=types.HttpOptions(timeout=60_000, retry_options=types.HttpRetryOptions(attempts=2)),
         )
-        return resp.text or ""
+
+    def complete(self, system: str, user: str, temperature: float) -> str:
+        from google.genai import errors, types
+
+        last_error: Exception | None = None
+        for model in self.models:
+            try:
+                resp = self._client.models.generate_content(
+                    model=model,
+                    contents=user,
+                    config=types.GenerateContentConfig(
+                        system_instruction=system,
+                        temperature=temperature,
+                        response_mime_type="application/json",
+                    ),
+                )
+                self.last_model_used = model
+                return resp.text or ""
+            except (errors.ServerError, errors.ClientError) as e:
+                if getattr(e, "code", None) not in (429, 500, 503, 504):
+                    raise
+                last_error = e  # overloaded or out of quota: try the next model
+        raise LLMError(f"All Gemini models failed; last error: {last_error}")
 
 
 class AnthropicProvider:

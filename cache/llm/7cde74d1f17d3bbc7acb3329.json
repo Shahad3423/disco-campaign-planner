@@ -1,0 +1,34 @@
+{
+  "business_summary": "The input provided ('idk just try it') contains no information about the business, product, or target audience.",
+  "product": "unknown",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "reject_low_signal",
+  "gate_reason": "The description contains no usable information about the product, category, pricing, or target market.",
+  "missing_info": [
+    "product_type",
+    "target_audience",
+    "price_point",
+    "business_model",
+    "value_proposition"
+  ],
+  "clarifying_questions": [
+    "What product or service are you selling?",
+    "Who is your ideal customer or target audience?",
+    "What is the average order value or price point?",
+    "Is this a one-time purchase, subscription, or reorderable product?"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "business_summary": "High-end DTC luxury brand selling handcrafted, custom-fit Italian leather handbags made in Florence at an average price point of $1,200 with a 6-week lead time.",
+  "product": "Custom-fit leather handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Custom-fit leather handbags",
+    "Italian-made",
+    "Handcrafted in Florence",
+    "Minimum order ships in 6 weeks",
+    "Average price point $1,200"
+  ],
+  "values": [
+    "craftsmanship",
+    "customization",
+    "artisanal production"
+  ],
+  "fulfillment_notes": "Minimum order ships in 6 weeks.",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category fit for fashion accessories and luxury leather goods."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Primary demographic for high-end custom handbags."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Handcrafted luxury goods appeal to classic/timeless style preferences."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "Product offers custom-fit personalization."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "High-end handbags often complement professional or workwear attire."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "classic_apparel",
+    "fashion",
+    "apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "Disinterested in delayed fulfillment and prefers speed.",
+      "evidence": "Minimum order ships in 6 weeks."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "High price sensitivity and disinterest in luxury-only messaging.",
+      "evidence": "Average price point $1,200."
+    },
+    {
+      "persona_id": "persona_010",
+      "conflict": "Prefers last-minute shipping for gift purchases.",
+      "evidence": "Minimum order ships in 6 weeks."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Impulse-friendly and rapid/instant nature conflicts with a $1,200 purchase and 6-week fulfillment timeline."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Affluent female audience with high AOV and strong responsiveness to quality messaging."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with classic, conservative sensibility matching luxury craftsmanship."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product definition, pricing tier, lead time, and unique value proposition allow accurate host matching.",
+  "missing_info": [
+    "Target age range",
+    "Return/exchange policy for custom-fit items",
+    "Primary campaign objective (e.g., immediate conversions vs lead capture)"
+  ],
+  "clarifying_questions": [
+    "Who is your target age demographic or specific ideal customer profile?",
+    "What is your campaign goal (e.g., direct sales vs pre-order waitlist signups)?",
+    "What is your return or remeasurement policy for custom-fit items?"
+  ]
+}
