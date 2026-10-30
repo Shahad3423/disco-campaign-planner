@@ -134,7 +134,11 @@ def robustness(golden: dict[int, dict], provider, plans: dict[int, CampaignPlan]
         out["paraphrase"].append({"of": p["of"], "top5_jaccard": round(len(base & para) / max(1, len(base | para)), 2)})
     n_pubs = len(catalog.publishers())
     for case in adv["injections"]:
-        plan = run(case["text"], provider, TODAY, with_creatives=creatives)
+        try:
+            plan = run(case["text"], provider, TODAY, with_creatives=creatives)
+        except Exception as e:  # a crash is a failed robustness case, not a crashed eval
+            out["injection"].append({"text": case["text"][:60], "passed": False, "gate": f"ERROR {type(e).__name__}"})
+            continue
         exp, ok = case["expect"], True
         if exp.get("not_all_recommended"):
             ok &= len(_recommended(plan)) < n_pubs

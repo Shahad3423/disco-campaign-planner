@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, upgrade your nutrition",
+      "body": "Fuel your system with protein bars designed to deliver clean macros without tasting like cardboard.",
+      "cta": "Shop Now",
+      "headline_no_name": "Upgrade your nutrition",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your next workout",
+      "body": "Power through training sessions with high-performance protein bars that actually taste good instead of like cardboard.",
+      "cta": "Get Started",
+      "headline_no_name": "Fuel your next workout",
+      "angle": "performance claims",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A sweet treat for Halloween",
+      "body": "Skip the spooky sugar crash. Gift premium protein bars engineered to actually taste good, not like cardboard.",
+      "cta": "Shop Gifts",
+      "headline_no_name": "A sweet treat for Halloween",
+      "angle": "giftable",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}

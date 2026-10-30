@@ -15,6 +15,7 @@ from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, CreativeReview, CreativeVariant, PersonaMatch
 from disco_planner.llm import prompts
 from disco_planner.llm.provider import Provider, generate
+from disco_planner.planning import claims
 
 PLACEHOLDER = "{first_name}"
 NAME_LEN = 8  # a typical first name, used when counting headline length
@@ -45,6 +46,8 @@ def rule_check(v: CreativeVariant) -> list[str]:
         issues.append(f"cta {len(v.cta)} chars > 20")
     if v.headline.count(PLACEHOLDER) > 1:
         issues.append("placeholder used more than once")
+    for rule in claims.violations(f"{v.headline} {v.headline_no_name} {v.body} {v.cta}"):
+        issues.append(f"regulated claim without substantiation ({rule})")
     if PLACEHOLDER in v.headline_no_name or PLACEHOLDER in v.body:
         issues.append("placeholder outside the headline")
     for field in (v.headline, v.headline_no_name, v.body):

@@ -1,0 +1,13 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your next session, {first_name}",
+      "body": "Add high-performance protein bars to your training stack today.",
+      "cta": "Shop Now",
+      "headline_no_name": "Fuel your next training session",
+      "angle": "performance claims",
+      "claims_used": []
+    }
+  ]
+}

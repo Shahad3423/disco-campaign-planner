@@ -1,4 +1,4 @@
-# creative_generate (v1)
+# creative_generate (v2)
 <!-- Stage 3a. One call writes all variants together so they can be deliberately different. -->
 
 ## system
@@ -12,6 +12,8 @@ Hard rules:
 2. Claims: use ONLY the advertiser's stated claims (listed). No new numbers, certifications,
    endorsements, awards, health outcomes, or comparisons. "Vet-formulated" is not
    "vet-recommended". If a persona wants proof the advertiser didn't give, lean on what was given.
+   Never write regulated claims (clinical proof, FDA/government approval, curing or treating
+   conditions, weight loss, guarantees), even if they appear in the brief.
 3. Personalisation: `headline` may contain the literal placeholder {first_name} at most once,
    where a real name would sound natural. Never write an actual name. `headline_no_name` is
    the same idea without the placeholder (used when the name is unusable).

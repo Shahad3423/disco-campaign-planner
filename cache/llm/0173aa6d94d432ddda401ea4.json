@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Level up your stack, {first_name}",
+      "body": "Same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+      "cta": "Shop & Save",
+      "headline_no_name": "Level up your stack",
+      "angle": "performance claims",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your protocol",
+      "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+      "cta": "Explore Formulations",
+      "headline_no_name": "Optimize your protocol",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    }
+  ]
+}

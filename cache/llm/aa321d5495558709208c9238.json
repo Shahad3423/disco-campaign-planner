@@ -1,0 +1,50 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "A bit generic for the wellness optimizer persona, lacks scientific depth."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "making an impressive gift"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Claims the item makes an impressive gift, which is not in the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "on the most demanding routes"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Adds unverified performance context about demanding routes."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, light this up on your feed",
+      "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances.",
+      "cta": "Get the vibe",
+      "headline_no_name": "Light this up on your feed",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Hand-poured Vermont craftsmanship",
+      "body": "Small-batch candles poured by hand in Vermont using natural soy wax and no synthetic fragrances.",
+      "cta": "Explore",
+      "headline_no_name": "Hand-poured Vermont craftsmanship",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Natural soy wax from Vermont",
+      "body": "Small-batch candles poured by hand in Vermont with natural soy wax and absolutely no synthetic fragrances.",
+      "cta": "Shop natural",
+      "headline_no_name": "Natural soy wax from Vermont",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax",
+        "No synthetic fragrances"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The ultimate gift, {first_name}",
+      "body": "Mostly bought as gifts, these small-batch candles are poured by hand in Vermont with natural soy wax.",
+      "cta": "Shop gifts",
+      "headline_no_name": "The ultimate gift",
+      "angle": "giftable",
+      "claims_used": [
+        "Mostly bought as gifts",
+        "Small-batch candles poured by hand in Vermont",
+        "Natural soy wax"
+      ]
+    }
+  ]
+}

@@ -8,6 +8,7 @@ from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, NoteSignal, TagRelevance
 from disco_planner.llm import prompts
 from disco_planner.llm.provider import Provider, generate
+from disco_planner.planning import claims
 
 MIN_WORDS = 3
 
@@ -131,6 +132,16 @@ def parse_brief(brief: str, provider: Provider, today: date, n_samples: int | No
         temp, suffix = (0.0, "") if k == 0 else (0.8, f"\n\n(sample {k})")
         samples.append(_enforce_vocabulary(generate(provider, system, user + suffix, AdvertiserProfile, temperature=temp)))
     profile = merge_samples(samples)
+
+    # Regulated claims leave the allowed list, and we ask for substantiation instead.
+    regulated = [c for c in profile.stated_claims if claims.violations(c)]
+    if regulated:
+        profile.stated_claims = [c for c in profile.stated_claims if c not in regulated]
+        profile.claims_needing_substantiation = regulated
+        profile.clarifying_questions.append(
+            "We can't use these claims without substantiation (study, certification, or approval document): "
+            + "; ".join(regulated) + ". Can you share it?"
+        )
 
     # Code-level guardrails on the model's gate decision.
     if not profile.is_consumer_product and profile.gate == "proceed":

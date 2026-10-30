@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Engineered for professional patrollers",
+      "body": "Technical outerwear built with precise engineering for serious backcountry skiers. Trust what professionals wear.",
+      "cta": "Explore Technical Shells",
+      "headline_no_name": "Engineered for professional patrollers",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Built for lasting mountain heritage",
+      "body": "Invest in technical outerwear shells designed for serious backcountry skiers. Experience the gear that patrollers choose.",
+      "cta": "Discover Quality",
+      "headline_no_name": "Built for lasting mountain heritage",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Give the gear patrollers wear",
+      "body": "Technical outerwear shells for serious backcountry skiers make an impressive gift for the mountain enthusiast.",
+      "cta": "Shop Gift Shells",
+      "headline_no_name": "Give the gear patrollers wear",
+      "angle": "giftable",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Peak performance technical outerwear",
+      "body": "Built for serious backcountry skiers. Upgrade your kit with the exact technical shells that patrollers wear.",
+      "cta": "Shop Performance",
+      "headline_no_name": "Peak performance technical outerwear",
+      "angle": "performance claims",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Serving-time decision rules (DECISIONS D3-D5, ARCHITECTURE stage 2). No LLM here.
+
+# Persona posterior = publisher audience prior x tempered likelihoods from name/zip/time.
+# Tempering: L_used = (1 - confidence) + confidence * L_raw, so a low-confidence feature
+# barely moves the posterior. This is the main guard against compounding feature errors.
+posterior:
+  uncertain_max_prob: 0.22      # 10 personas: uniform = 0.10; below this we don't trust a persona pick
+  gift_likelihood_scale: 3.0    # gift_signal 1.0 -> Gifter likelihood x(1 + 3)
+  fast_delivery_boost: 1.3      # Convenience-First Millennial when same/next-day delivery is likely
+  switch_margin: 0.15           # leave the host-default variant only if another persona is >15% more likely
+
+ranking:
+  # expected CTR = prior_ctr x host fit multiplier x (floor + span * persona match) x context boosts
+  persona_match_floor: 0.7
+  persona_match_span: 0.6
+  max_offers: 3                 # of the network's max_offers_per_page, how many we fill in the simulator
+
+# Contextual boosts: (feature is true) x (campaign has one of these tags) -> CTR multiplier.
+# Kept tiny and explicit; every applied boost is listed in the decision's reasons.
+context_boosts:
+  - feature: near_ski_area
+    tags: [activewear]
+    multiplier: 1.25
+  - feature: cold_or_mountain
+    tags: [activewear, home_textiles, bedding]
+    multiplier: 1.10
+  - feature: is_coastal
+    tags: [sustainable]
+    multiplier: 1.05
+moment_boost_max: 0.30          # a fully active, tag-matching calendar moment adds up to +30% CTR

@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Save on a new kind of thing for moms",
+      "body": "Discover the new kind of thing for moms. Get your first-order discount and see why shoppers love it.",
+      "cta": "Claim Discount",
+      "headline_no_name": "Save on a new kind of thing for moms",
+      "angle": "discount-forward",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

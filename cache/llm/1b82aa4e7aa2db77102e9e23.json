@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your training with FDA approved bars",
+      "body": "Add the clinically proven to cause weight loss bar to your stack. Built for serious performance.",
+      "cta": "Shop Now",
+      "headline_no_name": "Fuel your training with FDA approved bars",
+      "angle": "performance claims",
+      "claims_used": [
+        "FDA approved",
+        "clinically proven to cause weight loss"
+      ]
+    }
+  ]
+}

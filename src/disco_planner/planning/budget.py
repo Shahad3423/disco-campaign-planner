@@ -167,10 +167,12 @@ def budget_plan(
         allocations.append(Allocation(
             publisher_id=pid, publisher_name=s.publisher_name, share=round(b / total, 3) if total else 0,
             budget_usd=round(b, 2), cpc_bid_usd=r["cpc"],
+            start_bid_usd=_clamp_cpc(r["cpc"] * bud["start_bid_fraction"]),
             expected_clicks=Range(low=round(clicks * 0.8), mid=round(clicks), high=round(clicks * 1.2)),
             expected_conversions=Range(**{k: round(v, 1) for k, v in conv.items()}),
             capacity_usd=round(r["capacity"], 2), requires_host_approval=r["approval"] < 1,
-            rationale=(f"score {s.score:.2f} -> fit x{r['fit']:.2f} on CTR/CVR; bid ${r['cpc']:.2f}"
+            rationale=(f"score {s.score:.2f} -> fit x{r['fit']:.2f} on CTR/CVR; max bid ${r['cpc']:.2f} (break-even at "
+                       f"target CPA), start at {bud['start_bid_fraction']:.0%} and raise only if under-delivering"
                        + ("; host sells a competing product, so it may decline (capacity discounted)" if r["approval"] < 1 else "")),
         ))
 

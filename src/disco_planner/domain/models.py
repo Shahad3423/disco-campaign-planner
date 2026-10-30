@@ -87,6 +87,9 @@ class AdvertiserProfile(BaseModel):
     target_gender: Literal["female", "male", "any", "unknown"] = "unknown"
     target_age_range: str | None = None
     stated_claims: list[str] = Field(default_factory=list, description="Claims the advertiser actually made")
+    claims_needing_substantiation: list[str] = Field(
+        default_factory=list, description="Regulated claims (health, approval, guarantees) we won't use without proof"
+    )
     values: list[str] = Field(default_factory=list)
     fulfillment_notes: str | None = None
     relevant_tags: list[TagRelevance] = Field(default_factory=list)
@@ -208,7 +211,8 @@ class Allocation(BaseModel):
     publisher_name: str
     share: float
     budget_usd: float
-    cpc_bid_usd: float
+    cpc_bid_usd: float = Field(description="Max (break-even) CPC for this host")
+    start_bid_usd: float | None = Field(default=None, description="Where to start bidding; raise only if under-delivering")
     expected_clicks: Range
     expected_conversions: Range
     capacity_usd: float
