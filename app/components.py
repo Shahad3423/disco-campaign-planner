@@ -202,7 +202,8 @@ def render_economics(plan: CampaignPlan) -> None:
     st.markdown("**Economics** " + badge("assumed", "assumed") + " <span class='muted'>override these in Optional details</span>", unsafe_allow_html=True)
     rows = [
         ("Price", f"${eco.price_usd:,.2f}", eco.price_source),
-        ("Gross margin", f"{eco.gross_margin:.0%}", eco.margin_source),
+        ("Target CPA from", eco.cpa_source.replace("_", " "), "form" if eco.cpa_source != "margin" else eco.margin_source),
+        ("Gross margin", f"{eco.gross_margin:.0%}" if eco.gross_margin is not None else "not needed", eco.margin_source),
         ("Expected orders (month)", f"{eco.expected_orders:,.0f}", "model"),
         ("Max affordable CAC", f"${eco.max_affordable_cac:,.2f}", "derived"),
         ("Target CPA", f"${eco.target_cpa:,.2f}", "derived"),
@@ -347,9 +348,14 @@ def render_config(plan: CampaignPlan) -> None:
         c3.metric("Flight", f"{b.flight_start} to {b.flight_end}")
         c4.metric("Exploration reserve", f"${b.exploration_reserve_usd:,.0f}")
         st.markdown(f"Budget source: {source} &nbsp; Pacing: {html.escape(b.pacing)}", unsafe_allow_html=True)
+        d1, d2, d3 = st.columns(3)
+        d1.metric("Expected impressions", f"{b.expected_impressions:,}")
+        d2.metric("Expected reach (unique shoppers)", f"{b.expected_reach:,}")
+        d3.metric("Delivery goal", f"{b.delivery_goal}" + ("" if b.goal_feasible else " (not feasible)"))
         if b.allocations:
             df = pd.DataFrame([{
                 "publisher": a.publisher_name, "share_pct": round(a.share * 100), "budget_usd": a.budget_usd, "cpc_bid_usd": a.cpc_bid_usd,
+                "start_bid_usd": a.start_bid_usd, "impressions": a.expected_impressions,
                 "clicks (mid)": a.expected_clicks.mid, "conversions (mid)": a.expected_conversions.mid,
                 "host approval": "needs approval" if a.requires_host_approval else "", "rationale": a.rationale,
             } for a in b.allocations])
@@ -359,6 +365,12 @@ def render_config(plan: CampaignPlan) -> None:
             st.bar_chart(df.set_index("publisher")["budget_usd"], color=ACCENT, horizontal=True)
         for w in b.warnings:
             st.warning(w)
+    if cfg.bid_strategy:
+        bs = cfg.bid_strategy
+        st.markdown(f"**Bid strategy** (current phase: {badge(bs.current_phase)})  \n{html.escape(bs.rationale)}", unsafe_allow_html=True)
+        st.dataframe(pd.DataFrame(bs.phases), hide_index=True, width="stretch")
+        if bs.adjustments:
+            st.dataframe(pd.DataFrame([a.model_dump() for a in bs.adjustments]), hide_index=True, width="stretch")
     for q in cfg.open_questions:
         st.markdown(f"- Open question: {q}")
     with st.expander("Full CampaignConfig JSON"):
@@ -431,14 +443,14 @@ def render_features(features) -> None:
             "confidence": st.column_config.ProgressColumn("confidence", min_value=0, max_value=1, format="%.2f")})
 
 
-def try_serve(signals, now_utc: datetime, plans: list[CampaignPlan]):
+def try_serve(signals, now_utc: datetime, plans: list[CampaignPlan], **kwargs):
     """Call the serving decision engine if it exists yet. Returns (decision, None) or (None, reason)."""
     try:
         from disco_planner.serving.decision import serve
     except ImportError:
         return None, "decision engine: coming in next build"
     try:
-        return serve(signals, now_utc, plans), None
+        return serve(signals, now_utc, plans, **kwargs), None
     except Exception as e:
         return None, f"decision engine raised {type(e).__name__}: {e}"
 
@@ -458,6 +470,11 @@ def render_decision(decision, plans: list[CampaignPlan]) -> None:
         st.markdown("**Reasons**")
         for r in reasons:
             st.markdown(f"- {r}")
+    offers = data.get("offers") or []
+    if offers:
+        st.markdown("**Offers ranked by eCPM (final bid x expected CTR x 1000)**")
+        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("campaign", "pricing_model", "bid", "expected_ctr", "ecpm", "bid_breakdown")}
+                                   for o in offers]), hide_index=True, width="stretch")
     headline, body, cta = (data.get(k) for k in ("headline", "body", "cta"))
     if headline and body and cta:
         render_offer_card(headline, body, cta)

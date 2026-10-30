@@ -6,7 +6,7 @@
 # toward the national adult age mix by its confidence, so a weak name can't fake a life stage:
 #   age_used = c * age_from_name + (1 - c) * national_adult_age_mix
 
-national_adult_age_mix:     # US adults 18+, approx. Census 2023
+national_adult_age_mix:     # [sourced, rounded] US adults 18+, Census 2023 population estimates
   18-24: 0.12
   25-34: 0.175
   35-44: 0.165
@@ -14,23 +14,30 @@ national_adult_age_mix:     # US adults 18+, approx. Census 2023
   55-64: 0.16
   65+: 0.225
 
-p_kids_by_age:              # P(own children < 18 at home | householder age), approx. Census CPS
+# [sourced, derived] P(own children < 18 at home | householder age). Census 2024 (CPS ASEC, "Four in
+# five family households with a householder ages 35-39 included a child"; 39% of family households
+# have children) x family households ~64% of all households -> ~0.51 at 35-39. Other buckets scaled
+# from the same release; overall baseline ~0.25-0.27.
+p_kids_by_age:
   18-24: 0.12
-  25-34: 0.40
-  35-44: 0.60
-  45-54: 0.42
+  25-34: 0.38
+  35-44: 0.52
+  45-54: 0.40
   55-64: 0.12
   65+: 0.03
 
-p_homeowner_by_age:         # approx. Census Housing Vacancy Survey
+# [sourced] Census Housing Vacancy Survey, Q2 2025: under 35 36.4%, 35-44 61.0%, 45-54 69.2%.
+# 55-64 and 65+ from the same series' long-run levels (~75-79%), [benchmark].
+p_homeowner_by_age:
   18-24: 0.25
-  25-34: 0.39
-  35-44: 0.62
-  45-54: 0.70
+  25-34: 0.364
+  35-44: 0.61
+  45-54: 0.692
   55-64: 0.75
   65+: 0.79
 
-settlement_multipliers:     # how settlement type shifts each rate (cities: fewer kids, more renters)
+settlement_multipliers:     # [assumed] how settlement type shifts each rate (cities: fewer kids, more renters);
+                            # replace with zip-level ACS tables when available
   kids:      {urban_core: 0.75, suburban: 1.15, small_city: 1.05, small_town: 1.0, rural: 1.0}
   homeowner: {urban_core: 0.60, suburban: 1.15, small_city: 1.05, small_town: 1.15, rural: 1.20}
 

@@ -66,11 +66,13 @@ def run(
         variants, reviews, log = creative.generate_creatives(profile, selected, moment_names, provider)
         t["creative"] = time.perf_counter() - start
 
-    eco = pricing = plan = None
+    eco = pricing = plan = bids = None
     if eligible and any(s.recommended for s in scores):
-        eco = budget.economics(profile, inputs, _primary_category(profile, scores))
-        pricing = budget.pricing_plan(eco, inputs)
-        plan = budget.budget_plan(scores, eco, pricing, inputs, today, gifting_moment)
+        category = _primary_category(profile, scores)
+        eco = budget.economics(profile, inputs, category)
+        pricing = budget.pricing_plan(eco, inputs, category)
+        plan = budget.budget_plan(scores, eco, pricing, inputs, today, gifting_moment, category)
+        bids = budget.bid_strategy(pricing, plan)
 
     status = {"proceed": "draft", "clarify": "needs_clarification"}.get(profile.gate, "not_eligible")
     by_persona = {m.persona_id: m for m in persona_matches}
@@ -78,7 +80,7 @@ def run(
     config = CampaignConfig(
         status=status, planning_date=today.isoformat(), advertiser_summary=profile.business_summary or brief,
         confidence=profile.confidence, objective=inputs.objective,
-        economics=eco, pricing=pricing, budget=plan,
+        economics=eco, pricing=pricing, budget=plan, bid_strategy=bids,
         targeting={
             "publishers_include": sorted(allowed_hosts),
             "publishers_exclude": [{"id": s.publisher_id, "reason": s.reason} for s in scores if not s.recommended],

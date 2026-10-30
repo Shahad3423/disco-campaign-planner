@@ -14,9 +14,10 @@ rescue an irrelevant host; competitors (hosts selling the same thing, which can 
 discounted. Vague briefs get questions, B2B gets zero publishers, regulated claims ("FDA approved") are blocked in code.
 Prompts: `prompts/`. Weights and priors: `config/`. Every decision and rejected alternative: `docs/DECISIONS.md`.
 
-**Config shape:** what billing, serving and an approver each need: pricing (CPC default; CPM for awareness; tCPA only after verified
-conversions, since Disco then carries prediction risk), economics (margin → max CAC → target CPA → max/start CPC, assumptions labelled),
-allocations (capped by host inventory, minimum learnable spend, 15% exploration), allowed serve-time signals, creatives ↔ personas ↔
+**Config shape:** what billing, serving and an approver each need: pricing (CPC default; CPM for reach goals; tCPA only after verified
+conversions, since Disco then carries prediction risk), economics (target CPA › target ROAS › margin → max/start CPC, assumptions labelled),
+a budget *or* an impressions/reach goal, allocations (capped by host inventory, minimum learnable spend), a phased **bid strategy**
+(fixed while learning → bid up for likely converters, never above break-even → tCPA), allowed serve-time signals, creatives ↔ personas ↔
 hosts, guardrails (claims, stop-loss), measurement (click-through billed, view-through never billed, 10% holdout), open questions.
 
 ## Results (blind labels on the 15 examples; 100-brand holdout; `docs/EXPERIMENTS.md`)

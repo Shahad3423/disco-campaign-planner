@@ -199,3 +199,35 @@ The free-tier daily quota for gemini-3.5-flash ran out mid-holdout. Rather than 
 eval, the 100-brand holdout was re-run entirely on gemini-flash-lite and is labelled as such. It tests
 whether the design (closed vocabularies, code-side scoring and policy) holds with a weaker model; it is
 not the production model's score.
+
+## D15. Bid strategy: phased, with a hard break-even ceiling
+
+**Decision.** The config carries a `bid_strategy` and serving computes a final bid per impression:
+`final = clamp(start x conversion_likelihood x pacing, floor, max)`.
+- *learning* (first 14 days or 300 clicks/host): fixed start bid = 70% of break-even, pacing only.
+- *enhanced_cpc*: conversion_likelihood = this shopper's persona match for the campaign / the host's
+  average shopper's (0.8-1.25x): the glossary's "bid higher when the user looks like a high-converter".
+- *target_cpa*: Disco bids to the advertiser's CPA, only after 50 click-through conversions.
+- Reach/impression goals use a fixed CPM with pacing only.
+**Why phased:** adjusting bids before CTR/CVR are measured confounds the measurement. **Why the ceiling:**
+max CPC = target CPA x CVR, so no click can cost more than it's expected to earn.
+
+## D16. What a customer is worth: target CPA > target ROAS > margin
+
+Most marketers know a target CPA or ROAS, not a margin; the form accepts all three, first one wins.
+Margin (with a labelled category default) is only the last resort, because without *something* the
+bid ceiling would be arbitrary.
+
+## D17. Delivery goals: budget, impressions or reach
+
+Advertisers can set a budget, or an impressions / unique-shopper target that we convert into a budget
+(reach x assumed frequency 1.6 -> impressions -> cost per 1,000 at each host). The plan reports expected
+impressions and reach either way, and flags goals the chosen hosts can't deliver in the flight.
+
+## D18. Every prior carries a validation status
+
+`config/pricing.yaml` and `config/household.yaml` tag each number [sourced] (public data: Census HVS
+homeownership by age, CPS families with children), [benchmark] (industry ranges: e-commerce conversion
+~2.5-3%, category spreads) or [assumed] (no public data: third-party thank-you-page CTR, approval
+probability, share of voice). CVR was lowered to 1/2/3.5% after checking benchmarks; P(kids | 35-44) to
+0.52. All are placeholders for rates learned from the network's own logs.

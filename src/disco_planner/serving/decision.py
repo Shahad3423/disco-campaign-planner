@@ -14,6 +14,7 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 from disco_planner.data import catalog
+from disco_planner.planning.budget import relative_fit
 from disco_planner.planning.personas import _overlap, _range, host_fit
 from disco_planner.planning.pipeline import CampaignPlan
 from disco_planner.serving.features import ShopperFeatures, ShopperSignals, build_features
@@ -30,7 +31,8 @@ class Offer(BaseModel):
     body: str
     cta: str
     pricing_model: str
-    bid: float
+    bid: float                     # final bid for THIS impression (after bid strategy)
+    bid_breakdown: str = ""
     expected_ctr: float
     ecpm: float
     reasons: list[str]
@@ -138,9 +140,47 @@ def _render(template: str, fallback: str, features: ShopperFeatures) -> tuple[st
     return fallback, False
 
 
+def host_prior(publisher_id: str) -> dict[str, float]:
+    """The host's AVERAGE shopper: persona mix from the audience alone (no shopper signals)."""
+    pub = catalog.publisher_by_id()[publisher_id]
+    raw = {p.id: host_fit(p, pub) for p in catalog.personas()}
+    total = sum(raw.values())
+    return {k: v / total for k, v in raw.items()}
+
+
+def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: float,
+              phase: str, pacing_ratio: float) -> tuple[float, str]:
+    """Bid strategy at serve time (config.bid_strategy). pacing_ratio = share of budget spent /
+    share of flight elapsed (1.0 = on plan)."""
+    cfg = plan.config
+    pricing, strategy = cfg.pricing, cfg.bid_strategy
+    adj = catalog.config("pricing")["bid_strategy"]["adjustments"]
+    clamp = lambda x, lo, hi: max(lo, min(hi, x))
+    pace = clamp(1 / max(pacing_ratio, 1e-6), adj["pacing"]["min"], adj["pacing"]["max"])
+
+    if pricing.model == "CPM" and pricing.cpm_bid:
+        bid = pricing.cpm_bid * pace
+        return round(bid, 2), f"CPM ${pricing.cpm_bid} x pacing {pace:.2f}"
+    alloc = next(a for a in cfg.budget.allocations if a.publisher_id == publisher_id)
+    host = next((h for h in strategy.host_bids if h.publisher_id == publisher_id), None) if strategy else None
+    start = host.start_bid if host else (alloc.start_bid_usd or alloc.cpc_bid_usd)
+    ceiling = host.max_bid if host else alloc.cpc_bid_usd
+    floor = host.floor if host else catalog.config("pricing")["economics"]["cpc_floor"]
+
+    conv = 1.0
+    if phase == "enhanced_cpc":
+        conv = clamp(match / prior_match if prior_match else 1.0,
+                     adj["conversion_likelihood"]["min"], adj["conversion_likelihood"]["max"])
+    bid = clamp(start * conv * pace, floor, ceiling)
+    capped = " (capped at break-even)" if start * conv * pace > ceiling else ""
+    return round(bid, 2), (f"{phase}: start ${start:.2f} x conversion likelihood {conv:.2f} x pacing {pace:.2f} "
+                           f"= ${bid:.2f}{capped}; ceiling ${ceiling:.2f}")
+
+
 def serve(
     signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
     use_name: bool = True, use_household: bool = True,
+    phase: str = "learning", pacing_ratio: float = 1.0,
 ) -> ServeDecision:
     cfg = _cfg()
     features = build_features(signals, now_utc)
@@ -151,6 +191,7 @@ def serve(
                        "in production this is where the bandit explores")
 
     priors = catalog.config("pricing")["priors"]
+    prior = host_prior(signals.publisher_id)
     offers = []
     for plan in plans:
         cfg_ = plan.config
@@ -161,7 +202,7 @@ def serve(
             continue  # this campaign doesn't run on this host
         score = next(s for s in plan.publishers if s.publisher_id == signals.publisher_id)
         top = max(s.score for s in plan.publishers)
-        fit = priors["fit_multiplier"]["min"] + (priors["fit_multiplier"]["max"] - priors["fit_multiplier"]["min"]) * score.score / top
+        fit = relative_fit(score.score, top)
 
         # Variant choice with a margin: start from the host-default variant (best prior fit) and
         # switch only if the shopper's signals make another persona clearly more likely. Without
@@ -180,18 +221,16 @@ def serve(
         ctx, ctx_why = _context_multiplier(features, plan, use_household)
         ctr = priors["ctr"]["mid"] * fit * (rk["persona_match_floor"] + rk["persona_match_span"] * min(1.0, match * 2)) * ctx
         pricing = cfg_.pricing
-        if pricing.model == "CPM" and pricing.cpm_bid:
-            bid, ecpm = pricing.cpm_bid, pricing.cpm_bid
-        else:
-            bid = alloc.cpc_bid_usd
-            ecpm = bid * ctr * 1000
+        prior_match = sum(prior.get(c.persona_id, 0) for c in cfg_.creatives)
+        bid, breakdown = final_bid(plan, signals.publisher_id, match, prior_match, phase, pacing_ratio)
+        ecpm = bid if pricing.model == "CPM" else bid * ctr * 1000
         headline, used = _render(creative.headline_template, creative.headline_no_name, features)
         offers.append(Offer(
             campaign=plan.profile.product or plan.brief[:40], publisher_id=signals.publisher_id,
             persona_id=creative.persona_id, headline=headline, body=creative.body, cta=creative.cta,
-            pricing_model=pricing.model, bid=bid, expected_ctr=round(ctr, 4), ecpm=round(ecpm, 2),
+            pricing_model=pricing.model, bid=bid, bid_breakdown=breakdown, expected_ctr=round(ctr, 4), ecpm=round(ecpm, 2),
             reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
-                     *ctx_why, f"{'name inserted' if used else 'no-name headline'}"],
+                     *ctx_why, f"bid {breakdown}", f"{'name inserted' if used else 'no-name headline'}"],
         ))
     offers.sort(key=lambda o: -o.ecpm)
     offers = offers[: cfg["ranking"]["max_offers"]]
@@ -203,5 +242,5 @@ def serve(
         uncertain=uncertain, offers=offers,
         headline=top_offer.headline if top_offer else None, body=top_offer.body if top_offer else None,
         cta=top_offer.cta if top_offer else None, name_used="name inserted" in (top_offer.reasons if top_offer else []),
-        reasons=reasons + ([f"ranked {len(offers)} offers by eCPM = bid x expected CTR x 1000"] if offers else []),
+        reasons=reasons + ([f"ranked {len(offers)} offers by eCPM = final bid x expected CTR x 1000 (bid phase: {phase})"] if offers else []),
     )
