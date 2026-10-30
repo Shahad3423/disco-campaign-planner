@@ -1,0 +1,36 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "sustainable slow fashion",
+        "Reduce waste"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy uses vague eco claims ('sustainable slow fashion', 'Reduce waste') which are completely unsupported by the advertiser's stated claims and are actively avoided by this persona due to greenwashing skepticism."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -51,7 +51,7 @@ def _bid_needed(ours: dict, rival_ecpm: float) -> float:
     return rival_ecpm / (ours["expected_ctr"] * 1000) + 0.01 if ours["expected_ctr"] else float("inf")
 
 
-def auction_insights(plan: CampaignPlan, competitors: list[CampaignPlan]) -> list[HostInsight]:
+def auction_insights(plan: CampaignPlan, competitors: list[CampaignPlan], phase: str = "learning") -> list[HostInsight]:
     me = plan.profile.product or plan.brief[:40]
     pool = [plan] + [c for c in competitors if (c.profile.product or c.brief[:40]) != me]
     out = []
@@ -60,7 +60,7 @@ def auction_insights(plan: CampaignPlan, competitors: list[CampaignPlan]) -> lis
         wins, paid, bids, needed_to_win, rivals = 0, [], [], [], Counter()
         other_campaigns, auctions = set(), 0
         for name, zip_ in product(SAMPLE_NAMES, SAMPLE_ZIPS):
-            d = serve(ShopperSignals(publisher_id=pid, zip=zip_, first_name=name, zip_source="billing"), SAMPLE_TIME, pool)
+            d = serve(ShopperSignals(publisher_id=pid, zip=zip_, first_name=name, zip_source="billing"), SAMPLE_TIME, pool, phase=phase)
             ours = next((x for x in d.bid_landscape if x["campaign"] == me), None)
             if ours is None:
                 continue  # we didn't bid on this page view (e.g. no eligible creative)

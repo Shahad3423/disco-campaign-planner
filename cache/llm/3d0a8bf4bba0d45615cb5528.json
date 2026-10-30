@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your skin formula.",
+      "body": "Get custom skincare formulas from licensed providers tailored for acne and anti-aging. Start with a free trial, just pay shipping.",
+      "cta": "Start my free trial",
+      "headline_no_name": "Optimize your skin with a custom formula.",
+      "angle": "outcome-focused and science-backed framing emphasizing custom formulas from licensed providers",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, no tricks, just custom skincare.",
+      "body": "Ditch the scary routines. Get custom formulas from licensed providers for acne and anti-aging. Free trial, just pay shipping.",
+      "cta": "Claim my free trial",
+      "headline_no_name": "No tricks, just custom skincare for you.",
+      "angle": "playful seasonal Halloween framing with an aesthetic, values-aligned tone",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, custom skincare delivered to you.",
+      "body": "Skip the store. Get custom formulas from licensed providers for acne and anti-aging. Start your free trial, just pay shipping.",
+      "cta": "Start free trial",
+      "headline_no_name": "Custom skincare formulas delivered to your door.",
+      "angle": "convenience-first framing focusing on speed, frictionlessness, and subscription ease",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    }
+  ]
+}

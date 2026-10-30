@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, get your ultimate, effortless glow!",
+      "body": "Skincare and makeup for \"skin first\" people. Discover the aesthetic with our signature Boy Brow and Cloud Paint.",
+      "cta": "Shop Boy Brow",
+      "headline_no_name": "Get your ultimate, effortless glow!",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, prioritize your skin first.",
+      "body": "Discover skincare and makeup designed for \"skin first\" people. Put your skin's natural look at the center of your daily routine.",
+      "cta": "Shop skincare",
+      "headline_no_name": "Prioritize your skin first.",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of effortless beauty.",
+      "body": "Share the love with skincare and makeup for \"skin first\" people, featuring our celebrated Boy Brow and Cloud Paint.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Give the gift of effortless beauty.",
+      "angle": "giftable",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    }
+  ]
+}

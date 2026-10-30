@@ -1,0 +1,95 @@
+{
+  "business_summary": "Bond repair brand for damaged hair, operating in salon and retail channels.",
+  "product": "Bond repair for damaged hair",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Bond repair for damaged hair",
+    "Everyone should be using it lol",
+    "Salon and retail"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "This is the core product category for a hair bond repair treatment."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Haircare is a primary subcategory under the beauty umbrella."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "Shoppers buying spa and self-care services are highly aligned with salon-grade hair treatments."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "Weakly adjacent self-care category for consumers focused on personal maintenance."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language",
+      "evidence": "Everyone should be using it lol"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Strandlab is a direct competitor in the haircare space."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline beauty buyers represent a highly aligned audience for premium haircave."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's audience has a strong crossover with wellness and beauty."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users actively spend on self-care, which aligns well with salon-grade treatments."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product category (haircare/bond repair) is clear and can be easily targeted to beauty and self-care publishers.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "specific target demographics",
+    "ingredient or clean beauty claims"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of the bond repair product?",
+    "Is this product sold as a one-time purchase, or is there a subscription option?",
+    "Do you target specific hair concerns, such as color-treated or heat-damaged hair?",
+    "What is your target customer acquisition cost (CAC) or primary goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

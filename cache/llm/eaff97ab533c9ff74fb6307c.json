@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your hair routine, {first_name}",
+      "body": "Implement this bond repair treatment for damaged hair. It is a system everyone should be using for optimal results.",
+      "cta": "Shop bond repair",
+      "headline_no_name": "Optimize your hair care routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Get the ultimate hair vibe, {first_name}",
+      "body": "No tricks, just treats. This bond repair for damaged hair is the salon-grade routine everyone should be using.",
+      "cta": "Shop salon hair care",
+      "headline_no_name": "Get the ultimate hair vibe",
+      "angle": "playful",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it",
+        "Salon and retail"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Gift the ultimate hair upgrade, {first_name}",
+      "body": "Share salon-quality bond repair for damaged hair. It is the premium gift set everyone should be using.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Gift the ultimate hair upgrade",
+      "angle": "giftable",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it",
+        "Salon and retail"
+      ]
+    }
+  ]
+}

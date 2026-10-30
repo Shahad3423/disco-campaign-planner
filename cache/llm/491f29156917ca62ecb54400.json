@@ -1,0 +1,113 @@
+{
+  "business_summary": "A DTC beauty brand specializing in skincare and makeup, targeting women aged 18-34 with an average order value of approximately $50. The brand is highly recognized for its signature products, Boy Brow and Cloud Paint.",
+  "product": "Skincare and makeup",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "18-34",
+  "stated_claims": [
+    "Skincare and makeup for 'skin first' people",
+    "known for Boy Brow and Cloud Paint"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "makeup",
+      "weight": 1.0,
+      "why": "Core product offering."
+    },
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product offering."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Overarching industry category."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Primary target demographic is women."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Operates as a direct-to-consumer brand."
+    },
+    {
+      "tag": "haircare",
+      "weight": 0.25,
+      "why": "Adjacent beauty category with high shopper crossover."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.25,
+      "why": "Adjacent self-care category."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "Adjacent self-care and personal health category."
+    }
+  ],
+  "competing_tags": [
+    "makeup",
+    "skincare",
+    "beauty"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language, influencer positioning, and loud aesthetics",
+      "evidence": "The brand is known for highly trendy, youth-culture products like 'Boy Brow' and 'Cloud Paint' targeting an 18-34 demographic."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Perfect demographic alignment with Gen Z and younger millennial audience seeking minimalist, identity-driven beauty."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Activewear audience with a noted strong crossover into wellness and beauty."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Targets older, affluent women, which conflicts with the advertiser's core 18-34 demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic conflict with the advertiser's youthful, trendy positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target demographic, and average order value are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "individual product price points",
+    "one-time purchase vs. subscription availability",
+    "shipping rates and delivery times"
+  ],
+  "clarifying_questions": [
+    "What is the average price point of individual items like Boy Brow and Cloud Paint?",
+    "Do you offer subscription options for your skincare products, or are they strictly one-time purchases?",
+    "What are your standard shipping times and costs for domestic orders?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

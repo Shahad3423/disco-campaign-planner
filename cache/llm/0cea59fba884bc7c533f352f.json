@@ -1,0 +1,97 @@
+{
+  "business_summary": "A beauty brand offering skincare and makeup designed for a 'skin first' minimalist aesthetic, widely known for products like Boy Brow and Cloud Paint. Targets primarily young women with an average order value of $50.",
+  "product": "Skincare and makeup",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "18-34",
+  "stated_claims": [
+    "Skincare and makeup for 'skin first' people",
+    "known for Boy Brow and Cloud Paint"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "makeup",
+      "weight": 1.0,
+      "why": "Core product offering explicitly stated by the advertiser."
+    },
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product offering explicitly stated by the advertiser."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Overarching industry category for skincare and makeup."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Primary demographic is women aged 18-34."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Direct-to-consumer cosmetics brand model."
+    }
+  ],
+  "competing_tags": [
+    "makeup",
+    "skincare",
+    "beauty"
+  ],
+  "persona_affinity_tags": [
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in trendy language, loud aesthetics, and influencer positioning; prefers heritage and craftsmanship.",
+      "evidence": "Advertiser is a trendy, youth-focused brand (known for 'Boy Brow' and 'Cloud Paint') targeting '18-34 women'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Velvetline is a direct competitor selling skincare and makeup, which triggers a host block despite the perfect demographic overlap."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has activewear shoppers with a strong crossover into beauty, aligning well with the 18-34 female demographic."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. caters to older, affluent women with lower impulse buying, which clashes with the advertiser's 18-34 target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's conservative brand sensibility and older demographic conflict with the youthful, trendy positioning of the advertiser."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, target audience, and order values are clearly defined and highly suitable for the post-purchase network.",
+  "missing_info": [
+    "Specific subscription options or one-time purchase ratio",
+    "Ingredient standards (e.g., clean, vegan, organic status)",
+    "Fulfillment/shipping policies and costs"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription options for replenishment, or are orders strictly one-time?",
+    "Are there specific product-level claims we should highlight, such as cruelty-free, vegan, or dermatologist-tested?",
+    "What is your threshold for free shipping (e.g., is it free on orders over your $50 average)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,105 @@
+{
+  "business_summary": "Custom skincare formulas prescribed by licensed providers, targeting acne and anti-aging concerns, offered via a free-trial model where the customer only pays for shipping.",
+  "product": "Custom skincare formulas",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Custom skincare formulas from licensed providers",
+    "Mostly acne and anti-aging",
+    "Free trial, just pay shipping"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "personalized"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "This is the core product category of the advertiser."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Skincare is a primary subcategory of beauty, attracting the same target audience."
+    },
+    {
+      "tag": "personalized",
+      "weight": 1.0,
+      "why": "The formulas are custom-made by licensed providers for individual skin needs."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.75,
+      "why": "A free trial for custom prescription skincare strongly implies an ongoing subscription model."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Clinical/prescription skincare overlaps heavily with medical and wellness DTC interests."
+    }
+  ],
+  "competing_tags": [
+    "skincare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in: multi-step purchases",
+      "evidence": "Custom formulas from licensed providers typically require a multi-step consultation, quiz, or medical intake process."
+    },
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only, self-care-only framing",
+      "evidence": "Personalized prescription formulas for acne and anti-aging are highly self-care focused and cannot easily be gifted to others."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's audience has a strong crossover with wellness and beauty, which is ideal for skincare-engaged shoppers."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form has a science-forward wellness audience that aligns with clinical, licensed provider-backed skincare."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Velvetline is a direct competitor in the skincare space and would likely block this advertiser."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab's audience is personalization-motivated and used to quiz-based onboarding, aligning with custom skincare."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, offer structure, and audience needs are clearly stated. We can proceed with planning, though we should clarify post-trial pricing.",
+  "missing_info": [
+    "Ongoing subscription price after the free trial",
+    "Exact shipping cost for the trial",
+    "Onboarding requirements (e.g., photo upload or medical questionnaire)"
+  ],
+  "clarifying_questions": [
+    "What is the recurring price of the subscription after the free trial ends?",
+    "What is the flat shipping fee for the trial?",
+    "Does your onboarding require shoppers to upload photos or complete a medical questionnaire?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

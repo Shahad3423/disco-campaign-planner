@@ -1,0 +1,106 @@
+{
+  "business_summary": "Customized shampoo and conditioner subscription service where products are tailored to the customer's hair type, goals, and scent preferences via an onboarding quiz. Refills are delivered automatically every 2 months.",
+  "product": "Customized shampoo and conditioner",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Customized shampoo and conditioner built from a quiz - hair type, goals, scent.",
+    "Subscription refills every 2 months."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "personalized"
+  ],
+  "fulfillment_notes": "Subscription refills every 2 months.",
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "This is the core product category (shampoo and conditioner)."
+    },
+    {
+      "tag": "personalized",
+      "weight": 1.0,
+      "why": "The products are customized for each individual based on a quiz."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Haircare is a major subcategory of beauty."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The business model relies on recurring 2-month refills."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Shampoo and conditioner are primary bath and shower products."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Direct-to-consumer model utilizing an online quiz and subscription."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "subscription_services",
+    "wellness",
+    "refillable_products"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "Subscription refills every 2 months."
+    },
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in: multi-step purchases",
+      "evidence": "built from a quiz - hair type, goals, scent"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Direct competitor in personalized haircare; will likely block this advertiser."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Beauty-focused audience with high affinity for identity-driven and personalized purchasing."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers with a strong crossover into wellness and beauty."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, customization mechanism, and subscription model are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_gender",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the price point for the initial customized set and the bi-monthly refills?",
+    "Is there a one-time purchase option available, or is it strictly subscription-only?",
+    "Do you target a specific gender, or is the product formulated for anyone?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
