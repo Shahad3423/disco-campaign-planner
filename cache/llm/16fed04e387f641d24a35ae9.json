@@ -1,0 +1,74 @@
+{
+  "business_summary": "A dating app designed to be deleted, targeting singles aged 22-38 in major US metropolitan areas. The app is free to download and offers optional premium tiers.",
+  "product": "Dating app",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "22-38",
+  "stated_claims": [
+    "designed to be deleted",
+    "Free to download",
+    "premium tiers exist"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital download via app stores.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The app monetizes via premium tiers, which typically operate on a recurring subscription model."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.25,
+      "why": "Direct-to-consumer digital service targeting individual consumers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience is Gen Z and younger millennials, which perfectly aligns with the target demographic of 22-38 year old singles."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals match the target geographic profile of 'big US metros'."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Audience consists of family and couples households, who are highly unlikely to need a dating app."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience is older women with a conservative brand sensibility, which likely clashes with a modern dating app."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The target demographic, product type, and business model are clear enough to begin targeting and partner matching.",
+  "missing_info": [
+    "Exact pricing of the premium tiers",
+    "App store links / platform availability (iOS vs Android)",
+    "Specific conversion goals (e.g., install vs premium subscription purchase)"
+  ],
+  "clarifying_questions": [
+    "What is the cost of your premium subscription tiers?",
+    "Is the app available on both iOS and Android platforms?",
+    "Are you offering a free trial of the premium tier as an incentive for our network's users?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
