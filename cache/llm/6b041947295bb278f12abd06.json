@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, elevate your breakfast with a classic.",
+      "body": "Enjoy a high-protein, low-sugar kid-style cereal for adults. Crafted for quality and delivered directly to your door.",
+      "cta": "Subscribe and save",
+      "headline_no_name": "Elevate your breakfast with a classic.",
+      "angle": "quality-focused and understated morning ritual",
+      "claims_used": [
+        "High-protein",
+        "low-sugar",
+        "kid-style cereal for adults",
+        "subscribe and save"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, get your breakfast on autopilot.",
+      "body": "Skip the store. Get high-protein, low-sugar kid-style cereal for adults delivered. Subscribe and save on a $39 4-pack.",
+      "cta": "Subscribe and save",
+      "headline_no_name": "Get your breakfast on autopilot.",
+      "angle": "frictionless subscription and convenience",
+      "claims_used": [
+        "High-protein",
+        "low-sugar",
+        "kid-style cereal for adults",
+        "$39 for a 4-pack",
+        "subscribe and save"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify busy mornings for everyone.",
+      "body": "Keep the pantry stocked with high-protein, low-sugar kid-style cereal for adults. Subscribe and save to make breakfast easy.",
+      "cta": "Subscribe and save",
+      "headline_no_name": "Simplify busy mornings for everyone.",
+      "angle": "time-saving and family-friendly morning ease",
+      "claims_used": [
+        "High-protein",
+        "low-sugar",
+        "kid-style cereal for adults",
+        "subscribe and save"
+      ]
+    }
+  ]
+}

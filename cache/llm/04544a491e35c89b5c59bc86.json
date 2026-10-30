@@ -1,0 +1,114 @@
+{
+  "business_summary": "Prebiotic soda brand offering a low-sugar, high-fiber alternative to traditional sodas, targeting health-conscious younger adults and parents.",
+  "product": "Prebiotic soda",
+  "is_consumer_product": true,
+  "price_point_usd": 36.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "Younger adults and parents",
+  "stated_claims": [
+    "Prebiotic soda with 9g of fibre",
+    "Low sugar",
+    "$36 for 12 cans"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "health-conscious"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "Directly marketed as a swap for regular soda."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotic sodas specifically target digestive/gut health."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Broad product category."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Sold as a packaged food/beverage item."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Shelf-stable beverage suitable for kitchen pantries."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Health-focused direct-to-consumer beverage."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "family_products",
+    "premium_grocery",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging, vague premium positioning; high price sensitivity",
+      "evidence": "$36 for a 12-pack of soda ($3/can) is a premium price point that will conflict with value-conscious consumers looking for cheap regular soda swaps."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly convenience purchases align perfectly with single-serve canned beverages."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Audience responds strongly to wellness and clean-ingredient claims, matching a prebiotic low-sugar soda."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family-oriented households looking for convenient food options align with parents looking to swap out regular soda."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "Direct competitor in functional beverages, soda alternatives, and gut health; publisher will likely block."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, pricing, and target audience are clearly defined and ready for mapping.",
+  "missing_info": [
+    "Subscription availability and pricing",
+    "Shipping rates or free shipping thresholds",
+    "Key flavor offerings"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription model with a discount, or is it strictly one-time purchases?",
+    "What is your threshold for free shipping on a $36 order?",
+    "Are there specific certifications we can highlight (e.g., USDA Organic, Non-GMO, Vegan)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

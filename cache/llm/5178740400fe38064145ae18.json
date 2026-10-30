@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "A better morning ritual for you and your pet, {first_name}.",
+      "body": "You care about what goes in their bowl. Get matched with fresh roasted bags from small roasters via our quick onboarding quiz.",
+      "cta": "Start the quiz",
+      "headline_no_name": "A better morning ritual for you and your pet.",
+      "angle": "Emotional connection to morning pet care and quality sourcing transparency",
+      "claims_used": [
+        "Matches you with fresh roasted bags from small roasters",
+        "Subscription with a quiz"
+      ]
+    }
+  ]
+}

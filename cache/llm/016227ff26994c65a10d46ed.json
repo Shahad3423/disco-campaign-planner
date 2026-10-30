@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your soda choice, {first_name}.",
+      "body": "A prebiotic soda with 9g of fibre and low sugar. Perfect for a clean, health-conscious routine. Only $36 for 12 cans.",
+      "cta": "Shop prebiotic soda",
+      "headline_no_name": "Optimize your soda choice.",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Prebiotic soda",
+        "9g of fibre",
+        "low sugar",
+        "$36 for 12 cans"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "A refined choice for {first_name}.",
+      "body": "Discover prebiotic soda made for a health-conscious lifestyle. Low sugar and 9g of fibre per can. Get 12 cans for $36.",
+      "cta": "Order 12 cans",
+      "headline_no_name": "A refined choice.",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Prebiotic soda",
+        "9g of fibre",
+        "low sugar",
+        "$36 for 12 cans"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Keep your nutrition on track, {first_name}.",
+      "body": "Swap traditional soda for low-sugar prebiotic soda. With 9g of fibre per can, it fits your health-conscious goals. $36 for 12 cans.",
+      "cta": "Shop prebiotic soda",
+      "headline_no_name": "Keep your nutrition on track.",
+      "angle": "fitness-friendly nutrition profile",
+      "claims_used": [
+        "Prebiotic soda",
+        "9g of fibre",
+        "low sugar",
+        "$36 for 12 cans"
+      ]
+    }
+  ]
+}

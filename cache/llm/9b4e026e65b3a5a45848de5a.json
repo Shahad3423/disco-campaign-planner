@@ -1,0 +1,115 @@
+{
+  "business_summary": "High-protein, low-sugar kid-style cereal for adults. Marketed towards gym-goers and nostalgic millennials, priced at $39 for a 4-pack with a subscription option.",
+  "product": "High-protein, low-sugar kid-style cereal",
+  "is_consumer_product": true,
+  "price_point_usd": 39.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "millennials",
+  "stated_claims": [
+    "High-protein",
+    "Low-sugar",
+    "Kid-style cereal for adults"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "nostalgia",
+    "fitness",
+    "health"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The product is a cereal, which is a shelf-stable pantry staple."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Cereal is a core grocery item purchased by consumers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Offers a 'subscribe and save' option, making it highly relevant to subscription-focused publishers."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "High-protein, low-sugar formulations appeal to health-conscious and wellness-focused consumers."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.25,
+      "why": "High-protein attributes appeal to gym-goers who frequently purchase fitness supplements like protein powders."
+    }
+  ],
+  "competing_tags": [
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "groceries",
+    "premium_grocery",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: ultra-processed food",
+      "evidence": "Kid-style cereal, even with high-protein and low-sugar formulations, is traditionally categorized as ultra-processed food."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: novelty",
+      "evidence": "The positioning as a 'kid-style cereal for adults' heavily relies on novelty and nostalgic branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers, aligning perfectly with the advertiser's target audience of 'gym-goers'."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users actively spend on self-care and fitness, highly compatible with gym-goers looking for high-protein options."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is responsive to clean-ingredient and wellness claims, fitting the low-sugar, high-protein cereal profile."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate has a heavy millennial audience that responds well to a fun, playful brand voice, aligning with the 'nostalgic millennial' angle."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's audience is health-curious but indulgence-seeking, matching a healthy twist on nostalgic, sweet kid-style cereal."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, subscription model, and target demographics (gym-goers, nostalgic millennials) are clearly defined, enabling high-quality publisher matching.",
+  "missing_info": [
+    "Flavors available",
+    "Specific protein source (e.g., whey, plant-based)",
+    "Shipping costs and minimum order values for free shipping",
+    "Availability of one-time purchases"
+  ],
+  "clarifying_questions": [
+    "What are the primary protein and sweetener sources used in the cereal?",
+    "Is there a one-time purchase option, or is it subscription-only?",
+    "What flavors are offered in the 4-pack?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

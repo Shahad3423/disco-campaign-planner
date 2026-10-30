@@ -1,0 +1,106 @@
+{
+  "business_summary": "DTC brand offering hydration packets that are stirred into water, targeting consumers looking for hydration during travel, workouts, or hangover recovery. Their primary campaign goal is driving product trial.",
+  "product": "Hydration packets",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Good for travel",
+    "Good for workouts",
+    "Good for hangovers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "The product is a functional hydration mix designed for specific use cases (workouts, hangovers, travel)."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "It is a drink mix stirred into water, falling directly into the beverage category."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Hydration and recovery products are highly relevant to wellness-oriented DTC consumers."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Electrolyte and hydration packets often sit adjacent to health supplements."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Single-serve packets are highly convenience-focused, especially for travel."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.25,
+      "why": "Shoppers buying activewear are likely fitness-engaged and interested in workout hydration."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "People taking fitness classes need hydration solutions for their workouts."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "fitness",
+    "recovery",
+    "travel",
+    "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spike and impulse-friendly nature align perfectly with the hangover recovery use case and trial goal."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are a prime demographic for workout hydration products."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users spending on fitness and self-care align with the workout and recovery use cases."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's audience already buys functional beverages and soda alternatives, making them highly receptive."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, key use cases, and campaign goal (trial) are clear, allowing for precise category mapping and targeting.",
+  "missing_info": [
+    "Price point per unit/pack",
+    "Specific ingredient details (e.g., sugar-free, organic, natural)",
+    "Fulfillment times"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point and package size of your trial offer?",
+    "Are your hydration packets sugar-free, organic, or made with natural ingredients?",
+    "Is this trial offered as a one-time purchase or as part of a subscription sign-up?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

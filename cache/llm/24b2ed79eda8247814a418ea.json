@@ -1,0 +1,41 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "California's finest"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward and forced {first_name} placement at the very beginning of the headline.",
+        "Contains an unsupported superlative comparison ('California's finest')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward and grammatically confusing {first_name} placement at the end of the headline, which mistakenly frames the buyer as the gift recipient."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement in the headline.",
+        "Weak persona fit: Merely stating regional origin ('California-sourced') does not satisfy this persona's desire for specific sustainability claims, supply chain transparency, or certifications."
+      ],
+      "passed": false
+    }
+  ]
+}

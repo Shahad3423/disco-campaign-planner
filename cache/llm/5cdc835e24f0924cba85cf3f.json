@@ -1,0 +1,112 @@
+{
+  "business_summary": "Design-forward olive oils and vinegars from California, targeting higher-income home cooks with premium giftable sets.",
+  "product": "Olive oils and vinegars (specifically 'the Duo')",
+  "is_consumer_product": true,
+  "price_point_usd": 70.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Design-forward olive oils and vinegars from California",
+    "The Duo is $70 and it's one of the most gifted items we have",
+    "Targeted at higher income home cooks"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "design-forward",
+    "California-sourced"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Olive oil and vinegar are core premium pantry staples."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Food products purchased for home consumption."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.75,
+      "why": "Explicitly highlighted as a highly gifted item."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Used directly in the kitchen by home cooks."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Highly adjacent category for design-conscious home cooks."
+    }
+  ],
+  "competing_tags": [
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "premium_grocery",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and premium positioning due to high price sensitivity.",
+      "evidence": "The Duo is $70 and targeted at higher income home cooks."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "Disinterested in luxury positioning.",
+      "evidence": "Design-forward positioning and a $70 price point for olive oil/vinegar."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's organic, natural pantry focus aligns perfectly with premium California olive oils."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone's kitchen/cookware focus and gifting-driven audience matches a $70 design-forward gift duo."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's food-interested home cooks are the exact target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park's high-AOV affluent audience matches the 'higher income' target."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart's instant delivery and convenience focus clashes with a premium, design-forward $70 gift item."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and gifting angle are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "shipping costs and times",
+    "whether subscription options are available",
+    "specific ingredients or flavor profiles"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for repeat purchases of your olive oils and vinegars?",
+    "What is your average shipping time and cost for the $70 Duo?",
+    "Are there other lower-priced individual items available, or is the $70 Duo your primary focus?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

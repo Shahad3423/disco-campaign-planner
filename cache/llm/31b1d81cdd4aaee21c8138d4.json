@@ -1,0 +1,110 @@
+{
+  "business_summary": "Design-forward olive oils and vinegars from California targeting higher-income home cooks and gift buyers.",
+  "product": "Olive oils and vinegars",
+  "is_consumer_product": true,
+  "price_point_usd": 70.0,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Design-forward olive oils and vinegars from California",
+    "the Duo is $70 and it's one of the most gifted items we have"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "design-forward"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Olive oils and vinegars are premium pantry staples."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The products are premium food items."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The $70 Duo is stated to be one of their most gifted items."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Targeted at home cooks who spend time in the kitchen."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Home cooks who buy premium cookware are highly likely to buy premium cooking ingredients."
+    }
+  ],
+  "competing_tags": [
+    "pantry",
+    "groceries"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "premium_grocery",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging or vague premium positioning",
+      "evidence": "Pricing is $70 for an olive oil/vinegar duo, targeted explicitly at higher income home cooks."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in luxury positioning",
+      "evidence": "The brand is design-forward, premium-priced ($70 duo), and targets high-income home cooks."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood targets values-driven, clean-ingredient, and wellness-conscious pantry shoppers who appreciate premium cooking staples."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts sustainability-motivated kitchen buyers interested in gifting, which aligns perfectly with a premium $70 gifted cooking duo."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park features the highest-AOV affluent shopper base, matching the 'higher income' target demographic."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. features affluent, older buyers who respond well to high-AOV, premium quality messaging."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart focuses on high-frequency, impulse-driven instant delivery, which conflicts with a premium $70 design-forward gift set."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and primary purchase motivation (gifting/premium home cooking) are clearly defined.",
+  "missing_info": [
+    "Whether subscription options are available",
+    "Specific certifications (e.g., organic, non-GMO, extra virgin)",
+    "Shipping times and packaging details for gifting"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription model for repeat purchases of your oils and vinegars?",
+    "Are your products certified organic, non-GMO, or extra virgin?",
+    "What does your gift packaging look like, and what are your standard shipping times?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

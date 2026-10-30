@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, enjoy freshly roasted craft coffee.",
+      "body": "Discover small-batch roasters through a personalized quiz. We match you with fresh roasted bags delivered directly to your home.",
+      "cta": "Start subscription",
+      "headline_no_name": "Enjoy freshly roasted craft coffee.",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Matches you with fresh roasted bags from small roasters",
+        "Subscription with a quiz"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, warm up your quiet mornings.",
+      "body": "Enjoy cozy moments at home. Our quick quiz matches you with freshly roasted bags from trusted, small-batch roasters.",
+      "cta": "Take the coffee quiz",
+      "headline_no_name": "Warm up your quiet mornings.",
+      "angle": "emotional connection",
+      "claims_used": [
+        "Matches you with fresh roasted bags from small roasters",
+        "Subscription with a quiz"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, no tricks, just fresh coffee.",
+      "body": "Skip the store this Halloween. Take a quick quiz to get matched with fresh bags from small roasters, delivered to your door from $15-25.",
+      "cta": "Match my taste",
+      "headline_no_name": "No tricks, just fresh coffee.",
+      "angle": "speed",
+      "claims_used": [
+        "Matches you with fresh roasted bags from small roasters",
+        "Subscription with a quiz",
+        "Bags run $15-25"
+      ]
+    }
+  ]
+}

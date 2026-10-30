@@ -1,0 +1,112 @@
+{
+  "business_summary": "Prebiotic soda brand offering low-sugar, high-fiber beverages ($36 for a 12-pack) targeting health-conscious younger adults and parents looking for a healthy alternative to traditional soda.",
+  "product": "Prebiotic soda",
+  "is_consumer_product": true,
+  "price_point_usd": 36.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "younger adults and parents",
+  "stated_claims": [
+    "Prebiotic soda",
+    "9g of fibre",
+    "low sugar",
+    "$36 for 12 cans"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "health-conscious"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Core product category for prebiotic soda."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "Directly marketed as a swap for regular soda."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotic fiber content directly supports gut health."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Broad category for canned liquid refreshments."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Sold as a food/beverage item often purchased with groceries."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Shelf-stable beverage suitable for pantry stocking."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Appeals to health-conscious consumers looking for low-sugar alternatives."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Health-focused consumer product sold directly to consumers."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "organic_grocery",
+    "premium_grocery",
+    "wellness",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's impulse-friendly, high-frequency grocery purchasers are highly likely to add a premium beverage to their cart."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience responds strongly to clean-ingredient and wellness claims, aligning perfectly with low-sugar, high-fiber prebiotic soda."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's family households align with the target audience of parents swapping out regular soda."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "Pop & Sip is a direct competitor selling functional beverages, soda alternatives, and gut health products."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, key benefits, and target demographics are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "subscription availability",
+    "shipping costs/thresholds"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for the 12-packs, and if so, what is the discount?",
+    "What are your shipping rates, or is there a free shipping threshold (e.g., free shipping on 2+ cases)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

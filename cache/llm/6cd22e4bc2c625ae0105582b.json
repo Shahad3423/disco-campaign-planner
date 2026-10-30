@@ -1,0 +1,109 @@
+{
+  "business_summary": "High-protein, low-sugar kid-style cereal for adults sold via a direct-to-consumer subscription model.",
+  "product": "Kid-style cereal for adults",
+  "is_consumer_product": true,
+  "price_point_usd": 39.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Millennials",
+  "stated_claims": [
+    "High-protein",
+    "low-sugar",
+    "kid-style cereal for adults",
+    "$39 for a 4-pack",
+    "subscribe and save"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Cereal is a core grocery product."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Cereal is a shelf-stable pantry staple."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Offers a 'subscribe and save' purchase model."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "High-protein, low-sugar formulation targets health-conscious consumers."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "premium_grocery",
+    "groceries",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging / high price sensitivity",
+      "evidence": "$39 for a 4-pack of cereal is a premium price point that will clash with value-conscious shoppers."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in novelty / ultra-processed food",
+      "evidence": "Kid-style cereal, even if high-protein and low-sugar, may be perceived as a novelty or processed food by strict wellness optimizers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spike and impulse-friendly nature align well with cereal as a convenient snack."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers strongly align with the advertiser's target of gym-goers."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on self-care and fitness align with the high-protein, health-conscious profile."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, clean-ingredient, and wellness-focused grocery shoppers are a prime audience for low-sugar, high-protein cereal."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Health-curious but indulgence-seeking audience is the perfect match for a healthy take on nostalgic 'kid-style' cereal."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, purchase model, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Exact protein and sugar content per serving",
+    "Ounces/grams per box",
+    "Availability of one-time purchase options",
+    "Shipping costs and times"
+  ],
+  "clarifying_questions": [
+    "What is the weight or serving count per box in the 4-pack?",
+    "What are the specific protein and sugar counts per serving?",
+    "Is there a one-time purchase option available, or is it subscription-only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

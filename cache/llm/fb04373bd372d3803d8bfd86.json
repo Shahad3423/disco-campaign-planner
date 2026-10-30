@@ -1,0 +1,120 @@
+{
+  "business_summary": "DTC brand selling Sichuan chili crisp and other premium sauces in jars priced at $15-20, as well as holiday gift sets. The target market is urban foodies under the age of 45.",
+  "product": "Sichuan chili crisp, premium sauces, and holiday gift sets",
+  "is_consumer_product": true,
+  "price_point_usd": 17.5,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "under 45",
+  "stated_claims": [
+    "Sichuan chili crisp and other sauces",
+    "jars $15-20",
+    "gift sets for the holidays",
+    "Foodies, mostly urban and under 45"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Offers holiday gift sets, indicating seasonal gift fulfillment capacity.",
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Core category for condiments, chili crisps, and jarred sauces."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Sauces and condiments are primary grocery items."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly offers holiday gift sets."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Cooks and foodies frequently buy kitchen products alongside premium ingredients."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.25,
+      "why": "Weak/adjacent association with consumers who cook at home and buy premium cookware."
+    }
+  ],
+  "competing_tags": [
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "premium_grocery",
+    "groceries",
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and vague premium positioning due to high price sensitivity.",
+      "evidence": "Jars of sauce priced at $15-20 represent a highly premium product tier."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart sells groceries and has impulse-friendly late-night traffic, perfect for high-flavor premium condiments."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. caters to older affluent women, clashing with the advertiser's target of under 45."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's conservative brand sensibility and older demographic clash with the young, urban foodie target."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's grocery and pantry audience aligns perfectly with premium artisanal sauces."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot sees strong holiday gifting uplift, aligning well with the advertiser's holiday gift sets."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts kitchen buyers motivated by gifting and home life events."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly attracts food-interested consumers who cook at home."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's indulgence-seeking premium grocery audience is highly compatible with gourmet chili crisp."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, holiday gifting angle, and target demographic are clearly defined and actionable.",
+  "missing_info": [
+    "Specific dietary claims (e.g., vegan, gluten-free, organic)",
+    "Shipping costs and shipping cutoff dates for holiday gifts",
+    "Subscription availability for recurring sauce purchases"
+  ],
+  "clarifying_questions": [
+    "Are your sauces vegan, gluten-free, or organic?",
+    "Do you offer any subscription options for your jars?",
+    "What are your standard shipping costs and holiday shipping cutoff dates?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,97 @@
+{
+  "business_summary": "An advertiser offering hydration packets designed to be stirred into water, targeting use cases such as travel, workouts, and hangovers, with a primary business goal of driving product trial.",
+  "product": "Hydration packets",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Good for travel",
+    "Good for workouts",
+    "Good for hangovers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "The product is a functional hydration beverage powder mix."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "It is a drink mix stirred into water."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Hydration packets often cross over with dietary and wellness supplements."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Marketed for physical recovery, workouts, and overall hydration wellness."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Packets are portable and designed for on-the-go travel and quick preparation."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "recovery",
+    "travel",
+    "wellness",
+    "functional_beverages",
+    "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spike and impulse-friendly nature aligns well with hangover recovery and trial-focused hydration packets."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers looking for activewear are highly likely to use hydration packets for workouts."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness classes and personal training are strong prospects for workout-focused hydration."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Highly relevant audience seeking functional beverages and soda alternatives."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, primary use cases (workouts, travel, hangovers), and campaign goal (trial) are clear, allowing us to align them with activewear, convenience, and beverage publishers.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "ingredients/dietary profile (e.g., sugar content, organic, non-GMO)",
+    "pack sizes available for trial"
+  ],
+  "clarifying_questions": [
+    "What is the retail price and pack size of your trial offer?",
+    "Are these packets sold as a one-time purchase, a subscription, or both?",
+    "Are there any key dietary or ingredient claims we should highlight (e.g., sugar-free, organic, electrolyte count)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

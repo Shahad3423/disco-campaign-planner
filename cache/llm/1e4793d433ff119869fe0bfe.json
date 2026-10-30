@@ -1,0 +1,101 @@
+{
+  "business_summary": "Canned mountain water branded with an edgy, metal-head attitude, primarily sold in 12-24 packs to a young audience.",
+  "product": "Canned mountain water",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "young audience",
+  "stated_claims": [
+    "Canned mountain water with a metal-heads attitude.",
+    "Mostly sold in 12-24 packs.",
+    "Young audience and anyone who likes edgy branding."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "edgy branding"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "The product is canned mountain water."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 0.5,
+      "why": "Canned water in edgy packaging often serves as a non-alcoholic, healthy alternative to soda or energy drinks at social events."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Water is a staple grocery item purchased in bulk packs."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "12-24 packs of canned water are typically stored in the pantry."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Canned water packs are highly convenience-oriented products."
+    }
+  ],
+  "competing_tags": [
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "groceries",
+    "convenience",
+    "quick_commerce"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, loud aesthetics",
+      "evidence": "Advertiser features a 'metal-heads attitude' and 'edgy branding'."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: novelty",
+      "evidence": "The brand relies heavily on novelty 'metal-heads' edgy branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart has late-night traffic spikes and impulse-friendly buyers, which aligns well with an edgy, young beverage brand."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a conservative brand sensibility and older affluent demographic, which directly clashes with a metal-head attitude."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. caters to older affluent women with lower impulse behavior, which is the opposite of this brand's young, edgy target."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, packaging format, and target audience are clearly defined, allowing for immediate placement planning.",
+  "missing_info": [
+    "Price point per pack",
+    "Subscription availability",
+    "Shipping costs and weight-related fulfillment constraints"
+  ],
+  "clarifying_questions": [
+    "What is the retail price for your 12-packs and 24-packs?",
+    "Do you offer a subscription option for recurring water deliveries?",
+    "Are there any shipping restrictions or high shipping fees due to the weight of the liquid packs?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
