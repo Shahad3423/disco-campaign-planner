@@ -171,3 +171,31 @@ free quota runs out mid-review.
 Scoring weights, pricing priors, and budget rules live in `config/*.yaml`. Every stage is a pure
 function `input model → output model` (Pydantic) so stages can be tested, swapped, or moved to a
 separate service later without changing callers.
+
+## D12. Settlement type from USDA RUCA, not Census ACS
+
+**Decision.** Urban core / suburban / small city / small town / rural comes from the USDA ERS 2020
+Rural-Urban Commuting Area codes per ZIP (public, no key). RUCA 1 (metro core) is split into urban core
+vs suburban with the zip's land-area class. **Why:** RUCA is the standard commuting-based definition and
+needs no API key; the Census ACS path (income, density) was dropped when no key was available, so
+`income_tier` stays at confidence 0 by design rather than being faked. **Revisit when** ACS zip tables
+are available: density and income would sharpen the urban/suburban split and affordability.
+
+## D13. Household / life-stage features (3rd order) and how they're kept honest
+
+**Decision.** From age-from-name x settlement type (x host notes) we derive P(has kids), P(homeowner), a
+life-stage distribution, car dependence, outdoor lifestyle and "season now" needs, using approximate
+national rates in `config/household.yaml`. Example: a 35-44-year-old in a suburb is more likely to have
+kids, so family products get a (tempered) boost. **Guards:** the name-based age (confidence <= 0.15) is
+first shrunk toward the national adult age mix by its confidence, so a weak name can't fake a life stage
+(tested); derived confidence = settlement confidence x (0.4 + 0.6 x age confidence); every feature keeps
+its inference chain in `source`; usage is only through tempered persona likelihoods and CTR boosts, never
+hard rules. **Measured:** with the 15 example campaigns (none sells kids/family products) household
+features change 0.4% of serving decisions; see EXPERIMENTS for the test with family-product campaigns.
+
+## D14. Holdout run on a cheaper model
+
+The free-tier daily quota for gemini-3.5-flash ran out mid-holdout. Rather than mix models inside one
+eval, the 100-brand holdout was re-run entirely on gemini-flash-lite and is labelled as such. It tests
+whether the design (closed vocabularies, code-side scoring and policy) holds with a weaker model; it is
+not the production model's score.
