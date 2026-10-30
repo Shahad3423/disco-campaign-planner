@@ -1,0 +1,115 @@
+{
+  "business_summary": "An affordable sustainable apparel brand offering fair trade, organic cotton underwear, tees, and baby clothes, specifically targeting eco-minded parents.",
+  "product": "Organic cotton underwear, tees, and baby clothes",
+  "is_consumer_product": true,
+  "price_point_usd": 30.0,
+  "price_tier": "mid",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": "babies and adults",
+  "stated_claims": [
+    "Fair trade organic cotton underwear, tees and baby clothes",
+    "Affordable, around $30 an item",
+    "Eco-minded parents especially"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "fair trade",
+    "organic",
+    "sustainable",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The advertiser sells tees, underwear, and baby clothes."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Tees and underwear are core daily basics."
+    },
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Underwear is explicitly listed as a primary product category."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "The products are explicitly made of organic cotton."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Products are fair trade and target eco-minded parents."
+    },
+    {
+      "tag": "intimates",
+      "weight": 0.5,
+      "why": "Underwear is adjacent to the intimates category."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Tees and basics fit a casual lifestyle."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "underwear",
+    "basics"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "kids_products",
+    "family_products",
+    "premium_basics",
+    "apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience values sustainability and clean/organic claims, aligning with organic cotton."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot's audience responds well to social-good messaging, which aligns perfectly with fair trade apparel."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts sustainability-motivated buyers who may also buy organic baby/adult basics."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Stride & Stem shoppers strongly resonate with sustainability claims."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's audience values comfort and sustainability, which fits soft organic cotton basics."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price point, sustainability values, and target audience are clearly defined and actionable for matching.",
+  "missing_info": [
+    "purchase_model",
+    "target_gender_adult_apparel"
+  ],
+  "clarifying_questions": [
+    "Are your adult tees and underwear designed for men, women, or are they unisex?",
+    "Do you offer subscription options for your basics, or are they strictly one-time purchases?",
+    "What is your primary marketing goal for this campaign (e.g., customer acquisition, high volume, or brand awareness)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

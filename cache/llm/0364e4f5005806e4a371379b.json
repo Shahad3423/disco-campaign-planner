@@ -1,0 +1,92 @@
+{
+  "business_summary": "High-end suitcase brand offering carry-on and checked luggage with a lifetime warranty, targeting frequent flyers and holiday/spring gift-givers.",
+  "product": "Carry-on and checked suitcases",
+  "is_consumer_product": true,
+  "price_point_usd": 362.5,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "lifetime warranty",
+    "highest intent in spring and before the holidays"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "durability",
+    "quality"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser explicitly targets 'gift-givers' and notes high seasonal intent before the holidays."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Premium luggage brands typically operate under a DTC model and align well with other DTC checkout audiences."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.25,
+      "why": "Suitcases with lifetime warranties appeal to buyers with conservative, quality-first, and classic tastes."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging or vague premium positioning; high price sensitivity.",
+      "evidence": "Suitcases are priced premium at $275-$450, making them a poor fit for value-conscious, discount-seeking shoppers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart focuses on high-frequency, late-night, impulse-friendly purchases, which conflicts with a high-AOV, considered suitcase purchase."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging align perfectly with high-end suitcases carrying a lifetime warranty."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park is the highest-AOV apparel publisher with a conservative sensibility, matching the premium pricing of this luggage."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot experiences a strong gifting season uplift (Nov-Dec), aligning with the advertiser's peak holiday gift-giving audience."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that gifting and new-home life events drive purchases, aligning with high-end luggage gifts."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point ($275-$450), lifetime warranty value proposition, and holiday/frequent-flyer target audiences are clearly defined and actionable.",
+  "missing_info": [
+    "Shipping times and costs",
+    "Return policy",
+    "Specific materials used (e.g., polycarbonate, aluminum, nylon)",
+    "Color variations or personalization options"
+  ],
+  "clarifying_questions": [
+    "What is your standard shipping timeframe and cost?",
+    "Do you offer free returns or a trial period alongside your lifetime warranty?",
+    "Are there specific materials or sustainable practices we should highlight in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

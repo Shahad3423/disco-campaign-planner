@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Gift premium staples, {first_name}",
+      "body": "Share transparent-pricing wardrobe staples. Beautifully presented and made by a brand that cares about where stuff is made.",
+      "cta": "Shop gift staples",
+      "headline_no_name": "Gift premium wardrobe staples",
+      "angle": "gifting and premium presentation",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Ethical wardrobe staples for {first_name}",
+      "body": "We offer transparent-pricing wardrobe staples. Choose a brand that honestly cares about where stuff is made and how it's manufactured.",
+      "cta": "Shop ethical staples",
+      "headline_no_name": "Ethically made wardrobe staples",
+      "angle": "manufacturing transparency and ethical footprint",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Found: your new uniform, {first_name}",
+      "body": "No gatekeeping here. Get transparent-pricing wardrobe staples from a brand that genuinely cares about where stuff is made.",
+      "cta": "Shop the aesthetic",
+      "headline_no_name": "Found: your new aesthetic uniform",
+      "angle": "playful aesthetic and values-aligned voice",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "business_summary": "Subscription play kits for babies and toddlers, designed with child development specialists.",
+  "product": "Play kits for babies and toddlers",
+  "is_consumer_product": true,
+  "price_point_usd": 80.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "babies and toddlers",
+  "stated_claims": [
+    "designed with child development specialists"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Shipped every few months as a subscription.",
+  "relevant_tags": [
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "The core product consists of play kits for babies and toddlers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold as a recurring subscription kit."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "This is a digitally native consumer brand."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby play kits are highly popular gifts for new parents."
+    }
+  ],
+  "competing_tags": [
+    "toys"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "subscription_boxes",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only']",
+      "evidence": "Subscription play kits for babies and toddlers... $80-ish a kit every few months."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly targets family households, which align well with first-time parents of babies/toddlers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price, audience (first-time parents), and subscription model are clearly specified and actionable.",
+  "missing_info": [
+    "margins/CAC targets",
+    "one-time purchase availability"
+  ],
+  "clarifying_questions": [
+    "Do you offer one-time purchase options for gifting, or is it strictly subscription-only?",
+    "What is your target customer acquisition cost (CAC) or unit margin for the first kit?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

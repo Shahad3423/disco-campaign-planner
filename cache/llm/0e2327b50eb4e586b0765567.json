@@ -1,0 +1,108 @@
+{
+  "business_summary": "Premium yoga and studio-to-street apparel brand targeting brand- and wellness-conscious shoppers with a celebrity-adjacent aesthetic.",
+  "product": "yoga and studio-to-street apparel",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Premium yoga and studio-to-street apparel",
+    "$80-130 per piece",
+    "Celebrity-adjacent aesthetic"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "wellness"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category is premium yoga and studio-to-street activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 1.0,
+      "why": "Core product category explicitly mentions yoga apparel."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The brand sells apparel pieces."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "The brand targets shoppers who care about wellness."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Studio-to-street apparel translates to premium casual wear."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "yoga"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "fashion",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in influencer positioning and loud aesthetics, prefers understated",
+      "evidence": "Advertiser claims a 'celebrity-adjacent aesthetic' and brand-conscious targeting."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging and vague premium positioning",
+      "evidence": "Advertiser has high premium price point ($80-130 per piece) and 'celebrity-adjacent' branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers with wellness/beauty crossover are an ideal match for premium yoga apparel."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on self-care, fitness, and yoga classes align perfectly with the target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility conflicts with the advertiser's celebrity-adjacent aesthetic."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Identity-driven purchasing and aesthetic-focused Gen Z/millennial buyers align well with celebrity-adjacent branding."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, premium pricing, and aesthetic target audience are clearly defined and ready for matching.",
+  "missing_info": [
+    "Target gender (men's, women's, or unisex)",
+    "Fulfillment and shipping times",
+    "Specific fabric or sustainability attributes"
+  ],
+  "clarifying_questions": [
+    "Is your apparel line designed specifically for women, men, or is it unisex?",
+    "Do you offer any subscription options, or is your model entirely one-time purchases?",
+    "Are there any specific product features (e.g., sustainable materials, technical fabrics) that we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

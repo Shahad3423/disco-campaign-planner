@@ -1,0 +1,101 @@
+{
+  "business_summary": "Traceable, minimalist multivitamins for women aged 25-45, offered via a monthly subscription model for approximately $33 with a strong emphasis on ingredient transparency.",
+  "product": "Multivitamins",
+  "is_consumer_product": true,
+  "price_point_usd": 33.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Traceable multivitamins",
+    "Minimalist multivitamins",
+    "Transparency-focused brand"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Transparency",
+    "Traceability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "The core product offered is multivitamins."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Vitamins are a major subcategory of dietary supplements."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold exclusively or primarily via monthly subscription."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "The brand operates as a direct-to-consumer wellness business."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The advertiser explicitly targets women aged 25-45."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The brand operates on a direct-to-consumer subscription model."
+    }
+  ],
+  "competing_tags": [
+    "vitamins",
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only']",
+      "evidence": "The advertiser describes their business model as 'by subscription ($33-ish a month)'"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "The publisher's audience is science-forward and skeptical of health claims, making the advertiser's focus on transparency and traceability highly aligned."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, clean-ingredient, and wellness-focused shoppers directly align with a transparent and traceable vitamin brand."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": -1,
+      "why": "Audience responds strongly to gifting, which conflicts with a subscription-only personal health product."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The core product, pricing, subscription model, target audience, and key value propositions are clearly stated and sufficient for planning.",
+  "missing_info": [
+    "exact profit margins",
+    "availability of one-time purchase options",
+    "shipping costs and policies"
+  ],
+  "clarifying_questions": [
+    "Do you offer any one-time purchase options, or is the model strictly subscription-only?",
+    "Is shipping included in the $33/month price, or is it calculated separately?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

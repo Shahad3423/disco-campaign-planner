@@ -1,0 +1,42 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy fails to address the persona's core preferences for ingredient transparency and science-backed claims, and instead positions generic prepared meals as 'post-workout fuel' which may trigger their avoidance of ultra-processed foods."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

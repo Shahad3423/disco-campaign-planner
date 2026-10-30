@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, save on a new kind of thing for moms.",
+      "body": "Get the ultimate value with a new kind of thing for moms. High-quality, budget-friendly, and highly rated by parents like you.",
+      "cta": "Shop the new thing",
+      "headline_no_name": "Save on a new kind of thing for moms.",
+      "angle": "discount-forward and clear value proposition with a budget-friendly focus",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, discover a new kind of thing for moms.",
+      "body": "Upgrade your daily routine. Experience a new kind of thing for moms, mindfully created to support your active, optimized lifestyle.",
+      "cta": "Shop the new thing",
+      "headline_no_name": "Discover a new kind of thing for moms.",
+      "angle": "outcome-focused wellness optimization and routine integration",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify Halloween with this new thing.",
+      "body": "Save time this Halloween. Try a new kind of thing for moms that fits effortlessly into your busy schedule with easy subscription options.",
+      "cta": "Start subscription",
+      "headline_no_name": "Simplify Halloween with a new kind of thing for moms.",
+      "angle": "time-saving convenience and subscription ease integrated with a seasonal moment",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

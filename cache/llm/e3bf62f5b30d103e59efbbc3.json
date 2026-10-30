@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Direct-to-Consumer Cookware for {first_name}",
+      "body": "Professional-quality cookware designed for restaurant use. Built for extreme durability and sold direct to simplify the supply chain.",
+      "cta": "Shop durable pans",
+      "headline_no_name": "Direct-to-Consumer Cookware Built to Last",
+      "angle": "supply chain transparency and longevity",
+      "claims_used": [
+        "Professional-quality cookware and knives sold direct",
+        "Used in restaurants"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "business_summary": "An advertiser offering premium sleep devices including a sunrise alarm clock, a sound machine, and 'the Rest' device for kids' bedtime routines, targeting parents and sleep-optimizers at a price range of $70-170.",
+  "product": "Sleep devices (sunrise alarm clock, sound machine, Rest kids' sleep device)",
+  "is_consumer_product": true,
+  "price_point_usd": 120.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "unknown",
+  "stated_claims": [
+    "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine.",
+    "$70-170."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Sleep optimization is a core sub-category of DTC wellness, directly targeting their 'sleep-optimizer' audience."
+    },
+    {
+      "tag": "bedding",
+      "weight": 0.5,
+      "why": "Shoppers buying bedding are highly focused on bedroom comfort and sleep quality, making sleep devices a highly relevant adjacent purchase."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "These are physical consumer electronics integrated into home and bedroom environments."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "wellness",
+    "family_products",
+    "kids_products",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed has high cross-sell with home and wellness, making it a perfect fit for premium sleep devices."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form's science-forward wellness audience aligns well with data-driven 'sleep-optimizers'."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly reaches family households, who are the exact target demographic for 'the Rest' kids' bedtime routine device."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, clear price range, and distinct target audiences (parents and sleep-optimizers) provide sufficient detail for immediate campaign planning.",
+  "missing_info": [
+    "Whether 'the Rest' or other devices require an ongoing app subscription",
+    "Specific age range for the kids' bedtime routine device"
+  ],
+  "clarifying_questions": [
+    "Do any of your devices, such as the Rest for kids, require or offer an optional ongoing subscription or app membership?",
+    "What is the target age range for the children's sleep device?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

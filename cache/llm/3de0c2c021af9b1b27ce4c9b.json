@@ -1,0 +1,63 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your pantry.",
+      "body": "Fuel your body with organic, non-GMO pantry goods. Our membership service keeps your kitchen stocked with clean ingredients.",
+      "cta": "Start membership",
+      "headline_no_name": "Optimize your pantry.",
+      "angle": "outcome-focused wellness optimization with clean organic ingredients",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+        "Perfect for families and health-minded shoppers who buy often."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, save 25-30% on groceries.",
+      "body": "Get organic and non-GMO pantry goods for 25-30% off. Pay an annual fee of about $60 to unlock high-value savings on every order.",
+      "cta": "Save on groceries",
+      "headline_no_name": "Save 25-30% on groceries.",
+      "angle": "clear value proposition and discount-forward messaging",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose organic & non-GMO.",
+      "body": "Stock your kitchen with organic and non-GMO pantry goods. Our $60 annual membership helps health-minded shoppers buy sustainably.",
+      "cta": "Shop organic pantry",
+      "headline_no_name": "Choose organic & non-GMO.",
+      "angle": "sustainability and ethical ingredient sourcing focus",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+        "Perfect for families and health-minded shoppers who buy often."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, simplify your grocery run.",
+      "body": "Get 25-30% off organic and non-GMO pantry goods with an annual $60 membership. Perfect for busy shoppers who buy often.",
+      "cta": "Start membership",
+      "headline_no_name": "Simplify your grocery run.",
+      "angle": "convenience and subscription perks for frequent shoppers",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+        "Perfect for families and health-minded shoppers who buy often."
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, quality pantry essentials.",
+      "body": "Enjoy quality organic and non-GMO pantry goods. Our $60 annual membership is tailored for health-minded shoppers who buy often.",
+      "cta": "Access pantry goods",
+      "headline_no_name": "Quality pantry essentials.",
+      "angle": "understated premium quality and reliability",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+        "Perfect for families and health-minded shoppers who buy often."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "business_summary": "DTC brand selling premium, soft, performance-y everyday clothing (such as joggers and shorts) designed to transition from the gym to casual settings, targeting activewear spenders.",
+  "product": "Everyday performance clothing (joggers, shorts)",
+  "is_consumer_product": true,
+  "price_point_usd": 90.0,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Soft, performance-y everyday clothing",
+    "Go from gym to coffee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Everyday clothing designed for casual transitions like going to coffee."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Explicitly targets 'guys'."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Explicitly targets 'gals'."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers attending fitness classes are highly likely to buy activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Yoga practitioners are a core demographic for performance-y everyday clothing."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging or vague premium positioning; high price sensitivity.",
+      "evidence": "Joggers around $90, shorts $65."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are the ideal target audience for activewear."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on self-care and fitness align perfectly with premium activewear buyers."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility may clash with casual, gym-to-coffee activewear."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Comfort-seeking urban professionals are a strong demographic match for everyday performance wear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price points, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "purchase_model",
+    "target_age_range",
+    "sustainability_practices"
+  ],
+  "clarifying_questions": [
+    "Are these items sold strictly as one-time purchases, or do you offer subscription options?",
+    "Is there a specific target age demographic you focus on?",
+    "Do you have any specific sustainability or sourcing claims we can highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, save more with comfort multi-packs",
+      "body": "Perfect for families. Grab our comfort socks and tees in multi-packs, and every purchase donates an item to someone in need.",
+      "cta": "Shop multi-packs",
+      "headline_no_name": "Save more with comfort multi-packs",
+      "angle": "Value-focused bundle offers and multi-packs for families",
+      "claims_used": [
+        "Great for families buying multi-packs",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the perfect gift of comfort",
+      "body": "Great for gifting. Share comfort socks and tees with loved ones, and every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Give the perfect gift of comfort",
+      "angle": "Premium presentation and gifting focus",
+      "claims_used": [
+        "Great for gifting",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your daily comfort",
+      "body": "Upgrade your daily basics with comfort socks and tees. Every purchase donates an essential item to someone experiencing homelessness.",
+      "cta": "Shop comfort basics",
+      "headline_no_name": "Optimize your daily comfort",
+      "angle": "Mindful daily essentials that avoid fast fashion through purposeful design",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

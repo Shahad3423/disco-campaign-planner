@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, unwind with your pup and clean wine.",
+      "body": "You care about what goes into your pet's bowl. Care about your glass too with our lab-tested, low-sugar natural wines shipped monthly.",
+      "cta": "Shop natural wines",
+      "headline_no_name": "Unwind with your pup and clean, natural wine.",
+      "angle": "Connecting cozy pet relaxation at home with clean ingredient transparency in wine",
+      "claims_used": [
+        "Low-sugar",
+        "Lab-tested",
+        "Natural wines",
+        "Shipped monthly"
+      ]
+    }
+  ]
+}

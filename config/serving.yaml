@@ -28,3 +28,14 @@ context_boosts:
     tags: [sustainable]
     multiplier: 1.05
 moment_boost_max: 0.30          # a fully active, tag-matching calendar moment adds up to +30% CTR
+
+# Page auction (glossary: no need for real auction dynamics; this is the light, standard version).
+auction:
+  slots: 1                          # ONE offer per thank-you page (product decision); raise to test more slots
+  position_ctr: [1.0, 0.75, 0.55]   # [assumed] relative CTR by slot, used only if slots > 1
+  reserve_ecpm: 1.0                 # [assumed] below this expected value per 1,000 views the slot stays empty
+  increment: 0.01                   # second price: pay just enough to beat the next bidder
+
+# Host policy (DECISIONS D21). In production this comes from each host's brand allow/block settings.
+host_policy:
+  block_competitors_default: false   # most hosts allow non-identical brands; a host can opt out

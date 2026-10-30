@@ -1,0 +1,113 @@
+{
+  "business_summary": "Sells natural toothpaste and deodorant at a budget-friendly price point of approximately $5.",
+  "product": "Natural toothpaste and deodorant",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural toothpaste and deodorant",
+    "Cheap, like $5 or so"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Advertiser explicitly describes the products as natural."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Toothpaste and deodorant are personal care and hygiene essentials, which sit in the beauty and grooming category."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Natural personal care products strongly align with non-toxic preferences."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Deodorant is applied to the skin and often sits adjacent to body skincare."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Toothpaste and deodorant are daily personal care products used in the bathroom."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.25,
+      "why": "A low-cost, everyday essential is highly convenience-oriented."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "clean_beauty",
+    "wellness",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_006",
+      "conflict": "disinterested_in vague eco claims",
+      "evidence": "\"Natural toothpaste and deodorant, you know the stuff.\""
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "prefers science-backed claims and ingredient transparency",
+      "evidence": "\"you know the stuff. Just show it to whoever.\""
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart users are high-frequency, impulse-friendly buyers; a cheap $5 daily essential fits perfectly."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. attracts older affluent women with low impulse but high AOV, which clashes with a $5 basic item."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park is a high-AOV, conservative brand where cheap $5 commodities will not resonate well."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are highly responsive to clean-ingredient, natural, and wellness claims."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form has a science-forward audience skeptical of unsubstantiated claims; the advertiser's casual 'natural... you know the stuff' pitch conflicts."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product types and price points are highly clear, allowing us to map them directly to budget-friendly, personal care, and natural wellness categories.",
+  "missing_info": [
+    "Specific ingredients or certifications",
+    "Whether subscription options are available",
+    "Exact shipping costs and transit times",
+    "Key target audience demographics or visual assets"
+  ],
+  "clarifying_questions": [
+    "Do you offer these products as a subscription, or are they only available for one-time purchase?",
+    "Do you have any specific eco-certifications or ingredient callouts we can use in the creatives (e.g., fluoride-free, aluminum-free)?",
+    "Is there a shipping charge, or is shipping free when bundling toothpaste and deodorant?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

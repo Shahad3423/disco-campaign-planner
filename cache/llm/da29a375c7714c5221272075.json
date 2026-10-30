@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Nurture {first_name}'s growth with expert play",
+      "body": "Give them play kits designed with child development specialists. Delivered every few months for about $80-ish a kit to support milestones.",
+      "cta": "Start play kits",
+      "headline_no_name": "Nurture your child's growth with expert play",
+      "angle": "emotional connection and expert-backed design",
+      "claims_used": [
+        "designed with child development specialists",
+        "$80-ish a kit every few months"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, save time with expert play kits",
+      "body": "Playtime simplified. Get kits designed with child development specialists shipped every few months for about $80-ish a kit.",
+      "cta": "Subscribe to kits",
+      "headline_no_name": "Save time with expert-designed play kits",
+      "angle": "time-saving subscription convenience",
+      "claims_used": [
+        "designed with child development specialists",
+        "$80-ish a kit every few months"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Effortless play kits for {first_name}'s child",
+      "body": "Play on autopilot. Receive expert-designed kits every few months for $80-ish a kit, designed with child development specialists.",
+      "cta": "Get kits delivered",
+      "headline_no_name": "Effortless play kits for your growing child",
+      "angle": "frictionless subscription delivery",
+      "claims_used": [
+        "designed with child development specialists",
+        "$80-ish a kit every few months"
+      ]
+    }
+  ]
+}

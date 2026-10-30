@@ -1,0 +1,64 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "A premium gift for {first_name} or someone close",
+      "body": "Give wardrobe staples made by a brand that cares about where stuff is made. Beautifully crafted tees, denim, and pants.",
+      "cta": "Shop gift staples",
+      "headline_no_name": "A premium gift for someone close",
+      "angle": "premium presentation and gift-ready staples",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Know exactly where your clothes come from, {first_name}",
+      "body": "We care about where stuff is made. Shop transparent-pricing wardrobe staples, from denim to everyday tees.",
+      "cta": "Shop ethical denim",
+      "headline_no_name": "Know exactly where your clothes come from",
+      "angle": "supply chain transparency and ethics",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, discover honest, transparent pricing",
+      "body": "Get transparent-pricing wardrobe staples, from denim to tees. We care about where stuff is made so you get honest quality.",
+      "cta": "Shop honest pricing",
+      "headline_no_name": "Discover honest, transparent pricing",
+      "angle": "clear value proposition and pricing transparency",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Wardrobe staples that match your values, {first_name}",
+      "body": "We care about where stuff is made. Discover transparent-pricing tees, denim, and pants designed for your daily rotation.",
+      "cta": "Shop daily staples",
+      "headline_no_name": "Wardrobe staples that match your values",
+      "angle": "values-aligned and aesthetic daily essentials",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Timeless wardrobe staples for {first_name}",
+      "body": "Invest in classic denim, tees, and pants. We offer transparent-pricing wardrobe staples and care deeply about where stuff is made.",
+      "cta": "Shop classic denim",
+      "headline_no_name": "Timeless wardrobe staples",
+      "angle": "quality-focused understated classics",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    }
+  ]
+}

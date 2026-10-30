@@ -1,0 +1,132 @@
+{
+  "business_summary": "DTC brand offering fair trade organic cotton underwear, tees, and baby clothes, with affordable pricing around $30 per item, targeting eco-minded parents.",
+  "product": "Fair trade organic cotton underwear, tees, and baby clothes",
+  "is_consumer_product": true,
+  "price_point_usd": 30.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fair trade",
+    "Organic cotton",
+    "Affordable, around $30 an item",
+    "Eco-minded parents especially"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Fair Trade",
+    "Organic",
+    "Sustainability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product offering is clothing (underwear, tees, baby clothes)."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Tees and underwear are daily apparel basics."
+    },
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Explicitly sells organic cotton underwear."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Emphasizes fair trade and organic cotton materials."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Explicitly states the use of organic cotton."
+    },
+    {
+      "tag": "intimates",
+      "weight": 1.0,
+      "why": "Underwear is a core subcategory of intimates."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Organic cotton appeals to natural product shoppers."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Eco-minded parents buying baby clothes often prioritize non-toxic materials."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby clothes and high-quality basics are popular gift items."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "underwear",
+    "basics",
+    "intimates"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "kids_products",
+    "family_products",
+    "apparel",
+    "premium_basics"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, organic-focused shoppers who care about sustainability will align closely with fair trade organic cotton."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Sells basics/underwear and has an audience highly responsive to social-good messaging."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Sustainability-motivated buyers and gifting life events fit well with eco-minded parents."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households align with the target of parents buying baby clothes."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Sustainability claims resonate highly with this audience."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Comfort and sustainability messaging align with organic cotton tees and underwear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price point, sustainable values, and parent demographic are clearly defined and highly compatible with the network.",
+  "missing_info": [
+    "Specific certifications for fair trade and organic cotton",
+    "Shipping rates and timelines",
+    "Sizing ranges available for baby clothes and adult basics"
+  ],
+  "clarifying_questions": [
+    "Do you hold specific certifications for your organic cotton or fair trade claims (e.g., GOTS, Fair Trade USA)?",
+    "What is the size range for your baby clothes (e.g., newborn to 24M)?",
+    "Do you offer free shipping thresholds or bundle discounts?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

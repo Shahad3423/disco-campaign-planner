@@ -1,0 +1,47 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement in the headline ('A grown-up aesthetic for {first_name}.')"
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "The sustainability buyer avoids vague eco claims. Phrases like 'feel good about' without specific supply chain details, certifications, or environmental facts will trigger skepticism.",
+        "Very similar in angle and copy to Variant 2, relying heavily on 'Made in Portugal' without distinct sustainability substance."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement in the headline ('Gift a grown-up aesthetic, {first_name}.')"
+      ],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "business_summary": "Organic produce and pantry items delivered at up to 40% off supermarkets via weekly or biweekly subscription boxes, targeting budget-aware and eco-conscious households.",
+  "product": "Organic produce and pantry subscription boxes",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Organic produce and pantry items delivered at up to 40% off supermarkets",
+    "Weekly or biweekly boxes"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "sustainable",
+    "affordability",
+    "food waste reduction"
+  ],
+  "fulfillment_notes": "Delivered weekly or biweekly in subscription boxes.",
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The advertiser sells organic produce and pantry items directly to households."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Specifically claims to deliver organic produce."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Explicitly delivers organic pantry items."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Offers weekly or biweekly recurring boxes."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Targeting households that care about food waste aligns with sustainability goals."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Highly adjacent to organic grocery buyers."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Delivered boxes offer a convenient alternative to grocery shopping."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "groceries",
+    "organic_grocery",
+    "subscription_boxes",
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in contains 'subscription-only'",
+      "evidence": "weekly or biweekly boxes implies a subscription-only model"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart shoppers are high-frequency grocery and household buyers who value convenience."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are highly responsive to clean-ingredient, sustainability, and wellness claims, aligning perfectly with organic and food-waste reduction."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly users are food-interested and convenience-motivated households, making them an ideal demographic for grocery boxes."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The advertiser's product, model, value proposition, and target audience are clearly stated, allowing for immediate planning.",
+  "missing_info": [
+    "average price point per box",
+    "geographic delivery restrictions",
+    "exact definition of what comes in a standard box"
+  ],
+  "clarifying_questions": [
+    "What is the average price range of your weekly or biweekly boxes?",
+    "Do you ship nationwide, or are you restricted to specific regions or zip codes?",
+    "Can shoppers purchase boxes as a one-time trial, or is it strictly subscription-only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

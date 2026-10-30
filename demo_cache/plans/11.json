@@ -27,14 +27,14 @@
     "why": "Protein bars are a core wellness and nutrition DTC product category."
    },
    {
-    "tag": "fitness_classes",
-    "weight": 0.5,
-    "why": "Fitness class attendees often consume protein bars for pre- or post-workout nutrition."
-   },
-   {
     "tag": "groceries",
     "weight": 0.5,
     "why": "Protein bars are frequently purchased as grocery or snack items."
+   },
+   {
+    "tag": "fitness_classes",
+    "weight": 0.5,
+    "why": "Fitness class attendees often consume protein bars for pre- or post-workout nutrition."
    }
   ],
   "competing_tags": [],
@@ -1287,33 +1287,33 @@
  "creatives": [
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, fuel your routine right",
-   "body": "Upgrade your nutrition stack with protein bars that don't taste like cardboard.",
-   "cta": "Shop Protein Bars",
-   "headline_no_name": "Fuel your daily routine right",
-   "angle": "ingredient transparency and outcome-focused",
+   "headline": "{first_name}, optimize your nutrition.",
+   "body": "Support your system with protein bars that don't taste like cardboard. Pure fuel made to taste great.",
+   "cta": "Shop protein bars",
+   "headline_no_name": "Optimize your daily nutrition.",
+   "angle": "outcome-focused nutrition optimization",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
   },
   {
    "persona_id": "persona_009",
-   "headline": "Power your next heavy workout",
-   "body": "Reach for protein bars that don't taste like cardboard when you need peak performance.",
-   "cta": "Get Fuel",
-   "headline_no_name": "Power your next heavy workout",
-   "angle": "performance claims",
+   "headline": "Fuel your training, {first_name}.",
+   "body": "You work hard, so eat well. Get protein bars that don't taste like cardboard to power your recovery.",
+   "cta": "Order protein bars",
+   "headline_no_name": "Fuel your training.",
+   "angle": "performance-focused training fuel",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
   },
   {
    "persona_id": "persona_010",
-   "headline": "A gift they will actually crave, {first_name}",
-   "body": "Give protein bars that don't taste like cardboard. A delicious treat anyone on your gift list will appreciate.",
-   "cta": "Shop Gift Ideas",
-   "headline_no_name": "A gift they will actually crave",
-   "angle": "giftable",
+   "headline": "A delicious gift for your gym partner, {first_name}",
+   "body": "Surprise your favorite workout buddy with protein bars that don't taste like cardboard. A thoughtful treat they will actually enjoy.",
+   "cta": "Shop protein bars",
+   "headline_no_name": "A delicious gift for your gym partner",
+   "angle": "thoughtful gifting for active friends",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1340,12 +1340,14 @@
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The gifting angle is weak for a premium gifter who expects premium presentation or gift sets, rather than just suggesting buying regular protein bars for a buddy."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1360,35 +1362,40 @@
    "price_source": "tier_default",
    "gross_margin": 0.65,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.3,
    "max_affordable_cac": 50.7,
    "target_cpa": 35.49,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 65% (typical for wellness_dtc).",
+    "No target CPA/ROAS or margin given; assumed 65% gross margin (typical for wellness_dtc). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 65% margin x 1.3 orders = $50.70)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $35.49 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $35.49 x click-to-purchase rate (1.3%-4.6% for wellness_dtc). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.53,
-    "mid": 1.06,
-    "high": 1.77
+    "low": 0.46,
+    "mid": 0.92,
+    "high": 1.61
    },
    "cpm_bid": null,
    "target_cpa": 35.49,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 920.0,
+   "monthly_budget_usd": 790.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 30.67,
+   "delivery_goal": "budget",
+   "expected_impressions": 46910,
+   "expected_reach": 29319,
+   "goal_feasible": true,
+   "daily_cap_usd": 26.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 917.65,
+   "learning_budget_needed_usd": 794.12,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
@@ -1396,48 +1403,103 @@
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
      "share": 0.645,
-     "budget_usd": 593.14,
-     "cpc_bid_usd": 1.49,
-     "start_bid_usd": 1.04,
+     "budget_usd": 509.33,
+     "cpc_bid_usd": 1.29,
+     "start_bid_usd": 0.9,
      "expected_clicks": {
-      "low": 318.0,
-      "mid": 398.0,
-      "high": 478.0
+      "low": 316.0,
+      "mid": 395.0,
+      "high": 474.0
      },
      "expected_conversions": {
-      "low": 8.4,
-      "mid": 16.7,
-      "high": 27.9
+      "low": 7.2,
+      "mid": 14.4,
+      "high": 25.2
      },
-     "capacity_usd": 5256.72,
+     "capacity_usd": 4551.12,
+     "expected_impressions": 23502,
+     "expected_reach": 14689,
      "requires_host_approval": false,
-     "rationale": "score 0.48 -> fit x1.40 on CTR/CVR; max bid $1.49 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.48 -> relative fit x1.40 on CTR/CVR; max bid $1.29 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
      "share": 0.355,
-     "budget_usd": 326.86,
-     "cpc_bid_usd": 1.11,
-     "start_bid_usd": 0.78,
+     "budget_usd": 280.67,
+     "cpc_bid_usd": 0.96,
+     "start_bid_usd": 0.67,
      "expected_clicks": {
-      "low": 236.0,
-      "mid": 294.0,
-      "high": 353.0
+      "low": 234.0,
+      "mid": 292.0,
+      "high": 351.0
      },
      "expected_conversions": {
-      "low": 4.6,
-      "mid": 9.2,
-      "high": 15.3
+      "low": 4.0,
+      "mid": 7.9,
+      "high": 13.8
      },
-     "capacity_usd": 9427.64,
+     "capacity_usd": 8153.63,
+     "expected_impressions": 23408,
+     "expected_reach": 14630,
      "requires_host_approval": false,
-     "rationale": "score 0.26 -> fit x1.04 on CTR/CVR; max bid $1.11 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.26 -> relative fit x1.04 on CTR/CVR; max bid $0.96 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $920, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $790, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $35.49 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_012",
+     "start_bid": 0.9,
+     "max_bid": 1.29,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_003",
+     "start_bid": 0.67,
+     "max_bid": 0.96,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1541,10 +1603,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, fuel your routine right",
-    "headline_no_name": "Fuel your daily routine right",
-    "body": "Upgrade your nutrition stack with protein bars that don't taste like cardboard.",
-    "cta": "Shop Protein Bars"
+    "headline_template": "{first_name}, optimize your nutrition.",
+    "headline_no_name": "Optimize your daily nutrition.",
+    "body": "Support your system with protein bars that don't taste like cardboard. Pure fuel made to taste great.",
+    "cta": "Shop protein bars"
    },
    {
     "variant_id": "v2",
@@ -1553,10 +1615,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "Power your next heavy workout",
-    "headline_no_name": "Power your next heavy workout",
-    "body": "Reach for protein bars that don't taste like cardboard when you need peak performance.",
-    "cta": "Get Fuel"
+    "headline_template": "Fuel your training, {first_name}.",
+    "headline_no_name": "Fuel your training.",
+    "body": "You work hard, so eat well. Get protein bars that don't taste like cardboard to power your recovery.",
+    "cta": "Order protein bars"
    },
    {
     "variant_id": "v3",
@@ -1565,10 +1627,10 @@
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "A gift they will actually crave, {first_name}",
-    "headline_no_name": "A gift they will actually crave",
-    "body": "Give protein bars that don't taste like cardboard. A delicious treat anyone on your gift list will appreciate.",
-    "cta": "Shop Gift Ideas"
+    "headline_template": "A delicious gift for your gym partner, {first_name}",
+    "headline_no_name": "A delicious gift for your gym partner",
+    "body": "Surprise your favorite workout buddy with protein bars that don't taste like cardboard. A thoughtful treat they will actually enjoy.",
+    "cta": "Shop protein bars"
    }
   ],
   "frequency_cap": {

@@ -1,0 +1,78 @@
+{
+  "business_summary": "Lifting and training apparel brand targeting an 18-30 demographic with leggings and tees priced between $30 and $60, leveraging free shipping thresholds and first-order discounts.",
+  "product": "Lifting and training apparel (leggings and tees)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "18-30",
+  "stated_claims": [
+    "Free shipping thresholds",
+    "First-order discount"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Offers free shipping thresholds.",
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category is lifting and training apparel like leggings and tees."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The product line consists of apparel items such as leggings and tees."
+    },
+    {
+      "tag": "fitness",
+      "weight": 0.5,
+      "why": "Training apparel directly caters to fitness-focused shoppers."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "Dislikes fast_fashion",
+      "evidence": "Low-cost training apparel in the $30-60 range could be perceived as fast fashion by wellness optimizers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features fitness-engaged apparel shoppers."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features activewear shoppers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product category, target audience, pricing, and promotional levers provided.",
+  "missing_info": [
+    "Exact average order value",
+    "Specific product margin",
+    "Primary advertising goal"
+  ],
+  "clarifying_questions": [
+    "What is your target average order value (AOV) for this campaign?",
+    "What is your gross margin range on these items?",
+    "What is your primary goal for the Disco channel (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,116 @@
+{
+  "business_summary": "Organic produce and pantry items delivered via weekly or biweekly subscription boxes at up to 40% off supermarket prices, targeting budget-conscious and food-waste-aware households.",
+  "product": "Organic produce and pantry subscription boxes",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Organic produce and pantry items delivered at up to 40% off supermarkets",
+    "Weekly or biweekly boxes",
+    "Targeting budget-aware households who care about food waste"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "sustainability",
+    "anti-food-waste",
+    "affordability"
+  ],
+  "fulfillment_notes": "Weekly or biweekly box delivery.",
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Core product offering is organic produce and pantry items."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "The produce and pantry items are explicitly organic."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The service includes pantry items in its delivery boxes."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Delivered on a recurring weekly or biweekly schedule."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Appeals to consumers focused on reducing food waste."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Direct-to-door delivery of household food essentials."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "organic_grocery",
+    "groceries",
+    "subscription_boxes",
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Advertiser offers 'weekly or biweekly boxes', indicating a subscription-only model which this persona dislikes."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is values-driven and highly responsive to sustainability and clean-ingredient claims."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods has sustainability-motivated kitchen buyers who likely care about organic food and food waste."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of food-interested, convenience-motivated households."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Stride & Stem's audience responds strongly to sustainability claims."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's audience is highly receptive to sustainability messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, subscription model, value proposition, and target audience are clearly defined and ready for campaign planning.",
+  "missing_info": [
+    "exact price point per box",
+    "geographic delivery limitations",
+    "shipping costs"
+  ],
+  "clarifying_questions": [
+    "What is the average price range for your weekly or biweekly boxes?",
+    "Do you ship nationwide, or are there specific regional limitations?",
+    "Is shipping free, or is there an additional delivery fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -47,9 +47,7 @@
     "why": "Adjacent interest for eco-conscious shoppers."
    }
   ],
-  "competing_tags": [
-   "household"
-  ],
+  "competing_tags": [],
   "persona_affinity_tags": [
    "home_goods",
    "household",
@@ -90,15 +88,13 @@
    "non_toxic": 1.0
   },
   "sample_agreement": 0.87,
-  "competing_tag_share": {
-   "household": 0.33
-  }
+  "competing_tag_share": {}
  },
  "publishers": [
   {
    "publisher_id": "pub_001",
    "publisher_name": "Swiftcart",
-   "score": 0.3662,
+   "score": 0.4474,
    "components": [
     {
      "name": "category_fit",
@@ -143,11 +139,9 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells household (33% of samples agree); may block the ad"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches household (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells household (33% of samples agree); may block the ad"
+   "reason": "Recommended: matches household (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_014",
@@ -250,8 +244,8 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "recommended": false,
+   "reason": "Excluded: score 0.21 below cutoff 0.22; weakest signal category_fit (matches home (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_008",
@@ -1150,7 +1144,6 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_011",
     "pub_014",
     "pub_001"
    ]
@@ -1166,7 +1159,6 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_011",
     "pub_001",
     "pub_014"
    ]
@@ -1183,7 +1175,6 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011",
     "pub_001"
    ]
   },
@@ -1199,7 +1190,6 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011",
     "pub_001"
    ]
   },
@@ -1214,7 +1204,6 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_011",
     "pub_014",
     "pub_001"
    ]
@@ -1231,7 +1220,6 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011",
     "pub_001"
    ]
   },
@@ -1247,8 +1235,7 @@
    ],
    "best_publishers": [
     "pub_001",
-    "pub_014",
-    "pub_011"
+    "pub_014"
    ]
   },
   {
@@ -1262,7 +1249,6 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_011",
     "pub_014",
     "pub_001"
    ]
@@ -1279,7 +1265,6 @@
    ],
    "best_publishers": [
     "pub_001",
-    "pub_011",
     "pub_014"
    ]
   },
@@ -1295,7 +1280,6 @@
    ],
    "best_publishers": [
     "pub_001",
-    "pub_011",
     "pub_014"
    ]
   }
@@ -1303,79 +1287,78 @@
  "creatives": [
   {
    "persona_id": "persona_006",
-   "headline": "{first_name}, skip single-use plastic bottles",
-   "body": "Make your cleaning routine sustainable. Our refillable, concentrated formulas deliver performance that works as well as the big brands.",
-   "cta": "Shop Refills",
-   "headline_no_name": "Skip single-use plastic bottles today",
-   "angle": "specific sustainability claims",
+   "headline": "{first_name}, skip single-use plastic bottles.",
+   "body": "Choose refillable, concentrated cleaning products and skip the single-use plastic bottles. Works as well as the big brands.",
+   "cta": "Shop refills",
+   "headline_no_name": "Skip single-use plastic bottles.",
+   "angle": "Eliminating single-use plastic waste with high-performance refillable concentrates",
    "claims_used": [
-    "Skip the single-use plastic bottles",
     "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles",
     "Works as well as the big brands"
    ]
   },
   {
    "persona_id": "persona_002",
-   "headline": "{first_name}, stock up on easy refills",
-   "body": "Save time and skip the single-use plastic bottles with our refillable, concentrated cleaning products that work as well as the big brands.",
-   "cta": "Get Started",
-   "headline_no_name": "Stock up on easy refills",
-   "angle": "time-saving",
+   "headline": "Powerful cleaning for {first_name}'s busy home",
+   "body": "Our concentrated cleaning products work as well as the big brands. Just add water to refill and keep your home sparkling clean.",
+   "cta": "Shop refill packs",
+   "headline_no_name": "Powerful cleaning for busy homes",
+   "angle": "Convenience and high performance that saves time for busy households",
    "claims_used": [
-    "Skip the single-use plastic bottles",
-    "Refillable, concentrated cleaning products",
-    "Works as well as the big brands"
+    "Works as well as the big brands",
+    "Refillable, concentrated cleaning products"
    ]
   },
   {
    "persona_id": "persona_005",
-   "headline": "{first_name}, elevate your cleaning routine",
-   "body": "Invest in refillable, concentrated cleaning products. Skip the single-use plastic bottles while getting performance equal to big brands.",
-   "cta": "Explore Collection",
-   "headline_no_name": "Elevate your cleaning routine",
-   "angle": "quality-focused",
+   "headline": "Elegant cleaning solutions for {first_name}",
+   "body": "Experience concentrated cleaning products that work as well as the big brands. Designed to last and eliminate unsightly plastic clutter.",
+   "cta": "Shop the starter kit",
+   "headline_no_name": "Elegant, refillable cleaning solutions",
+   "angle": "Understated quality and design-forward longevity over trendy aesthetics",
    "claims_used": [
     "Refillable, concentrated cleaning products",
-    "Skip the single-use plastic bottles",
     "Works as well as the big brands"
    ]
   },
   {
    "persona_id": "persona_008",
-   "headline": "{first_name}, get more value from cleaning",
-   "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands for less waste.",
-   "cta": "Shop Bundles",
-   "headline_no_name": "Get more value from cleaning",
-   "angle": "clear value props",
+   "headline": "{first_name}, get big-brand power for less",
+   "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands at a better value.",
+   "cta": "Shop value refills",
+   "headline_no_name": "Get big-brand cleaning power for less",
+   "angle": "Clear value proposition focused on smart spending and concentration over buying water",
    "claims_used": [
-    "Skip the single-use plastic bottles",
     "Refillable, concentrated cleaning products",
-    "Works as well as the big brands"
+    "Works as well as the big brands",
+    "Skip the single-use plastic bottles"
    ]
   },
   {
    "persona_id": "persona_010",
-   "headline": "A thoughtful home upgrade",
-   "body": "Give refillable, concentrated cleaning products designed to skip single-use plastic bottles with performance to match big brands.",
-   "cta": "Explore Sets",
-   "headline_no_name": "A thoughtful home upgrade",
-   "angle": "giftable",
+   "headline": "A beautiful, sustainable home gift for {first_name}",
+   "body": "Gift them refillable, concentrated cleaning products. A thoughtful way to help loved ones skip the single-use plastic bottles.",
+   "cta": "Shop gift sets",
+   "headline_no_name": "A beautiful, sustainable home gift",
+   "angle": "Premium and thoughtful presentation suitable for eco-conscious gifting",
    "claims_used": [
     "Refillable, concentrated cleaning products",
-    "Skip the single-use plastic bottles",
-    "Works as well as the big brands"
+    "Skip the single-use plastic bottles"
    ]
   }
  ],
  "reviews": [
   {
    "persona_id": "persona_006",
-   "persona_fit": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The copy relies on vague eco claims ('skip single-use plastic bottles') which this persona explicitly avoids, preferring specific sustainability metrics, supply chain transparency, or certifications."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_002",
@@ -1388,25 +1371,34 @@
   },
   {
    "persona_id": "persona_005",
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Designed to last"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The claim 'Designed to last' is unsupported by the stated claims, which do not mention the durability or materials of the containers."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_008",
    "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "for less",
+    "at a better value"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The claims of being 'for less' and 'at a better value' are unsupported as there is no pricing or comparative value information in the stated claims."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 3,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1426,114 +1418,156 @@
    "price_source": "tier_default",
    "gross_margin": 0.55,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 2.5,
    "max_affordable_cac": 82.5,
    "target_cpa": 57.75,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 55% (typical for home).",
     "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
+    "No target CPA/ROAS or margin given; assumed 55% gross margin (typical for home). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 55% margin x 2.5 orders = $82.50)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $57.75 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $57.75 x click-to-purchase rate (0.6%-2.1% for home). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.87,
-    "mid": 1.73,
-    "high": 2.89
+    "low": 0.35,
+    "mid": 0.69,
+    "high": 1.21
    },
    "cpm_bid": null,
    "target_cpa": 57.75,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 2210.0,
+   "monthly_budget_usd": 600.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 73.67,
+   "delivery_goal": "budget",
+   "expected_impressions": 47415,
+   "expected_reach": 29634,
+   "goal_feasible": true,
+   "daily_cap_usd": 20.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 2205.88,
+   "learning_budget_needed_usd": 596.47,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_001",
      "publisher_name": "Swiftcart",
-     "share": 0.442,
-     "budget_usd": 977.89,
-     "cpc_bid_usd": 2.43,
-     "start_bid_usd": 1.7,
+     "share": 0.643,
+     "budget_usd": 385.69,
+     "cpc_bid_usd": 0.97,
+     "start_bid_usd": 0.68,
      "expected_clicks": {
-      "low": 322.0,
-      "mid": 402.0,
-      "high": 483.0
+      "low": 318.0,
+      "mid": 398.0,
+      "high": 477.0
      },
      "expected_conversions": {
-      "low": 8.5,
-      "mid": 16.9,
-      "high": 28.2
+      "low": 3.3,
+      "mid": 6.7,
+      "high": 11.7
      },
-     "capacity_usd": 137168.64,
-     "requires_host_approval": true,
-     "rationale": "score 0.37 -> fit x1.40 on CTR/CVR; max bid $2.43 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 68443.2,
+     "expected_impressions": 23668,
+     "expected_reach": 14792,
+     "requires_host_approval": false,
+     "rationale": "score 0.45 -> relative fit x1.40 on CTR/CVR; max bid $0.97 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.3,
-     "budget_usd": 663.85,
-     "cpc_bid_usd": 1.98,
-     "start_bid_usd": 1.39,
+     "share": 0.357,
+     "budget_usd": 214.31,
+     "cpc_bid_usd": 0.72,
+     "start_bid_usd": 0.5,
      "expected_clicks": {
-      "low": 268.0,
-      "mid": 335.0,
-      "high": 402.0
+      "low": 238.0,
+      "mid": 298.0,
+      "high": 357.0
      },
      "expected_conversions": {
-      "low": 5.7,
-      "mid": 11.5,
-      "high": 19.2
+      "low": 1.9,
+      "mid": 3.7,
+      "high": 6.5
      },
-     "capacity_usd": 3802.38,
+     "capacity_usd": 1263.46,
+     "expected_impressions": 23747,
+     "expected_reach": 14842,
      "requires_host_approval": false,
-     "rationale": "score 0.25 -> fit x1.14 on CTR/CVR; max bid $1.98 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
-    {
-     "publisher_id": "pub_011",
-     "publisher_name": "Northbed",
-     "share": 0.257,
-     "budget_usd": 568.26,
-     "cpc_bid_usd": 1.84,
-     "start_bid_usd": 1.29,
-     "expected_clicks": {
-      "low": 247.0,
-      "mid": 309.0,
-      "high": 371.0
-     },
-     "expected_conversions": {
-      "low": 4.9,
-      "mid": 9.9,
-      "high": 16.4
-     },
-     "capacity_usd": 4232.27,
-     "requires_host_approval": false,
-     "rationale": "score 0.21 -> fit x1.06 on CTR/CVR; max bid $1.84 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.25 -> relative fit x1.04 on CTR/CVR; max bid $0.72 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $2,210, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $600, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $57.75 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_001",
+     "start_bid": 0.68,
+     "max_bid": 0.97,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_014",
+     "start_bid": 0.5,
+     "max_bid": 0.72,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
     "pub_001",
-    "pub_011",
     "pub_014"
    ],
    "publishers_exclude": [
+    {
+     "id": "pub_011",
+     "reason": "Excluded: score 0.21 below cutoff 0.22; weakest signal category_fit (matches home (category only) (multiplier))."
+    },
     {
      "id": "pub_008",
      "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
@@ -1625,66 +1659,61 @@
     "variant_id": "v1",
     "persona_id": "persona_006",
     "publisher_ids": [
-     "pub_011",
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "{first_name}, skip single-use plastic bottles",
-    "headline_no_name": "Skip single-use plastic bottles today",
-    "body": "Make your cleaning routine sustainable. Our refillable, concentrated formulas deliver performance that works as well as the big brands.",
-    "cta": "Shop Refills"
+    "headline_template": "{first_name}, skip single-use plastic bottles.",
+    "headline_no_name": "Skip single-use plastic bottles.",
+    "body": "Choose refillable, concentrated cleaning products and skip the single-use plastic bottles. Works as well as the big brands.",
+    "cta": "Shop refills"
    },
    {
     "variant_id": "v2",
     "persona_id": "persona_002",
     "publisher_ids": [
-     "pub_011",
      "pub_001",
      "pub_014"
     ],
-    "headline_template": "{first_name}, stock up on easy refills",
-    "headline_no_name": "Stock up on easy refills",
-    "body": "Save time and skip the single-use plastic bottles with our refillable, concentrated cleaning products that work as well as the big brands.",
-    "cta": "Get Started"
+    "headline_template": "Powerful cleaning for {first_name}'s busy home",
+    "headline_no_name": "Powerful cleaning for busy homes",
+    "body": "Our concentrated cleaning products work as well as the big brands. Just add water to refill and keep your home sparkling clean.",
+    "cta": "Shop refill packs"
    },
    {
     "variant_id": "v3",
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_014",
-     "pub_011",
      "pub_001"
     ],
-    "headline_template": "{first_name}, elevate your cleaning routine",
-    "headline_no_name": "Elevate your cleaning routine",
-    "body": "Invest in refillable, concentrated cleaning products. Skip the single-use plastic bottles while getting performance equal to big brands.",
-    "cta": "Explore Collection"
+    "headline_template": "Elegant cleaning solutions for {first_name}",
+    "headline_no_name": "Elegant, refillable cleaning solutions",
+    "body": "Experience concentrated cleaning products that work as well as the big brands. Designed to last and eliminate unsightly plastic clutter.",
+    "cta": "Shop the starter kit"
    },
    {
     "variant_id": "v4",
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_014",
-     "pub_011",
      "pub_001"
     ],
-    "headline_template": "{first_name}, get more value from cleaning",
-    "headline_no_name": "Get more value from cleaning",
-    "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands for less waste.",
-    "cta": "Shop Bundles"
+    "headline_template": "{first_name}, get big-brand power for less",
+    "headline_no_name": "Get big-brand cleaning power for less",
+    "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands at a better value.",
+    "cta": "Shop value refills"
    },
    {
     "variant_id": "v5",
     "persona_id": "persona_010",
     "publisher_ids": [
-     "pub_011",
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "A thoughtful home upgrade",
-    "headline_no_name": "A thoughtful home upgrade",
-    "body": "Give refillable, concentrated cleaning products designed to skip single-use plastic bottles with performance to match big brands.",
-    "cta": "Explore Sets"
+    "headline_template": "A beautiful, sustainable home gift for {first_name}",
+    "headline_no_name": "A beautiful, sustainable home gift",
+    "body": "Gift them refillable, concentrated cleaning products. A thoughtful way to help loved ones skip the single-use plastic bottles.",
+    "cta": "Shop gift sets"
    }
   ],
   "frequency_cap": {
@@ -1698,9 +1727,7 @@
     "Works as well as the big brands"
    ],
    "claims_blocked_pending_substantiation": [],
-   "competitor_hosts_need_approval": [
-    "pub_001"
-   ],
+   "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
     "min_clicks": 150
@@ -1722,12 +1749,12 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_010"
+   "persona_006"
   ]
  }
 }

@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Need a quick gift, {first_name}?",
+      "body": "Save time on birthdays and anniversaries. Flower bouquets delivered to their door for $55-$100. Same or next day delivery matters to us.",
+      "cta": "Send a bouquet",
+      "headline_no_name": "Need a quick gift?",
+      "angle": "time-saving",
+      "claims_used": [
+        "Flower bouquets delivered to your door, $55-100.",
+        "Occasion-driven - birthdays, anniversaries, Mother's Day.",
+        "Same or next day matters a lot to us."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Fast, simple flower gifting, {first_name}.",
+      "body": "Same or next day delivery matters a lot to us. Flower bouquets delivered to their door for $55-$100. Perfect for birthdays.",
+      "cta": "Order fast delivery",
+      "headline_no_name": "Fast, simple flower gifting.",
+      "angle": "speed",
+      "claims_used": [
+        "Flower bouquets delivered to your door, $55-100.",
+        "Occasion-driven - birthdays, anniversaries, Mother's Day.",
+        "Same or next day matters a lot to us."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Make their day bloom, {first_name}.",
+      "body": "Flower bouquets delivered to their door, $55-100. Same or next day delivery matters a lot to us for birthdays and anniversaries!",
+      "cta": "Shop bouquets",
+      "headline_no_name": "Make their day bloom.",
+      "angle": "playful",
+      "claims_used": [
+        "Flower bouquets delivered to your door, $55-100.",
+        "Occasion-driven - birthdays, anniversaries, Mother's Day.",
+        "Same or next day matters a lot to us."
+      ]
+    }
+  ]
+}

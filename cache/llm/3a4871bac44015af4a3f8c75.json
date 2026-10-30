@@ -1,0 +1,46 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy uses optimization buzzwords but fails to provide any actual science-backed claims, material transparency, or outcome-focused details preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "high-performance jackets"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim of 'high-performance' is unsupported by the advertiser's stated claims, which only mention a heritage New England feel."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "business_summary": "Sichuan chili crisp and gourmet sauces sold individually in jars ($15-20) and as holiday gift sets, targeted at urban foodies under 45.",
+  "product": "Sichuan chili crisp and other sauces",
+  "is_consumer_product": true,
+  "price_point_usd": 17.5,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "under 45",
+  "stated_claims": [
+    "Sichuan chili crisp and other sauces",
+    "jars $15-20",
+    "gift sets for the holidays",
+    "Foodies, mostly urban and under 45"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The core product is premium chili crisp and sauces, which are pantry staples."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Cross-shops heavily with premium grocery and food buyers."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly offers holiday gift sets."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Targeted at foodies who cook and spend time in the kitchen."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "premium_grocery",
+    "groceries"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Grocery shoppers on Swiftcart are highly aligned with premium pantry items."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older, mid-life demographic conflicts with the advertiser's under-45 target."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Older, classic apparel buyers conflict with the younger, urban foodie demographic."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's organic/natural grocery and pantry focus aligns with premium sauce consumers."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with the holiday gift sets offered by the advertiser."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Kitchen buyers and gifting-motivated shoppers are excellent fits for gourmet sauces and gift sets."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Food-interested meal kit subscribers are a high-affinity audience for specialty sauces."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, holiday gifting angle, and target demographic are highly clear and map cleanly to the network's grocery, kitchen, and gifting publishers.",
+  "missing_info": [
+    "Specific ingredients/values (e.g., organic, vegan, non-GMO)",
+    "Gift set price point",
+    "Whether subscription options are available"
+  ],
+  "clarifying_questions": [
+    "What is the retail price range for your holiday gift sets?",
+    "Are your sauces organic, non-GMO, gluten-free, or vegan?",
+    "Do you offer subscription options for your sauces, or are they one-time purchase only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

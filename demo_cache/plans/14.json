@@ -88,7 +88,7 @@
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.214,
+   "score": 0.4755,
    "components": [
     {
      "name": "category_fit",
@@ -134,10 +134,10 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells bedding (100% of samples agree); may block the ad"
+    "competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells bedding (100% of samples agree); may block the ad"
+   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_014",
@@ -187,9 +187,11 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [],
+   "flags": [
+    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   ],
    "recommended": true,
-   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended as fallback: matches home (category only) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
   },
   {
    "publisher_id": "pub_001",
@@ -1283,10 +1285,10 @@
  "creatives": [
   {
    "persona_id": "persona_003",
-   "headline": "{first_name}, upgrade your room's vibe",
-   "body": "Swap basic for actually-breathable stuff made in Portugal. The grown-up aesthetic alternative to Brooklinen and Parachute.",
-   "cta": "Shop linen",
-   "headline_no_name": "Upgrade your room's vibe",
+   "headline": "A grown-up aesthetic for {first_name}.",
+   "body": "Ditch the basic brands. Get actually-breathable stuff made in Portugal for a mature look that elevates your bedroom.",
+   "cta": "Shop the collection",
+   "headline_no_name": "A grown-up aesthetic for your space.",
    "angle": "aesthetic-forward",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
@@ -1295,11 +1297,11 @@
   },
   {
    "persona_id": "persona_005",
-   "headline": "Refined comfort for your home",
-   "body": "Discover actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to Brooklinen and Parachute.",
-   "cta": "Explore collection",
-   "headline_no_name": "Refined comfort for your home",
-   "angle": "craftsmanship",
+   "headline": "Portugal-made bedding for {first_name}.",
+   "body": "Invest in a grown-up aesthetic alternative to mainstream brands. Experience actually-breathable stuff expertly made in Portugal.",
+   "cta": "Shop Portugal-made",
+   "headline_no_name": "Portugal-made bedding.",
+   "angle": "quality-focused",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
@@ -1307,10 +1309,10 @@
   },
   {
    "persona_id": "persona_006",
-   "headline": "Crafted responsibly in Portugal",
-   "body": "Invest in actually-breathable stuff made in Portugal, offering a mindful, grown-up aesthetic alternative to Brooklinen or Parachute.",
-   "cta": "Discover origin",
-   "headline_no_name": "Crafted responsibly in Portugal",
+   "headline": "Made in Portugal: Bedding for {first_name}.",
+   "body": "Looking for a mature alternative? Choose actually-breathable stuff made in Portugal for a grown-up aesthetic you can feel good about.",
+   "cta": "Shop bedding",
+   "headline_no_name": "Made in Portugal: Breathable Bedding.",
    "angle": "supply chain transparency",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
@@ -1319,10 +1321,10 @@
   },
   {
    "persona_id": "persona_010",
-   "headline": "{first_name}, give the gift of better sleep",
-   "body": "Impress with actually-breathable stuff made in Portugal. The ultimate grown-up aesthetic alternative to Brooklinen and Parachute.",
-   "cta": "Shop gifts",
-   "headline_no_name": "Give the gift of better sleep",
+   "headline": "Gift a grown-up aesthetic, {first_name}.",
+   "body": "Give the gift of actually-breathable stuff made in Portugal. The perfect mature alternative to mainstream bedding brands.",
+   "cta": "Shop bedding gifts",
+   "headline_no_name": "Gift a grown-up aesthetic.",
    "angle": "giftable",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
@@ -1333,11 +1335,13 @@
  "reviews": [
   {
    "persona_id": "persona_003",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
+   "issues": [
+    "Awkward {first_name} placement in the headline ('A grown-up aesthetic for {first_name}.')"
+   ],
    "passed": true
   },
   {
@@ -1351,14 +1355,15 @@
   },
   {
    "persona_id": "persona_006",
-   "persona_fit": 3,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
    "issues": [
-    "Relies on 'made in Portugal' to satisfy sustainability/transparency preferences without specific eco certifications."
+    "The sustainability buyer avoids vague eco claims. Phrases like 'feel good about' without specific supply chain details, certifications, or environmental facts will trigger skepticism.",
+    "Very similar in angle and copy to Variant 2, relying heavily on 'Made in Portugal' without distinct sustainability substance."
    ],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_010",
@@ -1366,7 +1371,9 @@
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
+   "issues": [
+    "Awkward {first_name} placement in the headline ('Gift a grown-up aesthetic, {first_name}.')"
+   ],
    "passed": true
   }
  ],
@@ -1382,84 +1389,144 @@
    "price_source": "tier_default",
    "gross_margin": 0.55,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.1,
    "max_affordable_cac": 36.3,
    "target_cpa": 25.41,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 55% (typical for home).",
+    "No target CPA/ROAS or margin given; assumed 55% gross margin (typical for home). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 55% margin x 1.1 orders = $36.30)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $25.41 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $25.41 x click-to-purchase rate (0.6%-2.1% for home). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.38,
-    "mid": 0.76,
-    "high": 1.27
+    "low": 0.25,
+    "mid": 0.3,
+    "high": 0.53
    },
    "cpm_bid": null,
    "target_cpa": 25.41,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 740.0,
+   "monthly_budget_usd": 250.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 24.67,
+   "delivery_goal": "budget",
+   "expected_impressions": 47870,
+   "expected_reach": 29919,
+   "goal_feasible": true,
+   "daily_cap_usd": 8.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 737.65,
+   "learning_budget_needed_usd": 250.59,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.521,
-     "budget_usd": 385.21,
-     "cpc_bid_usd": 1.07,
-     "start_bid_usd": 0.75,
+     "share": 0.707,
+     "budget_usd": 176.74,
+     "cpc_bid_usd": 0.43,
+     "start_bid_usd": 0.3,
      "expected_clicks": {
-      "low": 288.0,
-      "mid": 360.0,
-      "high": 432.0
+      "low": 329.0,
+      "mid": 411.0,
+      "high": 493.0
      },
      "expected_conversions": {
-      "low": 7.6,
-      "mid": 15.1,
-      "high": 25.2
+      "low": 3.5,
+      "mid": 6.9,
+      "high": 12.1
      },
-     "capacity_usd": 1294.27,
+     "capacity_usd": 1300.32,
+     "expected_impressions": 24466,
+     "expected_reach": 15291,
      "requires_host_approval": true,
-     "rationale": "score 0.21 -> fit x1.40 on CTR/CVR; max bid $1.07 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.48 -> relative fit x1.40 on CTR/CVR; max bid $0.43 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.479,
-     "budget_usd": 354.79,
-     "cpc_bid_usd": 1.02,
-     "start_bid_usd": 0.71,
+     "share": 0.293,
+     "budget_usd": 73.26,
+     "cpc_bid_usd": 0.28,
+     "start_bid_usd": 0.25,
      "expected_clicks": {
-      "low": 278.0,
-      "mid": 348.0,
-      "high": 417.0
+      "low": 209.0,
+      "mid": 262.0,
+      "high": 314.0
      },
      "expected_conversions": {
-      "low": 7.0,
-      "mid": 13.9,
-      "high": 23.2
+      "low": 1.5,
+      "mid": 2.9,
+      "high": 5.1
      },
-     "capacity_usd": 2290.78,
+     "capacity_usd": 438.23,
+     "expected_impressions": 23404,
+     "expected_reach": 14628,
      "requires_host_approval": false,
-     "rationale": "score 0.20 -> fit x1.34 on CTR/CVR; max bid $1.02 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.20 -> relative fit x0.93 on CTR/CVR; max bid $0.28 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $740, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $250, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $25.41 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_011",
+     "start_bid": 0.3,
+     "max_bid": 0.43,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_014",
+     "start_bid": 0.25,
+     "max_bid": 0.28,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1564,10 +1631,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "{first_name}, upgrade your room's vibe",
-    "headline_no_name": "Upgrade your room's vibe",
-    "body": "Swap basic for actually-breathable stuff made in Portugal. The grown-up aesthetic alternative to Brooklinen and Parachute.",
-    "cta": "Shop linen"
+    "headline_template": "A grown-up aesthetic for {first_name}.",
+    "headline_no_name": "A grown-up aesthetic for your space.",
+    "body": "Ditch the basic brands. Get actually-breathable stuff made in Portugal for a mature look that elevates your bedroom.",
+    "cta": "Shop the collection"
    },
    {
     "variant_id": "v2",
@@ -1576,10 +1643,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "Refined comfort for your home",
-    "headline_no_name": "Refined comfort for your home",
-    "body": "Discover actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to Brooklinen and Parachute.",
-    "cta": "Explore collection"
+    "headline_template": "Portugal-made bedding for {first_name}.",
+    "headline_no_name": "Portugal-made bedding.",
+    "body": "Invest in a grown-up aesthetic alternative to mainstream brands. Experience actually-breathable stuff expertly made in Portugal.",
+    "cta": "Shop Portugal-made"
    },
    {
     "variant_id": "v3",
@@ -1588,10 +1655,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "Crafted responsibly in Portugal",
-    "headline_no_name": "Crafted responsibly in Portugal",
-    "body": "Invest in actually-breathable stuff made in Portugal, offering a mindful, grown-up aesthetic alternative to Brooklinen or Parachute.",
-    "cta": "Discover origin"
+    "headline_template": "Made in Portugal: Bedding for {first_name}.",
+    "headline_no_name": "Made in Portugal: Breathable Bedding.",
+    "body": "Looking for a mature alternative? Choose actually-breathable stuff made in Portugal for a grown-up aesthetic you can feel good about.",
+    "cta": "Shop bedding"
    },
    {
     "variant_id": "v4",
@@ -1600,10 +1667,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "{first_name}, give the gift of better sleep",
-    "headline_no_name": "Give the gift of better sleep",
-    "body": "Impress with actually-breathable stuff made in Portugal. The ultimate grown-up aesthetic alternative to Brooklinen and Parachute.",
-    "cta": "Shop gifts"
+    "headline_template": "Gift a grown-up aesthetic, {first_name}.",
+    "headline_no_name": "Gift a grown-up aesthetic.",
+    "body": "Give the gift of actually-breathable stuff made in Portugal. The perfect mature alternative to mainstream bedding brands.",
+    "cta": "Shop bedding gifts"
    }
   ],
   "frequency_cap": {
@@ -1617,7 +1684,8 @@
    ],
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_011"
+    "pub_011",
+    "pub_014"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1645,7 +1713,10 @@
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_006"
+   "persona_003",
+   "persona_005",
+   "persona_006",
+   "persona_010"
   ]
  }
 }

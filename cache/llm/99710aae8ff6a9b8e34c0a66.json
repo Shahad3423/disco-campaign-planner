@@ -1,0 +1,88 @@
+{
+  "business_summary": "A non-profit organization that funds clean water projects in developing countries, seeking to convert post-purchase e-commerce shoppers into monthly recurring donors.",
+  "product": "Monthly recurring donation to clean water projects",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We fund clean water projects in developing countries.",
+    "$20 a month is our typical gift."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Clean water access",
+    "Global development",
+    "Sustainability",
+    "Social impact"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Clean water funding aligns strongly with environmentally conscious and socially responsible shoppers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The primary goal is converting checkout traffic into recurring monthly donors."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "Looking to turn thank-you page visitors into small recurring donors."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers who respond to sustainability claims are highly likely to support clean water projects."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience specifically responds well to social-good messaging, which perfectly matches a charitable donation offer."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Sustainability-motivated buyers represent a strong demographic match for environmental/humanitarian charity."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Audience responds strongly to sustainability claims, making them great prospects for clean water causes."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Audience responds to sustainability messaging, aligning with environmental/clean water charity initiatives."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The model, price point ($20/month), and audience target are clear and actionable for placement on social-good and sustainability-aligned publisher thank-you pages.",
+  "missing_info": [
+    "Tax-exempt status (e.g., 501(c)(3) details)",
+    "Availability of one-time donation options",
+    "Specific geographic areas or countries where the water projects are located"
+  ],
+  "clarifying_questions": [
+    "Are these donations tax-deductible (e.g., is your organization a registered 501(c)(3) or equivalent)?",
+    "Do you offer a one-time donation option on the landing page for users who are hesitant to commit to a monthly subscription?",
+    "Which specific countries or regions do your current clean water projects support?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

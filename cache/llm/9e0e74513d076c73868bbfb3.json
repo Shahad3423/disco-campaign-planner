@@ -1,0 +1,88 @@
+{
+  "business_summary": "A social impact organization that funds clean water projects in developing countries by acquiring recurring monthly donors.",
+  "product": "Recurring monthly donation subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We fund clean water projects in developing countries.",
+    "$20 a month is our typical gift."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainability",
+    "social good",
+    "clean water access"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Clean water funding aligns strongly with sustainability-minded consumers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The target model is recurring monthly donations."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Donations are frequently framed as charitable gifts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "Looking to turn thank-you page visitors into small recurring donors."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, sustainability-responsive audience is highly likely to support clean water projects."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience specifically responds well to social-good messaging, which fits this charity perfectly."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Audience values sustainability claims, matching the clean water mission."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Audience is motivated by sustainability messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The model is clear and matches specific high-value social-good and sustainability publishers in our network.",
+  "missing_info": [
+    "Target age range",
+    "Tax-deductibility status of the donation",
+    "Whether one-time gifts are accepted on the landing page"
+  ],
+  "clarifying_questions": [
+    "Are these monthly donations tax-deductible for the donor?",
+    "Do you accept one-time donations as an alternative downsell on the landing page?",
+    "Do you have specific proof-points or visual assets of the clean water projects to show on the creative?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

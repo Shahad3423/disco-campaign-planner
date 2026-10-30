@@ -1,0 +1,48 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "A premium gift for their kitchen, {first_name}",
+      "body": "Give a stunning ceramic non-stick cookware set. Beautifully designed, completely PTFE-free, and crafted for non-toxic cooking.",
+      "cta": "Shop cookware sets",
+      "headline_no_name": "A premium gift for their kitchen",
+      "angle": "gifting and premium presentation focus",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your kitchen's health, {first_name}",
+      "body": "Upgrade to a ceramic non-stick cookware set crafted without PTFE. Clean, non-toxic cooking designed to support your wellness goals.",
+      "cta": "Shop PTFE-free sets",
+      "headline_no_name": "Optimize your kitchen's health",
+      "angle": "wellness, clean cooking, and material transparency",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Elegant, PTFE-free ceramic cookware",
+      "body": "Invest in timeless quality. Our ceramic non-stick cookware sets are crafted without PTFE for an elegant, non-toxic cooking experience.",
+      "cta": "Shop the ceramic set",
+      "headline_no_name": "Elegant, PTFE-free ceramic cookware",
+      "angle": "timeless quality and understated premium craftsmanship",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "A sustainable choice for your home, {first_name}",
+      "body": "Choose a ceramic non-stick cookware set made entirely without PTFE. Transparent, non-toxic materials for mindful daily cooking.",
+      "cta": "Shop non-toxic sets",
+      "headline_no_name": "A sustainable choice for your kitchen",
+      "angle": "specific material sourcing and eco-conscious transparency",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, get instant access to classes from famous experts",
+      "body": "Stream annual video classes instantly. Learn from the world's best with a seamless annual subscription designed for curious minds.",
+      "cta": "Start video classes",
+      "headline_no_name": "Instant access to classes from famous experts",
+      "angle": "Seamless, instant-access subscription perks for quick setup",
+      "claims_used": [
+        "Annual subscription (~$120-180) to video classes from famous experts.",
+        "We want curious, higher-income learners."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your mind with classes from experts",
+      "body": "Fuel your curiosity and level up your intellect. Get an annual subscription to video classes taught by famous experts.",
+      "cta": "Subscribe to classes",
+      "headline_no_name": "Optimize your mind with classes from experts",
+      "angle": "Intellectual optimization and outcome-focused learning from top experts",
+      "claims_used": [
+        "Annual subscription (~$120-180) to video classes from famous experts.",
+        "We want curious, higher-income learners."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Easy, bite-sized video classes for {first_name}",
+      "body": "Learn on your own schedule. An annual subscription to video classes from famous experts makes learning simple and convenient.",
+      "cta": "Start subscription",
+      "headline_no_name": "Easy, bite-sized video classes from experts",
+      "angle": "Time-saving, convenient learning that fits into a busy schedule",
+      "claims_used": [
+        "Annual subscription (~$120-180) to video classes from famous experts.",
+        "We want curious, higher-income learners."
+      ]
+    }
+  ]
+}

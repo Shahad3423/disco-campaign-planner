@@ -1,0 +1,91 @@
+{
+  "business_summary": "Fun, scent-forward hair care and body care brand targeting young, social-media-native shoppers with average order values between $45 and $70.",
+  "product": "Hair care (dry shampoo, texture spray) and body care",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": "young",
+  "stated_claims": [
+    "Fun, scent-forward hair care",
+    "Dry shampoo, texture spray, body care"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "Core product category of the advertiser."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Broad industry category encompassing hair and body care."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent category relevant to the advertiser's body care products."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Highly adjacent category with strong shopper crossover for body care."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in=['trendy language', 'loud aesthetics', 'influencer positioning']",
+      "evidence": "Advertiser describes themselves as 'Fun, scent-forward' and targeting 'Young, social-media-native shoppers'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline targets Gen Z and younger millennials with identity-driven purchasing, matching the advertiser's young, social-media-native audience."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Strandlab is a direct competitor in the haircare space."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. targets older affluent women, which is a demographic mismatch for this young, social-media-native brand."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a conservative brand sensibility and older demographic that clashes with the advertiser's fun, social-media-native vibe."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, and price tier are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Individual product price points (only average order value of $45-70 is provided)",
+    "Whether they offer subscription options or only one-time purchases",
+    "Specific ingredient standards or values (e.g., vegan, cruelty-free, non-toxic)"
+  ],
+  "clarifying_questions": [
+    "What is the average price of an individual product (e.g., a single dry shampoo)?",
+    "Do you offer subscription options for your hair or body care products?",
+    "Are there any specific product values or ingredient claims we should highlight (e.g., sulfate-free, vegan)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "A healthy Halloween treat for {first_name}'s dog.",
+      "body": "No tricks, just premium grain-free, vet-formulated nutrition to support your senior dog's joint health and longevity.",
+      "cta": "Subscribe for health",
+      "headline_no_name": "A healthy Halloween treat for your senior dog.",
+      "angle": "Seasonal Halloween connection with focus on emotional care, premium quality, and health-focused ingredients.",
+      "claims_used": [
+        "Premium dog food for senior dogs",
+        "Grain-free",
+        "Vet-formulated",
+        "Targets owners who care about joint health and longevity"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, save time on premium care for your dog.",
+      "body": "Simplify dinner with a grain-free, vet-formulated subscription built for senior dog joint health and longevity.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Save time on premium care for your senior dog.",
+      "angle": "Time-saving subscription convenience tailored for busy households seeking trusted quality.",
+      "claims_used": [
+        "Premium dog food for senior dogs",
+        "Grain-free",
+        "Vet-formulated",
+        "Targets owners who care about joint health and longevity"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, auto-ship premium senior dog food.",
+      "body": "Skip the store. Get grain-free, vet-formulated food for joint health and longevity delivered on your schedule.",
+      "cta": "Start subscription",
+      "headline_no_name": "Auto-ship premium senior dog food easily.",
+      "angle": "Frictionless, direct-to-door delivery speed and easy subscription management.",
+      "claims_used": [
+        "Premium dog food for senior dogs",
+        "Grain-free",
+        "Vet-formulated",
+        "Targets owners who care about joint health and longevity"
+      ]
+    }
+  ]
+}

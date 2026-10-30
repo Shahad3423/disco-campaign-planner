@@ -1,0 +1,44 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy completely misses the pet parent persona, failing to mention pets, pet-related emotional connections, or pet-friendly home angles."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Includes a highly specific seasonal reference ('Halloween plans?') which limits the ad's evergreen usability."
+      ],
+      "passed": true
+    }
+  ]
+}

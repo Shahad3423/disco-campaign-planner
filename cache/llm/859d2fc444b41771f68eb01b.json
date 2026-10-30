@@ -1,0 +1,81 @@
+{
+  "business_summary": "Mid-century modern furniture brand shipping direct-to-consumer. Offers sofas in the $1,000-$2,000 range with a delivery time of a couple of weeks. Targets consumers moving into new homes or apartments.",
+  "product": "Mid-century modern furniture",
+  "is_consumer_product": true,
+  "price_point_usd": 1500.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Mid-century modern furniture shipped direct",
+    "Sofas cost around $1,000-2,000",
+    "Delivery takes a couple of weeks"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "delivery takes a couple of weeks",
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "The advertiser sells furniture, which is the core of the home category."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent interest; shoppers buying rugs, bedding, and towels are often decorating or moving into new spaces."
+    },
+    {
+      "tag": "bedding",
+      "weight": 0.5,
+      "why": "Strong crossover with bedroom furniture and new-home setups."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in: delayed fulfillment",
+      "evidence": "Advertiser states 'delivery takes a couple of weeks', which conflicts with convenience-first speed expectations."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed's design-conscious urban/suburban buyers are highly aligned with premium mid-century modern furniture."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that 'new-home life events drive purchase', which aligns perfectly with the advertiser's target of people in new homes/apartments."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart's audience is impulse-friendly and convenience-focused, which clashes with high-AOV furniture that takes weeks to ship."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, price points, and target audience are clear enough to proceed with placement and targeting strategies.",
+  "missing_info": [
+    "Specific target demographics like age range or household income",
+    "Whether other furniture types are offered and their respective prices",
+    "Whether there are specific geographic restrictions for shipping"
+  ],
+  "clarifying_questions": [
+    "What is your target customer acquisition cost or ROAS goal for this channel?",
+    "Do you sell smaller, lower-priced home decor items that could serve as a lower-friction purchase?",
+    "Are there specific regions or states you cannot ship to?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

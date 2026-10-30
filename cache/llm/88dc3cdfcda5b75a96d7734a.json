@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your nutrition, {first_name}",
+      "body": "Skip meal planning. Take our quiz to get curated, healthy groceries and recipes delivered weekly for around $90.",
+      "cta": "Take the quiz",
+      "headline_no_name": "Optimize your weekly nutrition",
+      "angle": "outcome-focused nutrition optimization via quiz curation",
+      "claims_used": [
+        "We pick groceries and recipes for you based on a quiz",
+        "weekly box, around $90 a week",
+        "Targeting busy people who want to eat healthier without planning"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Save time on dinner, {first_name}",
+      "body": "We pick your weekly groceries and recipes based on a quiz. Eat healthier with zero planning for around $90 a week.",
+      "cta": "Start subscription",
+      "headline_no_name": "Save time on dinner planning",
+      "angle": "time-saving and hassle-free meal planning for busy schedules",
+      "claims_used": [
+        "We pick groceries and recipes for you based on a quiz",
+        "weekly box, around $90 a week",
+        "Targeting busy people who want to eat healthier without planning"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Frictionless healthy eating, {first_name}",
+      "body": "Get curated weekly groceries and recipes delivered based on a quick quiz. No planning, just healthy food for around $90 a week.",
+      "cta": "Take the quiz",
+      "headline_no_name": "Frictionless healthy eating",
+      "angle": "frictionless speed and automated weekly subscription convenience",
+      "claims_used": [
+        "We pick groceries and recipes for you based on a quiz",
+        "weekly box, around $90 a week",
+        "Targeting busy people who want to eat healthier without planning"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "business_summary": "DTC women's apparel brand offering inclusive sizing from 00-40, focusing on high quality for women who struggle to find extended sizes. Features an average order value of $140 and a generous one-year free exchange policy.",
+  "product": "Women's apparel in sizes 00-40",
+  "is_consumer_product": true,
+  "price_point_usd": 140.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Stylish clothing for women in sizes 00-40",
+    "Free exchanges within a year",
+    "Average order is about $140",
+    "Quality in extended sizes"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "inclusive sizing",
+    "quality craftsmanship",
+    "customer-centric service"
+  ],
+  "fulfillment_notes": "Free exchanges within a year",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The advertiser sells stylish clothing."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Specifically targeted at female shoppers."
+    },
+    {
+      "tag": "plus_size",
+      "weight": 1.0,
+      "why": "Offers extended sizes up to size 40, catering to women seeking quality in plus sizes."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Operates as a direct-to-consumer digital brand."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Likely includes everyday casual apparel options."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Likely adjacent interest for women shopping for quality structured clothing."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "plus_size"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion",
+    "classic_apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in delayed fulfillment",
+      "evidence": "Though exchanges are free for a year, clothing purchases often require high touch-and-feel cycle and exchanges, which may conflict with convenience-first speed preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart deals in high-frequency, late-night impulse grocery/convenience purchases, which doesn't align well with a high-AOV apparel brand requiring fit considerations."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. attracts older affluent women who respond to quality messaging and high AOV, aligning well with the quality focus and $140 AOV."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park features high-AOV apparel shoppers, making them highly qualified buyers for a premium $140 AOV clothing brand."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": 1,
+      "why": "Everbody has an audience that highly values fit-focused messaging and inclusive sizing, presenting a perfect demographic match."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Stride & Stem attracts professional women who appreciate quality and durability, which aligns with women looking for premium apparel."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, pricing tier, and core value propositions are clearly specified, making it ready for network planning.",
+  "missing_info": [
+    "Target age demographic",
+    "Specific apparel categories (e.g., activewear, workwear, dresses)",
+    "Fabric/material composition"
+  ],
+  "clarifying_questions": [
+    "What specific categories of clothing do you specialize in (e.g., workwear, casual, activewear)?",
+    "What is the typical age range of your target demographic?",
+    "Are your products manufactured with a focus on sustainability or specific premium materials?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

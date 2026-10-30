@@ -1,0 +1,84 @@
+{
+  "business_summary": "A mobile banking app offering early direct deposit and no monthly fees, targeting younger and mid-income Americans with the goal of driving new account signups under financial advertising compliance.",
+  "product": "Banking app",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": "younger",
+  "stated_claims": [
+    "no monthly fees",
+    "early direct deposit"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Younger, mid-income consumers seeking no-fee banking highly value digital convenience."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Digitally native DTC shoppers are comfortable adopting mobile-first financial services."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in: corporate voice",
+      "evidence": "Needs to comply with financial advertising rules, which typically require formal, structured, and corporate-sounding disclosures."
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, prefers heritage and quality-focused",
+      "evidence": "Banking app with no monthly fees and early direct deposit targeting younger and mid-income Americans."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's high-frequency, convenience-oriented shoppers align well with a modern, convenience-focused banking app."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. targets older, affluent women, which clashes with the advertiser's target of younger, mid-income Americans."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a high-AOV, conservative brand sensibility that does not align with a budget-friendly, younger-skewing banking app."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline's Gen Z and younger millennial audience directly matches the advertiser's target demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and key value propositions are clearly defined, allowing for immediate planning on publishers with younger, convenience-oriented demographics.",
+  "missing_info": [
+    "exact target age range",
+    "target customer acquisition cost (CAC) or signup CPA goal",
+    "specific compliance/disclaimer text required on creatives"
+  ],
+  "clarifying_questions": [
+    "What is your target cost-per-acquisition (CPA) or budget limit for a new account signup?",
+    "Do you have specific mandatory legal disclaimers that must be displayed on the ad creative?",
+    "What is the specific age range you consider 'younger' (e.g., 18-25 or 18-34)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

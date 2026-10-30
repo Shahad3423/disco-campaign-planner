@@ -1,0 +1,64 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Keep your family stocked, {first_name}.",
+      "body": "Grab mountain water in 12 or 24-packs. Edgy canned water that's ready for busy days. Simple, direct, and convenient.",
+      "cta": "Buy a 24-pack",
+      "headline_no_name": "Keep the pantry stocked with mountain water.",
+      "angle": "bulk convenience",
+      "claims_used": [
+        "Canned mountain water",
+        "Mostly sold in 12-24 packs."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, ready for some killer hydration?",
+      "body": "This Halloween, ditch plastic for mountain water with an edgy, metal-head attitude. Cool cans that look as good as they taste.",
+      "cta": "Shop edgy cans",
+      "headline_no_name": "Ready for some killer hydration?",
+      "angle": "aesthetic and seasonal novelty",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Young audience and anyone who likes edgy branding."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Instant mountain water for {first_name}",
+      "body": "Get canned mountain water with an edgy metal-head attitude delivered in 12 or 24-packs. Quick, easy, and straight to your door.",
+      "cta": "Shop 24-packs",
+      "headline_no_name": "Mountain water delivered fast",
+      "angle": "speed and frictionlessness",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Mostly sold in 12-24 packs."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Bulk mountain water for {first_name}",
+      "body": "Save by grabbing your canned mountain water in 12 or 24-packs. Edgy metal-head branding, better value when you buy in bulk.",
+      "cta": "Shop bulk packs",
+      "headline_no_name": "Stock up on mountain water in bulk",
+      "angle": "clear value and bundle sizing",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Mostly sold in 12-24 packs."
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Crush your hydration, {first_name}",
+      "body": "Fuel your active days with canned mountain water. Grab an edgy 12 or 24-pack with a metal-head attitude to keep you hydrated.",
+      "cta": "Shop mountain water",
+      "headline_no_name": "Crush your hydration",
+      "angle": "heavy hydration and active lifestyle fit",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Mostly sold in 12-24 packs."
+      ]
+    }
+  ]
+}

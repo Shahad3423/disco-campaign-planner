@@ -1,0 +1,60 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy relies on vague eco claims ('skip single-use plastic bottles') which this persona explicitly avoids, preferring specific sustainability metrics, supply chain transparency, or certifications."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Designed to last"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'Designed to last' is unsupported by the stated claims, which do not mention the durability or materials of the containers."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "for less",
+        "at a better value"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claims of being 'for less' and 'at a better value' are unsupported as there is no pricing or comparative value information in the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

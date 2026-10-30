@@ -19,30 +19,28 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "functional_beverages",
-    "weight": 1.0,
-    "why": "The drink contains adaptogens and functions as a cocktail alternative."
-   },
-   {
     "tag": "beverages",
     "weight": 1.0,
     "why": "The product is a sparkling drink."
    },
    {
-    "tag": "wellness_dtc",
-    "weight": 0.5,
-    "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
+    "tag": "functional_beverages",
+    "weight": 1.0,
+    "why": "The drink contains adaptogens and functions as a cocktail alternative."
    },
    {
     "tag": "soda_alternative",
     "weight": 0.5,
     "why": "It is a non-alcoholic sparkling drink that can serve as an alternative beverage option."
+   },
+   {
+    "tag": "wellness_dtc",
+    "weight": 0.5,
+    "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
    }
   ],
   "competing_tags": [
-   "alcohol",
-   "functional_beverages",
-   "soda_alternative"
+   "functional_beverages"
   ],
   "persona_affinity_tags": [
    "functional_beverages",
@@ -86,22 +84,20 @@
   },
   "sample_agreement": 0.87,
   "competing_tag_share": {
-   "alcohol": 0.33,
-   "functional_beverages": 1.0,
-   "soda_alternative": 0.33
+   "functional_beverages": 1.0
   }
  },
  "publishers": [
   {
    "publisher_id": "pub_020",
    "publisher_name": "Pop & Sip",
-   "score": 0.2544,
+   "score": 0.5654,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches functional_beverages, beverages, soda_alternative (specific) (multiplier)"
+     "detail": "matches beverages, functional_beverages, soda_alternative (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -141,10 +137,10 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells functional_beverages, soda_alternative (100% of samples agree); may block the ad"
+    "competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches functional_beverages, beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells functional_beverages, soda_alternative (100% of samples agree); may block the ad"
+   "reason": "Recommended: matches beverages, functional_beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_012",
@@ -194,9 +190,11 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [],
+   "flags": [
+    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   ],
    "recommended": true,
-   "reason": "Recommended: matches wellness_dtc (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended as fallback: matches wellness_dtc (category only) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
   },
   {
    "publisher_id": "pub_001",
@@ -246,11 +244,9 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
-   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product. Flags: competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
+   "reason": "Excluded: no category link (multiplier) for this product."
   },
   {
    "publisher_id": "pub_002",
@@ -1292,37 +1288,40 @@
  "creatives": [
   {
    "persona_id": "persona_009",
-   "headline": "{first_name}, fuel your recovery without the hangover",
-   "body": "A non-alcoholic sparkling drink with adaptogens. Keep your performance on track and feel good without a hangover.",
-   "cta": "Shop Now",
-   "headline_no_name": "Fuel your recovery without the hangover",
-   "angle": "performance claims",
+   "headline": "Fuel your active recovery, {first_name}.",
+   "body": "A non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for people who want to feel good without a hangover.",
+   "cta": "Shop functional cans",
+   "headline_no_name": "Fuel your active recovery.",
+   "angle": "performance and active recovery focus using functional ingredients",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
-    "For people who want to feel good without a hangover"
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
    ]
   },
   {
    "persona_id": "persona_001",
-   "headline": "Optimize your routine with functional adaptogens",
-   "body": "A non-alcoholic sparkling drink with adaptogens, designed for people who want to feel good without a hangover.",
-   "cta": "Discover More",
-   "headline_no_name": "Optimize your routine with functional adaptogens",
-   "angle": "outcome-focused",
+   "headline": "{first_name}, optimize your night with adaptogens",
+   "body": "A functional cocktail alternative made for people who want to feel good without a hangover. Enjoy a non-alcoholic sparkling drink.",
+   "cta": "Order adaptogens",
+   "headline_no_name": "Optimize your night with adaptogens",
+   "angle": "Leans into an outcome-focused, transparent, and systemic approach to wellness using adaptogens as functional tools.",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
+    "Kind of like a functional cocktail alternative",
     "For people who want to feel good without a hangover"
    ]
   },
   {
    "persona_id": "persona_003",
-   "headline": "The ultimate Halloween mocktail alternative",
-   "body": "A non-alcoholic sparkling drink with adaptogens. Kind of like a functional cocktail alternative to vibe with tonight.",
-   "cta": "Grab Yours",
-   "headline_no_name": "The ultimate Halloween mocktail alternative",
-   "angle": "aesthetic-forward",
+   "headline": "Upgrade your social hour, {first_name}.",
+   "body": "This functional cocktail alternative matches your vibe. A non-alcoholic sparkling drink with adaptogens to feel good with no hangover.",
+   "cta": "Shop sparkling cans",
+   "headline_no_name": "Upgrade your social hour.",
+   "angle": "aesthetic-forward and vibe-focused social drink alternative",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
     "Kind of like a functional cocktail alternative"
    ]
   }
@@ -1331,11 +1330,15 @@
   {
    "persona_id": "persona_009",
    "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Fuel your active recovery"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The headline claims the product fuels 'active recovery', which is an unsupported physiological/performance claim not present in the stated claims."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_001",
@@ -1352,9 +1355,7 @@
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Uses a holiday reference (Halloween) which may limit seasonality"
-   ],
+   "issues": [],
    "passed": true
   }
  ],
@@ -1370,85 +1371,145 @@
    "price_source": "tier_default",
    "gross_margin": 0.5,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 2.5,
    "max_affordable_cac": 75.0,
    "target_cpa": 52.5,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 50% (typical for beverages).",
     "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
+    "No target CPA/ROAS or margin given; assumed 50% gross margin (typical for beverages). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 50% margin x 2.5 orders = $75.00)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $52.50 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $52.50 x click-to-purchase rate (1.6%-5.6% for beverages). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.79,
-    "mid": 1.57,
-    "high": 2.62
+    "low": 0.84,
+    "mid": 1.68,
+    "high": 2.94
    },
    "cpm_bid": null,
    "target_cpa": 52.5,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1540.0,
+   "monthly_budget_usd": 1390.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 51.33,
+   "delivery_goal": "budget",
+   "expected_impressions": 47826,
+   "expected_reach": 29891,
+   "goal_feasible": true,
+   "daily_cap_usd": 46.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1535.29,
+   "learning_budget_needed_usd": 1390.59,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_020",
      "publisher_name": "Pop & Sip",
-     "share": 0.511,
-     "budget_usd": 787.33,
-     "cpc_bid_usd": 2.2,
-     "start_bid_usd": 1.54,
+     "share": 0.699,
+     "budget_usd": 971.93,
+     "cpc_bid_usd": 2.35,
+     "start_bid_usd": 1.65,
      "expected_clicks": {
-      "low": 286.0,
-      "mid": 358.0,
-      "high": 429.0
+      "low": 331.0,
+      "mid": 414.0,
+      "high": 496.0
      },
      "expected_conversions": {
-      "low": 7.5,
-      "mid": 15.0,
-      "high": 25.1
+      "low": 9.3,
+      "mid": 18.5,
+      "high": 32.4
      },
-     "capacity_usd": 3843.84,
+     "capacity_usd": 10264.8,
+     "expected_impressions": 24618,
+     "expected_reach": 15386,
      "requires_host_approval": true,
-     "rationale": "score 0.25 -> fit x1.40 on CTR/CVR; max bid $2.20 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.57 -> relative fit x1.40 on CTR/CVR; max bid $2.35 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.489,
-     "budget_usd": 752.67,
-     "cpc_bid_usd": 2.15,
-     "start_bid_usd": 1.5,
+     "share": 0.301,
+     "budget_usd": 418.07,
+     "cpc_bid_usd": 1.59,
+     "start_bid_usd": 1.11,
      "expected_clicks": {
-      "low": 280.0,
-      "mid": 350.0,
-      "high": 420.0
+      "low": 210.0,
+      "mid": 263.0,
+      "high": 316.0
      },
      "expected_conversions": {
-      "low": 7.2,
-      "mid": 14.3,
-      "high": 23.9
+      "low": 4.0,
+      "mid": 7.9,
+      "high": 13.9
      },
-     "capacity_usd": 7394.38,
+     "capacity_usd": 3782.86,
+     "expected_impressions": 23208,
+     "expected_reach": 14505,
      "requires_host_approval": false,
-     "rationale": "score 0.24 -> fit x1.36 on CTR/CVR; max bid $2.15 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.24 -> relative fit x0.94 on CTR/CVR; max bid $1.59 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,540, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,390, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $52.50 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_020",
+     "start_bid": 1.65,
+     "max_bid": 2.35,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_012",
+     "start_bid": 1.11,
+     "max_bid": 1.59,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1458,7 +1519,7 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Excluded: no category link (multiplier) for this product. Flags: competitor_conflict: host sells alcohol (33% of samples agree); may block the ad"
+     "reason": "Excluded: no category link (multiplier) for this product."
     },
     {
      "id": "pub_002",
@@ -1552,10 +1613,10 @@
      "pub_020",
      "pub_012"
     ],
-    "headline_template": "{first_name}, fuel your recovery without the hangover",
-    "headline_no_name": "Fuel your recovery without the hangover",
-    "body": "A non-alcoholic sparkling drink with adaptogens. Keep your performance on track and feel good without a hangover.",
-    "cta": "Shop Now"
+    "headline_template": "Fuel your active recovery, {first_name}.",
+    "headline_no_name": "Fuel your active recovery.",
+    "body": "A non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for people who want to feel good without a hangover.",
+    "cta": "Shop functional cans"
    },
    {
     "variant_id": "v2",
@@ -1564,10 +1625,10 @@
      "pub_012",
      "pub_020"
     ],
-    "headline_template": "Optimize your routine with functional adaptogens",
-    "headline_no_name": "Optimize your routine with functional adaptogens",
-    "body": "A non-alcoholic sparkling drink with adaptogens, designed for people who want to feel good without a hangover.",
-    "cta": "Discover More"
+    "headline_template": "{first_name}, optimize your night with adaptogens",
+    "headline_no_name": "Optimize your night with adaptogens",
+    "body": "A functional cocktail alternative made for people who want to feel good without a hangover. Enjoy a non-alcoholic sparkling drink.",
+    "cta": "Order adaptogens"
    },
    {
     "variant_id": "v3",
@@ -1576,10 +1637,10 @@
      "pub_020",
      "pub_012"
     ],
-    "headline_template": "The ultimate Halloween mocktail alternative",
-    "headline_no_name": "The ultimate Halloween mocktail alternative",
-    "body": "A non-alcoholic sparkling drink with adaptogens. Kind of like a functional cocktail alternative to vibe with tonight.",
-    "cta": "Grab Yours"
+    "headline_template": "Upgrade your social hour, {first_name}.",
+    "headline_no_name": "Upgrade your social hour.",
+    "body": "This functional cocktail alternative matches your vibe. A non-alcoholic sparkling drink with adaptogens to feel good with no hangover.",
+    "cta": "Shop sparkling cans"
    }
   ],
   "frequency_cap": {
@@ -1594,7 +1655,8 @@
    ],
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_020"
+    "pub_020",
+    "pub_012"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1620,7 +1682,10 @@
   "creative": 0.0
  },
  "creative_log": {
-  "rounds": 1,
-  "rewritten": []
+  "rounds": 2,
+  "rewritten": [
+   "persona_009",
+   "persona_003"
+  ]
  }
 }

@@ -1,0 +1,29 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, stock up on pure mountain water",
+      "body": "Get pure canned mountain water delivered in convenient 12 to 24 packs. Perfect for busy days with a fun, edgy look everyone loves.",
+      "cta": "Shop 12 and 24 packs",
+      "headline_no_name": "Stock up on pure mountain water for the family",
+      "angle": "family-friendly bulk convenience",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Mostly sold in 12-24 packs.",
+        "Young audience and anyone who likes edgy branding."
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, fuel your grind with mountain water",
+      "body": "Bring a metal-head attitude to your training. Pure mountain water in heavy-duty 12 and 24 packs, built for those who go hard.",
+      "cta": "Shop mountain water",
+      "headline_no_name": "Fuel your grind with canned mountain water",
+      "angle": "high-intensity athletic lifestyle framing",
+      "claims_used": [
+        "Canned mountain water with a metal-heads attitude.",
+        "Mostly sold in 12-24 packs."
+      ]
+    }
+  ]
+}

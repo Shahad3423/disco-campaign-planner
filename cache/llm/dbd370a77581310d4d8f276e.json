@@ -1,0 +1,120 @@
+{
+  "business_summary": "A membership-based online grocery service offering 25-30% off organic and non-GMO pantry goods for an annual fee of approximately $60, targeting families and health-conscious repeat shoppers.",
+  "product": "Annual grocery membership",
+  "is_consumer_product": true,
+  "price_point_usd": 60.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+    "Perfect for families and health-minded shoppers who buy often."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "non-GMO"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Core product offering is grocery shopping."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The membership specifically provides discounts on organic and non-GMO pantry goods."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "The inventory is explicitly described as organic."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Operates on an annual membership fee subscription model."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Highly adjacent to organic and non-GMO food preferences."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Targeted at health-minded shoppers who prioritize clean ingredients."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Targets high-frequency shoppers looking to simplify their pantry buying."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "organic_grocery",
+    "premium_grocery",
+    "groceries",
+    "family_products",
+    "subscription_services",
+    "convenience",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Membership grocery, annual fee about $60"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart is a direct competitor in the grocery and convenience space."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": -1,
+      "why": "Pantrygood is a direct competitor selling organic pantry goods via subscription."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly reaches convenience-motivated, food-interested families who are likely to buy pantry staples."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts kitchen buyers interested in non-toxic products, a strong adjacent audience for organic foods."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form has a science-forward, health-minded wellness audience that fits the health-minded organic profile."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The business model, membership pricing, discount structure, and target audience are clearly defined and ready to match with appropriate publishers.",
+  "missing_info": [
+    "Average order value (AOV) of grocery baskets",
+    "Shipping fees or minimum order thresholds for free shipping",
+    "Whether there is a free trial option for the membership"
+  ],
+  "clarifying_questions": [
+    "What is the average order value (AOV) for a typical member's grocery basket?",
+    "Is there a minimum spend required to qualify for free shipping?",
+    "Do you offer a free trial period or a monthly payment alternative to the $60 annual fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

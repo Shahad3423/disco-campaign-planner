@@ -1,0 +1,39 @@
+{
+  "business_summary": "Payroll, benefits and HR software for small businesses targeting owners and operators of companies with 1-100 employees.",
+  "product": "Payroll, benefits and HR software",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Payroll, benefits and HR software for small businesses",
+    "Targeting owners and operators of companies with 1-100 employees",
+    "Goal is demo bookings"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The product is B2B payroll, benefits, and HR software, which is not a consumer product that a DTC checkout shopper would buy.",
+  "missing_info": [
+    "pricing",
+    "subscription model details",
+    "specific target industries"
+  ],
+  "clarifying_questions": [
+    "What is the pricing structure for the software?",
+    "Is this a monthly or annual subscription?",
+    "Are there specific industries within small businesses you target?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

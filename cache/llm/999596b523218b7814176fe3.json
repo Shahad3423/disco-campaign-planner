@@ -1,0 +1,33 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is too generic for the Wellness Optimizer and lacks the science-backed, outcome-focused, or transparent messaging they prefer."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

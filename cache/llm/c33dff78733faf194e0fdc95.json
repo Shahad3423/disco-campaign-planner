@@ -1,0 +1,104 @@
+{
+  "business_summary": "A natural personal care brand offering everyday essentials like toothpaste and deodorant at a highly accessible, budget-friendly price point.",
+  "product": "Natural toothpaste and deodorant",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural toothpaste and deodorant",
+    "Cheap, like $5 or so"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "The advertiser explicitly positions the products as natural toothpaste and deodorant."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 1.0,
+      "why": "Natural personal care products are highly aligned with non-toxic preferences."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Toothpaste and deodorant are essential daily personal care items used in the bathroom."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Personal hygiene products like deodorant and oral care often fall under broad beauty and personal care segments."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "At a $5 price point, these are quick, low-barrier, everyday impulse purchases."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "clean_beauty",
+    "wellness",
+    "convenience",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_004",
+      "conflict": "disinterested in ultra-cheap positioning",
+      "evidence": "Advertiser highlights: 'Cheap, like $5 or so.'"
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested in trendy or low-end positioning; prefers craftsmanship and quality",
+      "evidence": "Advertiser positions product as 'Cheap, like $5 or so. Just show it to whoever.'"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart caters to convenience, groceries, and household goods with high-frequency, late-night, impulse-friendly buyers suited for cheap daily essentials."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are highly values-driven and responsive to clean-ingredient and natural product claims."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features high-AOV apparel with a conservative brand sensibility, making a cheap, $5 'whatever' product a poor fit."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. attracts older affluent women with low impulse behavior and high AOV, which conflicts with a $5 impulse item."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product category and low price point are clearly stated, allowing us to align them with wellness, natural, and convenience-focused publishers.",
+  "missing_info": [
+    "Target demographic specifics beyond 'whoever'",
+    "Shipping rates/minimums (crucial for a $5 item)",
+    "Subscription options availability",
+    "Specific ingredient standards or certifications"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription options, or are these primarily one-time purchases?",
+    "What is your average order value (AOV) and how do you handle shipping costs for a $5 item?",
+    "Are there any specific natural certifications or key ingredients we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify dressing the kids",
+      "body": "Loved by eco-minded parents. Get fair trade organic cotton underwear, tees, and baby clothes for the family, around $30 an item.",
+      "cta": "Shop organic cotton",
+      "headline_no_name": "Simplify dressing the kids",
+      "angle": "family-friendly and trusted by parents",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Affordable, around $30 an item",
+        "Eco-minded parents especially"
+      ]
+    }
+  ]
+}

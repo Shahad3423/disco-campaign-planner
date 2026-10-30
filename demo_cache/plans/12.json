@@ -18,9 +18,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "subscription",
+    "tag": "pet_supplies",
     "weight": 1.0,
-    "why": "Offered as a subscription service."
+    "why": "Includes toys and supplies for cats."
    },
    {
     "tag": "pet",
@@ -28,14 +28,9 @@
     "why": "Core category for pet products and services."
    },
    {
-    "tag": "pet_supplies",
+    "tag": "subscription",
     "weight": 1.0,
-    "why": "Includes toys and supplies for cats."
-   },
-   {
-    "tag": "pet_food",
-    "weight": 0.5,
-    "why": "Includes food samples."
+    "why": "Offered as a subscription service."
    },
    {
     "tag": "toys",
@@ -43,15 +38,17 @@
     "why": "Includes toys for the cat."
    },
    {
+    "tag": "pet_food",
+    "weight": 0.5,
+    "why": "Includes food samples."
+   },
+   {
     "tag": "gifting",
     "weight": 0.167,
     "why": "Weak fit: could potentially be bought as a gift for a new cat owner."
    }
   ],
-  "competing_tags": [
-   "pet_food",
-   "pet_supplies"
-  ],
+  "competing_tags": [],
   "persona_affinity_tags": [
    "family_products",
    "pet_food",
@@ -96,22 +93,19 @@
    "gifting": 0.67
   },
   "sample_agreement": 0.89,
-  "competing_tag_share": {
-   "pet_food": 0.33,
-   "pet_supplies": 0.33
-  }
+  "competing_tag_share": {}
  },
  "publishers": [
   {
    "publisher_id": "pub_009",
    "publisher_name": "Ruffco",
-   "score": 0.4874,
+   "score": 0.5955,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, pet_supplies, pet_food (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -150,22 +144,20 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
+   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_007",
    "publisher_name": "Pawline",
-   "score": 0.4615,
+   "score": 0.5638,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches subscription, pet, pet_supplies, pet_food (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, subscription, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -204,22 +196,20 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches subscription, pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
+   "reason": "Recommended: matches pet_supplies, pet, subscription, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_018",
    "publisher_name": "Tailcrate",
-   "score": 0.4371,
+   "score": 0.534,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches subscription, pet, pet_supplies, toys (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, subscription, toys (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -258,11 +248,9 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells pet_supplies (33% of samples agree); may block the ad"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches subscription, pet, pet_supplies, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_supplies (33% of samples agree); may block the ad"
+   "reason": "Recommended: matches pet_supplies, pet, subscription, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
@@ -1314,11 +1302,11 @@
  "creatives": [
   {
    "persona_id": "persona_004",
-   "headline": "{first_name}, welcome your kitten home",
-   "body": "Care for the first three months of their life with curated toys, food samples, and a helpful booklet about what to expect.",
-   "cta": "Start Box",
-   "headline_no_name": "Welcome your new kitten home",
-   "angle": "emotional connection",
+   "headline": "{first_name}, a spooktacular start for your kitten",
+   "body": "Treat your new family member this Halloween. Get toys, food samples, and a guide for their first three months of life.",
+   "cta": "Start subscription",
+   "headline_no_name": "A spooktacular start for your kitten",
+   "angle": "emotional connection with a seasonal Halloween touch for a new family member",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1326,11 +1314,11 @@
   },
   {
    "persona_id": "persona_002",
-   "headline": "Save time with our easy subscription",
-   "body": "Everything you need for the first three months of life: toys, food samples, and a booklet on what to expect.",
-   "cta": "Start Box",
-   "headline_no_name": "Save time with our easy subscription",
-   "angle": "time-saving",
+   "headline": "{first_name}, kitten care made easy",
+   "body": "Save time with a subscription covering their first three months. Get toys, food samples, and a helpful guide delivered to your door.",
+   "cta": "Subscribe now",
+   "headline_no_name": "Kitten care made easy",
+   "angle": "time-saving and convenience-focused subscription box",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1338,11 +1326,11 @@
   },
   {
    "persona_id": "persona_008",
-   "headline": "Everything for the first three months",
-   "body": "Get a bundled kit covering the first three months of your cat's life with toys, food samples, and an informational booklet.",
-   "cta": "Claim Offer",
-   "headline_no_name": "Everything for the first three months",
-   "angle": "bundle offers",
+   "headline": "The ultimate kitten value bundle, {first_name}",
+   "body": "Highly rated by new owners. Get toys, food samples, and a helpful booklet for their first three months in one affordable bundle.",
+   "cta": "Get the bundle",
+   "headline_no_name": "The ultimate kitten value bundle",
+   "angle": "Clear price-to-value bundle articulation and social proof from reviews.",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1361,7 +1349,7 @@
   },
   {
    "persona_id": "persona_002",
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1370,12 +1358,16 @@
   },
   {
    "persona_id": "persona_008",
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "persona_fit": 5,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Highly rated by new owners"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The claim 'Highly rated by new owners' is unsupported by the advertiser's stated claims."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1390,36 +1382,41 @@
    "price_source": "tier_default",
    "gross_margin": 0.45,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 4.0,
    "max_affordable_cac": 108.0,
    "target_cpa": 75.6,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 45% (typical for pet).",
     "subscription: assumed 4.0 orders per customer over ~6 months.",
+    "No target CPA/ROAS or margin given; assumed 45% gross margin (typical for pet). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 45% margin x 4.0 orders = $108.00)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $75.60 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $75.60 x click-to-purchase rate (1.1%-3.9% for pet). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 1.13,
-    "mid": 2.27,
-    "high": 3.78
+    "low": 0.83,
+    "mid": 1.66,
+    "high": 2.91
    },
    "cpm_bid": null,
    "target_cpa": 75.6,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 3260.0,
+   "monthly_budget_usd": 2390.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 108.67,
+   "delivery_goal": "budget",
+   "expected_impressions": 64860,
+   "expected_reach": 40538,
+   "goal_feasible": true,
+   "daily_cap_usd": 79.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 3264.71,
+   "learning_budget_needed_usd": 2392.94,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
@@ -1427,69 +1424,132 @@
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
      "share": 0.352,
-     "budget_usd": 1146.41,
-     "cpc_bid_usd": 3.18,
-     "start_bid_usd": 2.23,
+     "budget_usd": 840.52,
+     "cpc_bid_usd": 2.33,
+     "start_bid_usd": 1.63,
      "expected_clicks": {
-      "low": 288.0,
+      "low": 289.0,
       "mid": 361.0,
       "high": 433.0
      },
      "expected_conversions": {
-      "low": 7.6,
-      "mid": 15.1,
-      "high": 25.2
+      "low": 5.6,
+      "mid": 11.1,
+      "high": 19.4
      },
-     "capacity_usd": 132491.52,
-     "requires_host_approval": true,
-     "rationale": "score 0.49 -> fit x1.40 on CTR/CVR; max bid $3.18 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 121346.4,
+     "expected_impressions": 21472,
+     "expected_reach": 13420,
+     "requires_host_approval": false,
+     "rationale": "score 0.60 -> relative fit x1.40 on CTR/CVR; max bid $2.33 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
      "share": 0.333,
-     "budget_usd": 1085.49,
-     "cpc_bid_usd": 3.08,
-     "start_bid_usd": 2.16,
+     "budget_usd": 795.77,
+     "cpc_bid_usd": 2.26,
+     "start_bid_usd": 1.58,
      "expected_clicks": {
       "low": 282.0,
       "mid": 352.0,
       "high": 423.0
      },
      "expected_conversions": {
-      "low": 7.2,
-      "mid": 14.4,
-      "high": 23.9
+      "low": 5.3,
+      "mid": 10.5,
+      "high": 18.4
      },
-     "capacity_usd": 9633.17,
-     "requires_host_approval": true,
-     "rationale": "score 0.46 -> fit x1.36 on CTR/CVR; max bid $3.08 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 8835.14,
+     "expected_impressions": 21617,
+     "expected_reach": 13510,
+     "requires_host_approval": false,
+     "rationale": "score 0.56 -> relative fit x1.36 on CTR/CVR; max bid $2.26 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_018",
      "publisher_name": "Tailcrate",
      "share": 0.315,
-     "budget_usd": 1028.1,
-     "cpc_bid_usd": 2.99,
-     "start_bid_usd": 2.09,
+     "budget_usd": 753.71,
+     "cpc_bid_usd": 2.19,
+     "start_bid_usd": 1.53,
      "expected_clicks": {
       "low": 275.0,
       "mid": 344.0,
       "high": 413.0
      },
      "expected_conversions": {
-      "low": 6.8,
-      "mid": 13.6,
-      "high": 22.6
+      "low": 5.0,
+      "mid": 10.0,
+      "high": 17.5
      },
-     "capacity_usd": 15882.63,
-     "requires_host_approval": true,
-     "rationale": "score 0.44 -> fit x1.32 on CTR/CVR; max bid $2.99 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 14540.72,
+     "expected_impressions": 21771,
+     "expected_reach": 13607,
+     "requires_host_approval": false,
+     "rationale": "score 0.53 -> relative fit x1.32 on CTR/CVR; max bid $2.19 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $3,260, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $2,390, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $75.60 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_009",
+     "start_bid": 1.63,
+     "max_bid": 2.33,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_007",
+     "start_bid": 1.58,
+     "max_bid": 2.26,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_018",
+     "start_bid": 1.53,
+     "max_bid": 2.19,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1591,10 +1651,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, welcome your kitten home",
-    "headline_no_name": "Welcome your new kitten home",
-    "body": "Care for the first three months of their life with curated toys, food samples, and a helpful booklet about what to expect.",
-    "cta": "Start Box"
+    "headline_template": "{first_name}, a spooktacular start for your kitten",
+    "headline_no_name": "A spooktacular start for your kitten",
+    "body": "Treat your new family member this Halloween. Get toys, food samples, and a guide for their first three months of life.",
+    "cta": "Start subscription"
    },
    {
     "variant_id": "v2",
@@ -1604,10 +1664,10 @@
      "pub_009",
      "pub_018"
     ],
-    "headline_template": "Save time with our easy subscription",
-    "headline_no_name": "Save time with our easy subscription",
-    "body": "Everything you need for the first three months of life: toys, food samples, and a booklet on what to expect.",
-    "cta": "Start Box"
+    "headline_template": "{first_name}, kitten care made easy",
+    "headline_no_name": "Kitten care made easy",
+    "body": "Save time with a subscription covering their first three months. Get toys, food samples, and a helpful guide delivered to your door.",
+    "cta": "Subscribe now"
    },
    {
     "variant_id": "v3",
@@ -1617,10 +1677,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "Everything for the first three months",
-    "headline_no_name": "Everything for the first three months",
-    "body": "Get a bundled kit covering the first three months of your cat's life with toys, food samples, and an informational booklet.",
-    "cta": "Claim Offer"
+    "headline_template": "The ultimate kitten value bundle, {first_name}",
+    "headline_no_name": "The ultimate kitten value bundle",
+    "body": "Highly rated by new owners. Get toys, food samples, and a helpful booklet for their first three months in one affordable bundle.",
+    "cta": "Get the bundle"
    }
   ],
   "frequency_cap": {
@@ -1633,11 +1693,7 @@
     "Toys, food samples, a little booklet about what to expect"
    ],
    "claims_blocked_pending_substantiation": [],
-   "competitor_hosts_need_approval": [
-    "pub_009",
-    "pub_007",
-    "pub_018"
-   ],
+   "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
     "min_clicks": 150
@@ -1663,7 +1719,7 @@
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_002"
+   "persona_008"
   ]
  }
 }

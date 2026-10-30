@@ -1,0 +1,82 @@
+{
+  "business_summary": "Annual subscription (~$120-180) to video classes from famous experts. Targeting curious, higher-income learners with a strong focus on Q4 gifting.",
+  "product": "Annual subscription to expert-led video classes",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Annual subscription (~$120-180) to video classes from famous experts",
+    "Big gifting spike in Q4",
+    "We want curious, higher-income learners"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital subscription delivery.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is explicitly sold as an annual subscription."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser experiences a major gifting spike in Q4, making gifting-focused hosts highly relevant."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging or vague premium positioning, and has high price sensitivity.",
+      "evidence": "Advertiser charges $120-180 annually and explicitly targets 'higher-income learners'."
+    },
+    {
+      "persona_id": "persona_010",
+      "conflict": "Disinterested in subscription-only framing.",
+      "evidence": "Advertiser is an 'Annual subscription (~$120-180)' despite having a Q4 gifting spike."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging align perfectly with high-income learners."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher matches the target demographic of higher-income learners."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift in Nov-Dec aligns with the advertiser's Q4 gifting spike."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency, impulse-friendly convenience buyers are unlikely to purchase a high-consideration $120-180 annual educational subscription."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target demographics are clearly stated, allowing for immediate placement and targeting strategy.",
+  "missing_info": [
+    "Specific subjects/categories of classes offered (e.g., cooking, writing, design)",
+    "Exact gifting flow details (e.g., printable cards, email delivery on a specific date)"
+  ],
+  "clarifying_questions": [
+    "What are the main subject categories covered by your video classes (e.g., cooking, business, arts)?",
+    "Do you offer a specific checkout flow or landing page dedicated to gifting the subscription?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

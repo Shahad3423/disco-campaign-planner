@@ -1,0 +1,115 @@
+{
+  "business_summary": "A membership-based service offering clean-ish everyday essentials including soap, toothpaste, and pantry items for frugal, minimalist households.",
+  "product": "Everyday essentials (soap, toothpaste, pantry items)",
+  "is_consumer_product": true,
+  "price_point_usd": 59.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+    "all on a $59 membership",
+    "For frugal minimalist households"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "frugal",
+    "minimalist",
+    "clean-ish"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "The brand sells everyday essentials like soap and toothpaste which fall directly into household supplies."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The advertiser explicitly states they sell pantry stuff."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Pantry items and everyday essentials overlap heavily with the groceries category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The products are sold via a $59 membership model."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Soap is a core bathroom/personal care staple."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "The brand claims to be 'clean-ish', appealing to shoppers interested in natural or better-for-you products."
+    }
+  ],
+  "competing_tags": [
+    "pantry",
+    "groceries",
+    "household"
+  ],
+  "persona_affinity_tags": [
+    "groceries",
+    "household",
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "all on a $59 membership"
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language, prefers craftsmanship/heritage, price sensitivity low",
+      "evidence": "Clean-ish everyday essentials ... For frugal minimalist households"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart has high-frequency, convenience-oriented grocery and household shoppers."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers value clean-ingredient, natural, and subscription-friendly grocery items."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's family households are convenience-motivated and purchase subscriptions."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features high-AOV, conservative affluent shoppers, which conflicts with 'frugal minimalist' positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, pricing model, and target audience are clearly defined, enabling immediate planning.",
+  "missing_info": [
+    "shipping costs and delivery times",
+    "whether items can be purchased without a membership",
+    "average order value (AOV) of a typical member basket"
+  ],
+  "clarifying_questions": [
+    "Can customers purchase items individually without committing to the $59 membership?",
+    "What is the average order value (AOV) for a member's basket?",
+    "Do you offer free shipping for members, or are there additional delivery fees?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

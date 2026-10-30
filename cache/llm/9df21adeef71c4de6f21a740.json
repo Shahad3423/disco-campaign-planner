@@ -1,0 +1,51 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Give {first_name} the gift of luxury",
+      "body": "Delight them with premium cashmere and silk apparel. Enjoy luxury materials without the markup for an impressive gift.",
+      "cta": "Shop giftable luxury",
+      "headline_no_name": "Give the gift of luxury",
+      "angle": "gifting and premium presentation of luxury apparel",
+      "claims_used": [
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Treat yourself, {first_name}",
+      "body": "Get aesthetic cashmere sweaters for $50 and silk for $60. High-quality pieces and transparent pricing, direct to you.",
+      "cta": "Shop the collection",
+      "headline_no_name": "No tricks, just real luxury",
+      "angle": "playful Halloween aesthetic and transparent pricing",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Timeless luxury for {first_name}",
+      "body": "Invest in enduring style. Discover exquisite cashmere and silk apparel made from luxury materials without the markup.",
+      "cta": "Shop classic styles",
+      "headline_no_name": "Timeless, understated luxury",
+      "angle": "understated quality and heritage craftsmanship focus",
+      "claims_used": [
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Smart luxury pricing for {first_name}",
+      "body": "Skip the retail markup. Get premium cashmere sweaters for $50 and silk for $60 with our transparent pricing.",
+      "cta": "Shop smart luxury",
+      "headline_no_name": "High-end luxury, smart pricing",
+      "angle": "discount-forward pricing transparency and direct-to-consumer savings",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    }
+  ]
+}

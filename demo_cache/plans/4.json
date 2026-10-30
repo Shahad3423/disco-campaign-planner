@@ -23,6 +23,11 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "natural",
+    "weight": 1.0,
+    "why": "Made with natural soy wax and no synthetic fragrances."
+   },
+   {
     "tag": "gifting",
     "weight": 1.0,
     "why": "The advertiser states they are mostly bought as gifts."
@@ -31,11 +36,6 @@
     "tag": "home",
     "weight": 1.0,
     "why": "Candles are a core home decor and household product."
-   },
-   {
-    "tag": "natural",
-    "weight": 1.0,
-    "why": "Made with natural soy wax and no synthetic fragrances."
    },
    {
     "tag": "sustainable",
@@ -1303,10 +1303,10 @@
  "creatives": [
   {
    "persona_id": "persona_003",
-   "headline": "{first_name}, match your room's vibe",
-   "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances. Pure aesthetic upgrade.",
-   "cta": "Shop Candles",
-   "headline_no_name": "Match your room's vibe",
+   "headline": "Spooky season cozy vibes, {first_name}",
+   "body": "Get ready for Halloween with small-batch soy candles. Hand-poured in Vermont with natural soy wax and no synthetic fragrances.",
+   "cta": "Shop spooky season",
+   "headline_no_name": "Spooky season cozy vibes",
    "angle": "aesthetic-forward",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1316,10 +1316,10 @@
   },
   {
    "persona_id": "persona_005",
-   "headline": "Traditional Vermont craftsmanship",
-   "body": "Small-batch candles poured by hand in Vermont, featuring natural soy wax and no synthetic fragrances.",
-   "cta": "Explore collection",
-   "headline_no_name": "Traditional Vermont craftsmanship",
+   "headline": "Hand-poured Vermont candles for {first_name}",
+   "body": "Discover small-batch candles poured by hand in Vermont. Made with natural soy wax and absolutely no synthetic fragrances.",
+   "cta": "Shop small-batch",
+   "headline_no_name": "Hand-poured Vermont candles",
    "angle": "craftsmanship",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1329,11 +1329,11 @@
   },
   {
    "persona_id": "persona_006",
-   "headline": "Natural soy wax and zero synthetics",
-   "body": "Small-batch candles poured by hand in Vermont made with natural soy wax and no synthetic fragrances.",
-   "cta": "Learn more",
-   "headline_no_name": "Natural soy wax and zero synthetics",
-   "angle": "specific sustainability claims",
+   "headline": "{first_name}, meet Vermont small-batch candles.",
+   "body": "Know exactly how your candle is made. We hand-pour every small batch in Vermont using natural soy wax and zero synthetic fragrances.",
+   "cta": "Shop soy candles",
+   "headline_no_name": "Small-batch candles, poured by hand in Vermont.",
+   "angle": "supply chain transparency",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
@@ -1342,23 +1342,23 @@
   },
   {
    "persona_id": "persona_010",
-   "headline": "The ultimate gift, ready to impress",
-   "body": "Hand-poured in Vermont in small batches with natural soy wax and no synthetic fragrances. A favorite for gifting.",
-   "cta": "Find the Gift",
-   "headline_no_name": "The ultimate gift, ready to impress",
+   "headline": "The perfect gift for {first_name}'s list",
+   "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont with natural soy wax and no synthetic fragrances.",
+   "cta": "Shop candle gifts",
+   "headline_no_name": "The perfect hand-poured gift",
    "angle": "giftable",
    "claims_used": [
+    "Mostly bought as gifts",
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
-    "No synthetic fragrances",
-    "Mostly bought as gifts"
+    "No synthetic fragrances"
    ]
   }
  ],
  "reviews": [
   {
    "persona_id": "persona_003",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1385,11 +1385,13 @@
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
+   "issues": [
+    "The phrasing 'Mostly bought as gifts.' at the start of the body copy is grammatically awkward."
+   ],
    "passed": true
   }
  ],
@@ -1405,35 +1407,40 @@
    "price_source": "tier_default",
    "gross_margin": 0.55,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.0,
    "max_affordable_cac": 33.0,
    "target_cpa": 23.1,
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
-    "Gross margin not given; assumed 55% (typical for home).",
+    "No target CPA/ROAS or margin given; assumed 55% gross margin (typical for home). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($60 x 55% margin x 1.0 orders = $33.00)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $23.10 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $23.10 x click-to-purchase rate (0.6%-2.1% for home). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.35,
-    "mid": 0.69,
-    "high": 1.16
+    "low": 0.25,
+    "mid": 0.28,
+    "high": 0.49
    },
    "cpm_bid": null,
    "target_cpa": 23.1,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 910.0,
+   "monthly_budget_usd": 370.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 30.33,
+   "delivery_goal": "budget",
+   "expected_impressions": 70097,
+   "expected_reach": 43811,
+   "goal_feasible": true,
+   "daily_cap_usd": 12.33,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 914.12,
+   "learning_budget_needed_usd": 367.06,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
@@ -1441,69 +1448,132 @@
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
      "share": 0.413,
-     "budget_usd": 376.1,
-     "cpc_bid_usd": 0.97,
-     "start_bid_usd": 0.68,
+     "budget_usd": 152.92,
+     "cpc_bid_usd": 0.39,
+     "start_bid_usd": 0.27,
      "expected_clicks": {
-      "low": 310.0,
-      "mid": 388.0,
-      "high": 465.0
+      "low": 314.0,
+      "mid": 392.0,
+      "high": 471.0
      },
      "expected_conversions": {
-      "low": 8.1,
-      "mid": 16.3,
-      "high": 27.1
+      "low": 3.3,
+      "mid": 6.6,
+      "high": 11.5
      },
-     "capacity_usd": 2281.44,
+     "capacity_usd": 917.28,
+     "expected_impressions": 23339,
+     "expected_reach": 14587,
      "requires_host_approval": false,
-     "rationale": "score 0.25 -> fit x1.40 on CTR/CVR; max bid $0.97 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.25 -> relative fit x1.40 on CTR/CVR; max bid $0.39 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
      "share": 0.372,
-     "budget_usd": 338.68,
-     "cpc_bid_usd": 0.92,
-     "start_bid_usd": 0.64,
+     "budget_usd": 137.71,
+     "cpc_bid_usd": 0.37,
+     "start_bid_usd": 0.26,
      "expected_clicks": {
-      "low": 295.0,
-      "mid": 368.0,
-      "high": 442.0
+      "low": 298.0,
+      "mid": 372.0,
+      "high": 447.0
      },
      "expected_conversions": {
-      "low": 7.3,
-      "mid": 14.6,
-      "high": 24.3
+      "low": 2.9,
+      "mid": 5.9,
+      "high": 10.3
      },
-     "capacity_usd": 2623.92,
+     "capacity_usd": 1055.27,
+     "expected_impressions": 23489,
+     "expected_reach": 14680,
      "requires_host_approval": false,
-     "rationale": "score 0.23 -> fit x1.32 on CTR/CVR; max bid $0.92 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.23 -> relative fit x1.32 on CTR/CVR; max bid $0.37 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
      "share": 0.215,
-     "budget_usd": 195.22,
-     "cpc_bid_usd": 0.7,
-     "start_bid_usd": 0.49,
+     "budget_usd": 79.38,
+     "cpc_bid_usd": 0.28,
+     "start_bid_usd": 0.25,
      "expected_clicks": {
-      "low": 223.0,
-      "mid": 279.0,
-      "high": 335.0
+      "low": 227.0,
+      "mid": 283.0,
+      "high": 340.0
      },
      "expected_conversions": {
-      "low": 4.2,
-      "mid": 8.5,
-      "high": 14.2
+      "low": 1.7,
+      "mid": 3.5,
+      "high": 6.0
      },
-     "capacity_usd": 5799.15,
+     "capacity_usd": 2319.66,
+     "expected_impressions": 23269,
+     "expected_reach": 14543,
      "requires_host_approval": false,
-     "rationale": "score 0.13 -> fit x1.02 on CTR/CVR; max bid $0.70 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.13 -> relative fit x1.02 on CTR/CVR; max bid $0.28 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $910, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $370, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $23.10 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_014",
+     "start_bid": 0.27,
+     "max_bid": 0.39,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_011",
+     "start_bid": 0.26,
+     "max_bid": 0.37,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_003",
+     "start_bid": 0.25,
+     "max_bid": 0.28,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1606,10 +1676,10 @@
      "pub_003",
      "pub_011"
     ],
-    "headline_template": "{first_name}, match your room's vibe",
-    "headline_no_name": "Match your room's vibe",
-    "body": "Small-batch candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances. Pure aesthetic upgrade.",
-    "cta": "Shop Candles"
+    "headline_template": "Spooky season cozy vibes, {first_name}",
+    "headline_no_name": "Spooky season cozy vibes",
+    "body": "Get ready for Halloween with small-batch soy candles. Hand-poured in Vermont with natural soy wax and no synthetic fragrances.",
+    "cta": "Shop spooky season"
    },
    {
     "variant_id": "v2",
@@ -1619,10 +1689,10 @@
      "pub_003",
      "pub_011"
     ],
-    "headline_template": "Traditional Vermont craftsmanship",
-    "headline_no_name": "Traditional Vermont craftsmanship",
-    "body": "Small-batch candles poured by hand in Vermont, featuring natural soy wax and no synthetic fragrances.",
-    "cta": "Explore collection"
+    "headline_template": "Hand-poured Vermont candles for {first_name}",
+    "headline_no_name": "Hand-poured Vermont candles",
+    "body": "Discover small-batch candles poured by hand in Vermont. Made with natural soy wax and absolutely no synthetic fragrances.",
+    "cta": "Shop small-batch"
    },
    {
     "variant_id": "v3",
@@ -1632,10 +1702,10 @@
      "pub_003",
      "pub_014"
     ],
-    "headline_template": "Natural soy wax and zero synthetics",
-    "headline_no_name": "Natural soy wax and zero synthetics",
-    "body": "Small-batch candles poured by hand in Vermont made with natural soy wax and no synthetic fragrances.",
-    "cta": "Learn more"
+    "headline_template": "{first_name}, meet Vermont small-batch candles.",
+    "headline_no_name": "Small-batch candles, poured by hand in Vermont.",
+    "body": "Know exactly how your candle is made. We hand-pour every small batch in Vermont using natural soy wax and zero synthetic fragrances.",
+    "cta": "Shop soy candles"
    },
    {
     "variant_id": "v4",
@@ -1645,10 +1715,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "The ultimate gift, ready to impress",
-    "headline_no_name": "The ultimate gift, ready to impress",
-    "body": "Hand-poured in Vermont in small batches with natural soy wax and no synthetic fragrances. A favorite for gifting.",
-    "cta": "Find the Gift"
+    "headline_template": "The perfect gift for {first_name}'s list",
+    "headline_no_name": "The perfect hand-poured gift",
+    "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont with natural soy wax and no synthetic fragrances.",
+    "cta": "Shop candle gifts"
    }
   ],
   "frequency_cap": {
@@ -1690,8 +1760,7 @@
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_003",
-   "persona_010"
+   "persona_006"
   ]
  }
 }

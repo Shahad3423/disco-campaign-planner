@@ -1,0 +1,90 @@
+{
+  "business_summary": "DTC brand selling slim leather wallets and everyday carry (EDC) bags priced between $80 and $200, frequently positioned as premium gifts for fathers and graduates.",
+  "product": "Slim leather wallets and everyday carry bags",
+  "is_consumer_product": true,
+  "price_point_usd": 140.0,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "male",
+  "target_age_range": "young adults to seniors",
+  "stated_claims": [
+    "Slim leather wallets and everyday carry bags",
+    "A common gift for fathers and grads"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Explicitly stated as a common gift for fathers and graduates."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Fathers and male graduates are primary target audiences for these products."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Wallets and bags are personal style accessories closely aligned with apparel."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Leather goods tend to appeal to traditional, classic stylistic preferences."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.25,
+      "why": "Standard consumer e-commerce purchase behavior."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "classic_apparel",
+    "fashion",
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in: luxury-only messaging, premium positioning; prefers: discount-forward",
+      "evidence": "Pricing is $80-$200 for wallets/bags, placing it squarely in the premium tier."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting focus and seasonal alignment matches the advertiser's primary use case."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility aligns well with premium leather goods."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Affluent audience that responds well to quality messaging and high-AOV items."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target demographic, and gifting intent are clearly defined, allowing for immediate matching with relevant gift-focused and premium publishers.",
+  "missing_info": [
+    "Specific leather sourcing and craftsmanship details",
+    "Availability of personalization/engraving options",
+    "Average order value (AOV) or margin target details"
+  ],
+  "clarifying_questions": [
+    "Do you offer custom engraving or personalization options for gifts?",
+    "Is gift wrapping or premium packaging included standard, or available as an add-on?",
+    "What is your target customer acquisition cost (CAC) for this price tier?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

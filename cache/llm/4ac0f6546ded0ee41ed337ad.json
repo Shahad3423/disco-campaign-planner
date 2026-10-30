@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose organic & non-GMO.",
+      "body": "Get 25-30% off organic and non-GMO pantry essentials with a $60 annual membership. Perfect for health-minded shoppers.",
+      "cta": "Shop organic pantry",
+      "headline_no_name": "Choose organic & non-GMO pantry goods.",
+      "angle": "Focusing on specific organic and non-GMO product certifications to appeal to sustainability and transparency preferences.",
+      "claims_used": [
+        "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+        "Perfect for families and health-minded shoppers who buy often."
+      ]
+    }
+  ]
+}

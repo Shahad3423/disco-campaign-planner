@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, comfort gear built for your active days",
+      "body": "Perfect comfort for your active lifestyle and recovery. Plus, every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop socks & tees",
+      "headline_no_name": "Comfort gear built for your active days",
+      "angle": "active lifestyle and post-workout recovery positioning",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

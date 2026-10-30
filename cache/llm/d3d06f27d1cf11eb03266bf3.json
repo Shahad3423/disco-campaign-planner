@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "Instant math & science, {first_name}",
+      "body": "Get immediate access to interactive math, science, and CS courses on mobile or web. Learn in small chunks for roughly $25/mo.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Instant math & science courses",
+      "angle": "Frictionless subscription and instant digital access for on-the-go learning",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Subscription is roughly $25/mo or $120/yr.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your mind, {first_name}",
+      "body": "Optimize your mental performance. Practice interactive math, science, and CS courses in small chunks. Subscriptions are about $120/yr.",
+      "cta": "Start learning",
+      "headline_no_name": "Optimize your mind",
+      "angle": "Outcome-focused cognitive optimization through science and math",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Subscription is roughly $25/mo or $120/yr.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Smart learning made easy, {first_name}",
+      "body": "No tricks this Halloween, just interactive math, science, and CS courses. Busy students and adults can learn in small chunks on mobile.",
+      "cta": "Start learning",
+      "headline_no_name": "Smart learning made easy",
+      "angle": "Time-saving, family-friendly learning that fits a busy schedule with a seasonal touch",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    }
+  ]
+}

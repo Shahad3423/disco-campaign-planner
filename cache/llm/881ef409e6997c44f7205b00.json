@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Halloween deals on outdoor gear, {first_name}",
+      "body": "Save on firearms, ammunition, and outdoor accessories this season. Must be 18/21+ to buy. Firearms must ship to an FFL.",
+      "cta": "Shop Halloween deals",
+      "headline_no_name": "Halloween deals on outdoor gear",
+      "angle": "discount-forward seasonal Halloween deals on essential accessories and ammo",
+      "claims_used": [
+        "Customers must be 18/21+",
+        "Guns must ship to an FFL"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "High-performance outdoor gear for {first_name}",
+      "body": "Equip your next outdoor pursuit with reliable firearms, ammo, and gear. Must be 18/21+. Firearms ship to an FFL.",
+      "cta": "Shop outdoor gear",
+      "headline_no_name": "High-performance outdoor gear and ammo",
+      "angle": "performance-focused positioning highlighting reliable gear for active outdoor pursuits",
+      "claims_used": [
+        "Customers must be 18/21+",
+        "Guns must ship to an FFL"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The perfect outdoor gifts, {first_name}",
+      "body": "Find top-tier firearms, ammo, and accessories for the hunter in your life. Must be 18/21+. Firearms must ship to an FFL.",
+      "cta": "Shop gift guides",
+      "headline_no_name": "Premium gifts for outdoor enthusiasts",
+      "angle": "gift-giving focus highlighting premium gear and easy selection for loved ones",
+      "claims_used": [
+        "Customers must be 18/21+",
+        "Guns must ship to an FFL"
+      ]
+    }
+  ]
+}

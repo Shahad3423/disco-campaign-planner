@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Hey {first_name}, send some instant main-character energy",
+      "body": "Serve major floral looks. Gorgeous bouquets delivered to their door for $55-$100. Same or next day delivery for birthdays & anniversaries.",
+      "cta": "Send a bouquet",
+      "headline_no_name": "Send some instant main-character energy",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Flower bouquets delivered to your door, $55-100.",
+        "Occasion-driven - birthdays, anniversaries, Mother's Day.",
+        "Same or next day matters a lot to us."
+      ]
+    }
+  ]
+}

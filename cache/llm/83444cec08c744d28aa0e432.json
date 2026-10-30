@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of premium comfort",
+      "body": "Delight them with soft, performance-y everyday clothing designed for active lifestyles. Beautifully presented and ready to gift.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the gift of premium comfort",
+      "angle": "premium gift presentation and high-quality activewear gifting",
+      "claims_used": [
+        "Soft, performance-y everyday clothing"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your daily transition",
+      "body": "Streamline your routine. Our soft, performance-y everyday clothing lets you go from gym to coffee without missing a beat.",
+      "cta": "Shop performance",
+      "headline_no_name": "Optimize your daily transition",
+      "angle": "systematic daily routine optimization and seamless transition",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Built for the active life, {first_name}",
+      "body": "Go from gym to coffee in soft, performance-y everyday clothing engineered to keep up with your training schedule.",
+      "cta": "Shop activewear",
+      "headline_no_name": "Built for the active life",
+      "angle": "performance-focused training gear that transitions seamlessly",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "business_summary": "Provider of affordable smart home security solutions, specifically video doorbells and security cameras starting at $60, targeting new homeowners, renters, and those concerned about package theft.",
+  "product": "Video doorbells and security cameras",
+  "is_consumer_product": true,
+  "price_point_usd": 60.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Video doorbells and security cameras starting at $60."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category for home security hardware, highly relevant to new homeowners and renters."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Adjacent category covering home utility, safety, and improvement products."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Smart home security devices offer peace of mind and convenience for package tracking."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "household",
+    "convenience",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers purchasing home goods are highly likely to be homeowners or renters interested in home security."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events drive purchases here, which is the exact target demographic for video doorbells."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households and convenience-motivated shoppers are highly aligned with package-theft prevention and home safety."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, starting price point, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Whether a subscription is required for video storage/features",
+    "Shipping times and costs",
+    "Average Order Value (AOV)"
+  ],
+  "clarifying_questions": [
+    "Is there an ongoing subscription fee required for video storage, or is it strictly a one-time hardware purchase?",
+    "What is your average shipping time to customers?",
+    "Do you offer bundle discounts for customers purchasing multiple cameras?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

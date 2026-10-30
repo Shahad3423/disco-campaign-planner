@@ -1,0 +1,68 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your sleep, {first_name}",
+      "body": "Engineered with a patented grid design. Specifically designed for back-pain sufferers and sleepers who run hot to optimize rest.",
+      "cta": "Shop grid mattresses",
+      "headline_no_name": "Optimize your sleep",
+      "angle": "outcome-focused technical specifications for sleep optimization",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Investment-grade comfort for {first_name}",
+      "body": "Discover our patented grid design. Meticulously crafted for back-pain sufferers who value lasting quality and understated design.",
+      "cta": "Shop our mattresses",
+      "headline_no_name": "Investment-grade comfort",
+      "angle": "understated craftsmanship and quality-focused longevity",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The ultimate gift for {first_name}",
+      "body": "Give an impressive gift featuring our patented grid design. Designed for back-pain sufferers and sleepers who run hot.",
+      "cta": "Shop gift options",
+      "headline_no_name": "The ultimate premium gift",
+      "angle": "premium presentation and giftability",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "No scary nights, {first_name}",
+      "body": "This Halloween, upgrade your recovery. Our patented grid design is designed for back-pain sufferers and sleepers who run hot.",
+      "cta": "Shop the grid",
+      "headline_no_name": "No scary nights",
+      "angle": "performance recovery with a seasonal Halloween touch",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Mindfully engineered for {first_name}",
+      "body": "A thoughtful alternative. Our patented grid design is designed for back-pain sufferers and sleepers who run hot, built for longevity.",
+      "cta": "Shop patented design",
+      "headline_no_name": "Mindfully engineered support",
+      "angle": "structural transparency and mindful engineering",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    }
+  ]
+}

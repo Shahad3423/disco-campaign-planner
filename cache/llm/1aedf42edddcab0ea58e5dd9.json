@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Clean essentials for {first_name}'s family",
+      "body": "Keep your family's routine simple. Get natural toothpaste and deodorant that actually fit your budget, priced at just around $5.",
+      "cta": "Shop $5 essentials",
+      "headline_no_name": "Clean essentials for the whole family",
+      "angle": "family-friendly",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, why pay more for natural care?",
+      "body": "Switch to natural toothpaste and deodorant without the markup. Our daily essentials are cheap, costing just around $5 each.",
+      "cta": "Buy $5 essentials",
+      "headline_no_name": "Why pay more for natural personal care?",
+      "angle": "clear value props",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, get clean vibes for just $5",
+      "body": "Ditch the scary ingredients this Halloween. Get natural toothpaste and deodorant that are cheap, friendly on your wallet at around $5.",
+      "cta": "Shop natural care",
+      "headline_no_name": "Natural personal care with clean vibes",
+      "angle": "playful",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    }
+  ]
+}

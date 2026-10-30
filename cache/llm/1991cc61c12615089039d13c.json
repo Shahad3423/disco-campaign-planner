@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your routine, {first_name}",
+      "body": "Optimize your daily foundation. Every purchase of our comfort socks and tees donates an item to someone experiencing homelessness.",
+      "cta": "Shop comfort socks",
+      "headline_no_name": "Optimize your daily routine",
+      "angle": "outcome-focused daily routine optimization and community health impact",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

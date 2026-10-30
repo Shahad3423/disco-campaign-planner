@@ -1,0 +1,103 @@
+{
+  "business_summary": "Always Pan and other aesthetic cookware in bright colors, targeting younger first-home buyers and the wedding/housewarming gift market.",
+  "product": "Always Pan and other cookware",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "younger first-home buyers",
+  "stated_claims": [
+    "Always Pan and other cookware in bright colors",
+    "$150ish for the Always Pan",
+    "Great for housewarming and wedding gifts",
+    "Great for younger first-home buyers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Core product placement category."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Cookware is a primary home goods subcategory; strong relevance for new home buyers."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly positioned as great for housewarming and wedding gifts."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Essential utility item for daily household use."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.25,
+      "why": "Direct-to-consumer brand model."
+    }
+  ],
+  "competing_tags": [
+    "cookware"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in 'loud aesthetics'",
+      "evidence": "Advertiser highlights 'cookware in bright colors', which conflicts with understated/classic preferences."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "high price sensitivity / disinterested in luxury-only messaging",
+      "evidence": "$150ish price point for a single pan."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": -1,
+      "why": "Direct competitor. Hearthstone Goods sells cookware and kitchen items."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers are highly aligned with bright, aesthetic cookware."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Food-interested households are highly likely to purchase premium cookware."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and clear gifting use-cases are well-defined, allowing for immediate planning.",
+  "missing_info": [
+    "specific materials/coatings (e.g., non-stick, ceramic, non-toxic)",
+    "shipping and packaging details for gifting",
+    "return policy"
+  ],
+  "clarifying_questions": [
+    "Are your cookware products made with non-toxic or ceramic materials?",
+    "Do you offer premium gift packaging or direct-to-recipient shipping for wedding/housewarming gifts?",
+    "What is your typical return/exchange policy for gift recipients?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

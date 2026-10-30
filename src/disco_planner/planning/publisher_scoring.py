@@ -12,7 +12,14 @@ from datetime import date
 from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, Publisher, PublisherScore, ScoreComponent
 
-NEUTRAL = 0.6  # used when the advertiser didn't tell us: mild, not zero, and labelled "not stated"
+def _shape() -> dict:
+    return catalog.config("scoring")["shape"]
+
+
+def __getattr__(name: str):  # NEUTRAL kept as a read-only alias for older callers/tests
+    if name == "NEUTRAL":
+        return _shape()["neutral"]
+    raise AttributeError(name)
 
 
 def _age_range(text: str | None) -> tuple[int, int] | None:
@@ -57,7 +64,7 @@ def audience_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str
         parts.append(share)
         details.append(f"{share:.0%} {profile.target_gender}")
     else:
-        parts.append(NEUTRAL)
+        parts.append(_shape()["neutral"])
         details.append("gender not stated")
 
     target, host = _age_range(profile.target_age_range), _age_range(pub.audience.age_skew)
@@ -66,7 +73,7 @@ def audience_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str
         parts.append(overlap / max(1, target[1] - target[0]))
         details.append(f"age {pub.audience.age_skew} vs target {profile.target_age_range}")
     else:
-        parts.append(NEUTRAL)
+        parts.append(_shape()["neutral"])
         details.append("age not stated")
     return sum(parts) / len(parts), "; ".join(details)
 
@@ -75,11 +82,12 @@ def price_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
     """Asymmetric: a $650 product on a $28-AOV host is worse than a $20 product on a $150 host."""
     cfg = catalog.config("scoring")
     tiers = cfg["income_tiers"]
-    score, details = NEUTRAL, []
+    shape = _shape()
+    score, details = shape["neutral"], []
 
     if profile.price_point_usd:
         ratio = profile.price_point_usd / pub.avg_order_value_usd
-        spread = 1.5 if ratio > 1 else 2.5
+        spread = shape["price_spread_above"] if ratio > 1 else shape["price_spread_below"]
         score = math.exp(-abs(math.log(ratio)) / spread)
         details.append(f"price ${profile.price_point_usd:.0f} vs host AOV ${pub.avg_order_value_usd:.0f}")
 
@@ -87,10 +95,10 @@ def price_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
     if needed and pub.audience.income_tier in tiers:
         gap = tiers.index(needed) - tiers.index(pub.audience.income_tier)
         if gap > 0:
-            score *= 0.7**gap
+            score *= shape["income_gap_penalty"] ** gap
             details.append(f"host income {pub.audience.income_tier} below {needed} needed for {profile.price_tier}")
         elif not profile.price_point_usd:
-            score = 0.8
+            score = shape["tier_match_value"]
             details.append(f"host income {pub.audience.income_tier} suits {profile.price_tier}")
     if not details:
         details.append("price not stated")
@@ -98,10 +106,12 @@ def price_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
 
 
 def notes_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str, int]:
+    values = _shape()["notes_values"]
     for s in profile.note_signals:
         if s.publisher_id == pub.id:
-            return (s.alignment + 1) / 2, s.why, s.alignment
-    return 0.5, "no read on notes", 0
+            key = {1: "aligned", 0: "neutral", -1: "misaligned"}[s.alignment]
+            return values[key], s.why, s.alignment
+    return values["neutral"], "no read on notes", 0
 
 
 def persona_fit(pub: Publisher, weights: dict[str, float]) -> tuple[float, str]:
@@ -110,7 +120,7 @@ def persona_fit(pub: Publisher, weights: dict[str, float]) -> tuple[float, str]:
     from disco_planner.planning.personas import host_fit  # local import: personas imports this module's types
 
     if not weights:
-        return NEUTRAL, "no plausible personas yet"
+        return _shape()["neutral"], "no plausible personas yet"
     by_id = catalog.persona_by_id()
     fits = {pid: host_fit(by_id[pid], pub) for pid in weights}
     value = sum(weights[pid] * fits[pid] for pid in weights) / sum(weights.values())
@@ -126,19 +136,30 @@ def scale_fit(pub: Publisher) -> tuple[float, str]:
 
 def seasonality_fit(profile: AdvertiserProfile, pub: Publisher, today: date) -> tuple[float, str]:
     cfg = catalog.config("scoring")["gifting"]
+    v = _shape()["seasonality_values"]
     giftable_product = profile.purchase_model == "gift" or any(t.tag == "gifting" for t in profile.relevant_tags)
     giftable_host = "gifting" in pub.tags or "gift" in pub.notes.lower()
     if not giftable_product:
-        return 0.5, "not a gifting product"
+        return v["non_gift_product"], "not a gifting product"
     in_season = any(
         0 <= (date(today.year, m, 1) - today).days <= cfg["lookahead_days"] or today.month == m
         for m in cfg["season_months"]
     )
     if giftable_host and in_season:
-        return 1.0, "gifting host, gifting season imminent"
+        return v["in_season"], "gifting host, gifting season imminent"
     if giftable_host:
-        return 0.75, "gifting host, off-season"
-    return 0.3, "host not gifting-oriented"
+        return v["off_season"], "gifting host, off-season"
+    return v["non_gift_host"], "host not gifting-oriented"
+
+
+def power_mean(parts: list[tuple[float, float]], p: float, eps: float = 1e-3) -> float:
+    """Weighted power mean of (value, weight) pairs, weights normalised to sum 1.
+    p=1 arithmetic, p=0 geometric (limit), p<0 increasingly 'all must be good' (-> minimum)."""
+    total = sum(w for _, w in parts) or 1.0
+    parts = [(max(v, eps), w / total) for v, w in parts]
+    if abs(p) < 1e-9:
+        return math.exp(sum(w * math.log(v) for v, w in parts))
+    return sum(w * v**p for v, w in parts) ** (1 / p)
 
 
 def score_publisher(
@@ -163,22 +184,21 @@ def score_publisher(
         ScoreComponent(name="scale", value=scale, weight=w["scale"], detail=scale_d),
         ScoreComponent(name="seasonality", value=season, weight=w["seasonality"], detail=season_d),
     ]
-    # score = relevance x affordability x quality (DECISIONS D8, "matching v2"):
+    # score = relevance^a x affordability^b x M_p(quality)  (docs/SCORING.md):
     # relevance ~ will they click, affordability ~ will they buy, quality ~ everything else.
-    exponent = cfg["price_exponent"]
-    quality = sum(c.value * c.weight for c in components if c.name not in ("category_fit", "price_fit"))
-    score = cat * price**exponent * quality
+    quality_parts = [(c.value, c.weight) for c in components if c.name not in ("category_fit", "price_fit")]
+    quality = power_mean(quality_parts, cfg["quality_p"])
+    score = cat ** cfg["relevance_exponent"] * price ** cfg["price_exponent"] * quality
 
     flags = []
     competing = sorted(pub.tags & set(profile.competing_tags))
     if competing:
-        # Soft penalty: scaled by how many intake samples agreed this is a competitor (default 1.0).
-        # One source of truth with the budget: a competitor host accepts our ad with probability
-        # `competitor_approval_probability`, so its expected value is score x that probability.
+        # Flag only: whether a host blocks a competing brand is the host's setting, enforced at
+        # serving (DECISIONS D21). It's rare network-wide (~6% of advertiser-host pairs), so it
+        # must not distort fit; the plan just tells the advertiser this host may need to opt in.
         share = max(profile.competing_tag_share.get(t, 1.0) for t in competing)
-        approval = catalog.config("pricing")["priors"]["competitor_approval_probability"]
-        score *= 1 - (1 - approval) * share
-        flags.append(f"competitor_conflict: host sells {', '.join(competing)} ({share:.0%} of samples agree); may block the ad")
+        flags.append(f"competitor_conflict: host also sells {', '.join(competing)} ({share:.0%} of samples agree); "
+                     "it may need to opt in to show a competing brand")
     if alignment == -1:
         score *= cfg["penalties"]["notes_misaligned"]
         flags.append(f"audience_note_conflict: {notes_d}")
@@ -233,4 +253,17 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
                 s.flags.append("weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test")
         if s.flags:
             s.reason += " Flags: " + " | ".join(s.flags)
+
+    # Don't put every egg in a basket that can refuse: if all picks are possible competitors,
+    # add the best non-competing host with a real category link as a fallback (D21).
+    picks = [s for s in scores if s.recommended]
+    is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
+    if picks and all(is_comp(s) for s in picks):
+        fallback = next((s for s in scores if not s.recommended and not is_comp(s)
+                         and s.components[0].value >= rec["min_category_fit"]), None)
+        if fallback:
+            fallback.recommended = True
+            fallback.flags.append("fallback_host: every other pick also sells this kind of product; "
+                                  "kept so the campaign can run if they don't opt in")
+            fallback.reason = (f"Recommended as fallback: {fallback.components[0].detail}. Flags: " + " | ".join(fallback.flags))
     return scores

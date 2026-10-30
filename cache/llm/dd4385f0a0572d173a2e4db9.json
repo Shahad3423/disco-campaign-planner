@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, upgrade your shave instantly.",
+      "body": "Skip the drugstore. Get a $15 starter set delivered to your door. Perfect for men sick of overpriced cartridges.",
+      "cta": "Claim the $15 set",
+      "headline_no_name": "Upgrade your shave instantly.",
+      "angle": "Convenience-focused delivery that skips the drugstore and saves money on cartridges.",
+      "claims_used": [
+        "Starter set $15",
+        "For men 20-40 who are sick of overpriced drugstore cartridges"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify your morning routine.",
+      "body": "Save time and skip the store. Get a $15 starter set designed for men who are sick of overpriced drugstore cartridges.",
+      "cta": "Get the $15 set",
+      "headline_no_name": "Simplify your morning routine.",
+      "angle": "Time-saving routine simplification for busy parents.",
+      "claims_used": [
+        "Starter set $15",
+        "For men 20-40 who are sick of overpriced drugstore cartridges"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, gift him a better shave.",
+      "body": "Looking for a great gift? Get this $15 grooming starter set for men who are sick of overpriced drugstore cartridges.",
+      "cta": "Shop the $15 set",
+      "headline_no_name": "Gift him a better shave.",
+      "angle": "Gifting angle focusing on the complete starter set as an impressive and affordable gift.",
+      "claims_used": [
+        "Starter set $15",
+        "For men 20-40 who are sick of overpriced drugstore cartridges"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "business_summary": "Subscription-based developmental play kits for babies and toddlers, designed in collaboration with child development specialists and priced at approximately $80 per kit delivered every few months.",
+  "product": "Subscription play kits",
+  "is_consumer_product": true,
+  "price_point_usd": 80.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Babies and toddlers (approx. 0-3 years)",
+  "stated_claims": [
+    "designed with child development specialists"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "child development",
+    "expert-designed"
+  ],
+  "fulfillment_notes": "Shipped every few months",
+  "relevant_tags": [
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "The play kits contain toys designed for babies and toddlers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The primary purchase model is a recurring subscription kit."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "High-quality developmental toy kits are highly popular as baby shower and early milestone gifts."
+    }
+  ],
+  "competing_tags": [
+    "toys"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "subscription_boxes",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only']",
+      "evidence": "The advertiser's product is described strictly as a '$80-ish a kit every few months' subscription play kit."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of family households, representing a high density of parents with babies or young children."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot's audience has strong gifting behaviors, which aligns well with premium toys and developmental kits as milestone gifts."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience (first-time parents), and subscription model are clearly defined, enabling immediate campaign planning.",
+  "missing_info": [
+    "Exact shipping costs and transit times",
+    "Availability of a non-subscription gifting option",
+    "Exact age range ceiling for the play kits"
+  ],
+  "clarifying_questions": [
+    "Do you offer one-time purchase/gifting options, or is the kit strictly subscription-only?",
+    "What is the exact age range covered by your kits (e.g., 0 to 36 months, or older)?",
+    "Do you offer free shipping on these kits, or is shipping charged separately?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

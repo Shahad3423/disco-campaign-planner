@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your routine, {first_name}",
+      "body": "Fuel your system with protein bars that don't taste like cardboard. The perfect addition to your wellness lineup.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Optimize your daily routine",
+      "angle": "outcome-focused wellness optimization",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your next workout, {first_name}",
+      "body": "Power through training with protein bars that don't taste like cardboard. Performance fuel designed to taste great.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Fuel your next workout",
+      "angle": "performance recovery fuel",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A delicious gift for your gym partner, {first_name}",
+      "body": "Surprise your favorite workout buddy with protein bars that don't taste like cardboard. A thoughtful treat they will actually enjoy.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "A delicious gift for your gym partner",
+      "angle": "thoughtful gifting for active friends",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}

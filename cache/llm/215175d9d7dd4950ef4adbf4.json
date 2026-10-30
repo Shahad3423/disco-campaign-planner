@@ -1,0 +1,81 @@
+{
+  "business_summary": "Hemp-extract CBD brand offering gummies, oils, and creams priced between $40 and $90 per bottle, targeting stress relief, sleep support, and exercise recovery.",
+  "product": "Hemp-extract CBD gummies, oil, and creams",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Helps with stress",
+    "Helps with sleep",
+    "Helps with exercise recovery"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "CBD gummies and oils are ingested supplements for wellness."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "The brand is a direct-to-consumer wellness business focusing on health outcomes."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "The brand offers CBD creams which are topically applied to the skin."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Hemp-extract products naturally appeal to consumers seeking plant-based wellness alternatives."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "recovery",
+    "fitness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's fitness-engaged audience has a strong crossover with wellness, aligning perfectly with exercise recovery claims."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care, making them highly receptive to stress and sleep-support products."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's science-forward audience is highly skeptical of unsubstantiated health claims, which can be a hurdle for CBD benefits."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price points, and target benefits are clearly defined, allowing us to plan placements while navigating CBD-specific platform restrictions.",
+  "missing_info": [
+    "Whether subscription purchase models are available",
+    "Specific shipping restriction details (e.g., restricted states)",
+    "THC content details and lab-testing / COA availability"
+  ],
+  "clarifying_questions": [
+    "Are your CBD products broad-spectrum, full-spectrum, or isolate, and do you have COAs (Certificates of Analysis) available?",
+    "Do you offer a subscription option for your gummies or oils?",
+    "Are there any specific US states you cannot ship to due to local hemp regulations?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

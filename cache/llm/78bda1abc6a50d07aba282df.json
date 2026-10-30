@@ -1,0 +1,44 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Gifting a mattress is highly impractical and unusual for a housewarming gift, though it technically aligns with the gifting angle."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The variant lacks any specific sustainability claims, certifications, or supply chain transparency, which this persona explicitly requires. The vague framing of longevity as eco-friendly risks being perceived as greenwashing."
+      ],
+      "passed": false
+    }
+  ]
+}

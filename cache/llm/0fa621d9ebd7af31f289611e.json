@@ -1,0 +1,62 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your hydration, {first_name}",
+      "body": "Optimize your physical state. These hydration packets stir into water and are good for workouts and travel.",
+      "cta": "Order a trial pack",
+      "headline_no_name": "Optimize your daily hydration",
+      "angle": "outcome-focused physical optimization",
+      "claims_used": [
+        "Good for workouts",
+        "Good for travel"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Power your next session, {first_name}",
+      "body": "Fuel your routine with hydration packets. Good for workouts, they stir easily into your water bottle so you can stay active.",
+      "cta": "Shop hydration trial",
+      "headline_no_name": "Power your next workout",
+      "angle": "performance-focused workout support",
+      "claims_used": [
+        "Good for workouts"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Easy hydration for {first_name}",
+      "body": "Keep up with your busy schedule. These convenient packets stir into water quickly and are good for travel and workouts.",
+      "cta": "Try a starter pack",
+      "headline_no_name": "Easy hydration on the go",
+      "angle": "convenience and time-saving utility",
+      "claims_used": [
+        "Good for travel",
+        "Good for workouts"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "No scary mornings, {first_name}",
+      "body": "Spooky season is here. Enjoy your nights out and stay hydrated. These packets stir into water and are good for hangovers.",
+      "cta": "Claim your trial",
+      "headline_no_name": "No scary mornings after",
+      "angle": "playful seasonal hangover recovery",
+      "claims_used": [
+        "Good for hangovers"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Refined hydration for {first_name}",
+      "body": "A simple, premium addition to your routine. These understated hydration packets stir into water and are good for travel and workouts.",
+      "cta": "Request a trial",
+      "headline_no_name": "Refined hydration on the move",
+      "angle": "understated quality and classic simplicity",
+      "claims_used": [
+        "Good for travel",
+        "Good for workouts"
+      ]
+    }
+  ]
+}

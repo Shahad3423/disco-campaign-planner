@@ -1,0 +1,93 @@
+{
+  "business_summary": "Organic cotton family pajamas and kids' clothing retailer targeting parents and grandparents, known for matching-family holiday pajama sets.",
+  "product": "Organic cotton family pajamas and kids' clothing",
+  "is_consumer_product": true,
+  "price_point_usd": 55.0,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": "Parents, grandparents, and children",
+  "stated_claims": [
+    "Organic cotton family pajamas and kids' clothing",
+    "Matching-family holiday pajama sets are our big seller"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category is family pajamas and kids' clothing."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Matching-family holiday pajama sets are highly gift-oriented, especially for parents and grandparents."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "The clothing is explicitly made of organic cotton."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.25,
+      "why": "Organic cotton apparel aligns closely with sustainability-minded shoppers."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.25,
+      "why": "Pajamas and kids' wear are adjacent to daily apparel basics."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "family_products",
+    "kids_products",
+    "apparel",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift in Nov-Dec highly aligns with their big seller: holiday matching-family pajama sets (planning date Oct 30)."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Audience of family households is the exact target market for matching family pajamas."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women audience matches the grandparent demographic target."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "High-AOV apparel matches the premium $40-70 per piece pricing structure."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price point, target audience, and seasonal holiday alignment are highly clear and actionable.",
+  "missing_info": [
+    "Average order value (AOV)",
+    "Specific shipping times/costs",
+    "Whether products are sold as bundles or strictly per-piece"
+  ],
+  "clarifying_questions": [
+    "Are matching family sets typically purchased as a pre-packaged bundle, or do customers select individual pieces?",
+    "Do you offer gift-wrapping options or direct-to-recipient shipping for grandparents buying holiday gifts?",
+    "What is your typical average order value (AOV) for holiday purchases?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

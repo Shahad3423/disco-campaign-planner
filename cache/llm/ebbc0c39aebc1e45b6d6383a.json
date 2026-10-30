@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, optimize your sleep recovery",
+      "body": "Built with a patented grid design. Designed for back-pain sufferers and sleepers who run hot to help you wake up ready to perform.",
+      "cta": "Shop mattresses",
+      "headline_no_name": "Optimize your sleep recovery",
+      "angle": "Performance and recovery focus using technical patented design",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, transparently engineered comfort",
+      "body": "We focus on pure utility. Features a patented grid design designed for back-pain sufferers and sleepers who run hot.",
+      "cta": "Shop patented grid",
+      "headline_no_name": "Transparently engineered comfort",
+      "angle": "Structural transparency and functional design, avoiding vague eco-claims by focusing strictly on patented engineering",
+      "claims_used": [
+        "Patented grid design",
+        "Designed for back-pain sufferers",
+        "Designed for sleepers who run hot"
+      ]
+    }
+  ]
+}

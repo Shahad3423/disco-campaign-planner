@@ -1,0 +1,98 @@
+{
+  "business_summary": "Science-led daily probiotic subscription service priced at approximately $50 per month, targeting the evidence-focused wellness demographic and avoiding impulse buyers.",
+  "product": "Probiotic subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Science-led daily probiotic subscription",
+    "About $50 a month",
+    "We want the evidence-focused wellness crowd, not impulse shoppers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "science-led",
+    "evidence-focused"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Probiotics are primarily taken for gut health benefits."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Probiotics are classified under dietary supplements."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Frequently cross-shopped and grouped with daily vitamin regimens."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Direct-to-consumer health and wellness product."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold strictly as a monthly subscription."
+    }
+  ],
+  "competing_tags": [
+    "gut_health",
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "Advertiser is a daily probiotic subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Publisher is highly impulse-friendly, while advertiser explicitly states they do not want impulse shoppers."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Audience seeks science-forward wellness, matching the advertiser's science-led, evidence-focused positioning."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience has a lower impulse tendency and responds well to high-quality, non-impulsive messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, subscription model, price point, and target audience profile are clearly defined.",
+  "missing_info": [
+    "target gender",
+    "target age range",
+    "shipping and fulfillment details",
+    "ingredient list and scientific backing details"
+  ],
+  "clarifying_questions": [
+    "Are there specific clinical trials or scientific certifications we should highlight to appeal to the evidence-focused audience?",
+    "Do you offer a trial option or one-time purchase, or is it strictly subscription-only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

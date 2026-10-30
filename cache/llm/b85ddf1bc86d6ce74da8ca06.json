@@ -1,0 +1,116 @@
+{
+  "business_summary": "High-quality, professional-grade DTC supplement brand offering NSF Certified for Sport products, targeting informed athletic consumers with an average order value of $80.",
+  "product": "Supplements",
+  "is_consumer_product": true,
+  "price_point_usd": 80.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "High-quality supplements used by pros and athletes",
+    "NSF Certified for Sport"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Quality",
+    "Athletic performance",
+    "Safety certification"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Directly overlaps with dietary supplement categories."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "The advertiser operates as a DTC wellness brand."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Shoppers buying activewear are highly likely to be the athletes and pros targeted by the brand."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness-engaged audiences have high overlap with sports supplement buyers."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Clients of personal trainers are highly informed fitness buyers looking for professional-grade supplements."
+    },
+    {
+      "tag": "wellness_services",
+      "weight": 0.5,
+      "why": "Broader wellness service buyers align with premium health optimization products."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "wellness",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in vague premium positioning / prefers discount-forward, bundle offers, and is highly price-sensitive.",
+      "evidence": "Advertiser states: 'orders around $80. Prefer informed buyers over bargain hunters.'"
+    },
+    {
+      "persona_id": "persona_003",
+      "conflict": "Disinterested in performance claims without vibe / prefers aesthetic-forward, novelty, playful.",
+      "evidence": "Advertiser focuses heavily on serious athletic performance: 'used by pros and athletes - NSF Certified for Sport.'"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers with strong wellness crossover are a perfect match for professional-grade supplements."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care align with the premium '$80' order value and performance positioning."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Direct competitor in the vitamins/supplements space, which would lead to publisher blocking."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims match the 'informed buyer' preference."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product category, target audience, certification level, and high-order value profile are well-defined and ready for matching.",
+  "missing_info": [
+    "Whether subscription options are available",
+    "Specific supplement categories offered (e.g., protein, hydration, recovery)"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription options, or are most purchases one-time?",
+    "Which product categories are your main drivers (e.g., proteins, daily vitamins, pre-workouts)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

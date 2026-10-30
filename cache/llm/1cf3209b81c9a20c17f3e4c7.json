@@ -1,0 +1,101 @@
+{
+  "business_summary": "Offers the Always Pan and other cookware in bright colors, priced around $150, targeting younger first-home buyers and wedding/housewarming gifters.",
+  "product": "Always Pan and colorful cookware",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "younger first-home buyers",
+  "stated_claims": [
+    "Always Pan and other cookware in bright colors",
+    "Great for housewarming and wedding gifts",
+    "Great for younger first-home buyers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Aesthetic-forward"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Primary environment and usage category."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Cookware is a home essential and target is first-home buyers."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly positioned as great for wedding and housewarming gifts."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "DTC cookware brand model."
+    }
+  ],
+  "competing_tags": [
+    "cookware",
+    "kitchen"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "high price sensitivity",
+      "evidence": "$150ish for the Always Pan"
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested in loud aesthetics",
+      "evidence": "cookware in bright colors"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": -1,
+      "why": "Direct competitor selling cookware and kitchen items."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home buyers with high home cross-sell affinity."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting focus matches the advertiser's positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined and fit perfectly within our network parameters.",
+  "missing_info": [
+    "Fulfillment and shipping times",
+    "Return policy specifics (especially for gifts)",
+    "Materials used (e.g., non-toxic, ceramic)"
+  ],
+  "clarifying_questions": [
+    "Do you offer gift wrapping or custom gift messaging at checkout?",
+    "Is your cookware non-toxic or chemical-free?",
+    "Do you offer free shipping on the Always Pan?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

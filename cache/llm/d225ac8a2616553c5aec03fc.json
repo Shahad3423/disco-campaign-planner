@@ -1,0 +1,109 @@
+{
+  "business_summary": "A skincare and makeup brand targeting 'skin first' individuals, primarily women aged 18-34. The brand is known for its popular products 'Boy Brow' and 'Cloud Paint' and has an average order value of around $50.",
+  "product": "Skincare and makeup",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "18-34",
+  "stated_claims": [
+    "Skincare and makeup for 'skin first' people",
+    "known for Boy Brow",
+    "known for Cloud Paint"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Core product category encompassing both skincare and makeup."
+    },
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product offering explicitly stated by the advertiser."
+    },
+    {
+      "tag": "makeup",
+      "weight": 1.0,
+      "why": "Core product offering explicitly stated by the advertiser."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Primary target demographic is women aged 18-34."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "DTC brand context aligns well with the digital-first checkout ecosystem."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "An adjacent category for consumers focused on skin-first wellness and self-care."
+    }
+  ],
+  "competing_tags": [
+    "beauty",
+    "skincare",
+    "makeup"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language and influencer positioning",
+      "evidence": "Advertiser targets a young demographic (18-34) with trendy, cult-classic products like 'Boy Brow' and 'Cloud Paint'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Direct competitor in the beauty, skincare, and makeup space."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged audience with a noted strong crossover with wellness and beauty."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience is older, mid-life women, which conflicts with the advertiser's 18-34 target range."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic clash with the youthful, trendy aesthetic of the advertiser."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims align with 'skin first' messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, and order value are clearly defined, making it highly actionable for placement.",
+  "missing_info": [
+    "specific shipping terms",
+    "ingredient standards or clean beauty certifications",
+    "whether a subscription purchase model is offered"
+  ],
+  "clarifying_questions": [
+    "What is your average individual item price point?",
+    "Do you offer subscription options for your skincare products, or are they strictly one-time purchases?",
+    "Are there any specific product ingredients or clean-beauty values (e.g., vegan, cruelty-free) we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

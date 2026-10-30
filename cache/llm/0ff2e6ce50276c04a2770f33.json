@@ -1,0 +1,106 @@
+{
+  "business_summary": "Weekly subscription service delivering fully prepared meals priced at $11-14 per meal, heating in 2 minutes. Targets busy professionals and fitness enthusiasts.",
+  "product": "Fully prepared meals",
+  "is_consumer_product": true,
+  "price_point_usd": 12.5,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fully prepared meals that go from fridge to plate in 2 minutes",
+    "$11-14 per meal",
+    "weekly subscription"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "Core product category of prepared/ready-to-eat meals."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business operates strictly on a weekly subscription model."
+    },
+    {
+      "tag": "convenience",
+      "weight": 1.0,
+      "why": "Meals go from fridge to plate in 2 minutes, targeting busy professionals."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent category representing food/nutrition purchases."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Highly relevant to the targeted 'fitness folks' interested in health and nutrition."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "convenience",
+    "meal_kits",
+    "subscription_services",
+    "fitness",
+    "wellness",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's convenience-seeking grocery buyers are an excellent fit for prepared meals."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's fitness-engaged audience directly matches the advertiser's 'fitness folks' target."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid's self-care and fitness spenders align with the target market."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Kitchenly is a direct competitor selling meal kits on subscription."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's urban professional audience perfectly matches the 'busy professionals' target."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined and highly suitable for the network.",
+  "missing_info": [
+    "Specific dietary/nutritional focus (e.g., keto, high-protein, organic)",
+    "Average order value (AOV) or minimum meal count per order",
+    "One-time trial availability"
+  ],
+  "clarifying_questions": [
+    "What is the average order value (AOV) or minimum meal count required per weekly delivery?",
+    "Are the meals tailored to specific dietary needs (e.g., high-protein, low-carb, organic)?",
+    "Do you offer a one-time trial purchase option, or is it strictly subscription-only from day one?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

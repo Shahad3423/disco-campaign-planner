@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, organic produce to share with your pet",
+      "body": "Get organic produce and pantry items delivered in weekly or biweekly boxes. Share organic ingredients with your pets at up to 40% off.",
+      "cta": "Get my organic box",
+      "headline_no_name": "Organic produce to share with your pet",
+      "angle": "Highlighting organic ingredient transparency and emotional connection by framing organic produce as quality ingredients to share with pets.",
+      "claims_used": [
+        "Organic produce and pantry items delivered at up to 40% off supermarkets",
+        "Weekly or biweekly boxes"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "business_summary": "Mid-century modern furniture brand selling high-ticket sofas directly to consumers, targeting individuals moving into new homes or apartments.",
+  "product": "Mid-century modern furniture (sofas)",
+  "is_consumer_product": true,
+  "price_point_usd": 1500.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Mid-century modern furniture shipped direct",
+    "Sofas cost around $1,000-2,000",
+    "Delivery takes a couple of weeks",
+    "Targeting people in new homes or apartments"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Delivery takes a couple of weeks",
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category. The advertiser sells home furniture."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Highly adjacent category; buyers of rugs, bedding, and textiles are likely decorating or moving."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The advertiser operates a direct-to-consumer shipping model."
+    },
+    {
+      "tag": "bedding",
+      "weight": 0.25,
+      "why": "Weakly adjacent; shoppers purchasing bedding are often setting up new homes or bedrooms."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Weakly adjacent; kitchen buyers are often moving or upgrading their homes."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "Disinterested in delayed fulfillment and prefers speed",
+      "evidence": "Advertiser states 'delivery takes a couple of weeks', which conflicts with convenience-first speed expectations."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and has high price sensitivity",
+      "evidence": "Sofas cost $1,000-$2,000, which is a high-ticket premium price point."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart focuses on impulse-friendly, high-frequency, and instant delivery, whereas furniture is a high-consideration, multi-week delivery purchase."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed targets design-conscious buyers with a high cross-sell to home products, aligning perfectly with mid-century modern aesthetic furniture."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods explicitly notes that new-home life events drive purchases, matching the advertiser's core audience of people in new homes/apartments."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, audience segment, and fulfillment parameters are clearly defined and actionable.",
+  "missing_info": [
+    "Target profit margin / CPA goals",
+    "Geographic limitations or target regions",
+    "Specific materials or sustainability values (if any)"
+  ],
+  "clarifying_questions": [
+    "What is your target CPA or customer acquisition cost goal for these sofas?",
+    "Do you offer free shipping, or is delivery an additional fee on top of the $1,000-$2,000 price?",
+    "Are there specific metropolitan areas or regions you want to focus your targeting on?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

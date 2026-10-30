@@ -1,0 +1,97 @@
+{
+  "business_summary": "VIP membership program offering women's activewear at $25-50 per piece, billed monthly with a skip option.",
+  "product": "Women's activewear VIP membership",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "VIP membership gives women activewear at $25-50 per piece, billed monthly with skip option."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category offered by the advertiser."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Primary target demographic for the activewear."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business operates on a monthly subscription/membership model."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Activewear is a major subcategory of apparel."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Yoga practitioners are highly likely to purchase activewear."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Consumers taking fitness classes are active buyers of workout clothes."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "billed monthly with skip option"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Direct category match (activewear, women, subscription) with fitness-engaged shoppers."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Audience actively spends on fitness classes and self-care, making them prime candidates for workout gear."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Apparel publisher focusing on activewear and comfort."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, subscription model, and target audience are clearly defined and ready for mapping.",
+  "missing_info": [
+    "Specific monthly membership fee (if any, separate from the per-piece pricing)",
+    "Fulfillment or shipping policies",
+    "Sizing inclusivity (e.g., if plus sizes are offered)"
+  ],
+  "clarifying_questions": [
+    "Is there a flat monthly membership fee to remain in the VIP program, or does the monthly bill only reflect the items purchased?",
+    "Do you offer extended or plus sizing for your activewear line?",
+    "What are your typical shipping times and return policies for members?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

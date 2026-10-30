@@ -1,0 +1,83 @@
+{
+  "business_summary": "An apparel brand selling comfort socks and tees with a buy-one-give-one model that donates an item to individuals experiencing homelessness for every purchase made.",
+  "product": "Comfort socks and tees",
+  "is_consumer_product": true,
+  "price_point_usd": 65.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Every purchase donates an item to someone experiencing homelessness",
+    "Average order $65",
+    "Great for gifting",
+    "Great for families buying multi-packs"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "social_good",
+    "charitable_donation",
+    "homelessness_support"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "socks",
+      "weight": 1.0,
+      "why": "The brand explicitly sells comfort socks as a core product."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Socks and tees are core everyday basic apparel items."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Socks and tees are clothing items that fall directly under apparel."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser notes that their products are great for gifting."
+    }
+  ],
+  "competing_tags": [
+    "socks",
+    "basics"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "premium_basics",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot sells socks and basics, and notes that its audience responds strongly to social-good messaging and gifting, which perfectly matches this advertiser."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly targets family households, which aligns with the advertiser's focus on families buying multi-packs."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product offerings (socks and tees), social-good mission, target audiences (families and gifters), and average order value ($65) are clearly stated and easy to align with publishers.",
+  "missing_info": [
+    "Individual item price range",
+    "Fabric and materials used",
+    "Shipping/fulfillment times"
+  ],
+  "clarifying_questions": [
+    "What is the starting retail price for a single pair of socks and a single tee?",
+    "Are your products made from organic or sustainable materials?",
+    "Do you offer any subscription options for your multi-packs?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,48 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Need energy, {first_name}? Here's backup.",
+      "body": "Fuel your busy days with the world's strongest coffee. Get easy, automatic deliveries so you never run out during the morning rush.",
+      "cta": "Subscribe and save",
+      "headline_no_name": "Need energy? Here is your backup.",
+      "angle": "time-saving",
+      "claims_used": [
+        "The world's strongest coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Spooky season fuel for {first_name}",
+      "body": "Wake up the dead with the world's strongest coffee. Bold flavor and high-caffeine cold brew cans that look as good as they taste.",
+      "cta": "Shop cold brew cans",
+      "headline_no_name": "Spooky season fuel for late nights",
+      "angle": "playful",
+      "claims_used": [
+        "The world's strongest coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Get more kick for your buck, {first_name}",
+      "body": "Save on our starter bundles. Experience the world's strongest coffee in beans, grounds, or cans with our best value deals.",
+      "cta": "Shop coffee bundles",
+      "headline_no_name": "Get more kick for your buck",
+      "angle": "bundle offers",
+      "claims_used": [
+        "The world's strongest coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Power your next workout, {first_name}",
+      "body": "Crush your fitness goals. Fuel your active lifestyle with the world's strongest coffee, perfect for a high-powered pre-workout kick.",
+      "cta": "Shop strongest beans",
+      "headline_no_name": "Power your next workout",
+      "angle": "performance claims",
+      "claims_used": [
+        "The world's strongest coffee"
+      ]
+    }
+  ]
+}

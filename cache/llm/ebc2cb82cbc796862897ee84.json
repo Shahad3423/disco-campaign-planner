@@ -1,0 +1,101 @@
+{
+  "business_summary": "DTC men's grooming brand offering razors, blades, shaving cream, and body wash. Features a $15 starter set targeting men aged 20-40 looking for an affordable alternative to drugstore cartridges.",
+  "product": "Razors, blades, shaving cream, and body wash",
+  "is_consumer_product": true,
+  "price_point_usd": 15.0,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "male",
+  "target_age_range": "20-40",
+  "stated_claims": [
+    "Starter set $15",
+    "For men 20-40 who are sick of overpriced drugstore cartridges"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "Directly targets men aged 20-40."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Razors and body wash are daily personal care essentials."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Shaving cream and body wash are adjacent to skincare."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Body wash and shaving products are used in the bath/shower."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Operates on a direct-to-consumer model."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "premium_basics",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in=['trendy language', 'loud aesthetics', 'influencer positioning'] and prefers craftsmanship/heritage",
+      "evidence": "The brand uses value-focused, aggressive positioning ('sick of overpriced drugstore cartridges') which conflicts with understated, heritage-focused preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Has a strong male audience segment and fitness-engaged shoppers who frequently purchase personal care/grooming products."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, which is a complete demographic mismatch for men's razors."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "High-AOV older female audience with conservative sensibilities, mismatching a budget-friendly men's grooming brand."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Sells basics and underwear with strong gifting potential, aligning well with daily essentials for men."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Younger millennial audience aligns well with the 20-40 target age range, and beauty/skincare is highly adjacent."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target demographic, and entry price point are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Whether the purchase model is strictly subscription-based or allows one-time purchases",
+    "Product ingredients or formulation details (e.g., natural, non-toxic)",
+    "Average order value (AOV) beyond the starter set"
+  ],
+  "clarifying_questions": [
+    "Is your business model strictly subscription-based, or can customers make one-time purchases?",
+    "Are there any specific product values we should highlight, such as natural ingredients or cruelty-free?",
+    "What is the typical customer lifetime value (LTV) or average order value (AOV) beyond the $15 starter set?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

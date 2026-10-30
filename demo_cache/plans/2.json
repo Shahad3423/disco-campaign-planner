@@ -22,14 +22,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "activewear",
-    "weight": 1.0,
-    "why": "Core category of the brand's products."
-   },
-   {
     "tag": "sustainable",
     "weight": 1.0,
     "why": "Key product value stated as made from recycled ocean plastic."
+   },
+   {
+    "tag": "activewear",
+    "weight": 1.0,
+    "why": "Core category of the brand's products."
    },
    {
     "tag": "women",
@@ -106,6 +106,114 @@
   }
  },
  "publishers": [
+  {
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.6778,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches activewear, women, apparel (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.71,
+     "weight": 0.3,
+     "detail": "82% female; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7555579268292681,
+     "weight": 0.35,
+     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+     "name": "scale",
+     "value": 0.6060874465244197,
+     "weight": 0.05,
+     "detail": "22.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+  },
+  {
+   "publisher_id": "pub_017",
+   "publisher_name": "Cloudfoot",
+   "score": 0.6219,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches sustainable, activewear, apparel (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.56,
+     "weight": 0.3,
+     "detail": "52% female; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7615823170731706,
+     "weight": 0.35,
+     "detail": "reaches The Wellness Optimizer best (host fit 0.64)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Cloudfoot features sustainable activewear and shoes with comfort + sustainability messaging."
+    },
+    {
+     "name": "scale",
+     "value": 0.2141123900358073,
+     "weight": 0.05,
+     "detail": "5.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches sustainable, activewear, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+  },
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
@@ -207,62 +315,8 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
-  },
-  {
-   "publisher_id": "pub_002",
-   "publisher_name": "Movewell",
-   "score": 0.305,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches activewear, women, apparel (specific) (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.71,
-     "weight": 0.3,
-     "detail": "82% female; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.5)"
-    },
-    {
-     "name": "persona_fit",
-     "value": 0.7555579268292681,
-     "weight": 0.35,
-     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.2,
-     "detail": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
-    },
-    {
-     "name": "scale",
-     "value": 0.6060874465244197,
-     "weight": 0.05,
-     "detail": "22.0M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
+   "recommended": false,
+   "reason": "Excluded: score 0.33 below cutoff 0.34; weakest signal category_fit (matches yoga, fitness_classes (specific) (multiplier))."
   },
   {
    "publisher_id": "pub_004",
@@ -313,8 +367,8 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
+   "recommended": false,
+   "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_005",
@@ -365,62 +419,8 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
-  },
-  {
-   "publisher_id": "pub_017",
-   "publisher_name": "Cloudfoot",
-   "score": 0.2798,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches activewear, sustainable, apparel (specific) (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.56,
-     "weight": 0.3,
-     "detail": "52% female; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 1.0,
-     "detail": "host income mid-high suits premium (multiplier ^0.5)"
-    },
-    {
-     "name": "persona_fit",
-     "value": 0.7615823170731706,
-     "weight": 0.35,
-     "detail": "reaches The Wellness Optimizer best (host fit 0.64)"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.2,
-     "detail": "Cloudfoot features sustainable activewear and shoes with comfort + sustainability messaging."
-    },
-    {
-     "name": "scale",
-     "value": 0.2141123900358073,
-     "weight": 0.05,
-     "detail": "5.8M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
+   "recommended": false,
+   "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_010",
@@ -472,7 +472,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+   "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches apparel (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_006",
@@ -524,7 +524,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+   "reason": "Excluded: score 0.24 below cutoff 0.34; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_012",
@@ -1165,7 +1165,7 @@
    "best_publishers": [
     "pub_016",
     "pub_002",
-    "pub_003"
+    "pub_017"
    ]
   },
   {
@@ -1181,7 +1181,7 @@
    "best_publishers": [
     "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_016"
    ]
   },
   {
@@ -1197,7 +1197,7 @@
    "best_publishers": [
     "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_016"
    ]
   },
   {
@@ -1212,8 +1212,8 @@
    ],
    "best_publishers": [
     "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_016"
    ]
   },
   {
@@ -1229,7 +1229,7 @@
    "best_publishers": [
     "pub_002",
     "pub_017",
-    "pub_005"
+    "pub_016"
    ]
   },
   {
@@ -1243,9 +1243,9 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
-    "pub_003",
     "pub_017",
-    "pub_016"
+    "pub_016",
+    "pub_002"
    ]
   },
   {
@@ -1259,9 +1259,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_005",
-    "pub_004",
-    "pub_016"
+    "pub_016",
+    "pub_002",
+    "pub_017"
    ]
   },
   {
@@ -1276,8 +1276,8 @@
    ],
    "best_publishers": [
     "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_016"
    ]
   },
   {
@@ -1293,7 +1293,7 @@
    "best_publishers": [
     "pub_016",
     "pub_002",
-    "pub_004"
+    "pub_017"
    ]
   },
   {
@@ -1316,35 +1316,35 @@
  "creatives": [
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, upgrade your workout gear systematically",
-   "body": "Optimize your routine with sustainable activewear for women made from recycled ocean plastic. High-performance gear for your system.",
+   "headline": "{first_name}, optimize your activewear.",
+   "body": "Engineered for your system. Our sustainable activewear brand for women uses materials made from recycled ocean plastic.",
    "cta": "Shop activewear",
-   "headline_no_name": "Upgrade your workout gear systematically",
-   "angle": "outcome-focused",
+   "headline_no_name": "Optimize your activewear.",
+   "angle": "Focuses on material utility and system-oriented optimization with transparent ocean plastic claims.",
    "claims_used": [
-    "Sustainable activewear brand for women",
-    "Made from recycled ocean plastic"
+    "Made from recycled ocean plastic",
+    "Sustainable activewear brand for women"
    ]
   },
   {
    "persona_id": "persona_009",
-   "headline": "Fuel your training with purpose",
-   "body": "Built for rigorous training. Discover sustainable activewear for women made from recycled ocean plastic to support your intense workouts.",
-   "cta": "Shop performance",
-   "headline_no_name": "Fuel your training with purpose",
-   "angle": "performance claims",
+   "headline": "Activewear built to perform, {first_name}.",
+   "body": "Gear up for your next workout. Discover a sustainable activewear brand for women, crafted from recycled ocean plastic.",
+   "cta": "Shop premium gear",
+   "headline_no_name": "Activewear built to perform.",
+   "angle": "Leans into performance-focused language for active training, avoiding fashion-only positioning.",
    "claims_used": [
-    "Sustainable activewear brand for women",
-    "Made from recycled ocean plastic"
+    "Made from recycled ocean plastic",
+    "Sustainable activewear brand for women"
    ]
   },
   {
    "persona_id": "persona_006",
-   "headline": "{first_name}, shop conscious activewear",
-   "body": "Support sustainability with sustainable activewear for women made from recycled ocean plastic. Ditch fast fashion for good.",
-   "cta": "See The Collection",
-   "headline_no_name": "Shop conscious activewear today",
-   "angle": "specific sustainability claims and eco-friendly choices",
+   "headline": "{first_name}, wear the change.",
+   "body": "No vague eco-claims. Our sustainable activewear brand for women is made from recycled ocean plastic to reduce waste.",
+   "cta": "Shop sustainable",
+   "headline_no_name": "Wear the change.",
+   "angle": "Directly addresses sustainability and material sourcing to appeal to eco-conscious, greenwash-skeptical buyers.",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1354,29 +1354,25 @@
  "reviews": [
   {
    "persona_id": "persona_001",
-   "persona_fit": 3,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "A bit generic on the optimization angle given limited stated claims"
-   ],
+   "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_009",
-   "persona_fit": 3,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Leans heavily into performance claims without technical fabric details"
-   ],
+   "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_006",
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1396,189 +1392,200 @@
    "price_source": "tier_default",
    "gross_margin": 0.6,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.3,
    "max_affordable_cac": 70.2,
    "target_cpa": 49.14,
    "assumptions": [
     "Price not given; assumed $90 for a 'premium' product.",
-    "Gross margin not given; assumed 60% (typical for apparel).",
+    "No target CPA/ROAS or margin given; assumed 60% gross margin (typical for apparel). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($90 x 60% margin x 1.3 orders = $70.20)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $49.14 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $49.14 x click-to-purchase rate (1.0%-3.5% for apparel). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.74,
-    "mid": 1.47,
-    "high": 2.46
+    "low": 0.49,
+    "mid": 0.98,
+    "high": 1.72
    },
    "cpm_bid": null,
    "target_cpa": 49.14,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 3890.0,
+   "monthly_budget_usd": 1320.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 129.67,
+   "delivery_goal": "budget",
+   "expected_impressions": 69047,
+   "expected_reach": 43154,
+   "goal_feasible": true,
+   "daily_cap_usd": 44.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 3889.41,
-   "exploration_reserve_usd": 583.5,
-   "exploration_candidates": [
-    "Heartfoot",
-    "Everbody"
-   ],
+   "learning_budget_needed_usd": 1316.47,
+   "exploration_reserve_usd": 0.0,
+   "exploration_candidates": [],
    "allocations": [
-    {
-     "publisher_id": "pub_016",
-     "publisher_name": "Stride & Stem",
-     "share": 0.175,
-     "budget_usd": 682.46,
-     "cpc_bid_usd": 2.06,
-     "start_bid_usd": 1.44,
-     "expected_clicks": {
-      "low": 265.0,
-      "mid": 331.0,
-      "high": 398.0
-     },
-     "expected_conversions": {
-      "low": 7.0,
-      "mid": 13.9,
-      "high": 23.2
-     },
-     "capacity_usd": 5537.28,
-     "requires_host_approval": false,
-     "rationale": "score 0.39 -> fit x1.40 on CTR/CVR; max bid $2.06 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
-    {
-     "publisher_id": "pub_003",
-     "publisher_name": "Studiogrid",
-     "share": 0.151,
-     "budget_usd": 587.76,
-     "cpc_bid_usd": 1.9,
-     "start_bid_usd": 1.33,
-     "expected_clicks": {
-      "low": 247.0,
-      "mid": 309.0,
-      "high": 371.0
-     },
-     "expected_conversions": {
-      "low": 6.0,
-      "mid": 12.0,
-      "high": 19.9
-     },
-     "capacity_usd": 19984.44,
-     "requires_host_approval": false,
-     "rationale": "score 0.33 -> fit x1.29 on CTR/CVR; max bid $1.90 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.138,
-     "budget_usd": 536.88,
-     "cpc_bid_usd": 1.81,
-     "start_bid_usd": 1.27,
+     "share": 0.402,
+     "budget_usd": 530.22,
+     "cpc_bid_usd": 1.38,
+     "start_bid_usd": 0.97,
      "expected_clicks": {
-      "low": 237.0,
-      "mid": 297.0,
-      "high": 356.0
+      "low": 307.0,
+      "mid": 384.0,
+      "high": 461.0
      },
      "expected_conversions": {
-      "low": 5.5,
-      "mid": 10.9,
-      "high": 18.2
+      "low": 5.4,
+      "mid": 10.8,
+      "high": 18.8
      },
-     "capacity_usd": 11748.68,
+     "capacity_usd": 25502.4,
+     "expected_impressions": 22870,
+     "expected_reach": 14294,
      "requires_host_approval": true,
-     "rationale": "score 0.30 -> fit x1.23 on CTR/CVR; max bid $1.81 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
-    },
-    {
-     "publisher_id": "pub_004",
-     "publisher_name": "Marlowe & Co.",
-     "share": 0.13,
-     "budget_usd": 504.14,
-     "cpc_bid_usd": 1.76,
-     "start_bid_usd": 1.23,
-     "expected_clicks": {
-      "low": 229.0,
-      "mid": 286.0,
-      "high": 344.0
-     },
-     "expected_conversions": {
-      "low": 5.1,
-      "mid": 10.2,
-      "high": 17.1
-     },
-     "capacity_usd": 10564.4,
-     "requires_host_approval": false,
-     "rationale": "score 0.29 -> fit x1.19 on CTR/CVR; max bid $1.76 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
-    {
-     "publisher_id": "pub_005",
-     "publisher_name": "Linden Park",
-     "share": 0.129,
-     "budget_usd": 502.73,
-     "cpc_bid_usd": 1.75,
-     "start_bid_usd": 1.22,
-     "expected_clicks": {
-      "low": 230.0,
-      "mid": 287.0,
-      "high": 345.0
-     },
-     "expected_conversions": {
-      "low": 5.1,
-      "mid": 10.2,
-      "high": 17.1
-     },
-     "capacity_usd": 7742.48,
-     "requires_host_approval": false,
-     "rationale": "score 0.29 -> fit x1.19 on CTR/CVR; max bid $1.75 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.68 -> relative fit x1.40 on CTR/CVR; max bid $1.38 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.127,
-     "budget_usd": 492.52,
-     "cpc_bid_usd": 1.74,
-     "start_bid_usd": 1.22,
+     "share": 0.369,
+     "budget_usd": 486.49,
+     "cpc_bid_usd": 1.31,
+     "start_bid_usd": 0.92,
      "expected_clicks": {
-      "low": 226.0,
-      "mid": 283.0,
-      "high": 340.0
+      "low": 297.0,
+      "mid": 371.0,
+      "high": 446.0
      },
      "expected_conversions": {
       "low": 5.0,
-      "mid": 10.0,
-      "high": 16.7
+      "mid": 9.9,
+      "high": 17.3
      },
-     "capacity_usd": 2851.64,
+     "capacity_usd": 6081.54,
+     "expected_impressions": 23199,
+     "expected_reach": 14499,
      "requires_host_approval": true,
-     "rationale": "score 0.28 -> fit x1.18 on CTR/CVR; max bid $1.74 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.62 -> relative fit x1.33 on CTR/CVR; max bid $1.31 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+    },
+    {
+     "publisher_id": "pub_016",
+     "publisher_name": "Stride & Stem",
+     "share": 0.23,
+     "budget_usd": 303.29,
+     "cpc_bid_usd": 1.04,
+     "start_bid_usd": 0.73,
+     "expected_clicks": {
+      "low": 233.0,
+      "mid": 292.0,
+      "high": 350.0
+     },
+     "expected_conversions": {
+      "low": 3.1,
+      "mid": 6.2,
+      "high": 10.8
+     },
+     "capacity_usd": 2111.81,
+     "expected_impressions": 22978,
+     "expected_reach": 14361,
+     "requires_host_approval": false,
+     "rationale": "score 0.39 -> relative fit x1.06 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $3,890, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,320, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $49.14 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_002",
+     "start_bid": 0.97,
+     "max_bid": 1.38,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_017",
+     "start_bid": 0.92,
+     "max_bid": 1.31,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_016",
+     "start_bid": 0.73,
+     "max_bid": 1.04,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
     "pub_002",
-    "pub_003",
-    "pub_004",
-    "pub_005",
     "pub_016",
     "pub_017"
    ],
    "publishers_exclude": [
     {
+     "id": "pub_003",
+     "reason": "Excluded: score 0.33 below cutoff 0.34; weakest signal category_fit (matches yoga, fitness_classes (specific) (multiplier))."
+    },
+    {
+     "id": "pub_004",
+     "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+    },
+    {
+     "id": "pub_005",
+     "reason": "Excluded: score 0.29 below cutoff 0.34; weakest signal category_fit (matches women, apparel (category only) (multiplier))."
+    },
+    {
      "id": "pub_010",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+     "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches apparel (category only) (multiplier))."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+     "reason": "Excluded: score 0.24 below cutoff 0.34; weakest signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
     },
     {
      "id": "pub_012",
@@ -1651,11 +1658,11 @@
     "publisher_ids": [
      "pub_016",
      "pub_002",
-     "pub_003"
+     "pub_017"
     ],
-    "headline_template": "{first_name}, upgrade your workout gear systematically",
-    "headline_no_name": "Upgrade your workout gear systematically",
-    "body": "Optimize your routine with sustainable activewear for women made from recycled ocean plastic. High-performance gear for your system.",
+    "headline_template": "{first_name}, optimize your activewear.",
+    "headline_no_name": "Optimize your activewear.",
+    "body": "Engineered for your system. Our sustainable activewear brand for women uses materials made from recycled ocean plastic.",
     "cta": "Shop activewear"
    },
    {
@@ -1664,12 +1671,12 @@
     "publisher_ids": [
      "pub_017",
      "pub_002",
-     "pub_003"
+     "pub_016"
     ],
-    "headline_template": "Fuel your training with purpose",
-    "headline_no_name": "Fuel your training with purpose",
-    "body": "Built for rigorous training. Discover sustainable activewear for women made from recycled ocean plastic to support your intense workouts.",
-    "cta": "Shop performance"
+    "headline_template": "Activewear built to perform, {first_name}.",
+    "headline_no_name": "Activewear built to perform.",
+    "body": "Gear up for your next workout. Discover a sustainable activewear brand for women, crafted from recycled ocean plastic.",
+    "cta": "Shop premium gear"
    },
    {
     "variant_id": "v3",
@@ -1677,12 +1684,12 @@
     "publisher_ids": [
      "pub_017",
      "pub_002",
-     "pub_003"
+     "pub_016"
     ],
-    "headline_template": "{first_name}, shop conscious activewear",
-    "headline_no_name": "Shop conscious activewear today",
-    "body": "Support sustainability with sustainable activewear for women made from recycled ocean plastic. Ditch fast fashion for good.",
-    "cta": "See The Collection"
+    "headline_template": "{first_name}, wear the change.",
+    "headline_no_name": "Wear the change.",
+    "body": "No vague eco-claims. Our sustainable activewear brand for women is made from recycled ocean plastic to reduce waste.",
+    "cta": "Shop sustainable"
    }
   ],
   "frequency_cap": {
@@ -1720,13 +1727,10 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 0.0
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   "persona_001",
-   "persona_009"
-  ]
+  "rounds": 1,
+  "rewritten": []
  }
 }

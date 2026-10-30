@@ -39,8 +39,6 @@ priors:
   # better than average should click and convert above that average (up to x1.4), a weak fit below it
   # (down to x0.6). It's a ratio to the average, not a probability, so > 1 is intended.
   relative_fit_multiplier: {min: 0.6, max: 1.4}
-  # [assumed] a host that sells a competing product approves our ad with this probability
-  competitor_approval_probability: 0.4
   # [assumed] share of a host's monthly impressions one advertiser can realistically win in month one
   share_of_voice_cap: 0.05
   # [assumed] average impressions per unique shopper over a flight (frequency cap is 3/week), for reach

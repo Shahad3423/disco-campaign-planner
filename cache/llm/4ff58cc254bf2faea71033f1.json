@@ -1,0 +1,66 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, save up to 40% on organic groceries",
+      "body": "Get organic produce and pantry items delivered weekly or biweekly at up to 40% off supermarket prices. Great for budget-aware homes.",
+      "cta": "Subscribe and save",
+      "headline_no_name": "Save up to 40% on organic groceries",
+      "angle": "clear value props",
+      "claims_used": [
+        "Organic produce and pantry items delivered at up to 40% off supermarkets",
+        "Weekly or biweekly boxes",
+        "Targeting budget-aware households who care about food waste"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, skip the store this Halloween",
+      "body": "Get organic produce and pantry items delivered in weekly or biweekly boxes. Perfect for busy parents prepping for a fun Halloween.",
+      "cta": "Get weekly boxes",
+      "headline_no_name": "Skip the grocery store this Halloween",
+      "angle": "time-saving",
+      "claims_used": [
+        "Organic produce and pantry items delivered at up to 40% off supermarkets",
+        "Weekly or biweekly boxes"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Reduce food waste with organic deliveries, {first_name}",
+      "body": "Support sustainability. Get organic produce and pantry items delivered in weekly or biweekly boxes designed to prevent food waste.",
+      "cta": "Choose my box",
+      "headline_no_name": "Reduce food waste with organic deliveries",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Weekly or biweekly boxes",
+        "Targeting budget-aware households who care about food waste",
+        "Organic produce and pantry items delivered at up to 40% off supermarkets"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, get organic groceries on autopilot",
+      "body": "Enjoy organic produce and pantry items delivered straight to your door. Set up easy weekly or biweekly subscription boxes in seconds.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Get organic groceries on autopilot",
+      "angle": "subscription perks",
+      "claims_used": [
+        "Organic produce and pantry items delivered at up to 40% off supermarkets",
+        "Weekly or biweekly boxes"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "Pure, honest organic ingredients, {first_name}",
+      "body": "Get quality organic produce and pantry items delivered in weekly or biweekly boxes. Real food with simple, transparent ingredients.",
+      "cta": "Shop organic boxes",
+      "headline_no_name": "Pure, honest organic ingredients",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Organic produce and pantry items delivered at up to 40% off supermarkets",
+        "Weekly or biweekly boxes"
+      ]
+    }
+  ]
+}

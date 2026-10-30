@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "A functional soda for your active days, {first_name}.",
+      "body": "Support your active lifestyle with prebiotic and apple cider vinegar soda. A functional, refreshing option for about $2.50 a can.",
+      "cta": "Shop prebiotic soda",
+      "headline_no_name": "A functional soda for your active days.",
+      "angle": "Focuses on functional ingredients for an active lifestyle, avoiding trend-focused or fashion-only positioning.",
+      "claims_used": [
+        "Soda with apple cider vinegar and prebiotics",
+        "About $2.50 a can"
+      ]
+    }
+  ]
+}

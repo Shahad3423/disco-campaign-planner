@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "A premium kitchen gift for {first_name}",
+      "body": "Gift this squeeze-bottle olive oil combo. Two bottles, about $20, perfect for everyday cooking and finishing.",
+      "cta": "Shop the gift set",
+      "headline_no_name": "A premium kitchen gift for your favorite cook",
+      "angle": "Focusing on premium presentation and giftability with a two-bottle gift combo",
+      "claims_used": [
+        "Squeeze-bottle olive oil for everyday cooking and finishing",
+        "Two bottles, about $20 for a combo"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, elevate your daily cooking",
+      "body": "Use real olive oil for everyday cooking and finishing. Get this convenient two-bottle squeeze combo for about $20.",
+      "cta": "Shop the combo",
+      "headline_no_name": "Elevate your daily cooking naturally",
+      "angle": "Focusing on clean, daily ingredient transparency for home meal optimization",
+      "claims_used": [
+        "Squeeze-bottle olive oil for everyday cooking and finishing",
+        "Two bottles, about $20 for a combo"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Great value for {first_name}: Two bottles for $20",
+      "body": "Get this squeeze-bottle olive oil combo. Two bottles, about $20 for everyday cooking and finishing.",
+      "cta": "Buy the combo set",
+      "headline_no_name": "Great kitchen value: Two bottles for $20",
+      "angle": "Emphasizing the bundle value and clear pricing of the two-bottle offer",
+      "claims_used": [
+        "Squeeze-bottle olive oil for everyday cooking and finishing",
+        "Two bottles, about $20 for a combo"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, a kitchen essential redefined",
+      "body": "Olive oil designed for everyday cooking and finishing. Enjoy the precision of this two-bottle squeeze combo for about $20.",
+      "cta": "Shop the duo",
+      "headline_no_name": "A kitchen essential redefined",
+      "angle": "Focusing on a classic, understated culinary tool for everyday quality",
+      "claims_used": [
+        "Squeeze-bottle olive oil for everyday cooking and finishing",
+        "Two bottles, about $20 for a combo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "business_summary": "A non-profit organization that funds clean water projects in developing countries, seeking to acquire recurring monthly donors.",
+  "product": "Recurring monthly donation for clean water projects",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "We fund clean water projects in developing countries.",
+    "$20 a month is our typical gift."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "charity",
+    "clean water",
+    "social good",
+    "sustainability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Shoppers who prioritize sustainability are highly aligned with supporting global clean water initiatives."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The advertiser is looking for recurring monthly donors, making subscription-familiar shoppers a good fit."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "Looking to turn thank-you page visitors into small recurring donors."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience responds well to social-good messaging, which perfectly aligns with a clean water charity."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to sustainability claims are highly likely to support clean water projects."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Audience resonates with sustainability claims."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Audience responds well to sustainability messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The offer is clear, the target model (recurring donation) is specified, and the typical gift amount is provided.",
+  "missing_info": [
+    "tax-deductibility status of the donations",
+    "specific countries where clean water projects are funded",
+    "whether one-time donations are also accepted on the landing page"
+  ],
+  "clarifying_questions": [
+    "Are these donations tax-deductible for US donors?",
+    "Do you accept one-time donations on the landing page, or is it strictly recurring?",
+    "Which specific countries or regions do your clean water projects support?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

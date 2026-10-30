@@ -1,0 +1,64 @@
+{
+  "business_summary": "Retailer of firearms, ammunition, and accessories targeting outdoor and hunting audiences, requiring age verification (18/21+) and FFL shipping for firearms.",
+  "product": "Firearms, ammunition, and accessories",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": "18/21+",
+  "stated_claims": [
+    "Customers must be 18/21+",
+    "Guns must ship to an FFL (Federal Firearms Licensee)"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Firearms must be shipped to a Federal Firearms Licensee (FFL).",
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Outdoor and hunting enthusiasts frequently use performance and rugged activewear for outdoor activities."
+    },
+    {
+      "tag": "men",
+      "weight": 0.25,
+      "why": "Demographic alignment with a significant portion of the outdoor and hunting market."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "multi-step purchases",
+      "evidence": "Guns must ship to an FFL, requiring a complex, multi-step pickup and verification process."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Conservative brand sensibility is highly compatible with the firearms and hunting demographic."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product offerings and target demographics are clearly defined, although highly regulated. We can proceed with planning, focusing on non-regulated accessories if necessary.",
+  "missing_info": [
+    "Average order value (AOV) and price point",
+    "Whether ammo can be shipped directly to consumers under their model",
+    "Top-selling non-regulated accessories"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) for online purchases?",
+    "Can accessories and ammunition be shipped directly to the customer's home, or do they also require FFL/special handling?",
+    "Do you want to focus your ad creatives on non-regulated accessories to simplify the checkout and fulfillment flow for new customers?",
+    "What is your primary goal for this campaign (e.g., customer acquisition for accessories, or high-value firearm sales)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

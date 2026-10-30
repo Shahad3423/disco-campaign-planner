@@ -1,0 +1,108 @@
+{
+  "business_summary": "DTC apparel brand offering transparent-pricing wardrobe staples including tees, denim, and work-appropriate pants, targeting mid-career professionals who value supply chain transparency and spend $100-150 per order.",
+  "product": "wardrobe staples (tees, denim, work-appropriate pants)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": "mid-career",
+  "stated_claims": [
+    "Transparent-pricing wardrobe staples",
+    "Shoppers care about where stuff is made"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "transparent pricing",
+    "supply chain transparency",
+    "provenance"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category. Brand sells tees, denim, and pants."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Core category. Focuses on wardrobe staples and tees."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Product line includes work-appropriate pants for mid-career professionals."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Product line includes casual wardrobe staples like tees and denim."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Staples and workwear tend to align with a classic style profile."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Target shopper cares about where products are made and transparent pricing."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "basics"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "premium_basics",
+    "sustainable_apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Targets older, affluent women interested in workwear and casual apparel who value quality messaging."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Apparel publisher with a conservative sensibility focusing on workwear, matching the advertiser's mid-career workwear profile."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women audience where sustainability claims resonate; aligns with mid-career 'cares where stuff is made' demographic."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Audience of urban professionals interested in comfort and sustainability, matching the mid-career, conscious consumer profile."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency, late-night impulse grocery delivery is a poor match for a $100-150 AOV deliberate apparel purchase."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, target audience lifestyle (mid-career), purchasing behavior ($100-150 order value), and values are clearly described and map well to our network.",
+  "missing_info": [
+    "target gender (men's, women's, or unisex)",
+    "individual item price points",
+    "specific manufacturing locations or sustainability certifications"
+  ],
+  "clarifying_questions": [
+    "Do you sell men's apparel, women's apparel, or both?",
+    "What is the average price range for individual items like tees and denim?",
+    "Where are your garments manufactured, and do you have specific certifications we can highlight to appeal to shoppers who care where products are made?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

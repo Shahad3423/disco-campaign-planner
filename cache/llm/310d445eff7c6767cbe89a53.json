@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, elevate your kitchen with California's finest.",
+      "body": "Discover design-forward olive oils and vinegars sourced from California, crafted for home cooks who value exceptional quality.",
+      "cta": "Shop the Duo",
+      "headline_no_name": "Elevate your kitchen with California's finest.",
+      "angle": "Craftsmanship and heritage through California-sourced premium quality.",
+      "claims_used": [
+        "Design-forward olive oils and vinegars from California",
+        "Targeted at higher income home cooks"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A stunning gift for your favorite home cook, {first_name}.",
+      "body": "Give the gift of The Duo for $70. These design-forward olive oils and vinegars from California are one of our most gifted items.",
+      "cta": "Shop the Duo Set",
+      "headline_no_name": "A stunning gift for your favorite home cook.",
+      "angle": "Premium giftability featuring our most popular gift set.",
+      "claims_used": [
+        "The Duo is $70 and it's one of the most gifted items we have",
+        "Design-forward olive oils and vinegars from California"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, enjoy honest, California-sourced ingredients.",
+      "body": "Taste the difference of design-forward olive oils and vinegars sourced directly from California farms for quality you can trust.",
+      "cta": "Shop California Duo",
+      "headline_no_name": "Enjoy honest, California-sourced ingredients.",
+      "angle": "Transparency of supply chain through regional California sourcing.",
+      "claims_used": [
+        "Design-forward olive oils and vinegars from California",
+        "Targeted at higher income home cooks"
+      ]
+    }
+  ]
+}

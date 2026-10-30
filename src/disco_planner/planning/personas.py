@@ -13,6 +13,10 @@ from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, Persona, PersonaMatch, Publisher, PublisherScore
 
 
+def _ps() -> dict:
+    return catalog.config("scoring")["persona_shape"]
+
+
 def _range(text: str | None) -> tuple[int, int] | None:
     nums = [int(n) for n in re.findall(r"\d+", text or "")]
     return (nums[0], nums[1]) if len(nums) >= 2 else None
@@ -21,7 +25,7 @@ def _range(text: str | None) -> tuple[int, int] | None:
 def _overlap(a: tuple[int, int] | None, b: tuple[int, int] | None) -> float:
     """Share of range `a` covered by `b`; 0.6 (neutral) when either is unknown."""
     if not a or not b:
-        return 0.6
+        return _ps()["overlap_neutral"]
     return max(0, min(a[1], b[1]) - max(a[0], b[0])) / max(1, a[1] - a[0])
 
 
@@ -29,7 +33,7 @@ def affinity(profile: AdvertiserProfile, persona: Persona) -> tuple[float, list[
     hits = sorted(set(profile.persona_affinity_tags) & set(persona.category_affinities))
     if not hits:
         return 0.0, []
-    return min(1.0, 0.6 + 0.2 * (len(hits) - 1)), hits
+    return min(1.0, _ps()["affinity_base"] + _ps()["affinity_step"] * (len(hits) - 1)), hits
 
 
 def price_compat(profile: AdvertiserProfile, persona: Persona) -> float:
@@ -42,13 +46,14 @@ def audience_compat(profile: AdvertiserProfile, persona: Persona) -> float:
     if profile.target_gender in ("female", "male"):
         skew = persona.gender_skew
         if skew == "balanced":
-            gender = 0.8
+            gender = _ps()["gender_balanced"]
         elif skew.startswith(profile.target_gender):
             gender = 1.0
         else:
-            gender = 0.3
+            gender = _ps()["gender_mismatch"]
     age = _overlap(_range(profile.target_age_range), _range(persona.age_range))
-    return 0.5 * gender + 0.5 * max(age, 0.3)
+    w = _ps()["audience_gender_weight"]
+    return w * gender + (1 - w) * max(age, _ps()["audience_age_floor"])
 
 
 def host_fit(persona: Persona, pub: Publisher) -> float:
@@ -58,7 +63,8 @@ def host_fit(persona: Persona, pub: Publisher) -> float:
     gender = {"female": female, "female-leaning": 0.5 + female / 2, "balanced": 1 - abs(female - 0.5)}.get(
         persona.gender_skew, 0.5
     )
-    category = 1.0 if set(persona.category_affinities) & (pub.tags | {pub.category}) else 0.4
+    shape = _ps()
+    category = shape["host_category_match"] if set(persona.category_affinities) & (pub.tags | {pub.category}) else shape["host_category_miss"]
     return round((age + gender + category) / 3, 3)
 
 

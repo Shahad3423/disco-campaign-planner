@@ -1,0 +1,105 @@
+{
+  "business_summary": "DTC wellness brand offering a daily greens and nutrient powder subscription for approximately $79 a month, targeting health-conscious individuals who track habits, buy supplements, and exercise regularly.",
+  "product": "Daily greens and nutrient powder",
+  "is_consumer_product": true,
+  "price_point_usd": 79.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Daily greens and nutrient powder",
+    "Subscription at about $79 a month",
+    "Target is health-conscious people who track habits and already buy supplements or work out regularly"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core category for daily greens and nutrient powder."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Core category as nutrient powder contains essential vitamins."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "The brand operates as a DTC wellness product."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The primary purchase model is a monthly subscription."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 0.5,
+      "why": "Greens powders are highly adjacent to gut health benefits."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 0.5,
+      "why": "Nutrient powders mixed with water act as functional beverages."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "fitness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "Disinterested in subscription-only and self-care-only framing.",
+      "evidence": "Product is a daily greens self-care supplement sold as a 'subscription at about $79 a month'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers match the target audience of people who work out regularly."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users actively spend on fitness and self-care, aligning perfectly with this premium supplement."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is responsive to clean-ingredient and wellness claims and is already subscription-friendly."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Direct competitor selling vitamins and supplements via subscription."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined and suitable for immediately mapping to wellness and fitness publishers.",
+  "missing_info": [
+    "Specific ingredient list or quality certifications (e.g., organic, non-GMO)",
+    "Whether a one-time purchase option is available alongside the subscription",
+    "Flavor profiles or allergen information"
+  ],
+  "clarifying_questions": [
+    "Do you offer any one-time purchase options, or is this product strictly subscription-only?",
+    "Are there specific dietary certifications we can highlight, such as vegan, gluten-free, or organic?",
+    "What is your primary conversion goal (e.g., trial kit signup vs. full monthly subscription checkout)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,79 @@
+{
+  "business_summary": "DTC luggage brand offering premium carry-on and checked suitcases priced between $275 and $450. Features a lifetime warranty and targets frequent flyers and gift-givers, experiencing peak demand in spring and prior to the holidays.",
+  "product": "Carry-on and checked suitcases",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Lifetime warranty",
+    "Price range of $275-$450",
+    "Highest intent in spring and before the holidays"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Advertiser explicitly targets gift-givers, especially before the holidays."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Premium consumer luggage brand operating on a direct-to-consumer model."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.25,
+      "why": "Attracts affluent, classic-oriented buyers who value durability and lifetime warranties."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging and vague premium positioning / high price sensitivity",
+      "evidence": "Suitcases are priced at $275-$450, representing a premium tier that conflicts with high price sensitivity."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot sees strong gifting season uplift (Nov-Dec), aligning perfectly with the advertiser's peak holiday intent and target gift-giving audience."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. has an older affluent audience with high AOV that responds to quality messaging, which aligns with a $275-$450 suitcase with a lifetime warranty."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart is impulse-friendly for low-cost household essentials/groceries, whereas a $275+ suitcase is a highly planned purchase."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, warranty, and clear seasonal/demographic target audiences are well defined, enabling effective planning.",
+  "missing_info": [
+    "Specific materials (e.g., polycarbonate, aluminum, nylon)",
+    "Shipping rates and transit times",
+    "Return policy details"
+  ],
+  "clarifying_questions": [
+    "Are your suitcases primarily hardshell polycarbonate, aluminum, or softside fabric?",
+    "Do you offer free shipping and returns within the US?",
+    "Is there a specific best-selling color or model we should feature in creative assets?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

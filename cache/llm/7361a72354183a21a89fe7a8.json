@@ -1,0 +1,105 @@
+{
+  "business_summary": "Natural supplements for dogs, primarily probiotics and hip/joint chews, priced at approximately $35 per bag. The business model heavily relies on auto-ship/subscriptions and targets pet owners.",
+  "product": "Natural dog supplements (probiotics and hip/joint chews)",
+  "is_consumer_product": true,
+  "price_point_usd": 35.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural supplements for dogs",
+    "mostly probiotics and hip/joint chews",
+    "around $35 a bag",
+    "Auto-ship is where we make our money"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category. Products are specifically formulated for dogs."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Dog supplements fall under the broader umbrella of pet supplies."
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.75,
+      "why": "Probiotics and hip/joint chews are health-oriented pet wellness products."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The advertiser's primary monetization strategy is auto-ship/subscriptions."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Advertiser explicitly states their supplements are natural."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Adjacent interest, though usually human, indicates a consumer affinity for health supplements."
+    },
+    {
+      "tag": "treats",
+      "weight": 0.5,
+      "why": "Joint and probiotic chews often function as healthy treats for dogs."
+    }
+  ],
+  "competing_tags": [
+    "pet_pharmacy"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_health",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "Auto-ship is where we make our money"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet audience that is health-conscious and responsive to premium positioning aligns perfectly with natural dog supplements."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior, ideal for driving volume to auto-ship products."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennial audience treating dogs as family aligns with high-affinity pet parents willing to buy wellness chews."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product, category, pricing, and purchase model are explicitly clear. The target audience of pet parents is highly actionable across the available publishers.",
+  "missing_info": [
+    "shipping cost and policy",
+    "exact billing frequency for auto-ship"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping on auto-ship subscriptions?",
+    "What is the typical frequency interval for your auto-ship deliveries (e.g., 30 days)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Simplify your family banking, {first_name}",
+      "body": "Keep more of your money with no monthly fees. Get paid sooner with early direct deposit to save time and hassle.",
+      "cta": "Open an account",
+      "headline_no_name": "Simplify your family banking",
+      "angle": "time-saving and convenience-motivated family focus",
+      "claims_used": [
+        "no monthly fees",
+        "early direct deposit"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, get paid early with zero hassle",
+      "body": "Skip the wait. Enjoy early direct deposit and keep your money with absolutely no monthly fees.",
+      "cta": "Sign up instantly",
+      "headline_no_name": "Get paid early with zero hassle",
+      "angle": "speed and frictionless convenience",
+      "claims_used": [
+        "no monthly fees",
+        "early direct deposit"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Banking that actually matches your vibe, {first_name}",
+      "body": "No tricks, just early direct deposit and no monthly fees. Finally, a mobile banking app designed for the modern aesthetic.",
+      "cta": "Get the app",
+      "headline_no_name": "Banking that actually matches your vibe",
+      "angle": "playful tone with a subtle Halloween nod and aesthetic appeal",
+      "claims_used": [
+        "no monthly fees",
+        "early direct deposit"
+      ]
+    }
+  ]
+}

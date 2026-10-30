@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Save time, {first_name}: grooming on autopilot",
+      "body": "Enjoy the convenience of subscription razors and grooming for men, delivered to your door from about $5 a month.",
+      "cta": "Subscribe for $5",
+      "headline_no_name": "Save time with grooming on autopilot",
+      "angle": "time-saving and hassle-free subscription convenience",
+      "claims_used": [
+        "Subscription razors and grooming for men, from about $5 a month."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, simplify your morning routine",
+      "body": "Never tried a razor subscription? Get grooming products for men delivered to you, starting at about $5 a month.",
+      "cta": "Get $5 subscription",
+      "headline_no_name": "Simplify your morning routine",
+      "angle": "frictionless onboarding and speed for first-time subscribers",
+      "claims_used": [
+        "Subscription razors and grooming for men, from about $5 a month.",
+        "Looking to reach men who haven't tried a razor subscription."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "No scary prices this Halloween, {first_name}",
+      "body": "Ready to try your first razor subscription? Get grooming products for men starting from about $5 a month.",
+      "cta": "Try for $5/month",
+      "headline_no_name": "No scary prices this Halloween",
+      "angle": "playful Halloween seasonal hook for first-time subscription trial",
+      "claims_used": [
+        "Subscription razors and grooming for men, from about $5 a month.",
+        "Looking to reach men who haven't tried a razor subscription."
+      ]
+    }
+  ]
+}

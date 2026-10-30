@@ -1,0 +1,35 @@
+{
+  "business_summary": "CRM software for marketing and sales teams with a free tier, targeting marketers at growing companies.",
+  "product": "CRM software",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "CRM software for marketing and sales teams",
+    "with a free tier",
+    "Our buyers are marketers at growing companies"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The product is B2B CRM software targeting marketing and sales teams, which is not a consumer (DTC) product suitable for a post-purchase checkout network.",
+  "missing_info": [
+    "Consumer product availability"
+  ],
+  "clarifying_questions": [
+    "Do you offer any consumer-facing (DTC) products, or is your business strictly B2B SaaS?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

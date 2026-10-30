@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, simplify your shave in one click",
+      "body": "Never run out of fresh blades. Try a razor subscription for men starting from about $5 a month. Fast, simple, and on your schedule.",
+      "cta": "Get my subscription",
+      "headline_no_name": "Simplify your shave in just one click",
+      "angle": "One-click convenience and subscription perks for first-time subscribers",
+      "claims_used": [
+        "Subscription razors and grooming for men, from about $5 a month.",
+        "Looking to reach men who haven't tried a razor subscription."
+      ]
+    }
+  ]
+}

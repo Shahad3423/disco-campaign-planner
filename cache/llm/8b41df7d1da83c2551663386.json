@@ -1,0 +1,69 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, meet sustainable Merino wool sneakers",
+      "body": "Made with sustainable Merino wool and tree-fiber. These comfort-first sneakers are machine-washable and built for daily wear.",
+      "cta": "Shop Merino shoes",
+      "headline_no_name": "Meet sustainable Merino wool sneakers",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your comfort-first steps",
+      "body": "Optimize your routine with comfort-first sneakers made from Merino wool and tree-fiber. Fully machine-washable and sustainable.",
+      "cta": "Shop comfort-first",
+      "headline_no_name": "Optimize your comfort-first steps",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, understated comfort for every day",
+      "body": "Classic comfort-first sneakers made from Merino wool and tree-fiber. Fully machine-washable for effortless daily wear.",
+      "cta": "Shop Merino classics",
+      "headline_no_name": "Understated comfort for every day",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, a Halloween treat for your feet",
+      "body": "Get comfort-first, sustainable sneakers made from Merino wool and tree-fiber. They are machine-washable for easy, long-term care.",
+      "cta": "Shop washable shoes",
+      "headline_no_name": "A Halloween treat for your feet",
+      "angle": "clear value props",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of absolute comfort",
+      "body": "Delight them with comfort-first sneakers made from Merino wool and tree-fiber. Sustainable, machine-washable, and ready to gift.",
+      "cta": "Gift Merino sneakers",
+      "headline_no_name": "Give the gift of absolute comfort",
+      "angle": "giftable",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    }
+  ]
+}

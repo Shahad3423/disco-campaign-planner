@@ -1,0 +1,59 @@
+{
+  "business_summary": "Family plumbing and drain company based in Columbus, Ohio, offering water heaters, drain cleaning, and repairs specifically to local residents.",
+  "product": "Plumbing services, drain cleaning, and water heater repairs",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Family plumbing and drain company in Columbus, Ohio",
+    "Water heaters, drain cleaning, repairs",
+    "Obviously only Columbus area folks matter"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Family-owned"
+  ],
+  "fulfillment_notes": "Local service area restricted entirely to Columbus, Ohio.",
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 0.25,
+      "why": "Plumbing and drain services are home-related maintenance, though typically locally service-based rather than DTC products."
+    },
+    {
+      "tag": "household",
+      "weight": 0.25,
+      "why": "Appeals to homeowners needing household repairs and maintenance."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "household",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in delayed fulfillment / prefers speed and one-click",
+      "evidence": "Plumbing repairs require scheduling, on-site service appointments, and local dispatching which doesn't align with instant e-commerce fulfillment."
+    }
+  ],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The advertiser is a local home services provider, not a DTC consumer product brand. Disco's post-purchase checkout network is designed for e-commerce brands shipping products nationally, making a hyper-local plumbing service off-network.",
+  "missing_info": [
+    "DTC e-commerce product offering",
+    "National shipping capability"
+  ],
+  "clarifying_questions": [
+    "Do you sell any physical consumer products (e.g., DIY plumbing kits, water filters, or branded merchandise) that can be purchased online and shipped nationwide?",
+    "Are you able to service customers outside of the Columbus, Ohio metropolitan area?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

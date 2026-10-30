@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Give your cat a beautiful space, {first_name}",
+      "body": "Your cat is family. Ditch the ugly carpet towers for modern wall-mounted furniture designed for design-conscious apartment living.",
+      "cta": "Shop modern designs",
+      "headline_no_name": "Give your cat a beautiful space",
+      "angle": "Emotional connection and treating pets to high-quality design",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Durable, modern cat furniture for {first_name}",
+      "body": "Avoid disposable carpet towers. Our modern, wall-mounted furniture is designed for longevity and style in your apartment.",
+      "cta": "Shop durable designs",
+      "headline_no_name": "Durable, modern cat furniture",
+      "angle": "Longevity and reducing waste by choosing durable alternatives to disposable carpet towers",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    }
+  ]
+}

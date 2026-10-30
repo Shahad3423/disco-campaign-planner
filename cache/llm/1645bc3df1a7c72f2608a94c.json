@@ -1,0 +1,92 @@
+{
+  "business_summary": "Premium running apparel brand with a heritage, New England aesthetic targeting serious recreational marathoners.",
+  "product": "Running apparel (singlets, jackets)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": "30-55",
+  "stated_claims": [
+    "Running apparel with a heritage, New England feel",
+    "singlets from $58",
+    "jackets $200+",
+    "Our customer is a serious recreational marathoner, higher income, 30-55"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "heritage"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "The brand specifically sells running apparel."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The core product is clothing."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Aligns with the heritage, New England aesthetic."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Matches the target demographic of 30-55 years old."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "classic_apparel",
+    "fitness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and premium pricing; high price sensitivity.",
+      "evidence": "Singlets start at $58 and jackets at $200+, targeting higher-income customers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are highly aligned with serious recreational marathoners."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care match the high-income athletic profile."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility fits the premium heritage aesthetic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, pricing, target demographic, and brand aesthetic are clearly defined, allowing for precise targeting.",
+  "missing_info": [
+    "Average Order Value (AOV)",
+    "Gender split (men's, women's, or unisex)",
+    "Primary acquisition goal (e.g., CPA target, volume)"
+  ],
+  "clarifying_questions": [
+    "Do you offer both men's and women's running apparel, or do you focus on one specific gender?",
+    "What is your typical Average Order Value (AOV) for first-time customers?",
+    "Are there specific technical or performance features of your apparel (e.g., moisture-wicking, recycled fabrics) that we should highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

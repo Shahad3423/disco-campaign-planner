@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Sofa shopping made simple, {first_name}",
+      "body": "A trusted, hassle-free choice: mid-century modern sofas shipped direct to your door in a couple of weeks. Costing around $1,000-$2,000.",
+      "cta": "Shop direct sofas",
+      "headline_no_name": "Sofa shopping made simple for families",
+      "angle": "Time-saving and trusted direct-to-door delivery tailored for hassle-free family shopping.",
+      "claims_used": [
+        "Mid-century modern furniture shipped direct",
+        "Sofas cost around $1,000-2,000",
+        "delivery takes a couple of weeks"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Transparent direct-to-home sofas, {first_name}",
+      "body": "Mid-century modern sofas shipped direct to your home in a couple of weeks. A transparent supply chain with prices around $1,000-$2,000.",
+      "cta": "Shop direct sofas",
+      "headline_no_name": "Transparent, direct-to-home sofas",
+      "angle": "Supply chain transparency highlighting the direct-to-consumer shipping model to appeal to ethical shoppers.",
+      "claims_used": [
+        "Mid-century modern furniture shipped direct",
+        "Sofas cost around $1,000-2,000",
+        "delivery takes a couple of weeks"
+      ]
+    }
+  ]
+}

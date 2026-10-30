@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Systematize your movement, {first_name}.",
+      "body": "This premium yoga and studio-to-street apparel is designed to support your physical transitions from active wellness routines to rest.",
+      "cta": "Shop premium yoga",
+      "headline_no_name": "Systematize your movement.",
+      "angle": "wellness-system-optimization",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Gear built for the studio, {first_name}.",
+      "body": "Get premium yoga and studio-to-street apparel engineered to keep up with your active routine, from intense studio sessions to the street.",
+      "cta": "Shop studio apparel",
+      "headline_no_name": "Gear built for the studio.",
+      "angle": "functional-performance-utility",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel"
+      ]
+    }
+  ]
+}

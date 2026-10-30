@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, ready for your last first date?",
+      "body": "Download the dating app designed to be deleted. Free to download with premium tiers for a faster, more seamless experience.",
+      "cta": "Download for free",
+      "headline_no_name": "Ready for your last first date?",
+      "angle": "Convenience and efficiency with premium tiers for a seamless experience",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download",
+        "premium tiers exist"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, find a connection meant to last",
+      "body": "Stop endless scrolling. Download the dating app designed to be deleted. Free to download, with premium tiers for focused matching.",
+      "cta": "Download the app",
+      "headline_no_name": "Find a connection meant to last",
+      "angle": "An outcome-focused approach to dating, designed to get you off the app",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download",
+        "premium tiers exist"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, no ghosting this Halloween",
+      "body": "Skip the spooky matches. Get the dating app designed to be deleted. Free to download, with premium tiers to upgrade your vibe.",
+      "cta": "Download now",
+      "headline_no_name": "No ghosting this Halloween",
+      "angle": "A playful Halloween seasonal moment with a vibe-focused, anti-endless-scroll message",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download",
+        "premium tiers exist"
+      ]
+    }
+  ]
+}

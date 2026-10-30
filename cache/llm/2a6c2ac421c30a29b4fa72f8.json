@@ -1,0 +1,103 @@
+{
+  "business_summary": "VIP membership offering women's activewear and workout clothes priced at $25-50 per piece, billed monthly with a skip option.",
+  "product": "Women's activewear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "VIP membership gives women activewear at $25-50 per piece",
+    "Billed monthly with skip option"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category is activewear/workout clothes."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Core target demographic explicitly stated as women."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Activewear is a subcategory of apparel."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business model is a monthly billed VIP membership."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers taking fitness classes are highly likely to need workout clothes."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Yoga practitioners are a core consumer group for activewear."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Consumers investing in personal training are active buyers of workout gear."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only', 'self-care-only framing']",
+      "evidence": "VIP membership... billed monthly with skip option"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features fitness-engaged shoppers with strong crossover in wellness, matching activewear perfectly."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care and fitness, making them prime candidates for workout clothes."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a conservative brand sensibility and the highest-AOV apparel audience, which may clash with a $25-50 subscription model."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, target audience, and subscription model are clearly defined and ready for planning.",
+  "missing_info": [
+    "shipping costs and delivery timelines",
+    "return and exchange policy details",
+    "specific fabric composition or sustainability claims"
+  ],
+  "clarifying_questions": [
+    "What are your standard shipping rates and delivery timelines?",
+    "Do you offer free returns or exchanges for sizing issues?",
+    "Are there any specific fabric performance or sustainability features we can highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

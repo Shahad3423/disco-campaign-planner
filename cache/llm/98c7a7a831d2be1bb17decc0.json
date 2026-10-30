@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily wellness, {first_name}",
+      "body": "We help people feel better. Streamline your wellness routine with our straightforward, outcome-focused approach.",
+      "cta": "Start feeling better",
+      "headline_no_name": "Optimize your daily wellness",
+      "angle": "outcome-focused wellness optimization",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "A simpler way for {first_name} to feel better",
+      "body": "Between busy schedules and family life, we make wellness easy. We help people feel better with a simple, hassle-free approach.",
+      "cta": "Feel better today",
+      "headline_no_name": "A simpler way to feel better",
+      "angle": "time-saving and family-friendly simplicity",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Ready to feel better, {first_name}?",
+      "body": "No tricks, just a simple treat for your daily routine. We help people feel better so you can keep vibeing. Discover your new ritual.",
+      "cta": "Get started now",
+      "headline_no_name": "Ready to feel better?",
+      "angle": "playful and aesthetic-forward seasonal vibe",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    }
+  ]
+}

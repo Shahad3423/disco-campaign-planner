@@ -1,0 +1,85 @@
+{
+  "business_summary": "Sports betting and daily fantasy platform aiming for first-deposit signups from adults 21+ in legal states.",
+  "product": "Sports betting and daily fantasy sports service",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": "21+",
+  "stated_claims": [
+    "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+    "We have a big new-user promo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital service; restricted to adults 21+ in legal states.",
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Historically strong demographic crossover with sports viewership and betting."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.25,
+      "why": "App-based onboarding and instant transaction capabilities appeal to convenience shoppers."
+    },
+    {
+      "tag": "alcohol",
+      "weight": 0.25,
+      "why": "High social and occasion overlap with sports watching and casual betting."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "quick_commerce"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in: complicated onboarding",
+      "evidence": "Regulated gaming category requires identity verification and age checks (21+), which typically creates a higher-friction onboarding flow."
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, loud aesthetics",
+      "evidence": "Sports betting platforms rely heavily on loud 'big new-user promo' messaging, clashing with understated preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spikes and impulse-friendly nature align well with placing sports bets."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older affluent female audience with lower impulse behavior is a poor demographic fit."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility is highly unlikely to approve gambling or sports betting ads."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The service and target audience are clearly defined, allowing for immediate planning, though specific state and promo details should be clarified.",
+  "missing_info": [
+    "List of specific states where the platform is legally active",
+    "Promo terms and minimum deposit requirements",
+    "Primary target demographics (e.g. gender split, specific sports interests)"
+  ],
+  "clarifying_questions": [
+    "Which specific US states is your platform legally allowed to operate in?",
+    "What are the exact terms of your new-user promo (e.g., minimum deposit amount, free bet value)?",
+    "Do you target a specific gender or sport-focused demographic?",
+    "Is there a licensing or compliance review process we need to clear before launching your creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

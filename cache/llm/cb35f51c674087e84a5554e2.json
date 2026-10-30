@@ -1,0 +1,98 @@
+{
+  "business_summary": "Squeeze-bottle olive oil designed for everyday cooking and finishing, sold as a two-bottle combo for approximately $20, targeting home cooks aged 25-40.",
+  "product": "Squeeze-bottle olive oil",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "25-40",
+  "stated_claims": [
+    "Squeeze-bottle olive oil for everyday cooking and finishing",
+    "Two bottles, about $20 for a combo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Olive oil is a core pantry staple used daily by home cooks."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Olive oil is a fundamental food grocery item."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Home cooks buying kitchen tools are highly likely to need cooking oils."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Cookware buyers cook at home and require high-quality cooking oils."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Meal kit subscribers enjoy cooking at home and represent an adjacent food-interested audience."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "This is a digitally native consumer product sold directly to home cooks."
+    }
+  ],
+  "competing_tags": [
+    "pantry",
+    "groceries"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "groceries",
+    "premium_grocery",
+    "meal_kits"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven grocery and pantry shoppers are a perfect match for premium everyday cooking ingredients."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Kitchen and cookware buyers have high intent for food preparation products like olive oil."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Meal kit subscribers are convenience-motivated food lovers who cook at home regularly."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency grocery and convenience purchasers align well with an impulse-friendly $20 everyday food item."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target demographic are clearly defined and highly suitable for the post-purchase network.",
+  "missing_info": [
+    "Shipping costs and transit times",
+    "Whether subscription options are available",
+    "Specific ingredient details (e.g., organic, extra virgin, origin)"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for repeat purchases of the olive oil combo?",
+    "Is your olive oil extra virgin, organic, or sourced from a specific region?",
+    "What are your standard shipping rates and delivery times for the $20 combo?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

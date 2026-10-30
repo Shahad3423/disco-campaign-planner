@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your post-workout fuel, {first_name}",
+      "body": "Get fully prepared meals delivered via a weekly subscription. From fridge to plate in 2 minutes, priced at $11-14 per meal.",
+      "cta": "Get weekly meals",
+      "headline_no_name": "Optimize your post-workout fuel",
+      "angle": "outcome-focused time optimization for fitness routines",
+      "claims_used": [
+        "Fully prepared meals that go from fridge to plate in 2 minutes",
+        "$11-14 per meal",
+        "weekly subscription"
+      ]
+    }
+  ]
+}

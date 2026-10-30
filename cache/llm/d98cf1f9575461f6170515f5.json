@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, no tricks, just instant streaming",
+      "body": "Get one-click documentary streaming from $4.99/month this Halloween. Perfect for intellectually-curious science and nature fans.",
+      "cta": "Stream instantly",
+      "headline_no_name": "No tricks, just instant streaming",
+      "angle": "Frictionless subscription setup paired with a seasonal Halloween moment",
+      "claims_used": [
+        "Documentary streaming from $4.99/month",
+        "Older, intellectually-curious audiences",
+        "science and nature fans"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Feed your curiosity, {first_name}",
+      "body": "Keep your mind active with documentary streaming from $4.99/month. Curated science and nature content for intellectually-curious fans.",
+      "cta": "Subscribe for $4.99",
+      "headline_no_name": "Feed your curiosity",
+      "angle": "Intellectual optimization and science-focused content curation",
+      "claims_used": [
+        "Documentary streaming from $4.99/month",
+        "Older, intellectually-curious audiences",
+        "science and nature fans"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simple streaming in seconds",
+      "body": "Get easy documentary streaming from $4.99/month. No hassle, just science and nature content for intellectually-curious minds.",
+      "cta": "Start subscription",
+      "headline_no_name": "Simple streaming in seconds",
+      "angle": "Time-saving onboarding and hassle-free, budget-friendly subscription",
+      "claims_used": [
+        "Documentary streaming from $4.99/month",
+        "Older, intellectually-curious audiences",
+        "science and nature fans"
+      ]
+    }
+  ]
+}

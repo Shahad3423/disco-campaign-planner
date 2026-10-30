@@ -1,0 +1,68 @@
+{
+  "business_summary": "Interactive math, science, and computer science courses on mobile and web, offered via subscription for curious adults and students.",
+  "product": "Interactive math, science, and computer science courses",
+  "is_consumer_product": true,
+  "price_point_usd": 25.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Students and adults",
+  "stated_claims": [
+    "Interactive math, science and CS courses on mobile and web.",
+    "Subscription is roughly $25/mo or $120/yr.",
+    "Curious adults and students who like to learn in small chunks."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Delivered digitally via mobile app and web platform.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The product is sold exclusively as a monthly or annual subscription."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "family_products"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Subscription is roughly $25/mo or $120/yr."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are a highly aligned demographic for computer science and math learning."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households are highly likely to contain students who would benefit from math and science courses."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older affluent women shopping for workwear are unlikely to impulsively subscribe to mobile CS courses."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Specific age range of the student audience",
+    "Primary conversion goal (e.g., free trial vs. immediate paid sign-up)"
+  ],
+  "clarifying_questions": [
+    "What is the primary age range of the students you target (e.g., K-12, college)?",
+    "Do you offer a free trial or free tier that we should promote as the primary call-to-action?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

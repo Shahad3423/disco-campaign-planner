@@ -1,0 +1,105 @@
+{
+  "business_summary": "DTC brand selling inclusive-sized (XXS-5X) shapewear, loungewear, and underwear to women aged 22-40 who buy via drops and are not highly discount-reliant.",
+  "product": "Shapewear, loungewear, and underwear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "inclusive sizing XXS-5X",
+    "Mostly women 22-40 who buy on drops",
+    "Don't send us people who only shop discount"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "inclusive sizing"
+  ],
+  "fulfillment_notes": "buy on drops",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Loungewear and underwear are core apparel categories."
+    },
+    {
+      "tag": "intimates",
+      "weight": 1.0,
+      "why": "Shapewear and underwear fall directly under intimates."
+    },
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Explicitly listed as a core product category."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Explicitly targets women aged 22-40."
+    },
+    {
+      "tag": "plus_size",
+      "weight": 1.0,
+      "why": "Explicitly mentions inclusive sizing up to 5X."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Underwear and simple loungewear are wardrobe basics."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Loungewear is inherently casual apparel."
+    }
+  ],
+  "competing_tags": [
+    "intimates",
+    "underwear"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Prefers discount-forward, clear value props, and high price sensitivity.",
+      "evidence": "Don't send us people who only shop discount."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_006",
+      "alignment": 1,
+      "why": "Excellent alignment with inclusive sizing focus (XXS-5X) and fit-focused messaging."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and mid-life demographic conflict with trendy, drop-based loungewear targeting younger women."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Gen Z and younger millennial demographic aligns well with the 22-40 target market buying on drops."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, sizing, target demographic, and specific audience exclusion are clearly defined, enabling accurate campaign planning.",
+  "missing_info": [
+    "average order value (AOV) / price point",
+    "one-time vs subscription model details"
+  ],
+  "clarifying_questions": [
+    "What is the average order value (AOV) or typical price range for your items?",
+    "Are your products sold exclusively as one-time purchases, or do you offer any subscription options?",
+    "What is the primary performance goal for this campaign (e.g., customer acquisition, high AOV)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

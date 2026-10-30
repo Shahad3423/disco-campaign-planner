@@ -1,0 +1,127 @@
+{
+  "business_summary": "Plant-based frozen smoothies, bowls, and soups sold in boxes of 9-24 items, targeting wellness-minded women aged 25-45.",
+  "product": "Plant-based frozen smoothies, bowls, and soups",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Plant-based",
+    "9-24 items per box",
+    "Frozen smoothies, bowls and soups"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Plant-based",
+    "Wellness"
+  ],
+  "fulfillment_notes": "Requires cold chain shipping for frozen food products.",
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Explicitly targets wellness-minded consumers with health-oriented food products."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The core products are food items (smoothies, bowls, soups)."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Bundled boxes of frozen ready-to-eat/blend meals and bowls functions similarly to a convenient meal kit."
+    },
+    {
+      "tag": "beverages",
+      "weight": 0.5,
+      "why": "Smoothies are a key product category."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The target demographic is explicitly women."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "Plant-based wellness foods heavily overlap with organic food buyers."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Plant-based and wellness-oriented food aligns with natural product preferences."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Multi-item boxes (9-24 items) are typically sold on a recurring subscription basis in this vertical."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits",
+    "groceries"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "organic_grocery",
+    "premium_grocery",
+    "groceries",
+    "meal_kits",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in self-care-only framing",
+      "evidence": "Products are healthy smoothies, bowls, and soups targeted directly at wellness-minded women for personal consumption, which fits a self-care framing."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers and a strong crossover with wellness, aligning perfectly with wellness-minded women."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid has users actively spending on self-care and fitness, highly compatible with healthy, convenient wellness foods."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are responsive to clean-ingredient, sustainability, and wellness claims."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience is convenience-motivated and food-interested, making them great prospects for frozen healthy meal boxes."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip has strong overlap with wellness and premium grocery, matching the smoothie and bowl buyer profile."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, box configuration, and target demographic are clearly defined and suitable for launching a campaign, though price and business model details should be clarified.",
+  "missing_info": [
+    "Price point per box",
+    "Pricing tier (budget vs. premium)",
+    "Whether the purchase model is strictly subscription or offers one-time purchases",
+    "Shipping footprint and costs for frozen freight"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price for a box of 9, 12, or 24 items?",
+    "Is this a subscription-only service, or can customers purchase boxes on a one-time basis?",
+    "Do you offer nationwide shipping, and is shipping free or flat-rate for these frozen items?",
+    "Are your plant-based ingredients certified organic or non-GMO?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

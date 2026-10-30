@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, discover fewer, better things.",
+      "body": "Invest in high-quality leather totes and cashmere wraps designed for those who have outgrown fast fashion.",
+      "cta": "Shop leather totes",
+      "headline_no_name": "Discover fewer, better things.",
+      "angle": "Understated quality and classic craftsmanship over fast fashion trends",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, find the perfect premium gift.",
+      "body": "Impress them with high-quality leather totes and cashmere wraps. Elegant capsule wardrobe pieces designed to last.",
+      "cta": "Shop cashmere wraps",
+      "headline_no_name": "Find the perfect premium gift.",
+      "angle": "Premium gifting focus leveraging high-quality capsule pieces",
+      "claims_used": [
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose sustainable slow fashion.",
+      "body": "Reduce waste with fewer, better things. High-quality capsule wardrobe pieces for those who have outgrown fast fashion.",
+      "cta": "Shop capsule apparel",
+      "headline_no_name": "Choose sustainable slow fashion.",
+      "angle": "Sustainability and slow-fashion ethos of buying fewer, better things",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    }
+  ]
+}

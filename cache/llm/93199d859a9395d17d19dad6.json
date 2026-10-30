@@ -1,0 +1,53 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The Halloween theme is a seasonal gimmick that distracts from the performance and recovery messaging preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague eco-friendly phrasing ('mindfully engineered', 'thoughtful alternative') without any specific sustainability claims or certifications, which this persona actively avoids."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "business_summary": "A documentary streaming service catering to older, intellectually-curious audiences with a focus on science and nature content.",
+  "product": "Documentary streaming subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 4.99,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": "older",
+  "stated_claims": [
+    "Documentary streaming from $4.99/month",
+    "Older, intellectually-curious audiences",
+    "science and nature fans"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The service is offered as a monthly subscription."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "The target audience is described as 'older'."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Direct-to-consumer digital streaming service."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience consists of older affluent women, aligning well with the 'older' target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Audience skews older with a conservative brand sensibility, matching the 'older' demographic."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Audience is Gen Z and younger millennial, which directly clashes with the 'older' target demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "target gender",
+    "specific age range",
+    "content library details"
+  ],
+  "clarifying_questions": [
+    "What is the specific age range you consider 'older'?",
+    "Do you offer annual subscription options?",
+    "What are some featured documentary titles or topics in your library?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

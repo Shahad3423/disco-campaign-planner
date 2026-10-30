@@ -1,0 +1,34 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The headline introduces an ungrounded seasonal theme ('Halloween treat') not supported by the product context.",
+        "The copy focuses on 'cereal for adults' which slightly misses the family-friendly/kid-focused appeal preferred by the Busy Parent persona."
+      ],
+      "passed": false
+    }
+  ]
+}

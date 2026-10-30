@@ -1,0 +1,70 @@
+{
+  "business_summary": "Interactive educational platform offering math, science, and computer science courses via mobile and web applications on a subscription basis, targeted at curious adults and students.",
+  "product": "Interactive math, science, and computer science courses",
+  "is_consumer_product": true,
+  "price_point_usd": 25.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "students and adults",
+  "stated_claims": [
+    "Interactive math, science and CS courses on mobile and web.",
+    "Subscription is roughly $25/mo or $120/yr.",
+    "Curious adults and students who like to learn in small chunks."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Instant digital access via mobile app or web browser upon subscription.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product operates strictly on a monthly or annual subscription model."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.25,
+      "why": "Targeted at users who like to learn in 'small chunks' on mobile/web, aligning with on-the-go convenience."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "The courses are explicitly sold as a 'Subscription is roughly $25/mo or $120/yr'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are highly aligned with computer science, math, and science courses."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form's 'science-forward' audience is naturally receptive to science and math-related educational content."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined and ready for matching.",
+  "missing_info": [
+    "Exact age range or educational level of targeted 'students' (e.g., K-12 vs. higher education).",
+    "Availability of a free trial or free-tier option.",
+    "Primary geographic focus."
+  ],
+  "clarifying_questions": [
+    "Is your student audience primarily K-12, college-level, or lifelong learners?",
+    "Do you offer a free trial or free tier to hook users before they commit to the $25/mo subscription?",
+    "Is there a gifting option available for your subscriptions?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

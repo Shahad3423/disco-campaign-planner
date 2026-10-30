@@ -1,0 +1,60 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "No tricks, just a premium treat, {first_name}",
+      "body": "Gift a high-powered blender designed for the home. It is a premium gift people love, with our special promo running until Friday.",
+      "cta": "Shop the promotion",
+      "headline_no_name": "No tricks, just a premium treat",
+      "angle": "giftable premium presentation with a seasonal Halloween twist",
+      "claims_used": [
+        "high powered",
+        "ppl love them",
+        "also commercial but mainly home",
+        "promo going on til friday i think"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your nutrition, {first_name}",
+      "body": "Power your daily nutrition with a high-powered blender built for home use. People love them. Save with our promo ending Friday.",
+      "cta": "Shop high-powered",
+      "headline_no_name": "High-powered performance for your routine",
+      "angle": "outcome-focused daily nutrition routine",
+      "claims_used": [
+        "high powered",
+        "ppl love them",
+        "also commercial but mainly home",
+        "promo going on til friday i think"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Commercial power for your home, {first_name}",
+      "body": "Invest in a high-powered blender built for home use with commercial-grade strength. Highly loved and on promotion until Friday.",
+      "cta": "Choose your blender",
+      "headline_no_name": "Commercial power designed for the home",
+      "angle": "understated craftsmanship and commercial-grade quality",
+      "claims_used": [
+        "high powered",
+        "ppl love them",
+        "also commercial but mainly home",
+        "promo going on til friday i think"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Built to last: high-powered for {first_name}",
+      "body": "Choose a high-powered blender built for home but with commercial quality. People love them. Save with our promo ending Friday.",
+      "cta": "Shop home blenders",
+      "headline_no_name": "Built to last: high-powered home blenders",
+      "angle": "durable commercial-grade quality for the home to appeal to conscious buyers",
+      "claims_used": [
+        "high powered",
+        "ppl love them",
+        "also commercial but mainly home",
+        "promo going on til friday i think"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "business_summary": "High-protein, low-sugar kid-style cereal targeting adults, specifically gym-goers and nostalgic millennials, priced at $39 for a 4-pack with a subscription option.",
+  "product": "cereal",
+  "is_consumer_product": true,
+  "price_point_usd": 39.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "millennials (approx. 28-45)",
+  "stated_claims": [
+    "High-protein",
+    "low-sugar",
+    "kid-style cereal for adults"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Cereal is a shelf-stable pantry food item."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Cereal is a core grocery product."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The brand offers a 'subscribe and save' purchase model."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "High-protein, low-sugar profile caters to the wellness-minded and gym-goers."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The shipping and pricing model matches DTC brand standards."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "premium_grocery",
+    "groceries",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: ultra-processed food / novelty",
+      "evidence": "Product is a 'kid-style cereal for adults' which may be perceived as novelty or ultra-processed despite its high-protein claims."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in: luxury-only messaging / high price sensitivity",
+      "evidence": "$39 for a 4-pack of cereal is highly premium and may conflict with value-conscious shoppers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Instant delivery and grocery focus fits impulse-friendly breakfast food."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers strongly align with the target audience of 'gym-goers'."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care align with the gym-goer persona."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Responsive to clean-ingredient and wellness claims, fitting a high-protein, low-sugar cereal."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Health-curious but indulgence-seeking audience is the perfect match for healthy kid-style cereal."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic conflict with nostalgic millenial-targeted kid cereal."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined and fit the DTC checkout network perfectly.",
+  "missing_info": [
+    "one-time purchase price (if available)",
+    "shipping costs and policies"
+  ],
+  "clarifying_questions": [
+    "Do you offer single-box or one-time purchases outside of the $39 4-pack?",
+    "Is shipping free on subscriptions, or is there a shipping fee we should factor in?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

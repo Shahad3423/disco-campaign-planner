@@ -1,0 +1,118 @@
+{
+  "business_summary": "A premium DTC women's fashion and accessory brand focusing on slow fashion, high-quality basics, and timeless capsule wardrobe pieces such as leather totes and cashmere wraps.",
+  "product": "Leather totes, cashmere wraps, and capsule wardrobe apparel",
+  "is_consumer_product": true,
+  "price_point_usd": 300.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fewer, better things",
+    "Orders $200-400",
+    "Leather totes, cashmere wraps, capsule wardrobe pieces"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "sustainability",
+    "quality",
+    "slow fashion"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category; sells capsule wardrobe pieces and cashmere wraps."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Explicitly targets affluent women."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Timeless, 'fewer, better things' philosophy aligns perfectly with classic styling."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Slow-fashion ethos ('fewer, better things' and 'outgrown fast fashion') focuses on sustainability."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.5,
+      "why": "Leather totes and capsule wardrobe pieces are highly relevant to professional women's wardrobes."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Shoppers who have outgrown fast fashion and have a high AOV of $200-400 typically skew older/mid-life."
+    }
+  ],
+  "competing_tags": [
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "classic_apparel",
+    "sustainable_apparel",
+    "apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and vague premium positioning",
+      "evidence": "Orders $200-400. We want affluent women..."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "Disinterested in luxury positioning",
+      "evidence": "Orders $200-400. We want affluent women..."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Instant delivery and impulse-friendly groceries are a poor match for high-consideration, $200-400 capsule fashion."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women who respond to quality messaging and high AOV perfectly match this advertiser's demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility aligns with high-end, premium capsule pieces."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Gen Z and younger millennial audience is likely still purchasing fast fashion and has lower average purchasing power."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women who care about sustainability are a prime audience for high-quality capsule pieces."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The brand has a very clear product catalog, high-end price point, and targeted female demographic, allowing for immediate planning.",
+  "missing_info": [
+    "Specific materials sourcing (e.g., LWG certified leather, recycled cashmere)",
+    "Shipping and return policies",
+    "Exact age demographic bounds"
+  ],
+  "clarifying_questions": [
+    "Are your leather and cashmere items certified by any specific sustainability organizations?",
+    "Do you offer free shipping and returns on orders over $200?",
+    "Are you open to matching with high-end home design and bedding publishers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

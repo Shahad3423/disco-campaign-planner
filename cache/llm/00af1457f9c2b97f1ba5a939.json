@@ -1,0 +1,123 @@
+{
+  "business_summary": "A DTC beverage brand offering functional soda infused with apple cider vinegar and prebiotics, priced at approximately $2.50 per can, targeting a Gen Z and Millennial audience with a strong Instagram presence.",
+  "product": "Prebiotic and apple cider vinegar functional soda",
+  "is_consumer_product": true,
+  "price_point_usd": 2.5,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "Gen Z and Millennials",
+  "stated_claims": [
+    "Soda with apple cider vinegar and prebiotics",
+    "About $2.50 a can",
+    "Heavy Gen Z and Millennial skew",
+    "Big on Instagram"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Core product category of prebiotic and ACV sodas."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "Directly positioned as an alternative to traditional soda."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotics and apple cider vinegar are heavily marketed for gut health benefits."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Broad category for any liquid refreshment."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent category where consumers purchase food and drink items."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Shelf-stable beverage fits into pantry stocking."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Functional beverages overlap heavily with DTC wellness trends."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "premium_grocery",
+    "wellness",
+    "groceries",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in trendy language, loud aesthetics, and influencer positioning.",
+      "evidence": "Advertiser states they have a 'heavy Gen Z and Millennial skew' and are 'big on Instagram'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's impulse-friendly, high-frequency grocery and convenience focus aligns well with a $2.50 single-serve beverage."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co.'s older, lower-impulse affluent female demographic clashes with the advertiser's Gen Z/Millennial Instagram-heavy profile."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's conservative brand sensibility and high-AOV apparel focus do not align with a trendy, Gen Z-skewed functional soda."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is highly responsive to clean-ingredient, natural, and wellness claims, matching prebiotic/ACV soda."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline's Gen Z and younger millennial audience with identity-driven purchasing habits matches the advertiser's core demographic."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "Pop & Sip is a direct competitor selling functional beverages, soda alternatives, and gut health products."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target demographic, and core categories are clearly defined and map cleanly to our network.",
+  "missing_info": [
+    "pack sizes available for online purchase",
+    "shipping rates and fulfillment times",
+    "subscription availability"
+  ],
+  "clarifying_questions": [
+    "What is the typical pack size and price sold on your DTC site (e.g., 12-pack for $30)?",
+    "Do you offer a subscription option for repeat deliveries?",
+    "What are your standard shipping rates and delivery times?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

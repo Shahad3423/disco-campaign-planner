@@ -1,0 +1,90 @@
+{
+  "business_summary": "Everyday 14k gold jewelry brand priced between $50 and $400, targeting women aged 22-40 who purchase for themselves or as gifts.",
+  "product": "14k gold jewelry",
+  "is_consumer_product": true,
+  "price_point_usd": 225.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "Everyday 14k gold jewelry at $50-400",
+    "Lots of gifting",
+    "Women 22-40 who buy jewelry for themselves"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Directly targets women aged 22-40."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Explicitly notes 'Lots of gifting' as a key behavior."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Jewelry is a high-affinity accessory category for fashion and apparel shoppers."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Strong demographic and self-care overlap with beauty buyers."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Everyday solid gold jewelry aligns with a classic, high-quality wardrobe aesthetic."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "beauty",
+    "classic_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging are ideal for solid 14k gold jewelry."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative/classic brand sensibility aligns perfectly with premium everyday gold."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting focus and gifting season uplift matches the advertiser's emphasis on gifting."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Minimalist aesthetic and millennial audience align with 'everyday' fine jewelry self-purchasers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, target audience, and gifting angle are clearly stated and highly compatible with our publisher network.",
+  "missing_info": [
+    "shipping costs and times",
+    "return policy details",
+    "specific product types (e.g., necklaces, rings, earrings)"
+  ],
+  "clarifying_questions": [
+    "What are your typical shipping times and do you offer free shipping for gifts?",
+    "Which jewelry types (e.g., rings, earrings, necklaces) are your top sellers?",
+    "Do you have a target CPA or customer acquisition cost goal in mind?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

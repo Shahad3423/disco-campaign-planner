@@ -1,0 +1,99 @@
+{
+  "business_summary": "A dating app designed to be deleted, offering a free-to-download model with premium tiers, targeting singles aged 22-38 in major US metropolitan areas.",
+  "product": "Dating app",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "22-38",
+  "stated_claims": [
+    "designed to be deleted",
+    "Free to download",
+    "premium tiers exist"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The app features premium tiers which typically operate on a recurring subscription model."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Young urban singles (22-38) are heavy users of convenience-oriented apps and services."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.25,
+      "why": "Young urban professionals active in the dating scene are highly aligned with fashion and apparel purchases."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.25,
+      "why": "Dating app users frequently invest in personal care, grooming, and beauty products."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "prefers family-friendly products and is disinterested in non-family-focused services",
+      "evidence": "Targets 'Singles 22-38' for a dating app, which is not family-friendly or relevant to busy parents."
+    },
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested in self-care-only framing and prefers giftable items",
+      "evidence": "A personal dating app profile is highly individual and cannot be gifted."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spike and impulse-friendly nature align well with dating app usage among urban singles."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience consists of Gen Z and younger millennials, matching the 22-38 target demographic perfectly."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Audience is primarily family and couples households, which directly conflicts with a singles dating app."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are a prime demographic for a modern dating app in big US metros."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older women with lower impulse behavior, which is outside the 22-38 target age range."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target demographic (singles 22-38 in major metros), and business model are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "exact pricing of premium tiers",
+    "primary conversion goal (e.g., app install vs. premium subscription sign-up)"
+  ],
+  "clarifying_questions": [
+    "What is the price point of your premium tiers?",
+    "Is your primary campaign goal to drive free app downloads or direct premium tier sign-ups?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,43 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Gifting a free home try-on is awkward because the service is already free to anyone, meaning the gifter isn't actually purchasing a gift.",
+        "Prescription glasses are highly personalized and difficult to gift without knowing the recipient's exact prescription."
+      ],
+      "passed": false
+    }
+  ]
+}

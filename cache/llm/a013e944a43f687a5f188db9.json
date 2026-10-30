@@ -1,0 +1,93 @@
+{
+  "business_summary": "DTC brand specializing in organic cotton family pajamas and kids' clothing, with matching-family holiday pajama sets as their bestseller, targeting parents and grandparents.",
+  "product": "Organic cotton family pajamas and kids' clothing",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "Kids, parents, and grandparents",
+  "stated_claims": [
+    "Organic cotton family pajamas and kids' clothing",
+    "Matching-family holiday pajama sets are our big seller"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product offering is pajamas and children's clothing."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Products are explicitly stated to be made of organic cotton."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.75,
+      "why": "Matching-family holiday pajama sets are highly giftable, especially near the October 30 planning date."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Organic cotton appeals directly to sustainability-conscious clothing shoppers."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Kids' clothing and pajamas represent everyday wardrobe basics."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "family_products",
+    "kids_products",
+    "sustainable_apparel",
+    "apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift (Nov-Dec) perfectly matches matching-family holiday pajama sets, especially given the late October planning date."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women demographic aligns very well with the target 'grandparents' audience who buy high-quality gifts."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven organic/natural shoppers will appreciate the organic cotton material claim."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households are the primary demographic for matching family pajama sets."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price tier, and target audience are clear and highly actionable, especially given the seasonal relevance of holiday pajamas in late October.",
+  "missing_info": [
+    "Average Order Value (AOV)",
+    "Specific organic certifications (e.g., GOTS)",
+    "Shipping times and holiday delivery cutoffs",
+    "Availability of gift-wrapping services"
+  ],
+  "clarifying_questions": [
+    "What is your typical Average Order Value (AOV) for holiday pajama purchases?",
+    "Are your organic cotton garments certified by a specific standard like GOTS?",
+    "Do you offer holiday gift-wrapping options or direct-to-recipient shipping?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

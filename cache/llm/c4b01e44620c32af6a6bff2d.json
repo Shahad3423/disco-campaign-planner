@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "The ultimate wedding & housewarming gift, {first_name}",
+      "body": "Delight them with the Always Pan and other cookware in gorgeous, bright colors. The perfect present for their new kitchen.",
+      "cta": "Gift the Always Pan",
+      "headline_no_name": "The ultimate wedding & housewarming gift",
+      "angle": "Premium presentation and housewarming/wedding gifting focus",
+      "claims_used": [
+        "Great for housewarming and wedding gifts",
+        "Always Pan and other cookware in bright colors"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, build a kitchen that lasts",
+      "body": "Skip the cheap, disposable kitchenware. Invest in the Always Pan and other vibrant cookware designed for your first home.",
+      "cta": "Shop the Always Pan",
+      "headline_no_name": "Cookware built for your first home",
+      "angle": "Focusing on durable first-home essentials to avoid the fast-fashion kitchenware cycle",
+      "claims_used": [
+        "Always Pan and other cookware in bright colors",
+        "Great for younger first-home buyers"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, meet your kitchen's new main character",
+      "body": "Level up your space with the Always Pan in stunning, bright colors for about $150. Beautiful cookware you'll actually want to show off.",
+      "cta": "Shop bright cookware",
+      "headline_no_name": "Meet your kitchen's new main character",
+      "angle": "Aesthetic-forward, playful, and visual styling",
+      "claims_used": [
+        "Always Pan and other cookware in bright colors",
+        "$150ish for the Always Pan"
+      ]
+    }
+  ]
+}

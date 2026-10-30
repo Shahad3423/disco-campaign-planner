@@ -18,19 +18,17 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "activewear",
-    "weight": 1.0,
-    "why": "Core category for technical outerwear and shells."
-   },
-   {
     "tag": "apparel",
     "weight": 1.0,
     "why": "Core category as jackets and outerwear."
+   },
+   {
+    "tag": "activewear",
+    "weight": 1.0,
+    "why": "Core category for technical outerwear and shells."
    }
   ],
-  "competing_tags": [
-   "activewear"
-  ],
+  "competing_tags": [],
   "persona_affinity_tags": [
    "activewear",
    "apparel",
@@ -64,21 +62,19 @@
    "women": 0.33
   },
   "sample_agreement": 0.67,
-  "competing_tag_share": {
-   "activewear": 0.33
-  }
+  "competing_tag_share": {}
  },
  "publishers": [
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.2359,
+   "score": 0.2882,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, apparel (specific) (multiplier)"
+     "detail": "matches apparel, activewear (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -118,22 +114,21 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells activewear (33% of samples agree); may block the ad",
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: competitor_conflict: host sells activewear (33% of samples agree); may block the ad | weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.2238,
+   "score": 0.2735,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, apparel (specific) (multiplier)"
+     "detail": "matches apparel, activewear (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -173,11 +168,10 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells activewear (33% of samples agree); may block the ad",
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: competitor_conflict: host sells activewear (33% of samples agree); may block the ad | weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_016",
@@ -387,7 +381,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.12; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_006",
@@ -439,7 +433,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.12; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -1283,22 +1277,23 @@
  "creatives": [
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, technical shells for severe conditions",
-   "body": "Built for serious backcountry skiers. Experience technical outerwear engineered to perform when it matters most.",
-   "cta": "Shop Shells",
-   "headline_no_name": "Technical outerwear shells for severe conditions",
-   "angle": "outcome-focused",
+   "headline": "Optimize your backcountry system, {first_name}",
+   "body": "Technical outerwear designed for serious backcountry skiers. Optimize your mountain system with the actual shells that patrollers wear.",
+   "cta": "Shop our shells",
+   "headline_no_name": "Optimize your backcountry system",
+   "angle": "Framing technical outerwear as a high-performance system validated by the field-testing of ski patrollers.",
    "claims_used": [
-    "Technical outerwear for serious backcountry skiers"
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
    ]
   },
   {
    "persona_id": "persona_005",
-   "headline": "Invest in enduring quality for the slopes",
-   "body": "Discover technical outerwear for serious backcountry skiers built to last. Our shells are what patrollers wear season after season.",
-   "cta": "Explore shells",
-   "headline_no_name": "Invest in enduring quality for the slopes",
-   "angle": "craftsmanship",
+   "headline": "{first_name}, discover the choice of patrollers",
+   "body": "Built for longevity and serious backcountry skiers. Our technical outerwear shells are trusted and worn by professional patrollers.",
+   "cta": "Shop our shells",
+   "headline_no_name": "Discover the choice of patrollers",
+   "angle": "understated quality, longevity, and professional trust",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1306,22 +1301,23 @@
   },
   {
    "persona_id": "persona_010",
-   "headline": "{first_name}, find an impressive outdoor gift",
-   "body": "Looking for a standout gift this season? Technical outerwear for serious backcountry skiers makes a lasting impression.",
-   "cta": "Shop gifts",
-   "headline_no_name": "Find an impressive outdoor gift",
-   "angle": "giftable",
+   "headline": "The ultimate gift for serious skiers, {first_name}",
+   "body": "Give the technical outerwear that patrollers wear. Our high-performance shells are designed for serious backcountry skiers.",
+   "cta": "Shop premium shells",
+   "headline_no_name": "The ultimate gift for serious skiers",
+   "angle": "premium and impressive gifting for serious skiers",
    "claims_used": [
-    "Technical outerwear for serious backcountry skiers"
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
    ]
   },
   {
    "persona_id": "persona_009",
-   "headline": "Built with technical fabrics that perform",
-   "body": "Engineered as technical outerwear for serious backcountry skiers. Our shells are what patrollers wear in demanding conditions.",
-   "cta": "Upgrade gear",
-   "headline_no_name": "Built with technical fabrics that perform",
-   "angle": "technical fabrics",
+   "headline": "Perform at your peak, {first_name}",
+   "body": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear to perform in the toughest mountain conditions.",
+   "cta": "Shop technical gear",
+   "headline_no_name": "Perform at your peak",
+   "angle": "athletic performance and professional patroller endorsement",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1331,18 +1327,16 @@
  "reviews": [
   {
    "persona_id": "persona_001",
-   "persona_fit": 3,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Lacks the specific scientific data or ingredient transparency preferred by this wellness optimizer persona."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_005",
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1380,19 +1374,20 @@
    "price_source": "stated",
    "gross_margin": 0.6,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.1,
    "max_affordable_cac": 429.0,
    "target_cpa": 300.3,
    "assumptions": [
-    "Gross margin not given; assumed 60% (typical for apparel).",
+    "No target CPA/ROAS or margin given; assumed 60% gross margin (typical for apparel). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($650 x 60% margin x 1.1 orders = $429.00)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $300.30 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $300.30 x click-to-purchase rate (1.0%-3.5% for apparel). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 4.5,
+    "low": 3.0,
     "mid": 6.0,
     "high": 6.0
    },
@@ -1403,6 +1398,10 @@
   "budget": {
    "monthly_budget_usd": 6350.0,
    "budget_source": "recommended_learning_budget",
+   "delivery_goal": "budget",
+   "expected_impressions": 54329,
+   "expected_reach": 33956,
+   "goal_feasible": true,
    "daily_cap_usd": 211.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1418,7 +1417,7 @@
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
      "share": 0.436,
-     "budget_usd": 2769.79,
+     "budget_usd": 2769.38,
      "cpc_bid_usd": 6.0,
      "start_bid_usd": 4.2,
      "expected_clicks": {
@@ -1427,19 +1426,21 @@
       "high": 554.0
      },
      "expected_conversions": {
-      "low": 9.7,
-      "mid": 19.4,
-      "high": 32.3
+      "low": 6.5,
+      "mid": 12.9,
+      "high": 22.6
      },
-     "capacity_usd": 88704.0,
-     "requires_host_approval": true,
-     "rationale": "score 0.24 -> fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 110880.0,
+     "expected_impressions": 27474,
+     "expected_reach": 17171,
+     "requires_host_approval": false,
+     "rationale": "score 0.29 -> relative fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
      "share": 0.414,
-     "budget_usd": 2627.71,
+     "budget_usd": 2628.12,
      "cpc_bid_usd": 6.0,
      "start_bid_usd": 4.2,
      "expected_clicks": {
@@ -1448,19 +1449,72 @@
       "high": 526.0
      },
      "expected_conversions": {
-      "low": 8.9,
-      "mid": 17.9,
-      "high": 29.8
+      "low": 6.0,
+      "mid": 11.9,
+      "high": 20.8
      },
-     "capacity_usd": 22700.16,
-     "requires_host_approval": true,
-     "rationale": "score 0.22 -> fit x1.36 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "capacity_usd": 28379.99,
+     "expected_impressions": 26855,
+     "expected_reach": 16785,
+     "requires_host_approval": false,
+     "rationale": "score 0.27 -> relative fit x1.36 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
     "No budget given: recommending $6,350, the smallest budget that buys 300 clicks per host.",
     "Budget too small for Stride & Stem: concentrating on fewer hosts."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $300.30 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_002",
+     "start_bid": 4.2,
+     "max_bid": 6.0,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_017",
+     "start_bid": 4.2,
+     "max_bid": 6.0,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1478,11 +1532,11 @@
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: score 0.10 below cutoff 0.12; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
+     "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: score 0.10 below cutoff 0.12; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
+     "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
     },
     {
      "id": "pub_001",
@@ -1561,10 +1615,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "{first_name}, technical shells for severe conditions",
-    "headline_no_name": "Technical outerwear shells for severe conditions",
-    "body": "Built for serious backcountry skiers. Experience technical outerwear engineered to perform when it matters most.",
-    "cta": "Shop Shells"
+    "headline_template": "Optimize your backcountry system, {first_name}",
+    "headline_no_name": "Optimize your backcountry system",
+    "body": "Technical outerwear designed for serious backcountry skiers. Optimize your mountain system with the actual shells that patrollers wear.",
+    "cta": "Shop our shells"
    },
    {
     "variant_id": "v2",
@@ -1573,10 +1627,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "Invest in enduring quality for the slopes",
-    "headline_no_name": "Invest in enduring quality for the slopes",
-    "body": "Discover technical outerwear for serious backcountry skiers built to last. Our shells are what patrollers wear season after season.",
-    "cta": "Explore shells"
+    "headline_template": "{first_name}, discover the choice of patrollers",
+    "headline_no_name": "Discover the choice of patrollers",
+    "body": "Built for longevity and serious backcountry skiers. Our technical outerwear shells are trusted and worn by professional patrollers.",
+    "cta": "Shop our shells"
    },
    {
     "variant_id": "v3",
@@ -1585,10 +1639,10 @@
      "pub_017",
      "pub_002"
     ],
-    "headline_template": "{first_name}, find an impressive outdoor gift",
-    "headline_no_name": "Find an impressive outdoor gift",
-    "body": "Looking for a standout gift this season? Technical outerwear for serious backcountry skiers makes a lasting impression.",
-    "cta": "Shop gifts"
+    "headline_template": "The ultimate gift for serious skiers, {first_name}",
+    "headline_no_name": "The ultimate gift for serious skiers",
+    "body": "Give the technical outerwear that patrollers wear. Our high-performance shells are designed for serious backcountry skiers.",
+    "cta": "Shop premium shells"
    },
    {
     "variant_id": "v4",
@@ -1597,10 +1651,10 @@
      "pub_017",
      "pub_002"
     ],
-    "headline_template": "Built with technical fabrics that perform",
-    "headline_no_name": "Built with technical fabrics that perform",
-    "body": "Engineered as technical outerwear for serious backcountry skiers. Our shells are what patrollers wear in demanding conditions.",
-    "cta": "Upgrade gear"
+    "headline_template": "Perform at your peak, {first_name}",
+    "headline_no_name": "Perform at your peak",
+    "body": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear to perform in the toughest mountain conditions.",
+    "cta": "Shop technical gear"
    }
   ],
   "frequency_cap": {

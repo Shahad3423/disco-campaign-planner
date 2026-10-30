@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your active routine.",
+      "body": "Streamline your day. Go from gym to coffee in soft, performance-y everyday clothing engineered for zero-friction transitions.",
+      "cta": "Shop performance",
+      "headline_no_name": "Optimize your active routine.",
+      "angle": "outcome-focused routine optimization",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "business_summary": "DTC prescription eyewear brand offering glasses starting at $95, including lenses, with a free 5-frame home try-on program.",
+  "product": "Prescription glasses",
+  "is_consumer_product": true,
+  "price_point_usd": 95.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Prescription glasses starting at $95 including lenses",
+    "free home try-on of 5 frames"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Free home try-on of 5 frames prior to purchase.",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Glasses are a key fashion and style accessory worn daily."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "Prescription lenses are custom-tailored to the user's specific vision needs."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The business operates via a classic direct-to-consumer home try-on model."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Professionals wearing glasses for computer use or office environments."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "apparel",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in: delayed fulfillment, multi-step purchases",
+      "evidence": "A 'free home try-on of 5 frames' requires a multi-step process (receiving, trying on, sending back, and then ordering the final prescription) rather than a quick, one-click checkout."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart relies on impulse, high-frequency, and instant delivery, whereas prescription glasses with home try-on require high-intent consideration."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co has an older affluent audience that is highly likely to need prescription glasses/readers and has lower impulse but higher AOV potential."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab's audience is highly motivated by personalization and quizzes, matching the customized nature of prescription eyewear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and main offer (home try-on) are clear and fit well into the post-purchase DTC ecosystem.",
+  "missing_info": [
+    "Average order value (AOV) beyond the starting price",
+    "Lens upgrade options (e.g. progressives, blue light, high-index) and pricing",
+    "Shipping times and return policy details"
+  ],
+  "clarifying_questions": [
+    "What is your typical average order value (AOV) once customers add lens upgrades?",
+    "Do you offer progressive lenses or blue-light blocking options, and what is the starting price for those?",
+    "What is the typical turnaround time from a customer finishing their home try-on to receiving their completed prescription glasses?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

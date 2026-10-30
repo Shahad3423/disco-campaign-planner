@@ -1,0 +1,83 @@
+{
+  "business_summary": "A direct-to-consumer flower delivery service offering bouquets priced between $55 and $100, specifically targeting occasion-driven gifting such as birthdays, anniversaries, and Mother's Day, with a strong operational focus on same-day or next-day delivery.",
+  "product": "Flower bouquets",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Flower bouquets delivered to your door, $55-100.",
+    "Occasion-driven - birthdays, anniversaries, Mother's Day.",
+    "Same or next day matters a lot to us."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Same or next day delivery is highly prioritized.",
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The product is explicitly occasion-driven for birthdays, anniversaries, and Mother's Day."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Flowers are a common home decor and aesthetic enhancement product."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Delivered to your door with same or next day fulfillment."
+    },
+    {
+      "tag": "instant_delivery",
+      "weight": 0.5,
+      "why": "Strong emphasis on same-day or next-day delivery fulfillment."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "quick_commerce",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's focus on instant delivery and convenience aligns perfectly with the advertiser's need for same/next day delivery."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting audience, which aligns well with occasion-driven flower purchases."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that gifting and life events drive purchases, matching the advertiser's occasion-driven model."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of couples and families, who are prime demographics for anniversaries and Mother's Day."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, target use case (gifting), and fulfillment expectations are clearly defined and ready for planning.",
+  "missing_info": [
+    "Exact delivery coverage areas (nationwide vs. specific cities)",
+    "Whether subscription options are offered alongside one-time purchases"
+  ],
+  "clarifying_questions": [
+    "What geographic regions or zip codes do you support for same-day and next-day delivery?",
+    "Do you offer a subscription model for regular flower deliveries, or is it strictly one-time gifting?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

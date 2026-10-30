@@ -1,0 +1,64 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your system, {first_name}",
+      "body": "Support your skin, gut, and energy with targeted formulas like Daily Cleanse and Red Carpet.",
+      "cta": "Shop formulas",
+      "headline_no_name": "Optimize your daily wellness system",
+      "angle": "outcome-focused wellness system optimization",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Honest daily wellness, {first_name}",
+      "body": "Support your skin, gut, and energy with straightforward formulas like Daily Cleanse and Red Carpet.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Honest daily wellness formulas",
+      "angle": "transparent, straightforward presentation of core benefits",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Easiest daily routine, {first_name}",
+      "body": "Get supplements for skin, gut, and energy delivered. Try Daily Cleanse and Red Carpet on subscription.",
+      "cta": "Start subscription",
+      "headline_no_name": "Your daily routine, simplified",
+      "angle": "convenience and subscription consistency",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Ready for the Red Carpet, {first_name}?",
+      "body": "Treat your skin, gut, and energy. Glow from the inside out with Daily Cleanse and Red Carpet this Halloween season.",
+      "cta": "Shop the glow",
+      "headline_no_name": "Ready for the Red Carpet?",
+      "angle": "playful, aesthetic-forward, incorporating Halloween",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Power your active days, {first_name}",
+      "body": "Support your energy, gut, and skin. Keep your body performing at its best with Daily Cleanse and Red Carpet.",
+      "cta": "Shop energy formulas",
+      "headline_no_name": "Power your active days",
+      "angle": "performance and active lifestyle support",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    }
+  ]
+}

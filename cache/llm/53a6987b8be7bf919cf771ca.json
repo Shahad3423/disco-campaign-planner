@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your training system, {first_name}.",
+      "body": "An essential system for serious recreational marathoners. Run in heritage New England singlets from $58 and jackets $200+.",
+      "cta": "Shop marathon gear",
+      "headline_no_name": "Optimize your training system.",
+      "angle": "outcome-focused training system framing",
+      "claims_used": [
+        "Our customer is a serious recreational marathoner",
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "jackets $200+"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Built for serious marathoners, {first_name}.",
+      "body": "Designed for serious recreational marathoners. Get running apparel with a heritage, New England feel. Singlets from $58, jackets $200+.",
+      "cta": "Shop running apparel",
+      "headline_no_name": "Built for serious marathoners.",
+      "angle": "dedicated runner identity and training focus",
+      "claims_used": [
+        "Our customer is a serious recreational marathoner",
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "jackets $200+"
+      ]
+    }
+  ]
+}

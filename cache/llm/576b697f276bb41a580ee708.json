@@ -1,0 +1,36 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is generic and fails to leverage the persona's preferred messaging angles, such as emotional connection or vet recommendations."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward phrasing of the price range ($500-$700) directly in the consumer-facing ad copy.",
+        "Contains a highly specific seasonal reference ('This Halloween') which limits the ad's evergreen usability."
+      ],
+      "passed": true
+    }
+  ]
+}

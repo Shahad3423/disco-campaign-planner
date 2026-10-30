@@ -1,0 +1,92 @@
+{
+  "business_summary": "An advertiser offering hair bond repair products for damaged hair, distributed through salon and retail channels.",
+  "product": "Bond repair for damaged hair",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Bond repair for damaged hair",
+    "Everyone should be using it lol",
+    "Salon and retail"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Adjacent category with highly overlapping consumer interest."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.25,
+      "why": "Aligns with the professional salon distribution and self-care focus."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.25,
+      "why": "Personal grooming adjacent category with shared beauty routine habits."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "prefers science-backed claims and ingredient transparency; disinterested in novelty",
+      "evidence": "Advertiser's highly casual pitch 'Everyone should be using it lol' lacks scientific substance or details."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Strandlab is a direct competitor in the personalized haircare space."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline's Gen Z and millennial audience has high affinity for beauty and aesthetic self-care."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care, spa, and professional-grade beauty services."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's audience is highly skeptical of unsubstantiated claims; the advertiser's casual pitch may not resonate."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product category (haircare/beauty) and primary offering (bond repair) are clearly defined, enabling effective publisher matching despite the brief description.",
+  "missing_info": [
+    "price_point_usd",
+    "purchase_model",
+    "ingredients_or_science_claims"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of your bond repair product?",
+    "Is this product available as a subscription or primarily as a one-time purchase?",
+    "Do you have specific clinical or science-backed claims to support your bond-repair formulation?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

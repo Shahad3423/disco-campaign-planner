@@ -1,0 +1,41 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "durable"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy lacks the technical performance claims or fabric details preferred by this persona, leaning too close to generic outdoor fashion.",
+        "Includes the unsupported claim 'durable'."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "sustainable",
+        "ethically made"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Includes unsupported claims 'sustainable' and 'ethically made' which are not explicitly present in the stated claims (only 'Certified B Corp' is stated)."
+      ],
+      "passed": false
+    }
+  ]
+}

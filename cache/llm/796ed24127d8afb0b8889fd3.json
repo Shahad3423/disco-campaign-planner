@@ -1,0 +1,106 @@
+{
+  "business_summary": "Subscription razors and grooming for men, starting at approximately $5 per month, targeting men who are new to razor subscriptions.",
+  "product": "Subscription razors and grooming products",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "male",
+  "target_age_range": null,
+  "stated_claims": [
+    "Subscription razors and grooming for men, from about $5 a month.",
+    "Looking to reach men who haven't tried a razor subscription."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "The core target audience is men."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business model is a subscription service."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Razors and grooming products are daily personal care essentials."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Shaving and grooming products are typically used in the bathroom."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Grooming and shaving are closely related to skincare routines."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The brand operates on a direct-to-consumer subscription model."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "convenience",
+    "premium_basics",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only', 'self-care-only framing']",
+      "evidence": "Subscription razors and grooming for men"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Activewear publisher with a male audience segment and subscription-friendly crossover."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, which is a demographic mismatch for men's grooming."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience is exclusively women, mismatching the target male demographic."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Audience is focused on women's apparel and intimates."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Wellness publisher specifically targeting women."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined and ready for planning.",
+  "missing_info": [
+    "Specific grooming products offered in addition to razors",
+    "Shipping costs and fulfillment details",
+    "Target age range within the male demographic"
+  ],
+  "clarifying_questions": [
+    "What specific grooming products do you offer alongside razors?",
+    "Is shipping included in the $5/month price, or is there an additional fee?",
+    "Do you target a specific age demographic among men?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

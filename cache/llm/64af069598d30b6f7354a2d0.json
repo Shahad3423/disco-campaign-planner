@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, fund clean water with one quick tap",
+      "body": "Set up a hassle-free monthly gift. We fund clean water projects in developing countries. A typical gift is just $20 a month.",
+      "cta": "Start monthly gift",
+      "headline_no_name": "Fund clean water with one quick tap",
+      "angle": "Convenience and frictionless subscription setup",
+      "claims_used": [
+        "We fund clean water projects in developing countries.",
+        "$20 a month is our typical gift."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, help provide clean water globally",
+      "body": "Clean water is the foundation of life. We fund clean water projects in developing countries. Join with a typical $20 monthly gift.",
+      "cta": "Donate monthly",
+      "headline_no_name": "Help provide clean water globally",
+      "angle": "Clean water as an essential foundation for human wellness",
+      "claims_used": [
+        "We fund clean water projects in developing countries.",
+        "$20 a month is our typical gift."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, help families get clean water",
+      "body": "An easy way to support global families. We fund clean water projects in developing countries. A typical monthly gift is just $20.",
+      "cta": "Give $20 monthly",
+      "headline_no_name": "Help families get clean water",
+      "angle": "Family-focused social good with an easy setup",
+      "claims_used": [
+        "We fund clean water projects in developing countries.",
+        "$20 a month is our typical gift."
+      ]
+    }
+  ]
+}

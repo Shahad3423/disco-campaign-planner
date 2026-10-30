@@ -1,0 +1,105 @@
+{
+  "business_summary": "Custom skincare formulas prescribed by licensed providers, targeting acne and anti-aging concerns, offered via a free trial (pay shipping).",
+  "product": "Custom skincare formulas",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "unknown",
+  "stated_claims": [
+    "Custom skincare formulas from licensed providers",
+    "Mostly acne and anti-aging",
+    "Free trial, just pay shipping"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "personalized"
+  ],
+  "fulfillment_notes": "Free trial, just pay shipping.",
+  "relevant_tags": [
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product category is skincare."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Skincare is a primary subcategory under beauty."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "Formulas are customized by licensed providers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Free trial models typically transition into recurring subscription models."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "A science-backed, provider-led skincare routine aligns with wellness-conscious audiences."
+    }
+  ],
+  "competing_tags": [
+    "skincare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in: performance claims without vibe",
+      "evidence": "Focus on clinical/medical efficacy ('licensed providers', 'acne and anti-aging') rather than lifestyle or aesthetic branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Strong crossover with wellness and beauty, appealing to a skincare-engaged audience."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users are actively spending on self-care, making them prime candidates for premium custom skincare."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Science-forward wellness audience that values licensed provider claims and clinical solutions."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Direct beauty and skincare publisher, though potential for competitor conflict exists."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Audience motivated by personalization and likely familiar with quiz-based onboarding."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, value proposition, and offer are clearly defined, mapping cleanly to beauty, wellness, and personalized publishers.",
+  "missing_info": [
+    "Ongoing subscription price after the free trial ends",
+    "Shipping cost for the free trial",
+    "Specific demographic targets (e.g., target age range or gender split)"
+  ],
+  "clarifying_questions": [
+    "What is the ongoing subscription price after the free trial period ends?",
+    "What is the shipping cost for the free trial?",
+    "Do you target specific age ranges or genders for the acne vs. anti-aging formulas?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

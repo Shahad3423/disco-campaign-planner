@@ -1,0 +1,104 @@
+{
+  "business_summary": "DTC subscription service delivering low-sugar, lab-tested natural wines monthly for approximately $160 per box, targeting wellness-conscious adults.",
+  "product": "Natural wine subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 160.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "21+",
+  "stated_claims": [
+    "Low-sugar",
+    "lab-tested natural wines",
+    "shipped monthly",
+    "$160-ish a box",
+    "Adults 21+ who care about wellness",
+    "Ship to states we're licensed in only"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "wellness",
+    "natural ingredients",
+    "transparency"
+  ],
+  "fulfillment_notes": "Ship to states licensed in only.",
+  "relevant_tags": [
+    {
+      "tag": "alcohol",
+      "weight": 1.0,
+      "why": "The core product is wine."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Wine is an alcoholic beverage."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Explicitly marketed as natural wine."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Sold as a monthly recurring box."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Marketed to adults who care about wellness with low-sugar and lab-tested claims."
+    }
+  ],
+  "competing_tags": [
+    "alcohol"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "subscription_boxes",
+    "subscription_services",
+    "gourmet_food"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "shipped monthly"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Direct competitor because they sell alcohol, meaning they will block this offer on their thank-you page."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Clean-ingredient and wellness focus matches natural, lab-tested, low-sugar wine."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Science-forward wellness audience matches the 'lab-tested' claim."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Health-curious but indulgence-seeking audience matches low-sugar natural wine."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, subscription model, target audience, and shipping constraints are clearly defined.",
+  "missing_info": [
+    "Specific states where shipping is licensed",
+    "Exact bottle count per box"
+  ],
+  "clarifying_questions": [
+    "Which specific states are you licensed to ship to?",
+    "How many bottles of wine are included in the $160 monthly box?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

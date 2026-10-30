@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, power your workouts for less",
+      "body": "Don't pay for flashy marketing. Get the same formulations as the expensive brands for half the cost.",
+      "cta": "Shop supplements",
+      "headline_no_name": "Power your workouts for half the cost",
+      "angle": "Focuses on athletic performance using identical formulations without paying for marketing hype",
+      "claims_used": [
+        "We compete on price, not on marketing.",
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, get identical formulations",
+      "body": "Optimize your daily regimen. We offer the exact same formulations as the expensive brands, competing on price, not on marketing.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Identical formulations, half the cost",
+      "angle": "Focuses on ingredient formulation transparency and systematic optimization",
+      "claims_used": [
+        "We compete on price, not on marketing.",
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Cut your supplement spend in half, {first_name}",
+      "body": "Why pay double? We offer the same formulations as the expensive brands for half the cost because we compete on price, not marketing.",
+      "cta": "Shop half-price",
+      "headline_no_name": "Cut your supplement spend in half",
+      "angle": "Direct price comparison and value-forward positioning",
+      "claims_used": [
+        "We compete on price, not on marketing.",
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    }
+  ]
+}

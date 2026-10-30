@@ -1,0 +1,90 @@
+{
+  "business_summary": "A monthly themed subscription box offering toys and treats for dogs, with plans starting at approximately $23 per month for 6 or 12 month commitments.",
+  "product": "Monthly themed box of toys and treats for dogs",
+  "is_consumer_product": true,
+  "price_point_usd": 23.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Monthly themed box of toys and treats for dogs",
+    "Starts at about $23/mo with a 6 or 12 month plan"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "The product is a dog subscription box, perfectly fitting the core pet category."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Dog toys are a core pet supply product."
+    },
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "The box includes toys for dogs."
+    },
+    {
+      "tag": "treats",
+      "weight": 1.0,
+      "why": "The box includes treats for dogs."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product operates on a monthly subscription model."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Pet boxes are occasionally purchased as gifts."
+    }
+  ],
+  "competing_tags": [
+    "pet",
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "subscription_boxes",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is a subscription-heavy pet publisher whose health-conscious and premium audience aligns well with a dog box."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco features the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate explicitly focuses on pet supplies, subscription, toys, and treats with millennials treating dogs as family."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, purchase model, and target audience are clearly defined, allowing for a precise campaign plan.",
+  "missing_info": [
+    "exact margin/commission structure",
+    "specific target demographics beyond dog owners"
+  ],
+  "clarifying_questions": [
+    "What is your target commission or CPA goal for first-box signups?",
+    "Do you offer shorter 1-month or 3-month plans, or only 6 and 12-month commitments?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

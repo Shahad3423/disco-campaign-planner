@@ -1,0 +1,37 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "comfort gear built for your active days",
+        "Perfect comfort for your active lifestyle and recovery"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad invents performance and recovery claims that are not supported by the advertiser's stated claims.",
+        "Low persona fit because it tries to appeal to a fitness enthusiast with generic comfort items framed as performance/recovery gear without actual technical specifications."
+      ],
+      "passed": false
+    }
+  ]
+}

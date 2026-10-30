@@ -1,0 +1,79 @@
+{
+  "business_summary": "A direct-to-consumer brand selling fast chargers, power banks, and cables priced between $20 and $60, targeting everyday phone and laptop users.",
+  "product": "Fast chargers, power banks, and cables",
+  "is_consumer_product": true,
+  "price_point_usd": 40.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fast chargers, power banks, cables.",
+    "Mostly $20-60 purchases.",
+    "We want phone-and-laptop users, and I'd say everyone qualifies."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Charging accessories are utility-driven, convenience purchases for everyday life."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Standard direct-to-consumer e-commerce product category."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Tech accessories in the $20-60 range are common stocking stuffers or small gifts."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Targeting laptop and phone users aligns with working professionals."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Their audience consists of 'tech-adjacent urban professionals' who are the ideal demographic for phone and laptop charging accessories."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly shoppers align well with a low-friction $20-60 utility purchase."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older affluent women with lower impulse buying habits are less likely to convert on quick tech accessory offers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, price point, and target audience are clearly defined, allowing us to map them to relevant publishers immediately.",
+  "missing_info": [
+    "Primary campaign goal (e.g., customer acquisition vs. high AOV)",
+    "Product warranty or unique selling propositions (e.g., charging speed, materials)",
+    "Shipping times and costs"
+  ],
+  "clarifying_questions": [
+    "What is your primary goal for this campaign (e.g., high-volume customer acquisition or maximizing average order value)?",
+    "Do your products feature any specific certifications, warranties, or sustainable materials that we can highlight in the creatives?",
+    "Do you offer any bundle options (like a charger + cable set) that perform particularly well?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

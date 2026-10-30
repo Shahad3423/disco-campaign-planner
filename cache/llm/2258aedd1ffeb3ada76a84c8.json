@@ -1,0 +1,67 @@
+{
+  "business_summary": "Sells consumer e-readers priced between $100 and $200, targeting avid readers, travelers, and gift-buyers.",
+  "product": "E-readers",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "E-readers, $100-$200.",
+    "For avid readers, travelers, and as gifts."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Advertiser explicitly states the product is positioned as a gift."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Reading is a core leisure activity highly associated with home and relaxation."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_009",
+      "conflict": "sedentary-lifestyle products",
+      "evidence": "E-readers are designed for reading, which is fundamentally a sedentary lifestyle activity."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns perfectly with the advertiser's explicit focus on gifting."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and life events drive purchases here, matching the advertiser's gift positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, price point, and target audiences are clearly defined and fit well within consumer DTC checkout demographics.",
+  "missing_info": [
+    "Specific shipping times/costs",
+    "Whether the e-readers come with book store integrations or subscriptions",
+    "Primary device specifications (battery life, screen size)"
+  ],
+  "clarifying_questions": [
+    "Does the purchase include any bundled book subscriptions or credit?",
+    "What is your average shipping time and cost for domestic orders?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

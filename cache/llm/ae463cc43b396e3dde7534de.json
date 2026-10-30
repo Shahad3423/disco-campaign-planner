@@ -1,0 +1,81 @@
+{
+  "business_summary": "Modern, design-conscious cat trees, scratchers, and wall-mounted furniture designed for apartment dwellers, avoiding the traditional carpet-covered look.",
+  "product": "Modern cat furniture (trees, scratchers, wall-mounted furniture)",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the products are exclusively for cat owners."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core category; cat trees and scratchers are essential pet supplies."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Adjacent interest; the products are designed as aesthetic furniture for the home."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "home_decor",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in vague premium positioning / luxury-only messaging.",
+      "evidence": "Advertiser has a high AOV of $150 and targets design-conscious consumers, which conflicts with value-conscious preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Premium positioning aligns well with high-AOV, design-conscious pet products."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban buyers match the advertiser's target audience of design-conscious apartment dwellers."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": -1,
+      "why": "This publisher is highly focused on dogs, while the advertiser is strictly for cat owners."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, premium pricing ($150 AOV), and target demographic are clearly defined and suitable for the network.",
+  "missing_info": [
+    "exact price per item",
+    "shipping costs and times",
+    "whether they offer any recurring subscription items (e.g., replacement scratcher cardboard)"
+  ],
+  "clarifying_questions": [
+    "What is the starting price for your entry-level scratchers versus your larger wall-mounted furniture?",
+    "Do you sell replacement parts (like scratcher pads) on a subscription basis, or is everything a one-time purchase?",
+    "What are your typical shipping rates and delivery times for these larger furniture pieces?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

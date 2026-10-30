@@ -1,0 +1,103 @@
+{
+  "business_summary": "DTC coffee brand selling high-caffeine beans, grounds, and cold brew cans targeted at heavy coffee drinkers who appreciate humor.",
+  "product": "High-caffeine coffee (beans, grounds, and cold brew cans)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "The world's strongest coffee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "The core product is coffee, which is a beverage."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Coffee beans and grounds are standard pantry staples."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Coffee is a daily consumable grocery item."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Cold brew cans offer quick, ready-to-drink convenience."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 0.5,
+      "why": "High-caffeine coffee functions as an energy and performance booster."
+    }
+  ],
+  "competing_tags": [
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "groceries",
+    "convenience",
+    "functional_beverages"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in novelty",
+      "evidence": "The brand's positioning as 'the world's strongest coffee' combined with a humorous tone may be perceived as a novelty or gimmick by strict wellness optimizers."
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language and loud aesthetics",
+      "evidence": "An intense, high-caffeine coffee brand utilizing humor conflicts with the understated, heritage, and quality-focused preferences of the Affluent Classic."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spikes and impulse-friendly convenience buyers align well with ready-to-drink cold brew cans."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and high-AOV focus will likely clash with a loud, humorous, high-caffeine coffee brand."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Audience responds best to a fun, playful brand voice, which aligns perfectly with the advertiser's humorous angle."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Beverage-focused audience seeking indulgence is highly compatible with premium, high-strength coffee."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product and target audience are clearly defined, allowing us to proceed with onboarding and placement planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "exact purchase model (one-time vs subscription)",
+    "target age range",
+    "target gender"
+  ],
+  "clarifying_questions": [
+    "What is your average price point or AOV?",
+    "Do you offer a subscription option for your coffee products, or is it primarily one-time purchases?",
+    "Are there specific demographic groups (e.g., age, gender) you target beyond heavy coffee drinkers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,78 @@
+{
+  "business_summary": "Provides annual subscriptions to high-quality video classes taught by famous experts, targeting curious, higher-income learners, with a strong focus on gifting during the Q4 holiday season.",
+  "product": "Annual subscription to expert-led video classes",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Annual subscription (~$120-180) to video classes from famous experts.",
+    "Big gifting spike in Q4.",
+    "We want curious, higher-income learners."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital delivery / instant access.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The core product model is an annual subscription."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser experiences a major gifting spike in Q4 and wants to target holiday shoppers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "high price sensitivity and disinterest in luxury-only/vague premium positioning",
+      "evidence": "The product is a $120-180 annual subscription targeting 'higher-income learners'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience consists of affluent women who respond to quality messaging, aligning with the target of higher-income, curious learners."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV publisher, which aligns well with a premium $120-$180 subscription and higher-income targets."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift in Nov-Dec aligns perfectly with the advertiser's Q4 gifting spike."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Late-night, high-frequency grocery/convenience impulse buyers are a poor fit for a high-AOV, considered educational subscription."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clear enough to begin planning and setting up campaigns, especially for Q4 gifting.",
+  "missing_info": [
+    "Specific course categories/genres (e.g., cooking, writing, wellness) to better refine host targeting.",
+    "Whether physical gift cards or digital-only gifts are available."
+  ],
+  "clarifying_questions": [
+    "What are the main topics or categories of your most popular video classes?",
+    "Do you offer dedicated gift cards or non-renewing gift subscriptions for Q4?",
+    "Are there specific age demographics that convert best for your platform?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

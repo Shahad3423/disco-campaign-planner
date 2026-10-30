@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Straightforward cookware for your home, {first_name}",
+      "body": "No empty promises. Just the Always Pan ($150ish) and bright cookware designed simply and beautifully for younger first-home buyers.",
+      "cta": "Shop the Always Pan",
+      "headline_no_name": "Straightforward cookware for your first home",
+      "angle": "Transparent, hype-free product introduction to respect skeptical buyers",
+      "claims_used": [
+        "Always Pan and other cookware in bright colors",
+        "$150ish for the Always Pan",
+        "Great for younger first-home buyers"
+      ]
+    }
+  ]
+}

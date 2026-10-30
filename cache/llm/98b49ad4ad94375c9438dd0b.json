@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Ready for your next workout, {first_name}?",
+      "body": "Support your exercise recovery with our hemp-extract CBD gummies, oils, and creams. Formulated for your active routine.",
+      "cta": "Shop CBD creams",
+      "headline_no_name": "Support your exercise recovery",
+      "angle": "exercise recovery support for active lifestyles",
+      "claims_used": [
+        "Hemp-extract CBD gummies, oil and creams",
+        "Stress, sleep, exercise recovery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, invest in lasting comfort.",
+      "body": "A mattress is a once-every-8-years purchase. Enjoy premium quality with our risk-free 100-night trial and free shipping.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Invest in lasting comfort.",
+      "angle": "quality-focused and longevity",
+      "claims_used": [
+        "once-every-8-years purchase",
+        "100-night trial",
+        "free shipping and returns"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "A premium housewarming gift for {first_name}",
+      "body": "Gift a premium mattress ranging from $600 to $2,000. Includes a 100-night trial and free shipping and returns.",
+      "cta": "Shop gift options",
+      "headline_no_name": "The ultimate housewarming gift",
+      "angle": "premium gift-giving for life transitions",
+      "claims_used": [
+        "Mattresses run $600-2,000",
+        "100-night trial",
+        "free shipping and returns"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify your next move.",
+      "body": "Upgrade the family's beds with mattresses from $600 to $2,000. Enjoy a 100-night trial with easy free shipping and returns.",
+      "cta": "Try risk-free today",
+      "headline_no_name": "Simplify your next move.",
+      "angle": "convenience and easy returns",
+      "claims_used": [
+        "Mattresses run $600-2,000",
+        "100-night trial",
+        "free shipping and returns"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose a mattress built to last.",
+      "body": "Reduce waste with a once-every-8-years mattress purchase. Experience the quality first-hand with our 100-night trial.",
+      "cta": "Shop mattresses",
+      "headline_no_name": "Choose a mattress built to last.",
+      "angle": "longevity and reducing waste",
+      "claims_used": [
+        "once-every-8-years purchase",
+        "100-night trial"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "100% paperless protection",
+        "zero paper waste"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claims '100% paperless protection' and 'zero paper waste' are unsupported by the advertiser's stated claims.",
+        "The persona avoids vague eco claims, making the generic 'paperless' angle a poor fit without specific certifications or supply chain transparency."
+      ],
+      "passed": false
+    }
+  ]
+}

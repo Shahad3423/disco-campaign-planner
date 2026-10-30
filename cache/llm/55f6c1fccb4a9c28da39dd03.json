@@ -1,0 +1,98 @@
+{
+  "business_summary": "Squeeze-bottle olive oil designed for everyday cooking and finishing, targeted at home cooks aged 25-40.",
+  "product": "Squeeze-bottle olive oil combo (two bottles)",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "25-40",
+  "stated_claims": [
+    "Squeeze-bottle olive oil for everyday cooking and finishing",
+    "Two bottles, about $20 for a combo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Olive oil is a core pantry staple used daily by home cooks."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "It is an essential food and grocery item."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Used directly in kitchen food preparation."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Highly adjacent to cooking tools; shoppers buying cookware are active home cooks."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Meal kit subscribers cook at home regularly and value convenient cooking ingredients."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Sold as a modern DTC food brand."
+    }
+  ],
+  "competing_tags": [
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "gourmet_food",
+    "groceries",
+    "premium_grocery",
+    "home_goods",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience values clean ingredients and pantry staples, making them a perfect fit for premium olive oil."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts kitchen and cookware buyers who are actively cooking at home."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's meal-kit users are food-interested and cook regularly, aligning well with everyday olive oil."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's grocery and convenience shoppers are highly receptive to impulse-friendly food purchases."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "shipping costs and thresholds",
+    "subscription availability",
+    "organic or non-GMO certifications"
+  ],
+  "clarifying_questions": [
+    "Do you offer this olive oil combo as a recurring subscription, or is it one-time purchase only?",
+    "What are your standard shipping costs, and do you offer free shipping over a certain threshold?",
+    "Are there any specific certifications (like organic, non-GMO, or extra virgin) that we should highlight in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

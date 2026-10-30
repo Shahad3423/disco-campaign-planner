@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily system, {first_name}",
+      "body": "A science-led daily probiotic subscription designed for the evidence-focused wellness crowd. About $50 a month.",
+      "cta": "Subscribe today",
+      "headline_no_name": "Optimize your daily system",
+      "angle": "system optimization and science-backed daily routine",
+      "claims_used": [
+        "Science-led daily probiotic subscription",
+        "evidence-focused wellness crowd",
+        "about $50 a month"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, fuel your daily performance",
+      "body": "Support your routine with a science-led daily probiotic subscription. Built for the evidence-focused wellness crowd for about $50 a month.",
+      "cta": "Start subscription",
+      "headline_no_name": "Fuel your daily performance",
+      "angle": "incorporating science-backed habits into a high-performance routine",
+      "claims_used": [
+        "Science-led daily probiotic subscription",
+        "evidence-focused wellness crowd",
+        "about $50 a month"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, automate your daily wellness",
+      "body": "Get a science-led daily probiotic subscription delivered monthly. Easy daily routine for the evidence-focused crowd for about $50 a month.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Automate your daily wellness",
+      "angle": "frictionless monthly subscription and ease of use",
+      "claims_used": [
+        "Science-led daily probiotic subscription",
+        "evidence-focused wellness crowd",
+        "about $50 a month"
+      ]
+    }
+  ]
+}

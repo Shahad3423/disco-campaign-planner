@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, cozy Halloween treats for the family",
+      "body": "Great for families buying multi-packs of comfort socks and tees. Every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop family packs",
+      "headline_no_name": "Cozy Halloween treats for the whole family",
+      "angle": "bundle offers and seasonal family savings",
+      "claims_used": [
+        "Great for families buying multi-packs",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, find the perfect gift that gives back",
+      "body": "These comfort socks and tees are great for gifting. Every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop gift options",
+      "headline_no_name": "Find the perfect gift that gives back",
+      "angle": "gifting with philanthropic impact",
+      "claims_used": [
+        "Great for gifting",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, stand for a cause in comfort",
+      "body": "Get everyday comfort socks and tees. Every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop comfort socks",
+      "headline_no_name": "Stand for a cause in comfort",
+      "angle": "social good and philanthropic identity alignment",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

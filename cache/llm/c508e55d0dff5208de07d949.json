@@ -1,0 +1,88 @@
+{
+  "business_summary": "An advertiser offering hemp oil and chews formulated for anxious or older dogs, featuring vet recommendations and a 30-day guarantee.",
+  "product": "Hemp oil and chews for dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-recommended",
+    "30-day guarantee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the products are specifically for dogs."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core subcategory; hemp oil and anxiety chews are functional pet supplies."
+    },
+    {
+      "tag": "treats",
+      "weight": 1.0,
+      "why": "The product includes chews, which are a form of functional pet treat."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Hemp oil and calming chews function as health and wellness supplements for pets."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Hemp-based products strongly appeal to consumers seeking natural remedy options."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies",
+    "treats",
+    "pet_pharmacy"
+  ],
+  "persona_affinity_tags": [
+    "pet_health",
+    "pet_supplies",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Health-conscious pet owners seeking premium options are highly aligned with vet-recommended pet supplements."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "As the largest pet audience in the catalog with repeat-purchase behavior, this is an ideal host for dog consumables."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennials treating dogs as family are highly receptive to anxiety and wellness products for their pets."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product and target audience are highly specific and clear enough to begin mapping out host partnerships, although policy clearance for hemp is required before launch.",
+  "missing_info": [
+    "Price point and average order value",
+    "One-time purchase vs. subscription model details",
+    "Specific THC/CBD content to verify compliance with ad network policies"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your hemp oil and chews?",
+    "Do you offer these products on a subscription basis, or are they one-time purchases?",
+    "Do your products contain CBD, and do you have lab-verified certificates of analysis (COAs) to satisfy ad network compliance requirements?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

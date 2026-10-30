@@ -1,0 +1,114 @@
+{
+  "business_summary": "Transparent-pricing DTC brand offering wardrobe staples such as tees, denim, and work-appropriate pants. Targets mid-career shoppers who value manufacturing transparency and have an average order value of $100-150.",
+  "product": "Wardrobe staples (tees, denim, work-appropriate pants)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "30-50",
+  "stated_claims": [
+    "Transparent-pricing wardrobe staples",
+    "Cares about where stuff is made"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "transparency",
+    "ethical manufacturing"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is wardrobe staples including tees, denim, and pants."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "Sells everyday wardrobe staples like tees."
+    },
+    {
+      "tag": "workwear",
+      "weight": 1.0,
+      "why": "Sells work-appropriate pants suitable for mid-career professionals."
+    },
+    {
+      "tag": "casual",
+      "weight": 1.0,
+      "why": "Sells casual staples like denim and tees."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Shoppers care about where products are made, aligning with sustainable and ethical production values."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Wardrobe staples align with a classic, timeless style."
+    }
+  ],
+  "competing_tags": [
+    "apparel",
+    "basics",
+    "workwear",
+    "casual"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "classic_apparel",
+    "sustainable_apparel",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_009",
+      "conflict": "disinterested in fashion-only positioning",
+      "evidence": "wardrobe staples - tees, denim, work-appropriate pants"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency, late-night impulse grocery buyers are unlikely to purchase planned $100-150 wardrobe staples."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women buying workwear and casual apparel with high AOV align perfectly with mid-career wardrobe staples."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "High-AOV apparel publisher with a workwear focus matches the price point and product type."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": 1,
+      "why": "Professional women who care about sustainability align with work-appropriate pants and transparent sourcing."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals seeking comfort and sustainability align with high-quality wardrobe staples."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, and average order value are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Individual product price points",
+    "Specific manufacturing locations or certifications",
+    "Target gender split (men's, women's, or unisex)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point for individual items (e.g., tees vs. denim)?",
+    "Do you offer both men's and women's apparel, or do you focus on one gender?",
+    "Where are your garments manufactured, and do you have specific certifications we can highlight?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

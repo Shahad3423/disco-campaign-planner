@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Skip the waiting room, {first_name}",
+      "body": "Get online visits and prescriptions for hair loss, ED, and skincare from the comfort of home. Quick, easy, and fits your busy schedule.",
+      "cta": "Start online visit",
+      "headline_no_name": "Skip the waiting room",
+      "angle": "time-saving and convenience for busy schedules",
+      "claims_used": [
+        "Online visits and prescriptions for things like hair loss and ED, plus skincare."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your routine, {first_name}",
+      "body": "Get direct online visits and prescriptions for hair loss, ED, and skincare. Seamlessly integrate targeted treatments into your system.",
+      "cta": "Get started online",
+      "headline_no_name": "Optimize your health routine",
+      "angle": "outcome-focused and systematic approach to personal care",
+      "claims_used": [
+        "Online visits and prescriptions for things like hair loss and ED, plus skincare."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Elevate your self-care, {first_name}",
+      "body": "Modern online visits and prescriptions for skincare, hair loss, and ED. No awkward waiting rooms, just simple care delivered to you.",
+      "cta": "Start consultation",
+      "headline_no_name": "Elevate your self-care routine",
+      "angle": "aesthetic-forward, modern, and low-friction experience",
+      "claims_used": [
+        "Online visits and prescriptions for things like hair loss and ED, plus skincare."
+      ]
+    }
+  ]
+}

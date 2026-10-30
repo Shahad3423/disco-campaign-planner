@@ -1,0 +1,91 @@
+{
+  "business_summary": "Mid-century modern furniture shipped direct, targeting people in new homes or apartments with premium sofas.",
+  "product": "Mid-century modern furniture (sofas)",
+  "is_consumer_product": true,
+  "price_point_usd": 1500.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Mid-century modern furniture shipped direct",
+    "Sofas cost around $1,000-2,000",
+    "delivery takes a couple of weeks"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "delivery takes a couple of weeks",
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category for furniture and home decor."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent category; shoppers decorating their homes often buy textiles and furniture together."
+    },
+    {
+      "tag": "bedding",
+      "weight": 0.5,
+      "why": "Adjacent category; bedroom setup often coincides with buying new furniture."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Weak adjacent category; related to home setup and moving."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.25,
+      "why": "Weak adjacent category; related to home setup and moving."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in: delayed fulfillment",
+      "evidence": "delivery takes a couple of weeks"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious buyers with high cross-sell in home goods are a great fit for mid-century modern furniture."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events drive purchases, matching the advertiser's target audience of people in new homes."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Impulse-friendly, high-frequency convenience shoppers are a poor fit for high-ticket furniture purchases."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and fulfillment expectations are clearly defined.",
+  "missing_info": [
+    "exact average order value",
+    "target age demographics",
+    "primary marketing goal"
+  ],
+  "clarifying_questions": [
+    "What is your average order value across all furniture items?",
+    "Are you looking to target a specific age demographic?",
+    "What is your primary conversion goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

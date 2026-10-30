@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Hey {first_name}, ready to skip Amazon?",
+      "body": "Support independent bookstores with every book you buy. Keep your shelf aesthetic and your values aligned.",
+      "cta": "Shop indie books",
+      "headline_no_name": "Ready to skip Amazon for your next read?",
+      "angle": "values-aligned",
+      "claims_used": [
+        "Supports independent bookstores",
+        "For book lovers who'd rather skip Amazon"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your bookshelf.",
+      "body": "Skip Amazon and support independent bookstores directly. A typical basket is just $30 to fuel your mind and support local shops.",
+      "cta": "Order indie books",
+      "headline_no_name": "Optimize your reading habits.",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Supports independent bookstores",
+        "Typical basket $30",
+        "For book lovers who'd rather skip Amazon"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, find spooky stories they'll love.",
+      "body": "Skip Amazon this Halloween. Support independent bookstores with a typical book basket of $30. Easy, family-friendly shopping.",
+      "cta": "Shop family reads",
+      "headline_no_name": "Find spooky Halloween stories they'll love.",
+      "angle": "time-saving",
+      "claims_used": [
+        "Supports independent bookstores",
+        "Typical basket $30",
+        "For book lovers who'd rather skip Amazon"
+      ]
+    }
+  ]
+}

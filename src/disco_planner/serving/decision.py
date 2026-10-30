@@ -33,8 +33,12 @@ class Offer(BaseModel):
     pricing_model: str
     bid: float                     # final bid for THIS impression (after bid strategy)
     bid_breakdown: str = ""
-    expected_ctr: float
-    ecpm: float
+    expected_ctr: float            # at slot 1; slot effects applied in the auction
+    ecpm: float                    # ranking score = final bid x expected CTR x 1000
+    slot: int | None = None
+    host_budget_left_usd: float | None = None  # this campaign's remaining budget on THIS host
+    price_paid: float | None = None  # second price, per click (CPC) or per 1,000 (CPM)
+    host_revenue_per_1000: float | None = None
     reasons: list[str]
 
 
@@ -48,6 +52,9 @@ class ServeDecision(BaseModel):
     cta: str | None = None
     name_used: bool = False
     reasons: list[str] = Field(default_factory=list)
+    # Every eligible campaign before the auction (bids are private to advertisers; this is Disco's
+    # own view, used for auction insights, never shown to an advertiser per rival).
+    bid_landscape: list[dict] = Field(default_factory=list)
 
 
 def _cfg() -> dict:
@@ -177,11 +184,44 @@ def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: 
                            f"= ${bid:.2f}{capped}; ceiling ${ceiling:.2f}")
 
 
+def run_auction(offers: list[Offer], cfg: dict) -> tuple[list[Offer], list[str]]:
+    """Generalised second-price auction for the page's slots.
+    Rank by eCPM; drop anything below the reserve; slot i's CTR is scaled by position_ctr[i];
+    each winner pays the least that keeps its slot: next eCPM / (own CTR x 1000) + increment,
+    never above its own bid. The host earns its revenue share of what's actually paid."""
+    rev_share = catalog.config("pricing")["network"]["rev_share_to_publisher"]
+    notes = []
+    eligible = sorted((o for o in offers if o.ecpm >= cfg["reserve_ecpm"]), key=lambda o: -o.ecpm)
+    if len(eligible) < len(offers):
+        notes.append(f"{len(offers) - len(eligible)} campaign(s) below the reserve eCPM ${cfg['reserve_ecpm']:.2f}: slot left empty rather than filled with a weak offer")
+    winners = eligible[: cfg["slots"]]
+    for i, o in enumerate(winners):
+        pos = cfg["position_ctr"][i] if i < len(cfg["position_ctr"]) else cfg["position_ctr"][-1]
+        next_ecpm = eligible[i + 1].ecpm if i + 1 < len(eligible) else cfg["reserve_ecpm"]
+        if o.pricing_model == "CPM":
+            price = min(o.bid, next_ecpm + cfg["increment"])
+            host_rev = price * rev_share
+        else:
+            price = min(o.bid, next_ecpm / (o.expected_ctr * 1000) + cfg["increment"]) if o.expected_ctr else o.bid
+            host_rev = price * o.expected_ctr * pos * 1000 * rev_share
+        o.slot, o.price_paid, o.host_revenue_per_1000 = i + 1, round(price, 2), round(host_rev, 2)
+        o.expected_ctr = round(o.expected_ctr * pos, 4)
+        o.reasons.append(f"slot {i + 1}: pays ${price:.2f} {'CPM' if o.pricing_model == 'CPM' else 'per click'} "
+                         f"(second price; own bid ${o.bid:.2f})")
+    if len(eligible) > cfg["slots"]:
+        notes.append(f"{len(eligible) - cfg['slots']} eligible campaign(s) outbid for the {cfg['slots']} slots")
+    return winners, notes
+
+
 def serve(
     signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
     use_name: bool = True, use_household: bool = True,
     phase: str = "learning", pacing_ratio: float = 1.0,
+    spent_usd: dict[tuple[str, str], float] | None = None,
+    host_blocks_competitors: bool | None = None,
 ) -> ServeDecision:
+    """spent_usd: {(campaign name, publisher_id): dollars already spent}. A campaign whose budget on
+    THIS host is used up drops out of this host's auction only; it still bids on its other hosts."""
     cfg = _cfg()
     features = build_features(signals, now_utc)
     posterior, reasons = persona_posterior(features, signals.publisher_id, use_name, use_household)
@@ -192,7 +232,9 @@ def serve(
 
     priors = catalog.config("pricing")["priors"]
     prior = host_prior(signals.publisher_id)
-    offers = []
+    offers, capped, blocked = [], [], []
+    blocks = (cfg["host_policy"]["block_competitors_default"] if host_blocks_competitors is None
+              else host_blocks_competitors)
     for plan in plans:
         cfg_ = plan.config
         if cfg_.status != "draft" or not cfg_.budget:
@@ -200,7 +242,15 @@ def serve(
         alloc = next((a for a in cfg_.budget.allocations if a.publisher_id == signals.publisher_id), None)
         if not alloc or not cfg_.creatives:
             continue  # this campaign doesn't run on this host
-        score = next(s for s in plan.publishers if s.publisher_id == signals.publisher_id)
+        campaign = plan.profile.product or plan.brief[:40]
+        score = next(x for x in plan.publishers if x.publisher_id == signals.publisher_id)
+        if blocks and any(f.startswith("competitor_conflict") for f in score.flags):
+            blocked.append(campaign)  # host doesn't allow brands that sell what it sells
+            continue
+        budget_left = alloc.budget_usd - (spent_usd or {}).get((campaign, signals.publisher_id), 0.0)
+        if budget_left <= 0:
+            capped.append(campaign)  # per-host budget cap reached: out of this auction
+            continue
         top = max(s.score for s in plan.publishers)
         fit = relative_fit(score.score, top)
 
@@ -226,21 +276,29 @@ def serve(
         ecpm = bid if pricing.model == "CPM" else bid * ctr * 1000
         headline, used = _render(creative.headline_template, creative.headline_no_name, features)
         offers.append(Offer(
-            campaign=plan.profile.product or plan.brief[:40], publisher_id=signals.publisher_id,
+            campaign=campaign, publisher_id=signals.publisher_id, host_budget_left_usd=round(budget_left, 2),
             persona_id=creative.persona_id, headline=headline, body=creative.body, cta=creative.cta,
             pricing_model=pricing.model, bid=bid, bid_breakdown=breakdown, expected_ctr=round(ctr, 4), ecpm=round(ecpm, 2),
             reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
                      *ctx_why, f"bid {breakdown}", f"{'name inserted' if used else 'no-name headline'}"],
         ))
-    offers.sort(key=lambda o: -o.ecpm)
-    offers = offers[: cfg["ranking"]["max_offers"]]
+    landscape = [
+        {"campaign": o.campaign, "pricing_model": o.pricing_model, "bid": o.bid, "expected_ctr": o.expected_ctr, "ecpm": o.ecpm}
+        for o in sorted(offers, key=lambda o: -o.ecpm)
+    ]
+    offers, auction_notes = run_auction(offers, cfg["auction"])
+    reasons += auction_notes
+    if blocked:
+        reasons.append(f"host blocks competing brands, not eligible here: {', '.join(blocked)}")
+    if capped:
+        reasons.append(f"out of budget on this host (cap reached), not bidding: {', '.join(capped)}")
     if not offers:
-        reasons.append("no approved campaign runs on this host")
+        reasons.append("no approved campaign runs on this host (or none clears the reserve)")
     top_offer = offers[0] if offers else None
     return ServeDecision(
         persona_posterior={catalog.persona_by_id()[k].name: v for k, v in posterior.items()},
-        uncertain=uncertain, offers=offers,
+        uncertain=uncertain, offers=offers, bid_landscape=landscape,
         headline=top_offer.headline if top_offer else None, body=top_offer.body if top_offer else None,
         cta=top_offer.cta if top_offer else None, name_used="name inserted" in (top_offer.reasons if top_offer else []),
-        reasons=reasons + ([f"ranked {len(offers)} offers by eCPM = final bid x expected CTR x 1000 (bid phase: {phase})"] if offers else []),
+        reasons=reasons + ([f"auction: ranked by eCPM = final bid x expected CTR x 1000, second-price per slot (bid phase: {phase})"] if offers else []),
     )

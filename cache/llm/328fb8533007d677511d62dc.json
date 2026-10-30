@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Hey {first_name}, ready for a scent upgrade?",
+      "body": "Level up your vibe with fun, scent-forward hair care. Grab our dry shampoo, texture spray, and body care to smell like a dream.",
+      "cta": "Shop scent-forward",
+      "headline_no_name": "Ready for a total scent upgrade?",
+      "angle": "aesthetic-forward and playful",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Perfect gifts for {first_name}'s favorites",
+      "body": "Give the gift of fun, scent-forward hair care and body care. Explore our dry shampoo, texture spray, and body care sets today.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Delight them with scent-forward sets",
+      "angle": "gift sets and premium presentation",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily routine, {first_name}",
+      "body": "Streamline your regimen with scent-forward hair care and body care. Elevate your system with dry shampoo and texture spray.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Optimize your daily self-care routine",
+      "angle": "routine optimization and ingredient transparency",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    }
+  ]
+}

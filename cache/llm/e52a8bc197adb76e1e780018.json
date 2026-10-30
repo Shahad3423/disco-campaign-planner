@@ -1,0 +1,100 @@
+{
+  "business_summary": "Scent-forward haircare and body care brand targeting young, social-media-native consumers.",
+  "product": "dry shampoo, texture spray, body care",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": "young (Gen Z / younger millennial)",
+  "stated_claims": [
+    "Fun, scent-forward hair care",
+    "dry shampoo, texture spray, body care"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "Core product offering (dry shampoo, texture spray)."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Parent category for haircare and body care products."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Adjacent category highly relevant to body care purchasers."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent category highly relevant to body care purchasers."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Direct-to-consumer brand model."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, loud aesthetics, influencer positioning",
+      "evidence": "Targeting 'Young, social-media-native shoppers' with 'Fun, scent-forward hair care' implies a trendy, aesthetic-forward brand voice."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged audience with strong crossover in beauty and wellness fits this body and hair care brand."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older affluent demographic conflicts directly with the advertiser's young, social-media-native target."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic conflict with the fun, youth-focused vibe."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Perfect demographic match with Gen Z and younger millennial beauty buyers."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Direct competitor in the DTC haircare space."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, and typical order value range are clearly defined, enabling immediate campaign planning.",
+  "missing_info": [
+    "individual product price points",
+    "subscription options availability",
+    "primary campaign acquisition goals"
+  ],
+  "clarifying_questions": [
+    "Are your products available as a subscription, or are they strictly one-time purchases?",
+    "What is the typical price range of an individual item (e.g., dry shampoo or body care)?",
+    "What is your primary goal for this campaign (e.g., target CPA, average order value growth)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,115 @@
+{
+  "business_summary": "Direct-to-consumer brand offering professional-quality cookware and knives used in restaurants, targeting serious home cooks with premium pricing.",
+  "product": "Cookware and knives",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "male",
+  "target_age_range": null,
+  "stated_claims": [
+    "Professional-quality cookware and knives",
+    "Sold direct",
+    "Used in restaurants"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "Direct product category match."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Core usage environment for cookware and knives."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Cookware is a high-affinity subcategory of home goods."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Explicitly stated target demographic (mostly male)."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "High crossover interest with home cooks who purchase premium grocery items."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Food-interested audience likely to cook frequently at home."
+    }
+  ],
+  "competing_tags": [
+    "cookware",
+    "kitchen"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "gourmet_food",
+    "premium_grocery",
+    "meal_kits"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and high price sensitivity.",
+      "evidence": "Pans start around $100, sets run $600 or more."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "Disinterested in luxury positioning.",
+      "evidence": "Professional-quality cookware and knives starting at $100 / $600+."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-AOV, considered-purchase cookware does not align well with Swiftcart's impulse-friendly, late-night convenience shopper profile."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Home cooks buying organic groceries and pantry items are highly likely to invest in professional-grade cookware."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "High cross-sell with home goods and design-conscious buyers fits premium kitchenware well."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": -1,
+      "why": "Hearthstone Goods is a direct competitor selling cookware and kitchen products, which will trigger competitive blocks."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Food-interested audience of meal-kit buyers is a strong match for kitchen tools."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear consumer product with explicit pricing, target demographic, and strong potential host alignment.",
+  "missing_info": [
+    "Average order value (AOV)",
+    "Shipping times and return policy details",
+    "Specific materials used (e.g., stainless steel, non-stick, carbon steel)"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV)?",
+    "Do you offer free shipping or a trial period for your cookware?",
+    "Are there specific materials or products you want to highlight in your creatives (e.g., carbon steel, multi-clad stainless steel)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

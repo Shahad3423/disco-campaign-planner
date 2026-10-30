@@ -1,0 +1,102 @@
+{
+  "business_summary": "The advertiser sells high-caffeine coffee, marketed as the 'world's strongest coffee', available in beans, grounds, and cold brew cans. Their target demographic consists of heavy coffee drinkers who appreciate humor.",
+  "product": "coffee (beans, grounds, cold brew cans)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "The world's strongest coffee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "The advertiser's primary products (coffee, cold brew) are beverages."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Coffee beans, grounds, and cans are standard grocery items."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Coffee beans and grounds are typical dry pantry staples."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 0.5,
+      "why": "Extremely strong coffee functions as an energy-boosting beverage."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Cold brew cans provide a convenient, ready-to-drink format."
+    }
+  ],
+  "competing_tags": [
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "groceries",
+    "premium_grocery",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in=['trendy language', 'loud aesthetics', 'influencer positioning']",
+      "evidence": "Brand uses 'a bit of humor' and the loud claim 'world's strongest coffee'."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in=['novelty']",
+      "evidence": "Marketing focuses on humor and extreme product strength ('world's strongest coffee') rather than pure science-backed wellness."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart has high-frequency grocery purchasers and late-night spikes, perfect for impulse purchases of cold brew cans."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's conservative brand sensibility clashes with a humorous, loud coffee brand."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate's audience responds best to a fun, playful brand voice, matching the advertiser's humorous branding."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip caters to indulgence-seeking beverage buyers, making it an excellent host for strong coffee and cold brews."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, core audience preferences, and tone are clearly defined, enabling immediate matching with beverage-friendly and humor-aligned hosts.",
+  "missing_info": [
+    "exact pricing / average order value",
+    "whether they offer a subscription purchase model",
+    "specific target demographics like age or location"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) or typical price point for a bag of coffee / pack of cans?",
+    "Do you offer a recurring subscription model for your beans and grounds?",
+    "Is your audience primarily concentrated in any specific age bracket or geographic region?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

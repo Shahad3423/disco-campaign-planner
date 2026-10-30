@@ -1,0 +1,114 @@
+{
+  "business_summary": "Daily greens and nutrient powder subscription service targeting active, health-conscious individuals who track habits and use supplements.",
+  "product": "Daily greens and nutrient powder",
+  "is_consumer_product": true,
+  "price_point_usd": 79.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Daily greens and nutrient powder",
+    "Subscription at about $79 a month"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "The core product category is a nutrient and greens supplement."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Directly adjacent core category for daily health and nutrient powders."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "The brand operates as a direct-to-consumer health and wellness subscription."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The primary purchase model is a monthly subscription."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 0.5,
+      "why": "Daily greens powders are highly associated with gut health benefits."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 0.5,
+      "why": "The product is a powder mixed into water, functioning as a daily health beverage."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "fitness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "Disinterested in subscription-only and self-care-only framing",
+      "evidence": "Offered as a subscription at about $79 a month for personal daily wellness"
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "High price sensitivity and disinterest in premium-only positioning",
+      "evidence": "Priced at $79 a month"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers align closely with the target audience of people who work out regularly."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Active spenders on self-care and fitness are highly receptive to daily wellness powders."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Organic grocery shoppers responsive to clean-ingredient and wellness claims match the target health profile."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Direct competitor selling vitamins and supplements on a subscription model; likely to block this advertiser."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Wellness-curious beverage shoppers are a strong fit for a daily nutrient powder drink."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing model, target demographic, and core categories are clearly defined and ready for campaign planning.",
+  "missing_info": [
+    "Shipping rates and delivery times",
+    "Key active ingredients or certifications (e.g., organic, vegan, non-GMO)",
+    "Availability of a one-time purchase option"
+  ],
+  "clarifying_questions": [
+    "Do you offer a one-time purchase option, or is it strictly subscription-only?",
+    "Are there specific certifications (like USDA Organic or NSF Certified) that we can highlight in creatives?",
+    "What is your average shipping timeframe and cost?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,87 @@
+{
+  "business_summary": "Provider of vet-recommended hemp oil and chews designed to support older or anxious dogs, backed by a 30-day guarantee.",
+  "product": "Hemp oil and chews for dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-recommended",
+    "30-day guarantee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog health and wellness products."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core category for physical dog consumables like oils and chews."
+    },
+    {
+      "tag": "treats",
+      "weight": 1.0,
+      "why": "The advertiser specifically offers chews for dogs."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Hemp oil and functional anxiety chews act as dietary supplements for pets."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Adjacent category with high shopper overlap for dog health-conscious purchases."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies",
+    "treats"
+  ],
+  "persona_affinity_tags": [
+    "pet_health",
+    "pet_supplies",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Health-conscious pet owners looking for premium solutions are a strong target for vet-recommended hemp products."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience with repeat-purchase behavior fits consumable dog supplements."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennial owners who treat dogs as family are highly receptive to anxiety and senior support supplements."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and claims are highly clear, allowing us to map relevant publishers immediately. We can address their policy question regarding hemp directly.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model_details"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price or average order value for your oils and chews?",
+    "Do you offer these products primarily as one-time purchases, or is there a subscription option?",
+    "To help us advise on compliance: are these products CBD-free (hemp seed oil only) or do they contain active cannabinoids like CBD/THC?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

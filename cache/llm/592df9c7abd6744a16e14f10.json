@@ -1,0 +1,87 @@
+{
+  "business_summary": "A digital banking app targeting younger, mid-income Americans with key value propositions of no monthly fees and early direct deposit, aiming to drive new account signups while adhering to financial advertising regulations.",
+  "product": "Banking App",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "younger (Gen Z and Millennials)",
+  "stated_claims": [
+    "no monthly fees",
+    "early direct deposit"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "financial accessibility",
+    "convenience"
+  ],
+  "fulfillment_notes": "Digital delivery via app store download and account setup.",
+  "relevant_tags": [
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "No monthly fees and early direct deposit appeal heavily to convenience-seeking consumers looking for frictionless financial tools."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.25,
+      "why": "While free, a banking app represents an ongoing, continuous relationship similar to a digital subscription."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.25,
+      "why": "Operates as a digital-first, direct-to-consumer financial service platform."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in budget-focused, mass-market, or non-premium positioning",
+      "evidence": "Targeting mid-income Americans with a 'no monthly fees' value proposition conflicts with this persona's preference for heritage, craftsmanship, and low price sensitivity."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Target audience is older, affluent women, which directly conflicts with the advertiser's target of younger, mid-income Americans."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "High-AOV, conservative brand sensibility is a poor fit for a no-fee digital banking app targeting mid-income consumers."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience consists of Gen Z and younger millennials, aligning perfectly with the advertiser's target demographic."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are highly likely to adopt digital-first banking and mobile financial apps."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and key value propositions are clearly defined. While it is a financial service rather than a traditional physical DTC product, it is consumer-facing and highly relevant to post-purchase shoppers of aligned brands.",
+  "missing_info": [
+    "Exact age brackets for 'younger Americans'",
+    "Geographic restrictions (e.g., US only)",
+    "Specific compliance/disclaimer text required on creatives"
+  ],
+  "clarifying_questions": [
+    "Is this banking app restricted strictly to US residents?",
+    "Does a valid 'account signup' require a minimum initial deposit, or is it complete upon registration?",
+    "Are there pre-approved disclaimer texts or specific compliance logos that must appear on the ad creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

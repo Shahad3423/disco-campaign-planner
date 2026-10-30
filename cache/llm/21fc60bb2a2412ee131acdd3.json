@@ -1,0 +1,86 @@
+{
+  "business_summary": "Online bookstore that supports independent bookstores, targeting book lovers who prefer to avoid Amazon.",
+  "product": "Books",
+  "is_consumer_product": true,
+  "price_point_usd": 30.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Supports independent bookstores",
+    "Typical basket $30",
+    "For book lovers who'd rather skip Amazon"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "supporting independent bookstores"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Books are highly popular and common gift items."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Supporting independent local bookstores aligns with ethical and sustainable consumer values."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Operates as an online direct-to-consumer retail platform."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in delayed fulfillment and prefers speed/one-click convenience",
+      "evidence": "Shoppers who 'rather skip Amazon' to support independent bookstores must typically trade off Amazon's ultra-fast shipping and convenience."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "prefers discount-forward and clear value props",
+      "evidence": "Independent bookstore supporters are often willing to pay full retail price to support local shops, which conflicts with highly price-sensitive shoppers looking for Amazon-level discounts."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart shoppers prioritize instant delivery and convenience, whereas this audience explicitly chooses to bypass Amazon's convenience model."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven, sustainability-minded shoppers are highly likely to support independent bookstores over Amazon."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot's audience responds strongly to social-good messaging and gifting, making an ethical bookstore a great post-purchase match."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing us to align them with values-driven and gifting-oriented publishers.",
+  "missing_info": [
+    "Shipping times and costs",
+    "Whether they offer a subscription model (e.g., book club/monthly box)",
+    "Specific genres or curation focus"
+  ],
+  "clarifying_questions": [
+    "Do you offer any subscription options, or are all purchases one-time?",
+    "What are your typical shipping times and rates?",
+    "Do you specialize in any specific genres, or do you carry a general catalog?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

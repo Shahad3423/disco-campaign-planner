@@ -1,0 +1,99 @@
+{
+  "business_summary": "DTC brand selling natural dog supplements, specifically probiotics and hip/joint chews, with a strong focus on driving repeat revenue through auto-ship subscriptions.",
+  "product": "Natural dog supplements (probiotics and hip/joint chews)",
+  "is_consumer_product": true,
+  "price_point_usd": 35.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural supplements for dogs",
+    "mostly probiotics and hip/joint chews",
+    "around $35 a bag",
+    "Auto-ship is where we make our money"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "The brand explicitly sells supplements designed for dogs."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Dog supplements fall directly under the pet supplies category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.75,
+      "why": "The advertiser's business model is heavily reliant on and optimized for auto-ship subscriptions."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "The advertiser explicitly positions their dog supplements as natural."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Direct product category, although historically human-focused on some host sites."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies",
+    "pet_pharmacy"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_health",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only models",
+      "evidence": "Auto-ship is where we make our money"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher with health-conscious owners matches the advertiser's target and auto-ship model."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior, offering excellent scale for dog supplements."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennial dog-focused subscription audience that treats pets as family aligns perfectly with a subscription-based dog supplement brand."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, price point, core demographic (pet parents), and purchase model are clearly stated, allowing for immediate execution and planning.",
+  "missing_info": [
+    "Exact ingredients or ingredient sourcing details for the 'natural' claim",
+    "Fulfillment and shipping times",
+    "Target demographic age or gender split",
+    "Whether one-time purchases are permitted/common"
+  ],
+  "clarifying_questions": [
+    "Are there specific active ingredients in your probiotics and joint chews (e.g., glucosamine, specific probiotic strains)?",
+    "Do you offer a one-time purchase option alongside the auto-ship subscription?",
+    "What is your average order value (AOV) and customer lifetime value (LTV) for subscribers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

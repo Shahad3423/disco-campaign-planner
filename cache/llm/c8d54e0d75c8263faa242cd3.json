@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Durable, Hand-Me-Down-Able Basics for {first_name}",
+      "body": "Skip fast fashion. Our colorful, gender-neutral basics for kids are hand-me-down-able and built to last. Durable pieces from $12-$30.",
+      "cta": "Shop durable basics",
+      "headline_no_name": "Durable, Hand-Me-Down-Able Basics for Kids",
+      "angle": "Emphasizing circularity and durability with hand-me-down-able basics to counter fast fashion waste.",
+      "claims_used": [
+        "Colorful, gender-neutral basics for babies and kids",
+        "Pieces are $12-30",
+        "Hand-me-down-able clothing"
+      ]
+    }
+  ]
+}

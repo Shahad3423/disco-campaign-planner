@@ -1,0 +1,103 @@
+{
+  "business_summary": "Squeeze-bottle olive oil for everyday cooking and finishing, sold in a two-bottle combo for about $20, targeting home cooks aged 25-40.",
+  "product": "Squeeze-bottle olive oil combo (two bottles)",
+  "is_consumer_product": true,
+  "price_point_usd": 20.0,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "25-40",
+  "stated_claims": [
+    "Squeeze-bottle olive oil for everyday cooking and finishing",
+    "Two bottles, about $20 for a combo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Olive oil is an essential pantry staple used for daily cooking."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "It is a standard grocery item purchased regularly by the target demographic."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Squeeze bottles are kitchen tools designed for ease of use during food preparation."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Shoppers buying cookware are highly likely to cook at home and use cooking oil."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Meal kit subscribers cook at home and appreciate convenient cooking ingredients."
+    }
+  ],
+  "competing_tags": [
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "groceries",
+    "gourmet_food",
+    "organic_grocery",
+    "premium_grocery",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's grocery focus and impulse-friendly nature align well with a $20 everyday cooking product."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven, organic pantry audience aligns perfectly with a premium/convenient cooking oil."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods features kitchen and cookware buyers who are active home cooks."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of convenience-motivated home cooks who regularly prepare meals."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older, high-AOV, low-impulse apparel shoppers are a demographic mismatch for a $20 everyday squeeze-bottle food item."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative, highest-AOV apparel publisher is a poor demographic and category fit."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clear, allowing for direct mapping to food, kitchen, and grocery publishers.",
+  "missing_info": [
+    "whether the olive oil is organic or extra virgin",
+    "shipping costs and times",
+    "availability of subscription options"
+  ],
+  "clarifying_questions": [
+    "Is your olive oil organic, extra virgin, or cold-pressed?",
+    "Do you offer subscription options or is it strictly a one-time purchase?",
+    "What are your standard shipping times and rates for the $20 combo?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

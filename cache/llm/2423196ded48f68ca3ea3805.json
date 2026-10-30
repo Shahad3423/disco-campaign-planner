@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Keep the whole family charged, {first_name}.",
+      "body": "Fast chargers, power banks, and cables to keep every phone and laptop in the house ready. Simple charging solutions from $20 to $60.",
+      "cta": "Shop charging cables",
+      "headline_no_name": "Keep the whole family charged.",
+      "angle": "family-friendly and time-saving convenience for multi-device households",
+      "claims_used": [
+        "Fast chargers, power banks, cables.",
+        "Mostly $20-60 purchases.",
+        "We want phone-and-laptop users, and I'd say everyone qualifies."
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Understated essentials for your devices, {first_name}.",
+      "body": "Everyday fast chargers, power banks, and cables for your phone and laptop. Dependable utility, priced from $20 to $60.",
+      "cta": "Shop power banks",
+      "headline_no_name": "Understated essentials for your devices.",
+      "angle": "understated, straightforward quality focusing on classic utility",
+      "claims_used": [
+        "Fast chargers, power banks, cables.",
+        "Mostly $20-60 purchases.",
+        "We want phone-and-laptop users, and I'd say everyone qualifies."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Don't let a dead phone spook you, {first_name}.",
+      "body": "Grab fast chargers, power banks, and cables for your phone and laptop this Halloween. Quick, easy, and affordable at $20 to $60.",
+      "cta": "Shop fast chargers",
+      "headline_no_name": "Don't let a dead phone spook you.",
+      "angle": "frictionless speed integrated with a timely Halloween theme",
+      "claims_used": [
+        "Fast chargers, power banks, cables.",
+        "Mostly $20-60 purchases.",
+        "We want phone-and-laptop users, and I'd say everyone qualifies."
+      ]
+    }
+  ]
+}

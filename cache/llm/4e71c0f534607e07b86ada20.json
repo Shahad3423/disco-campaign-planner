@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, a thoughtful once-every-8-years purchase.",
+      "body": "Skip short-lived items. Try our $600-$2,000 mattresses with a 100-night trial and free shipping and returns.",
+      "cta": "Start your trial",
+      "headline_no_name": "A thoughtful, once-every-8-years purchase.",
+      "angle": "Emphasizing a highly deliberate, long-term purchase cycle over short-lived disposable products to appeal to conscious consumers.",
+      "claims_used": [
+        "once-every-8-years purchase",
+        "100-night trial",
+        "free shipping and returns",
+        "Mattresses run $600-2,000"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, gear up for your next heavy lift",
+      "body": "Get lifting and training apparel designed for your workouts. Grab leggings and tees in the $30-60 range with a first-order discount.",
+      "cta": "Shop training gear",
+      "headline_no_name": "Gear up for your next heavy lift",
+      "angle": "Performance-focused training apparel designed for lifting workouts",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your training sessions",
+      "body": "Support your routine with dedicated training leggings and tees. Quality gear in the $30-60 range with a first-order discount.",
+      "cta": "Shop lifting gear",
+      "headline_no_name": "Optimize your training sessions",
+      "angle": "Framing the apparel as a utility tool to support and optimize training routines",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Find the perfect gift for your lifting partner, {first_name}",
+      "body": "Gift premium lifting and training apparel. Leggings and tees are $30-60, with a first-order discount and free shipping thresholds.",
+      "cta": "Shop lifting gifts",
+      "headline_no_name": "Find the perfect gift for your lifting partner",
+      "angle": "Gifting-focused framing highlighting premium apparel for training partners with free shipping thresholds",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, treat yourself to new lifting gear",
+      "body": "No tricks, just a first-order discount on training leggings and tees in the $30-60 range. Free shipping thresholds apply.",
+      "cta": "Claim my discount",
+      "headline_no_name": "Treat yourself to new lifting gear",
+      "angle": "Discount-forward value messaging with a subtle Halloween seasonal theme",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    }
+  ]
+}

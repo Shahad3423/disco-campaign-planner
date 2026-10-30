@@ -1,0 +1,53 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The seasonal reference ('this Halloween') makes the ad copy non-evergreen and irrelevant for most of the year."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Framing a standard human grocery delivery service as ingredients to 'share with your pet' is highly awkward and potentially dangerous, as many common produce and pantry items (e.g., onions, grapes, garlic, raisins, chocolate) are toxic to pets."
+      ],
+      "passed": false
+    }
+  ]
+}

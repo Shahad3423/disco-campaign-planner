@@ -1,0 +1,100 @@
+{
+  "business_summary": "A weekly subscription meal kit service starting around $8 a serving, offering big discounts for new customers and targeting busy families and young professionals.",
+  "product": "Meal kits",
+  "is_consumer_product": true,
+  "price_point_usd": 8.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "young professionals",
+  "stated_claims": [
+    "Meal kits starting around $8 a serving",
+    "new customer discounts big",
+    "Weekly subscription"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "This is the core product category of the advertiser."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The service is explicitly offered as a weekly subscription."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Meal kits serve as an adjacent alternative to traditional grocery shopping."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Meal kits are heavily marketed as a convenient solution for busy demographics."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Meal kits require home kitchen prep, making kitchen-engaged audiences a weak adjacent fit."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "meal_kits",
+    "convenience",
+    "family_products",
+    "subscription_services",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in=['subscription-only', 'self-care-only framing']",
+      "evidence": "Weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Direct competitor selling meal kits and subscriptions, which will trigger a category block."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professional audience perfectly matches the 'young professionals' target."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Convenience-seeking, high-frequency grocery buyers are highly receptive to meal kit solutions."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "High-AOV conservative apparel audience does not align well with a budget-friendly value meal kit."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The advertiser clearly defines the product, target audience, pricing tier, and subscription model, which is sufficient for placement planning.",
+  "missing_info": [
+    "Average total cost per weekly box",
+    "Shipping rates and geographic delivery limitations",
+    "Menu size and dietary restriction options (e.g., vegetarian, gluten-free)"
+  ],
+  "clarifying_questions": [
+    "What is the average total cost of a standard weekly box?",
+    "Do you deliver nationwide, or are there specific regional exclusions?",
+    "Do you accommodate specific dietary preferences, such as vegan or gluten-free?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

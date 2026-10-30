@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Streamline Your Sound, {first_name}",
+      "body": "Reduce cable clutter with wireless speakers and soundbars from $120 to $900. Clean, tech-forward audio designed for your home.",
+      "cta": "Shop wireless audio",
+      "headline_no_name": "Streamline Your Sound",
+      "angle": "Decluttering and efficiency through a wireless setup for tech-forward homes",
+      "claims_used": [
+        "Wireless speakers and soundbars",
+        "Price range of $120-$900",
+        "Targeted at home audio fans, new home owners, and tech-forward households"
+      ]
+    }
+  ]
+}

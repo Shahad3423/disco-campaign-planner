@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, ready to elevate game day?",
+      "body": "Get in on the action with sports betting and daily fantasy for adults 21+ in legal states. Grab our big new-user promo today.",
+      "cta": "Claim my promo",
+      "headline_no_name": "Ready to elevate game day?",
+      "angle": "playful",
+      "claims_used": [
+        "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+        "Big new-user promo"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, play instantly today",
+      "body": "Sports betting and daily fantasy for adults 21+ in legal states. Fast signup, instant deposit, and a big new-user promo.",
+      "cta": "Sign up instantly",
+      "headline_no_name": "Start playing instantly",
+      "angle": "speed",
+      "claims_used": [
+        "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+        "Big new-user promo"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, test your sports strategy",
+      "body": "Bring your competitive edge to sports betting and daily fantasy for adults 21+ in legal states. Claim your big new-user promo.",
+      "cta": "Start my lineup",
+      "headline_no_name": "Test your sports strategy",
+      "angle": "active sports analysis",
+      "claims_used": [
+        "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+        "Big new-user promo"
+      ]
+    }
+  ]
+}

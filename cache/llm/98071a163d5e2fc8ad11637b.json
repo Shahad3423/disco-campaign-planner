@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your daily cooking.",
+      "body": "Squeeze-bottle olive oil designed for everyday cooking and finishing. Get the two-bottle combo for about $20.",
+      "cta": "Shop the combo",
+      "headline_no_name": "Optimize your daily cooking.",
+      "angle": "outcome-focused daily meal prep with zero ultra-processed ingredients",
+      "claims_used": [
+        "Squeeze-bottle olive oil for everyday cooking and finishing",
+        "Two bottles, about $20 for a combo"
+      ]
+    }
+  ]
+}

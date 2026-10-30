@@ -1,0 +1,83 @@
+{
+  "business_summary": "Online bookstore that supports independent bookstores, targeting book lovers seeking an alternative to Amazon with an average basket size of $30.",
+  "product": "Books",
+  "is_consumer_product": true,
+  "price_point_usd": 30.0,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Supports independent bookstores",
+    "Typical basket $30",
+    "For book lovers who'd rather skip Amazon"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "supporting independent businesses",
+    "anti-monopoly",
+    "local community support"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Books are highly popular gifts, especially during holiday seasons."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Supporting independent local stores heavily aligns with sustainable, conscious-consumer values."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The business is an online direct-to-consumer retail platform."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in delayed fulfillment",
+      "evidence": "Targeting shoppers who 'rather skip Amazon' implies a willingness to bypass ultra-fast Prime delivery, which conflicts with convenience-first buyers who dislike delayed fulfillment."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, sustainability-minded shoppers will strongly resonate with supporting independent bookstores over Amazon."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting focus and an audience responsive to social-good messaging aligns perfectly with this brand's mission."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart caters to high-frequency, instant-delivery, and late-night impulse convenience purchases, which is the antithesis of intentional book shopping."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category (books), target audience, and average basket size are clear and ready for matching.",
+  "missing_info": [
+    "specific genres or book categories focused on",
+    "shipping speeds and costs",
+    "presence of any subscription options"
+  ],
+  "clarifying_questions": [
+    "Do you specialize in any specific genres, or do you offer a general catalog?",
+    "Do you offer any subscription options, such as a book-of-the-month club?",
+    "What are your standard shipping times and rates?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

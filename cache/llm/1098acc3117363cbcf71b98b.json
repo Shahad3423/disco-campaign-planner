@@ -1,0 +1,119 @@
+{
+  "business_summary": "A men's grooming brand offering razors, blades, shaving cream, and body wash, featuring an affordable $15 starter set targeted at cost-conscious men aged 20-40.",
+  "product": "Razors, blades, shaving cream, and body wash",
+  "is_consumer_product": true,
+  "price_point_usd": 15.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "male",
+  "target_age_range": "20-40",
+  "stated_claims": [
+    "Razors, blades, shaving cream and body wash for men",
+    "Starter set $15",
+    "Men 20-40 who are sick of overpriced drugstore cartridges"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "The product line is explicitly designed and marketed for men."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Shaving cream and body wash are core personal care and skincare products."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Body wash is a standard bath and shower consumable."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Grooming and shaving products fall under the broader beauty and personal care industry."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The mention of a 'starter set' and blades strongly implies a subscription replenishment model."
+    }
+  ],
+  "competing_tags": [
+    "skincare",
+    "bath"
+  ],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in",
+      "evidence": "This persona dislikes budget/value-focused messaging ('sick of overpriced drugstore cartridges', '$15 starter set') and prefers premium/heritage branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "The $15 starter set is highly impulse-friendly and fits their high-frequency, convenience-oriented buyers."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "They have a dedicated 'men' and 'subscription' audience, matching the advertiser's core demographic."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, completely clashing with the male 20-40 target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "High-AOV, conservative brand focused on older women. Direct demographic mismatch."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Focused entirely on women's apparel, intimates, and inclusive sizing."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience consists primarily of women looking for science-forward wellness/supplements."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Younger millennial/Gen Z skincare audience aligns well with 20-40 year old men's grooming products."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Focused on professional women's sustainable shoes."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target age, and gender are highly clear and actionable for placement mapping.",
+  "missing_info": [
+    "Whether the starter set automatically enrolls users in a recurring subscription",
+    "Ingredient details (e.g., natural, organic, or non-toxic claims)",
+    "Shipping times and costs"
+  ],
+  "clarifying_questions": [
+    "Is the $15 starter set a one-time purchase, or does it automatically transition into a recurring subscription?",
+    "Are there any specific product values we can highlight, such as organic ingredients, cruelty-free, or sustainable packaging?",
+    "Do you offer free shipping on the starter set?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

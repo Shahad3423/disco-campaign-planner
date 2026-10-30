@@ -1,0 +1,41 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "the $15 starter set parents trust",
+        "The straightforward routine parents recommend"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invented social proof/endorsements ('parents trust', 'parents recommend') that are not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "perfect $15 grooming gift set",
+        "impressive, complete gift set"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invented product framing and quality claims ('gift set' instead of 'starter set', 'impressive', 'perfect') not supported by the stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

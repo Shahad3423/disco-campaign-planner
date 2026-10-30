@@ -1,0 +1,112 @@
+{
+  "business_summary": "Ceramic non-stick cookware sets without PTFE, priced at $400+, targeting health-conscious women aged 28-45.",
+  "product": "Ceramic non-stick cookware sets",
+  "is_consumer_product": true,
+  "price_point_usd": 400.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "28-45",
+  "stated_claims": [
+    "Ceramic non-stick cookware sets without PTFE"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "non-toxic",
+    "PTFE-free"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 1.0,
+      "why": "Core value proposition (PTFE-free, care about materials)."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Adjacent category; cookware is a home good."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Adjacent value; shoppers caring about materials often value sustainability."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Target demographic is women."
+    }
+  ],
+  "competing_tags": [
+    "cookware"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging and high price sensitivity",
+      "evidence": "Cookware sets are priced at $400+"
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in luxury positioning",
+      "evidence": "Cookware sets are priced at $400+"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Perfect match: sells cookware/kitchen items to non-toxic, sustainability-motivated buyers."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, clean-ingredient, and wellness-focused shoppers align with PTFE-free claims."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home buyers with high cross-sell in home and wellness."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging fit the $400+ price point."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher fits the premium $400+ price point."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and core value proposition are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "shipping times",
+    "return policy",
+    "specific certifications for PTFE-free claims"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping or a trial period for the cookware sets?",
+    "Are there specific certifications (e.g., third-party lab testing) for the PTFE-free claim that we can highlight in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

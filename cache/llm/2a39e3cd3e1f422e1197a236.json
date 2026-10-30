@@ -1,0 +1,108 @@
+{
+  "business_summary": "Prebiotic soda brand offering low-sugar, high-fiber beverage alternatives for health-conscious younger adults and parents.",
+  "product": "Prebiotic soda",
+  "is_consumer_product": true,
+  "price_point_usd": 36.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "younger adults",
+  "stated_claims": [
+    "Prebiotic soda",
+    "9g of fibre",
+    "low sugar"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "health-conscious"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "The product is explicitly a prebiotic functional soda."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "Positioned directly as a swap for regular soda."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotics specifically target gut health."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Core product category is liquid beverages."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Sold as a packaged food/beverage item."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Shelf-stable soft drinks fit within pantry staples."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Targets health-conscious consumers looking for functional wellness benefits."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "groceries",
+    "premium_grocery",
+    "wellness",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly convenience and grocery purchases are ideal for single-pack beverage trials."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims align perfectly with low-sugar prebiotic soda."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Active family households seeking convenience align with the target audience of parents swapping out regular soda."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "Direct competitor selling functional beverages and soda alternatives, creating a conflict of interest on their thank-you page."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target demographics are clearly stated, allowing for immediate campaign planning and host routing.",
+  "missing_info": [
+    "subscription_options",
+    "shipping_fees",
+    "target_cac_or_margin"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for repeat purchases, and if so, is there a discount?",
+    "Are there any shipping fees or regional constraints for shipping heavy liquid cases?",
+    "What is your target customer acquisition cost (CAC) or target margin for this network?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,61 @@
+{
+  "business_summary": "Payroll, benefits, and HR software for small businesses targeting owners and operators with 1-100 employees to book demos.",
+  "product": "Payroll, benefits and HR software",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Payroll, benefits and HR software for small businesses",
+    "Designed for owners and operators of companies with 1-100 employees",
+    "The goal is demo bookings"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "dtc",
+      "weight": 0.25,
+      "why": "DTC founders and operators shopping on other DTC brands may be exposed to the offer."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in corporate voice",
+      "evidence": "Advertiser is a B2B HR and payroll software service."
+    },
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in multi-step purchases",
+      "evidence": "The conversion goal is booking a demo rather than a frictionless, direct one-click purchase."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Audience of tech-adjacent urban professionals has a higher likelihood of containing startup/small business operators."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The product is a B2B SaaS platform (HR, payroll, and benefits software) targeting businesses rather than a consumer product that a DTC checkout shopper would purchase.",
+  "missing_info": [
+    "DTC or consumer-facing product",
+    "pricing model",
+    "consumer pricing"
+  ],
+  "clarifying_questions": [
+    "Do you have a consumer-facing brand or consumer product you would like to promote on the network instead?",
+    "Are you purely looking for B2B lead generation, or do you have an employee-benefit discount program targeted directly at consumers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

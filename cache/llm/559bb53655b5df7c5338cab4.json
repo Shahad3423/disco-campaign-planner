@@ -1,0 +1,78 @@
+{
+  "business_summary": "Subscription-based documentary streaming service targeting older, intellectually-curious audiences with a passion for science and nature.",
+  "product": "Documentary streaming subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 4.99,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "older",
+  "stated_claims": [
+    "Documentary streaming from $4.99/month.",
+    "Targeted at older, intellectually-curious audiences.",
+    "Targeted at science and nature fans."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "intellectual curiosity",
+    "science",
+    "nature"
+  ],
+  "fulfillment_notes": "Digital streaming delivery.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The product is a monthly subscription service."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Explicitly targets older audiences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "Documentary streaming from $4.99/month subscription model."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience consists of older affluent women, aligning well with the advertiser's older target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Audience is older and conservative, aligning with the older demographic targeting."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Audience is Gen Z and younger millennial, which conflicts with the older target demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, purchase model, and target audience are clearly defined and actionable.",
+  "missing_info": [
+    "Annual subscription options",
+    "Specific trial period availability",
+    "Target Customer Acquisition Cost (CAC)"
+  ],
+  "clarifying_questions": [
+    "Do you offer an annual subscription plan or gift subscriptions?",
+    "Is there a free trial period available for new subscribers?",
+    "What is your primary target performance metric (e.g., trial signups, paid conversions, or CAC)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

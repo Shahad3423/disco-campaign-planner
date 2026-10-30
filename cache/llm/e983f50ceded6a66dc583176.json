@@ -1,0 +1,100 @@
+{
+  "business_summary": "Monthly themed subscription box containing toys and treats for dogs, starting at approximately $23/month with a 6 or 12-month commitment.",
+  "product": "Monthly themed dog toy and treat subscription box",
+  "is_consumer_product": true,
+  "price_point_usd": 23.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Monthly themed box of toys and treats for dogs",
+    "starts at about $23/mo with a 6 or 12 month plan"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Requires a 6 or 12 month plan commitment.",
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category; the product is exclusively for dogs."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Core business model; sold as a monthly recurring plan."
+    },
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "Core product component; the box contains dog toys."
+    },
+    {
+      "tag": "treats",
+      "weight": 1.0,
+      "why": "Core product component; the box contains dog treats."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent category; dog toys and treats fall under general pet supplies."
+    }
+  ],
+  "competing_tags": [
+    "pet",
+    "subscription",
+    "toys",
+    "treats"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "subscription_boxes",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only",
+      "evidence": "The advertiser requires a 6 or 12 month subscription plan."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in novelty",
+      "evidence": "The product is a 'themed' monthly box of toys and treats, which relies heavily on novelty."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Highly aligned pet publisher with subscription-heavy, health-conscious pet owners."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": -1,
+      "why": "Direct competitor offering a pet subscription box with toys and treats."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing structure, and target audience are clearly defined and ready for campaign planning.",
+  "missing_info": [
+    "shipping costs and policies",
+    "ingredient quality or sourcing of the treats",
+    "durability or customization options for the toys"
+  ],
+  "clarifying_questions": [
+    "Is shipping free, or is there an additional monthly shipping fee?",
+    "Are the treats customizable for dogs with allergies or dietary restrictions?",
+    "Do you offer a one-time purchase option for gifting, or is it strictly subscription-only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

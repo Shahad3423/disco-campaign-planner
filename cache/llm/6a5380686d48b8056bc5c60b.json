@@ -1,0 +1,118 @@
+{
+  "business_summary": "Premium yoga and studio-to-street apparel brand with a celebrity-adjacent aesthetic, targeting shoppers focused on brand and wellness with a price range of $80-130 per piece.",
+  "product": "Premium yoga and studio-to-street apparel",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Premium yoga and studio-to-street apparel",
+    "$80-130 per piece price range",
+    "Celebrity-adjacent aesthetic"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "wellness",
+    "brand-conscious"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core product category is premium yoga and studio-to-street activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 1.0,
+      "why": "Core product category is specifically yoga apparel."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is apparel."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent interest; the brand explicitly targets shoppers who care about wellness."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Studio-to-street apparel bridges activewear and casual everyday wear."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers booking fitness and yoga classes are highly likely to buy premium yoga apparel."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "yoga"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "wellness",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Dislikes influencer positioning, trendy language, and loud aesthetics.",
+      "evidence": "Brand claims a 'celebrity-adjacent aesthetic' and targets brand-conscious shoppers."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "Dislikes luxury-only messaging, vague premium positioning, and has high price sensitivity.",
+      "evidence": "Brand positions itself as 'premium' with a price point of '$80-130 per piece'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers with strong wellness crossover are the ideal audience for premium yoga apparel."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness classes and self-care align perfectly with high-end studio-to-street wear."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility conflicts with the advertiser's trendy celebrity-adjacent aesthetic."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Identity-driven purchasing and aesthetic-focused younger millennial audience aligns with celebrity-adjacent branding."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Activewear and comfort-oriented urban professionals represent a strong demographic for studio-to-street apparel."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price tier, and target audience alignment are clearly defined, making it highly actionable for integration and host matching.",
+  "missing_info": [
+    "Target gender (implied female or unisex, but not explicitly stated)",
+    "Fabric details, sustainability features, or technical specs",
+    "Fulfillment and shipping timelines"
+  ],
+  "clarifying_questions": [
+    "Is your apparel line designed primarily for women, men, or is it unisex?",
+    "Do you have any specific fabric callouts (e.g., sustainable, recycled, or proprietary technical fabrics) that we should highlight in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Gear up for peak range performance, {first_name}",
+      "body": "Enhance your training with high-performance firearms and accessories. 18/21+ only. Note: Guns must ship to an FFL.",
+      "cta": "Shop range gear",
+      "headline_no_name": "Gear up for peak range performance",
+      "angle": "Framing shooting sports as an active training discipline requiring high-performance gear",
+      "claims_used": [
+        "Customers must be 18/21+",
+        "Guns must ship to an FFL"
+      ]
+    }
+  ]
+}

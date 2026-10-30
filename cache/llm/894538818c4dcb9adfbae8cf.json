@@ -1,0 +1,112 @@
+{
+  "business_summary": "Traceable, minimalist multivitamins for women aged 25-45, offered via a monthly subscription model with a strong focus on transparency.",
+  "product": "Multivitamins",
+  "is_consumer_product": true,
+  "price_point_usd": 33.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Traceable",
+    "Minimalist",
+    "Transparency"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "transparency",
+    "traceability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold exclusively via a monthly subscription model."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Core vertical and business model."
+    },
+    {
+      "tag": "women",
+      "weight": 0.75,
+      "why": "The primary target demographic is women aged 25-45."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Traceability and transparency strongly appeal to natural-focused consumers."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "Adjacent interest for consumers seeking clean, traceable supplements."
+    }
+  ],
+  "competing_tags": [
+    "vitamins",
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "supplements",
+    "wellness",
+    "subscription_services",
+    "clean_beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only, self-care-only framing",
+      "evidence": "Advertiser is a subscription-only multivitamin for personal daily use."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form's science-forward, skeptical audience will highly appreciate the advertiser's focus on transparency and traceability."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven, clean-ingredient, and wellness-focused shoppers align perfectly with traceable, minimalist vitamins."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has a strong female audience with high crossover in wellness, making it an ideal host."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": -1,
+      "why": "Heartfoot's audience is highly focused on gifting, which conflicts with a self-care subscription product."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target demographic, pricing, and subscription model are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Shipping costs and policies",
+    "Specific ingredient certifications (e.g., vegan, non-GMO, gluten-free)",
+    "Whether there is a trial or single-bottle purchase option"
+  ],
+  "clarifying_questions": [
+    "Do you offer any trial discounts or one-time purchase options to lower the initial conversion barrier?",
+    "Are your vitamins vegan, non-GMO, or allergen-free?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

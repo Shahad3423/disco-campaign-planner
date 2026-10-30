@@ -1,0 +1,61 @@
+{
+  "business_summary": "Retailer of firearms, ammunition, and accessories targeting outdoor and hunting audiences, requiring age verification (18/21+) and FFL shipping for firearms.",
+  "product": "Firearms, ammunition, and accessories",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": "18/21+",
+  "stated_claims": [
+    "Customers must be 18/21+",
+    "Guns must ship to an FFL"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Firearms must be shipped to a Federal Firearms Licensee (FFL).",
+  "relevant_tags": [
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Outdoor and hunting audiences often utilize durable workwear apparel."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.25,
+      "why": "Outdoor activities and hunting have adjacent utility overlap with activewear."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Conservative brand sensibility aligns well with traditional outdoor, hunting, and firearms demographics."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Gen Z and younger millennial demographic with minimalist aesthetic is highly unlikely to align with firearms retail."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, and regulatory constraints are clearly defined, allowing for targeted planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_gender"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) or typical price point for firearms and accessories?",
+    "Do you offer subscription options (e.g., for ammunition) or is it strictly one-time purchases?",
+    "Are there specific geographic restrictions on where you can ship ammunition or accessories?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

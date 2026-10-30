@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Need an impressive gift, {first_name}?",
+      "body": "Delight them with prestige Japanese-inspired skincare. Gift our $72 hero, The Dewy Skin Cream, for a truly premium presentation.",
+      "cta": "Shop prestige gifts",
+      "headline_no_name": "Find the Perfect Premium Gift",
+      "angle": "giftable",
+      "claims_used": [
+        "Prestige Japanese-inspired skincare",
+        "The Dewy Skin Cream is $72 and our hero"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your regimen, {first_name}",
+      "body": "Experience our prestige Japanese-inspired skincare. Elevate your routine with our $72 hero, The Dewy Skin Cream.",
+      "cta": "Shop Dewy Skin Cream",
+      "headline_no_name": "Optimize Your Skincare Regimen",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Prestige Japanese-inspired skincare",
+        "The Dewy Skin Cream is $72 and our hero"
+      ]
+    }
+  ]
+}

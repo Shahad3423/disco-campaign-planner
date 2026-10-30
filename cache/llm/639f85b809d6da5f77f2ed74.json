@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, gear up for your next outdoor workout",
+      "body": "Grab colorful outdoor gear including packs, jackets, and duffels designed to support your active training sessions.",
+      "cta": "Shop active gear",
+      "headline_no_name": "Gear up for your next outdoor workout",
+      "angle": "active outdoor fitness utility",
+      "claims_used": [
+        "Colorful outdoor gear - packs, jackets, duffels"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, meet a Certified B Corp brand",
+      "body": "Shop colorful outdoor gear, packs, and jackets. Discover our one-of-a-kind 'Del Dia' items from a Certified B Corp.",
+      "cta": "Shop B Corp gear",
+      "headline_no_name": "Meet a Certified B Corp brand",
+      "angle": "B Corp certification and unique items",
+      "claims_used": [
+        "Certified B Corp",
+        "Colorful outdoor gear - packs, jackets, duffels",
+        "Lots of 'Del Dia' one-of-a-kind items"
+      ]
+    }
+  ]
+}

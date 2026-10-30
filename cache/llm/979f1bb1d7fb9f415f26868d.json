@@ -1,0 +1,39 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is highly generic and does not speak to performance, athletic endeavors, or technical aspects preferred by the Fitness Enthusiast.",
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline.",
+        "Seasonal reference ('spooky season') restricts the ad's relevance to a specific time of year."
+      ],
+      "passed": false
+    }
+  ]
+}

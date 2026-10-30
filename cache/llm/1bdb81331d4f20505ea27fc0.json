@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Looking for the perfect gift, {first_name}?",
+      "body": "Give them something completely unique. Shop vibrant, one-of-a-kind Del Dia packs, jackets, and duffels. Perfect for gifting.",
+      "cta": "Shop unique gifts",
+      "headline_no_name": "Looking for the perfect gift?",
+      "angle": "gifting and premium presentation with one-of-a-kind items",
+      "claims_used": [
+        "Colorful outdoor gear - packs, jackets, duffels",
+        "Lots of 'Del Dia' one-of-a-kind items"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, gear up for your next adventure",
+      "body": "Keep moving with vibrant, colorful outdoor gear. Explore our durable packs, jackets, and duffels built for active lifestyles.",
+      "cta": "Shop outdoor gear",
+      "headline_no_name": "Gear up for your next adventure",
+      "angle": "active lifestyle focus using colorful outdoor gear packs, jackets, and duffels",
+      "claims_used": [
+        "Colorful outdoor gear - packs, jackets, duffels"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, shop certified ethical outdoor gear",
+      "body": "We are a Certified B Corp creating colorful outdoor gear. Choose sustainable, ethically made packs, jackets, and duffels.",
+      "cta": "Shop ethical gear",
+      "headline_no_name": "Shop certified ethical outdoor gear",
+      "angle": "sustainability focus highlighting Certified B Corp status and ethical values",
+      "claims_used": [
+        "Certified B Corp",
+        "Colorful outdoor gear - packs, jackets, duffels"
+      ]
+    }
+  ]
+}

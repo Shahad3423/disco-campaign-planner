@@ -1,0 +1,114 @@
+{
+  "business_summary": "An inclusive apparel brand offering shapewear, loungewear, and underwear in sizes XXS-5X, targeting women aged 22-40 who purchase on drops and are not discount-driven.",
+  "product": "Shapewear, loungewear, and underwear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "inclusive sizing XXS-5X",
+    "Shapewear, loungewear and underwear"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "size inclusivity"
+  ],
+  "fulfillment_notes": "Sells via product drops",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is apparel (loungewear, underwear, shapewear)."
+    },
+    {
+      "tag": "underwear",
+      "weight": 1.0,
+      "why": "Underwear is explicitly mentioned as a core product."
+    },
+    {
+      "tag": "intimates",
+      "weight": 1.0,
+      "why": "Shapewear and underwear fall directly under the intimates category."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Primary demographic target is explicitly stated as mostly women 22-40."
+    },
+    {
+      "tag": "plus_size",
+      "weight": 1.0,
+      "why": "Brand highlights inclusive sizing from XXS up to 5X."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Underwear and simple loungewear are highly adjacent to daily basics."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Loungewear is a core component of casual apparel."
+    }
+  ],
+  "competing_tags": [
+    "intimates",
+    "underwear"
+  ],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "prefers discount-forward / high price sensitivity",
+      "evidence": "Don't send us people who only shop discount."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Activewear and fitness-engaged women have a strong crossover with loungewear and intimates."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older women with low impulse behavior, whereas the advertiser targets women aged 22-40 who buy on drops."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic clash with a modern shapewear/intimates drop model targeting 22-40 year olds."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": 1,
+      "why": "Focus on inclusive sizing and fit-focused messaging perfectly aligns with the advertiser's XXS-5X range."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Gen Z and younger millennial demographic aligns well with the advertiser's target age of 22-40 and identity-driven drop purchases."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, target audience, sizing, and specific distribution strategy (drops) are clearly stated.",
+  "missing_info": [
+    "Average price point / AOV",
+    "Specific pricing tier (though they reject discount-only shoppers, exact pricing is unspecified)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or average order value (AOV) for your products?",
+    "Do you offer any subscription options for your underwear/loungewear, or is it strictly one-time drop purchases?",
+    "What is your target customer acquisition cost (CAC) or primary campaign goal?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

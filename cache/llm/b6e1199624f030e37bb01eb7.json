@@ -1,0 +1,90 @@
+{
+  "business_summary": "DTC brand selling slim leather wallets and everyday carry bags priced between $80 and $200, frequently purchased as gifts for fathers and graduates.",
+  "product": "Slim leather wallets and everyday carry bags",
+  "is_consumer_product": true,
+  "price_point_usd": 140.0,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "male",
+  "target_age_range": "18-24 (grads), 35+ (fathers)",
+  "stated_claims": [
+    "Slim leather wallets and everyday carry bags",
+    "$80-200 price range",
+    "A common gift for fathers and grads"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Explicitly positioned as a common gift for fathers and grads."
+    },
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "The primary end-users are fathers and male graduates."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Leather wallets and everyday carry bags align with a classic, timeless aesthetic."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Wallets and bags are fashion accessories adjacent to apparel."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel",
+    "classic_apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested in luxury-only messaging and high price sensitivity",
+      "evidence": "Priced at $80-200 for wallets and bags"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns perfectly with a product positioned as a common gift."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women are a prime demographic for buying high-quality gifts for fathers and grads."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative sensibility fits premium leather goods."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency convenience and grocery shoppers are unlikely to make high-AOV impulse purchases of leather gifts."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Specific leather sourcing or sustainability practices",
+    "Availability of gift wrapping or personalization",
+    "Shipping times and holiday delivery guarantees"
+  ],
+  "clarifying_questions": [
+    "Do you offer custom engraving or personalization for gifts?",
+    "Do you offer premium gift packaging or gift wrapping options at checkout?",
+    "What are your typical shipping times during peak gifting seasons (e.g., Father's Day, graduation season, holidays)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

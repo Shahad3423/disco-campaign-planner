@@ -1,0 +1,104 @@
+{
+  "business_summary": "Design-forward dog walking gear brand targeting urban millennials and first-time puppy owners with premium accessories.",
+  "product": "Dog walking gear (harnesses, leashes, carriers, poop bag holders)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Design-forward dog walking gear",
+    "Orders usually $60-120"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "design-forward"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog walking gear and accessories."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core subcategory; harnesses, leashes, and carriers are pet supplies."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.5,
+      "why": "Adjacent pet category; shoppers buying dog toys are highly likely to own dogs and need walking gear."
+    },
+    {
+      "tag": "treats",
+      "weight": 0.5,
+      "why": "Adjacent pet category; dog owners buying treats are prime prospects for walking accessories."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Adjacent pet category; high overlap with dog owners."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "travel",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested in luxury-only messaging, vague premium positioning",
+      "evidence": "Design-forward dog walking gear with high average order values ($60-120) conflicts with value-conscious shoppers looking for budget utility."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Audience of millennials treating dogs as family perfectly matches the advertiser's target of urban millennials."
+    },
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Premium positioning and health-conscious pet owners align well with design-forward, high-AOV gear."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog, ideal for finding customers who just bought other pet stuff."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban buyers align well with the design-forward aesthetic and urban millennial demographic."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience skews to older women, which conflicts with the advertiser's core focus on urban millennials."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience (urban millennials, first-time puppy owners), and average order value ($60-120) are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "individual product price points",
+    "whether poop bags are offered as a subscription",
+    "specific materials or sustainability claims"
+  ],
+  "clarifying_questions": [
+    "What is the average price point for individual items like harnesses or carriers?",
+    "Do you offer any subscription options (e.g., recurring shipments for poop bags), or is it strictly one-time purchases?",
+    "Are your products made with sustainable, eco-friendly, or non-toxic materials?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

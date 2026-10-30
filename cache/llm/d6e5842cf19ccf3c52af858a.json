@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, get identical formulas for your training.",
+      "body": "Power your performance with the exact same formulations as expensive brands. We compete on price, not marketing, to fuel your workouts.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Get identical formulas for your training.",
+      "angle": "High-performance formulations identical to premium brands",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your system with identical formulas.",
+      "body": "Optimize your system with the exact same formulations as expensive brands. We compete on price, not on marketing.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Optimize your system with identical formulations.",
+      "angle": "Identical active formulations for precise system optimization",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    }
+  ]
+}

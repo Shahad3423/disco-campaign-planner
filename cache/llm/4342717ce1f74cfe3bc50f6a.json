@@ -1,0 +1,33 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Lacks the discount-forward messaging, reviews, or clear price-to-value articulation preferred by the Value-Conscious Shopper."
+      ],
+      "passed": false
+    }
+  ]
+}

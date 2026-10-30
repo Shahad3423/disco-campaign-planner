@@ -1,0 +1,67 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your sleep routine.",
+      "body": "Explore our sound machines and sunrise alarm clocks designed for dedicated sleep-optimizers. Devices from $70 to $170.",
+      "cta": "Shop sleep devices",
+      "headline_no_name": "Optimize your daily sleep routine.",
+      "angle": "Leaning on outcome-focused routine optimization for dedicated sleep-optimizers.",
+      "claims_used": [
+        "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+        "Price range of $70-170",
+        "Targeted at parents and sleep-optimizers"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Understated sleep devices for your home.",
+      "body": "Invest in quality sound machines and sunrise alarm clocks. Elegant bedtime routine devices priced from $70 to $170.",
+      "cta": "Shop sound machines",
+      "headline_no_name": "Understated sleep devices for your home.",
+      "angle": "Focusing on quality, understated design, and longevity without trendy language.",
+      "claims_used": [
+        "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+        "Price range of $70-170"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of better sleep.",
+      "body": "Find the perfect gift with our premium sunrise alarm clocks, sound machines, and Rest for kids. Price range of $70-$170.",
+      "cta": "Shop sleep gifts",
+      "headline_no_name": "Give the gift of a better sleep routine.",
+      "angle": "Positioning the premium sleep devices as high-quality, impressive gifts for families or individuals.",
+      "claims_used": [
+        "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+        "Price range of $70-170"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Optimize your rest, {first_name}.",
+      "body": "For sleep-optimizers who value recovery: discover sunrise alarm clocks and sound machines. Premium devices from $70-$170.",
+      "cta": "Shop sunrise clocks",
+      "headline_no_name": "Optimize your rest and recovery.",
+      "angle": "Appealing to the optimization and routine tracking preferences of the fitness enthusiast.",
+      "claims_used": [
+        "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+        "Price range of $70-170",
+        "Targeted at parents and sleep-optimizers"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Make bedtime easier, {first_name}.",
+      "body": "Streamline routines with Rest for kids and our sound machines. Designed for parents and families, with devices from $70-$170.",
+      "cta": "Shop Rest for kids",
+      "headline_no_name": "Make family bedtime routines easier.",
+      "angle": "Highlighting family-friendly bedtime routines and convenience for busy parents.",
+      "claims_used": [
+        "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+        "Price range of $70-170",
+        "Targeted at parents and sleep-optimizers"
+      ]
+    }
+  ]
+}

@@ -53,20 +53,33 @@ class Provider(Protocol):
 class GeminiProvider:
     name = "gemini"
 
-    def __init__(self, model: str | None = None):
+    def __init__(self, model: str | None = None, backend: str = "aistudio"):
+        """backend="aistudio": free-tier GEMINI_API_KEY. backend="vertex": Google Cloud project
+        (GOOGLE_CLOUD_PROJECT) billed to its credits, authenticated by VERTEX_API_KEY if set,
+        else by the local gcloud login (application-default credentials). Same models either way."""
         from google import genai
         from google.genai import types
 
         # Fallback chain: free-tier models get 503 "high demand" and 429 quota errors, so a
         # busy model shouldn't break the demo. gemini-2.5-flash is retired for new keys.
-        chain = model or os.getenv("GEMINI_MODELS", "gemini-3.5-flash,gemini-flash-lite-latest,gemini-flash-latest")
+        default_chain = ("gemini-3.5-flash,gemini-3.5-flash-lite" if backend == "vertex"  # Vertex has no *-latest aliases
+                         else "gemini-3.5-flash,gemini-flash-lite-latest,gemini-flash-latest")
+        chain = model or os.getenv("GEMINI_MODELS", default_chain)
         self.models = [m.strip() for m in chain.split(",")]
-        self.model = self.models[0]  # stable id for the cache key
+        self.model = self.models[0]  # stable id for the cache key (same model on both backends)
+        self.backend = backend
         self.last_model_used: str | None = None
-        self._client = genai.Client(
-            api_key=os.environ["GEMINI_API_KEY"],
-            http_options=types.HttpOptions(timeout=60_000, retry_options=types.HttpRetryOptions(attempts=2)),
-        )
+        http = types.HttpOptions(timeout=60_000, retry_options=types.HttpRetryOptions(attempts=2))
+        if backend == "vertex":
+            if os.getenv("VERTEX_API_KEY"):
+                self._client = genai.Client(vertexai=True, api_key=os.environ["VERTEX_API_KEY"], http_options=http)
+            else:
+                self._client = genai.Client(
+                    vertexai=True, project=os.environ["GOOGLE_CLOUD_PROJECT"],
+                    location=os.getenv("GOOGLE_CLOUD_LOCATION", "global"), http_options=http,
+                )
+        else:
+            self._client = genai.Client(api_key=os.environ["GEMINI_API_KEY"], http_options=http)
 
     def complete(self, system: str, user: str, temperature: float) -> str:
         from google.genai import errors, types
@@ -129,11 +142,44 @@ class FakeProvider:
         raise LLMError("FakeProvider: no canned response matched")
 
 
+class ChainProvider:
+    """Try providers in order (e.g. Vertex on cloud credits, then the free AI Studio key).
+    Same model id first, so the disk cache is shared."""
+
+    name = "gemini"
+
+    def __init__(self, providers: list):
+        self.providers = providers
+        self.model = providers[0].model
+        self.last_backend_used: str | None = None
+
+    def complete(self, system: str, user: str, temperature: float) -> str:
+        errors_seen = []
+        for p in self.providers:
+            try:
+                out = p.complete(system, user, temperature)
+                self.last_backend_used = getattr(p, "backend", p.name)
+                return out
+            except Exception as e:  # any backend failure: try the next one
+                errors_seen.append(f"{getattr(p, 'backend', p.name)}: {str(e)[:160]}")
+        raise LLMError("All backends failed: " + " | ".join(errors_seen))
+
+
 def default_provider() -> Provider:
     choice = os.getenv("LLM_PROVIDER", "gemini")
     if choice == "anthropic":
         return AnthropicProvider()
-    return GeminiProvider()
+    providers = []
+    if os.getenv("GOOGLE_CLOUD_PROJECT") or os.getenv("VERTEX_API_KEY"):
+        try:
+            providers.append(GeminiProvider(backend="vertex"))
+        except Exception:  # e.g. no gcloud login yet: fall back to the free key, don't crash
+            pass
+    if os.getenv("GEMINI_API_KEY"):
+        providers.append(GeminiProvider(backend="aistudio"))
+    if not providers:
+        raise LLMError("No LLM credentials: set GOOGLE_CLOUD_PROJECT (Vertex) or GEMINI_API_KEY (AI Studio)")
+    return providers[0] if len(providers) == 1 else ChainProvider(providers)
 
 
 def _extract_json(text: str) -> str:

@@ -1,0 +1,70 @@
+{
+  "business_summary": "A retail brand selling firearms, ammunition, and accessories, specifically targeting outdoor and hunting audiences. Purchases are subject to age restrictions (18/21+) and firearms must be shipped to a Federal Firearms License (FFL) holder.",
+  "product": "Firearms, ammunition, and accessories",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": "18/21+",
+  "stated_claims": [
+    "Customers must be 18/21+",
+    "Must ship to an FFL for guns"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Firearms must be shipped to a Federal Firearms License (FFL) holder.",
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Outdoor and hunting audiences heavily utilize technical activewear and outdoor gear."
+    },
+    {
+      "tag": "men",
+      "weight": 0.25,
+      "why": "The hunting and firearms demographic historically has a strong correlation with male shoppers, though not exclusively."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in=['multi-step purchases', 'delayed fulfillment']",
+      "evidence": "Guns must ship to an FFL, which requires a multi-step background check and pickup process rather than direct-to-home delivery."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park features a 'conservative brand sensibility' which has a strong cultural and demographic alignment with the firearms and hunting community."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": -1,
+      "why": "Cloudfoot targets 'tech-adjacent urban professionals' who typically have low affinity for firearms and hunting products."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product catalog (firearms, ammo, accessories) and target audience (outdoor/hunting) are clearly defined, enabling us to map potential partner brands, despite strict regulatory fulfillment processes.",
+  "missing_info": [
+    "Average price point or AOV",
+    "Whether ammunition and accessories can be shipped directly to consumers' homes",
+    "Geographic restrictions on shipping",
+    "Primary digital CPA or customer acquisition goals"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) for firearms versus ammunition and accessories?",
+    "Can ammunition and accessories be shipped directly to a customer's residence, or does your entire inventory require FFL shipping?",
+    "Are there specific states or regions where you cannot ship your products due to local regulations?",
+    "What is your target cost per acquisition (CPA) for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

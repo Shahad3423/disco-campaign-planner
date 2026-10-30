@@ -1,0 +1,103 @@
+{
+  "business_summary": "Prestige Japanese-inspired skincare brand featuring high-end products like the Dewy Skin Cream.",
+  "product": "Skincare",
+  "is_consumer_product": true,
+  "price_point_usd": 72.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "30-55",
+  "stated_claims": [
+    "Prestige Japanese-inspired skincare",
+    "The Dewy Skin Cream is $72 and our hero",
+    "Typical order $110+"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Japanese-inspired"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product category of the advertiser."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Core parent category of the advertiser."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Explicitly targeted demographic (women 30-55)."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Target age range of 30-55 overlaps heavily with mid-life demographics."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "Adjacent self-care interest for premium skincare buyers."
+    },
+    {
+      "tag": "makeup",
+      "weight": 0.5,
+      "why": "Highly adjacent beauty category with strong cross-purchase affinity."
+    }
+  ],
+  "competing_tags": [
+    "skincare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in luxury positioning",
+      "evidence": "Prestige Japanese-inspired skincare - the Dewy Skin Cream is $72"
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging, vague premium positioning",
+      "evidence": "Prestige Japanese-inspired skincare - the Dewy Skin Cream is $72 and typical order $110+"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience is older affluent women with high AOV, matching the advertiser's target of affluent women 30-55."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher, aligning well with the premium $110+ typical order value."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Audience is Gen Z and younger millennial, which conflicts with the advertiser's target of women 30-55."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, hero price point, typical order value, and target demographic are clearly defined and actionable.",
+  "missing_info": [
+    "one-time vs subscription options",
+    "shipping costs and fulfillment times",
+    "primary campaign goal"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for your skincare products, or are they primarily one-time purchases?",
+    "What is your primary goal for this campaign (e.g., customer acquisition, maximizing AOV, or brand awareness)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

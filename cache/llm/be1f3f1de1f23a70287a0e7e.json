@@ -1,0 +1,35 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy is quite generic and does not leverage parent-specific trust signals, family-friendly framing, or recommendations preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy relies heavily on a utility/self-care framing ('sick of overpriced drugstore cartridges') which this persona avoids, and fails to highlight premium presentation, gift-wrapping, or an impressive-looking gift set."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, ready to skip the scooping?",
+      "body": "Save precious family time with this self-cleaning litter box. Try it risk-free with our 90-day trial. Perfect for busy homes.",
+      "cta": "Try risk-free today",
+      "headline_no_name": "Ready to skip the scooping?",
+      "angle": "time-saving and easy returns",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, the best for your cats",
+      "body": "Perfect for multi-cat homes, this self-cleaning litter box keeps things clean automatically. Try it in your home with a 90-day trial.",
+      "cta": "Try for 90 days",
+      "headline_no_name": "The best for your cats",
+      "angle": "multi-cat household focus",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, make scooping history",
+      "body": "This Halloween, skip the scary chore. Our $500-$700 self-cleaning litter box does the work for you. Start your 90-day trial today.",
+      "cta": "Get yours today",
+      "headline_no_name": "Make scooping history",
+      "angle": "convenience-first with seasonal Halloween moment",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Priced at $500-700",
+        "90-day trial helps conversion"
+      ]
+    }
+  ]
+}

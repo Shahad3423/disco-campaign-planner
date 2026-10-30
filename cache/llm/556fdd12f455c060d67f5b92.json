@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "Learn math and science on the go, {first_name}",
+      "body": "Access interactive math, science, and CS courses instantly on mobile or web. Learn in small chunks with a simple subscription.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Learn math and science on the go",
+      "angle": "subscription perks and effortless mobile access",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, master science and math",
+      "body": "Explore interactive science, math, and CS courses on mobile and web. Perfect for curious adults who love to learn in small chunks.",
+      "cta": "Start learning",
+      "headline_no_name": "Master science and math",
+      "angle": "outcome-focused interactive science education",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, bite-sized learning for students",
+      "body": "Help your students learn with interactive math, science, and CS courses on mobile and web. Easy subscription, learned in small chunks.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Bite-sized learning for students",
+      "angle": "family-friendly bite-sized learning for students",
+      "claims_used": [
+        "Interactive math, science and CS courses on mobile and web.",
+        "Curious adults and students who like to learn in small chunks."
+      ]
+    }
+  ]
+}

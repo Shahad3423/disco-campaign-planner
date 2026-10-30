@@ -1,0 +1,83 @@
+{
+  "business_summary": "An online platform offering unique and personalized gifts crafted by independent makers, with an average order value of $85, targeting gift-givers around holidays and birthdays.",
+  "product": "Unique and personalized gifts from independent makers",
+  "is_consumer_product": true,
+  "price_point_usd": 85.0,
+  "price_tier": "mid",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Unique gifts from independent makers",
+    "lots of personalized stuff",
+    "Average order $85"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "independent makers",
+    "personalized"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The advertiser explicitly targets gift-givers around birthdays and holidays with gift items."
+    },
+    {
+      "tag": "personalized",
+      "weight": 1.0,
+      "why": "The advertiser states they offer lots of personalized stuff."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Independent maker marketplace selling directly to consumers online."
+    }
+  ],
+  "competing_tags": [
+    "gifting"
+  ],
+  "persona_affinity_tags": [
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "delayed fulfillment",
+      "evidence": "lots of personalized stuff"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot sees strong gifting season uplift (Nov-Dec), highly compatible with this advertiser's holiday focus."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that gifting and life events drive purchase, which aligns with birthday/holiday gifting."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab's audience is personalization-motivated, aligning well with 'lots of personalized stuff'."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, average order value, target audience, and key seasonal triggers are clearly identified and actionable.",
+  "missing_info": [
+    "specific product categories (e.g. jewelry, home goods, print)",
+    "exact production and shipping lead times for personalized items"
+  ],
+  "clarifying_questions": [
+    "What are your top-selling gift categories (e.g., home decor, jewelry, food)?",
+    "What is the average turnaround and shipping time for personalized items?",
+    "Do you offer ready-to-ship options for last-minute holiday shoppers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

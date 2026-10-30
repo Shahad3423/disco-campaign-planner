@@ -1,0 +1,104 @@
+{
+  "business_summary": "An edgy canned mountain water brand featuring a 'metal-heads' attitude and branding. The product is primarily packaged and sold in bulk (12-24 packs) targeting a younger, lifestyle-driven audience.",
+  "product": "Canned mountain water",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "young",
+  "stated_claims": [
+    "Canned mountain water with a metal-heads attitude",
+    "Mostly sold in 12-24 packs"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "edgy branding"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "The product is canned mountain water, which is a beverage."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Water sold in multi-packs is a standard grocery staple."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Canned water in bulk packs is a convenience-driven purchase."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 0.5,
+      "why": "Edgy canned water brands often position themselves as healthy, sugar-free alternatives to sodas and energy drinks."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "12-24 packs of canned water are typically stored as pantry stock."
+    }
+  ],
+  "competing_tags": [
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "convenience",
+    "groceries",
+    "quick_commerce"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: ['trendy language', 'loud aesthetics', 'influencer positioning']",
+      "evidence": "The brand defines itself by its 'metal-heads attitude' and 'edgy branding', which directly conflicts with understated, classic preferences."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: ['novelty']",
+      "evidence": "The 'metal-heads attitude' and reliance on edgy branding places it heavily in the novelty lifestyle beverage subcategory."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Quick grocery/convenience purchase with a late-night traffic spike aligns well with a young, edgy, impulse-friendly beverage brand."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "High-AOV conservative brand sensibility strongly clashes with a loud, 'metal-heads' aesthetic."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Older affluent female audience is highly unlikely to align with edgy, metal-head branded canned water."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Beverage-specific host with shoppers seeking alternative, premium drinks."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category (canned water) and target demographic (young/edgy) are clear, allowing for immediate publisher alignment, though unit pricing is missing.",
+  "missing_info": [
+    "Exact price point for 12-pack and 24-pack",
+    "Availability of a subscription model vs one-time purchase",
+    "Shipping rates and delivery timeline"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point for your 12-packs and 24-packs?",
+    "Do you offer a subscription option for recurring deliveries, or is it strictly one-time purchases?",
+    "Do you have any specific sustainability claims (e.g., infinitely recyclable aluminum) that we can leverage in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

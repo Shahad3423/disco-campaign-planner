@@ -1,0 +1,35 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The product category (dating app) is a weak fit for a wellness optimizer persona, though the copy attempts to frame it with an outcome-focused angle."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The seasonal Halloween reference limits the evergreen usability of the ad."
+      ],
+      "passed": true
+    }
+  ]
+}

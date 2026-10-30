@@ -1,0 +1,91 @@
+{
+  "business_summary": "An organic cotton apparel brand specializing in family pajamas and kids' clothing, with a strong seasonal focus on matching-family holiday pajama sets. Target audience includes parents and grandparents.",
+  "product": "Organic cotton family pajamas and kids' clothing",
+  "is_consumer_product": true,
+  "price_point_usd": 55.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "Parents and grandparents",
+  "stated_claims": [
+    "Organic cotton family pajamas and kids' clothing",
+    "Matching-family holiday pajama sets are our big seller"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core product category is pajamas and kids' clothing."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "Products are explicitly stated to be made of organic cotton."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Matching-family holiday pajama sets are highly gift-oriented products."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Organic cotton materials align with sustainable apparel preferences."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Pajamas and kids' clothing are everyday apparel basics."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "family_products",
+    "kids_products",
+    "sustainable_apparel",
+    "apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women (grandparents) with high AOV are a key target demographic for premium kids' clothing and family gifts."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "High-AOV apparel publisher with a conservative sensibility aligns well with premium, traditional family holiday pajamas."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift in Nov-Dec perfectly matches the peak demand for holiday family pajama sets."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households are the core demographic for matching family pajamas."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, target audience, and seasonal focus are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Specific average order value (AOV)",
+    "Primary acquisition goal (e.g., CPA target or ROAS)"
+  ],
+  "clarifying_questions": [
+    "What is your target Cost Per Acquisition (CPA) or target Return on Ad Spend (ROAS) for these campaigns?",
+    "Do you offer bundle discounts or special pricing when customers purchase matching sets for the whole family?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

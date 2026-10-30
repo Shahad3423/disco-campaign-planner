@@ -1,0 +1,46 @@
+{
+  "business_summary": "A donation platform used by Democratic campaigns and causes to recruit small-dollar donors before quarter-end deadlines.",
+  "product": "Political donation platform",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Donation platform used by Democratic campaigns and causes",
+    "Want to get small-dollar donors to give to candidates before the quarter-end deadline"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Democratic campaigns",
+    "Democratic causes"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park has a 'Conservative brand sensibility' which directly clashes with Democratic political fundraising."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "Political campaign fundraising and donation platforms are not consumer DTC products/services suitable for retail post-purchase checkouts due to brand safety, regulatory compliance, and network fit guidelines.",
+  "missing_info": [
+    "Consumer-facing physical or digital goods (none listed)",
+    "Target donor demographics",
+    "Average contribution size"
+  ],
+  "clarifying_questions": [
+    "Do you offer any consumer-facing retail products, or is this campaign strictly for political donations?",
+    "How do you plan to address brand safety and political polarization concerns for potential host brands?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

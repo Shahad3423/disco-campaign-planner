@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "pure"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The 'edgy' and 'metal-head' branding conflicts directly with the Busy Parent's preference for 'family-friendly' products."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "ditch plastic"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim to 'ditch plastic' is an unsupported environmental claim not mentioned in the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Save by grabbing your canned mountain water in 12 or 24-packs",
+        "better value when you buy in bulk"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad claims financial savings and 'better value' for bulk purchases, which is not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "pure",
+        "heavy-duty"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The descriptors 'pure' and 'heavy-duty' are unsupported by the advertiser's stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

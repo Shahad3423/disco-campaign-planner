@@ -1,0 +1,88 @@
+{
+  "business_summary": "DTC brand selling everyday 14k gold jewelry priced at $50-$400, targeted at women aged 22-40 who buy jewelry for themselves, with a strong emphasis on gifting.",
+  "product": "14k gold jewelry",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "Everyday 14k gold jewelry",
+    "Priced at $50-400",
+    "Lots of gifting",
+    "Women 22-40 who buy jewelry for themselves"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "The advertiser explicitly targets women aged 22-40."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The advertiser explicitly notes 'Lots of gifting' as a core use case."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Jewelry is a major accessory category highly adjacent to fashion and apparel shopping."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Everyday gold jewelry appeals strongly to classic, timeless fashion tastes."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "High cross-sell overlap between beauty buyers and self-purchasing jewelry buyers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "apparel",
+    "fashion",
+    "beauty"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns perfectly with the advertiser's 'lots of gifting' focus."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with higher AOVs align well with premium gold jewelry purchases."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV classic apparel publisher aligns with high quality, classic gold jewelry."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Younger millennial audience with minimalist aesthetic fits 'everyday 14k gold jewelry' positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, target gender/age, and core buying behaviors are clearly specified, making it highly actionable for planning.",
+  "missing_info": [
+    "average_order_value"
+  ],
+  "clarifying_questions": [
+    "What is your typical average order value (AOV)?",
+    "Do you offer curated gift wrapping or customizable gift options?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

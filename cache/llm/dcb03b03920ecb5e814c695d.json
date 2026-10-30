@@ -1,0 +1,112 @@
+{
+  "business_summary": "DTC functional beverage brand selling prebiotic and apple cider vinegar sodas targeted at Gen Z and Millennial audiences.",
+  "product": "Prebiotic and apple cider vinegar soda",
+  "is_consumer_product": true,
+  "price_point_usd": 2.5,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": "Gen Z and Millennial",
+  "stated_claims": [
+    "Soda with apple cider vinegar and prebiotics",
+    "about $2.50 a can",
+    "Heavy Gen Z and Millennial skew",
+    "big on Instagram"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Core product category for prebiotic and ACV sodas."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "Direct product category for alternative functional sodas."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotics and apple cider vinegar are heavily marketed for digestive and gut health."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Broad parent category for the product."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent category where functional beverages are frequently purchased."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Adjacent shelf-stable grocery storage category."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "gut_health"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "premium_grocery",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in influencer positioning, trendy language, and loud aesthetics.",
+      "evidence": "Advertiser has a heavy Gen Z/Millennial skew and is 'big on Instagram'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Instant delivery and groceries focus aligns well with high-frequency, impulse-friendly beverage purchases."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience consists of Gen Z and younger Millennials, matching the advertiser's core demographic."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "Direct competitor selling functional beverages and soda alternatives for gut health."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience of older, lower-impulse women conflicts with the Gen Z/Millennial impulse soda demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility conflicts with a trendy, Instagram-heavy Gen Z/Millennial beverage brand."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target demographic are clearly defined and align well with existing host audiences in the network.",
+  "missing_info": [
+    "Subscription options (is it available as a subscription or one-time only?)",
+    "Case sizes or minimum purchase requirements for shipping",
+    "Shipping costs and shipping regions"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription options, or are purchases one-time only?",
+    "What is your typical pack size (e.g., 12-packs) and average order value (AOV)?",
+    "Do you have free shipping thresholds that we should highlight in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

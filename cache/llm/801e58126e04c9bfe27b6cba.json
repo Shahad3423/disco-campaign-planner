@@ -1,0 +1,83 @@
+{
+  "business_summary": "A regulated sports betting and daily fantasy sports platform targeting adults aged 21 and older in legally permitted states, focusing on driving first-deposit signups through a promotional offer.",
+  "product": "Sports betting and daily fantasy sports platform",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": "21+",
+  "stated_claims": [
+    "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+    "Big new-user promo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital service available instantly upon signup and deposit in legal states.",
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Sports betting and daily fantasy sports historically skew heavily toward male demographics."
+    },
+    {
+      "tag": "alcohol",
+      "weight": 0.5,
+      "why": "High lifestyle overlap with sports viewing, casual entertainment, and adult-only social activities."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.25,
+      "why": "App-based entertainment fits quick-use, impulse-friendly digital consumption."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "prefers family-friendly products",
+      "evidence": "The product is sports betting and daily fantasy restricted to adults 21+."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic spikes and impulse-friendly behavior align perfectly with live sports betting and fantasy sports engagement."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience of older affluent women with lower impulse behavior is a poor demographic fit for sports betting."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "A conservative brand sensibility is highly likely to conflict with hosting a regulated gambling/sports betting advertiser."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": -1,
+      "why": "Values-driven, sustainability, and wellness-focused shoppers are highly unlikely to engage with sports betting promotions."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and conversion goal are clear, though geo-targeting restrictions must be strictly applied.",
+  "missing_info": [
+    "Minimum deposit amount required to trigger the promo",
+    "Specific list of legal states to target",
+    "Exact details of the new-user promo"
+  ],
+  "clarifying_questions": [
+    "What is the minimum deposit amount required for users to qualify for the new-user promo?",
+    "Which specific US states should we restrict this campaign to?",
+    "Are there any specific compliance or creative guidelines we must follow for this regulated category?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

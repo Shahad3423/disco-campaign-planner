@@ -1,0 +1,114 @@
+{
+  "business_summary": "Subscription razors and grooming for men starting from about $5 a month, targeting men who haven't tried razor subscriptions before.",
+  "product": "Subscription razors and grooming products",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "male",
+  "target_age_range": null,
+  "stated_claims": [
+    "Subscription razors and grooming for men, from about $5 a month."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "The product is specifically formulated and marketed for men."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business operates on a subscription model."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Grooming and shaving products fall under personal care and beauty."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Shaving and grooming directly impact facial skin health."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Razors are a fundamental daily personal care basic."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Subscribing to razor replenishment offers convenience."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services",
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Subscription razors and grooming for men"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Activewear audience includes men and has existing familiarity with subscription models."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older women, whereas the advertiser targets men."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience consists of women, and the brand is high-AOV whereas this is a budget razor offer."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Audience is entirely focused on women's apparel."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Sells basics (socks, underwear) which have strong affinity with daily men's grooming basics."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is specifically targeted toward women's wellness."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Audience consists of professional women."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product is highly defined, targets a clear demographic, and has an explicit starting price and purchase model.",
+  "missing_info": [
+    "Target age range",
+    "Specific items included in the grooming range",
+    "Shipping costs and details"
+  ],
+  "clarifying_questions": [
+    "What specific grooming products are offered in addition to razors?",
+    "Is shipping included in the $5/month price point?",
+    "Do you have a target customer age range or specific lifestyle demographic (e.g., college-aged, professionals)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

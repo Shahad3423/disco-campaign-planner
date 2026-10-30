@@ -1,0 +1,63 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, meet lab-tested natural wine.",
+      "body": "Clean up your cellar. Enjoy low-sugar, lab-tested natural wines shipped monthly to your door for $160-ish a box.",
+      "cta": "Start subscription",
+      "headline_no_name": "Meet lab-tested natural wine.",
+      "angle": "science-backed claims and ingredient transparency",
+      "claims_used": [
+        "Low-sugar",
+        "Lab-tested",
+        "Natural wines",
+        "Shipped monthly",
+        "$160-ish a box"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, experience curated natural wines.",
+      "body": "Discover the exceptional quality of lab-tested natural wines. Shipped monthly directly to your home for $160-ish a box.",
+      "cta": "Subscribe to wine",
+      "headline_no_name": "Experience curated natural wines.",
+      "angle": "quality-focused craftsmanship and understated value",
+      "claims_used": [
+        "Lab-tested",
+        "Natural wines",
+        "Shipped monthly",
+        "$160-ish a box"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "Clean ingredients for your glass, {first_name}.",
+      "body": "You care about what goes into your home. Enjoy low-sugar, lab-tested natural wines shipped monthly for $160-ish a box.",
+      "cta": "Subscribe monthly",
+      "headline_no_name": "Clean ingredients for your glass.",
+      "angle": "ingredient transparency and emotional connection to home choices",
+      "claims_used": [
+        "Low-sugar",
+        "Lab-tested",
+        "Natural wines",
+        "Shipped monthly",
+        "$160-ish a box"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, get natural wine on autopilot.",
+      "body": "Halloween plans? Skip the store. Get low-sugar, lab-tested natural wines shipped monthly straight to your door for $160-ish a box.",
+      "cta": "Start subscription",
+      "headline_no_name": "Natural wine on autopilot.",
+      "angle": "speed and subscription perks with a seasonal touch",
+      "claims_used": [
+        "Low-sugar",
+        "Lab-tested",
+        "Natural wines",
+        "Shipped monthly",
+        "$160-ish a box"
+      ]
+    }
+  ]
+}

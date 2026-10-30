@@ -231,3 +231,39 @@ homeownership by age, CPS families with children), [benchmark] (industry ranges:
 ~2.5-3%, category spreads) or [assumed] (no public data: third-party thank-you-page CTR, approval
 probability, share of voice). CVR was lowered to 1/2/3.5% after checking benchmarks; P(kids | 35-44) to
 0.52. All are placeholders for rates learned from the network's own logs.
+
+## D19. The page auction: second price, slot effects, reserve
+
+**Decision.** One thank-you page has **one** offer slot (product decision: one clear offer protects the host's page; `slots` is configurable). Eligible campaigns are ranked by eCPM (final bid x expected
+CTR x 1000); anything below a reserve eCPM is dropped (an empty slot beats a weak offer on the host's own
+page); a position curve applies if slots > 1; the winner pays the
+**generalised second price**: the least that still beats the runner-up, `runner-up eCPM / (own CTR x 1000) + $0.01`, never
+above its own bid. The host earns its revenue share of what's actually paid. **Why second price:** it makes
+"bid what a click is worth to you" the sensible strategy, which is what our bid ceiling (break-even CPC)
+assumes. **Why it matters here:** with only the 15 example campaigns no host had more than 3 bidders, so the
+ranking only set order; the 100 holdout brands are loaded as competitors so slots are actually contested.
+
+## D20. Auction insights instead of visible rival bids
+
+Bids are sealed: a campaign states a ceiling once (derived from its target CPA) and Disco's server runs the
+auction per page view, so there is no bid-and-counter-bid between advertisers (that dynamic belongs to
+first-price auctions). With one slot, second price is exactly truthful: bidding your break-even is the best
+strategy, and what you pay depends only on the runner-up. What advertisers get instead is aggregate feedback
+per host (win rate, average price paid, which campaigns they lose to, and the bid that would win 25/50/75%
+of auctions compared with their break-even), so the decision is "raise my target CPA or leave this host".
+Rival names appear (like Google's Auction Insights), rival bids never do (tested). Here the aggregate is
+simulated over sample shoppers; in production it comes from the auction logs.
+
+## D21. Competitor blocking: a host setting, not a scoring penalty (supersedes the D1/D2 penalty)
+
+**Measured:** only ~6% of all advertiser-host pairs are competitor-flagged (15 examples: 5.4%; holdout:
+6.1%). It looked dominant because in a 20-host catalog the best-fitting hosts are the ones selling similar
+things (26-38% of *recommended* pairs). In a network of thousands of hosts that share shrinks.
+**Decision.** Fit is fit: no competitor penalty in the score and no budget discount. A host that also sells
+the advertiser's product type gets a flag ("may need to opt in"); whether it actually blocks is the host's
+own setting, enforced at serving (`host_policy`, simulator toggle), and blocked budget simply reflows to the
+other hosts. Flags need 2 of 3 intake samples to agree. **One guard kept:** if *every* pick is flagged, the
+best non-competing host with a real category link is added as a fallback so the campaign can always run
+(dog food: Pawline and Ruffco lead on fit, Tailcrate is the fallback).
+**Earlier version** (score x P(approve)=0.4, union voting, capacity discount) over-weighted a rare event
+three times; kept in git history and EXPERIMENTS for the comparison.

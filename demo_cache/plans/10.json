@@ -1169,7 +1169,7 @@
    "score": 0.24,
    "selected": true,
    "reasons": [
-    "EXPLORATORY: weak fit, included to reach the minimum number of variants",
+    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.41); included to reach 3 variants",
     "category affinity 0.60 (home_goods)",
     "price fit 0.50 (luxury product vs medium price sensitivity)",
     "audience fit 0.80"
@@ -1297,41 +1297,40 @@
  "creatives": [
   {
    "persona_id": "persona_005",
-   "headline": "Handcrafted in Florence for {first_name}",
-   "body": "Discover custom-fit leather handbags rooted in centuries of Italian heritage and peerless craftsmanship.",
-   "cta": "Explore Collection",
-   "headline_no_name": "Handcrafted in Florence",
-   "angle": "craftsmanship",
+   "headline": "Timeless Italian heritage, {first_name}",
+   "body": "Handcrafted in Florence, our custom-fit leather handbags offer unmatched quality designed to last a lifetime.",
+   "cta": "Shop custom-fit",
+   "headline_no_name": "Timeless Italian heritage",
+   "angle": "heritage and understated craftsmanship",
    "claims_used": [
-    "Handcrafted in Florence",
-    "Italian-made",
-    "Custom-fit leather handbags"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "headline": "Gift something truly Italian-made",
-   "body": "Surprise someone special with custom-fit leather handbags, masterfully handcrafted in Florence.",
-   "cta": "Shop the Gift",
-   "headline_no_name": "Gift something truly Italian-made",
-   "angle": "giftable",
-   "claims_used": [
-    "Italian-made",
     "Custom-fit leather handbags",
     "Handcrafted in Florence"
    ]
   },
   {
-   "persona_id": "persona_006",
-   "headline": "Handcrafted in Florence",
-   "body": "Discover Italian-made leather handbags created through traditional artisan workshops. Built for enduring craftsmanship.",
-   "cta": "Explore Collection",
-   "headline_no_name": "Handcrafted in Florence",
-   "angle": "supply chain transparency",
+   "persona_id": "persona_010",
+   "headline": "{first_name}, gift a custom-fit Italian masterpiece",
+   "body": "Handcrafted in Florence, these custom-fit leather handbags are the ultimate bespoke gift. Italian-made and worth the 6-week wait.",
+   "cta": "Gift a custom bag",
+   "headline_no_name": "Gift a custom-fit Italian masterpiece",
+   "angle": "Bespoke planned gifting",
    "claims_used": [
-    "Handcrafted in Florence",
+    "Custom-fit leather handbags",
     "Italian-made",
-    "Custom-fit leather handbags"
+    "Handcrafted in Florence"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "headline": "Handcrafted to order, {first_name}",
+   "body": "Made in Florence, our custom-fit leather handbags are Italian-made to order, rejecting fast fashion in favor of heritage craft.",
+   "cta": "Start custom order",
+   "headline_no_name": "Handcrafted to order",
+   "angle": "slow fashion and anti-fast-fashion transparency",
+   "claims_used": [
+    "Custom-fit leather handbags",
+    "Italian-made",
+    "Handcrafted in Florence"
    ]
   }
  ],
@@ -1347,23 +1346,25 @@
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 5,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "6-week wait"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "The claim of a '6-week wait' is unsupported by the advertiser's stated claims."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_006",
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [],
    "passed": true
-  },
-  {
-   "persona_id": "persona_006",
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [
-    "Relies on general craftsmanship instead of specific supply chain transparency or certifications required by this persona"
-   ],
-   "passed": false
   }
  ],
  "config": {
@@ -1378,19 +1379,20 @@
    "price_source": "stated",
    "gross_margin": 0.6,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 1.1,
    "max_affordable_cac": 792.0,
    "target_cpa": 554.4,
    "assumptions": [
-    "Gross margin not given; assumed 60% (typical for apparel).",
+    "No target CPA/ROAS or margin given; assumed 60% gross margin (typical for apparel). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($1200 x 60% margin x 1.1 orders = $792.00)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $554.40 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $554.40 x click-to-purchase rate (1.0%-3.5% for apparel). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 6.0,
+    "low": 5.54,
     "mid": 6.0,
     "high": 6.0
    },
@@ -1401,6 +1403,10 @@
   "budget": {
    "monthly_budget_usd": 6350.0,
    "budget_source": "recommended_learning_budget",
+   "delivery_goal": "budget",
+   "expected_impressions": 54184,
+   "expected_reach": 33865,
+   "goal_feasible": true,
    "daily_cap_usd": 211.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1426,13 +1432,15 @@
       "high": 551.0
      },
      "expected_conversions": {
-      "low": 9.6,
-      "mid": 19.3,
-      "high": 32.2
+      "low": 6.4,
+      "mid": 12.9,
+      "high": 22.5
      },
      "capacity_usd": 31248.0,
+     "expected_impressions": 27341,
+     "expected_reach": 17088,
      "requires_host_approval": false,
-     "rationale": "score 0.15 -> fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.15 -> relative fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     },
     {
      "publisher_id": "pub_004",
@@ -1447,19 +1455,72 @@
       "high": 528.0
      },
      "expected_conversions": {
-      "low": 9.0,
-      "mid": 18.1,
-      "high": 30.1
+      "low": 6.0,
+      "mid": 12.0,
+      "high": 21.1
      },
      "capacity_usd": 41331.32,
+     "expected_impressions": 26843,
+     "expected_reach": 16777,
      "requires_host_approval": false,
-     "rationale": "score 0.15 -> fit x1.37 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.15 -> relative fit x1.37 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
     "No budget given: recommending $6,350, the smallest budget that buys 300 clicks per host.",
     "Budget too small for Stride & Stem: concentrating on fewer hosts."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $554.40 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_005",
+     "start_bid": 4.2,
+     "max_bid": 6.0,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_004",
+     "start_bid": 4.2,
+     "max_bid": 6.0,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
@@ -1559,10 +1620,10 @@
      "pub_005",
      "pub_004"
     ],
-    "headline_template": "Handcrafted in Florence for {first_name}",
-    "headline_no_name": "Handcrafted in Florence",
-    "body": "Discover custom-fit leather handbags rooted in centuries of Italian heritage and peerless craftsmanship.",
-    "cta": "Explore Collection"
+    "headline_template": "Timeless Italian heritage, {first_name}",
+    "headline_no_name": "Timeless Italian heritage",
+    "body": "Handcrafted in Florence, our custom-fit leather handbags offer unmatched quality designed to last a lifetime.",
+    "cta": "Shop custom-fit"
    },
    {
     "variant_id": "v2",
@@ -1571,10 +1632,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "Gift something truly Italian-made",
-    "headline_no_name": "Gift something truly Italian-made",
-    "body": "Surprise someone special with custom-fit leather handbags, masterfully handcrafted in Florence.",
-    "cta": "Shop the Gift"
+    "headline_template": "{first_name}, gift a custom-fit Italian masterpiece",
+    "headline_no_name": "Gift a custom-fit Italian masterpiece",
+    "body": "Handcrafted in Florence, these custom-fit leather handbags are the ultimate bespoke gift. Italian-made and worth the 6-week wait.",
+    "cta": "Gift a custom bag"
    },
    {
     "variant_id": "v3",
@@ -1583,10 +1644,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "Handcrafted in Florence",
-    "headline_no_name": "Handcrafted in Florence",
-    "body": "Discover Italian-made leather handbags created through traditional artisan workshops. Built for enduring craftsmanship.",
-    "cta": "Explore Collection"
+    "headline_template": "Handcrafted to order, {first_name}",
+    "headline_no_name": "Handcrafted to order",
+    "body": "Made in Florence, our custom-fit leather handbags are Italian-made to order, rejecting fast fashion in favor of heritage craft.",
+    "cta": "Start custom order"
    }
   ],
   "frequency_cap": {
@@ -1630,7 +1691,7 @@
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_006"
+   "persona_010"
   ]
  }
 }

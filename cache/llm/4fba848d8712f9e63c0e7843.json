@@ -1,0 +1,38 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "formulas designed to prioritize baseline health"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains an unsupported claim about formulas prioritizing baseline health.",
+        "Does not provide the ingredient transparency or scientific evidence preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The CTA references 'gift sets' which are not explicitly mentioned in the advertiser's stated claims."
+      ],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The wellness optimization angle feels highly forced for a bookstore product; 'optimize your bookshelf' and 'fuel your mind' do not align well with a persona looking for science-backed physical/biological optimization."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy introduces a seasonal theme ('Halloween') which limits the evergreen usage of the ad variant."
+      ],
+      "passed": true
+    }
+  ]
+}

@@ -1212,6 +1212,7 @@
   "economics": null,
   "pricing": null,
   "budget": null,
+  "bid_strategy": null,
   "targeting": {
    "publishers_include": [],
    "publishers_exclude": [

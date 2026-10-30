@@ -1,0 +1,98 @@
+{
+  "business_summary": "High-end ceramic non-stick cookware sets formulated without PTFE, targeting health-conscious women with a premium price point of $400+.",
+  "product": "Ceramic non-stick cookware sets",
+  "is_consumer_product": true,
+  "price_point_usd": 400.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "28-45",
+  "stated_claims": [
+    "Ceramic non-stick cookware sets without PTFE",
+    "Sets are $400+",
+    "Women 28-45 who care about what their cookware is made of"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "non-toxic",
+    "clean materials"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "The advertiser sells cookware sets."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Cookware is a core kitchen product."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Cookware falls under general home goods."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "The product is PTFE-free and targets buyers who care about materials."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The explicitly stated target audience is women."
+    }
+  ],
+  "competing_tags": [
+    "cookware"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging and premium positioning due to high price sensitivity.",
+      "evidence": "Sets are $400+."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": -1,
+      "why": "Hearthstone Goods sells cookware directly, creating a conflict of interest on their thank-you page."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers value clean-ingredient, wellness, and sustainability claims, highly aligning with PTFE-free cookware."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed buyers are design-conscious and show high cross-sell with home and wellness."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. has older affluent women with high AOV who respond well to premium quality messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and core differentiators are clearly specified and actionable.",
+  "missing_info": [
+    "purchase frequency (one-time vs recurring accessories)",
+    "shipping/fulfillment details"
+  ],
+  "clarifying_questions": [
+    "Do you sell individual pieces or accessories as repeat purchases, or are you strictly focused on one-time set purchases?",
+    "What is your typical order fulfillment and shipping timeline?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

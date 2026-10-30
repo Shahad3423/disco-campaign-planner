@@ -1,0 +1,96 @@
+{
+  "business_summary": "Premium sleep and seating products featuring a patented grid design, targeting back-pain sufferers and hot sleepers with mattresses priced at $1,000+.",
+  "product": "Mattresses, pillows, and seat cushions",
+  "is_consumer_product": true,
+  "price_point_usd": 1000.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Patented grid design",
+    "Relieves back pain",
+    "Cooling for sleepers who run hot"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core category as the advertiser sells mattresses and pillows."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Mattresses and pillows are core home furniture and essentials."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent category covering pillows and bedding accessories."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent category since the products target physical wellness issues like back pain."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "wellness",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in performance claims without vibe",
+      "evidence": "Advertiser messaging focuses strictly on functional/performance pain points like 'back-pain' and 'sleepers who run hot' rather than aesthetic appeal."
+    },
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only or high price point with high price sensitivity",
+      "evidence": "Mattresses cost $1,000+, which is prohibitive for a value-conscious shopper."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": -1,
+      "why": "Direct competitor in the bedding and home textiles space."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV are a prime demographic for premium back-pain relief products."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher matches the premium $1,000+ price point of the mattresses."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Science-forward wellness audience will appreciate the technical 'patented grid design' and physiological benefits."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, audience pain points, and core categories are clearly defined, enabling immediate matching and planning.",
+  "missing_info": [
+    "Return/trial policy details",
+    "Shipping costs and setup services"
+  ],
+  "clarifying_questions": [
+    "Do you offer a sleep trial period (e.g., 100 nights) and free returns for your mattresses?",
+    "Do you offer white-glove delivery or in-home setup for the mattresses?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

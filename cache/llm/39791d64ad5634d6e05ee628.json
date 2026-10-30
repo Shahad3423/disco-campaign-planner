@@ -1,0 +1,114 @@
+{
+  "business_summary": "Customized shampoo and conditioner subscription built from an onboarding quiz targeting hair type, goals, and scent, with refills delivered every 2 months.",
+  "product": "Customized shampoo and conditioner",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Customized shampoo and conditioner built from a quiz - hair type, goals, scent",
+    "Subscription refills every 2 months"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Subscription refills every 2 months.",
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "Core product category for customized shampoo and conditioner."
+    },
+    {
+      "tag": "personalized",
+      "weight": 1.0,
+      "why": "Formulations are customized based on an onboarding quiz."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business operates on a 2-month refill subscription model."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Broad category encompassing hair and personal care."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Adjacent self-care/routine category with highly overlapping shopper interest."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent category where shampoo and conditioner are physically utilized."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "DTC wellness and self-care shoppers frequently invest in high-end personal care routines."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "subscription_services",
+    "wellness",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Subscription refills every 2 months."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "complicated onboarding",
+      "evidence": "built from a quiz - hair type, goals, scent"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_019",
+      "alignment": -1,
+      "why": "Direct competitor in personalized haircare with quiz-based onboarding; will likely block."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline beauty buyers are Gen Z/millennials highly interested in identity-driven and personalized beauty routines."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell fitness-engaged shoppers have a strong stated crossover with wellness and beauty."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid shoppers are actively spending on self-care, which aligns perfectly with upgrading a hair routine."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offer, customization angle, subscription model, and target audience are clearly defined and actionable for campaign planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_gender",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point for a set of customized shampoo and conditioner?",
+    "Is there a one-time purchase option available, or is it strictly subscription-only?",
+    "Do you target a specific gender or age demographic, or is this intended for anyone looking to fix their hair routine?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

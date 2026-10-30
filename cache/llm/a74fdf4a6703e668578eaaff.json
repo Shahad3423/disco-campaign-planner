@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Give your cats a fresh bed every day, {first_name}",
+      "body": "Show your multi-cat family extra love. This premium self-cleaning litter box keeps their home spotless. Try it risk-free for 90 days.",
+      "cta": "Try the 90-day trial",
+      "headline_no_name": "Give your cats a fresh bed every day",
+      "angle": "Emotional connection and premium care for multi-cat families",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "90-day trial helps conversion",
+        "Prefer multi-cat households"
+      ]
+    }
+  ]
+}

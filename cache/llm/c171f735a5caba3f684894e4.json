@@ -1,0 +1,115 @@
+{
+  "business_summary": "Design-forward dog walking gear brand selling harnesses, leashes, carriers, and poop bag holders, targeted at urban millennials and first-time puppy owners.",
+  "product": "Dog walking gear (harnesses, leashes, carriers, poop bag holders)",
+  "is_consumer_product": true,
+  "price_point_usd": 90.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Design-forward dog walking gear - harnesses, leashes, carriers, poop bag holders",
+    "Orders usually $60-120",
+    "mostly first-time puppy owners and urban millennials"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "design-forward"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category. The brand sells dog walking gear specifically."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Core subcategory. Harnesses, leashes, and carriers are pet supplies."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Strong adjacent category; pet food buyers own dogs and need walking gear."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.5,
+      "why": "Adjacent category. Pet owners buying toys are likely to need dog walking gear."
+    },
+    {
+      "tag": "treats",
+      "weight": 0.5,
+      "why": "Adjacent category. Pet owners buying treats are highly likely to need walking accessories."
+    },
+    {
+      "tag": "home",
+      "weight": 0.25,
+      "why": "Design-conscious buyers in home categories overlap with those seeking design-forward pet products."
+    }
+  ],
+  "competing_tags": [
+    "pet_supplies"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_food",
+    "pet_health",
+    "home_decor"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging or vague premium positioning; prefers discount-forward/clear value props",
+      "evidence": "Brand sells premium 'design-forward' gear with relatively high AOVs of $60-120."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Premium positioning aligns well with health-conscious, premium pet owners."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog, perfect for scaling pet-specific customer acquisition."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Strong millennial audience treating dogs as family; highly aligned with the target persona."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban buyers align well with the 'design-forward' aesthetic and urban millennial target."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Target audience is older women with lower impulse buy rates, conflicting with the young urban millennial focus."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic clash with the modern, design-forward millennial focus."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The advertiser clearly defines their product, price tier, and precise target audience (urban millennial dog owners).",
+  "missing_info": [
+    "Fulfillment times",
+    "Return policy details",
+    "Whether products are eco-friendly or sustainable"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping or bundle discounts to help incentivize the $60-120 AOV?",
+    "Are your products made with any sustainable or eco-friendly materials that we can highlight to the sustainability persona?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

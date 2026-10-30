@@ -1,0 +1,50 @@
+{
+  "business_summary": "A family plumbing and drain company based in Columbus, Ohio, offering water heaters, drain cleaning, and repairs.",
+  "product": "Plumbing and drain services including water heaters, drain cleaning, and repairs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Family plumbing and drain company in Columbus, Ohio",
+    "Water heaters, drain cleaning, repairs"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Home repair and maintenance services relate to household needs."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Home plumbing services apply to homeowners."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "household",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The business, local geographic constraint (Columbus, Ohio), and service offerings are clearly stated.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the average price or typical cost range for your plumbing services?",
+    "What is your primary advertising goal (e.g., booked service calls, quote requests)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -112,7 +112,23 @@ with tab_sim:
 
     st.subheader("Decision")
     plans = st.session_state.get("session_plans", []) + ui.load_all_cached_plans()
-    decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing)
+    holdout = ui.load_holdout_plans()
+    if holdout and st.checkbox(f"Add the {len(holdout)} holdout brands as competing advertisers", value=True):
+        plans = plans + holdout
+    # Per-host budget caps: mark campaigns whose budget on THIS host is used up.
+    here = {}
+    for p in plans:
+        alloc = next((x for x in (p.config.budget.allocations if p.config.budget else []) if x.publisher_id == pub_id), None)
+        if alloc and p.config.status == "draft":
+            here[p.profile.product or p.brief[:40]] = alloc.budget_usd
+    out_of_budget = st.multiselect(
+        f"Campaigns that have used up their budget on {catalog.publisher_by_id()[pub_id].name}", sorted(here),
+        help="A campaign drops out of THIS host's auction when its allocated budget here is spent; it still bids on its other hosts")
+    spent = {(name, pub_id): here[name] for name in out_of_budget}
+    blocks = st.checkbox("This host blocks brands that sell what it sells", value=False,
+                         help="A host setting (D21). Off by default: most hosts allow non-identical brands.")
+    decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing, spent_usd=spent,
+                                  host_blocks_competitors=blocks)
     if decision is not None:
         ui.render_decision(decision, plans)
     else:

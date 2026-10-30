@@ -1,0 +1,89 @@
+{
+  "business_summary": "DTC brand selling sleep devices including sunrise alarm clocks, sound machines, and kids' bedtime routine devices priced between $70 and $170, targeting parents and sleep-optimizers.",
+  "product": "Sleep devices (sunrise alarm clock, sound machine, and Rest for kids)",
+  "is_consumer_product": true,
+  "price_point_usd": 120.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Sleep devices: sunrise alarm clock, sound machine, and the Rest for kids' bedtime routine",
+    "Price range of $70-170",
+    "Targeted at parents and sleep-optimizers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Core category for sleep-optimizers seeking wellness and sleep hygiene tools."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "These are physical devices placed in the bedroom/home."
+    },
+    {
+      "tag": "bedding",
+      "weight": 0.5,
+      "why": "Highly adjacent to bedroom products; shoppers buying bedding are optimizing their sleep environment."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.25,
+      "why": "Weakly adjacent due to the 'Rest for kids' bedtime routine' product targeting parents."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Premium sleep devices in the $70-170 range are popular wellness gifts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "wellness",
+    "kids_products",
+    "family_products",
+    "home_goods",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "High price sensitivity vs. premium pricing",
+      "evidence": "The products are priced at $70-170, which conflicts with a value-conscious shopper's high price sensitivity."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed notes high cross-sell with home and wellness, which perfectly aligns with premium sleep devices."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of family households, aligning well with the 'Rest for kids' bedtime routine' product."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, and target audiences are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "shipping times and costs",
+    "return policy details",
+    "whether there is a companion app subscription model",
+    "scientific backing or certifications for sleep claims"
+  ],
+  "clarifying_questions": [
+    "Do any of your sleep devices require or offer an ongoing software subscription?",
+    "What is your standard shipping window and return policy?",
+    "Are there any clinically-backed claims or certifications we can leverage in the ad creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

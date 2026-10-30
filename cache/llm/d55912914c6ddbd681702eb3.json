@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Spoil your furry family member, {first_name}",
+      "body": "Get a monthly themed box of toys and treats for dogs. Plans start at about $23/mo with a 6 or 12 month commitment.",
+      "cta": "Get your dog's box",
+      "headline_no_name": "Spoil your furry family member",
+      "angle": "emotional connection",
+      "claims_used": [
+        "Monthly themed box of toys and treats for dogs",
+        "starts at about $23/mo with a 6 or 12 month plan"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, put dog joy on autopilot",
+      "body": "A monthly themed box of toys and treats for dogs delivered to your door. Starts at about $23/mo with a 6 or 12 month commitment.",
+      "cta": "Start a subscription",
+      "headline_no_name": "Put dog joy on autopilot",
+      "angle": "subscription perks and speed",
+      "claims_used": [
+        "Monthly themed box of toys and treats for dogs",
+        "starts at about $23/mo with a 6 or 12 month plan"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, ready for Halloween dog fun?",
+      "body": "Keep the whole family happy with a monthly themed box of toys and treats for dogs. Starts at about $23/mo with a 6 or 12 month plan.",
+      "cta": "Start a subscription",
+      "headline_no_name": "Ready for Halloween dog fun?",
+      "angle": "family-friendly and seasonal moment",
+      "claims_used": [
+        "Monthly themed box of toys and treats for dogs",
+        "starts at about $23/mo with a 6 or 12 month plan"
+      ]
+    }
+  ]
+}

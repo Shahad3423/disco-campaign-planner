@@ -330,6 +330,28 @@ def render_creatives(plan: CampaignPlan) -> None:
 # ------------------------------------------------------------------ campaign config
 
 
+def render_auction_insights(plan: CampaignPlan) -> None:
+    """Aggregate feedback an advertiser can act on without ever seeing a rival's bid."""
+    from disco_planner.serving.insights import auction_insights
+
+    st.markdown("**Auction insights** <span class='muted'>(sealed bids: you see win rate, price paid and what it would take, never a rival's bid)</span>",
+                unsafe_allow_html=True)
+    key = f"insights_{plan.brief[:60]}"
+    rivals = [p for p in load_all_cached_plans() + load_holdout_plans() if (p.profile.product or p.brief[:40]) != (plan.profile.product or plan.brief[:40])]
+    if st.button(f"Simulate against {len(rivals)} competing campaigns", key=f"btn_{key}"):
+        st.session_state[key] = [i.model_dump() for i in auction_insights(plan, rivals)]
+    rows = st.session_state.get(key)
+    if rows:
+        df = pd.DataFrame([{
+            "host": r["publisher_name"], "win_rate": r["win_rate"], "avg_price_paid": r["avg_price_paid"], "your_bid": r["avg_bid"],
+            "break_even_max": r["max_bid"], "rivals_here": r["competitors_on_host"],
+            "top_rival": ", ".join(f"{n} ({s:.0%})" for n, s in r["top_rivals"][:2]),
+            "bid_for_50%_wins": r["bid_for_win_rate"].get("50%"), "verdict": r["verdict"], "what to do": r["suggestion"],
+        } for r in rows])
+        st.dataframe(df, hide_index=True, width="stretch", column_config={
+            "win_rate": st.column_config.ProgressColumn("win rate", min_value=0, max_value=1, format="%.2f")})
+
+
 def render_config(plan: CampaignPlan) -> None:
     cfg = plan.config
     st.subheader("Campaign config")
@@ -371,6 +393,8 @@ def render_config(plan: CampaignPlan) -> None:
         st.dataframe(pd.DataFrame(bs.phases), hide_index=True, width="stretch")
         if bs.adjustments:
             st.dataframe(pd.DataFrame([a.model_dump() for a in bs.adjustments]), hide_index=True, width="stretch")
+    if cfg.budget and cfg.budget.allocations:
+        render_auction_insights(plan)
     for q in cfg.open_questions:
         st.markdown(f"- Open question: {q}")
     with st.expander("Full CampaignConfig JSON"):
@@ -443,6 +467,18 @@ def render_features(features) -> None:
             "confidence": st.column_config.ProgressColumn("confidence", min_value=0, max_value=1, format="%.2f")})
 
 
+def load_holdout_plans() -> list[CampaignPlan]:
+    """The 100 holdout brands' plans, used as competing advertisers in the simulator's auction."""
+    folder = ROOT / "reports" / "holdout_plans"
+    plans = []
+    for path in sorted(folder.glob("*.json")) if folder.exists() else []:
+        try:
+            plans.append(CampaignPlan.model_validate_json(path.read_text()))
+        except Exception:  # an older plan shape shouldn't break the page
+            continue
+    return plans
+
+
 def try_serve(signals, now_utc: datetime, plans: list[CampaignPlan], **kwargs):
     """Call the serving decision engine if it exists yet. Returns (decision, None) or (None, reason)."""
     try:
@@ -472,8 +508,9 @@ def render_decision(decision, plans: list[CampaignPlan]) -> None:
             st.markdown(f"- {r}")
     offers = data.get("offers") or []
     if offers:
-        st.markdown("**Offers ranked by eCPM (final bid x expected CTR x 1000)**")
-        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("campaign", "pricing_model", "bid", "expected_ctr", "ecpm", "bid_breakdown")}
+        st.markdown("**Page auction: ranked by eCPM (final bid x expected CTR x 1000); each slot pays the second price**")
+        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("slot", "campaign", "pricing_model", "bid", "price_paid", "expected_ctr", "ecpm",
+                                                          "host_budget_left_usd", "host_revenue_per_1000", "bid_breakdown")}
                                    for o in offers]), hide_index=True, width="stretch")
     headline, body, cta = (data.get(k) for k in ("headline", "body", "cta"))
     if headline and body and cta:

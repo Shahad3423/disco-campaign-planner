@@ -1,0 +1,48 @@
+{
+  "business_summary": "Family dental office located in SE Portland seeking local patients for cleanings and exams within a 10-mile radius.",
+  "product": "Dental cleanings and exams",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Family dental office in SE Portland",
+    "accepting new patients",
+    "Only people within about 10 miles are any use to us"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "In-person local services in SE Portland, Oregon. Customers must visit the physical office.",
+  "relevant_tags": [
+    {
+      "tag": "wellness_services",
+      "weight": 0.5,
+      "why": "Dental cleanings and exams represent a core medical wellness service, though highly localized."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "family_products",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The advertiser is a local, brick-and-mortar medical service requiring physical presence in SE Portland. This is not a DTC consumer product or scalable national service suitable for a post-purchase checkout network.",
+  "missing_info": [
+    "Pricing for cleanings and exams",
+    "Insurance acceptance status",
+    "Target age groups (e.g., pediatric, geriatric, or general family)"
+  ],
+  "clarifying_questions": [
+    "Do you accept dental insurance, or do you offer self-pay packages?",
+    "Are you looking to promote to families with children, or primarily adults?",
+    "What is the average cost of an initial exam and cleaning for new patients?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

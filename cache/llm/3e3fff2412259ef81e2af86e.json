@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Upgrade your shelfie, {first_name}.",
+      "body": "Upgrade your daily routine. Get natural toothpaste and deodorant that look cute on your shelf, all for around $5.",
+      "cta": "Shop $5 essentials",
+      "headline_no_name": "Upgrade your shelfie.",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    }
+  ]
+}

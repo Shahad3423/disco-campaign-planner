@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, serve looks in sizes 00-40.",
+      "body": "Get stylish clothing and quality in extended sizes. Keep what you love, with free exchanges within a year.",
+      "cta": "Shop sizes 00-40",
+      "headline_no_name": "Serve looks in sizes 00-40.",
+      "angle": "aesthetic-forward and playful tone focusing on self-expression and easy exchanges",
+      "claims_used": [
+        "Stylish clothing for women in sizes 00-40",
+        "Quality in extended sizes",
+        "Free exchanges within a year"
+      ]
+    }
+  ]
+}

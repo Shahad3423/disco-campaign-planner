@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "A lifetime of elegant travel, {first_name}",
+      "body": "Discover understated suitcases crafted for enduring quality and peace of mind, complete with a lifetime warranty.",
+      "cta": "Shop the collection",
+      "headline_no_name": "A lifetime of elegant travel",
+      "angle": "Focus on understated craftsmanship and enduring quality with a lifetime warranty.",
+      "claims_used": [
+        "lifetime warranty"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your travel experience, {first_name}",
+      "body": "Streamline your journey with high-performance suitcases designed to reduce travel friction. Backed by a lifetime warranty.",
+      "cta": "Shop suitcases",
+      "headline_no_name": "Optimize your travel experience",
+      "angle": "Focus on travel optimization, streamlined systems, and lifetime warranty assurance.",
+      "claims_used": [
+        "lifetime warranty"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "One less thing to worry about, {first_name}",
+      "body": "Make family travel simpler with durable carry-ons and checked bags built to last, backed by a lifetime warranty.",
+      "cta": "Shop luggage",
+      "headline_no_name": "One less thing to worry about on trips",
+      "angle": "Focus on practical durability and hassle-free travel with a lifetime warranty.",
+      "claims_used": [
+        "lifetime warranty"
+      ]
+    }
+  ]
+}

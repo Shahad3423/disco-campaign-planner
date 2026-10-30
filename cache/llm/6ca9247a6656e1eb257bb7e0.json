@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your activewear.",
+      "body": "Engineered for your system. Our sustainable activewear brand for women uses materials made from recycled ocean plastic.",
+      "cta": "Shop activewear",
+      "headline_no_name": "Optimize your activewear.",
+      "angle": "Focuses on material utility and system-oriented optimization with transparent ocean plastic claims.",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Activewear built to perform, {first_name}.",
+      "body": "Gear up for your next workout. Discover a sustainable activewear brand for women, crafted from recycled ocean plastic.",
+      "cta": "Shop premium gear",
+      "headline_no_name": "Activewear built to perform.",
+      "angle": "Leans into performance-focused language for active training, avoiding fashion-only positioning.",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, wear the change.",
+      "body": "No vague eco-claims. Our sustainable activewear brand for women is made from recycled ocean plastic to reduce waste.",
+      "cta": "Shop sustainable",
+      "headline_no_name": "Wear the change.",
+      "angle": "Directly addresses sustainability and material sourcing to appeal to eco-conscious, greenwash-skeptical buyers.",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    }
+  ]
+}

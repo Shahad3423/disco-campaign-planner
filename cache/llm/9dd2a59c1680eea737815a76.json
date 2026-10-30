@@ -1,0 +1,102 @@
+{
+  "business_summary": "The world's strongest coffee DTC brand offering beans, grounds, and cold brew cans targeting heavy coffee drinkers who appreciate humor.",
+  "product": "Coffee (beans, grounds, cold brew cans)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "The world's strongest coffee"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Core product category for coffee beans, grounds, and cold brew cans."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Coffee beans and grounds are standard pantry essentials."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Coffee is a high-frequency grocery purchase."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 0.5,
+      "why": "High-caffeine ('world's strongest') coffee acts as a functional energy beverage."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Appears to be a digitally native direct-to-consumer brand."
+    }
+  ],
+  "competing_tags": [
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "groceries",
+    "premium_grocery",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy language, loud aesthetics; prefers quality-focused/understated",
+      "evidence": "Brand sells 'world's strongest coffee' and targets buyers who 'like a bit of humor', which conflicts with conservative, understated heritage preferences."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in novelty; prefers science-backed, outcome-focused claims",
+      "evidence": "The claim 'world's strongest coffee' framed with humor may come across as novelty/gimmicky rather than science-backed wellness."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's health-curious but indulgence-seeking beverage audience overlaps well with premium coffee and functional drink buyers."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate's notes mention a 'fun, playful brand voice converts best', which aligns perfectly with the advertiser's humor-loving audience."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features a 'conservative brand sensibility' and high AOV apparel, which clashes with a humorous, loud, high-caffeine coffee brand."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's convenience/grocery focus and 'impulse-friendly' late-night traffic spike are highly compatible with ready-to-drink cold brew cans."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, formats (beans, grounds, cans), and core audience are clearly defined and ready to map to host publishers.",
+  "missing_info": [
+    "Price point/AOV",
+    "Subscription availability vs one-time purchase",
+    "Specific certifications (e.g., organic, fair trade)"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price point or AOV for your coffee products?",
+    "Do you offer a subscription option for your beans and grounds?",
+    "Are your coffee products organic, fair-trade, or single-origin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

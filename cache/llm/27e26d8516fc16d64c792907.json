@@ -1,0 +1,114 @@
+{
+  "business_summary": "Prestige Japanese-inspired skincare brand featuring a $72 hero Dewy Skin Cream and targeting affluent women aged 30-55 with a typical order value of $110+.",
+  "product": "Skincare (Dewy Skin Cream)",
+  "is_consumer_product": true,
+  "price_point_usd": 72.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "30-55",
+  "stated_claims": [
+    "Prestige Japanese-inspired skincare",
+    "The Dewy Skin Cream is $72 and our hero",
+    "Typical order $110+",
+    "Target is affluent women 30-55 who already buy premium beauty"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "This is the advertiser's core product category."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "This is the parent category for skincare and matches their target audience's interest."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The target demographic is explicitly stated as women."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "The target age range is 30-55, which aligns with mid-life demographics."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "An adjacent wellness category highly relevant to premium skincare shoppers."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The advertiser operates as a DTC e-commerce brand."
+    }
+  ],
+  "competing_tags": [
+    "skincare",
+    "beauty"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in: luxury-only messaging, vague premium positioning",
+      "evidence": "Advertiser positions itself as 'Prestige' skincare with a '$72' hero product and '$110+' typical order targeting 'affluent' buyers."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in: luxury positioning",
+      "evidence": "Advertiser positions as 'Prestige' skincare targeting 'affluent' buyers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell notes strong crossover with wellness and beauty, aligning well with high-end skincare."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users actively spend on self-care, a prime mindstate for purchasing prestige skincare."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. audience consists of older affluent women, matching the advertiser's exact target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park features the highest-AOV apparel buyers and conservative brand sensibility, aligning with prestige pricing."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Velvetline is a competitor and focuses on Gen Z / young millennials, which conflicts with the advertiser's 30-55 target."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The brand has a clearly defined product, price point, target demographic, and positioning, making it ready for post-purchase ad placement strategy.",
+  "missing_info": [
+    "Whether subscription/auto-replenish is offered",
+    "Fulfillment timeline and shipping costs",
+    "Specific clean beauty, organic, or cruelty-free certifications"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription or auto-replenish option for your skincare products?",
+    "Are there any specific clean, non-toxic, or organic claims we can use in the ad creatives?",
+    "What are your typical shipping costs and fulfillment times?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

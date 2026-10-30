@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, fund clean water projects monthly.",
+      "body": "We fund clean water projects in developing countries. Our typical gift is $20 a month to systematically support clean water outcomes.",
+      "cta": "Donate $20 monthly",
+      "headline_no_name": "Fund clean water projects monthly.",
+      "angle": "An outcome-focused and transparent approach to funding clean water, the ultimate foundation of global health and sustainability.",
+      "claims_used": [
+        "We fund clean water projects in developing countries.",
+        "$20 a month is our typical gift."
+      ]
+    }
+  ]
+}
