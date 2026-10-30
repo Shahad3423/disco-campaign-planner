@@ -1,0 +1,1505 @@
+{
+ "brief": "We sell protein bars that don't taste like cardboard. That's basically the whole pitch.",
+ "profile": {
+  "business_summary": "Sells protein bars formulated to taste good rather than like cardboard.",
+  "product": "Protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+   "Protein bars that don't taste like cardboard"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+   {
+    "tag": "supplements",
+    "weight": 1.0,
+    "why": "Protein bars are a core supplement product."
+   },
+   {
+    "tag": "fitness_classes",
+    "weight": 0.5,
+    "why": "Fitness class attendees frequently consume protein bars for recovery and energy."
+   },
+   {
+    "tag": "groceries",
+    "weight": 0.5,
+    "why": "Protein bars are a common grocery and pantry snack item."
+   },
+   {
+    "tag": "pantry",
+    "weight": 0.5,
+    "why": "Snacks and bars are typically stored in the pantry."
+   }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+   "fitness",
+   "supplements",
+   "recovery",
+   "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+   {
+    "publisher_id": "pub_002",
+    "alignment": 1,
+    "why": "Movewell's fitness-engaged shoppers are a natural fit for protein bars."
+   },
+   {
+    "publisher_id": "pub_003",
+    "alignment": 1,
+    "why": "Studiogrid users are actively spending on fitness and self-care."
+   },
+   {
+    "publisher_id": "pub_012",
+    "alignment": 1,
+    "why": "Daily Form's health-focused wellness audience aligns well with nutritional products."
+   }
+  ],
+  "confidence": 0.85,
+  "gate": "clarify",
+  "gate_reason": "We understand the product clearly (protein bars), but we lack essential details on pricing, margin, and specific purchase models.",
+  "missing_info": [
+   "price_point_usd",
+   "price_tier",
+   "margin",
+   "ingredients or flavor variety"
+  ],
+  "clarifying_questions": [
+   "What is the retail price of your protein bars?",
+   "Are these sold as one-time purchase boxes, subscriptions, or both?",
+   "What is your target gross margin or offer discount for the thank-you page?"
+  ]
+ },
+ "publishers": [
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.626,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches supplements (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Daily Form's health-focused wellness audience aligns well with nutritional products."
+    },
+    {
+     "name": "scale",
+     "value": 0.11921246038064834,
+     "weight": 0.05,
+     "detail": "4.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": true,
+   "reason": "Recommended: matches supplements (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+  },
+  {
+   "publisher_id": "pub_008",
+   "publisher_name": "Pantrygood",
+   "score": 0.3245,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.575,
+     "weight": 1.0,
+     "detail": "matches pantry, groceries (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.3858013051641558,
+     "weight": 0.05,
+     "detail": "10.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": true,
+   "reason": "Recommended: matches pantry, groceries (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+  },
+  {
+   "publisher_id": "pub_003",
+   "publisher_name": "Studiogrid",
+   "score": 0.3216,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches fitness_classes (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Studiogrid users are actively spending on fitness and self-care."
+    },
+    {
+     "name": "scale",
+     "value": 0.4646747007633196,
+     "weight": 0.05,
+     "detail": "13.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": true,
+   "reason": "Recommended: matches fitness_classes (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+  },
+  {
+   "publisher_id": "pub_001",
+   "publisher_name": "Swiftcart",
+   "score": 0.2975,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches groceries (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 1.0,
+     "weight": 0.05,
+     "detail": "84.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: score 0.30 below cutoff 0.31; weakest signal category_fit (matches groceries (multiplier))."
+  },
+  {
+   "publisher_id": "pub_015",
+   "publisher_name": "Kitchenly",
+   "score": 0.2913,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches groceries (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.7508824789306602,
+     "weight": 0.05,
+     "detail": "36.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: score 0.29 below cutoff 0.31; weakest signal category_fit (matches groceries (multiplier))."
+  },
+  {
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Movewell's fitness-engaged shoppers are a natural fit for protein bars."
+    },
+    {
+     "name": "scale",
+     "value": 0.6060874465244197,
+     "weight": 0.05,
+     "detail": "22.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_004",
+   "publisher_name": "Marlowe & Co.",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.32300750747115453,
+     "weight": 0.05,
+     "detail": "8.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_005",
+   "publisher_name": "Linden Park",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.23372059473990484,
+     "weight": 0.05,
+     "detail": "6.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_006",
+   "publisher_name": "Everbody",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.29358155909879846,
+     "weight": 0.05,
+     "detail": "7.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_007",
+   "publisher_name": "Pawline",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.1584725731116732,
+     "weight": 0.05,
+     "detail": "4.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_009",
+   "publisher_name": "Ruffco",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.9107130872687503,
+     "weight": 0.05,
+     "detail": "62.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_010",
+   "publisher_name": "Heartfoot",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2141123900358073,
+     "weight": 0.05,
+     "detail": "5.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_011",
+   "publisher_name": "Northbed",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.07388998640181474,
+     "weight": 0.05,
+     "detail": "3.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_013",
+   "publisher_name": "Velvetline",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2608796536728134,
+     "weight": 0.05,
+     "detail": "6.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_014",
+   "publisher_name": "Hearthstone Goods",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.0,
+     "weight": 0.05,
+     "detail": "2.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_016",
+   "publisher_name": "Stride & Stem",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.03926011273102486,
+     "weight": 0.05,
+     "detail": "3.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_017",
+   "publisher_name": "Cloudfoot",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2141123900358073,
+     "weight": 0.05,
+     "detail": "5.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_018",
+   "publisher_name": "Tailcrate",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.32300750747115453,
+     "weight": 0.05,
+     "detail": "8.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_019",
+   "publisher_name": "Strandlab",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.08978651200829224,
+     "weight": 0.05,
+     "detail": "3.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_020",
+   "publisher_name": "Pop & Sip",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.1820062580736496,
+     "weight": 0.05,
+     "detail": "5.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  }
+ ],
+ "personas": [
+  {
+   "persona_id": "persona_001",
+   "persona_name": "The Wellness Optimizer",
+   "score": 0.448,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.80 (fitness, supplements)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_012",
+    "pub_003",
+    "pub_008"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "persona_name": "The Fitness Enthusiast",
+   "score": 0.448,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.80 (recovery, supplements)",
+    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_012",
+    "pub_008",
+    "pub_003"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "persona_name": "The Busy Parent",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (convenience)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_008",
+    "pub_003",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_003",
+   "persona_name": "The Gen Z Aesthete",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium-high price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_012",
+    "pub_003",
+    "pub_008"
+   ]
+  },
+  {
+   "persona_id": "persona_004",
+   "persona_name": "The Pet Parent",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_003",
+    "pub_008",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "persona_name": "The Affluent Classic",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_012",
+    "pub_003",
+    "pub_008"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "persona_name": "The Sustainability Buyer",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_008",
+    "pub_003",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_007",
+   "persona_name": "The Convenience-First Millennial",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_008",
+    "pub_003",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "persona_name": "The Value-Conscious Shopper",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs high price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_008",
+    "pub_003",
+    "pub_012"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "persona_name": "The Gifter",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_003",
+    "pub_008",
+    "pub_012"
+   ]
+  }
+ ],
+ "creatives": [
+  {
+   "persona_id": "persona_001",
+   "headline": "{first_name}, upgrade your nutrition",
+   "body": "Fuel your system with protein bars engineered to actually taste good instead of like cardboard.",
+   "cta": "Shop Now",
+   "headline_no_name": "Upgrade your daily nutrition",
+   "angle": "ingredient transparency",
+   "claims_used": [
+    "Protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "headline": "Power through your next workout",
+   "body": "Fuel your training sessions with high-protein bars designed specifically to not taste like cardboard.",
+   "cta": "Get Fuel",
+   "headline_no_name": "Power through your next workout",
+   "angle": "performance claims",
+   "claims_used": [
+    "Protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "headline": "Quick snacks for busy days",
+   "body": "Grab protein bars that save you time and actually taste good, unlike the ones that taste like cardboard.",
+   "cta": "Try Them",
+   "headline_no_name": "Quick snacks for busy days",
+   "angle": "time-saving",
+   "claims_used": [
+    "Protein bars that don't taste like cardboard"
+   ]
+  }
+ ],
+ "reviews": [
+  {
+   "persona_id": "persona_001",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  }
+ ],
+ "config": {
+  "schema_version": "1.0",
+  "status": "needs_clarification",
+  "planning_date": "2026-10-30",
+  "advertiser_summary": "Sells protein bars formulated to taste good rather than like cardboard.",
+  "confidence": 0.85,
+  "objective": "acquisition",
+  "economics": {
+   "price_usd": 60.0,
+   "price_source": "tier_default",
+   "gross_margin": 0.4,
+   "margin_source": "category_default",
+   "expected_orders": 2.5,
+   "max_affordable_cac": 60.0,
+   "target_cpa": 42.0,
+   "assumptions": [
+    "Price not given; assumed $60 for a 'unknown' product.",
+    "Gross margin not given; assumed 40% (typical for groceries).",
+    "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
+    "Target CPA = 70% of max affordable CAC ($60 x 40% margin x 2.5 orders = $60.00)."
+   ]
+  },
+  "pricing": {
+   "model": "CPC",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $42.00 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "cpc_bid": {
+    "low": 0.63,
+    "mid": 1.26,
+    "high": 2.1
+   },
+   "cpm_bid": null,
+   "target_cpa": 42.0,
+   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
+  },
+  "budget": {
+   "monthly_budget_usd": 1520.0,
+   "budget_source": "recommended_learning_budget",
+   "daily_cap_usd": 50.67,
+   "flight_start": "2026-10-30",
+   "flight_end": "2026-11-29",
+   "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
+   "learning_budget_needed_usd": 1521.18,
+   "exploration_reserve_usd": 0.0,
+   "exploration_candidates": [],
+   "allocations": [
+    {
+     "publisher_id": "pub_012",
+     "publisher_name": "Daily Form",
+     "share": 0.492,
+     "budget_usd": 747.99,
+     "cpc_bid_usd": 1.76,
+     "expected_clicks": {
+      "low": 340.0,
+      "mid": 425.0,
+      "high": 510.0
+     },
+     "expected_conversions": {
+      "low": 8.9,
+      "mid": 17.8,
+      "high": 29.7
+     },
+     "capacity_usd": 6209.28,
+     "requires_host_approval": false,
+     "rationale": "score 0.63 -> fit x1.40 on CTR/CVR; bid $1.76"
+    },
+    {
+     "publisher_id": "pub_008",
+     "publisher_name": "Pantrygood",
+     "share": 0.255,
+     "budget_usd": 387.74,
+     "cpc_bid_usd": 1.28,
+     "expected_clicks": {
+      "low": 242.0,
+      "mid": 303.0,
+      "high": 364.0
+     },
+     "expected_conversions": {
+      "low": 4.6,
+      "mid": 9.2,
+      "high": 15.4
+     },
+     "capacity_usd": 8104.58,
+     "requires_host_approval": false,
+     "rationale": "score 0.32 -> fit x1.01 on CTR/CVR; bid $1.28"
+    },
+    {
+     "publisher_id": "pub_003",
+     "publisher_name": "Studiogrid",
+     "share": 0.253,
+     "budget_usd": 384.27,
+     "cpc_bid_usd": 1.27,
+     "expected_clicks": {
+      "low": 242.0,
+      "mid": 303.0,
+      "high": 363.0
+     },
+     "expected_conversions": {
+      "low": 4.6,
+      "mid": 9.2,
+      "high": 15.3
+     },
+     "capacity_usd": 10477.1,
+     "requires_host_approval": false,
+     "rationale": "score 0.32 -> fit x1.01 on CTR/CVR; bid $1.27"
+    }
+   ],
+   "warnings": [
+    "No budget given: recommending $1,520, the smallest budget that buys 300 clicks per host."
+   ]
+  },
+  "targeting": {
+   "publishers_include": [
+    "pub_003",
+    "pub_008",
+    "pub_012"
+   ],
+   "publishers_exclude": [
+    {
+     "id": "pub_001",
+     "reason": "Excluded: score 0.30 below cutoff 0.31; weakest signal category_fit (matches groceries (multiplier))."
+    },
+    {
+     "id": "pub_015",
+     "reason": "Excluded: score 0.29 below cutoff 0.31; weakest signal category_fit (matches groceries (multiplier))."
+    },
+    {
+     "id": "pub_002",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_004",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_005",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_006",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_007",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_009",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_010",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_011",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_013",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_014",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_016",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_017",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_018",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_019",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_020",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    }
+   ],
+   "personas": [
+    "persona_001",
+    "persona_009",
+    "persona_002"
+   ],
+   "geo": "US (no advertiser geo restriction stated)",
+   "serve_time_signals": {
+    "platform": "publisher_id -> cart prior (category, AOV)",
+    "zip": "billing zip preferred; geo features down-weighted if shipping/unknown",
+    "first_name": "personalisation only + weak cohort prior; never in hard targeting"
+   },
+   "seasonal_moments": [
+    "Halloween"
+   ]
+  },
+  "creatives": [
+   {
+    "variant_id": "v1",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_003",
+     "pub_008"
+    ],
+    "headline_template": "{first_name}, upgrade your nutrition",
+    "headline_no_name": "Upgrade your daily nutrition",
+    "body": "Fuel your system with protein bars engineered to actually taste good instead of like cardboard.",
+    "cta": "Shop Now"
+   },
+   {
+    "variant_id": "v2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_012",
+     "pub_008",
+     "pub_003"
+    ],
+    "headline_template": "Power through your next workout",
+    "headline_no_name": "Power through your next workout",
+    "body": "Fuel your training sessions with high-protein bars designed specifically to not taste like cardboard.",
+    "cta": "Get Fuel"
+   },
+   {
+    "variant_id": "v3",
+    "persona_id": "persona_002",
+    "publisher_ids": [
+     "pub_008",
+     "pub_003",
+     "pub_012"
+    ],
+    "headline_template": "Quick snacks for busy days",
+    "headline_no_name": "Quick snacks for busy days",
+    "body": "Grab protein bars that save you time and actually taste good, unlike the ones that taste like cardboard.",
+    "cta": "Try Them"
+   }
+  ],
+  "frequency_cap": {
+   "per_shopper_per_day": 1,
+   "per_shopper_per_week": 3
+  },
+  "guardrails": {
+   "claims_allowed": [
+    "Protein bars that don't taste like cardboard"
+   ],
+   "competitor_hosts_need_approval": [],
+   "stop_loss": {
+    "cpa_multiple": 2.0,
+    "min_clicks": 150
+   },
+   "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
+  },
+  "measurement": {
+   "primary_kpi": "CPA vs target",
+   "attribution": "7-day click-through billed; view-through reported, never billed",
+   "holdout": "10% of eligible impressions withheld to measure incremental lift",
+   "review_after_days": 14
+  },
+  "open_questions": [
+   "What is the retail price of your protein bars?",
+   "Are these sold as one-time purchase boxes, subscriptions, or both?",
+   "What is your target gross margin or offer discount for the thank-you page?"
+  ]
+ },
+ "timings_s": {
+  "intake": 0.0,
+  "matching": 0.0,
+  "creative": 9.24
+ },
+ "creative_log": {
+  "rounds": 1,
+  "rewritten": []
+ }
+}

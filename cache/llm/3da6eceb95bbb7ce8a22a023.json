@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Level up your room aesthetic",
+      "body": "Ditch the basic bedroom. Discover the breathable bedding made in Portugal that feels way more grown-up.",
+      "cta": "Upgrade your room",
+      "headline_no_name": "Level up your room aesthetic",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Actually-breathable stuff",
+        "Made in Portugal",
+        "More grown-up than Brooklinen/Parachute aesthetic"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Timeless comfort, crafted in Portugal",
+      "body": "Experience actually-breathable bedding with a more refined, understated aesthetic designed for lasting quality.",
+      "cta": "Explore linens",
+      "headline_no_name": "Timeless comfort, crafted in Portugal",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Actually-breathable stuff",
+        "Made in Portugal",
+        "More grown-up than Brooklinen/Parachute aesthetic"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Thoughtfully crafted in Portugal",
+      "body": "Upgrade to actually-breathable bedding made in Portugal, offering a more mature alternative to mainstream linens.",
+      "cta": "Shop linens",
+      "headline_no_name": "Thoughtfully crafted in Portugal",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Actually-breathable stuff",
+        "Made in Portugal",
+        "More grown-up than Brooklinen/Parachute aesthetic"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, gift a more grown-up bedroom",
+      "body": "Give the luxury of actually-breathable bedding expertly made in Portugal. A truly impressive upgrade.",
+      "cta": "Shop gifts",
+      "headline_no_name": "Gift a more grown-up bedroom",
+      "angle": "giftable",
+      "claims_used": [
+        "Actually-breathable stuff",
+        "Made in Portugal",
+        "More grown-up than Brooklinen/Parachute aesthetic"
+      ]
+    }
+  ]
+}

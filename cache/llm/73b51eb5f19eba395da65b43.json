@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, upgrade your nutrition",
+      "body": "Fuel your system with protein bars engineered to actually taste good instead of like cardboard.",
+      "cta": "Shop Now",
+      "headline_no_name": "Upgrade your daily nutrition",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Power through your next workout",
+      "body": "Fuel your training sessions with high-protein bars designed specifically to not taste like cardboard.",
+      "cta": "Get Fuel",
+      "headline_no_name": "Power through your next workout",
+      "angle": "performance claims",
+      "claims_used": [
+        "Protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Quick snacks for busy days",
+      "body": "Grab protein bars that save you time and actually taste good, unlike the ones that taste like cardboard.",
+      "cta": "Try Them",
+      "headline_no_name": "Quick snacks for busy days",
+      "angle": "time-saving",
+      "claims_used": [
+        "Protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}
