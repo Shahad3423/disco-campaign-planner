@@ -1,0 +1,97 @@
+{
+  "business_summary": "DTC brand selling low-priced gummy vitamins targeting sleep, immunity, and hair health with playful flavors, aimed at a broad female audience aged 20-45.",
+  "product": "Gummy vitamins",
+  "is_consumer_product": true,
+  "price_point_usd": 17.5,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "20-45",
+  "stated_claims": [
+    "Gummy vitamins for sleep, immunity, and hair",
+    "Low price ($15-20)",
+    "Playful flavors"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent category for health and wellness products."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Primary target demographic."
+    },
+    {
+      "tag": "haircare",
+      "weight": 0.5,
+      "why": "Offers specific vitamins targeting hair health."
+    }
+  ],
+  "competing_tags": [
+    "vitamins",
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in: novelty, ultra-processed food; prefers: science-backed claims",
+      "evidence": "Brand sells on 'playful flavors' and gummy format, which may be perceived as novelty/processed rather than science-backed."
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: trendy language, loud aesthetics; prefers: understated, quality-focused",
+      "evidence": "Brand focuses on 'playful flavors' and a 'low price ($15-20)' budget positioning."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Low-price, impulse-friendly gummy vitamins align well with Swiftcart's high-frequency, convenience-oriented shoppers."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's audience is science-forward and skeptical of unsubstantiated claims, which clashes with a brand selling primarily on 'playful flavors'."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip's health-curious but indulgence-seeking audience is a strong match for playful-flavored wellness gummies."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Whether a subscription model is offered",
+    "Specific dietary certifications (e.g., vegan, gluten-free, organic)"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for your gummy vitamins?",
+    "Are your gummies vegan, organic, or free from artificial sweeteners?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

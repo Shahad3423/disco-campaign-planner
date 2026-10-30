@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Treat them to a wellness gift, {first_name}",
+      "body": "Build the perfect care package with delicious gummy vitamins for sleep, immunity, and hair. Playful flavors they will love for $15-$20.",
+      "cta": "Shop gummy vitamins",
+      "headline_no_name": "Treat them to a thoughtful wellness gift",
+      "angle": "giftable",
+      "claims_used": [
+        "Gummy vitamins for sleep, immunity, and hair",
+        "Low price ($15-20)",
+        "Playful flavors"
+      ]
+    }
+  ]
+}

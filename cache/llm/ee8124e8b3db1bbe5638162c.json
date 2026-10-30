@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, treat your hair to a vibe check",
+      "body": "Level up your vanity with fun, scent-forward hair care. Grab our dry shampoo, texture spray, and body care for instant main character energy.",
+      "cta": "Shop dry shampoo",
+      "headline_no_name": "Treat your hair to a vibe check",
+      "angle": "playful",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Gift the ultimate scent-forward hair care set, {first_name}",
+      "body": "Delight them with premium dry shampoo, texture spray, and body care sets. Beautifully packaged and ready to make their day.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Gift the ultimate scent-forward hair care set",
+      "angle": "giftable",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Streamline your routine, {first_name}",
+      "body": "A straightforward routine for your hair and skin. Get targeted results with our fun, scent-forward hair care, dry shampoo, and body care.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Streamline your routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    }
+  ]
+}

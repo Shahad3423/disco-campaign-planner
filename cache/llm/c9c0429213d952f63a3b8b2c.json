@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "The choice of pros and athletes, {first_name}.",
+      "body": "Get the high-quality supplements used by pros and athletes. Every product is NSF Certified for Sport.",
+      "cta": "Shop supplements",
+      "headline_no_name": "The choice of pros and athletes.",
+      "angle": "Focuses on the preference for elite athletic association and high quality standards by highlighting products used by pros and certified by the NSF.",
+      "claims_used": [
+        "High-quality supplements used by pros and athletes",
+        "NSF Certified for Sport"
+      ]
+    }
+  ]
+}

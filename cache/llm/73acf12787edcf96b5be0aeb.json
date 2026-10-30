@@ -1,0 +1,97 @@
+{
+  "business_summary": "Prestige Japanese-inspired skincare brand targeting affluent women aged 30-55 who buy premium beauty, with a hero product priced at $72 and average order value of $110+.",
+  "product": "Dewy Skin Cream and Japanese-inspired skincare",
+  "is_consumer_product": true,
+  "price_point_usd": 72.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "30-55",
+  "stated_claims": [
+    "Prestige Japanese-inspired skincare",
+    "Dewy Skin Cream is $72 and our hero",
+    "Typical order $110+"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Core industry category."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Target audience is explicitly women."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "Target age group is 30-55."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.25,
+      "why": "Adjacent self-care and pampering category."
+    }
+  ],
+  "competing_tags": [
+    "skincare"
+  ],
+  "persona_affinity_tags": [
+    "beauty",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in: luxury-only messaging, vague premium positioning",
+      "evidence": "Prestige Japanese-inspired skincare with a $72 hero product and $110+ typical order."
+    },
+    {
+      "persona_id": "persona_002",
+      "conflict": "disinterested_in: luxury positioning",
+      "evidence": "Prestige Japanese-inspired skincare with a $72 hero product."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience consists of older affluent women who respond to quality messaging, matching the advertiser's target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher in the catalog, aligning well with the $110+ AOV of this prestige brand."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Target audience is Gen Z and younger millennials, whereas the advertiser targets women aged 30-55."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target demographic are clearly defined, making it highly actionable for campaign planning.",
+  "missing_info": [
+    "purchase_model_details (whether subscription/replenishment is offered)",
+    "ingredient_standards (e.g., clean, vegan, organic)",
+    "fulfillment_details"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription or auto-replenishment options for your skincare products?",
+    "Are there specific product claims we can highlight, such as clean, cruelty-free, or dermatologist-tested?",
+    "What is your standard shipping cost and delivery window?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

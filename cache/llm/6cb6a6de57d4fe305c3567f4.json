@@ -1,0 +1,121 @@
+{
+  "business_summary": "DTC brand offering skin, gut, and energy supplements (such as 'Daily Cleanse' and 'Red Carpet') sold as one-time purchases and subscriptions priced between $25 and $40.",
+  "product": "Supplements for skin, gut, and energy",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Supplements for skin, gut and energy",
+    "Think 'Daily Cleanse' and 'Red Carpet'",
+    "Bought as one-offs and subscriptions at $25-40"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "The advertiser explicitly sells supplements."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Supplements for daily health closely align with the vitamins category."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "This is a direct-to-consumer health and wellness supplement brand."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 0.5,
+      "why": "The brand explicitly offers supplements targeting gut health."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "The brand offers skin-focused supplements like 'Red Carpet'."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Ingestible beauty/skin supplements are highly adjacent to cosmetic beauty shoppers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The products are offered as recurring subscriptions."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "supplements",
+    "wellness",
+    "clean_beauty",
+    "beauty",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in self-care-only framing",
+      "evidence": "The products (skin, gut, energy supplements like 'Daily Cleanse') are highly focused on personal daily self-care routines, which does not appeal to gift-first purchasers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's audience has a strong crossover with wellness and beauty, which perfectly matches skin and energy supplements."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care, aligning well with premium ingestible wellness products."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven shoppers are responsive to wellness claims."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form is a direct competitor selling vitamins and subscriptions in the wellness space."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Velvetline's skincare and beauty audience is highly compatible with skin-improving supplements like 'Red Carpet'."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip shares a strong overlap with wellness and gut health interest."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, price points, and purchase models are clearly defined, allowing for immediate onboarding and placement setup.",
+  "missing_info": [
+    "Target gender demographics (implied female-leaning by 'Red Carpet', but unstated)",
+    "Specific ingredient standards (e.g., organic, vegan, non-GMO)",
+    "Shipping costs and average delivery times"
+  ],
+  "clarifying_questions": [
+    "Are your supplements targeted primarily at women, or is the audience gender-neutral?",
+    "Do your products carry any clean-label certifications (like vegan, gluten-free, or organic) that we should highlight?",
+    "What is your average shipping cost and delivery timeframe for one-off orders?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

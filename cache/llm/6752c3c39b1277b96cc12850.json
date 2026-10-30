@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily system, {first_name}.",
+      "body": "Build your routine on high-quality supplements used by pros. Transparent, NSF Certified for Sport formulas for optimal outcomes.",
+      "cta": "Shop NSF Certified",
+      "headline_no_name": "Optimize your daily system with certified quality.",
+      "angle": "science-backed claims and ingredient transparency",
+      "claims_used": [
+        "High-quality supplements used by pros and athletes",
+        "NSF Certified for Sport"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Train like the pros, {first_name}.",
+      "body": "Boost athletic performance with high-quality supplements used by pros and athletes. NSF Certified for Sport to support your goals.",
+      "cta": "Shop Pro Nutrition",
+      "headline_no_name": "Train like the pros with certified nutrition.",
+      "angle": "performance claims and athletic identity",
+      "claims_used": [
+        "High-quality supplements used by pros and athletes",
+        "NSF Certified for Sport"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Your pro-level routine on autopilot, {first_name}.",
+      "body": "Never run out. Get high-quality supplements used by pros delivered easily. NSF Certified for Sport formulas, ready to ship.",
+      "cta": "Start Subscription",
+      "headline_no_name": "Your pro-level routine on autopilot.",
+      "angle": "one-click convenience and subscription perks",
+      "claims_used": [
+        "High-quality supplements used by pros and athletes",
+        "NSF Certified for Sport"
+      ]
+    }
+  ]
+}

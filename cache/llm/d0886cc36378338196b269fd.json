@@ -1,0 +1,107 @@
+{
+  "business_summary": "DTC subscription brand offering traceable, minimalist multivitamins at approximately $33/month, primarily targeting women aged 25-45 with a heavy emphasis on ingredient transparency.",
+  "product": "multivitamins",
+  "is_consumer_product": true,
+  "price_point_usd": 33.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Traceable multivitamins",
+    "Minimalist multivitamins",
+    "Transparency in ingredients"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "transparency",
+    "traceability",
+    "minimalism"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Core product offering"
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category"
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold exclusively via a monthly subscription model"
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "DTC health and wellness product"
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Explicitly targeting women aged 25-45"
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Traceability and transparency claims strongly appeal to natural-focused consumers"
+    }
+  ],
+  "competing_tags": [
+    "vitamins",
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "supplements",
+    "wellness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "Disinterested in subscription-only and self-care-only framing",
+      "evidence": "Advertiser offers multivitamins by subscription only ($33-ish a month) targeted at self-care wellness."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged female demographic with a strong crossover into wellness and beauty aligns perfectly."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims match the transparency messaging."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Direct competitor selling vitamins and supplements; checkout thank-you page will block this advertiser."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Minimalist aesthetic and identity-driven purchasing among young millennial women aligns with minimalist branding."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and subscription model are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "shipping costs and transit times",
+    "exact ingredient list/source of traceability",
+    "return or cancellation policy for the subscription"
+  ],
+  "clarifying_questions": [
+    "Are there shipping fees on top of the $33/month subscription?",
+    "Can customers easily pause or cancel their subscription online at any time?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

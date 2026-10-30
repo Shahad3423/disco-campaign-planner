@@ -510,7 +510,7 @@ def render_decision(decision, plans: list[CampaignPlan]) -> None:
     if offers:
         st.markdown("**Page auction: ranked by eCPM (final bid x expected CTR x 1000); each slot pays the second price**")
         st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("slot", "campaign", "pricing_model", "bid", "price_paid", "expected_ctr", "ecpm",
-                                                          "host_revenue_per_1000", "bid_breakdown")}
+                                                          "host_budget_left_usd", "host_revenue_per_1000", "bid_breakdown")}
                                    for o in offers]), hide_index=True, width="stretch")
     headline, body, cta = (data.get(k) for k in ("headline", "body", "cta"))
     if headline and body and cta:

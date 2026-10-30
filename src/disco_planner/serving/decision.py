@@ -36,6 +36,7 @@ class Offer(BaseModel):
     expected_ctr: float            # at slot 1; slot effects applied in the auction
     ecpm: float                    # ranking score = final bid x expected CTR x 1000
     slot: int | None = None
+    host_budget_left_usd: float | None = None  # this campaign's remaining budget on THIS host
     price_paid: float | None = None  # second price, per click (CPC) or per 1,000 (CPM)
     host_revenue_per_1000: float | None = None
     reasons: list[str]
@@ -216,7 +217,10 @@ def serve(
     signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
     use_name: bool = True, use_household: bool = True,
     phase: str = "learning", pacing_ratio: float = 1.0,
+    spent_usd: dict[tuple[str, str], float] | None = None,
 ) -> ServeDecision:
+    """spent_usd: {(campaign name, publisher_id): dollars already spent}. A campaign whose budget on
+    THIS host is used up drops out of this host's auction only; it still bids on its other hosts."""
     cfg = _cfg()
     features = build_features(signals, now_utc)
     posterior, reasons = persona_posterior(features, signals.publisher_id, use_name, use_household)
@@ -227,7 +231,7 @@ def serve(
 
     priors = catalog.config("pricing")["priors"]
     prior = host_prior(signals.publisher_id)
-    offers = []
+    offers, capped = [], []
     for plan in plans:
         cfg_ = plan.config
         if cfg_.status != "draft" or not cfg_.budget:
@@ -235,6 +239,11 @@ def serve(
         alloc = next((a for a in cfg_.budget.allocations if a.publisher_id == signals.publisher_id), None)
         if not alloc or not cfg_.creatives:
             continue  # this campaign doesn't run on this host
+        campaign = plan.profile.product or plan.brief[:40]
+        budget_left = alloc.budget_usd - (spent_usd or {}).get((campaign, signals.publisher_id), 0.0)
+        if budget_left <= 0:
+            capped.append(campaign)  # per-host budget cap reached: out of this auction
+            continue
         score = next(s for s in plan.publishers if s.publisher_id == signals.publisher_id)
         top = max(s.score for s in plan.publishers)
         fit = relative_fit(score.score, top)
@@ -261,7 +270,7 @@ def serve(
         ecpm = bid if pricing.model == "CPM" else bid * ctr * 1000
         headline, used = _render(creative.headline_template, creative.headline_no_name, features)
         offers.append(Offer(
-            campaign=plan.profile.product or plan.brief[:40], publisher_id=signals.publisher_id,
+            campaign=campaign, publisher_id=signals.publisher_id, host_budget_left_usd=round(budget_left, 2),
             persona_id=creative.persona_id, headline=headline, body=creative.body, cta=creative.cta,
             pricing_model=pricing.model, bid=bid, bid_breakdown=breakdown, expected_ctr=round(ctr, 4), ecpm=round(ecpm, 2),
             reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
@@ -273,6 +282,8 @@ def serve(
     ]
     offers, auction_notes = run_auction(offers, cfg["auction"])
     reasons += auction_notes
+    if capped:
+        reasons.append(f"out of budget on this host (cap reached), not bidding: {', '.join(capped)}")
     if not offers:
         reasons.append("no approved campaign runs on this host (or none clears the reserve)")
     top_offer = offers[0] if offers else None

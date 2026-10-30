@@ -80,3 +80,27 @@ def test_second_price_never_exceeds_bid_and_is_ordered():
 def test_live_setting_is_one_offer_per_page(plans):
     d = serve(ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Jordan"), NOW, plans)
     assert len(d.offers) <= 1
+
+
+def test_host_budget_cap_removes_campaign_from_that_host_only(plans):
+    # pick a campaign allocated on 2+ hosts
+    plan = next(p for p in plans if p.config.budget and len(p.config.budget.allocations) >= 2)
+    name = plan.profile.product or plan.brief[:40]
+    capped_host, other_host = (a.publisher_id for a in plan.config.budget.allocations[:2])
+    cap_alloc = next(a for a in plan.config.budget.allocations if a.publisher_id == capped_host)
+    spent = {(name, capped_host): cap_alloc.budget_usd}                # exactly used up
+    for host, expect_present in ((capped_host, False), (other_host, True)):
+        sig = ShopperSignals(publisher_id=host, zip="10001", first_name="Sam")
+        d = serve(sig, NOW, plans, spent_usd=spent)
+        assert (name in [x["campaign"] for x in d.bid_landscape]) == expect_present
+    d = serve(ShopperSignals(publisher_id=capped_host, zip="10001", first_name="Sam"), NOW, plans, spent_usd=spent)
+    assert any("out of budget" in r and name in r for r in d.reasons)
+
+
+def test_partial_spend_leaves_campaign_in_with_budget_left(plans):
+    plan = next(p for p in plans if p.config.budget and p.config.budget.allocations)
+    name = plan.profile.product or plan.brief[:40]
+    alloc = plan.config.budget.allocations[0]
+    d = serve(ShopperSignals(publisher_id=alloc.publisher_id, zip="10001", first_name="Sam"), NOW, [plan],
+              spent_usd={(name, alloc.publisher_id): alloc.budget_usd / 2})
+    assert d.offers and abs(d.offers[0].host_budget_left_usd - alloc.budget_usd / 2) < 0.01

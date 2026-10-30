@@ -1,0 +1,99 @@
+{
+  "business_summary": "Sells low-priced, playful-flavored gummy vitamins targeting sleep, immunity, and hair health for women aged 20-45.",
+  "product": "Gummy vitamins",
+  "is_consumer_product": true,
+  "price_point_usd": 17.5,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "female",
+  "target_age_range": "20-45",
+  "stated_claims": [
+    "Gummy vitamins for sleep, immunity, and hair health",
+    "Low price ($15-20)",
+    "Playful flavors"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Core product category"
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category"
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent category representing the DTC wellness ecosystem"
+    },
+    {
+      "tag": "haircare",
+      "weight": 0.5,
+      "why": "Adjacent category because the product explicitly targets hair health"
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Target demographic is specifically females aged 20-45"
+    }
+  ],
+  "competing_tags": [
+    "vitamins",
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "supplements",
+    "wellness",
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "Disinterested in novelty/ultra-processed food; prefers science-backed claims and ingredient transparency over playful branding.",
+      "evidence": "Gummy vitamins... we sell on playful flavors."
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in trendy language, loud aesthetics, and budget-focused messaging; prefers premium craftsmanship.",
+      "evidence": "Low price ($15-20) and we sell on playful flavors."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Their audience is science-forward and highly skeptical of unsubstantiated health claims, which conflicts with a playful, low-price gummy brand."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Their audience is health-curious but indulgence-seeking, aligning perfectly with playful-flavored wellness gummies."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged female demographic with strong crossover in wellness and beauty fits the target profile."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, target demographic, and pricing structure are clearly defined and ready for mapping.",
+  "missing_info": [
+    "Subscription model availability (one-time vs. recurring auto-ship option)",
+    "Fulfillment details (shipping times, free shipping thresholds)",
+    "Specific ingredient callouts (e.g. vegan, organic, gluten-free)"
+  ],
+  "clarifying_questions": [
+    "Do you offer subscription options, or is your purchase model strictly one-time purchase?",
+    "Are your gummy vitamins vegan, gluten-free, or organic?",
+    "Do you offer free shipping, or is there a standard shipping fee for orders under a certain threshold?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

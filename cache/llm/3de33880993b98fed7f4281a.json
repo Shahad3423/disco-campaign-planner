@@ -1,0 +1,90 @@
+{
+  "business_summary": "Fun, scent-forward hair care and body care brand offering products like dry shampoo and texture spray, targeting young, social-media-native shoppers with an average order value of $45-70.",
+  "product": "Hair care and body care",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": "Young",
+  "stated_claims": [
+    "Fun",
+    "Scent-forward"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "The brand's primary products are dry shampoo and texture spray."
+    },
+    {
+      "tag": "beauty",
+      "weight": 1.0,
+      "why": "Hair care and body care are core beauty categories."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Body care products are adjacent to bath products."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Online-native brand targeting social-media shoppers with typical DTC order values."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Highly adjacent beauty category with strong shopper overlap."
+    }
+  ],
+  "competing_tags": [
+    "haircare"
+  ],
+  "persona_affinity_tags": [
+    "beauty"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Disinterested in trendy language, loud aesthetics, and influencer positioning; prefers understatement.",
+      "evidence": "Advertiser is a 'fun, scent-forward' brand targeting 'young, social-media-native shoppers'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience consists of Gen Z and younger millennials with identity-driven purchasing habits, perfectly aligning with young, social-media-native shoppers."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience is older affluent women, which directly conflicts with the advertiser's target of young, social-media-native shoppers."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic clash with the fun, trendy, scent-forward positioning."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, target demographic, and purchase tier are clearly defined, making it ready for partner mapping.",
+  "missing_info": [
+    "Individual product price point",
+    "Availability of subscription model",
+    "Specific ingredient standards (e.g., organic, non-toxic, vegan)"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of a single item (like your dry shampoo)?",
+    "Do you offer a subscription option for your hair or body care products?",
+    "Are there any specific ingredient callouts we should highlight (e.g., sulfate-free, vegan, non-toxic)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

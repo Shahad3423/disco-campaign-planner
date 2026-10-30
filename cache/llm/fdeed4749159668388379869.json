@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your health with traceable vitamins.",
+      "body": "Treat your body like the system it is. Fuel it with a minimalist, traceable multivitamin built on complete transparency.",
+      "cta": "Start subscription",
+      "headline_no_name": "Optimize your health with traceable vitamins.",
+      "angle": "Focus on ingredient traceability and a minimalist formula to optimize daily wellness without unnecessary additives.",
+      "claims_used": [
+        "Traceable",
+        "Minimalist",
+        "Transparency"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Clean, traceable daily vitamins for {first_name}.",
+      "body": "Keep your active body performing at its best. Get minimalist multivitamins made with pure, traceable ingredients.",
+      "cta": "Start subscription",
+      "headline_no_name": "Clean, traceable daily vitamins for your body.",
+      "angle": "Emphasizing clean, minimalist ingredients and traceability for active individuals who care about what goes into their bodies.",
+      "claims_used": [
+        "Traceable",
+        "Minimalist"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "No tricks, {first_name}, just simple monthly vitamins.",
+      "body": "This Halloween, skip the hassle. Get a minimalist, traceable multivitamin delivered directly to your door every month.",
+      "cta": "Start subscription",
+      "headline_no_name": "No tricks, just simple monthly vitamins.",
+      "angle": "Leverages the convenience of a recurring monthly subscription combined with a playful Halloween seasonal moment.",
+      "claims_used": [
+        "Minimalist",
+        "Traceable"
+      ]
+    }
+  ]
+}

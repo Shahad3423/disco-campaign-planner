@@ -1,0 +1,103 @@
+{
+  "business_summary": "Science-led daily probiotic subscription targeting evidence-focused wellness consumers.",
+  "product": "daily probiotic subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 50.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Science-led daily probiotic subscription",
+    "about $50 a month",
+    "evidence-focused wellness crowd",
+    "not impulse shoppers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "science-led",
+    "evidence-focused"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Core category for probiotics."
+    },
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core category for daily probiotics."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Core category for DTC wellness products."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold as a monthly subscription."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 0.5,
+      "why": "Adjacent category that wellness/supplement buyers frequently purchase."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins",
+    "gut_health"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "supplements",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in: performance claims without vibe",
+      "evidence": "Advertiser is 'science-led' and wants 'evidence-focused wellness crowd'."
+    },
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "Advertiser is a 'daily probiotic subscription'."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart is 'impulse-friendly' with 'late-night traffic spikes', which directly conflicts with the advertiser's desire to avoid impulse shoppers."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form features a 'science-forward wellness' audience that is 'skeptical of unsubstantiated health claims', aligning perfectly with 'science-led' and 'evidence-focused'."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is responsive to clean-ingredient and wellness claims, matching the evidence-focused wellness profile."
+    }
+  ],
+  "confidence": 1.0,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, subscription model, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "target gender",
+    "target age range",
+    "shipping and fulfillment details"
+  ],
+  "clarifying_questions": [
+    "Do you target a specific gender or age range, or is this product for all adults?",
+    "Do you offer a trial period or one-time purchase option, or is it strictly subscription-only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

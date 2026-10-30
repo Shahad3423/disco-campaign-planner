@@ -1,0 +1,116 @@
+{
+  "business_summary": "High-quality supplements brand targeting athletes and professional sportspeople, featuring NSF Certified for Sport products with an average order value of $80. The brand prioritizes informed buyers over bargain hunters.",
+  "product": "supplements",
+  "is_consumer_product": true,
+  "price_point_usd": 80.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "High-quality supplements used by pros and athletes",
+    "NSF Certified for Sport"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "athletic performance",
+    "quality",
+    "transparency"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core product category of the advertiser."
+    },
+    {
+      "tag": "vitamins",
+      "weight": 1.0,
+      "why": "Directly adjacent and overlapping category with supplements."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.75,
+      "why": "The brand operates as a direct-to-consumer wellness and health product."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Shoppers engaging with personal trainers are highly likely to be interested in professional-grade athletic supplements."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Active fitness class participants align well with the athletic target audience."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Athletes and fitness enthusiasts who buy activewear are a key demographic for performance supplements."
+    }
+  ],
+  "competing_tags": [
+    "supplements",
+    "vitamins"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "recovery",
+    "supplements",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in: luxury-only messaging, vague premium positioning; prefers: discount-forward, clear value props",
+      "evidence": "Advertiser states they 'prefer informed buyers over bargain hunters' and have an $80 average order value."
+    },
+    {
+      "persona_id": "persona_003",
+      "conflict": "disinterested_in: performance claims without vibe",
+      "evidence": "Advertiser focuses heavily on professional athletic performance and NSF certifications rather than aesthetic-first branding."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart focuses on impulse-friendly, late-night convenience purchases, which conflicts with the advertiser's preference for high-AOV, informed buyers."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers with strong wellness crossovers, matching the athletic target audience perfectly."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care and fitness, making them prime candidates for premium athletic supplements."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form is a direct competitor selling vitamins and supplements."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers respond well to clean-ingredient and wellness claims, aligning with NSF Certified for Sport standards."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, target audience, certification, and price point are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Whether they offer a subscription model or only one-time purchases.",
+    "Specific types of supplements offered (e.g., protein, hydration, daily vitamins)."
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for your supplements, or are purchases primarily one-time?",
+    "What are your top-selling supplement categories or specific product lines (e.g., protein, recovery, daily health)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

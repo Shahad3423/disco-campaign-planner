@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily habit, {first_name}.",
+      "body": "Upgrade your system with our daily greens and nutrient powder subscription. The perfect addition to your habit tracker.",
+      "cta": "Start subscription",
+      "headline_no_name": "Optimize your daily supplement routine.",
+      "angle": "outcome-focused habit tracking and system optimization",
+      "claims_used": [
+        "Daily greens and nutrient powder",
+        "Target is health-conscious people who track habits and already buy supplements or work out regularly"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your active routine, {first_name}.",
+      "body": "Support your active lifestyle. Get daily greens and nutrient powder delivered monthly to fuel your regular workout routine.",
+      "cta": "Get daily greens",
+      "headline_no_name": "Fuel your daily workout routine.",
+      "angle": "performance routine and workout integration",
+      "claims_used": [
+        "Daily greens and nutrient powder",
+        "Target is health-conscious people who track habits and already buy supplements or work out regularly"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Your daily greens on autopilot, {first_name}.",
+      "body": "Simplify your supplement routine. Get your daily greens and nutrient powder delivered monthly for about $79 a month.",
+      "cta": "Subscribe for $79",
+      "headline_no_name": "Your daily greens on autopilot.",
+      "angle": "convenient subscription perks and speed",
+      "claims_used": [
+        "Daily greens and nutrient powder",
+        "Subscription at about $79 a month"
+      ]
+    }
+  ]
+}

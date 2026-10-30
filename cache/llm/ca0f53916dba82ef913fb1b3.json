@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose transparent wellness.",
+      "body": "Honest supplements for skin, gut and energy. Think 'Daily Cleanse' and 'Red Carpet'—simple essentials for a mindful routine.",
+      "cta": "Shop supplements",
+      "headline_no_name": "Choose transparent wellness.",
+      "angle": "Leaning on ingredient transparency and mindful, straightforward daily essentials to appeal to the sustainability buyer's preference for transparency.",
+      "claims_used": [
+        "Supplements for skin, gut and energy",
+        "Think 'Daily Cleanse' and 'Red Carpet'"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, upgrade your daily routine",
+      "body": "Playful flavors and cute gummy vitamins for sleep, immunity, and hair. Get yours for just $15-$20.",
+      "cta": "Shop sweet vitamins",
+      "headline_no_name": "Upgrade your daily routine",
+      "angle": "aesthetic-forward and playful brand voice highlighting affordable self-care",
+      "claims_used": [
+        "Gummy vitamins for sleep, immunity, and hair",
+        "Low price ($15-20)",
+        "Playful flavors"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, support your active recovery",
+      "body": "Keep your body performing with gummy vitamins for sleep and immunity. Fun, playful flavors starting at only $15-$20.",
+      "cta": "Shop active vitamins",
+      "headline_no_name": "Support your active recovery",
+      "angle": "focus on physical recovery benefits like sleep and immunity for active lifestyles",
+      "claims_used": [
+        "Gummy vitamins for sleep, immunity, and hair",
+        "Low price ($15-20)",
+        "Playful flavors"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, a sweet Halloween gift",
+      "body": "Treat someone to gummy vitamins for sleep, immunity, and hair. Fun, playful flavors make the perfect gift for just $15-$20.",
+      "cta": "Gift gummy vitamins",
+      "headline_no_name": "A sweet Halloween gift",
+      "angle": "seasonal gifting angle focused on premium-looking, low-cost treats",
+      "claims_used": [
+        "Gummy vitamins for sleep, immunity, and hair",
+        "Low price ($15-20)",
+        "Playful flavors"
+      ]
+    }
+  ]
+}
