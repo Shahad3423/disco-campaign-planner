@@ -21,6 +21,7 @@ from zoneinfo import ZoneInfo
 from pydantic import BaseModel, Field
 
 from disco_planner.serving import calendar, geo
+from disco_planner.serving.household import household_features
 
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 AGE_BUCKETS = ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
@@ -114,6 +115,15 @@ class ShopperFeatures(BaseModel):
     is_weekend: Feature
     daypart: Feature
     active_moments: Feature        # distribution {moment name: intensity}
+    # Settlement + household / life stage (serving/household.py, config/household.yaml)
+    settlement_type: Feature       # urban_core / suburban / small_city / small_town / rural (USDA RUCA)
+    p_has_kids: Feature
+    p_homeowner: Feature
+    life_stage: Feature            # distribution over life stages
+    car_dependent: Feature
+    outdoor_lifestyle: Feature
+    cold_season_now: Feature
+    hot_season_now: Feature
 
 
 # ---- Reference data (loaded lazily, once) -----------------------------------
@@ -341,7 +351,21 @@ def build_features(signals: ShopperSignals, now_utc: datetime) -> ShopperFeature
         return Feature(value=value, confidence=time_conf, source=time_source)
 
     moments = calendar.active_moments(local_dt)
+
+    zip5 = _clean_zip(signals.zip)
+    zip_row = _zips().get(zip5 or "")
+    household = household_features(
+        zip5=zip5 if zip_row else None,
+        land_area_class=zip_row["urbanicity"] if zip_row else None,
+        metro_km=geo_features["metro_distance_km"].value if zip_row else None,
+        zip_factor=ZIP_SOURCE_FACTOR[signals.zip_source] if zip_row else 0.0,
+        age_dist=age_bucket.distribution, age_conf=age_bucket.confidence,
+        publisher_id=signals.publisher_id,
+        climate_band=geo_features["climate_band"].value, mountain=geo_features["mountain"].value,
+        near_ski=geo_features["near_ski_area"].value, local_dt=local_dt,
+    )
     return ShopperFeatures(
+        **{name: Feature(**values) for name, values in household.items()},
         name_valid=name_valid,
         display_name=display_name,
         p_female=p_female,

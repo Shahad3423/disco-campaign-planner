@@ -133,11 +133,15 @@ def parse_brief(brief: str, provider: Provider, today: date, n_samples: int | No
         samples.append(_enforce_vocabulary(generate(provider, system, user + suffix, AdvertiserProfile, temperature=temp)))
     profile = merge_samples(samples)
 
-    # Regulated claims leave the allowed list, and we ask for substantiation instead.
-    regulated = [c for c in profile.stated_claims if claims.violations(c)]
+    # Regulated claims leave the allowed list, and we ask for substantiation instead. This field is
+    # owned by CODE: the model sometimes fills it on its own and over-blocks ordinary claims
+    # ("self-cleaning", "fair trade"), so whatever it put there goes back into the pool and only the
+    # policy patterns decide (found on the 100-brand holdout).
+    pool = list(dict.fromkeys(profile.stated_claims + profile.claims_needing_substantiation))
+    regulated = [c for c in pool if claims.violations(c)]
+    profile.stated_claims = [c for c in pool if c not in regulated]
+    profile.claims_needing_substantiation = regulated
     if regulated:
-        profile.stated_claims = [c for c in profile.stated_claims if c not in regulated]
-        profile.claims_needing_substantiation = regulated
         profile.clarifying_questions.append(
             "We can't use these claims without substantiation (study, certification, or approval document): "
             + "; ".join(regulated) + ". Can you share it?"

@@ -1,59 +1,44 @@
 # Disco Campaign Planner
 
-An advertiser types a sentence; the system returns ranked publishers (with exclusions and reasons),
-3–5 persona-tuned creatives, and a launchable campaign config. A second tab simulates Disco's
-serving step: one shopper, only **platform + zip + first name**, picks and personalises the offer.
+One sentence from an advertiser → ranked publishers (with exclusions and reasons), 3–5 persona-tuned creatives,
+and a launchable campaign config. A second tab simulates serving: one shopper, only **platform + zip + first name**.
 
-**Live demo:** _LINK_ · **Run locally:** `python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt && echo GEMINI_API_KEY=… > .env && .venv/bin/streamlit run app/streamlit_app.py` (no key? the 15 examples run from a committed cache). Tests: `pytest`. Evals: `python -m disco_planner.eval.run [--creatives --robustness]`.
+**Demo:** https://discocampaignplanner.streamlit.app · **Local:** `pip install -r requirements.txt`, put `GEMINI_API_KEY=…` in `.env`,
+`streamlit run app/streamlit_app.py` (no key: the 15 examples run from a committed cache) · `pytest` · `python -m disco_planner.eval.run --creatives --robustness`
 
-## How it works
-`brief → intake (LLM ×3, self-consistency) → gate → publisher scoring (code) → personas (code) → creatives (LLM write → LLM review + rule checks → 1 rewrite) → economics, bids, budget (code) → CampaignConfig`.
-The LLM maps language onto the catalog's **closed vocabularies**; deterministic code does every number and rank,
-so each score has a visible breakdown and nothing is invented. Publisher score = **relevance × affordability^0.5 ×
-quality** (audience, persona two-hop, notes, scale, seasonality) × competitor penalty — multiplicative like pCTR×pCVR,
-because a perfect audience can't rescue an irrelevant or unaffordable host. All prompts are in `prompts/`; all
-weights and priors in `config/`. Every decision and its alternatives: `docs/DECISIONS.md`.
+## What I built
+`brief → intake (LLM ×3, self-consistency) → gate → publisher scoring → personas → creatives (write → review + rule checks → rewrite) → budget → config`.
+The LLM handles language on **closed catalog vocabularies**; code does every number and rank, so each score has a visible breakdown.
+**score = relevance × affordability^0.5 × quality × P(host accepts)**: multiplicative like pCTR×pCVR, so a perfect audience can't
+rescue an irrelevant host; competitors (hosts selling the same thing, which can block us on their thank-you page) are flagged and
+discounted. Vague briefs get questions, B2B gets zero publishers, regulated claims ("FDA approved") are blocked in code.
+Prompts: `prompts/`. Weights and priors: `config/`. Every decision and rejected alternative: `docs/DECISIONS.md`.
 
-## Why the campaign config looks like this
-Disco is a post-purchase network: hosts are other brands' thank-you pages, advertisers pay per click.
-So the config carries what billing, serving and a human approver each need: **pricing** (CPC default; CPM for
-awareness; tCPA only after verified conversions, because Disco would carry the prediction risk), **economics**
-(max CAC → target CPA → max CPC, with every assumption labelled), **allocations** (score-weighted, capped by
-host inventory, minimum learnable spend per host, 15% exploration, start bid at 70% of break-even),
-**targeting** incl. which serve-time signals are allowed and how, **creatives** mapped to persona and hosts,
-**guardrails** (allowed claims, competitor hosts needing approval, stop-loss), **measurement** (click-through
-billed, view-through reported never billed, 10% holdout), and **open questions** when confidence is low.
+**Config shape:** what billing, serving and an approver each need: pricing (CPC default; CPM for awareness; tCPA only after verified
+conversions, since Disco then carries prediction risk), economics (margin → max CAC → target CPA → max/start CPC, assumptions labelled),
+allocations (capped by host inventory, minimum learnable spend, 15% exploration), allowed serve-time signals, creatives ↔ personas ↔
+hosts, guardrails (claims, stop-loss), measurement (click-through billed, view-through never billed, 10% holdout), open questions.
 
-## Results (blind golden labels for the 15 examples; `docs/EXPERIMENTS.md`)
-| | baseline | final | | | final |
-|---|---|---|---|---|---|
-| precision of recommended hosts | 0.85 | **0.94** | | creative rule-check pass | **100%** |
-| must-exclude violations | 2 | **1** | | creative LLM-review pass | **95%** |
-| paraphrase stability (top-5 Jaccard) | 0.71 | **0.84** | | unsupported claims in copy | **0** |
-| gate accuracy (proceed/clarify/reject/off-network) | 0.87 | 0.87 | | prompt-injection cases | **4/4** |
-| must-include recall@5 | 0.80 | 0.70 | | mean persona fit (1–5) | 4.1 |
+## Results (blind labels on the 15 examples; 100-brand holdout; `docs/EXPERIMENTS.md`)
+| | baseline | now | | now |
+|---|---|---|---|---|
+| precision of recommended hosts | 0.85 | **0.92** | creative rule / review pass | **100% / 95%** |
+| paraphrase stability (top-5 Jaccard) | 0.71 | **0.84** | unsupported claims in copy | **0** |
+| must-exclude violations | 2 | **1** | prompt-injection cases | **4/4** |
 
-Recall fell by 1–2 cases out of 15, within LLM run-to-run noise; the misses are debatable labels we chose not to
-tune to. The claims-injection eval caught a real hole (an advertiser could launder "FDA approved" by stating it);
-regulated claims are now blocked in code, not just in prompts.
+_HOLDOUT_
 
 ## Hard vs easy
-**Easy:** calling an LLM, JSON schemas, a UI. **Hard, and where the work lives:** (1) *matching without
-feedback*: no clicks exist, so ranking is a cold-start prior; the real job is making it honest (weak-fit
-detection, competitor conflicts, saying "no publishers" to B2B) and measurable. (2) *LLM variance*: rewording a
-brief swapped a third of the top-5 until self-consistency; evals had to separate prompt effects from sampling
-effects. (3) *Weak serve-time signals that compound*: names and zips are noisy (billing vs shipping zip changes
-who you're targeting); every inferred feature carries confidence, is tempered into a Bayesian update of the
-host prior, and never triggers a hard rule. The ablation shows the name changes *which variant*, never *which
-campaign*. (4) *Copy that's persona-specific without inventing claims*: a separate reviewer plus code checks.
+**Easy:** LLM calls, schemas, UI. **Hard:** (1) *matching with no feedback*: ranking is a cold-start prior, so the work is making it
+honest (weak-fit detection, competitors, "no publishers") and measurable; (2) *LLM variance*: rewording a brief swapped a third of
+the top-5 until self-consistency, and ablations were needed to separate prompt from sampling effects; (3) *weak serve-time signals that
+compound*: billing vs shipping zip changes who you target; features carry confidence, are tempered into a Bayesian update of the host
+prior, and never trigger hard rules. The ablation shows the first name changes *which variant*, never *which campaign*.
 
 ## Next week
-Learned pCTR/pCVR from logs replacing hand weights (this scorer becomes the cold-start prior) · Thompson-sampling
-bandit over variants with this posterior as prior · embedding similarity as a second relevance signal ·
-human-labelled set larger than 15 with inter-rater agreement · Census income per zip (key pending) · pacing
-service + real budget counters · prompt versioning in CI with eval gates.
+Learned pCTR/pCVR from logs (this scorer becomes the prior) · Thompson-sampling bandit over variants · retrieval (embeddings) before
+ranking for 1,000+ hosts · human-labelled eval set with agreement · Census income per zip · pacing service · prompt evals as CI gates.
 
 ## Cut, on purpose
-Real auction/pacing simulation (no data to make it honest) · image creative · auth/multi-tenant · LLM
-re-ranking of publishers (adds cost and variance; the eval didn't show a need) · inferring ethnicity from
-names (sensitive under CPRA, and not needed for the decision).
+Auction/pacing simulation (no data to make it honest) · image creative · auth · LLM re-ranking of hosts (variance and cost; evals
+didn't show a need) · ethnicity inference from names (sensitive, unnecessary).

@@ -175,3 +175,33 @@ def test_gift_signal_is_calendar_driven():
     quiet = features(pub="pub_001", now=datetime(2026, 9, 15, tzinfo=timezone.utc))
     xmas = features(pub="pub_001", now=datetime(2026, 12, 20, tzinfo=timezone.utc))
     assert xmas.gift_signal.value > quiet.gift_signal.value
+
+
+def test_settlement_types_from_ruca():
+    from datetime import datetime, timezone
+    from disco_planner.serving.features import ShopperSignals, build_features
+    now = datetime(2026, 11, 20, 18, tzinfo=timezone.utc)
+    kind = lambda z: build_features(ShopperSignals(publisher_id="pub_015", zip=z, first_name="Sam", zip_source="billing"), now).settlement_type.value
+    assert kind("10001") == "urban_core"
+    assert kind("60540") == "suburban"      # Naperville, IL
+    assert kind("59001") == "rural"         # Absarokee, MT
+
+
+def test_suburbs_raise_p_kids_and_shipping_zip_lowers_confidence():
+    from datetime import datetime, timezone
+    from disco_planner.serving.features import ShopperSignals, build_features
+    now = datetime(2026, 11, 20, 18, tzinfo=timezone.utc)
+    f = lambda z, src="billing": build_features(ShopperSignals(publisher_id="pub_015", zip=z, first_name="Jennifer", zip_source=src), now)
+    assert f("60540").p_has_kids.value > f("10001").p_has_kids.value
+    assert f("60540").p_homeowner.value > f("10001").p_homeowner.value
+    assert f("60540", "shipping").p_has_kids.confidence < f("60540").p_has_kids.confidence
+
+
+def test_weak_age_cannot_fake_a_life_stage():
+    # Name-based age is capped at 0.15 confidence, so two very different names give nearly
+    # the same P(kids) in the same zip: settlement does the work, not the name.
+    from datetime import datetime, timezone
+    from disco_planner.serving.features import ShopperSignals, build_features
+    now = datetime(2026, 11, 20, 18, tzinfo=timezone.utc)
+    kids = lambda n: build_features(ShopperSignals(publisher_id="pub_015", zip="60540", first_name=n, zip_source="billing"), now).p_has_kids.value
+    assert abs(kids("Ava") - kids("Dorothy")) < 0.08

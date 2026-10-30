@@ -88,7 +88,7 @@ class AdvertiserProfile(BaseModel):
     target_age_range: str | None = None
     stated_claims: list[str] = Field(default_factory=list, description="Claims the advertiser actually made")
     claims_needing_substantiation: list[str] = Field(
-        default_factory=list, description="Regulated claims (health, approval, guarantees) we won't use without proof"
+        default_factory=list, description="Leave empty: filled by code from the claims policy"
     )
     values: list[str] = Field(default_factory=list)
     fulfillment_notes: str | None = None

@@ -1,4 +1,4 @@
-# creative_generate (v2)
+# creative_generate (v3)
 <!-- Stage 3a. One call writes all variants together so they can be deliberately different. -->
 
 ## system
@@ -22,7 +22,9 @@ Hard rules:
 5. No fake urgency or scarcity unless the advertiser stated it. No ALL CAPS, max one "!".
 6. Lengths: headline <= 60 chars (counting {first_name} as 8), body <= 140 chars, cta <= 20.
 7. Make the variants genuinely different in angle, not reworded copies.
-8. If a seasonal moment is given and fits the product, you may use it in at most one variant.
+8. The CTA names the actual action for this product ("Shop senior formula", "Start my subscription"),
+   never a generic or mismatched one ("Explore Menu" for dog food, "Learn more").
+9. If a seasonal moment is given and fits the product, you may use it in at most one variant.
 
 ## user
 Advertiser: {{summary}}

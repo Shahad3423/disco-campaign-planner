@@ -104,10 +104,19 @@ def select_personas(profile: AdvertiserProfile, publisher_scores: list[Publisher
     matches.sort(key=lambda m: m.score, reverse=True)
     if profile.gate in ("off_network", "reject_low_signal"):
         return matches
-    for i, m in enumerate(matches[: cfg["max_selected"]]):
+    for m in matches[: cfg["max_selected"]]:
         if m.score >= cfg["min_score"]:
             m.selected = True
-        elif i < cfg["min_selected"] and m.score > 0:
-            m.selected = True
-            m.reasons.insert(0, "EXPLORATORY: weak fit, included to reach the minimum number of variants")
+
+    # Reach the minimum number of variants (the brief asks for 3-5) without pretending: fill
+    # from non-conflicting personas most present on the recommended hosts, labelled exploratory.
+    def presence(m: PersonaMatch) -> float:
+        p = catalog.persona_by_id()[m.persona_id]
+        return sum(host_fit(p, h) for h in recommended) / max(1, len(recommended))
+
+    fill = sorted((m for m in matches if not m.selected and m.persona_id not in conflicts), key=lambda m: (-m.score, -presence(m)))
+    for m in fill[: max(0, cfg["min_selected"] - sum(m.selected for m in matches))]:
+        m.selected = True
+        m.reasons.insert(0, f"EXPLORATORY: weak fit for the product, but common on the recommended hosts "
+                            f"(presence {presence(m):.2f}); included to reach {cfg['min_selected']} variants")
     return matches

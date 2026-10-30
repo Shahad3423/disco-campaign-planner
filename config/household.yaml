@@ -1,0 +1,62 @@
+# Household / life-stage features: 3rd-order features from first name (age) x zip (settlement).
+# All rates are APPROXIMATE US national figures, used as priors; at Disco they'd be replaced by
+# zip-level ACS tables and, better, by learned rates from conversion logs.
+#
+# Error compounding guard: the name-based age distribution (confidence <= 0.15) is first SHRUNK
+# toward the national adult age mix by its confidence, so a weak name can't fake a life stage:
+#   age_used = c * age_from_name + (1 - c) * national_adult_age_mix
+
+national_adult_age_mix:     # US adults 18+, approx. Census 2023
+  18-24: 0.12
+  25-34: 0.175
+  35-44: 0.165
+  45-54: 0.155
+  55-64: 0.16
+  65+: 0.225
+
+p_kids_by_age:              # P(own children < 18 at home | householder age), approx. Census CPS
+  18-24: 0.12
+  25-34: 0.40
+  35-44: 0.60
+  45-54: 0.42
+  55-64: 0.12
+  65+: 0.03
+
+p_homeowner_by_age:         # approx. Census Housing Vacancy Survey
+  18-24: 0.25
+  25-34: 0.39
+  35-44: 0.62
+  45-54: 0.70
+  55-64: 0.75
+  65+: 0.79
+
+settlement_multipliers:     # how settlement type shifts each rate (cities: fewer kids, more renters)
+  kids:      {urban_core: 0.75, suburban: 1.15, small_city: 1.05, small_town: 1.0, rural: 1.0}
+  homeowner: {urban_core: 0.60, suburban: 1.15, small_city: 1.05, small_town: 1.15, rural: 1.20}
+
+host_household_multipliers: # hosts whose notes describe households (publishers.json notes)
+  pub_015: {kids: 1.3}      # Kitchenly: "Family and couples households"
+  pub_001: {kids: 0.85}     # Swiftcart: 18-34 skew, late-night impulse
+
+settlement_confidence:      # RUCA is authoritative for metro/micro/rural; the urban/suburban split
+  ruca_2_10: 0.85           # inside RUCA 1 uses a land-area proxy, so it's less certain
+  ruca_1_split: 0.65
+
+seasons:                    # "need now" flags from climate band x local month
+  cold_season_now: {bands: [cold_snow_belt], months: [11, 12, 1, 2, 3]}
+  hot_season_now: {bands: [hot_humid_sunbelt, arid_desert], months: [6, 7, 8, 9]}
+
+# How derived features are USED at serving time (tempered by confidence like every feature).
+persona_links:              # feature -> persona: likelihood = temper(1 + strength * (value - baseline))
+  - {feature: p_has_kids, baseline: 0.27, persona: persona_002, strength: 2.0}   # Busy Parent
+  - {feature: p_has_kids, baseline: 0.27, persona: persona_008, strength: 0.5}   # Value-Conscious (family budgets)
+  - {feature: p_homeowner, baseline: 0.65, persona: persona_005, strength: 0.8}  # Affluent Classic
+  - {feature: p_homeowner, baseline: 0.65, persona: persona_007, strength: -0.8} # Convenience Millennial (renters)
+
+tag_boosts:                 # feature high -> campaigns with these tags get a CTR multiplier (max)
+  - {feature: p_has_kids, threshold: 0.45, multiplier: 1.20, tags: [kids_products, family_products, meal_kits, household, convenience]}
+  - {feature: p_homeowner, threshold: 0.70, multiplier: 1.15, tags: [home, home_goods, home_textiles, bedding, bath, cookware, kitchen, household, home_decor]}
+  - {feature: outdoor_lifestyle, threshold: 0.6, multiplier: 1.15, tags: [activewear, fitness, recovery]}
+  - {feature: cold_season_now, threshold: 0.5, multiplier: 1.15, tags: [bedding, home_textiles, activewear]}
+  - {feature: hot_season_now, threshold: 0.5, multiplier: 1.10, tags: [functional_beverages, soda_alternative, beverages, skincare]}
+  - {feature: car_dependent, threshold: 0.5, multiplier: 1.05, tags: [household, groceries]}

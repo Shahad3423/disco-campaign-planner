@@ -173,8 +173,11 @@ def score_publisher(
     competing = sorted(pub.tags & set(profile.competing_tags))
     if competing:
         # Soft penalty: scaled by how many intake samples agreed this is a competitor (default 1.0).
+        # One source of truth with the budget: a competitor host accepts our ad with probability
+        # `competitor_approval_probability`, so its expected value is score x that probability.
         share = max(profile.competing_tag_share.get(t, 1.0) for t in competing)
-        score *= 1 - (1 - cfg["penalties"]["competitor_conflict"]) * share
+        approval = catalog.config("pricing")["priors"]["competitor_approval_probability"]
+        score *= 1 - (1 - approval) * share
         flags.append(f"competitor_conflict: host sells {', '.join(competing)} ({share:.0%} of samples agree); may block the ad")
     if alignment == -1:
         score *= cfg["penalties"]["notes_misaligned"]

@@ -391,6 +391,9 @@ FEATURE_GROUPS = {
                   "metro_distance_km", "ski_distance_km", "near_ski_area", "delivery_speed_proxy"],
     "Time and calendar": ["local_hour", "day_of_week", "is_weekend", "daypart", "active_moments"],
     "Gift signal": ["gift_signal"],
+    "Settlement and household (3rd-order, see source for the inference chain)": [
+        "settlement_type", "p_has_kids", "p_homeowner", "life_stage", "car_dependent", "outdoor_lifestyle",
+        "cold_season_now", "hot_season_now"],
 }
 
 
