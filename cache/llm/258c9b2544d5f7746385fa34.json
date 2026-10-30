@@ -1,0 +1,80 @@
+{
+  "business_summary": "A Vermont-based brand selling hand-poured natural soy candles with no synthetic scents, predominantly purchased as gifts.",
+  "product": "hand-poured natural soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont with no synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural",
+    "no synthetic scents"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and lifestyle product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief explicitly states people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Product is made from natural soy with no synthetic scents."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy candles often appeal to sustainability-minded shoppers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with candles being mostly bought as presents."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and home life events drive purchase, fitting a candle brand."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers align with home decor products."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience intent are clear, though price and precise model should be confirmed.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "Are these available as a subscription or strictly one-time purchase/gifts?",
+    "What is your target CPA or margin for this channel?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

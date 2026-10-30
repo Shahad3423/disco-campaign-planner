@@ -1,0 +1,72 @@
+{
+  "business_summary": "An advertiser that sells dog food.",
+  "product": "Dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We sell dog food."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core pet category for dog food shoppers"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct category match for selling dog food"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet product category"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is a pet publisher with a health-conscious audience."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog."
+    }
+  ],
+  "confidence": 0.8,
+  "gate": "clarify",
+  "gate_reason": "We know the product is dog food, but pricing, target audience specifics, and purchasing model (one-time vs subscription) are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range",
+    "values",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is the price point or average order value of your dog food?",
+    "Is your dog food sold as a one-time purchase or a subscription?",
+    "What is your primary goal for the campaign (e.g., ROAS, new customer acquisition)?",
+    "Do you have any specific claims or key ingredients you want highlighted?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

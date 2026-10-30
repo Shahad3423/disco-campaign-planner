@@ -1,4 +1,4 @@
-# intake (v1)
+# intake (v3)
 <!-- Stage 1. Turns an advertiser's free text into an AdvertiserProfile.
      The model maps language onto CLOSED vocabularies; code does all ranking. -->
 
@@ -14,8 +14,11 @@ Your job is to understand the advertiser accurately and honestly. Rules:
 3. Tags must come from the provided vocabularies, exactly as spelled.
    - `relevant_tags`: host tags whose shoppers would plausibly want this product. weight 1 = core
      category, 0.5 = adjacent interest, 0.25 = weak. Include *why*.
-   - `competing_tags`: host tags meaning the host sells the same kind of product (a host would
-     block a competitor on its own thank-you page). Only direct substitutes.
+   - `competing_tags`: subcategory tags meaning the host sells the SAME product type, so its
+     shopper could buy it there instead (a host blocks direct competitors on its thank-you page).
+     Adjacent is not competing: ski shells vs activewear, candles vs cookware, linen bedding vs
+     bath towels are NOT competitors. Linen bedding vs "bedding" IS; a pet subscription box vs a host
+     selling pet toys/treats by subscription IS. Usually 0-2 tags.
    - `persona_affinity_tags`: from the persona vocabulary.
 4. `persona_conflicts`: personas whose `disinterested_in` or preferences clash with something the
    advertiser said (e.g. long shipping times vs "delayed fulfillment"). Cite the evidence.
@@ -24,7 +27,8 @@ Your job is to understand the advertiser accurately and honestly. Rules:
 6. Gate:
    - `proceed`: product and audience are clear enough to plan.
    - `clarify`: some signal but too vague to plan well; give 2-4 specific questions.
-   - `reject_low_signal`: no usable information about the business.
+   - `reject_low_signal`: no usable information about the business: the text names no product,
+     category, or audience at all (e.g. "idk just try it", "we sell stuff").
    - `off_network`: not a consumer product a DTC checkout shopper could buy (e.g. B2B software).
    `confidence` is your confidence that the profile is right (0-1).
 7. Ask clarifying questions an advertiser can answer in one line each (price, who buys it,

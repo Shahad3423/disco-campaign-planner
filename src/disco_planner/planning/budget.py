@@ -7,6 +7,7 @@ All priors come from config/pricing.yaml and are surfaced as assumptions.
 """
 from __future__ import annotations
 
+import re
 from datetime import date, timedelta
 
 from disco_planner.data import catalog
@@ -88,6 +89,17 @@ def pricing_plan(eco: Economics, inputs: AdvertiserInputs) -> PricingPlan:
     )
 
 
+def _approval_probability(s: PublisherScore, base: float) -> float:
+    """P(host accepts our ad). Competitor hosts accept with `base`, interpolated by how sure
+    intake was that it's a competitor (the agreement % is in the flag text)."""
+    for flag in s.flags:
+        if flag.startswith("competitor_conflict"):
+            m = re.search(r"\((\d+)% of samples", flag)
+            share = int(m.group(1)) / 100 if m else 1.0
+            return round(1 - (1 - base) * share, 2)
+    return 1.0
+
+
 def budget_plan(
     scores: list[PublisherScore], eco: Economics, plan: PricingPlan, inputs: AdvertiserInputs,
     today: date, gifting_moment: str | None,
@@ -107,7 +119,7 @@ def budget_plan(
         fit = _fit_multiplier(s.score, top)
         cpc = _clamp_cpc(eco.target_cpa * pri["cvr"]["mid"] * fit)
         ctr = pri["ctr"]["mid"] * fit
-        approval = pri["competitor_approval_probability"] if any("competitor" in f for f in s.flags) else 1.0
+        approval = _approval_probability(s, pri["competitor_approval_probability"])
         impressions = pubs[s.publisher_id].monthly_impressions * pri["share_of_voice_cap"] * days / 30
         capacity = impressions * ctr * cpc * approval
         rows.append(dict(score=s, fit=fit, cpc=cpc, approval=approval, capacity=capacity,

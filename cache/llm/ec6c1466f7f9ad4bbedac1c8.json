@@ -1,0 +1,48 @@
+{
+  "business_summary": "A brand offering 'a new kind of thing for moms'.",
+  "product": "A new kind of thing for moms",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "The product is explicitly for moms."
+    },
+    {
+      "tag": "family_products",
+      "weight": 0.5,
+      "why": "Moms are a core part of family-oriented product audiences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 0.3,
+  "gate": "clarify",
+  "gate_reason": "The description is extremely vague ('A new kind of thing for moms.') with no details on the actual product category, price, or purchase model.",
+  "missing_info": [
+    "product category and exact item",
+    "price point and price tier",
+    "purchase model (one-time vs subscription)",
+    "specific target audience details beyond 'moms'"
+  ],
+  "clarifying_questions": [
+    "What is the exact product you are selling?",
+    "What is the price point of the item?",
+    "Is this a one-time purchase or a subscription?",
+    "What is your primary goal for the campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,93 @@
+{
+  "business_summary": "Brand selling concentrated refill cleaning products designed to eliminate single-use plastic bottles while cleaning comparably to major brands, targeting sustainability-minded shoppers.",
+  "product": "Concentrated refill cleaning products",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Concentrated refill cleaning products so you stop buying plastic bottles",
+    "Cleans like the major brands"
+  ],
+  "values": [
+    "Sustainability",
+    "Eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "Core category for cleaning products."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Home cleaning and maintenance products fit naturally here."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Explicitly targets sustainability-minded shoppers and eliminates plastic bottles."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Adjacent interest for eco-conscious household cleaning shoppers."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Often aligns with sustainable and eco-friendly cleaning brands."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.25,
+      "why": "Refill formats offer convenience for household upkeep."
+    }
+  ],
+  "competing_tags": [
+    "household"
+  ],
+  "persona_affinity_tags": [
+    "household",
+    "home_goods",
+    "sustainable_apparel",
+    "refillable_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's instant delivery and household category shoppers fit high-frequency household consumables."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood values-driven shoppers are highly responsive to sustainability claims."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods attracts sustainability-motivated home buyers who appreciate eco-friendly household goods."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "The product, value proposition, and target audience are clear enough to plan network placement, though pricing and purchase model details are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model (subscription vs one-time)"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value of your refill starter kit or products?",
+    "Is this primarily a one-time purchase or a recurring subscription model?",
+    "What is your primary conversion or revenue goal for the thank-you page campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

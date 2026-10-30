@@ -1,0 +1,81 @@
+{
+  "business_summary": "Hand-poured natural soy candles from Vermont with no synthetic scents, primarily purchased as gifts.",
+  "product": "Hand-poured natural soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont",
+    "No synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and household product category."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief explicitly states people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "The candles are made of natural soy with no synthetic scents."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.25,
+      "why": "Natural soy candles often appeal to sustainability-minded shoppers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "small_batch",
+    "sustainable"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting focus aligns with the publisher's gifting season uplift."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home buyers have a high cross-sell with home goods like candles."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and home life events drive purchase on this home-focused publisher."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clear, though price point and exact purchase model outside of gifting are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "exact margin/unit economics"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "Are these primarily one-time purchases or do you offer a subscription option?",
+    "What is your primary advertising goal (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

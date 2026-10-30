@@ -1,0 +1,85 @@
+{
+  "business_summary": "Small-batch candles poured by hand in Vermont using natural soy wax and no synthetic fragrances, mostly bought as gifts.",
+  "product": "Hand-poured soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+  ],
+  "values": [
+    "natural",
+    "hand-poured",
+    "small-batch",
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and lifestyle product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief explicitly states the candles are mostly bought as gifts."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy wax and no synthetic fragrances align with sustainable and clean values."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Absence of synthetic fragrances aligns with non-toxic preferences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch",
+    "sustainable",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot features gifting and high gifting season uplift, aligning well with gift-oriented candles."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed has design-conscious buyers with a high cross-sell for home and wellness."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods features home buyers and gifting life events, fitting a home decor product."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clear, though pricing and specific purchase models are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "What is your target profit margin or AOV?",
+    "Are these available as a subscription or one-time purchase only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

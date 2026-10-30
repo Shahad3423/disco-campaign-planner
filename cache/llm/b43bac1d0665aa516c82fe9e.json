@@ -1,0 +1,77 @@
+{
+  "business_summary": "Concentrated refill cleaning products designed to eliminate single-use plastic bottles while matching the cleaning performance of major brands, targeting sustainability-minded shoppers at checkout.",
+  "product": "Concentrated refill cleaning products",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Concentrated refill cleaning products so you stop buying plastic bottles",
+    "Cleans like the major brands"
+  ],
+  "values": [
+    "sustainability",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "Core category for cleaning products."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Directly targets sustainability-minded shoppers with plastic-free refill messaging."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Adjacent home category where cleaning goods are frequently purchased."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "High correlation between eco-friendly cleaning products and non-toxic household goods."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "household",
+    "home_goods",
+    "refillable_products",
+    "sustainable"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods features sustainability-motivated kitchen buyers who align with eco-friendly cleaning refills."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood features values-driven shoppers responsive to sustainability claims."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clearly defined (sustainable cleaning refills), but missing price and purchase frequency details which can be asked via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "exact product lineup (e.g. all-purpose, glass cleaner, bathroom, etc.)",
+    "whether subscriptions are offered"
+  ],
+  "clarifying_questions": [
+    "What is the average price of a refill or starter kit?",
+    "Is this available as a one-time purchase, a subscription, or both?",
+    "What specific types of cleaning products do you offer?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

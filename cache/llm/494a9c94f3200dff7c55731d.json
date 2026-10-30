@@ -1,0 +1,78 @@
+{
+  "business_summary": "The advertiser sells dog food.",
+  "product": "Dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog food"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct category match for selling dog food"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet category"
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent pet health and care category"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is a pet publisher with health-conscious pet owners."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate caters to pet parents treating dogs as family."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product (dog food) and target audience are clearly identified, allowing us to target relevant pet publishers.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "stated_claims",
+    "values"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price tier of your dog food?",
+    "Is your dog food a one-time purchase or a subscription model?",
+    "What are your key product claims or value propositions (e.g., grain-free, organic, vet-recommended)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

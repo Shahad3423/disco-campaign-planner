@@ -1,0 +1,86 @@
+{
+  "business_summary": "Small-batch, hand-poured natural soy wax candles from Vermont without synthetic fragrances, mostly purchased as gifts.",
+  "product": "candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+  ],
+  "values": [
+    "natural",
+    "handcrafted",
+    "small-batch"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and lifestyle product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The product is mostly bought as gifts."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Made with natural soy wax."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy wax aligns with sustainable shopping preferences."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "Candles fit well into spa and relaxation routines."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with a product mostly bought as gifts."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers appreciate home aesthetics."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and new-home life events drive purchase for home-focused goods."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and positioning are clear, but price and margin details are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of your candles?",
+    "Are these available as a subscription or one-time purchase only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

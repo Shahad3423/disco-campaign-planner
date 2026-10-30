@@ -1,0 +1,86 @@
+{
+  "business_summary": "DTC brand selling premium grain-free, vet-formulated dog food tailored for senior dogs and joint health longevity on a subscription basis.",
+  "product": "Premium dog food for senior dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Premium dog food for senior dogs",
+    "Grain-free",
+    "Vet-formulated",
+    "Targets owners who care about joint health and longevity"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet brands"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core category for dog food products"
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is subscription-based"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent category for pet owners"
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "Focuses on health and longevity benefits"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is subscription-heavy and owners are health-conscious, matching premium pet food."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has a massive pet audience with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate reaches millennials treating dogs as family, aligning well with pet health and wellness."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear DTC pet food product and audience, though pricing and specific financial details should be clarified.",
+  "missing_info": [
+    "price_point_usd",
+    "exact shipping and fulfillment timelines",
+    "specific ingredient sourcing details"
+  ],
+  "clarifying_questions": [
+    "What is the exact price of a standard subscription box or bag?",
+    "What is your average customer lifetime value or gross margin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

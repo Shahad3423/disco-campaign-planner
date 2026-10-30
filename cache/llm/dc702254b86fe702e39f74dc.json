@@ -1,0 +1,74 @@
+{
+  "business_summary": "DTC brand offering actually-breathable linen bedding made in Portugal, targeting customers looking for a more grown-up alternative to mainstream aesthetics like Brooklinen or Parachute.",
+  "product": "Linen bedding",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core category: brand sells linen bedding."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent home category closely related to bedding."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Adjacent category encompassing home goods."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed focuses on bedding, bath, and home textles with design-conscious urban/suburban buyers."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. features older affluent women who respond to quality messaging and high AOV."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park has the highest-AOV apparel publisher profile and conservative brand sensibility matching grown-up aesthetics."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear; missing minor operational details like exact price point and specific goals, which will be gathered via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "target_age_range",
+    "advertising goal"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price range for your bedding sets?",
+    "Are you primarily focused on ROAS (cost per acquisition) or new customer growth?",
+    "Do you offer bundles or is it strictly individual piece purchasing?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

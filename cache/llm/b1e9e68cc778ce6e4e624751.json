@@ -1,0 +1,89 @@
+{
+  "business_summary": "DTC brand selling premium grain-free, vet-formulated dog food tailored for senior dogs with a focus on joint health and longevity, available via subscription.",
+  "product": "Premium senior dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "premium dog food for senior dogs",
+    "targeting owners who care about joint health and longevity",
+    "Grain-free",
+    "vet-formulated",
+    "subscription-based"
+  ],
+  "values": [
+    "pet health",
+    "vet-recommended"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core pet category publisher"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core category match for dog food"
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Matches the brand's subscription-based model"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet audience interest"
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent audience focused on pet health and senior care"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher whose owners are health-conscious about pets and responsive to premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Pet publisher where millennials treat dogs as family."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, audience, and purchase model are clearly stated. Proceeding with clarification needed for specific price point.",
+  "missing_info": [
+    "price_point_usd",
+    "target_age_range_for_owners"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value of your dog food subscription?",
+    "What is your target demographic for pet owners (e.g., age, household income)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

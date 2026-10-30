@@ -1,0 +1,88 @@
+{
+  "business_summary": "A subscription box service tailored for new cat owners, covering the first three months of a kitten's life with toys, food samples, and an informational booklet.",
+  "product": "Subscription box for new cat owners",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products and services."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is explicitly a subscription box."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Includes toys and supplies for pets."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Includes food samples for cats."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.5,
+      "why": "Includes toys for kittens."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Could be bought as a gift for a new cat owner."
+    }
+  ],
+  "competing_tags": [
+    "pet"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_food",
+    "pet_health",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline's audience consists of health-conscious pet owners responsive to subscription and premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate specializes in pet supplies and subscription toys/treats, making this an ideal crossover."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The product and audience are clear, but price point and target unit economics are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of the subscription box?",
+    "Is this billed monthly or as a one-time upfront payment for the three months?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

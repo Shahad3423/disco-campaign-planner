@@ -1,0 +1,77 @@
+{
+  "business_summary": "Makes a non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative for people who want to feel good without a hangover.",
+  "product": "non-alcoholic sparkling drink with adaptogens",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "non-alcoholic sparkling drink with adaptogens",
+    "for people who want to feel good without a hangover",
+    "functional cocktail alternative"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "The product is a sparkling drink with adaptogens functioning as an alternative to alcohol."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "It is a drink product."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 0.5,
+      "why": "Serves as a functional sparkling drink alternative."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Includes adaptogens and positions around wellness benefits like feeling good without a hangover."
+    }
+  ],
+  "competing_tags": [
+    "beverages",
+    "functional_beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency impulse-friendly shoppers on an instant delivery platform fit a beverage purchase well."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Audience is health-curious and seeks indulgence-seeking alternatives with strong overlap in functional beverages."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The product, category, and general audience are clear, but exact pricing, margin, and purchase model (one-time vs. subscription) are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of a pack or can?",
+    "Is this sold as a one-time purchase, a subscription, or both?",
+    "What is your gross margin or target customer acquisition cost?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,25 +1,36 @@
 # Publisher scoring (DECISIONS D8).
-#   score = category_fit * quality * penalties
-# category_fit (is this host's shopper even in-market?) multiplies everything, like pCTR
-# multiplies bid in eCPM: a perfect price/audience match can't rescue an irrelevant host.
+#   score = category_fit * price_fit^price_exponent * quality * penalties
+# category_fit (will this host's shopper click?) and price_fit (can they afford it?) multiply,
+# like pCTR x pCVR in eCPM: a perfect audience match can't rescue an irrelevant or unaffordable host.
 # quality = weighted mean of the components below (weights sum to 1).
 # Change a weight here, rerun `python -m disco_planner.eval.run`, compare metrics.
 quality_weights:
-  audience_fit: 0.35     # gender + age overlap with the advertiser's stated target
-  price_fit: 0.35        # advertiser price vs host AOV and income tier
-  notes_fit: 0.15        # LLM read of the host's free-text notes (bounded influence)
+  audience_fit: 0.30     # gender + age overlap with the advertiser's STATED target
+  persona_fit: 0.35      # two-hop: plausible personas x their presence on this host
+  notes_fit: 0.20        # LLM read of the host's free-text notes (bounded influence)
   scale: 0.05            # log monthly impressions; tiny so big hosts don't win on size alone
   seasonality: 0.10      # gifting uplift close to Nov-Dec for giftable products
+
+# v2: price is a multiplier, softened by an exponent (0 = ignore price, 1 = full effect).
+price_exponent: 0.5
+
+category:
+  category_only_cap: 0.5      # "apparel" alone can't make a strong match
+  attribute_only_cap: 0.15
+  extra_specific_bonus: 0.10  # per additional specific tag (x its weight)
+  attribute_bonus: 0.10       # per attribute tag (x its weight), e.g. sustainable
 
 penalties:
   competitor_conflict: 0.45   # host sells the same thing; host likely blocks us (D1)
   notes_misaligned: 0.80      # applied when notes_fit alignment == -1
 
 recommend:
-  min_score: 0.15             # absolute floor
+  min_score: 0.08             # absolute floor (scores are products of [0,1] terms, so small)
   relative_to_top: 0.5        # and at least half the best host's score (scores are relative, not calibrated)
   min_category_fit: 0.20      # never recommend a host with no category link, whatever else matches
   max_publishers: 6
+  weak_fit_max_publishers: 3   # no 'strong' host -> small test only
+  strong_min_price_fit: 0.40    # strong = specific subcategory match AND shoppers spend near this price
 
 # income tier ordering used by price_fit
 income_tiers: [low, mid, mid-high, high]
@@ -47,3 +58,6 @@ personas:
     mid:     {low: 0.8, low-medium: 0.9, medium: 1.0, medium-high: 0.9, high: 0.8}
     budget:  {low: 0.5, low-medium: 0.7, medium: 0.9, medium-high: 1.0, high: 1.0}
     unknown: {low: 0.7, low-medium: 0.7, medium: 0.7, medium-high: 0.7, high: 0.7}
+
+intake:
+  self_consistency_samples: 3   # 1 = single greedy call; 3 = majority vote over tags/competitors/conflicts

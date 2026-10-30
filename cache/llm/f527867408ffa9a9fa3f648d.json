@@ -1,0 +1,31 @@
+{
+  "business_summary": "An unknown advertiser providing no details about their business, product, or target audience.",
+  "product": "unknown",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "reject_low_signal",
+  "gate_reason": "The input text contains no usable information about the business, naming no product, category, or audience.",
+  "missing_info": [
+    "business type",
+    "product",
+    "price point",
+    "target audience",
+    "purchase model"
+  ],
+  "clarifying_questions": [],
+  "tag_stability": {},
+  "sample_agreement": null
+}

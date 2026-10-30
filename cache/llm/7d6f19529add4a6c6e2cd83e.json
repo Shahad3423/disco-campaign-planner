@@ -1,0 +1,89 @@
+{
+  "business_summary": "DTC brand selling premium grain-free, vet-formulated dog food for senior dogs, focused on joint health and longevity on a subscription basis.",
+  "product": "Senior dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Premium dog food for senior dogs",
+    "Grain-free",
+    "Vet-formulated",
+    "Targets owners who care about joint health and longevity"
+  ],
+  "values": [
+    "Health",
+    "Longevity",
+    "Quality"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core product category being sold."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is offered on a subscription model."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent category for pet owners."
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent category for health-focused pet products like joint care."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher whose owners are health-conscious about pets and responsive to premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with broad demographics and repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Pet publisher catering to millennials treating dogs as family, aligning well with premium senior dog care."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product, audience, and purchase model provided, enabling effective campaign planning.",
+  "missing_info": [
+    "price_point_usd",
+    "profit_margin"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value for your dog food subscription?",
+    "What is your target profit margin or allowable CPA?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

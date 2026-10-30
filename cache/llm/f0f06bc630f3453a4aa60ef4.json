@@ -1,0 +1,79 @@
+{
+  "business_summary": "DTC brand selling vet-formulated, grain-free food for older dogs on a subscription model, focused on joint health and longevity.",
+  "product": "Dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-formulated",
+    "Grain-free",
+    "For older dogs",
+    "Focused on their dog's joints and living longer"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "The product is dog food."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Sold on subscription."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Grain-free and vet-formulated health focus aligns with natural pet care."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy and health-conscious pet owners make this an ideal match."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennials treating dogs as family will respond well to targeted health and longevity claims."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, target audience, and purchase model are clearly defined.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price per bag for your subscription?",
+    "What is your gross margin percentage?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

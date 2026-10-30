@@ -1,0 +1,91 @@
+{
+  "business_summary": "DTC brand offering vet-formulated, grain-free dog food tailored for older dogs on a subscription model.",
+  "product": "Vet-formulated, grain-free dog food for older dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "older dogs (owners are human adults)",
+  "stated_claims": [
+    "Vet-formulated",
+    "Grain-free",
+    "For older dogs",
+    "Focused on their dog's joints and living longer"
+  ],
+  "values": [
+    "joint health",
+    "longevity",
+    "pet wellness"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core product category is dog food."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Sold on a subscription model."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Grain-free and vet-formulated appeal to health-conscious pet owners."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Focuses on joints and living longer, aligning with pet wellness."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline's subscription-heavy, health-conscious pet owners are a natural fit."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate's audience consists of dog owners treating dogs as family."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear DTC pet food product with well-defined audience and subscription model, though price and margin info should be gathered.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "profit margin"
+  ],
+  "clarifying_questions": [
+    "What is the average order value or price per subscription box?",
+    "What is your gross margin profile?",
+    "Do you offer any trial sizes or is it strictly recurring subscription?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

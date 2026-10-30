@@ -1,0 +1,81 @@
+{
+  "business_summary": "Sells workout supplements including pre-workout, creatine, and protein, competing on price with formulations equivalent to expensive brands for half the cost.",
+  "product": "Workout supplements (pre-workout, creatine, protein)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We compete on price, not on marketing",
+    "Same formulations as the expensive brands for half the cost"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core category match for workout supplements like pre-workout, creatine, and protein."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Adjacent fitness audience attending classes is likely to use workout supplements."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Activewear shoppers overlap with fitness and gym-goers who consume workout supplements."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Wellness-oriented shoppers often purchase health and fitness supplements."
+    }
+  ],
+  "competing_tags": [
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "recovery",
+    "activewear"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_004",
+      "conflict": "Dislikes ultra-cheap positioning",
+      "evidence": "Advertiser states 'half the cost' and competes on price."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers have strong crossover with supplement use."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and personal training are prime targets for workout supplements."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and value proposition are clear, but missing specific pricing and margin details which can be gathered via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "profit_margin",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the exact price range or average order value for your supplements?",
+    "Are these products available as a subscription option or strictly one-time purchase?",
+    "What is your gross margin on these products?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,89 @@
+{
+  "business_summary": "A subscription box service designed specifically for new cat owners, covering the first three months of their cat's life with toys, food samples, and an informational booklet.",
+  "product": "Subscription box for new cat owners",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products and services."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 1.0,
+      "why": "Includes toys and supplies for cats."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Includes food samples."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Offered as a subscription service."
+    },
+    {
+      "tag": "toys",
+      "weight": 0.5,
+      "why": "Includes toys for the cat."
+    }
+  ],
+  "competing_tags": [
+    "pet"
+  ],
+  "persona_affinity_tags": [
+    "pet_supplies",
+    "pet_food",
+    "subscription_boxes",
+    "family_products"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_004",
+      "conflict": "Disinterested in generic pet brands or ultra-cheap positioning",
+      "evidence": "The brief is very brief and does not provide quality or vet-recommended proof points yet."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline has a heavy subscription focus and health-conscious pet owners."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate specializes in pet supplies, subscriptions, toys, and treats."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear consumer subscription product for pets with well-defined target audience and contents, though pricing is missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of the subscription box?",
+    "What is your target customer acquisition cost or profit margin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

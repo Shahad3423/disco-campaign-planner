@@ -1,0 +1,77 @@
+{
+  "business_summary": "Handcrafted Italian leather handbags made to fit, sourced from Florence and priced around $1,200 with a 6-week shipping time.",
+  "product": "Handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Handcrafted Italian leather handbags",
+    "made to fit",
+    "from Florence",
+    "Around $1,200 each",
+    "6 weeks to ship"
+  ],
+  "values": [
+    "craftsmanship"
+  ],
+  "fulfillment_notes": "6 weeks to ship",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Handbags are a core fashion accessory closely aligned with apparel."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Luxury leather goods are often purchased as high-end gifts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "home_goods",
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in delayed fulfillment",
+      "evidence": "6 weeks to ship"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV and responsiveness to quality messaging align well with luxury handcrafted leather goods."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility matches luxury Florence leather handbags."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency impulse shoppers looking for instant delivery conflict with a $1,200 item that takes 6 weeks to ship."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, price, and fulfillment details are clear enough to plan campaigns with high-AOV publishers.",
+  "missing_info": [
+    "target_gender",
+    "target_age_range",
+    "exact margin/profitability goals"
+  ],
+  "clarifying_questions": [
+    "What is your target demographic in terms of gender and age?",
+    "What are your target customer acquisition cost (CAC) or ROAS goals?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

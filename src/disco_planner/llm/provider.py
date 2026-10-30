@@ -14,6 +14,7 @@ import hashlib
 import json
 import os
 import re
+import time
 from pathlib import Path
 from typing import Protocol, TypeVar
 
@@ -71,7 +72,9 @@ class GeminiProvider:
         from google.genai import errors, types
 
         last_error: Exception | None = None
-        for model in self.models:
+        for attempt, model in enumerate(self.models * 2):  # walk the chain twice, backing off
+            if attempt >= len(self.models):
+                time.sleep(5 * (attempt - len(self.models) + 1))
             try:
                 resp = self._client.models.generate_content(
                     model=model,

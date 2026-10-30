@@ -1,0 +1,88 @@
+{
+  "business_summary": "A brand that makes non-alcoholic sparkling drinks with adaptogens, positioned as a functional cocktail alternative for people who want to feel good without a hangover.",
+  "product": "Non-alcoholic sparkling drink with adaptogens",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Functional cocktail alternative"
+  ],
+  "values": [
+    "wellness",
+    "functional beverage",
+    "hangover-free"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Core category: the product is a drink."
+    },
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Core category: contains adaptogens and is positioned as a functional alternative."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 0.5,
+      "why": "Adjacent interest: sparkling non-alcoholic drink can serve as an alternative to soda or cocktails."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Adjacent interest: wellness-focused consumer brand."
+    },
+    {
+      "tag": "alcohol",
+      "weight": 0.25,
+      "why": "Weak fit: positioned as an alternative to alcohol/cocktails."
+    }
+  ],
+  "competing_tags": [
+    "beverages",
+    "functional_beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "recovery",
+    "gourmet_food"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency impulse shoppers and late-night traffic are a great fit for a non-alcoholic cocktail alternative."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Audience consists of health-curious, indulgence-seeking shoppers with strong overlap in functional beverages and soda alternatives."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clear enough to plan campaign targeting, though price and purchase model remain unstated.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is the retail price per unit or pack?",
+    "Is this available as a one-time purchase, a subscription, or both?",
+    "What is your primary growth or campaign goal right now?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

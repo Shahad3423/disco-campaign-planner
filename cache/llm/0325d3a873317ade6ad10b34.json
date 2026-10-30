@@ -1,0 +1,75 @@
+{
+  "business_summary": "A DTC brand selling actually-breathable linen bedding made in Portugal, targeted at consumers looking for a more grown-up alternative to mainstream aesthetics.",
+  "product": "Linen bedding",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up alternative to the Brooklinen/Parachute aesthetic"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category for bedding and home products."
+    },
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Direct core product category."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 1.0,
+      "why": "Linen bedding falls directly under home textiles."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent home category often purchased alongside bedding."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_003",
+      "conflict": "prefers novelty and playful tone; dislikes corporate voice",
+      "evidence": "Brand pitches itself as a 'grown-up' alternative with a sophisticated aesthetic."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed focuses on design-conscious urban/suburban buyers with high cross-sell in bedding and home textiles."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear, though pricing and purchase model are missing. Proceeding with standard clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range for your linen bedding?",
+    "Is your purchasing model strictly one-time or do you offer bundles/subscriptions?",
+    "What is your primary growth or acquisition goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

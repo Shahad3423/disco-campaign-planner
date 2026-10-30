@@ -1,0 +1,57 @@
+{
+  "business_summary": "Technical outerwear brand specializing in serious backcountry ski shells worn by patrollers.",
+  "product": "Technical ski shells",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category for technical outerwear and ski shells."
+    },
+    {
+      "tag": "travel",
+      "weight": 0.5,
+      "why": "Backcountry skiing often involves travel to mountain destinations."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers who value performance wear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product, pricing, and target audience for a high-end technical apparel brand.",
+  "missing_info": [
+    "target_age_range",
+    "target_gender",
+    "gross_margin"
+  ],
+  "clarifying_questions": [
+    "What is your gross margin range?",
+    "Are these shells intended primarily for men, women, or unisex?",
+    "Do you plan to run seasonal discounts or stick to full-price positioning?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,57 @@
+{
+  "business_summary": "Brand selling technical outerwear designed for serious backcountry skiers.",
+  "product": "Technical outerwear shells",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category for technical outerwear and shells."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category as jackets and outerwear."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are a strong match for technical outerwear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product offering, price point, and target audience.",
+  "missing_info": [
+    "target age range",
+    "target gender",
+    "profit margin / CAC targets"
+  ],
+  "clarifying_questions": [
+    "What is your target profit margin or allowable CAC?",
+    "Are these shells intended for both men and women, or is there a specific gender split?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

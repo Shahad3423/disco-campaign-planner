@@ -1,0 +1,74 @@
+{
+  "business_summary": "The advertiser sells dog food.",
+  "product": "Dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet-related products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct category match for dog food."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet care category."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Publisher focuses on pet products and subscription, which fits dog food."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog, highly relevant for dog food."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Pet-focused publisher with dog-loving shoppers."
+    }
+  ],
+  "confidence": 0.8,
+  "gate": "clarify",
+  "gate_reason": "We know the product is dog food, but pricing, exact purchase model (subscription vs one-time), specific value propositions, and margin details are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "stated_claims",
+    "values",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price range of your dog food?",
+    "Is your dog food sold as a one-time purchase, a subscription, or both?",
+    "What are your main product claims or unique selling propositions (e.g., grain-free, organic, vet-recommended)?",
+    "What is your primary advertising goal on Disco?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

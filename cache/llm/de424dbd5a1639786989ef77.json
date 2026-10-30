@@ -1,0 +1,71 @@
+{
+  "business_summary": "Handcrafted Italian leather handbags made to fit, sourced from Florence, priced around $1,200 with a 6-week shipping time.",
+  "product": "Handcrafted Italian leather handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Handcrafted Italian leather handbags",
+    "Made to fit",
+    "From Florence"
+  ],
+  "values": [
+    "craftsmanship",
+    "heritage"
+  ],
+  "fulfillment_notes": "6 weeks to ship",
+  "relevant_tags": [
+    {
+      "tag": "fashion",
+      "weight": 1.0,
+      "why": "Core category for luxury leather handbags."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Adjacent fashion accessory category."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "delayed fulfillment",
+      "evidence": "6 weeks to ship conflicts with speed and no delayed fulfillment preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility, matching a $1,200 luxury handbag."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, price point, and positioning are clear enough to plan campaigns with affluent publishers.",
+  "missing_info": [
+    "target_gender",
+    "target_age_range",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is your target gender demographic (women, men, or unisex)?",
+    "What is your product gross margin for ad spend planning?",
+    "Do you offer any customization options for the 'made to fit' feature?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -99,6 +99,10 @@ class AdvertiserProfile(BaseModel):
     gate_reason: str
     missing_info: list[str] = Field(default_factory=list)
     clarifying_questions: list[str] = Field(default_factory=list)
+    # Filled by code (self-consistency), not by the model:
+    tag_stability: dict[str, float] = Field(default_factory=dict, description="share of samples that chose each tag")
+    sample_agreement: float | None = None
+    competing_tag_share: dict[str, float] = Field(default_factory=dict, description="share of samples flagging each competitor tag")
 
 
 # ---------------------------------------------------------------- stage 2: matching

@@ -1,0 +1,73 @@
+{
+  "business_summary": "The advertiser sells dog food.",
+  "product": "Dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog food"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Exact product category match"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet category"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher aligns with pet food offering."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 0,
+      "why": "Focuses on toys and treats rather than core dog food."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and category are clear enough to plan, though pricing and model are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "stated_claims",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the price point or average order value of your dog food?",
+    "Is your dog food sold as a one-time purchase or via subscription?",
+    "What is your primary growth goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

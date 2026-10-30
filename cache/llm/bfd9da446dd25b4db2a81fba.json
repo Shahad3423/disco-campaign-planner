@@ -1,0 +1,69 @@
+{
+  "business_summary": "Technical outerwear brand specializing in serious backcountry ski shells used by patrollers.",
+  "product": "Backcountry ski shells / technical outerwear",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear",
+    "Starts at $650, goes up from there"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category for technical outerwear and ski shells."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category for outerwear and shells."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Backcountry skiing has a strong male demographic."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "Backcountry skiing includes female skiers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers overlap well with serious backcountry skiers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, price point, and target audience are clear and well-defined.",
+  "missing_info": [
+    "Target gender breakdown",
+    "Target age range",
+    "Profit margin or target CPA"
+  ],
+  "clarifying_questions": [
+    "What is your target gender split or do you offer both men's and women's specific cuts?",
+    "What is your target customer age range?",
+    "What target CAC or ROAS are you aiming for on Disco?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,63 @@
+{
+  "business_summary": "Technical outerwear brand specializing in high-end shells for serious backcountry skiers and ski patrollers.",
+  "product": "Technical outerwear shells",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear",
+    "Starts at $650, goes up from there"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category for technical outerwear and shells."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category for outerwear clothing."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers who cross-shop activewear."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": -1,
+      "why": "Pet-focused audience is unrelated to technical ski apparel."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product, pricing, and target audience identified for technical outerwear.",
+  "missing_info": [
+    "target_age_range",
+    "specific target gender",
+    "profit margin"
+  ],
+  "clarifying_questions": [
+    "What is your gross margin or target CPA for this campaign?",
+    "Do you have specific gender skews for your shells, or is the collection unisex?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

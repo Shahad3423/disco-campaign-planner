@@ -1,0 +1,39 @@
+{
+  "business_summary": "The advertiser provided insufficient information (\"idk\") regarding their business and product.",
+  "product": "unknown",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "clarify",
+  "gate_reason": "The advertiser text only states \"idk\", providing no details about the product, pricing, or target audience.",
+  "missing_info": [
+    "product",
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_gender",
+    "target_age_range",
+    "values",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is your product or service?",
+    "What is the price point of your product?",
+    "Who is your target customer?",
+    "Is this a one-time purchase or a subscription?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -62,6 +62,19 @@ def host_fit(persona: Persona, pub: Publisher) -> float:
     return round((age + gender + category) / 3, 3)
 
 
+def persona_weights(profile: AdvertiserProfile) -> dict[str, float]:
+    """Plausibility of each persona for this advertiser, before looking at hosts.
+    Used by the publisher scorer for the persona-mediated (two-hop) term."""
+    conflicts = {c.persona_id for c in profile.persona_conflicts}
+    weights = {}
+    for persona in catalog.personas():
+        aff, _ = affinity(profile, persona)
+        score = 0.0 if persona.id in conflicts else aff * price_compat(profile, persona) * audience_compat(profile, persona)
+        if score > 0:
+            weights[persona.id] = score
+    return weights
+
+
 def select_personas(profile: AdvertiserProfile, publisher_scores: list[PublisherScore]) -> list[PersonaMatch]:
     cfg = catalog.config("scoring")["personas"]
     conflicts = {c.persona_id: c for c in profile.persona_conflicts}

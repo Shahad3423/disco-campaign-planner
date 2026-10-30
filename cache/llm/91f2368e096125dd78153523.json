@@ -1,0 +1,86 @@
+{
+  "business_summary": "DTC brand selling hand-poured natural soy candles from Vermont with no synthetic scents, primarily bought as presents.",
+  "product": "Hand-poured natural soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont",
+    "No synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural",
+    "hand-poured"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and household fragrance product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The advertiser states people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "The candles are made with natural soy and no synthetic scents."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Absence of synthetic scents aligns with non-toxic preferences."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.25,
+      "why": "Soy wax is often viewed as a more sustainable alternative to paraffin."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "gifting"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot features gifting tags and seasonal gifting uplift."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods relates to home life events and gifting."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed attracts design-conscious home buyers who appreciate candles."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear consumer product with defined attributes, though pricing and exact purchase model need minor clarification.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point of your candles?",
+    "Do you offer subscriptions or is it strictly one-time purchase and gifting?",
+    "What is your primary revenue goal for the ad network?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

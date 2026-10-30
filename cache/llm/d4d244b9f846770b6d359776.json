@@ -1,0 +1,81 @@
+{
+  "business_summary": "DTC brand selling vet-formulated, grain-free dog food tailored for older dogs on a subscription model.",
+  "product": "Vet-formulated, grain-free food for older dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-formulated",
+    "grain-free",
+    "for older dogs",
+    "focused on their dog's joints and living longer"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core category: sells dog food."
+    },
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category: pet products."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Core model: sold on subscription."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent category for pet owners."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes",
+    "subscription_services"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline shoppers are health-conscious about pets and responsive to premium/subscription positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate has a pet-focused millennial audience treating dogs as family."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product, target audience, and business model provided.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value of your subscription?",
+    "What is your gross margin percentage?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

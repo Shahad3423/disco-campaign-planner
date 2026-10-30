@@ -1,0 +1,83 @@
+{
+  "business_summary": "Sells protein bars positioned as tasting better than traditional cardboard-like alternatives.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Protein bars that don't taste like cardboard"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars are a core supplement product category."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness enthusiasts frequently consume protein bars for post-workout nutrition."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Aligns with health-conscious wellness consumers."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.25,
+      "why": "Adjacent interest among active lifestyles."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "wellness",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in=['ultra-processed food']",
+      "evidence": "Protein bars are often classified as processed foods, which may conflict with the Wellness Optimizer's preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers at Movewell are a strong fit for protein bars."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care are prime buyers for protein supplements."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is skeptical of unsubstantiated health claims, and the brief only makes a taste claim."
+    }
+  ],
+  "confidence": 0.8,
+  "gate": "clarify",
+  "gate_reason": "We know the product is protein bars, but we are missing pricing, exact ingredients, purchase model details (one-time vs. subscription), and margin information.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "ingredients/dietary attributes (e.g., vegan, gluten-free, keto)",
+    "purchase model (one-time vs subscription)"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of your protein bars or a typical starter bundle?",
+    "Are these sold primarily as one-time purchases or on a subscription model?",
+    "What is your primary goal for the Disco campaign (e.g., new customer acquisition, ROAS, subscription sign-ups)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}
