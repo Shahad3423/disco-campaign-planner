@@ -1,50 +1,56 @@
-"""Which scoring constants actually matter? One-at-a-time sensitivity on the golden set.
+"""Which scoring constants actually matter? Global sensitivity (Morris screening) on the golden set.
 
-Each constant is moved to x0.5 and x1.5 of its value (probabilities/caps clipped to [0, 1]); all 15
-briefs are re-ranked from their cached intake profiles (no LLM calls), and we measure:
-  - top5_jaccard: overlap of the recommended set with the baseline's (1 = unchanged)
-  - d_precision / d_recall: change in precision / must-include recall@5 vs the golden labels
-Constants that barely move anything can stay as defaults; the ones that move rankings are the ones
-that need data (labels now, outcomes in production).
+Morris elementary effects (Morris 1991; Saltelli et al., "Global Sensitivity Analysis: The Primer"):
+every constant gets a range, we walk r random one-at-a-time trajectories through the joint space, and for
+each constant record how much the output moves when it alone changes, from many different starting points.
+  mu*   = mean |effect|      -> how much it matters overall
+  sigma = std of the effect  -> how much that depends on the OTHER constants (interactions / nonlinearity)
+Output = how much the recommendations move vs the current config (1 - top-5 Jaccard, averaged over the
+15 briefs), plus precision and must-include recall against the golden labels. All re-ranking uses the
+cached intake profiles: no LLM calls.
 
-    python -m disco_planner.eval.sensitivity
+    python -m disco_planner.eval.sensitivity [--trajectories 20]
 """
 from __future__ import annotations
 
+import argparse
 import copy
+import random
+import statistics
 from datetime import date
 
 import yaml
 
 from disco_planner.data import catalog
 from disco_planner.llm.provider import default_provider
-from disco_planner.planning import publisher_scoring
 from disco_planner.planning.intake import parse_brief
 from disco_planner.planning.publisher_scoring import rank_publishers
 
 TODAY = date(2026, 10, 30)
 EVAL_DIR = catalog.REPO_ROOT / "src" / "disco_planner" / "eval"
-
-# (config file, dotted path) for every tunable constant that lives in config
-PARAMS = [
-    ("scoring", "quality_weights.audience_fit"), ("scoring", "quality_weights.persona_fit"),
-    ("scoring", "quality_weights.notes_fit"), ("scoring", "quality_weights.scale"),
-    ("scoring", "quality_weights.seasonality"), ("scoring", "price_exponent"),
-    ("scoring", "category.category_only_cap"), ("scoring", "category.attribute_only_cap"),
-    ("scoring", "category.extra_specific_bonus"), ("scoring", "category.attribute_bonus"),
-    ("scoring", "penalties.notes_misaligned"), ("scoring", "recommend.min_score"),
-    ("scoring", "recommend.relative_to_top"), ("scoring", "recommend.min_category_fit"),
-    ("scoring", "recommend.strong_min_price_fit"), ("scoring", "personas.min_score"),
-    ("pricing", "priors.competitor_approval_probability"),
-]
-PROBABILITY_LIKE = {"category_only_cap", "attribute_only_cap", "notes_misaligned", "relative_to_top",
-                    "min_category_fit", "strong_min_price_fit", "competitor_approval_probability"}
+SKIP = {"max_publishers", "weak_fit_max_publishers", "min_selected", "max_selected", "lookahead_days",
+        "self_consistency_samples"}  # integers / non-scoring knobs
+ABSOLUTE_RANGES = {"quality_p": (-2.0, 2.0), "relevance_exponent": (0.25, 2.0), "price_exponent": (0.0, 1.5)}
 
 
-def _get(d: dict, path: str):
-    for k in path.split("."):
-        d = d[k]
-    return d
+def tunable_params(cfg: dict, prefix: str = "") -> list[tuple[str, float, float]]:
+    """(dotted path, low, high) for every numeric leaf of scoring.yaml we can move."""
+    out = []
+    for key, value in cfg.items():
+        path = f"{prefix}{key}"
+        if isinstance(value, dict):
+            if key in ("price_compat",):   # 25-cell lookup table: handled as one scale knob below
+                continue
+            out += tunable_params(value, path + ".")
+        elif isinstance(value, (int, float)) and not isinstance(value, bool) and key not in SKIP:
+            if key in ABSOLUTE_RANGES:
+                lo, hi = ABSOLUTE_RANGES[key]
+            else:
+                lo, hi = value * 0.5, value * 1.5
+                if value <= 1.0:
+                    hi = min(hi, 1.0)   # probabilities, caps, values on [0, 1]
+            out.append((path, lo, hi))
+    return out
 
 
 def _set(d: dict, path: str, value) -> None:
@@ -54,75 +60,85 @@ def _set(d: dict, path: str, value) -> None:
     d[last] = value
 
 
-def _metrics(profiles: dict, golden: dict) -> dict:
-    out = {}
+def evaluate(profiles: dict, golden: dict, base_rec: dict | None) -> dict:
+    jac, prec, rec_ = [], [], []
+    recs = {}
     for cid, profile in profiles.items():
         rec = [s.publisher_id for s in rank_publishers(profile, TODAY) if s.recommended]
+        recs[cid] = rec
         g = golden[cid]
-        must, ok = set(g.get("must_include") or []), set((g.get("must_include") or []) + (g.get("nice_to_have") or []) + (g.get("competitor_conflict") or []))
-        out[cid] = {
-            "rec": rec,
-            "recall": len(must & set(rec[:5])) / len(must) if must else None,
-            "precision": len(set(rec) & ok) / len(rec) if rec else None,
-        }
-    return out
-
-
-def _mean(xs):
-    xs = [x for x in xs if x is not None]
-    return sum(xs) / len(xs) if xs else 0.0
+        must = set(g.get("must_include") or [])
+        ok = must | set(g.get("nice_to_have") or []) | set(g.get("competitor_conflict") or [])
+        if rec:
+            prec.append(len(set(rec) & ok) / len(rec))
+        if must:
+            rec_.append(len(must & set(rec[:5])) / len(must))
+        if base_rec is not None and (rec or base_rec[cid]):
+            a, b = set(rec[:5]), set(base_rec[cid][:5])
+            jac.append(len(a & b) / len(a | b))
+    return {"recs": recs, "change": 1 - statistics.mean(jac) if jac else 0.0,
+            "precision": statistics.mean(prec) if prec else 0.0, "recall": statistics.mean(rec_) if rec_ else 0.0}
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--trajectories", type=int, default=20)
+    args = ap.parse_args()
+    random.seed(11)
+
     golden = {c["id"]: c for c in yaml.safe_load((EVAL_DIR / "golden.yaml").read_text())}
     provider = default_provider()
     profiles = {cid: parse_brief(c["text"], provider, TODAY) for cid, c in golden.items()}  # cached
-    base = _metrics(profiles, golden)
-    base_p, base_r = _mean(m["precision"] for m in base.values()), _mean(m["recall"] for m in base.values())
+
+    cfg = catalog.config("scoring")
+    original = copy.deepcopy(cfg)
+    params = tunable_params(original)
+    base = evaluate(profiles, golden, None)
+    k, levels = len(params), 4
+    delta = levels / (2 * (levels - 1))
+    grid = [i / (levels - 1) for i in range(levels)]
+
+    def run(unit: list[float]) -> dict:
+        cfg.clear()
+        cfg.update(copy.deepcopy(original))
+        for (path, lo, hi), u in zip(params, unit):
+            _set(cfg, path, lo + u * (hi - lo))
+        total = sum(cfg["quality_weights"].values())
+        cfg["quality_weights"] = {n: v / total for n, v in cfg["quality_weights"].items()}
+        return evaluate(profiles, golden, base["recs"])
+
+    effects = {p[0]: {"change": [], "precision": [], "recall": []} for p in params}
+    try:
+        for _ in range(args.trajectories):
+            x = [random.choice([g for g in grid if g + delta <= 1]) for _ in range(k)]
+            y_prev = run(x)
+            for i in random.sample(range(k), k):
+                x = x.copy()
+                x[i] += delta
+                y = run(x)
+                for m in ("change", "precision", "recall"):
+                    effects[params[i][0]][m].append((y[m] - y_prev[m]) / delta)
+                y_prev = y
+    finally:
+        cfg.clear()
+        cfg.update(original)
 
     rows = []
-    variants = [(cfg, path, f) for cfg, path in PARAMS for f in (0.5, 1.5)]
-    variants += [("code", "NEUTRAL", f) for f in (0.5, 1.5)]
-    for cfg_name, path, factor in variants:
-        if cfg_name == "code":
-            original = publisher_scoring.NEUTRAL
-            publisher_scoring.NEUTRAL = original * factor
-        else:
-            cfg = catalog.config(cfg_name)
-            saved = copy.deepcopy(cfg)
-            value = _get(cfg, path) * factor
-            if path.split(".")[-1] in PROBABILITY_LIKE:
-                value = min(1.0, value)
-            _set(cfg, path, value)
-            if path.startswith("quality_weights."):  # keep the weights summing to 1
-                total = sum(cfg["quality_weights"].values())
-                cfg["quality_weights"] = {k: v / total for k, v in cfg["quality_weights"].items()}
-        try:
-            m = _metrics(profiles, golden)
-        finally:
-            if cfg_name == "code":
-                publisher_scoring.NEUTRAL = original
-            else:
-                cfg.clear()
-                cfg.update(saved)
-        jac = _mean(
-            len(set(m[c]["rec"][:5]) & set(base[c]["rec"][:5])) / max(1, len(set(m[c]["rec"][:5]) | set(base[c]["rec"][:5])))
-            for c in m if base[c]["rec"] or m[c]["rec"]
-        )
-        rows.append((path, factor, round(jac, 3), round(_mean(x["precision"] for x in m.values()) - base_p, 3),
-                     round(_mean(x["recall"] for x in m.values()) - base_r, 3)))
-
-    # summarise per constant: the worse of its two perturbations
-    by_param = {}
-    for path, f, jac, dp, dr in rows:
-        cur = by_param.get(path)
-        if cur is None or jac < cur[0]:
-            by_param[path] = (jac, f, dp, dr)
-    ranked = sorted(by_param.items(), key=lambda kv: kv[1][0])
-    lines = ["# Scoring sensitivity (one-at-a-time, x0.5 / x1.5)", "",
-             f"Baseline: precision {base_p:.3f}, must-include recall@5 {base_r:.3f}. Lower top-5 Jaccard = rankings move more.", "",
-             "| constant | worst top-5 Jaccard | at factor | d precision | d recall |", "|---|---|---|---|---|"]
-    lines += [f"| {p} | {j} | x{f} | {dp:+} | {dr:+} |" for p, (j, f, dp, dr) in ranked]
+    for path, e in effects.items():
+        ch = e["change"]
+        rows.append((path, statistics.mean(abs(v) for v in ch), statistics.pstdev(ch),
+                     statistics.mean(e["precision"]), statistics.mean(e["recall"])))
+    rows.sort(key=lambda r: -r[1])
+    lines = [
+        "# Scoring sensitivity: Morris screening", "",
+        f"{k} constants, {args.trajectories} trajectories ({args.trajectories * (k + 1)} re-rankings of 15 briefs), "
+        f"each constant over [x0.5, x1.5] of its value (exponents/p over fixed ranges).",
+        f"Current config: precision {base['precision']:.3f}, must-include recall@5 {base['recall']:.3f}.", "",
+        "mu* = how much the top-5 moves when this constant moves across its range (0 = never; 1 = completely);",
+        "sigma = how much that depends on the other constants. Signed columns: average effect on precision/recall.", "",
+        "| constant | mu* (top-5 change) | sigma | effect on precision | effect on recall |", "|---|---|---|---|---|",
+    ]
+    lines += [f"| {p} | {mu:.3f} | {sd:.3f} | {dp:+.3f} | {dr:+.3f} |" for p, mu, sd, dp, dr in rows]
     out = catalog.REPO_ROOT / "reports" / "sensitivity.md"
     out.write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
