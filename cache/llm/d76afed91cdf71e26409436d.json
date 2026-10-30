@@ -1,0 +1,49 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "A bit generic for a wellness optimizer",
+        "Lacks specific ingredient or science metrics"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Body copy reads like product specs rather than a gift appeal",
+        "Missing gift-wrap and presentation messaging"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Body copy is identical to persona_010 variant",
+        "Lacks deep supply chain transparency or certifications"
+      ],
+      "passed": false
+    }
+  ]
+}

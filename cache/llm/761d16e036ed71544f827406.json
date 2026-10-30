@@ -1,0 +1,55 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Generic time-saving framing does not strongly highlight convenience or family appeal beyond standard copy"
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Lacks specific discount or bundle details which this persona specifically prefers"
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "References Halloween for a cleaning product, which feels awkward and unnatural for gifting"
+      ],
+      "passed": false
+    }
+  ]
+}

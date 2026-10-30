@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "A new kind of thing for moms",
+      "body": "Explore reviews and bundle offers for a new kind of thing for moms on your order today.",
+      "cta": "Shop Now",
+      "headline_no_name": "A new kind of thing for moms",
+      "angle": "clear value props",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, try something new",
+      "body": "Discover a new kind of thing for moms designed for your family today.",
+      "cta": "Learn More",
+      "headline_no_name": "Try something new today",
+      "angle": "family-friendly",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

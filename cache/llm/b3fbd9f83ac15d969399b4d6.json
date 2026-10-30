@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Invest in true Florentine craftsmanship",
+      "body": "Experience the timeless elegance of custom-fit Italian leather handbags, handcrafted in Florence to last a lifetime.",
+      "cta": "Explore the Collection",
+      "headline_no_name": "Invest in true Florentine craftsmanship",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Custom-fit leather handbags",
+        "Italian-made",
+        "Handcrafted in Florence"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Design your custom-fit leather handbag",
+      "body": "Handcrafted in Florence with exceptional artisanal production. Your custom piece is made to order and ships in 6 weeks.",
+      "cta": "Customize Yours",
+      "headline_no_name": "Design your custom-fit leather handbag",
+      "angle": "artisanal production",
+      "claims_used": [
+        "Custom-fit leather handbags",
+        "Handcrafted in Florence",
+        "Minimum order ships in 6 weeks"
+      ]
+    }
+  ]
+}

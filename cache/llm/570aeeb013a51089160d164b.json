@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Clean ingredients in every can",
+      "body": "Enjoy a functional cocktail alternative with transparent, plant-based adaptogens.",
+      "cta": "Shop Now",
+      "headline_no_name": "Clean ingredients in every can",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "Functional cocktail alternative"
+      ]
+    }
+  ]
+}

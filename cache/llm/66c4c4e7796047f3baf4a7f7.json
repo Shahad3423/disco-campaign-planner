@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "A new kind of thing for moms",
+      "body": "Discover a new kind of thing for moms designed for your budget. Read what other shoppers say about getting more value for your money.",
+      "cta": "Shop and save",
+      "headline_no_name": "A new kind of thing for moms",
+      "angle": "clear value props",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "A new kind of thing for moms",
+      "body": "Save time in your busy day with a new kind of thing for moms. Quick and simple solutions trusted by parents everywhere.",
+      "cta": "Try it today",
+      "headline_no_name": "A new kind of thing for moms",
+      "angle": "time-saving",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

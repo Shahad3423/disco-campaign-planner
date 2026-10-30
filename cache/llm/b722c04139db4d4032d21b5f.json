@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Upgrade your workout gear system",
+      "body": "Discover sustainable activewear for women designed for peak physical output. Premium quality engineered for your training regimen.",
+      "cta": "Shop activewear",
+      "headline_no_name": "Upgrade your workout gear system",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Looking for an impressive gift?",
+      "body": "Sustainable activewear for women made from recycled ocean plastic. A premium, thoughtful present priced between Lululemon and Girlfriend Collective.",
+      "cta": "Find the gift",
+      "headline_no_name": "Looking for an impressive gift?",
+      "angle": "giftable",
+      "claims_used": [
+        "Sustainable activewear brand for women",
+        "Made from recycled ocean plastic",
+        "Price point sits between Lululemon and Girlfriend Collective"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Engineered for your training",
+      "body": "High-performance sustainable activewear for women made from recycled ocean plastic. Built to move through your toughest workouts.",
+      "cta": "Shop performance",
+      "headline_no_name": "Engineered for your training",
+      "angle": "technical fabrics",
+      "claims_used": [
+        "Sustainable activewear brand for women",
+        "Made from recycled ocean plastic"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Transparently sustainable activewear",
+      "body": "Sustainable activewear for women made from recycled ocean plastic. Real environmental impact with a price point between Lululemon and Girlfriend.",
+      "cta": "Explore the range",
+      "headline_no_name": "Transparently sustainable activewear",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Sustainable activewear brand for women",
+        "Made from recycled ocean plastic",
+        "Price point sits between Lululemon and Girlfriend Collective"
+      ]
+    }
+  ]
+}

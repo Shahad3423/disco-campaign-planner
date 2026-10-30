@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, invest in true artisanal heritage.",
+      "body": "Experience Italian-made excellence with custom-fit leather handbags handcrafted in Florence. Average price point $1,200.",
+      "cta": "Explore",
+      "headline_no_name": "Invest in true artisanal heritage.",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Custom-fit leather handbags",
+        "Italian-made",
+        "Handcrafted in Florence",
+        "Average price point $1,200"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Your custom-fit Italian leather piece awaits.",
+      "body": "Handcrafted in Florence just for you. Minimum order ships in 6 weeks. Discover the aesthetic of true artisanal production.",
+      "cta": "Shop custom",
+      "headline_no_name": "Your custom-fit Italian leather piece awaits.",
+      "angle": "customization",
+      "claims_used": [
+        "Custom-fit leather handbags",
+        "Italian-made",
+        "Handcrafted in Florence",
+        "Minimum order ships in 6 weeks"
+      ]
+    }
+  ]
+}
