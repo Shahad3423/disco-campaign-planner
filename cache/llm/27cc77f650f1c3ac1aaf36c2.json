@@ -1,0 +1,58 @@
+{
+  "business_summary": "Interactive math, science, and computer science courses available on mobile and web via a monthly or yearly subscription.",
+  "product": "Interactive math, science, and CS courses (mobile and web)",
+  "is_consumer_product": true,
+  "price_point_usd": 120.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "students and adults",
+  "stated_claims": [
+    "Interactive math, science and CS courses on mobile and web.",
+    "Subscription is roughly $25/mo or $120/yr.",
+    "Curious adults and students who like to learn in small chunks."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Delivered digitally via mobile and web platforms instantly upon subscription.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold exclusively as a monthly ($25) or yearly ($120) subscription."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "The product is offered as a subscription ($25/mo or $120/yr)."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are highly aligned with computer science and math learning platforms."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The B2C digital subscription product and its target audience are clearly described.",
+  "missing_info": [
+    "Whether there is a free trial period",
+    "Specific age range/demographics of the target students",
+    "Primary marketing goal (conversions vs lead gen)"
+  ],
+  "clarifying_questions": [
+    "Do you offer a free trial or a free tier for users to test the courses?",
+    "Is your target student audience primarily K-12, college-aged, or adult learners?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
