@@ -54,6 +54,9 @@ def main() -> None:
             rows.append({**c, "error": f"{type(e).__name__}: {str(e)[:120]}"})
             print(f"  {c['id']} ERROR {type(e).__name__}", flush=True)
             continue
+        plans_dir = catalog.REPO_ROOT / "reports" / "holdout_plans"
+        plans_dir.mkdir(parents=True, exist_ok=True)
+        (plans_dir / f"{c['id']}.json").write_text(plan.model_dump_json())  # reused as auction competitors
         rec = [s for s in plan.publishers if s.recommended]
         copy = " ".join(f"{v.headline} {v.body}" for v in plan.creatives)
         rows.append({
