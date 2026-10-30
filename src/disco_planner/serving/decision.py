@@ -33,8 +33,11 @@ class Offer(BaseModel):
     pricing_model: str
     bid: float                     # final bid for THIS impression (after bid strategy)
     bid_breakdown: str = ""
-    expected_ctr: float
-    ecpm: float
+    expected_ctr: float            # at slot 1; slot effects applied in the auction
+    ecpm: float                    # ranking score = final bid x expected CTR x 1000
+    slot: int | None = None
+    price_paid: float | None = None  # second price, per click (CPC) or per 1,000 (CPM)
+    host_revenue_per_1000: float | None = None
     reasons: list[str]
 
 
@@ -177,6 +180,35 @@ def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: 
                            f"= ${bid:.2f}{capped}; ceiling ${ceiling:.2f}")
 
 
+def run_auction(offers: list[Offer], cfg: dict) -> tuple[list[Offer], list[str]]:
+    """Generalised second-price auction for the page's slots.
+    Rank by eCPM; drop anything below the reserve; slot i's CTR is scaled by position_ctr[i];
+    each winner pays the least that keeps its slot: next eCPM / (own CTR x 1000) + increment,
+    never above its own bid. The host earns its revenue share of what's actually paid."""
+    rev_share = catalog.config("pricing")["network"]["rev_share_to_publisher"]
+    notes = []
+    eligible = sorted((o for o in offers if o.ecpm >= cfg["reserve_ecpm"]), key=lambda o: -o.ecpm)
+    if len(eligible) < len(offers):
+        notes.append(f"{len(offers) - len(eligible)} campaign(s) below the reserve eCPM ${cfg['reserve_ecpm']:.2f}: slot left empty rather than filled with a weak offer")
+    winners = eligible[: cfg["slots"]]
+    for i, o in enumerate(winners):
+        pos = cfg["position_ctr"][i] if i < len(cfg["position_ctr"]) else cfg["position_ctr"][-1]
+        next_ecpm = eligible[i + 1].ecpm if i + 1 < len(eligible) else cfg["reserve_ecpm"]
+        if o.pricing_model == "CPM":
+            price = min(o.bid, next_ecpm + cfg["increment"])
+            host_rev = price * rev_share
+        else:
+            price = min(o.bid, next_ecpm / (o.expected_ctr * 1000) + cfg["increment"]) if o.expected_ctr else o.bid
+            host_rev = price * o.expected_ctr * pos * 1000 * rev_share
+        o.slot, o.price_paid, o.host_revenue_per_1000 = i + 1, round(price, 2), round(host_rev, 2)
+        o.expected_ctr = round(o.expected_ctr * pos, 4)
+        o.reasons.append(f"slot {i + 1}: pays ${price:.2f} {'CPM' if o.pricing_model == 'CPM' else 'per click'} "
+                         f"(second price; own bid ${o.bid:.2f})")
+    if len(eligible) > cfg["slots"]:
+        notes.append(f"{len(eligible) - cfg['slots']} eligible campaign(s) outbid for the {cfg['slots']} slots")
+    return winners, notes
+
+
 def serve(
     signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
     use_name: bool = True, use_household: bool = True,
@@ -232,15 +264,15 @@ def serve(
             reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
                      *ctx_why, f"bid {breakdown}", f"{'name inserted' if used else 'no-name headline'}"],
         ))
-    offers.sort(key=lambda o: -o.ecpm)
-    offers = offers[: cfg["ranking"]["max_offers"]]
+    offers, auction_notes = run_auction(offers, cfg["auction"])
+    reasons += auction_notes
     if not offers:
-        reasons.append("no approved campaign runs on this host")
+        reasons.append("no approved campaign runs on this host (or none clears the reserve)")
     top_offer = offers[0] if offers else None
     return ServeDecision(
         persona_posterior={catalog.persona_by_id()[k].name: v for k, v in posterior.items()},
         uncertain=uncertain, offers=offers,
         headline=top_offer.headline if top_offer else None, body=top_offer.body if top_offer else None,
         cta=top_offer.cta if top_offer else None, name_used="name inserted" in (top_offer.reasons if top_offer else []),
-        reasons=reasons + ([f"ranked {len(offers)} offers by eCPM = final bid x expected CTR x 1000 (bid phase: {phase})"] if offers else []),
+        reasons=reasons + ([f"auction: ranked by eCPM = final bid x expected CTR x 1000, second-price per slot (bid phase: {phase})"] if offers else []),
     )

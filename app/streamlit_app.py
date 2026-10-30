@@ -112,6 +112,9 @@ with tab_sim:
 
     st.subheader("Decision")
     plans = st.session_state.get("session_plans", []) + ui.load_all_cached_plans()
+    holdout = ui.load_holdout_plans()
+    if holdout and st.checkbox(f"Add the {len(holdout)} holdout brands as competing advertisers", value=True):
+        plans = plans + holdout
     decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing)
     if decision is not None:
         ui.render_decision(decision, plans)

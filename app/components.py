@@ -443,6 +443,18 @@ def render_features(features) -> None:
             "confidence": st.column_config.ProgressColumn("confidence", min_value=0, max_value=1, format="%.2f")})
 
 
+def load_holdout_plans() -> list[CampaignPlan]:
+    """The 100 holdout brands' plans, used as competing advertisers in the simulator's auction."""
+    folder = ROOT / "reports" / "holdout_plans"
+    plans = []
+    for path in sorted(folder.glob("*.json")) if folder.exists() else []:
+        try:
+            plans.append(CampaignPlan.model_validate_json(path.read_text()))
+        except Exception:  # an older plan shape shouldn't break the page
+            continue
+    return plans
+
+
 def try_serve(signals, now_utc: datetime, plans: list[CampaignPlan], **kwargs):
     """Call the serving decision engine if it exists yet. Returns (decision, None) or (None, reason)."""
     try:
@@ -472,8 +484,9 @@ def render_decision(decision, plans: list[CampaignPlan]) -> None:
             st.markdown(f"- {r}")
     offers = data.get("offers") or []
     if offers:
-        st.markdown("**Offers ranked by eCPM (final bid x expected CTR x 1000)**")
-        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("campaign", "pricing_model", "bid", "expected_ctr", "ecpm", "bid_breakdown")}
+        st.markdown("**Page auction: ranked by eCPM (final bid x expected CTR x 1000); each slot pays the second price**")
+        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("slot", "campaign", "pricing_model", "bid", "price_paid", "expected_ctr", "ecpm",
+                                                          "host_revenue_per_1000", "bid_breakdown")}
                                    for o in offers]), hide_index=True, width="stretch")
     headline, body, cta = (data.get(k) for k in ("headline", "body", "cta"))
     if headline and body and cta:

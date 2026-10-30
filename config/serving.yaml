@@ -28,3 +28,10 @@ context_boosts:
     tags: [sustainable]
     multiplier: 1.05
 moment_boost_max: 0.30          # a fully active, tag-matching calendar moment adds up to +30% CTR
+
+# Page auction (glossary: no need for real auction dynamics; this is the light, standard version).
+auction:
+  slots: 3                          # offers shown on one thank-you page (network max is 4)
+  position_ctr: [1.0, 0.75, 0.55]   # [assumed] relative CTR by slot; replace with measured position curves
+  reserve_ecpm: 1.0                 # [assumed] below this expected value per 1,000 views the slot stays empty
+  increment: 0.01                   # second price: pay just enough to beat the next bidder

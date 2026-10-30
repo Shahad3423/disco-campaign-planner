@@ -56,3 +56,22 @@ def test_learning_phase_ignores_conversion_likelihood(plans):
     sig = ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Michael")
     d = serve(sig, NOW, plans, phase="learning")
     assert all("conversion likelihood 1.00" in o.bid_breakdown for o in d.offers if o.pricing_model == "CPC")
+
+
+def _offer(ecpm, bid, ctr=0.01, model="CPC"):
+    from disco_planner.serving.decision import Offer
+    return Offer(campaign=f"c{ecpm}", publisher_id="pub_001", persona_id="persona_001", headline="h", body="b",
+                 cta="c", pricing_model=model, bid=bid, expected_ctr=ctr, ecpm=ecpm, reasons=[])
+
+
+def test_second_price_never_exceeds_bid_and_is_ordered():
+    from disco_planner.data import catalog
+    from disco_planner.serving.decision import run_auction
+    cfg = catalog.config("serving")["auction"]
+    offers = [_offer(40, 4.0), _offer(30, 3.0), _offer(20, 2.0), _offer(10, 1.0), _offer(0.5, 0.05)]
+    winners, notes = run_auction(offers, cfg)
+    assert [w.slot for w in winners] == [1, 2, 3]
+    assert all(w.price_paid <= w.bid for w in winners)
+    # slot 1 pays what it takes to beat slot 2: 30 / (0.01 x 1000) + 0.01 = 3.01
+    assert abs(winners[0].price_paid - 3.01) < 1e-6
+    assert any("reserve" in n for n in notes) and any("outbid" in n for n in notes)
