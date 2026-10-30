@@ -1,0 +1,84 @@
+{
+  "business_summary": "Colorful, gender-neutral basics for babies and kids priced between $12-30, targeting parents of children aged 0-12 who value durability and bundle purchases.",
+  "product": "Kids and baby basics apparel",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "0-12",
+  "stated_claims": [
+    "Colorful, gender-neutral basics for babies and kids",
+    "Pieces are $12-30",
+    "Hand-me-down-able clothing"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "gender-neutral",
+    "durability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "The brand explicitly sells everyday basics."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The core product is children's clothing."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Hand-me-down-able clothing implies durability and a sustainable lifecycle."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby and kids' apparel is a highly popular gifting category."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "apparel",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of family households, which is a direct demographic match for parents of kids 0-12."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting season uplift, which aligns well with giftable kids' basics."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features high-AOV, conservative women's apparel, which is a poor match for budget-friendly, colorful kids' basics."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Average Order Value (AOV)",
+    "Primary acquisition goal or target CPA",
+    "Whether they offer subscription options for their bundles"
+  ],
+  "clarifying_questions": [
+    "What is your typical Average Order Value (AOV) for bundle purchases?",
+    "Do you offer a subscription model for your basics, or are they strictly one-time purchases?",
+    "What is your target Cost Per Acquisition (CPA) for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

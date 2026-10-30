@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Welcome your new family member, {first_name}!",
+      "body": "Support your kitten's first three months with curated toys, food samples to try, and a booklet on what to expect.",
+      "cta": "Start their box",
+      "headline_no_name": "Welcome your new family member!",
+      "angle": "Emotional connection and quality care for a new pet family member.",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Kitten care made easy for you, {first_name}",
+      "body": "Get toys, food samples, and a helpful booklet for your kitten's first three months delivered directly to your door.",
+      "cta": "Start subscription",
+      "headline_no_name": "Kitten care made easy",
+      "angle": "Convenience and time-saving subscription model for busy households.",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "The ultimate kitten value bundle, {first_name}",
+      "body": "Highly rated by new owners. Get toys, food samples, and a helpful booklet for their first three months in one affordable bundle.",
+      "cta": "Get the bundle",
+      "headline_no_name": "The ultimate kitten value bundle",
+      "angle": "Clear price-to-value bundle articulation and social proof from reviews.",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

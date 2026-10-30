@@ -1,0 +1,60 @@
+{
+  "business_summary": "Direct-to-consumer brand selling wireless speakers and soundbars.",
+  "product": "Wireless speakers and soundbars",
+  "is_consumer_product": true,
+  "price_point_usd": 120.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Home audio products fit naturally into home-focused retail and decor."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Targeted towards tech-forward households."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers are a great match for premium home audio products."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events drive purchases for both cookware/kitchen and home audio."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clearly defined; minor missing details like exact purchase model can be addressed with clarifying questions.",
+  "missing_info": [
+    "purchase_model",
+    "profit_margin",
+    "shipping_timeline"
+  ],
+  "clarifying_questions": [
+    "What is your exact product margin for affiliate or network payouts?",
+    "Are these purchases strictly one-time or do you offer any subscription services?",
+    "Do you have a preferred shipping window or fulfillment timeline?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

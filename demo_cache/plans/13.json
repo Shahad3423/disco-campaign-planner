@@ -26,14 +26,14 @@
     "why": "The core product category is workout supplements."
    },
    {
-    "tag": "fitness_classes",
-    "weight": 0.417,
-    "why": "Attendees of fitness classes are frequent users of workout supplements."
-   },
-   {
     "tag": "activewear",
     "weight": 0.417,
     "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
+   },
+   {
+    "tag": "fitness_classes",
+    "weight": 0.417,
+    "why": "Attendees of fitness classes are frequent users of workout supplements."
    },
    {
     "tag": "wellness_dtc",
@@ -101,7 +101,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.3035,
+   "score": 0.6595,
    "components": [
     {
      "name": "category_fit",
@@ -119,7 +119,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -147,15 +147,15 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells supplements (100% of samples agree); may block the ad"
+    "competitor_conflict: host also sells supplements (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5)). Flags: competitor_conflict: host sells supplements (100% of samples agree); may block the ad"
+   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.6)). Flags: competitor_conflict: host also sells supplements (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.2761,
+   "score": 0.3217,
    "components": [
     {
      "name": "category_fit",
@@ -173,7 +173,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -200,14 +200,16 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [],
+   "flags": [
+    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   ],
    "recommended": true,
-   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
+   "reason": "Recommended as fallback: matches activewear (specific) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.255,
+   "score": 0.2971,
    "components": [
     {
      "name": "category_fit",
@@ -225,7 +227,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -253,13 +255,13 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits budget (multiplier ^0.5))."
+   "recommended": false,
+   "reason": "Excluded: score 0.30 below cutoff 0.33; weakest signal category_fit (matches fitness_classes (specific) (multiplier))."
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.2337,
+   "score": 0.2722,
    "components": [
     {
      "name": "category_fit",
@@ -277,7 +279,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -305,8 +307,8 @@
     }
    ],
    "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
+   "recommended": false,
+   "reason": "Excluded: score 0.27 below cutoff 0.33; weakest signal category_fit (matches activewear (specific) (multiplier))."
   },
   {
    "publisher_id": "pub_001",
@@ -329,7 +331,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -381,7 +383,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -433,7 +435,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -485,7 +487,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -537,7 +539,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -589,7 +591,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -641,7 +643,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -693,7 +695,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -745,7 +747,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -797,7 +799,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -849,7 +851,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -901,7 +903,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -953,7 +955,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income high suits budget (multiplier ^0.5)"
+     "detail": "host income high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1005,7 +1007,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1057,7 +1059,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid suits budget (multiplier ^0.5)"
+     "detail": "host income mid suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1109,7 +1111,7 @@
      "name": "price_fit",
      "value": 0.8,
      "weight": 1.0,
-     "detail": "host income mid-high suits budget (multiplier ^0.5)"
+     "detail": "host income mid-high suits budget (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1153,7 +1155,6 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_017",
     "pub_012",
     "pub_002"
    ]
@@ -1170,8 +1171,7 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002",
-    "pub_003"
+    "pub_002"
    ]
   },
   {
@@ -1185,9 +1185,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_012"
    ]
   },
   {
@@ -1202,8 +1201,7 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002",
-    "pub_017"
+    "pub_002"
    ]
   },
   {
@@ -1217,9 +1215,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_003",
-    "pub_017",
-    "pub_002"
+    "pub_002",
+    "pub_012"
    ]
   },
   {
@@ -1235,8 +1232,7 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002",
-    "pub_003"
+    "pub_002"
    ]
   },
   {
@@ -1250,9 +1246,8 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_012"
    ]
   },
   {
@@ -1266,25 +1261,24 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_017",
-    "pub_003",
-    "pub_002"
+    "pub_002",
+    "pub_012"
    ]
   },
   {
    "persona_id": "persona_008",
    "persona_name": "The Value-Conscious Shopper",
    "score": 0.0,
-   "selected": false,
+   "selected": true,
    "reasons": [
+    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.72); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (budget product vs high price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
     "pub_002",
-    "pub_017",
-    "pub_003"
+    "pub_012"
    ]
   },
   {
@@ -1298,20 +1292,19 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_017",
     "pub_002",
-    "pub_003"
+    "pub_012"
    ]
   }
  ],
  "creatives": [
   {
    "persona_id": "persona_009",
-   "headline": "Upgrade your stack for less, {first_name}",
-   "body": "Same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
-   "cta": "Shop & Save",
-   "headline_no_name": "Upgrade your stack for half the cost",
-   "angle": "performance claims",
+   "headline": "{first_name}, get identical formulas for your training.",
+   "body": "Power your performance with the exact same formulations as expensive brands. We compete on price, not marketing, to fuel your workouts.",
+   "cta": "Shop formulations",
+   "headline_no_name": "Get identical formulas for your training.",
+   "angle": "High-performance formulations identical to premium brands",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
     "We compete on price, not on marketing."
@@ -1319,14 +1312,26 @@
   },
   {
    "persona_id": "persona_001",
-   "headline": "Optimize your stack, {first_name}",
-   "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
-   "cta": "View Formulations",
-   "headline_no_name": "Optimize your supplement stack",
-   "angle": "ingredient transparency",
+   "headline": "{first_name}, optimize your system with identical formulas.",
+   "body": "Optimize your system with the exact same formulations as expensive brands. We compete on price, not on marketing.",
+   "cta": "Shop formulations",
+   "headline_no_name": "Optimize your system with identical formulations.",
+   "angle": "Identical active formulations for precise system optimization",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
     "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "headline": "Cut your supplement spend in half, {first_name}",
+   "body": "Why pay double? We offer the same formulations as the expensive brands for half the cost because we compete on price, not marketing.",
+   "cta": "Shop half-price",
+   "headline_no_name": "Cut your supplement spend in half",
+   "angle": "Direct price comparison and value-forward positioning",
+   "claims_used": [
+    "We compete on price, not on marketing.",
+    "Same formulations as the expensive brands for half the cost."
    ]
   }
  ],
@@ -1348,6 +1353,15 @@
    "distinct_from_others": true,
    "issues": [],
    "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1362,136 +1376,160 @@
    "price_source": "tier_default",
    "gross_margin": 0.65,
    "margin_source": "category_default",
+   "cpa_source": "margin",
    "expected_orders": 2.5,
    "max_affordable_cac": 40.62,
    "target_cpa": 28.44,
    "assumptions": [
     "Price not given; assumed $25 for a 'budget' product.",
-    "Gross margin not given; assumed 65% (typical for wellness_dtc).",
     "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
+    "No target CPA/ROAS or margin given; assumed 65% gross margin (typical for wellness_dtc). Give a target CPA to replace this.",
     "Target CPA = 70% of max affordable CAC ($25 x 65% margin x 2.5 orders = $40.62)."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $28.44 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $28.44 x click-to-purchase rate (1.3%-4.6% for wellness_dtc). Clicks are observable without trusting a pixel, so both sides can verify billing.",
    "cpc_bid": {
-    "low": 0.43,
-    "mid": 0.85,
-    "high": 1.42
+    "low": 0.37,
+    "mid": 0.74,
+    "high": 1.29
    },
    "cpm_bid": null,
    "target_cpa": 28.44,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1570.0,
+   "monthly_budget_usd": 620.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 52.33,
+   "delivery_goal": "budget",
+   "expected_impressions": 47285,
+   "expected_reach": 29553,
+   "goal_feasible": true,
+   "daily_cap_usd": 20.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1570.59,
+   "learning_budget_needed_usd": 624.71,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.284,
-     "budget_usd": 446.03,
-     "cpc_bid_usd": 1.19,
-     "start_bid_usd": 0.83,
+     "share": 0.672,
+     "budget_usd": 416.72,
+     "cpc_bid_usd": 1.04,
+     "start_bid_usd": 0.73,
      "expected_clicks": {
-      "low": 300.0,
-      "mid": 375.0,
-      "high": 450.0
+      "low": 321.0,
+      "mid": 401.0,
+      "high": 481.0
      },
      "expected_conversions": {
-      "low": 7.9,
-      "mid": 15.7,
-      "high": 26.2
+      "low": 7.3,
+      "mid": 14.6,
+      "high": 25.5
      },
-     "capacity_usd": 1679.33,
+     "capacity_usd": 3669.12,
+     "expected_impressions": 23851,
+     "expected_reach": 14907,
      "requires_host_approval": true,
-     "rationale": "score 0.30 -> fit x1.40 on CTR/CVR; max bid $1.19 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.66 -> relative fit x1.40 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.258,
-     "budget_usd": 405.76,
-     "cpc_bid_usd": 1.13,
-     "start_bid_usd": 0.79,
+     "share": 0.328,
+     "budget_usd": 203.28,
+     "cpc_bid_usd": 0.73,
+     "start_bid_usd": 0.51,
      "expected_clicks": {
-      "low": 287.0,
-      "mid": 359.0,
-      "high": 431.0
+      "low": 223.0,
+      "mid": 278.0,
+      "high": 334.0
      },
      "expected_conversions": {
-      "low": 7.2,
-      "mid": 14.3,
-      "high": 23.8
+      "low": 3.6,
+      "mid": 7.2,
+      "high": 12.5
      },
-     "capacity_usd": 19805.11,
+     "capacity_usd": 9541.9,
+     "expected_impressions": 23434,
+     "expected_reach": 14646,
      "requires_host_approval": false,
-     "rationale": "score 0.28 -> fit x1.33 on CTR/CVR; max bid $1.13 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
-    {
-     "publisher_id": "pub_003",
-     "publisher_name": "Studiogrid",
-     "share": 0.239,
-     "budget_usd": 374.75,
-     "cpc_bid_usd": 1.09,
-     "start_bid_usd": 0.76,
-     "expected_clicks": {
-      "low": 275.0,
-      "mid": 344.0,
-      "high": 413.0
-     },
-     "expected_conversions": {
-      "low": 6.6,
-      "mid": 13.1,
-      "high": 21.9
-     },
-     "capacity_usd": 11315.08,
-     "requires_host_approval": false,
-     "rationale": "score 0.26 -> fit x1.27 on CTR/CVR; max bid $1.09 (break-even at target CPA), start at 70% and raise only if under-delivering"
-    },
-    {
-     "publisher_id": "pub_017",
-     "publisher_name": "Cloudfoot",
-     "share": 0.219,
-     "budget_usd": 343.45,
-     "cpc_bid_usd": 1.04,
-     "start_bid_usd": 0.73,
-     "expected_clicks": {
-      "low": 264.0,
-      "mid": 330.0,
-      "high": 396.0
-     },
-     "expected_conversions": {
-      "low": 6.0,
-      "mid": 12.0,
-      "high": 20.1
-     },
-     "capacity_usd": 4400.99,
-     "requires_host_approval": false,
-     "rationale": "score 0.23 -> fit x1.22 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70% and raise only if under-delivering"
+     "rationale": "score 0.32 -> relative fit x0.99 on CTR/CVR; max bid $0.73 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,570, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $620, the smallest budget that buys 300 clicks per host."
    ]
+  },
+  "bid_strategy": {
+   "current_phase": "learning",
+   "phases": [
+    {
+     "name": "learning",
+     "until": "14 days or 300 clicks per host",
+     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
+     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+    },
+    {
+     "name": "enhanced_cpc",
+     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
+     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
+     "why": "spend more on shoppers who look likely to buy, never above break-even"
+    },
+    {
+     "name": "target_cpa",
+     "rule": "Disco bids automatically to hit $28.44 CPA",
+     "why": "only once Disco can predict this brand's conversion rate"
+    }
+   ],
+   "host_bids": [
+    {
+     "publisher_id": "pub_012",
+     "start_bid": 0.73,
+     "max_bid": 1.04,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_002",
+     "start_bid": 0.51,
+     "max_bid": 0.73,
+     "floor": 0.25
+    }
+   ],
+   "adjustments": [
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
+    },
+    {
+     "signal": "pacing",
+     "min_multiplier": 0.85,
+     "max_multiplier": 1.15,
+     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    }
+   ],
+   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
   },
   "targeting": {
    "publishers_include": [
     "pub_002",
-    "pub_003",
-    "pub_012",
-    "pub_017"
+    "pub_012"
    ],
    "publishers_exclude": [
+    {
+     "id": "pub_003",
+     "reason": "Excluded: score 0.30 below cutoff 0.33; weakest signal category_fit (matches fitness_classes (specific) (multiplier))."
+    },
+    {
+     "id": "pub_017",
+     "reason": "Excluded: score 0.27 below cutoff 0.33; weakest signal category_fit (matches activewear (specific) (multiplier))."
+    },
     {
      "id": "pub_001",
      "reason": "Excluded: no category link (multiplier) for this product."
@@ -1559,7 +1597,8 @@
    ],
    "personas": [
     "persona_009",
-    "persona_001"
+    "persona_001",
+    "persona_008"
    ],
    "geo": "US (no advertiser geo restriction stated)",
    "serve_time_signals": {
@@ -1576,27 +1615,37 @@
     "variant_id": "v1",
     "persona_id": "persona_009",
     "publisher_ids": [
-     "pub_017",
      "pub_012",
      "pub_002"
     ],
-    "headline_template": "Upgrade your stack for less, {first_name}",
-    "headline_no_name": "Upgrade your stack for half the cost",
-    "body": "Same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
-    "cta": "Shop & Save"
+    "headline_template": "{first_name}, get identical formulas for your training.",
+    "headline_no_name": "Get identical formulas for your training.",
+    "body": "Power your performance with the exact same formulations as expensive brands. We compete on price, not marketing, to fuel your workouts.",
+    "cta": "Shop formulations"
    },
    {
     "variant_id": "v2",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_012",
-     "pub_002",
-     "pub_003"
+     "pub_002"
     ],
-    "headline_template": "Optimize your stack, {first_name}",
-    "headline_no_name": "Optimize your supplement stack",
-    "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
-    "cta": "View Formulations"
+    "headline_template": "{first_name}, optimize your system with identical formulas.",
+    "headline_no_name": "Optimize your system with identical formulations.",
+    "body": "Optimize your system with the exact same formulations as expensive brands. We compete on price, not on marketing.",
+    "cta": "Shop formulations"
+   },
+   {
+    "variant_id": "v3",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_002",
+     "pub_012"
+    ],
+    "headline_template": "Cut your supplement spend in half, {first_name}",
+    "headline_no_name": "Cut your supplement spend in half",
+    "body": "Why pay double? We offer the same formulations as the expensive brands for half the cost because we compete on price, not marketing.",
+    "cta": "Shop half-price"
    }
   ],
   "frequency_cap": {
@@ -1610,7 +1659,8 @@
    ],
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_012"
+    "pub_012",
+    "pub_002"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1633,10 +1683,13 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 33.34
  },
  "creative_log": {
-  "rounds": 1,
-  "rewritten": []
+  "rounds": 2,
+  "rewritten": [
+   "persona_009",
+   "persona_001"
+  ]
  }
 }

@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your backcountry system, {first_name}",
+      "body": "Technical outerwear designed for serious backcountry skiers. Optimize your mountain system with the actual shells that patrollers wear.",
+      "cta": "Shop our shells",
+      "headline_no_name": "Optimize your backcountry system",
+      "angle": "Framing technical outerwear as a high-performance system validated by the field-testing of ski patrollers.",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    }
+  ]
+}

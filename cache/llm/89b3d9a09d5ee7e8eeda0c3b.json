@@ -1,0 +1,94 @@
+{
+  "business_summary": "A non-profit organization dedicated to ending the euthanasia of cats and dogs in shelters, seeking to acquire monthly recurring donors through checkout donation asks targeting pet owners.",
+  "product": "Monthly recurring donations to support animal shelter efforts",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Working to end the killing of dogs and cats in shelters."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "animal welfare",
+    "pet adoption",
+    "social good"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "The advertiser specifically targets pet owners who care about shelter animal adoption."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Shoppers buying pet supplies are highly likely to be pet owners."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Shoppers purchasing pet food are pet owners, matching the primary target demographic."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The advertiser's goal is to sign up monthly recurring donors."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only programs",
+      "evidence": "We're looking for monthly donors"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "A subscription-heavy pet brand whose owners are highly invested in their pets' health."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "The largest pet audience in the catalog, offering maximum reach to pet owners."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "The audience is explicitly noted for responding well to social-good messaging."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennial audience that treats dogs as family, aligning strongly with animal rescue and welfare."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The advertiser clearly outlines their goal (monthly donors), product (donations), and target demographic (pet owners/adoption advocates). This can easily be planned using pet-focused publishers.",
+  "missing_info": [
+    "suggested monthly donation tiers",
+    "tax-exempt/501(c)(3) status confirmation",
+    "preferred checkout integration style (widget vs. post-purchase offer page)"
+  ],
+  "clarifying_questions": [
+    "What are the recommended monthly donation amounts you'd like to present to shoppers?",
+    "Is your organization a registered 501(c)(3) non-profit, making these donations tax-deductible?",
+    "Do you prefer a post-purchase redirect to your monthly donation sign-up page, or an in-cart donation add-on?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,75 @@
+{
+  "business_summary": "Wireless speakers and soundbars ranging from $120 to $900, targeting home audio fans, new home owners, and tech-forward households.",
+  "product": "Wireless speakers and soundbars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Wireless speakers and soundbars",
+    "Price range of $120-$900",
+    "Targeted at home audio fans, new home owners, and tech-forward households"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "The product is designed for home audio setups and specifically targets new home owners."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Speakers and soundbars are common household electronics."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Premium home audio equipment is a popular high-end gift, especially for housewarmings."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "household"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed's design-conscious urban/suburban buyers with high home cross-sell are a strong fit for premium home audio."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that 'new-home life events drive purchase', which perfectly aligns with the advertiser's target of new home owners."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's audience of 'tech-adjacent urban professionals' aligns well with 'tech-forward households'."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, price range, and target audiences are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Exact average order value (AOV)",
+    "Fulfillment and shipping details",
+    "Return policy"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) across the speaker and soundbar lines?",
+    "Do you offer free shipping or have standard delivery timelines?",
+    "What is your return policy for these high-value electronics?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

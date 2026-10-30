@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "Your dog is family, {first_name}",
+      "body": "Show them love with mealtime they will look forward to. Crafted for the four-legged family members who deserve the absolute best.",
+      "cta": "Shop premium food",
+      "headline_no_name": "Your dog is family",
+      "angle": "emotional connection and treating pets as family members",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Simplify your dog food routine, {first_name}",
+      "body": "One less thing to worry about. Get reliable, automated dog food deliveries right to your door, trusted by busy families everywhere.",
+      "cta": "Start subscription",
+      "headline_no_name": "Simplify your dog food routine",
+      "angle": "time-saving convenience and family-friendly trust",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "A Halloween treat for your dog, {first_name}",
+      "body": "Skip the tricks this Halloween. Set up a quick dog food subscription today and get fast, seamless delivery straight to your door.",
+      "cta": "Subscribe in seconds",
+      "headline_no_name": "A Halloween treat for your dog",
+      "angle": "speed, easy subscription setup, and seasonal Halloween theme",
+      "claims_used": []
+    }
+  ]
+}

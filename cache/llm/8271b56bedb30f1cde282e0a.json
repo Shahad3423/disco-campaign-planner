@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Premium home audio for {first_name}'s residence",
+      "body": "Discover wireless speakers and soundbars designed for home audio fans, with pricing from $120 to $900.",
+      "cta": "Shop soundbars",
+      "headline_no_name": "Premium home audio for your residence",
+      "angle": "understated quality and classic craftsmanship appeal",
+      "claims_used": [
+        "Wireless speakers and soundbars",
+        "Price range of $120-$900",
+        "Targeted at home audio fans, new home owners, and tech-forward households"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Give {first_name} the gift of premium sound",
+      "body": "Perfect for new home owners and audio fans. Explore wireless speakers and soundbars ranging from $120 to $900.",
+      "cta": "Shop speakers",
+      "headline_no_name": "Give the gift of premium sound",
+      "angle": "premium gift-giving focus for new homeowners",
+      "claims_used": [
+        "Wireless speakers and soundbars",
+        "Price range of $120-$900",
+        "Targeted at home audio fans, new home owners, and tech-forward households"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, upgrade your family movie nights",
+      "body": "Easy wireless speakers and soundbars for tech-forward households. Perfect for Halloween movie nights, from $120 to $900.",
+      "cta": "Shop soundbars",
+      "headline_no_name": "Upgrade your family movie nights",
+      "angle": "family-friendly entertainment and easy setup with a Halloween seasonal touch",
+      "claims_used": [
+        "Wireless speakers and soundbars",
+        "Price range of $120-$900",
+        "Targeted at home audio fans, new home owners, and tech-forward households"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Transparent audio options for {first_name}",
+      "body": "Straightforward wireless speakers and soundbars for tech-forward homes. Clear pricing from $120 to $900 with no hidden fees.",
+      "cta": "Shop audio gear",
+      "headline_no_name": "Transparent home audio options",
+      "angle": "radical transparency and straightforward product facts to avoid greenwashing skepticism",
+      "claims_used": [
+        "Wireless speakers and soundbars",
+        "Price range of $120-$900",
+        "Targeted at home audio fans, new home owners, and tech-forward households"
+      ]
+    }
+  ]
+}

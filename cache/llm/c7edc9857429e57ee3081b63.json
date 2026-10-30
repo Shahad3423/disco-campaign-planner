@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, the $15 starter set parents trust.",
+      "body": "The straightforward routine parents recommend for men sick of overpriced drugstore cartridges. Get a complete starter set for just $15.",
+      "cta": "Shop $15 starter set",
+      "headline_no_name": "The simple $15 starter set parents trust.",
+      "angle": "family-friendly, trusted by parents, and time-saving framing",
+      "claims_used": [
+        "Starter set $15",
+        "For men 20-40 who are sick of overpriced drugstore cartridges"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, the perfect $15 grooming gift set.",
+      "body": "An impressive, complete gift set for men aged 20-40 who are ready to replace overpriced drugstore cartridges. Get the starter set for $15.",
+      "cta": "Gift the starter set",
+      "headline_no_name": "The perfect $15 grooming gift set for men.",
+      "angle": "giftable, premium-looking complete set presentation",
+      "claims_used": [
+        "Starter set $15",
+        "For men 20-40 who are sick of overpriced drugstore cartridges"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, gift a custom-fit Italian masterpiece",
+      "body": "Handcrafted in Florence, these custom-fit leather handbags are the ultimate bespoke gift. Italian-made and worth the 6-week wait.",
+      "cta": "Gift a custom bag",
+      "headline_no_name": "Gift a custom-fit Italian masterpiece",
+      "angle": "Bespoke planned gifting",
+      "claims_used": [
+        "Custom-fit leather handbags",
+        "Italian-made",
+        "Handcrafted in Florence"
+      ]
+    }
+  ]
+}

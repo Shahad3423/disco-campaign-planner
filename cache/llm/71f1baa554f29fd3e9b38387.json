@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Choose sustainable organic cotton, {first_name}",
+      "body": "Get matching-family pajama sets and kids' clothing made from sustainable, certified organic cotton.",
+      "cta": "Shop organic cotton",
+      "headline_no_name": "Choose sustainable organic cotton pajamas",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Organic cotton family pajamas and kids' clothing"
+      ]
+    }
+  ]
+}

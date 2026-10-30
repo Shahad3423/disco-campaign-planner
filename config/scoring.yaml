@@ -15,10 +15,10 @@ quality_weights:
 #   score = category_fit^relevance_exponent x price_fit^price_exponent x M_p(quality components; weights)
 # M_p is the weighted power mean: p = 1 weighted average (today), p -> 0 geometric mean, p = -inf minimum.
 # p sets how much a strong signal can make up for a weak one; exponents are what a log-linear model learns.
-# Fitted from 331 order-consistent LLM-judge pairs on the holdout brands (reports/fit_scoring.md), MAP with
-# the previous hand-set values (1.0, 0.5, 1.0) as the prior; within noise of them, but label-supported.
-relevance_exponent: 0.8
-price_exponent: 0.6
+# Hand-set. A fit is only adopted if it holds on the holdout TEST brands (eval/holdout_split.yaml);
+# an earlier fit used holdout pairs for training and was withdrawn (EXPERIMENTS.md).
+relevance_exponent: 1.0
+price_exponent: 0.5
 quality_p: 1.0
 
 category:

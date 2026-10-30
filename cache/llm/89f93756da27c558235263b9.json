@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, try this new thing for moms",
+      "body": "Claim your exclusive checkout offer on a new kind of thing for moms.",
+      "cta": "Claim my offer",
+      "headline_no_name": "Try this new thing for moms",
+      "angle": "discount-forward",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "A new kind of thing for moms, {first_name}",
+      "body": "Add something new to your daily routine. Discover a new kind of thing for moms.",
+      "cta": "Shop the new thing",
+      "headline_no_name": "A new kind of thing for moms",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, discover a new option for moms",
+      "body": "Looking for something new? Explore a new kind of thing for moms.",
+      "cta": "Shop the new product",
+      "headline_no_name": "Discover a new option for moms",
+      "angle": "family-friendly",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

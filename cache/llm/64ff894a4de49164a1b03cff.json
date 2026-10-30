@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, a spooktacular start for your kitten",
+      "body": "Treat your new family member this Halloween. Get toys, food samples, and a guide for their first three months of life.",
+      "cta": "Start subscription",
+      "headline_no_name": "A spooktacular start for your kitten",
+      "angle": "emotional connection with a seasonal Halloween touch for a new family member",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, kitten care made easy",
+      "body": "Save time with a subscription covering their first three months. Get toys, food samples, and a helpful guide delivered to your door.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Kitten care made easy",
+      "angle": "time-saving and convenience-focused subscription box",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, get your kitten starter bundle",
+      "body": "Get toys, food samples, and an informational booklet for their first three months of life, all bundled in one convenient subscription.",
+      "cta": "Get the starter box",
+      "headline_no_name": "Get your kitten starter bundle",
+      "angle": "clear value proposition focusing on the bundle aspect of the subscription",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

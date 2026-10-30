@@ -1,0 +1,104 @@
+{
+  "business_summary": "A budget-friendly brand selling natural personal care essentials, specifically toothpaste and deodorant, priced around $5.",
+  "product": "Natural toothpaste and deodorant",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Natural toothpaste and deodorant",
+    "Cheap, like $5 or so"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "natural"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "The advertiser explicitly describes their products as natural toothpaste and deodorant."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Toothpaste and deodorant are daily personal care essentials typically kept in the bathroom."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Personal care products like deodorant and oral care fall under the broader beauty and personal care category."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Natural personal care products are highly relevant to wellness-focused DTC shoppers."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Consumers looking for natural toothpaste and deodorant are highly likely to seek non-toxic alternatives."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "clean_beauty",
+    "wellness",
+    "household",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_006",
+      "conflict": "vague eco claims",
+      "evidence": "\"Natural toothpaste and deodorant, you know the stuff.\""
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "ingredient transparency",
+      "evidence": "\"Natural toothpaste and deodorant, you know the stuff. Just show it to whoever.\""
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "A cheap ($5) daily essential is highly impulse-friendly and fits Swiftcart's convenience/grocery basket profile."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's values-driven, natural-seeking audience aligns well with natural personal care products."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's audience is highly skeptical of unsubstantiated health claims, which clashes with the advertiser's vague 'natural... you know the stuff' positioning."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's high-AOV, conservative, affluent audience is unlikely to respond to a generic, ultra-cheap ($5) pitch."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product type (natural toothpaste and deodorant) and budget price point ($5) are clear enough to map to relevant personal care, wellness, and grocery publishers.",
+  "missing_info": [
+    "exact pricing and shipping costs",
+    "subscription availability",
+    "specific ingredients or certifications for the 'natural' claim",
+    "brand assets or specific target demographics"
+  ],
+  "clarifying_questions": [
+    "Do you offer these products as a subscription, or are they one-time purchases only?",
+    "What are your shipping rates and delivery times for a $5 item?",
+    "Do you have any specific certifications (e.g., organic, cruelty-free, fluoride-free) that we can highlight to wellness shoppers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

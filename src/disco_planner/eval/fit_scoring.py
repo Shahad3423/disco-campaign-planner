@@ -8,8 +8,9 @@ beta (scale). A Gaussian prior pulls every parameter toward the current hand-set
 with a few hundred labels the data can move what it has evidence for and leave the rest. That is also the
 production story: today's config is the prior; logged outcomes update it.
 
-Protocol (no leakage): train labels = LLM-judge pairs on the 100-brand HOLDOUT; cross-validated by
-advertiser; final check = the 15 golden examples (labelled independently, never used for fitting).
+Protocol (no leakage): the 100-brand holdout is split (eval/holdout_split.yaml). Fit ONLY on judge pairs from
+the 50 DEV brands (cross-validated by advertiser); report on the 50 TEST brands' pairs (never used to fit) and
+on the 15 golden examples. Adopt the fit only if it holds on test.
 
     python -m disco_planner.eval.fit_scoring
 """
@@ -131,7 +132,11 @@ def main() -> None:
     XA = np.array([comps[r["advertiser"]][r["a"]] for r in labels])
     XB = np.array([comps[r["advertiser"]][r["b"]] for r in labels])
     y = np.array([1.0 if r["label"] == "A" else 0.0 for r in labels])
-    groups = np.array([r["advertiser"] for r in labels])
+    split = yaml.safe_load((catalog.REPO_ROOT / "src/disco_planner/eval/holdout_split.yaml").read_text())
+    is_dev = np.array([r["advertiser"] in set(split["dev"]) for r in labels])
+    XA_test, XB_test, y_test = XA[~is_dev], XB[~is_dev], y[~is_dev]
+    XA, XB, y = XA[is_dev], XB[is_dev], y[is_dev]
+    groups = np.array([r["advertiser"] for r in labels])[is_dev]
     th0 = theta0()
 
     # 5-fold cross-validation grouped by advertiser
@@ -149,15 +154,21 @@ def main() -> None:
     cv_mean = {k: {m: round(float(np.mean([f[m] for f in v])), 3) for m in ("accuracy", "log_loss")} for k, v in cv.items()}
 
     th_all = fit(XA, XB, y, th0)
+    th_hand = fit(XA, XB, y, th0, only_beta=True)
+    test = {"hand_set": metrics(th_hand, XA_test, XB_test, y_test), "fitted": metrics(th_all, XA_test, XB_test, y_test)}
     fitted = to_config(th_all)
     hand = to_config(th0)
     golden = golden_check(fitted)
 
     lines = [
         "# Fitting the scoring constants from pairwise labels", "",
-        f"Labels: {len(labels)} order-consistent, decisive LLM-judge pairs over {len(comps)} holdout advertisers "
-        "(prompts/pairwise_judge.md, both orders asked).", "",
-        "## Held-out pairwise agreement with the judge (5-fold CV by advertiser)", "",
+        f"Labels: order-consistent, decisive LLM-judge pairs (prompts/pairwise_judge.md, both orders asked). "
+        f"Fit on {len(y)} DEV pairs; {len(y_test)} TEST pairs never used to fit.", "",
+        "## TEST brands (never used to fit): pairwise agreement with the judge", "",
+        "| model | accuracy | log loss |", "|---|---|---|",
+        f"| hand-set config | {test['hand_set']['accuracy']:.3f} | {test['hand_set']['log_loss']:.3f} |",
+        f"| fitted on dev | {test['fitted']['accuracy']:.3f} | {test['fitted']['log_loss']:.3f} |", "",
+        "## DEV brands: 5-fold CV by advertiser", "",
         "| model | accuracy | log loss |", "|---|---|---|",
         f"| hand-set config (scale only fitted) | {cv_mean['hand_set']['accuracy']} | {cv_mean['hand_set']['log_loss']} |",
         f"| fitted (MAP, prior = hand-set) | {cv_mean['fitted']['accuracy']} | {cv_mean['fitted']['log_loss']} |", "",
@@ -173,7 +184,8 @@ def main() -> None:
         f"\nTop-5 change vs hand-set on golden: {golden['fitted']['top5_change_vs_hand_set']}",
     ]
     (REPORTS / "fit_scoring.md").write_text("\n".join(lines) + "\n")
-    (REPORTS / "fitted_params.yaml").write_text(yaml.safe_dump({"fitted": fitted, "hand_set": hand, "cv": cv_mean, "golden": golden}))
+    (REPORTS / "fitted_params.yaml").write_text(yaml.safe_dump({"fitted": fitted, "hand_set": hand, "cv_dev": cv_mean,
+                                                                 "test": test, "golden": golden}))
     print("\n".join(lines))
 
 

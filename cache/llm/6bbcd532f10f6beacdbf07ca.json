@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, get commercial-grade power at home.",
+      "body": "People love these high-powered blenders built for home use. Shop our active promotion, running now through Friday.",
+      "cta": "Shop the promo",
+      "headline_no_name": "Get commercial-grade power at home.",
+      "angle": "Transparent utility and direct specifications, avoiding any unverified durability or eco-friendly claims.",
+      "claims_used": [
+        "high powered",
+        "ppl love them",
+        "also commercial but mainly home",
+        "promo going on til friday i think"
+      ]
+    }
+  ]
+}

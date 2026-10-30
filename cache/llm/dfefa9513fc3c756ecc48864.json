@@ -1,0 +1,101 @@
+{
+  "business_summary": "Slim leather wallets and everyday carry bags priced between $80 and $200, positioned as premium gifts for fathers and graduates.",
+  "product": "Slim leather wallets and everyday carry bags",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Slim leather wallets and everyday carry bags",
+    "Priced between $80-200",
+    "A common gift for fathers and grads"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Explicitly described as a common gift for fathers and grads."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Fathers represent a key recipient demographic for these products."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Everyday carry bags and leather wallets are core accessories that complement apparel."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "Leather everyday carry items fit well within a classic, timeless aesthetic."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Everyday carry bags are often used in professional or workwear contexts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "classic_apparel",
+    "apparel",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in luxury-only messaging or premium positioning, preferring discount-forward options.",
+      "evidence": "Product price range is $80-200 for wallets and everyday carry bags."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Focuses on instant delivery, groceries, and late-night impulse buys, which does not align with high-ticket premium gift purchases."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Audience consists of older affluent women who buy high-AOV items and are highly likely to purchase quality gifts for grads and family members."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative, classic aesthetic that matches premium leather goods."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift (Nov-Dec) matches a product explicitly positioned as a common gift."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and major life events drive purchases here, which aligns perfectly with graduation gifting."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and gifting angles are clearly outlined and map well to our existing premium and gifting-focused publishers.",
+  "missing_info": [
+    "Specific shipping times or holiday fulfillment cutoffs",
+    "Sourcing or sustainability details of the leather",
+    "Whether personalization or engraving is offered"
+  ],
+  "clarifying_questions": [
+    "Do you offer custom engraving or personalization on your leather wallets?",
+    "What are your typical shipping transit times during major gifting seasons like graduation (May/June) or the holidays?",
+    "Are there any specific sustainable sourcing practices or leather certifications we can highlight in the ad copy?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,76 @@
+{
+  "business_summary": "Subscription play kits for babies and toddlers designed with child development specialists, targeting first-time parents at approximately $80 per kit every few months.",
+  "product": "Subscription play kits for babies and toddlers",
+  "is_consumer_product": true,
+  "price_point_usd": 80.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "babies and toddlers",
+  "stated_claims": [
+    "designed with child development specialists",
+    "$80-ish a kit every few months"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Shipped every few months",
+  "relevant_tags": [
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "The core product consists of play kits for babies and toddlers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is sold as a recurring subscription kit delivered every few months."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby and toddler play kits are highly popular as gifts for new parents."
+    }
+  ],
+  "competing_tags": [
+    "toys"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "subscription_boxes",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only products",
+      "evidence": "The advertiser offers 'Subscription play kits... every few months' with no stated one-time purchase option."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly reaches family households, which are highly likely to contain the target audience of babies and toddlers."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting season uplift, and premium baby play kits are highly giftable items."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, price point, and subscription model are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Whether one-time gifting options are available",
+    "Exact age range limit for toddlers"
+  ],
+  "clarifying_questions": [
+    "Do you offer a one-time purchase or gift option, or is it strictly subscription-only?",
+    "What is the maximum age range covered by your play kits?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

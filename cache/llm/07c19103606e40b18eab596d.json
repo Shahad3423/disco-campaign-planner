@@ -1,0 +1,83 @@
+{
+  "business_summary": "An online sports betting and daily fantasy sports platform offering a promotional incentive for new users to sign up and make their first deposit.",
+  "product": "Sports betting and daily fantasy sports platform",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": "21+",
+  "stated_claims": [
+    "Sports betting and daily fantasy for adults 21+ in states where it's legal",
+    "We have a big new-user promo"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Regulated category. Only available to adults 21+ in states where sports betting/DFS is legally permitted.",
+  "relevant_tags": [
+    {
+      "tag": "alcohol",
+      "weight": 0.5,
+      "why": "High demographic and lifestyle overlap with adult leisure, sports viewing, and social entertainment."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Digital, instant-onboarding entertainment service suitable for mobile-first convenience shoppers."
+    },
+    {
+      "tag": "men",
+      "weight": 0.5,
+      "why": "Historically strong demographic correlation with sports betting and fantasy sports audiences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "prefers family-friendly products",
+      "evidence": "Advertiser is a regulated sports betting platform restricted to adults 21+."
+    },
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested in novelty and non-wellness-focused leisure",
+      "evidence": "Advertiser is an entertainment-based gambling/fantasy sports platform."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly, and late-night traffic patterns align well with digital sports betting and fantasy sports engagement."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women with low impulse behavior, which is a poor demographic match for sports betting."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "A conservative brand sensibility is highly likely to conflict with promoting gambling/regulated betting categories."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target age, and conversion objective are clearly defined, allowing for immediate placement planning, though state-by-state compliance details are required before launch.",
+  "missing_info": [
+    "List of legally permitted states",
+    "Specific details of the new-user promo",
+    "Average or minimum deposit amount for sign-up"
+  ],
+  "clarifying_questions": [
+    "Which specific states are we legally allowed to run ads and acquire players in?",
+    "What are the exact terms of the big new-user promo (e.g., deposit match, risk-free play)?",
+    "Do you have pre-approved creative templates or strict regulatory copy guidelines we must follow?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

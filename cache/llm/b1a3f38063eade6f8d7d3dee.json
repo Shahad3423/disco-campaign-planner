@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "Ready to find love, {first_name}?",
+      "body": "Skip the endless scrolling with an app designed to be deleted. Free to download, with premium tiers for a faster experience.",
+      "cta": "Download the app",
+      "headline_no_name": "Ready to find love?",
+      "angle": "Convenience, speed, and premium tier perks",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download",
+        "premium tiers exist"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your love life, {first_name}",
+      "body": "Get off the endless swipe cycle. Try the intentional dating app designed to be deleted. Free to download for a focused outcome.",
+      "cta": "Download the app",
+      "headline_no_name": "Optimize your love life",
+      "angle": "Outcome-focused relationship design to exit the app system",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, no ghosting this Halloween",
+      "body": "Ready for a real vibe? Skip the spooky games with the dating app designed to be deleted. It is free to download.",
+      "cta": "Download the app",
+      "headline_no_name": "No ghosting this Halloween",
+      "angle": "Playful Halloween seasonal moment with a values-aligned vibe",
+      "claims_used": [
+        "designed to be deleted",
+        "Free to download"
+      ]
+    }
+  ]
+}

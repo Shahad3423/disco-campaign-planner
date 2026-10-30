@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Simplify your routine, {first_name}",
+      "body": "Keep your furry family member fed without the extra store trips. Set up a simple dog food subscription designed for busy homes.",
+      "cta": "Start subscription",
+      "headline_no_name": "Simplify your dog food routine",
+      "angle": "time-saving and family-friendly subscription setup",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Dog food on autopilot, {first_name}?",
+      "body": "Skip the store runs. Set up a recurring dog food subscription in just a few clicks and keep your dog's bowl full.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Dog food on autopilot",
+      "angle": "frictionless subscription setup",
+      "claims_used": []
+    }
+  ]
+}

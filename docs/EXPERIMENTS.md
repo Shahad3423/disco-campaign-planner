@@ -36,3 +36,11 @@ expectation; weak-fit fired for Litter-Robot (~$700) and Quince. Two findings, b
   `config/claims_policy.yaml` patterns block; everything else returns to the allowed claims (tested).
 - **Apparel hosts appear in ~40% of plans** (13 of the 28 briefs are apparel) and some briefs that state
   "women 22-40" still get a 50-70 host in a 6-host list; to judge on the full 100 before changing the cap.
+
+## Correction: the holdout is a TEST set
+The first fit of the scoring exponents used LLM-judge pairs from the holdout brands as training data, which
+contaminates the holdout's purpose (checking we don't overfit the 15 golden examples). Withdrawn: the config is
+back to the hand-set values; the holdout is split 49 DEV / 51 TEST (eval/holdout_split.yaml); fitting uses DEV
+only and is adopted only if it holds on TEST; holdout behaviour is reported on TEST only. Milder leak to
+disclose: the competitor-flag frequency (~6%) that motivated D21 was measured on golden + holdout plans; that
+was descriptive, not tuning, but it was a look at the test set.

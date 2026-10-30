@@ -1,0 +1,99 @@
+{
+  "business_summary": "Subscription razors and grooming products for men starting at approximately $5 per month, targeting men who are new to razor subscriptions.",
+  "product": "Subscription razors and grooming products",
+  "is_consumer_product": true,
+  "price_point_usd": 5.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "male",
+  "target_age_range": null,
+  "stated_claims": [
+    "Subscription razors and grooming for men, from about $5 a month.",
+    "Looking to reach men who haven't tried a razor subscription."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "Core target demographic for the grooming products."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Core purchase and delivery model."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Razors are a fundamental daily grooming necessity."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "The subscription replenishment model is designed for consumer convenience."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "Subscription razors and grooming for men, from about $5 a month."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Specifically notes reaching men and subscription-oriented fitness shoppers."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, which conflicts with the male target audience."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience consists of women, conflicting with the target male demographic."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Audience is women, conflicting with the target male demographic."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience consists of women, conflicting with the target male demographic."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Audience consists of women, conflicting with the target male demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target gender are clearly defined, making it easy to align with relevant publishers.",
+  "missing_info": [
+    "specific grooming items included besides razors",
+    "shipping costs and terms",
+    "specific target age range"
+  ],
+  "clarifying_questions": [
+    "What specific grooming products are included in the subscription besides razors?",
+    "Is shipping free, or is there an additional shipping fee on top of the $5/month price?",
+    "Do you target a specific age group within the male demographic?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

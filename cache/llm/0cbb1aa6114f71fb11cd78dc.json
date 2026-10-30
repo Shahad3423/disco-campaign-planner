@@ -1,0 +1,110 @@
+{
+  "business_summary": "A men's grooming brand offering razors, blades, shaving cream, and body wash, featuring a $15 starter set. Targets men aged 20-40 looking for a budget-friendly alternative to expensive drugstore cartridges.",
+  "product": "Razors, blades, shaving cream, and body wash",
+  "is_consumer_product": true,
+  "price_point_usd": 15.0,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "male",
+  "target_age_range": "20-40",
+  "stated_claims": [
+    "Starter set $15",
+    "Men 20-40 who are sick of overpriced drugstore cartridges"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "The products are explicitly formulated and marketed for men."
+    },
+    {
+      "tag": "skincare",
+      "weight": 0.5,
+      "why": "Shaving cream and body wash are core skincare and personal grooming products."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Body wash and shaving items are used during bath/shower routines."
+    },
+    {
+      "tag": "basics",
+      "weight": 0.5,
+      "why": "Razors and body wash are daily personal care essentials."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "Personal grooming falls under the broader beauty and self-care category."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The brand operates as an online alternative to drugstore brands, typical of DTC models."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "beauty",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Dislikes budget or discount-focused positioning, prefers craftsmanship/quality focus.",
+      "evidence": "Advertiser targets those 'sick of overpriced drugstore cartridges' with a '$15 starter set', signaling a value/budget focus rather than premium heritage."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Has a strong crossover with wellness/beauty and explicitly includes a male audience."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, whereas the advertiser targets men aged 20-40."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Highest-AOV apparel publisher for older women; poor demographic fit for young budget-conscious men."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Focuses on plus-size women's intimates and apparel, mismatching the target male demographic."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Target audience is women seeking science-forward wellness, mismatching the target male demographic."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Target audience is professional women, mismatching the target male demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, target demographic, and initial starter set pricing are clearly defined, making it ready for network planning.",
+  "missing_info": [
+    "Whether the business model is subscription-only or allows one-time purchases.",
+    "The ongoing replenishment cost of blades and shaving products after the starter set.",
+    "Fulfillment costs or free shipping thresholds."
+  ],
+  "clarifying_questions": [
+    "Is your purchase model strictly subscription-based, or can customers buy replenishment items one-time?",
+    "What is the average cost of razor refills and shaving cream after the $15 starter set?",
+    "Do you offer free shipping on the starter set, or is there a shipping fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

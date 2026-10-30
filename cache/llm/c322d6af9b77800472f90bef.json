@@ -1,0 +1,67 @@
+{
+  "business_summary": "An advertiser selling e-readers priced between $100 and $200, targeting avid readers, travelers, and gift-givers.",
+  "product": "E-readers",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "E-readers, $100-$200.",
+    "For avid readers, travelers, and as gifts."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser explicitly positions the product 'as gifts'."
+    },
+    {
+      "tag": "home",
+      "weight": 0.25,
+      "why": "Reading is a common home-based leisure and relaxation activity."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_009",
+      "conflict": "disinterested_in sedentary-lifestyle products",
+      "evidence": "E-readers are designed for reading, which is primarily a sedentary leisure activity."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting season uplift, aligning with the e-readers being positioned 'as gifts'."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods experiences purchase-driving gifting events, which aligns with the e-reader's gifting angle."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target use cases are clearly defined, allowing for immediate placement planning.",
+  "missing_info": [
+    "Exact pricing structure (e.g., is there a book subscription bundled?)",
+    "Fulfillment and shipping times (important for the gifting angle)"
+  ],
+  "clarifying_questions": [
+    "Is there an ongoing subscription model for books, or is this strictly a one-time hardware purchase?",
+    "Do you offer gift-wrapping services or direct-to-recipient shipping options?",
+    "What is your average shipping transit time for customers purchasing these as last-minute gifts?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

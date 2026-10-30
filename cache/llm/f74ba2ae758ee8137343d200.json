@@ -1,0 +1,92 @@
+{
+  "business_summary": "Colorful, gender-neutral basics for babies and kids priced between $12-30, targeting parents looking for durable, hand-me-down-able clothing bundles.",
+  "product": "baby and kids basics apparel",
+  "is_consumer_product": true,
+  "price_point_usd": 21.0,
+  "price_tier": "budget",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "0-12 years",
+  "stated_claims": [
+    "Colorful, gender-neutral basics for babies and kids",
+    "Pieces are $12-30",
+    "Parents of kids 0-12 who like bundles and hand-me-down-able clothing"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "gender-neutral",
+    "durability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The core product is basics and clothing for babies and kids."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "The brand explicitly sells everyday basics."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Hand-me-down-able clothing implies durability and reuse, which strongly aligns with sustainable fashion values."
+    },
+    {
+      "tag": "casual",
+      "weight": 0.5,
+      "why": "Children's basics are inherently casual everyday wear."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "apparel",
+    "sustainable_apparel",
+    "premium_basics"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in=['trendy language', 'loud aesthetics', 'influencer positioning'] and prefers=['craftsmanship', 'heritage', 'quality-focused']",
+      "evidence": "Colorful, budget-friendly ($12-30) kids basics may conflict with the Affluent Classic's preference for heritage, craftsmanship, and understated aesthetics."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience consists of family households, which are a prime demographic for parents of kids aged 0-12."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features conservative branding and the highest AOV in the catalog, which conflicts with colorful, budget-friendly ($12-30) children's wear."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. caters to older affluent women, who are less likely to be the primary purchasers of baby and kids basics compared to active parents."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and key value propositions are clearly defined and highly suitable for the DTC checkout network.",
+  "missing_info": [
+    "average order value (AOV)",
+    "shipping and fulfillment times",
+    "geographic availability",
+    "whether subscription options exist for bundles"
+  ],
+  "clarifying_questions": [
+    "Do you offer any recurring subscription options for your kids' clothing bundles as they grow?",
+    "What is your typical average order value (AOV) for customers purchasing these bundles?",
+    "Do you currently ship internationally or restrict fulfillment to specific regions?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

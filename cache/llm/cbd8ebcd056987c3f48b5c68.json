@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "Time for a bathroom glow-up, {first_name}.",
+      "body": "Never tried a razor subscription? Get grooming and razors for men delivered from about $5 a month. Keep your routine looking effortless.",
+      "cta": "Subscribe for $5",
+      "headline_no_name": "Time for a bathroom glow-up.",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Subscription razors and grooming for men, from about $5 a month.",
+        "Looking to reach men who haven't tried a razor subscription."
+      ]
+    }
+  ]
+}

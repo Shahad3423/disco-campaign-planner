@@ -1,0 +1,89 @@
+{
+  "business_summary": "An advertiser selling high-powered blenders primarily for home use, but also with commercial applications. They currently have an active promotion running.",
+  "product": "High-powered blenders",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "blenders!! high powered",
+    "ppl love them",
+    "also commercial but mainly home",
+    "promo going on til friday i think"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Blenders are core kitchen appliances used for food preparation."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Adjacent category representing shoppers interested in home cooking and kitchen tools."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Blenders are home appliances, and the advertiser explicitly mentions they are mainly for home use."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Relevant to consumers purchasing items for household utility."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.25,
+      "why": "Weak connection; grocery shoppers buy ingredients (fruits, vegetables) to use in blenders."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "household",
+    "wellness",
+    "gourmet_food"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods targets kitchen and cookware buyers, which is highly aligned with premium blenders."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's meal-kit audience is food-interested and likely to own or want high-quality kitchen appliances."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's organic/natural grocery buyers are likely wellness-oriented and make smoothies or blended foods."
+    }
+  ],
+  "confidence": 0.8,
+  "gate": "clarify",
+  "gate_reason": "While the product (blenders) is clear, the description is extremely sparse. We lack basic details such as the brand name, price point, exact promotion details, and target audience to effectively set up a campaign.",
+  "missing_info": [
+    "Brand name",
+    "Retail price point of the blenders",
+    "Specific details of the promotion (discount percentage, code, exact end date)",
+    "Target demographics or primary household use-case"
+  ],
+  "clarifying_questions": [
+    "What is the name of your brand or website?",
+    "What is the retail price point of your blenders?",
+    "Could you share the specific details of the promo running until Friday (e.g., discount code or percentage off)?",
+    "Who is your typical customer (e.g., wellness smoothie-makers, home chefs, or families)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

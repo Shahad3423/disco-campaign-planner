@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your evening wind-down, {first_name}",
+      "body": "Skip Amazon and support independent bookstores. Grab a book for your screen-free evening routine. A typical basket is just $30.",
+      "cta": "Shop books now",
+      "headline_no_name": "Optimize your evening wind-down",
+      "angle": "Screen-free evening wind-down routine for sleep optimization",
+      "claims_used": [
+        "Supports independent bookstores",
+        "Typical basket $30",
+        "For book lovers who'd rather skip Amazon"
+      ]
+    }
+  ]
+}

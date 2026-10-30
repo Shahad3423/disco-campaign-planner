@@ -1,0 +1,88 @@
+{
+  "business_summary": "Documentary streaming subscription service starting at $4.99/month, targeting older, intellectually-curious audiences who are fans of science and nature.",
+  "product": "Documentary streaming subscription",
+  "is_consumer_product": true,
+  "price_point_usd": 4.99,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Older",
+  "stated_claims": [
+    "Documentary streaming from $4.99/month",
+    "Tailored for older, intellectually-curious audiences",
+    "Appeals to science and nature fans"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "intellectual curiosity",
+    "science education",
+    "nature appreciation"
+  ],
+  "fulfillment_notes": "Digital streaming delivery, immediate access upon subscription.",
+  "relevant_tags": [
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The product is explicitly billed as a monthly subscription service ($4.99/month)."
+    },
+    {
+      "tag": "mid-life",
+      "weight": 0.5,
+      "why": "The advertiser explicitly targets an older audience, aligning with publishers serving mid-life demographics."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "Documentary streaming from $4.99/month implies a subscription-only model."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co serves older affluent women, aligning well with the advertiser's target of older, intellectually-curious audiences."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park's older demographic and conservative brand sensibility align with the older, intellectual target audience."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form's science-forward wellness audience aligns well with science and nature fans."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": -1,
+      "why": "Velvetline targets Gen Z and younger millennials, which directly clashes with the advertiser's focus on older audiences."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": -1,
+      "why": "Tailcrate targets millennials with a playful brand voice, whereas this advertiser targets older, intellectually-curious audiences."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and specific target audience are clearly defined and ready for campaign pairing.",
+  "missing_info": [
+    "Specific age range definition for 'older'",
+    "Whether there is a free trial period",
+    "Geographic restrictions on streaming availability"
+  ],
+  "clarifying_questions": [
+    "Do you offer a free trial or a discount on annual subscription plans?",
+    "Is your streaming service restricted to the US, or is it available internationally?",
+    "Do you offer gift subscriptions that users can purchase for others?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

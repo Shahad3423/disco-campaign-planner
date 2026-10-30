@@ -1,0 +1,59 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, watch the porch this Halloween",
+      "body": "See every trick-or-treater with video doorbells and security cameras starting at $60. Easy setup perfect for busy families.",
+      "cta": "Shop doorbells",
+      "headline_no_name": "Watch the porch this Halloween",
+      "angle": "time-saving and family-friendly seasonal protection",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, smart security doesn't have to cost a fortune",
+      "body": "Get reliable protection with video doorbells and security cameras starting at $60. High-quality home security that fits your budget.",
+      "cta": "Shop smart cameras",
+      "headline_no_name": "Smart security doesn't have to cost a fortune",
+      "angle": "clear value proposition and budget-friendly pricing",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, transparent pricing on home security",
+      "body": "No hidden fees or inflated markups. Get video doorbells and security cameras starting at $60 for straightforward home protection.",
+      "cta": "Shop doorbells",
+      "headline_no_name": "Transparent pricing on home security",
+      "angle": "avoiding greenwashing with straightforward, honest pricing",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, classic protection for your home",
+      "body": "Invest in reliable, understated home security. Our video doorbells and security cameras, starting at $60, keep your property secure.",
+      "cta": "Shop smart cameras",
+      "headline_no_name": "Classic protection for your home",
+      "angle": "understated, reliable quality without trendy jargon",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the gift of peace of mind",
+      "body": "Perfect for new homeowners. Gift them video doorbells and security cameras starting at $60 to help secure their new space.",
+      "cta": "Shop security gifts",
+      "headline_no_name": "Give the gift of peace of mind",
+      "angle": "premium and practical gifting for new homeowners",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    }
+  ]
+}

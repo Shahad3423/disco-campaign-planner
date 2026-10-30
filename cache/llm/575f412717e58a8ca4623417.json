@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Choose clean quality, {first_name}.",
+      "body": "Avoid fast-fashion synthetics. Our slim leather wallets and everyday carry bags offer transparent quality, priced from $80 to $200.",
+      "cta": "Shop slim wallets",
+      "headline_no_name": "Choose clean quality.",
+      "angle": "Material transparency and avoiding fast-fashion synthetics",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "$80-200 price range"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Understated leather carry, {first_name}",
+      "body": "Discover slim leather wallets and everyday carry bags. Classic, quiet style priced from $80 to $200.",
+      "cta": "Shop leather carry",
+      "headline_no_name": "Understated leather wallets and bags",
+      "angle": "craftsmanship and understated quality style matching the classic persona",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "$80-200 price range"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your daily carry, {first_name}",
+      "body": "Streamline your daily setup. Explore slim leather wallets and everyday carry bags priced from $80 to $200.",
+      "cta": "Shop slim wallets",
+      "headline_no_name": "Optimize your daily carry",
+      "angle": "system and efficiency optimization for everyday carry",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "$80-200 price range"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The perfect gift, {first_name}",
+      "body": "Looking for a gift? Our slim leather wallets and everyday carry bags are a common gift for fathers and grads, priced from $80-$200.",
+      "cta": "Shop gifts",
+      "headline_no_name": "The perfect gift for fathers and grads",
+      "angle": "giftable positioning highlighting fathers and grads",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "$80-200 price range",
+        "A common gift for fathers and grads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "business_summary": "Sells affordable video doorbells and security cameras starting at $60, targeting new homeowners, renters, and individuals concerned about package theft.",
+  "product": "Video doorbells and security cameras",
+  "is_consumer_product": true,
+  "price_point_usd": 60.0,
+  "price_tier": "budget",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Video doorbells and security cameras starting at $60."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category; products are installed in homes and directly target new homeowners and renters."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Adjacent interest; home security is a functional household utility."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The advertiser acts as a direct-to-consumer brand for consumer electronics."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "household",
+    "convenience",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed's suburban and urban design-conscious buyers have high cross-sell with home products, making them great prospects for home security."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods shoppers are driven by 'new-home life events,' which perfectly aligns with the advertiser's 'new homeowners' target audience."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, entry price point, and target audiences (homeowners, renters) are clearly defined and ready for matching.",
+  "missing_info": [
+    "Whether there is an ongoing subscription model for cloud video storage",
+    "Fulfillment times and shipping rates",
+    "Return policy details"
+  ],
+  "clarifying_questions": [
+    "Is there a required or optional monthly subscription fee for cloud video storage?",
+    "Do you offer free shipping, or is there a standard shipping fee for orders under a certain amount?",
+    "Are these devices DIY-installed, or do you provide/recommend professional installation?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "An elegant reading companion for {first_name}",
+      "body": "Designed for avid readers and travelers. Discover understated, high-quality e-readers priced from $100 to $200.",
+      "cta": "Shop e-readers",
+      "headline_no_name": "An elegant reading companion",
+      "angle": "Leans on understated quality, craftsmanship, and longevity for avid readers and travelers.",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, the easiest gift for avid readers",
+      "body": "Make gifting simple. Our e-readers range from $100 to $200, making them the perfect hassle-free present for travelers and avid readers.",
+      "cta": "Gift an e-reader",
+      "headline_no_name": "The easiest gift for avid readers",
+      "angle": "Leans on hassle-free gifting and family-friendly utility.",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, your next journey starts here",
+      "body": "Perfect for travelers and avid readers. Get e-readers priced from $100 to $200 with a quick and simple checkout experience.",
+      "cta": "Buy an e-reader",
+      "headline_no_name": "Your next journey starts here",
+      "angle": "Leans on speed, travel readiness, and checkout convenience.",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    }
+  ]
+}

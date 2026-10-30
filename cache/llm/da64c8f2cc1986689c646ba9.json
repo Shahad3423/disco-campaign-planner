@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, get kids' basics from $12 to $30",
+      "body": "Shop colorful, gender-neutral basics built to last. Our hand-me-down-able clothing offers real value for growing kids.",
+      "cta": "Shop durable basics",
+      "headline_no_name": "Get durable kids' basics from $12 to $30",
+      "angle": "Value-forward messaging focusing on the affordable price range and long-term value of durable, hand-me-down clothing.",
+      "claims_used": [
+        "Colorful, gender-neutral basics for babies and kids",
+        "Pieces are $12-30",
+        "Hand-me-down-able clothing"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify dressing with kids' basics",
+      "body": "Colorful, gender-neutral pieces from $12-30. Made to last as hand-me-down-able clothing, saving you time and shopping trips.",
+      "cta": "Shop easy basics",
+      "headline_no_name": "Simplify daily dressing with kids' basics",
+      "angle": "Convenience-focused copy highlighting the simplicity of gender-neutral basics and time saved from durable, long-lasting clothing.",
+      "claims_used": [
+        "Colorful, gender-neutral basics for babies and kids",
+        "Pieces are $12-30",
+        "Hand-me-down-able clothing"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose hand-me-down-able basics",
+      "body": "Gender-neutral basics made to last. These durable $12-30 pieces are designed as hand-me-down-able clothing to extend their lifecycle.",
+      "cta": "Shop kids' basics",
+      "headline_no_name": "Choose hand-me-down-able basics for kids",
+      "angle": "Sustainability focus emphasizing the extended lifecycle of hand-me-down-able clothing and the utility of gender-neutral designs.",
+      "claims_used": [
+        "Colorful, gender-neutral basics for babies and kids",
+        "Pieces are $12-30",
+        "Hand-me-down-able clothing"
+      ]
+    }
+  ]
+}

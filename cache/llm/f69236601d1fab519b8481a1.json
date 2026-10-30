@@ -1,0 +1,123 @@
+{
+  "business_summary": "Telehealth platform offering online medical visits and prescriptions for hair loss, erectile dysfunction (ED), and skincare, primarily targeting men aged 25-50.",
+  "product": "Online visits, prescriptions (hair loss, ED), and skincare",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "male",
+  "target_age_range": "25-50",
+  "stated_claims": [
+    "Online visits and prescriptions for things like hair loss and ED, plus skincare.",
+    "Rx products have extra ad rules."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Rx products have extra ad rules obviously.",
+  "relevant_tags": [
+    {
+      "tag": "men",
+      "weight": 1.0,
+      "why": "Advertiser's primary stated target audience is men 25-50."
+    },
+    {
+      "tag": "haircare",
+      "weight": 1.0,
+      "why": "Offers prescription treatments specifically for hair loss."
+    },
+    {
+      "tag": "skincare",
+      "weight": 1.0,
+      "why": "Explicitly offers skincare products as part of their service."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Telehealth and medical treatments for personal wellness fall into DTC wellness."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Prescription treatments and recurring medical visits are typically subscription-based."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "Online medical consultations result in personalized prescription plans."
+    }
+  ],
+  "competing_tags": [
+    "haircare",
+    "skincare"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "convenience",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in self-care-only framing and subscription-only products",
+      "evidence": "Medical prescriptions for hair loss/ED are highly personal self-care items, not suitable for gifting."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers with a strong crossover in wellness and beauty, which aligns with health and skincare."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care, highly relevant for premium personal care and medical wellness."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. targets older affluent women, while this advertiser targets men 25-50."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park targets high-AOV women with a conservative brand sensibility, a poor demographic fit."
+    },
+    {
+      "publisher_id": "pub_006",
+      "alignment": -1,
+      "why": "Everbody focuses on women's plus-size intimates and apparel, mismatched with a male-focused RX advertiser."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form has a women-centric audience that is highly skeptical of unsubstantiated health claims."
+    },
+    {
+      "publisher_id": "pub_016",
+      "alignment": -1,
+      "why": "Stride & Stem targets professional women, mismatching the target audience of men 25-50."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab focuses on personalized haircare, offering an excellent adjacent audience for hair loss treatments."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings (telehealth, ED, hair loss, skincare) and target audience (men 25-50) are clear. Compliance with medical advertising rules will be required, but we can proceed with planning.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model (one-time vs. subscription billing details)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or monthly subscription cost for your treatments?",
+    "Are your plans structured primarily as recurring subscriptions or one-time purchases?",
+    "What is your brand name and the landing page URL you would like to use?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

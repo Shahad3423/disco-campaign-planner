@@ -1,0 +1,89 @@
+{
+  "business_summary": "Dating app targeting singles aged 22-38 in major US metropolitan areas. The app uses a 'designed to be deleted' positioning, offering a free download with optional premium subscription tiers.",
+  "product": "Dating app",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "22-38",
+  "stated_claims": [
+    "designed to be deleted",
+    "Free to download",
+    "premium tiers exist"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Digital download/app store installation.",
+  "relevant_tags": [
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The dating app operates as a direct-to-consumer digital subscription service."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Monetization model relies on premium tiers, which typically operate on a recurring subscription basis."
+    },
+    {
+      "tag": "women",
+      "weight": 0.25,
+      "why": "Single women aged 22-38 in metro areas are a core demographic segment."
+    },
+    {
+      "tag": "men",
+      "weight": 0.25,
+      "why": "Single men aged 22-38 in metro areas are a core demographic segment."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_002",
+      "conflict": "prefers family-friendly / trusted by parents products",
+      "evidence": "Advertiser is a dating app targeted strictly at singles (22-38)."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience is Gen Z and younger millennials, which perfectly matches the 22-38 age target."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Audience consists of family and couples households, which directly conflicts with a dating app for singles."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older women, whereas the app targets young adult singles aged 22-38."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Audience skews older and the brand has a conservative sensibility, which may clash with a dating app offer."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and monetization model are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "pricing of the premium tiers",
+    "conversion goal (free sign-up or paid conversion)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or monthly subscription cost for your premium tiers?",
+    "Is our optimization goal a free registration, or a conversion to a paid premium tier?",
+    "Do you have specific city-level constraints, or is it open to all major US metros?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your metrics, {first_name}.",
+      "body": "Track your performance systematically. Get connected bikes and treadmills from $1,500, plus app memberships for $12-$44 a month.",
+      "cta": "Shop connected bikes",
+      "headline_no_name": "Optimize your daily fitness metrics.",
+      "angle": "outcome-focused tracking and systematic workout optimization",
+      "claims_used": [
+        "Connected bikes and treadmills ($1,500+)",
+        "App membership for $12-44 a month",
+        "Looking for people in the market for home workout"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Elevate your home workouts, {first_name}.",
+      "body": "Train hard with connected bikes and treadmills starting at $1,500. Join the community with app memberships for $12-$44 a month.",
+      "cta": "Shop premium bikes",
+      "headline_no_name": "Elevate your home training.",
+      "angle": "high-performance training and identity-adjacent fitness",
+      "claims_used": [
+        "Connected bikes and treadmills ($1,500+)",
+        "App membership for $12-44 a month",
+        "Looking for people in the market for home workout"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Frictionless home workouts for {first_name}.",
+      "body": "Streamline your routine. Get connected equipment from $1,500 and a companion app membership for just $12-$44 a month.",
+      "cta": "Join the app now",
+      "headline_no_name": "Frictionless home workouts.",
+      "angle": "frictionless routine and easy subscription setup",
+      "claims_used": [
+        "Connected bikes and treadmills ($1,500+)",
+        "App membership for $12-44 a month",
+        "Looking for people in the market for home workout"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, help every shelter pet find a family",
+      "body": "Show shelter pets the love they deserve. Support our work to end the killing of dogs and cats in shelters with a monthly gift.",
+      "cta": "Donate monthly",
+      "headline_no_name": "Help every shelter pet find a loving family",
+      "angle": "emotional connection to shelter pets as family members",
+      "claims_used": [
+        "Working to end the killing of dogs and cats in shelters."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, start a family tradition of giving",
+      "body": "Set up an easy monthly donation to help save lives. We are working to end the killing of dogs and cats in shelters.",
+      "cta": "Give monthly",
+      "headline_no_name": "Start a family tradition of giving back",
+      "angle": "convenient, family-friendly subscription model to teach giving back",
+      "claims_used": [
+        "Working to end the killing of dogs and cats in shelters."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, support shelter pets in just one click",
+      "body": "Do good on autopilot. Start a monthly subscription to support our work to end the killing of dogs and cats in shelters.",
+      "cta": "Subscribe to give",
+      "headline_no_name": "Support shelter pets in just one click",
+      "angle": "speed, frictionlessness, and subscription convenience",
+      "claims_used": [
+        "Working to end the killing of dogs and cats in shelters."
+      ]
+    }
+  ]
+}

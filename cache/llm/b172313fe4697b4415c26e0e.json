@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, skip single-use plastic bottles.",
+      "body": "Choose refillable, concentrated cleaning products and skip the single-use plastic bottles. Works as well as the big brands.",
+      "cta": "Shop refills",
+      "headline_no_name": "Skip single-use plastic bottles.",
+      "angle": "Eliminating single-use plastic waste with high-performance refillable concentrates",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    }
+  ]
+}

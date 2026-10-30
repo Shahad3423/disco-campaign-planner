@@ -12,6 +12,8 @@ from __future__ import annotations
 import argparse
 import json
 import statistics
+
+import yaml
 from pathlib import Path
 
 from disco_planner.data import catalog
@@ -21,14 +23,35 @@ from disco_planner.serving.insights import auction_insights
 REPORTS = catalog.REPO_ROOT / "reports"
 
 
-def load_plans(folder: Path) -> list[CampaignPlan]:
+def load_plans(folder: Path, with_ids: bool = False):
     out = []
     for p in sorted(folder.glob("*.json")):
         try:
-            out.append(CampaignPlan.model_validate_json(p.read_text()))
+            plan = CampaignPlan.model_validate_json(p.read_text())
         except Exception:
             continue
+        out.append((plan, p.stem) if with_ids else plan)
     return out
+
+
+def summarize(rows: list[dict]) -> dict:
+    """Holdout behaviour on a subset of rows (same fields as eval/holdout.py's summary)."""
+    from collections import Counter
+    ok = [r for r in rows if "error" not in r]
+    segs = {}
+    for seg in sorted({r["segment"] for r in ok}):
+        rs = [r for r in ok if r["segment"] == seg]
+        planned = [r for r in rs if r["n_recommended"]]
+        segs[seg] = {"n": len(rs), "mean_recommended": round(statistics.mean(r["n_recommended"] for r in rs), 2),
+                     "weak_fit_rate_when_planned": round(statistics.mean(r["weak_fit"] for r in planned), 3) if planned else None}
+    planned = [r for r in ok if r["n_recommended"]]
+    counts = Counter(p for r in ok for p in r["recommended"])
+    names = catalog.publisher_by_id()
+    return {"n": len(rows), "errors": len(rows) - len(ok),
+            "gate_agreement_with_expected": round(statistics.mean(r["gate"] == r["expected_gate"] for r in ok), 3),
+            "segments": segs,
+            "host_recommendation_share": {names[p].name: round(n / max(1, len(planned)), 2) for p, n in counts.most_common()},
+            "hosts_never_recommended": [p.name for p in catalog.publishers() if p.id not in counts]}
 
 
 def competitor_stats(plans: list[CampaignPlan]) -> dict:
@@ -76,8 +99,11 @@ def main() -> None:
     args = ap.parse_args()
 
     bg, ag = (json.loads(p.read_text()) for p in (args.before_golden, args.after_golden))
-    bh, ah = (json.loads(p.read_text())["summary"] for p in (args.before_holdout, args.after_holdout))
-    before_plans, after_plans = load_plans(args.before_plans), load_plans(REPORTS / "holdout_plans")
+    test_ids = set(yaml.safe_load((catalog.REPO_ROOT / "src/disco_planner/eval/holdout_split.yaml").read_text())["test"])
+    bh, ah = (summarize([r for r in json.loads(p.read_text())["rows"] if r["id"] in test_ids])
+              for p in (args.before_holdout, args.after_holdout))
+    before_plans = [p for p, pid in load_plans(args.before_plans, with_ids=True) if pid in test_ids]
+    after_plans = [p for p, pid in load_plans(REPORTS / "holdout_plans", with_ids=True) if pid in test_ids]
     demo = load_plans(catalog.REPO_ROOT / "demo_cache" / "plans")
     cb, ca = competitor_stats(before_plans), competitor_stats(after_plans)
     auction_after = auction_stats(demo, demo + after_plans)
@@ -94,7 +120,7 @@ def main() -> None:
         lines.append(row(k, g(bg, k), g(ag, k)))
     lines.append(row("paraphrase stability (top-5 Jaccard)", gr(bg, "paraphrase_mean_jaccard"), gr(ag, "paraphrase_mean_jaccard")))
     lines.append(row("prompt-injection pass rate", gr(bg, "injection_pass_rate"), gr(ag, "injection_pass_rate")))
-    lines += ["", "## Holdout (100 real brands, blind)", "", "| metric | before | after | delta |", "|---|---|---|---|",
+    lines += ["", "## Holdout TEST brands (51 of 100, never used to fit or tune)", "", "| metric | before | after | delta |", "|---|---|---|---|",
               row("gate agreement with writer's expectation", bh.get("gate_agreement_with_expected"), ah.get("gate_agreement_with_expected")),
               row("errors", bh.get("errors"), ah.get("errors"))]
     for seg in sorted(set(bh.get("segments", {})) | set(ah.get("segments", {}))):
@@ -104,7 +130,7 @@ def main() -> None:
     lines.append(row("hosts never recommended (count)", len(bh.get("hosts_never_recommended", [])), len(ah.get("hosts_never_recommended", []))))
     top_b = max(bh.get("host_recommendation_share", {"-": 0}).values()); top_a = max(ah.get("host_recommendation_share", {"-": 0}).values())
     lines.append(row("most-recommended host's share of plans", top_b, top_a))
-    lines += ["", "## Competitor flags (holdout plans)", "", "| metric | before | after | delta |", "|---|---|---|---|"]
+    lines += ["", "## Competitor flags (holdout TEST plans)", "", "| metric | before | after | delta |", "|---|---|---|---|"]
     for k in cb:
         lines.append(row(k, cb[k], ca.get(k)))
     lines += ["", "## Auctions (one slot per page; 15 demo campaigns vs demo + holdout rivals)", "",

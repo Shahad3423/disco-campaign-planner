@@ -1,0 +1,93 @@
+{
+  "business_summary": "The advertiser sells high-powered blenders primarily for home use, though they also offer commercial models. They currently have an active promotion running.",
+  "product": "high-powered blenders",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "high powered",
+    "ppl love them",
+    "mainly home",
+    "also commercial"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Promo going on until Friday (approximate date: 2026-11-06 based on planning date 2026-10-30)",
+  "relevant_tags": [
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Blenders are a core kitchen appliance."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Shoppers buying cookware are highly likely to be interested in kitchen appliances."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Blenders are a standard home appliance."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.25,
+      "why": "Shoppers buying groceries often use blenders to prepare food or smoothies."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "Blenders are heavily associated with wellness habits like protein shakes and green smoothies."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "wellness",
+    "gourmet_food"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods targets kitchen buyers who are driven by gifting and new-home events, which align well with buying premium kitchen appliances like high-powered blenders."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's food-interested family and couple households are a great demographic match for home blending equipment."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed's urban/suburban home buyers have high cross-sell behavior with home and wellness products."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's organic/wellness audience is highly aligned with making home smoothies and healthy meals using blenders."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product (high-powered home blenders) is clear and maps cleanly to kitchen, home, and wellness audiences, even though pricing and promo specifics are sparse.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "exact_promo_details",
+    "shipping_times"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of your blenders?",
+    "Could you share the specific discount amount or code for the promotion ending this Friday?",
+    "Do you offer any warranties or guarantees on the high-powered motors?",
+    "Are there any specific target demographics you find buy these most (e.g., fitness enthusiasts, families)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

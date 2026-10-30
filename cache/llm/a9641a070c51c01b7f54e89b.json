@@ -1,0 +1,112 @@
+{
+  "business_summary": "Sells premium connected home fitness equipment (bikes and treadmills) priced at $1,500+ along with a recurring monthly app membership ranging from $12 to $44.",
+  "product": "Connected fitness bikes, treadmills, and companion app membership",
+  "is_consumer_product": true,
+  "price_point_usd": 1500.0,
+  "price_tier": "luxury",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Connected bikes and treadmills ($1,500+)",
+    "App membership for $12-44 a month",
+    "Looking for people in the market for home workout"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Shoppers buying activewear are highly likely to be interested in home fitness and working out."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Consumers interested in fitness classes are prime targets for connected home workout equipment and app memberships."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Individuals seeking personal training value structured fitness guidance, which aligns with connected workout apps."
+    },
+    {
+      "tag": "wellness_services",
+      "weight": 0.5,
+      "why": "Fitness is a core pillar of wellness services, making this audience highly adjacent."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "The product is specifically designed for home workouts, appealing to home-focused shoppers."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The advertiser offers a monthly app membership subscription."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "DTC wellness shoppers often invest in premium health and fitness products."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "fitness_services",
+    "wellness",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging and high price sensitivity",
+      "evidence": "Connected bikes and treadmills priced at $1,500+ plus a monthly subscription fee."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart's audience consists of high-frequency, impulse-friendly convenience shoppers, which clashes with a high-consideration $1,500+ purchase."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers who are highly aligned with home workout equipment."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care and fitness, making them prime candidates for premium home gym setups."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. features older, affluent women with high AOV, matching the premium price point of the hardware."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park is the highest-AOV apparel publisher, aligning well with a luxury $1,500+ purchase."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined, allowing for immediate planning and targeting.",
+  "missing_info": [
+    "Target demographics (age, gender)",
+    "Shipping and installation details for heavy equipment",
+    "Hardware warranty or trial period details"
+  ],
+  "clarifying_questions": [
+    "Do you offer financing options (e.g., monthly installments) for the $1,500+ hardware?",
+    "Is the app membership mandatory to use the physical bikes and treadmills?",
+    "What is the typical demographic profile of your current customer base?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

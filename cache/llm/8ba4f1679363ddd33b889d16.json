@@ -1,0 +1,93 @@
+{
+  "business_summary": "A non-profit organization dedicated to ending the killing of dogs and cats in shelters, seeking to acquire monthly recurring donors at checkout.",
+  "product": "Monthly donation subscription to support animal shelter rescue and adoption efforts.",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Working to end the killing of dogs and cats in shelters."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Animal Welfare",
+    "Adoption",
+    "Social Good"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "The core target audience is pet owners who care about animal welfare and adoption."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "The advertiser is specifically looking for monthly recurring donors."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 0.5,
+      "why": "Shoppers buying pet food are pet owners and highly likely to care about pet welfare."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Shoppers buying pet supplies are pet owners and highly likely to care about pet welfare."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "We're looking for monthly donors"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pet subscription brand with health-conscious owners, highly aligned with pet adoption and welfare."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog, ideal for reaching a broad base of pet owners."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennials treating dogs as family, highly receptive to pet welfare causes."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience responds well to social-good messaging, making them prime candidates for donation asks."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The non-profit's goal of securing monthly donors from pet owners is clear, and we have several highly aligned pet and social-good publishers to test this checkout donation ask.",
+  "missing_info": [
+    "Suggested monthly donation amounts",
+    "Whether one-time donations are accepted",
+    "Target geographic location"
+  ],
+  "clarifying_questions": [
+    "What are your target monthly donation amounts (e.g., $10, $25, $50)?",
+    "Do you accept one-time donations at checkout, or only monthly recurring subscriptions?",
+    "Are your operations and donor tax-deductibility limited to a specific country (e.g., US only)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

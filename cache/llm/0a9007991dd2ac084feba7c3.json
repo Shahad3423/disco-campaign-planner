@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, find the perfect holiday gift",
+      "body": "Share the joy with matching-family holiday pajama sets and kids' clothing made from soft organic cotton. Beautifully gift-ready.",
+      "cta": "Shop holiday gifts",
+      "headline_no_name": "Find the perfect holiday gift",
+      "angle": "giftable and premium presentation of holiday pajama sets",
+      "claims_used": [
+        "Organic cotton family pajamas and kids' clothing",
+        "Matching-family holiday pajama sets are our big seller"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, ready for family Halloween fun?",
+      "body": "Get matching-family holiday pajama sets and kids' clothing made from organic cotton. Easy, cozy, and perfect for busy parents.",
+      "cta": "Shop family pajamas",
+      "headline_no_name": "Ready for family Halloween fun?",
+      "angle": "time-saving and family-friendly convenience during a seasonal moment",
+      "claims_used": [
+        "Organic cotton family pajamas and kids' clothing",
+        "Matching-family holiday pajama sets are our big seller"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose sustainable organic cotton",
+      "body": "Dress your family in sustainable organic cotton family pajamas and kids' clothing, crafted with care for the planet.",
+      "cta": "Shop organic cotton",
+      "headline_no_name": "Choose sustainable organic cotton",
+      "angle": "specific sustainability and organic material focus",
+      "claims_used": [
+        "Organic cotton family pajamas and kids' clothing"
+      ]
+    }
+  ]
+}

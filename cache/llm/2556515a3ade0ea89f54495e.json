@@ -1,0 +1,31 @@
+{
+  "business_summary": "Email marketing platform offering a free plan and paid plans starting around $13, designed for small businesses and creators who sell online.",
+  "product": "Email marketing platform",
+  "is_consumer_product": false,
+  "price_point_usd": 13.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Free plan available",
+    "Paid plans starting around $13",
+    "Designed for small businesses and creators who sell online"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The product is a B2B email marketing platform for small businesses and creators, not a consumer DTC product suitable for post-purchase checkout offers.",
+  "missing_info": [],
+  "clarifying_questions": [],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your post-purchase rewards.",
+      "body": "Access a vetted, premium partner offer chosen to complement a high-performance lifestyle. Simple, transparent, and quality-focused.",
+      "cta": "Claim your reward",
+      "headline_no_name": "Optimize your post-purchase rewards.",
+      "angle": "High-standard vetting and transparent, outcome-focused partner curation.",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, an easy reward for your busy day.",
+      "body": "You've checked off the to-do list. Now quickly claim this exclusive, family-friendly partner deal with just one click.",
+      "cta": "Claim my savings",
+      "headline_no_name": "An easy reward for your busy day.",
+      "angle": "Time-saving, straightforward, and family-friendly reward claiming.",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "A spooky good treat just for you, {first_name}.",
+      "body": "No tricks here. Uncover a curated, aesthetic partner offer to match your vibe this Halloween season.",
+      "cta": "Uncover my treat",
+      "headline_no_name": "A spooky good treat just for you.",
+      "angle": "Playful, aesthetic-forward Halloween mystery offer.",
+      "claims_used": []
+    }
+  ]
+}

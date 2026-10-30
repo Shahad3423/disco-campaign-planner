@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Protect your home and reduce delivery waste, {first_name}",
+      "body": "Prevent package theft and the environmental cost of redeliveries. Get reliable video doorbells and cameras starting at $60.",
+      "cta": "Shop smart cameras",
+      "headline_no_name": "Protect your home and reduce delivery waste",
+      "angle": "Appeals to the sustainability buyer by framing package theft prevention as a way to reduce the environmental waste of replacement shipments.",
+      "claims_used": [
+        "Video doorbells and security cameras starting at $60."
+      ]
+    }
+  ]
+}

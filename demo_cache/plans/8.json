@@ -54,7 +54,7 @@
   {
    "publisher_id": "pub_006",
    "publisher_name": "Everbody",
-   "score": 0.0874,
+   "score": 0.1214,
    "components": [
     {
      "name": "category_fit",
@@ -72,7 +72,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -106,7 +106,7 @@
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.081,
+   "score": 0.1124,
    "components": [
     {
      "name": "category_fit",
@@ -124,7 +124,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -158,7 +158,7 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.0792,
+   "score": 0.1099,
    "components": [
     {
      "name": "category_fit",
@@ -176,7 +176,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -210,7 +210,7 @@
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.0787,
+   "score": 0.1093,
    "components": [
     {
      "name": "category_fit",
@@ -228,7 +228,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -262,7 +262,7 @@
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.076,
+   "score": 0.1056,
    "components": [
     {
      "name": "category_fit",
@@ -280,7 +280,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -314,7 +314,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.0688,
+   "score": 0.0956,
    "components": [
     {
      "name": "category_fit",
@@ -332,7 +332,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -384,7 +384,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -436,7 +436,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -488,7 +488,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -540,7 +540,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -592,7 +592,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -644,7 +644,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -696,7 +696,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -748,7 +748,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -800,7 +800,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -852,7 +852,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -904,7 +904,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -956,7 +956,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1008,7 +1008,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1060,7 +1060,7 @@
      "name": "price_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (multiplier ^0.6)"
     },
     {
      "name": "persona_fit",
@@ -1109,8 +1109,9 @@
    "persona_id": "persona_001",
    "persona_name": "The Wellness Optimizer",
    "score": 0.0,
-   "selected": false,
+   "selected": true,
    "reasons": [
+    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.00); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (unknown product vs low price sensitivity)",
     "audience fit 0.80"
@@ -1121,8 +1122,9 @@
    "persona_id": "persona_002",
    "persona_name": "The Busy Parent",
    "score": 0.0,
-   "selected": false,
+   "selected": true,
    "reasons": [
+    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.00); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (unknown product vs medium price sensitivity)",
     "audience fit 0.70"
@@ -1217,11 +1219,33 @@
  "creatives": [
   {
    "persona_id": "persona_008",
-   "headline": "Save on your first order",
-   "body": "Discover a new kind of thing for moms with our special bundle deal. Check out the reviews and save today.",
-   "cta": "Claim Bundle",
-   "headline_no_name": "Save on your first order",
-   "angle": "discount-forward bundle",
+   "headline": "{first_name}, try this new thing for moms",
+   "body": "Claim your exclusive checkout offer on a new kind of thing for moms.",
+   "cta": "Claim my offer",
+   "headline_no_name": "Try this new thing for moms",
+   "angle": "discount-forward",
+   "claims_used": [
+    "A new kind of thing for moms."
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "headline": "A new kind of thing for moms, {first_name}",
+   "body": "Add something new to your daily routine. Discover a new kind of thing for moms.",
+   "cta": "Shop the new thing",
+   "headline_no_name": "A new kind of thing for moms",
+   "angle": "outcome-focused",
+   "claims_used": [
+    "A new kind of thing for moms."
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "headline": "{first_name}, discover a new option for moms",
+   "body": "Looking for something new? Explore a new kind of thing for moms.",
+   "cta": "Shop the new product",
+   "headline_no_name": "Discover a new option for moms",
+   "angle": "family-friendly",
    "claims_used": [
     "A new kind of thing for moms."
    ]
@@ -1230,12 +1254,34 @@
  "reviews": [
   {
    "persona_id": "persona_008",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [],
    "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "persona_fit": 2,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [
+    "Fails to address the Wellness Optimizer's preference for science-backed or outcome-focused messaging, instead focusing on novelty ('something new') which this persona avoids."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_002",
+   "persona_fit": 2,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [
+    "Fails to address the Busy Parent's preferences for time-saving, convenience, or trust/recommendations, offering generic novelty instead."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1248,6 +1294,7 @@
   "economics": null,
   "pricing": null,
   "budget": null,
+  "bid_strategy": null,
   "targeting": {
    "publishers_include": [],
    "publishers_exclude": [
@@ -1333,7 +1380,9 @@
     }
    ],
    "personas": [
-    "persona_008"
+    "persona_008",
+    "persona_001",
+    "persona_002"
    ],
    "geo": "US (no advertiser geo restriction stated)",
    "serve_time_signals": {
@@ -1350,10 +1399,28 @@
     "variant_id": "v1",
     "persona_id": "persona_008",
     "publisher_ids": [],
-    "headline_template": "Save on your first order",
-    "headline_no_name": "Save on your first order",
-    "body": "Discover a new kind of thing for moms with our special bundle deal. Check out the reviews and save today.",
-    "cta": "Claim Bundle"
+    "headline_template": "{first_name}, try this new thing for moms",
+    "headline_no_name": "Try this new thing for moms",
+    "body": "Claim your exclusive checkout offer on a new kind of thing for moms.",
+    "cta": "Claim my offer"
+   },
+   {
+    "variant_id": "v2",
+    "persona_id": "persona_001",
+    "publisher_ids": [],
+    "headline_template": "A new kind of thing for moms, {first_name}",
+    "headline_no_name": "A new kind of thing for moms",
+    "body": "Add something new to your daily routine. Discover a new kind of thing for moms.",
+    "cta": "Shop the new thing"
+   },
+   {
+    "variant_id": "v3",
+    "persona_id": "persona_002",
+    "publisher_ids": [],
+    "headline_template": "{first_name}, discover a new option for moms",
+    "headline_no_name": "Discover a new option for moms",
+    "body": "Looking for something new? Explore a new kind of thing for moms.",
+    "cta": "Shop the new product"
    }
   ],
   "frequency_cap": {
@@ -1393,7 +1460,9 @@
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_008"
+   "persona_008",
+   "persona_001",
+   "persona_002"
   ]
  }
 }

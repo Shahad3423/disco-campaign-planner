@@ -1,0 +1,91 @@
+{
+  "business_summary": "Colorful, gender-neutral basics for babies and kids priced between $12-30, targeting parents of children aged 0-12 who value durable, hand-me-down-able clothing and bundle options.",
+  "product": "Gender-neutral baby and kids apparel basics",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": "0-12 years",
+  "stated_claims": [
+    "Colorful, gender-neutral basics for babies and kids",
+    "Pieces are $12-30",
+    "Hand-me-down-able clothing",
+    "Appeals to parents who like bundles"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "durability",
+    "gender-neutrality"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "The core product is baby and children's clothing basics."
+    },
+    {
+      "tag": "basics",
+      "weight": 1.0,
+      "why": "The brand explicitly positions its items as everyday basics."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "The focus on 'hand-me-down-able' clothing implies durability and a longer product lifecycle, which resonates with eco-conscious parents."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Baby and children's clothing basics are highly popular gifting items for baby showers, birthdays, and holidays."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products",
+    "apparel",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in 'trendy language, loud aesthetics, influencer positioning' and prefers 'craftsmanship, heritage, quality-focused'",
+      "evidence": "Brand sells 'colorful, gender-neutral basics' at a low-to-mid price tier ($12-30) rather than heritage luxury, which may not appeal to the Affluent Classic buyer."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly reaches family households, which directly aligns with the target demographic of parents with kids aged 0-12."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot's audience buys basics and responds well to holiday gifting, presenting a strong opportunity for kid apparel basics."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park's audience has a conservative brand sensibility and the highest AOV in the catalog, which conflicts with colorful, gender-neutral, budget-to-mid-tier kids' clothing."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The advertiser offers a clear consumer product with a well-defined target audience, explicit price range, and clear value proposition that fits perfectly into the DTC checkout ecosystem.",
+  "missing_info": [
+    "Average Order Value (AOV) for bundle purchases",
+    "Shipping costs and delivery timelines",
+    "Primary marketing goal (e.g., target Customer Acquisition Cost vs. volume)"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV), particularly when parents purchase bundles?",
+    "Do you offer free shipping, and what is your typical fulfillment and delivery timeframe?",
+    "Is your primary campaign goal new customer acquisition or driving higher lifetime value (LTV)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

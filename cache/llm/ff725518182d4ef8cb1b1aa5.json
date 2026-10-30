@@ -1,0 +1,76 @@
+{
+  "business_summary": "Advertiser sells premium wireless speakers and soundbars ranging from $120 to $900, targeting home audio enthusiasts, new homeowners, and tech-forward households.",
+  "product": "Wireless speakers and soundbars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Wireless speakers and soundbars",
+    "Price range $120-$900",
+    "Targeted at home audio fans, new home owners, tech-forward households"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Adjacent category; home audio equipment is designed for home integration and appeals to new homeowners."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Adjacent category; tech-forward households are a core target demographic."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "luxury-only messaging / high price sensitivity",
+      "evidence": "Pricing of $120-$900 is a premium commitment and clashes with high price-sensitivity and value-conscious preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious buyers align well with premium aesthetic-focused home audio and tech-forward households."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events directly match the advertiser's target audience of 'new home owners'."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-frequency, late-night impulse convenience shopping is highly misaligned with high-consideration $120-$900 audio gear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, and target demographics are clearly stated, allowing for effective placement planning.",
+  "missing_info": [
+    "Exact purchase model (assumed one-time, but confirmation on accessories/subscriptions is needed)",
+    "Shipping times and fulfillment restrictions",
+    "Specific conversion goals or target CPA"
+  ],
+  "clarifying_questions": [
+    "Are these products strictly one-time purchases, or do you offer any audio subscription services or recurring accessory bundles?",
+    "Do you offer free shipping or trial periods, given the premium price point?",
+    "What is your target CPA or customer acquisition goal for this channel?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
