@@ -174,8 +174,15 @@ class AdvertiserInputs(BaseModel):
 
     monthly_budget_usd: float | None = None
     price_usd: float | None = None
+    # How much can we pay per customer? Most marketers know one of these; first one given wins.
+    target_cpa_usd: float | None = Field(default=None, gt=0)
+    target_roas: float | None = Field(default=None, gt=0, description="revenue / ad spend, e.g. 3.0")
     gross_margin: float | None = Field(default=None, ge=0, le=1)
     objective: Objective = "acquisition"
+    # What the advertiser sets: a budget, or a delivery goal that we turn into a budget.
+    delivery_goal: Literal["budget", "impressions", "reach"] = "budget"
+    target_impressions: int | None = Field(default=None, gt=0)
+    target_reach: int | None = Field(default=None, gt=0, description="unique shoppers")
     flight_days: int | None = None
     has_conversion_tracking: bool = False
 
@@ -189,8 +196,9 @@ class Range(BaseModel):
 class Economics(BaseModel):
     price_usd: float
     price_source: Literal["stated", "form", "tier_default"]
-    gross_margin: float
-    margin_source: Literal["form", "category_default"]
+    gross_margin: float | None
+    margin_source: Literal["form", "category_default", "not_needed"]
+    cpa_source: Literal["target_cpa", "target_roas", "margin"] = "margin"
     expected_orders: float
     max_affordable_cac: float
     target_cpa: float
@@ -216,13 +224,19 @@ class Allocation(BaseModel):
     expected_clicks: Range
     expected_conversions: Range
     capacity_usd: float
+    expected_impressions: int = 0
+    expected_reach: int = 0
     requires_host_approval: bool
     rationale: str
 
 
 class BudgetPlan(BaseModel):
     monthly_budget_usd: float
-    budget_source: Literal["form", "recommended_learning_budget"]
+    budget_source: Literal["form", "recommended_learning_budget", "impression_goal", "reach_goal"]
+    delivery_goal: str = "budget"
+    expected_impressions: int = 0
+    expected_reach: int = 0
+    goal_feasible: bool = True
     daily_cap_usd: float
     flight_start: str
     flight_end: str
@@ -232,6 +246,31 @@ class BudgetPlan(BaseModel):
     exploration_candidates: list[str]
     allocations: list[Allocation]
     warnings: list[str] = Field(default_factory=list)
+
+
+class HostBid(BaseModel):
+    publisher_id: str
+    start_bid: float
+    max_bid: float = Field(description="break-even CPC at target CPA; never exceeded")
+    floor: float
+
+
+class BidAdjustment(BaseModel):
+    signal: str
+    min_multiplier: float
+    max_multiplier: float
+    reason: str
+
+
+class BidStrategy(BaseModel):
+    """How the price is set per impression (glossary: 'bid higher when the user looks like a
+    high-converter'). Phased, because adjusting bids before we can measure anything just adds noise."""
+
+    current_phase: Literal["learning", "enhanced_cpc", "target_cpa", "fixed_cpm"]
+    phases: list[dict]
+    host_bids: list[HostBid]
+    adjustments: list[BidAdjustment]
+    rationale: str
 
 
 class CreativeAssignment(BaseModel):
@@ -254,6 +293,7 @@ class CampaignConfig(BaseModel):
     economics: Economics | None
     pricing: PricingPlan | None
     budget: BudgetPlan | None
+    bid_strategy: BidStrategy | None = None
     targeting: dict
     creatives: list[CreativeAssignment]
     frequency_cap: dict

@@ -38,3 +38,21 @@ def test_offers_only_from_campaigns_allocated_to_this_host(plans):
 def test_offers_sorted_by_ecpm(plans):
     d = serve(ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Jordan"), NOW, plans)
     assert [o.ecpm for o in d.offers] == sorted((o.ecpm for o in d.offers), reverse=True)
+
+
+def test_final_bid_never_exceeds_break_even(plans):
+    sig = ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Jordan")
+    for phase in ("learning", "enhanced_cpc"):
+        for pacing in (0.3, 1.0, 3.0):
+            d = serve(sig, NOW, plans, phase=phase, pacing_ratio=pacing)
+            for o in d.offers:
+                plan = next(p for p in plans if (p.profile.product or p.brief[:40]) == o.campaign)
+                if o.pricing_model == "CPC":
+                    alloc = next(a for a in plan.config.budget.allocations if a.publisher_id == "pub_017")
+                    assert o.bid <= alloc.cpc_bid_usd + 1e-9
+
+
+def test_learning_phase_ignores_conversion_likelihood(plans):
+    sig = ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Michael")
+    d = serve(sig, NOW, plans, phase="learning")
+    assert all("conversion likelihood 1.00" in o.bid_breakdown for o in d.offers if o.pricing_model == "CPC")
