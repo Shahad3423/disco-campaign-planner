@@ -1,0 +1,102 @@
+{
+  "business_summary": "A weekly grocery and recipe subscription box curated via a quiz, priced at approximately $90 per week, targeting busy individuals seeking healthier eating options without the hassle of meal planning.",
+  "product": "Weekly grocery and recipe subscription box",
+  "is_consumer_product": true,
+  "price_point_usd": 90.0,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We pick groceries and recipes for you based on a quiz",
+    "weekly box, around $90 a week",
+    "Targeting busy people who want to eat healthier without planning"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription box delivery",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "The core product is a weekly box containing recipes and curated groceries."
+    },
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The service explicitly picks and delivers groceries to the consumer."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Operates as a recurring weekly box model."
+    },
+    {
+      "tag": "personalized",
+      "weight": 0.5,
+      "why": "The groceries and recipes are selected based on an onboarding quiz."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Explicitly targets busy people who want to avoid meal planning."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Targets consumers looking to eat healthier through a DTC model."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits",
+    "groceries"
+  ],
+  "persona_affinity_tags": [
+    "meal_kits",
+    "groceries",
+    "subscription_services",
+    "convenience",
+    "premium_grocery",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "weekly box, around $90 a week"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience values wellness and clean ingredients, aligning well with a healthy grocery service."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Kitchenly is a direct competitor in the meal kits and grocery subscription space, meaning they would block this advertiser."
+    },
+    {
+      "publisher_id": "pub_019",
+      "alignment": 1,
+      "why": "Strandlab's audience is highly motivated by personalization and quiz-based onboarding, which matches this advertiser's model."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target audience are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "dietary restriction options",
+    "geographic delivery limitations",
+    "ingredient sourcing standards"
+  ],
+  "clarifying_questions": [
+    "Do you accommodate specific dietary restrictions, such as gluten-free, vegan, or keto?",
+    "What is your current shipping and delivery coverage area?",
+    "Are your ingredients organic, non-GMO, or locally sourced?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

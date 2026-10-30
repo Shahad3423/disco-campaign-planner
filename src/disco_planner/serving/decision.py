@@ -218,6 +218,7 @@ def serve(
     use_name: bool = True, use_household: bool = True,
     phase: str = "learning", pacing_ratio: float = 1.0,
     spent_usd: dict[tuple[str, str], float] | None = None,
+    host_blocks_competitors: bool | None = None,
 ) -> ServeDecision:
     """spent_usd: {(campaign name, publisher_id): dollars already spent}. A campaign whose budget on
     THIS host is used up drops out of this host's auction only; it still bids on its other hosts."""
@@ -231,7 +232,9 @@ def serve(
 
     priors = catalog.config("pricing")["priors"]
     prior = host_prior(signals.publisher_id)
-    offers, capped = [], []
+    offers, capped, blocked = [], [], []
+    blocks = (cfg["host_policy"]["block_competitors_default"] if host_blocks_competitors is None
+              else host_blocks_competitors)
     for plan in plans:
         cfg_ = plan.config
         if cfg_.status != "draft" or not cfg_.budget:
@@ -240,11 +243,14 @@ def serve(
         if not alloc or not cfg_.creatives:
             continue  # this campaign doesn't run on this host
         campaign = plan.profile.product or plan.brief[:40]
+        score = next(x for x in plan.publishers if x.publisher_id == signals.publisher_id)
+        if blocks and any(f.startswith("competitor_conflict") for f in score.flags):
+            blocked.append(campaign)  # host doesn't allow brands that sell what it sells
+            continue
         budget_left = alloc.budget_usd - (spent_usd or {}).get((campaign, signals.publisher_id), 0.0)
         if budget_left <= 0:
             capped.append(campaign)  # per-host budget cap reached: out of this auction
             continue
-        score = next(s for s in plan.publishers if s.publisher_id == signals.publisher_id)
         top = max(s.score for s in plan.publishers)
         fit = relative_fit(score.score, top)
 
@@ -282,6 +288,8 @@ def serve(
     ]
     offers, auction_notes = run_auction(offers, cfg["auction"])
     reasons += auction_notes
+    if blocked:
+        reasons.append(f"host blocks competing brands, not eligible here: {', '.join(blocked)}")
     if capped:
         reasons.append(f"out of budget on this host (cap reached), not bidding: {', '.join(capped)}")
     if not offers:

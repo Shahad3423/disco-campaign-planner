@@ -1,0 +1,62 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, discover rugs designed for lasting quality.",
+      "body": "Classic style meets modern utility. Our two-part machine-washable rugs offer enduring elegance that handles life's unexpected spills.",
+      "cta": "Shop the Collection",
+      "headline_no_name": "Discover rugs designed for lasting quality.",
+      "angle": "Understated quality and enduring utility of a premium two-part rug system.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system."
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The ultimate home gift for {first_name} to give.",
+      "body": "Give a stunning, two-part machine-washable rug. The perfect, impressive gift for families and pet owners who appreciate smart design.",
+      "cta": "Shop Premium Gifts",
+      "headline_no_name": "The ultimate premium gift for busy homes.",
+      "angle": "Framing the high-quality, practical rug system as an impressive and premium housewarming or family gift.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system.",
+        "Great for pet owners and families with young kids who have messes."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, clean up post-Halloween messes fast.",
+      "body": "From pumpkin carving to candy spills, our two-part machine-washable rugs make cleanup easy for families with young kids.",
+      "cta": "Shop Washable Rugs",
+      "headline_no_name": "Clean up post-Halloween messes fast.",
+      "angle": "Time-saving convenience for parents dealing with seasonal and everyday kids' messes.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system.",
+        "Great for pet owners and families with young kids who have messes."
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, keep your home clean, even with pets.",
+      "body": "Love your pets but hate the mess? Our two-part machine-washable rugs are designed specifically for pet owners to handle everyday spills.",
+      "cta": "Shop Pet Rugs",
+      "headline_no_name": "Keep your home clean, even with pets.",
+      "angle": "An emotional connection to pets combined with a practical solution for pet-related messes.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system.",
+        "Great for pet owners and families with young kids who have messes."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose rugs built to be washed and reused.",
+      "body": "Avoid replacing ruined carpets. Our two-part machine-washable rugs are built to be washed repeatedly, offering a lasting home solution.",
+      "cta": "Shop Washable Rugs",
+      "headline_no_name": "Choose rugs built to be washed and reused.",
+      "angle": "Focusing on the longevity and reusability of the washable system to appeal to conscious consumers without making unverified eco-claims.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system."
+      ]
+    }
+  ]
+}

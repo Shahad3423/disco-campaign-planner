@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Great value weekly dinners for {first_name}",
+      "body": "Get weekly meal kit subscriptions starting around $8 a serving. Save even more with our big new customer discount today.",
+      "cta": "Claim my discount",
+      "headline_no_name": "Great value weekly dinners",
+      "angle": "discount-forward",
+      "claims_used": [
+        "Meal kits starting around $8 a serving",
+        "New customer discounts big",
+        "Weekly subscription"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Easy weekly dinners for {first_name}",
+      "body": "Save time on busy nights. Get weekly meal kit subscriptions starting around $8 a serving, plus a big new customer discount.",
+      "cta": "Start subscribing",
+      "headline_no_name": "Easy weekly dinners made simple",
+      "angle": "time-saving",
+      "claims_used": [
+        "Meal kits starting around $8 a serving",
+        "New customer discounts big",
+        "Weekly subscription"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Effortless weekly meals for {first_name}",
+      "body": "Streamline your routine. Get a weekly meal kit subscription starting around $8 a serving, plus a big new customer discount.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Effortless weekly meals",
+      "angle": "subscription perks",
+      "claims_used": [
+        "Meal kits starting around $8 a serving",
+        "New customer discounts big",
+        "Weekly subscription"
+      ]
+    }
+  ]
+}

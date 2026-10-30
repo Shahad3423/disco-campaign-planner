@@ -1,0 +1,96 @@
+{
+  "business_summary": "Everyday 14k gold jewelry brand targeting women aged 22-40 who purchase for themselves, with a strong secondary focus on gifting. Price points range from $50 to $400.",
+  "product": "14k gold jewelry",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "female",
+  "target_age_range": "22-40",
+  "stated_claims": [
+    "Everyday 14k gold jewelry at $50-400",
+    "Lots of gifting",
+    "Women 22-40 who buy jewelry for themselves"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Advertiser explicitly states 'Lots of gifting' as a core business driver."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Target demographic is explicitly women aged 22-40."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Jewelry is a highly adjacent accessory category to women's apparel."
+    },
+    {
+      "tag": "classic",
+      "weight": 0.5,
+      "why": "'Everyday 14k gold' implies a classic, timeless aesthetic."
+    },
+    {
+      "tag": "beauty",
+      "weight": 0.5,
+      "why": "High demographic overlap with self-purchasing women interested in personal care and style."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "Operates as a direct-to-consumer e-commerce brand."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "beauty",
+    "classic_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Affluent female audience that responds to quality messaging aligns well with $50-400 real gold jewelry."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative/classic sensibility matches the premium price point and everyday gold style."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns perfectly with the advertiser's emphasis on gifting."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Younger millennial audience with a minimalist aesthetic is a strong match for everyday self-purchase jewelry."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, price range, target demographic, and primary purchase motivations (self-purchase and gifting) are clearly defined.",
+  "missing_info": [
+    "Average Order Value (AOV)",
+    "Shipping times and costs",
+    "Return policy details",
+    "Sourcing or sustainability claims (e.g., recycled gold, ethical sourcing)"
+  ],
+  "clarifying_questions": [
+    "What is your typical Average Order Value (AOV)?",
+    "Do you offer complimentary gift wrapping or free shipping?",
+    "Is your 14k gold ethically sourced or recycled?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

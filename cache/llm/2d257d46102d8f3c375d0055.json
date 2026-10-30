@@ -1,0 +1,34 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The seasonal 'Halloween' reference is highly specific and may not be evergreen.",
+        "The copy fails to address the Busy Parent's core preferences such as time-saving, bulk buying, or parent recommendations, instead focusing on frugality and minimalism."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_007",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

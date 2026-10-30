@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, get everyday essentials for less",
+      "body": "Save on soap, toothpaste, and pantry stuff. Get clean-ish essentials for your minimalist household with a simple $59 membership.",
+      "cta": "Join for $59",
+      "headline_no_name": "Get everyday essentials for less",
+      "angle": "Clear value proposition focused on frugal savings and budget-aware shopping",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Clean up after Halloween, {first_name}",
+      "body": "Get clean-ish soap, toothpaste, and pantry stuff. Perfect for frugal, minimalist households on a simple $59 membership.",
+      "cta": "Unlock membership",
+      "headline_no_name": "Clean up after Halloween tricks",
+      "angle": "Frictionless household management incorporating a seasonal cleanup theme",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, streamline your essentials",
+      "body": "Get your soap, toothpaste, and pantry stuff in one place. Clean-ish essentials for minimalist households on a $59 membership.",
+      "cta": "Get the membership",
+      "headline_no_name": "Streamline your everyday essentials",
+      "angle": "Convenience and speed-focused messaging emphasizing a streamlined, minimalist routine",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    }
+  ]
+}

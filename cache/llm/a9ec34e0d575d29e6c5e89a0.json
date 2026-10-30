@@ -1,0 +1,48 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, give the ultimate premium cookware set",
+      "body": "Gift a stunning, PTFE-free ceramic non-stick cookware set. Beautifully designed and crafted for those who love to host.",
+      "cta": "Shop cookware sets",
+      "headline_no_name": "Give the ultimate premium cookware set",
+      "angle": "Premium gift set presentation",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Cook with PTFE-free ceramic, {first_name}",
+      "body": "Optimize your kitchen with our ceramic non-stick cookware sets made entirely without PTFE. Pure material transparency for your home.",
+      "cta": "Shop PTFE-free sets",
+      "headline_no_name": "Cook with PTFE-free ceramic",
+      "angle": "PTFE-free material transparency",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, invest in lasting culinary craftsmanship",
+      "body": "Discover our premium ceramic non-stick cookware sets, designed without PTFE. Exquisite performance and classic design for your kitchen.",
+      "cta": "Shop ceramic sets",
+      "headline_no_name": "Invest in lasting culinary craftsmanship",
+      "angle": "Quality-focused heritage and craftsmanship",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "A conscious choice: PTFE-free ceramic",
+      "body": "Make a clear choice for your home. Our ceramic non-stick cookware sets are crafted completely without PTFE.",
+      "cta": "Shop PTFE-free sets",
+      "headline_no_name": "A conscious choice: PTFE-free ceramic",
+      "angle": "Specific material choice to avoid vague eco-claims",
+      "claims_used": [
+        "Ceramic non-stick cookware sets without PTFE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "business_summary": "Plant-based frozen smoothies, bowls, and soups delivered in boxes of 9-24 items, targeting wellness-minded women aged 25-45.",
+  "product": "Plant-based frozen smoothies, bowls, and soups",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Plant-based frozen smoothies, bowls and soups",
+    "9-24 items per box"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "plant-based",
+    "wellness"
+  ],
+  "fulfillment_notes": "Shipped in boxes of 9-24 items (frozen)",
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The products are frozen food items (smoothies, bowls, soups) meant for consumption."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.75,
+      "why": "The target audience is specifically wellness-minded individuals seeking clean, plant-based food options."
+    },
+    {
+      "tag": "women",
+      "weight": 0.75,
+      "why": "The brand explicitly targets women aged 25-45."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.75,
+      "why": "9-24 items per box strongly implies a recurring box subscription or bulk DTC model."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.5,
+      "why": "Frozen pre-portioned bowls and soups are highly adjacent to meal kits."
+    },
+    {
+      "tag": "organic",
+      "weight": 0.5,
+      "why": "Plant-based wellness foods heavily overlap with organic grocery preferences."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Plant-based whole food ingredients align with natural food interests."
+    },
+    {
+      "tag": "beverages",
+      "weight": 0.5,
+      "why": "Smoothies are consumable healthy beverages."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "groceries",
+    "organic_grocery",
+    "premium_grocery",
+    "meal_kits",
+    "subscription_boxes",
+    "wellness",
+    "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged female shoppers with strong wellness crossover perfectly match the target audience."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims match this plant-based brand."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Convenience-motivated, food-interested subscription buyers are highly likely to buy frozen smoothie/meal boxes."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Health-curious wellness/premium grocery audience aligns well with clean, plant-based frozen foods."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, box-based business model, and target audience demographic are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "exact pricing per box",
+    "whether subscription is mandatory or if one-time purchase is available",
+    "shipping/geographic limitations for frozen fulfillment"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price for a 9-item and a 24-item box?",
+    "Do you offer one-time purchases, or is your model subscription-only?",
+    "Are there any geographic shipping restrictions due to the frozen nature of your products?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

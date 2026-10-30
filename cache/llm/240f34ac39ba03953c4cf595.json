@@ -1,0 +1,102 @@
+{
+  "business_summary": "Everyday clean-ish essentials including soap, toothpaste, and pantry items sold under a $59 annual membership model targeted at frugal, minimalist households.",
+  "product": "Everyday household and pantry essentials via membership",
+  "is_consumer_product": true,
+  "price_point_usd": 59.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+    "$59 membership",
+    "For frugal minimalist households"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "frugal",
+    "minimalist"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "The advertiser specifically sells everyday household essentials like soap and toothpaste."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "The advertiser specifically lists 'pantry stuff' as a core product offering."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Products are sold exclusively through a $59 membership model."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Pantry items are closely adjacent to and overlap with the grocery category."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Soap and toothpaste are essential personal care and bath products."
+    }
+  ],
+  "competing_tags": [
+    "household",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "household",
+    "groceries",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "subscription-only",
+      "evidence": "all on a $59 membership"
+    },
+    {
+      "persona_id": "persona_005",
+      "conflict": "trendy language / luxury-quality focus",
+      "evidence": "Clean-ish everyday essentials... for frugal minimalist households"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience values clean-ingredients and pantry items, matching the advertiser's clean-ish pantry offering."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Linden Park features high-AOV, affluent, conservative shoppers who are highly mismatched with a frugal, discount-seeking membership model."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Marlowe & Co. attracts older, affluent women with high AOVs, making them less likely to convert on budget-frugal essential memberships."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The core product, pricing model ($59 membership), and target persona (frugal/minimalist) are clearly stated, allowing for immediate planning.",
+  "missing_info": [
+    "brand name",
+    "shipping fees and fulfillment policies",
+    "specific ingredient standards for 'clean-ish' claim"
+  ],
+  "clarifying_questions": [
+    "What is the name of your brand?",
+    "Are there shipping fees on top of the $59 membership, or is shipping free?",
+    "Can you clarify what qualifies as 'clean-ish' for your products?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

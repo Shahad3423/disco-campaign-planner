@@ -1,0 +1,64 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your daily wellness",
+      "body": "Fuel your system with plant-based frozen smoothies, bowls, and soups delivered right to your door in boxes of 9-24 items.",
+      "cta": "Order your box",
+      "headline_no_name": "Optimize your daily wellness",
+      "angle": "outcome-focused daily system optimization",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, easy plant-based meals are ready",
+      "body": "Keep your freezer stocked this Halloween. Get 9-24 plant-based frozen smoothies, bowls, and soups delivered in one convenient box.",
+      "cta": "Shop frozen boxes",
+      "headline_no_name": "Easy plant-based meals are ready",
+      "angle": "time-saving and seasonal convenience",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, choose plant-based wellness",
+      "body": "Stock your freezer with plant-based frozen smoothies, bowls, and soups. Select 9-24 items per box for a mindful lifestyle.",
+      "cta": "Choose your box",
+      "headline_no_name": "Choose plant-based wellness",
+      "angle": "mindful and ethical plant-based lifestyle",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Get more value in every box, {first_name}",
+      "body": "Build your custom box of 9-24 plant-based frozen smoothies, bowls, and soups. Great value delivered straight to your freezer.",
+      "cta": "Build my box",
+      "headline_no_name": "Get more value in every box",
+      "angle": "clear value and bundle offering",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, quality plant-based nutrition",
+      "body": "You care about what goes into your body. Fuel yourself with plant-based frozen smoothies, bowls, and soups. 9-24 items per box.",
+      "cta": "Shop plant-based",
+      "headline_no_name": "Quality plant-based nutrition",
+      "angle": "ingredient transparency and quality focus",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    }
+  ]
+}

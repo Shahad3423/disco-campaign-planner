@@ -1,0 +1,99 @@
+{
+  "business_summary": "Cookware brand offering the Always Pan and other kitchen products in bright colors, targeting younger first-home buyers and gift-givers.",
+  "product": "Always Pan and other cookware",
+  "is_consumer_product": true,
+  "price_point_usd": 150.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": "younger first-home buyers",
+  "stated_claims": [
+    "Always Pan and other cookware in bright colors",
+    "$150ish for the Always Pan",
+    "Great for housewarming and wedding gifts",
+    "Great for younger first-home buyers"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "cookware",
+      "weight": 1.0,
+      "why": "The advertiser explicitly sells cookware."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 1.0,
+      "why": "Cookware is a core kitchen product category."
+    },
+    {
+      "tag": "home",
+      "weight": 0.75,
+      "why": "Targeting younger first-home buyers and housewarming gifts."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Explicitly positioned as great for housewarming and wedding gifts."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The Always Pan is a classic DTC brand product."
+    }
+  ],
+  "competing_tags": [
+    "cookware",
+    "kitchen"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in=['trendy language', 'loud aesthetics', 'influencer positioning']",
+      "evidence": "The advertiser sells the 'Always Pan' (a highly trend/influencer-driven product) in 'bright colors' (which may clash with understated, classic preferences)."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting season uplift, aligning with the advertiser's focus on wedding and housewarming gifts."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Northbed targets design-conscious buyers with high cross-sell in home, aligning with bright-colored cookware for first-home buyers."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": -1,
+      "why": "Hearthstone Goods is a direct competitor selling cookware and kitchen items, meaning they would block this advertiser."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience is food-interested, making them highly likely to be interested in premium cookware."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Exact shipping times and rates",
+    "Return policy details",
+    "Materials used (e.g., non-toxic claims, ceramic coating)"
+  ],
+  "clarifying_questions": [
+    "What is the price range for your other cookware items besides the Always Pan?",
+    "Do you offer specialized gift-wrapping or gift-note options at checkout?",
+    "Are your cookware products free from specific materials like Teflon, PFAS, or heavy metals?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

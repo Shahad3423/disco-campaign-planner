@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Save on everyday essentials, {first_name}",
+      "body": "Get clean-ish soap, toothpaste, and pantry stuff with a $59 membership built for frugal, minimalist households.",
+      "cta": "Join for $59",
+      "headline_no_name": "Save on everyday essentials",
+      "angle": "discount-forward value proposition focusing on the budget-friendly $59 membership for frugal households",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Simplify your household essentials, {first_name}",
+      "body": "Get clean-ish soap, toothpaste, and pantry stuff in one go. One simple $59 membership for busy, minimalist households.",
+      "cta": "Join for $59",
+      "headline_no_name": "Simplify your household essentials",
+      "angle": "time-saving and simplification angle for busy households, avoiding seasonal references",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Frictionless daily essentials, {first_name}",
+      "body": "Skip the hassle. Get clean-ish soap, toothpaste, and pantry essentials with a simple $59 membership for minimalist households.",
+      "cta": "Join the membership",
+      "headline_no_name": "Frictionless daily essentials",
+      "angle": "frictionless and simple speed-focused approach for convenient everyday shopping",
+      "claims_used": [
+        "Clean-ish everyday essentials - soap, toothpaste, pantry stuff",
+        "all on a $59 membership",
+        "For frugal minimalist households"
+      ]
+    }
+  ]
+}

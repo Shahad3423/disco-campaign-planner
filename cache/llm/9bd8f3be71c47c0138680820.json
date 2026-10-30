@@ -1,0 +1,100 @@
+{
+  "business_summary": "Fully prepared meals delivered via a weekly subscription, priced at $11-14 per meal, designed to go from fridge to plate in 2 minutes. The brand targets busy professionals and fitness enthusiasts.",
+  "product": "Fully prepared meals",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fully prepared meals that go from fridge to plate in 2 minutes",
+    "$11-14 per meal",
+    "weekly subscription"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription delivery",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "The core product is fully prepared meals, which directly falls under the meal kits and prepared food delivery category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business model is strictly a weekly subscription."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Meals that heat in 2 minutes strongly appeal to convenience-seeking consumers."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Prepared meals serve as a replacement or supplement for traditional grocery shopping."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Prepared meals targeting fitness folks align well with health and wellness DTC brands."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "meal_kits",
+    "convenience",
+    "fitness",
+    "subscription_services",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency convenience and grocery shoppers are highly likely to adopt quick prepared meals."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers strongly align with the advertiser's target audience of 'fitness folks'."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid's users are actively spending on self-care and fitness, matching the target demographic."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Direct competitor selling meal kits and subscription groceries on their checkout page."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing model, and target audience are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Average order value (AOV) or minimum order size per weekly delivery",
+    "Specific dietary options (e.g., high-protein, low-carb, gluten-free)",
+    "Shipping costs and geographic delivery limitations"
+  ],
+  "clarifying_questions": [
+    "What is the average order value (AOV) or minimum number of meals required per weekly subscription order?",
+    "Do your meals cater to specific dietary preferences (e.g., high-protein, keto, plant-based)?",
+    "Do you offer free shipping, or is there a flat delivery fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

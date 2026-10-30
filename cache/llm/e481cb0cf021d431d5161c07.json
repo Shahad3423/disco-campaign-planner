@@ -1,0 +1,59 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Parent-approved"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'Parent-approved' is unsupported by the advertiser's stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Does not address the sustainability persona's preferences for specific sustainability claims, supply chain transparency, or certifications. It relies on vague wellness alignment which this persona avoids."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "custom box"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ability to 'custom' build a box is not supported by the stated claims, which only specify '9-24 items per box'."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

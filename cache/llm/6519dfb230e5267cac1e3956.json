@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Beautifully wrapped gifts for your list, {first_name}",
+      "body": "Send premium gift baskets, pears, and holiday food gifts from $40 to $150. We dedicate our entire year to perfecting this holiday season.",
+      "cta": "Shop gift baskets",
+      "headline_no_name": "Beautifully wrapped gifts for everyone on your list",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Gift baskets, pears, and holiday food gifts, $40-150",
+        "Q4 is basically our whole year"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "business_summary": "Flower bouquets delivered to your door for occasion-driven events like birthdays, anniversaries, and Mother's Day, with a strong emphasis on same-day or next-day delivery.",
+  "product": "Flower bouquets",
+  "is_consumer_product": true,
+  "price_point_usd": 77.5,
+  "price_tier": "premium",
+  "purchase_model": "gift",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Flower bouquets delivered to your door, $55-100",
+    "Occasion-driven - birthdays, anniversaries, Mother's Day",
+    "Same or next day matters a lot to us"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Same or next day delivery is highly important.",
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The product is explicitly marketed for occasion-driven gifting like birthdays and Mother's Day."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Flower bouquets are a common home decor and aesthetic enhancement item."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Delivered directly to the door with an emphasis on speed (same/next day)."
+    },
+    {
+      "tag": "instant_delivery",
+      "weight": 0.5,
+      "why": "The advertiser values same-day or next-day delivery services."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "home_decor",
+    "quick_commerce"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly instant delivery shoppers align well with urgent same/next day flower gifting."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Audience has a strong seasonal gifting uplift, highly compatible with occasion-driven flower purchases."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and new-home life events drive purchases, perfectly matching flower-giving occasions."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, target use cases, and delivery expectations are clearly defined, allowing for immediate campaign planning.",
+  "missing_info": [
+    "Geographic delivery coverage (national vs. regional/local limit)",
+    "Whether subscription options are available"
+  ],
+  "clarifying_questions": [
+    "What is your delivery coverage area (e.g., nationwide US or specific metropolitan areas)?",
+    "Do you offer ongoing flower subscription plans, or are purchases strictly one-time/gift-based?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

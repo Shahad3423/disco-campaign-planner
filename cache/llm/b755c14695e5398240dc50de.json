@@ -1,0 +1,80 @@
+{
+  "business_summary": "Screen-free audio boxes for kids aged 3-8 that play stories when a character figure is placed on top.",
+  "product": "Screen-free audio boxes and story character figures",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "3-8",
+  "stated_claims": [
+    "Screen-free audio boxes for kids 3-8",
+    "Plays stories when you place a character figure on top",
+    "Figures cost $15-20",
+    "Speaker is $100"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "screen-free"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "Core product category; the audio boxes and figures are toys designed for children."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "High potential as a premium gift for children's birthdays or holidays."
+    }
+  ],
+  "competing_tags": [
+    "toys"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "Disinterested in premium pricing without clear discount-forward value propositions",
+      "evidence": "Speaker costs $100 and figures cost $15-20, representing a high-premium entry price for toys."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Reaches family households, which are the primary target demographic for parents of kids 3-8."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting uplift aligns perfectly with a premium, collectible children's toy."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Affluent demographic with high AOV is well-suited for purchasing a $100 children's speaker as a high-quality gift."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target demographic, and pricing structure are highly specific and ready for targeting.",
+  "missing_info": [
+    "shipping costs and delivery times",
+    "whether a subscription option exists for the story figures",
+    "average order value (AOV) goals"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription model for the character figures, or are they only sold individually?",
+    "Do you offer starter bundles (e.g., speaker + 3 figures) at a discounted price?",
+    "What is your target customer acquisition cost (CAC) for the $100 speaker purchase?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

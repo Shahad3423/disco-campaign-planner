@@ -1,0 +1,98 @@
+{
+  "business_summary": "The advertiser sells mattresses and bedding, offering a 100-night trial with free shipping and returns. Their mattresses range from $600 to $2,000. Because mattresses are an infrequent purchase (once every 8 years), they target consumers undergoing major life transitions such as moving or renovating.",
+  "product": "Mattresses and bedding",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "100-night trial",
+    "free shipping and returns",
+    "Mattresses run $600-2,000",
+    "once-every-8-years purchase"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Free shipping and returns",
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core product category offered by the advertiser."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category; mattresses and bedding are major home purchases."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 1.0,
+      "why": "Core category; bedding directly falls under home textiles."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent category; consumers updating their bedroom textiles often update bath textiles as well."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Adjacent category; movers and renovators frequently purchase new kitchen items."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Adjacent category; new home movers are highly likely to upgrade cookware."
+    }
+  ],
+  "competing_tags": [
+    "bedding",
+    "home_textiles"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in luxury-only messaging / high price sensitivity",
+      "evidence": "Mattresses run $600-2,000, which represents a premium/high-ticket purchase that conflicts with a highly price-sensitive shopper looking for discount-forward offers."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Notes mention 'new-home life events drive purchase', which perfectly aligns with the advertiser's target audience of movers and renovators."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": -1,
+      "why": "Northbed is a direct competitor selling bedding and home textiles, meaning they would block this advertiser."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart is for high-frequency, impulse-friendly convenience purchases, which is a poor fit for a high-consideration, once-every-8-years mattress purchase."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price range, and target audience (movers/renovators) are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Exact pricing for bedding products (non-mattress items)",
+    "Target demographics (age, gender) if any specific sub-segments are preferred"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range for your bedding products?",
+    "Do you offer any specific discounts or incentives for movers and renovators that we can feature in the creatives?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

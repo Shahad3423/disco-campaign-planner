@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, find gifts with actual vibe",
+      "body": "Discover unique gifts from independent makers. We have lots of personalized stuff to match your aesthetic.",
+      "cta": "Shop unique makers",
+      "headline_no_name": "Find unique gifts with an actual vibe",
+      "angle": "aesthetic-forward and values-aligned",
+      "claims_used": [
+        "Unique gifts from independent makers",
+        "lots of personalized stuff"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, easy Halloween & holiday gifting",
+      "body": "Short on time? Find unique gifts from independent makers. We have lots of personalized stuff to make family moments special.",
+      "cta": "Shop unique gifts",
+      "headline_no_name": "Easy Halloween & holiday gifting",
+      "angle": "time-saving and family-friendly",
+      "claims_used": [
+        "Unique gifts from independent makers",
+        "lots of personalized stuff"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, unique finds for pet lovers",
+      "body": "Show your pet some love. Discover unique gifts from independent makers, featuring lots of personalized stuff they will cherish.",
+      "cta": "Shop custom gifts",
+      "headline_no_name": "Unique finds for pet lovers",
+      "angle": "emotional connection",
+      "claims_used": [
+        "Unique gifts from independent makers",
+        "lots of personalized stuff"
+      ]
+    }
+  ]
+}

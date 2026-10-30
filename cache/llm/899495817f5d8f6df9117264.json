@@ -1,0 +1,36 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Skip the cheap, disposable kitchenware",
+        "build a kitchen that lasts"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad attempts to appeal to a sustainability buyer using vague durability claims ('build a kitchen that lasts', 'skip disposable kitchenware') which are not supported by the stated claims and which this persona explicitly avoids as greenwashing."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

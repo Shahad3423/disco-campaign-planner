@@ -1,0 +1,115 @@
+{
+  "business_summary": "Fully prepared meal delivery service offering meals that heat up in 2 minutes, priced at $11-14 per meal under a weekly subscription model. The service targets busy professionals and fitness enthusiasts.",
+  "product": "Fully prepared meals",
+  "is_consumer_product": true,
+  "price_point_usd": 12.5,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fully prepared meals that go from fridge to plate in 2 minutes",
+    "$11-14 per meal, weekly subscription",
+    "Targeting busy professionals and fitness folks"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription delivery.",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "Core category match; sells fully prepared ready-to-eat meals."
+    },
+    {
+      "tag": "convenience",
+      "weight": 1.0,
+      "why": "The primary selling point is 2-minute meal prep for busy professionals."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The service operates strictly on a weekly subscription model."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent category as prepared meals function as ready-to-eat grocery replacements."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Adjacent category; fitness-minded consumers frequently seek convenient high-protein or healthy meal options."
+    },
+    {
+      "tag": "personal_training",
+      "weight": 0.5,
+      "why": "Adjacent category; targets fitness folks who focus on nutrition convenience."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "DTC brand targeting wellness-conscious individuals looking for healthy meal options."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "convenience",
+    "meal_kits",
+    "fitness",
+    "subscription_services",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in: subscription-only",
+      "evidence": "weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High convenience and instant-delivery buyers strongly align with 2-minute ready meals."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers align directly with the advertiser's target of 'fitness folks'."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users actively invest in fitness and self-care, matching the fitness target demographic."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Direct competitor selling meal kits on subscription, which would block this advertiser."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals are highly likely to be the 'busy professionals' targeted by this brand."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product offering, pricing, subscription model, and target audience are clearly defined and actionable.",
+  "missing_info": [
+    "Delivery/shipping costs",
+    "Geographic shipping limitations",
+    "Dietary/ingredient specifications (e.g. organic, gluten-free, high-protein)"
+  ],
+  "clarifying_questions": [
+    "Do you charge extra for shipping, or is it included in the $11-14 per meal price?",
+    "Are your meals tailored to specific dietary needs (e.g., keto, plant-based, gluten-free) that we should highlight to fitness folks?",
+    "What is the minimum number of meals required per weekly subscription order?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,105 @@
+{
+  "business_summary": "A weekly meal kit subscription service starting around $8 per serving, offering significant discounts for new customers, targeting busy families and young professionals.",
+  "product": "Meal kits",
+  "is_consumer_product": true,
+  "price_point_usd": 8.0,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Young professionals and busy families",
+  "stated_claims": [
+    "Meal kits starting around $8 a serving",
+    "New customer discounts big",
+    "Weekly subscription"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription model",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "Core product category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Core business model is a weekly subscription."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Meal kits are highly convenient for busy families and young professionals."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent category; shoppers buying groceries online are highly likely to consider meal kits."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Weak adjacent category; requires cooking at home."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "meal_kits",
+    "convenience",
+    "subscription_services",
+    "family_products",
+    "groceries"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only products",
+      "evidence": "Weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly targets family and couples households who are convenience-motivated, matching the advertiser's core audience."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's convenience and grocery shoppers are highly aligned with meal kit buyers."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's audience of urban professionals aligns well with the advertiser's target of young professionals."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's subscription-heavy grocery shoppers are highly receptive to food subscriptions."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": -1,
+      "why": "Heartfoot is highly gift-focused, which conflicts with a weekly subscription meal kit model."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing model, target audience, and price point are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Average order value (AOV) or minimum order size",
+    "Shipping costs and delivery areas",
+    "Dietary options or menu variety details"
+  ],
+  "clarifying_questions": [
+    "What is the average order value (AOV) for a typical weekly box?",
+    "Do you offer free shipping, or is there a flat delivery fee?",
+    "Do you cater to specific dietary preferences (e.g., vegetarian, low-carb, family-friendly)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

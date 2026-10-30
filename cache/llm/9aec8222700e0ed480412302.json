@@ -1,0 +1,69 @@
+{
+  "business_summary": "Screen-free audio boxes for kids aged 3-8 that play stories when physical character figures are placed on top.",
+  "product": "Screen-free audio boxes and story character figures",
+  "is_consumer_product": true,
+  "price_point_usd": 100.0,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": "3-8",
+  "stated_claims": [
+    "Screen-free audio boxes for kids 3-8",
+    "play stories when you place a character figure on top",
+    "Figures cost $15-20",
+    "speaker is $100"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "screen-free"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "toys",
+      "weight": 1.0,
+      "why": "Core category as the product is an interactive audio toy for young children."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "High-quality children's products at this price point are popular options for holiday and birthday gifting."
+    }
+  ],
+  "competing_tags": [
+    "toys"
+  ],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Meal-kit audience consists of family households, representing the core demographic for kids' products."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Sells socks/basics with a strong holiday gifting uplift, matching a premium giftable kids' toy."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, and target market are clearly stated, making it ready for onboarding and placement planning.",
+  "missing_info": [
+    "Whether a subscription model is offered for the figures",
+    "Standard shipping costs and delivery times",
+    "Primary marketing goals or target acquisition costs"
+  ],
+  "clarifying_questions": [
+    "Do you offer a subscription option for receiving new character figures monthly?",
+    "What is your target CPA or main performance goal for this campaign?",
+    "Do you offer any starter bundles that combine the speaker and figures at a discount?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "{first_name}, try our two-part machine-washable rugs.",
+      "body": "Designed with a practical two-part system, these rugs are machine-washable and built for homes with pets, kids, and everyday messes.",
+      "cta": "Shop the rug system",
+      "headline_no_name": "Try our two-part machine-washable rugs.",
+      "angle": "Focusing strictly on the functional utility of the two-part machine-washable system to handle messes, avoiding any unverified eco-claims.",
+      "claims_used": [
+        "Machine-washable rugs with a two-part system.",
+        "Great for pet owners and families with young kids who have messes."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "Parent-approved plant-based meals, {first_name}",
+      "body": "Simplify busy days with 9-24 frozen smoothies, bowls, and soups per box. Quick, plant-based meals the whole family can enjoy.",
+      "cta": "Order your box",
+      "headline_no_name": "Parent-approved plant-based meals",
+      "angle": "Family-friendly convenience and parent-trusted plant-based meals",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Your plant-based frozen box, {first_name}",
+      "body": "Stock your freezer with 9-24 plant-based smoothies, bowls, and soups. Delivered frozen to align with your plant-based wellness values.",
+      "cta": "Shop plant-based",
+      "headline_no_name": "Your plant-based frozen box",
+      "angle": "Aligning with plant-based wellness values through frozen portioning",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "Love their ingredients? Love yours too, {first_name}",
+      "body": "You read every label for your pet. Choose plant-based wellness for yourself with 9-24 frozen smoothies, bowls, and soups per box.",
+      "cta": "Shop frozen boxes",
+      "headline_no_name": "Love their ingredients? Love yours too",
+      "angle": "Connecting pet-label reading habits to personal plant-based wellness",
+      "claims_used": [
+        "Plant-based frozen smoothies, bowls and soups",
+        "9-24 items per box"
+      ]
+    }
+  ]
+}

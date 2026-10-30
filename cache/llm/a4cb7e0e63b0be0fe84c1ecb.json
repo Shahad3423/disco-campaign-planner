@@ -1,0 +1,120 @@
+{
+  "business_summary": "Subscription delivery of organic produce and pantry items at up to 40% off supermarket prices, targeting budget-conscious and food-waste aware households.",
+  "product": "Organic produce and pantry item boxes",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Organic produce and pantry items delivered at up to 40% off supermarkets",
+    "Weekly or biweekly boxes"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "Organic",
+    "Sustainability",
+    "Anti-food waste",
+    "Affordability"
+  ],
+  "fulfillment_notes": "Delivered as weekly or biweekly subscription boxes.",
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Core product offering is produce and pantry items."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Core attribute of the produce and pantry items."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Explicitly mentioned as part of the product delivery."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Delivered via weekly or biweekly recurring boxes."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Appeals directly to households that care about food waste."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Highly adjacent to organic food products."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Home delivery of recurring grocery needs."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Produce and pantry items are stored and used in the kitchen."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "organic_grocery",
+    "groceries",
+    "subscription_boxes",
+    "subscription_services",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only products",
+      "evidence": "weekly or biweekly boxes subscription model"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven, clean-ingredient, and sustainability-focused shoppers are a perfect match for organic, anti-food-waste groceries."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Convenience-motivated, food-interested families align well with a grocery subscription box."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Sustainability-motivated kitchen buyers will highly appreciate the focus on reducing food waste."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Highest-AOV affluent shopper profile conflicts with a budget-aware, discount-forward grocery offer."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, subscription cadence, value proposition, and target audience are clearly defined and ready to map to relevant publishers.",
+  "missing_info": [
+    "average price point per box",
+    "geographic delivery coverage/limitations",
+    "shipping fees"
+  ],
+  "clarifying_questions": [
+    "What is the average price range for your weekly or biweekly boxes?",
+    "Do you deliver nationwide, or are there specific regional limitations?",
+    "Is shipping included, or is there an additional delivery fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

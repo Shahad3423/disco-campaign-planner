@@ -1,0 +1,103 @@
+{
+  "business_summary": "Machine-washable rug brand utilizing a two-part system, appealing to busy households with pets and young children. Average order value ranges from $250 to $400.",
+  "product": "Machine-washable rugs",
+  "is_consumer_product": true,
+  "price_point_usd": 325.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Machine-washable rugs with a two-part system.",
+    "Great for pet owners and families with young kids who have messes."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category. Rugs are primary home decor and furnishing items."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 1.0,
+      "why": "Rugs are a major category within home textiles."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "The product specifically targets pet owners needing easy-to-clean home goods."
+    },
+    {
+      "tag": "pet",
+      "weight": 0.5,
+      "why": "Adjacent audience interest; pet owners deal with frequent messes."
+    },
+    {
+      "tag": "household",
+      "weight": 0.5,
+      "why": "Practical utility item for maintaining a clean household."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "family_products",
+    "kids_products",
+    "pet_supplies",
+    "household"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "high price sensitivity and aversion to luxury/premium positioning",
+      "evidence": "Typical order value of $250-400 represents a premium investment for rugs."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pet owners who are responsive to premium positioning align well with $250-400 washable rugs."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Broad pet audience is highly relevant for pet-friendly home goods."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home buyers have high crossover potential for rugs."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Family households are a core target demographic for washable rugs due to kids' messes."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Millennial pet owners treating dogs as family will invest in premium pet-friendly home solutions."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, value proposition, pricing, and target audience are clearly defined and highly suitable for the DTC network.",
+  "missing_info": [
+    "Shipping rates and delivery times",
+    "Return policy details (crucial for high-AOV home goods)",
+    "Warranty details on the two-part system"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping or free returns on your typical $250-400 orders?",
+    "Are there repeat purchase options, such as buying replacement top rugs separately from the base system?",
+    "What is your target customer acquisition cost (CAC) for this price point?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

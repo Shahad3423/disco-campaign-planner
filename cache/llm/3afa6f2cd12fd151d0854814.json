@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, easy Halloween storytime for kids.",
+      "body": "Screen-free audio boxes for kids 3-8 that play stories when you place a character figure on top. Simple, family-friendly fun.",
+      "cta": "Shop audio boxes",
+      "headline_no_name": "Easy Halloween storytime for kids.",
+      "angle": "family-friendly",
+      "claims_used": [
+        "Screen-free audio boxes for kids 3-8",
+        "play stories when you place a character figure on top"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, explore screen-free story boxes.",
+      "body": "Get the speaker for $100 and individual story figures for $15-20. They play stories when you place a character figure on top.",
+      "cta": "Shop story figures",
+      "headline_no_name": "Screen-free story boxes for kids 3-8.",
+      "angle": "clear value props",
+      "claims_used": [
+        "Screen-free audio boxes for kids 3-8",
+        "play stories when you place a character figure on top",
+        "Figures cost $15-20",
+        "speaker is $100"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, bring storytime to life.",
+      "body": "Create magical, screen-free moments for kids 3-8. These audio boxes play stories when you place a character figure on top.",
+      "cta": "Shop the speaker",
+      "headline_no_name": "Bring storytime to life for your kids.",
+      "angle": "emotional connection",
+      "claims_used": [
+        "Screen-free audio boxes for kids 3-8",
+        "play stories when you place a character figure on top"
+      ]
+    }
+  ]
+}

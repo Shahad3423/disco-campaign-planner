@@ -1,0 +1,78 @@
+{
+  "business_summary": "The advertiser sells consumer electronics accessories, specifically fast chargers, power banks, and cables, targeting laptop and phone users with a typical purchase size of $20-60.",
+  "product": "Fast chargers, power banks, and cables",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "mid",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Fast chargers, power banks, cables.",
+    "Mostly $20-60 purchases.",
+    "We want phone-and-laptop users, and I'd say everyone qualifies."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Charging accessories are highly practical, utility-driven purchases with strong impulse appeal."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "The advertiser operates as a direct-to-consumer brand selling accessories."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "Power banks and fast chargers are popular, universal practical gifts."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Laptop and phone users in professional environments have a high daily utility for charging accessories."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "High-frequency, impulse-friendly convenience shoppers are prime targets for quick $20-60 accessory purchases."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Tech-adjacent urban professionals heavily rely on phones and laptops, representing the ideal core audience."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift matches well with universal, practical electronic stocking stuffers."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, broad consumer audience, and price point are clearly defined and highly suitable for post-purchase DTC audiences.",
+  "missing_info": [
+    "Average order value (AOV) or exact price point of individual items",
+    "Fulfillment/shipping times and rates",
+    "Return policy details"
+  ],
+  "clarifying_questions": [
+    "Do you offer free shipping thresholds on your $20-60 purchases?",
+    "Are your chargers/cables universal, or do they primarily target specific ecosystems (like Apple/USB-C)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

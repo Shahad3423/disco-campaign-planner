@@ -1,0 +1,56 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The seasonal reference 'this Halloween' is highly specific and creates irrelevant urgency if run outside of October.",
+        "Fails to incorporate family-friendly or parent-trusted messaging preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Vague 'mindful lifestyle' messaging fails to address the persona's preference for specific sustainability claims and supply chain transparency, bordering on the vague eco claims they actively avoid."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "persona_fit": 1,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "The ad is written entirely for human nutrition and completely ignores the Pet Parent persona's core preferences (vet-recommended, pet-focused emotional connection, reading pet food labels)."
+      ],
+      "passed": false
+    }
+  ]
+}

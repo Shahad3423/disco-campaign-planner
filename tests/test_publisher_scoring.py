@@ -29,7 +29,9 @@ def by_id(scores):
 
 def test_pet_hosts_beat_unrelated_hosts():
     scores = by_id(rank_publishers(dog_food_profile(), TODAY))
-    assert scores["pub_018"].recommended  # Tailcrate: pet supplies, not a food competitor
+    # Tailcrate (pet supplies, not a food seller) stays in as the non-competing fallback
+    assert scores["pub_018"].recommended
+    assert any(f.startswith("fallback_host") for f in scores["pub_018"].flags)
     assert not scores["pub_003"].recommended  # Studiogrid: fitness classes
     assert "no category link" in scores["pub_003"].reason
 
@@ -60,11 +62,17 @@ def test_expensive_product_penalised_on_low_aov_host():
     assert price("pub_017") > price("pub_002")  # $118 AOV mid-high beats $78 AOV
 
 
-def test_competitor_penalty_equals_expected_value_of_approval():
-    # Same profile scored with and without the competitor tag: the ratio must equal the
-    # approval probability from pricing.yaml (one source of truth with the budget).
-    from disco_planner.data import catalog
-    with_comp = by_id(rank_publishers(dog_food_profile(), TODAY))["pub_007"].score
-    without = by_id(rank_publishers(dog_food_profile(competing_tags=[]), TODAY))["pub_007"].score
-    approval = catalog.config("pricing")["priors"]["competitor_approval_probability"]
-    assert abs(with_comp / without - approval) < 0.01
+def test_competitor_is_flagged_but_fit_is_unchanged():
+    # Blocking is a host setting enforced at serving (D21); planning must not distort fit.
+    with_comp = by_id(rank_publishers(dog_food_profile(), TODAY))["pub_007"]
+    without = by_id(rank_publishers(dog_food_profile(competing_tags=[]), TODAY))["pub_007"]
+    assert with_comp.score == without.score
+    assert any(f.startswith("competitor_conflict") for f in with_comp.flags)
+
+
+def test_power_mean_family():
+    from disco_planner.planning.publisher_scoring import power_mean
+    parts = [(0.9, 0.5), (0.1, 0.5)]
+    arith, geo, harsh = power_mean(parts, 1), power_mean(parts, 0), power_mean(parts, -5)
+    assert abs(arith - 0.5) < 1e-9 and abs(geo - 0.3) < 1e-9
+    assert harsh < geo < arith            # lower p = a weak signal counts for more

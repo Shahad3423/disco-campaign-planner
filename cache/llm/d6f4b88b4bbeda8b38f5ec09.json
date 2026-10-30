@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, find the perfect 14k gold gift",
+      "body": "Beautifully boxed 14k gold jewelry starting at $50. Elegant everyday pieces ready to make their day extra special.",
+      "cta": "Shop gold gifts",
+      "headline_no_name": "Find the perfect 14k gold jewelry gift",
+      "angle": "giftable and premium presentation",
+      "claims_used": [
+        "Everyday 14k gold jewelry at $50-400",
+        "Lots of gifting"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Timeless 14k gold jewelry for {first_name}",
+      "body": "Invest in understated 14k gold jewelry designed for daily wear. Lasting quality from $50 to $400.",
+      "cta": "Shop 14k gold",
+      "headline_no_name": "Timeless 14k gold jewelry for everyday",
+      "angle": "quality-focused and understated craftsmanship",
+      "claims_used": [
+        "Everyday 14k gold jewelry at $50-400"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "{first_name}, elevate your daily gold stack",
+      "body": "No tricks, just 14k gold treats for your daily aesthetic. Treat yourself to effortlessly cool pieces from $50 to $400.",
+      "cta": "Shop everyday gold",
+      "headline_no_name": "Elevate your daily gold stack",
+      "angle": "aesthetic-forward self-purchase with Halloween seasonal touch",
+      "claims_used": [
+        "Everyday 14k gold jewelry at $50-400",
+        "Women 22-40 who buy jewelry for themselves"
+      ]
+    }
+  ]
+}

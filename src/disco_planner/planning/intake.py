@@ -79,11 +79,11 @@ def merge_samples(samples: list[AdvertiserProfile]) -> AdvertiserProfile:
         key=lambda t: -t.weight,
     )
     primary.tag_stability = {tag: round(sum(tag in ts for ts in tag_sets) / n, 2) for tag in first_seen}
-    # Asymmetric loss: a missed competitor wastes budget on a host that will block us; a false
-    # flag only adds "needs host approval". So competitors are flagged if ANY sample says so,
-    # while persona conflicts (which remove a persona) need a majority.
+    # Competitor flags need a majority too. They no longer change fit or budget (the host's own
+    # setting decides at serving, DECISIONS D21), so a flag is information for the advertiser and
+    # should only appear when the samples agree; one-off flags were mostly noise.
     competitor_sets = [set(s.competing_tags) for s in samples]
-    primary.competing_tags = sorted(set().union(*competitor_sets))
+    primary.competing_tags = sorted(_majority(competitor_sets, n))
     primary.competing_tag_share = {
         tag: round(sum(tag in cs for cs in competitor_sets) / n, 2) for tag in primary.competing_tags
     }

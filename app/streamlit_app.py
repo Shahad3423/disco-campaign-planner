@@ -125,7 +125,10 @@ with tab_sim:
         f"Campaigns that have used up their budget on {catalog.publisher_by_id()[pub_id].name}", sorted(here),
         help="A campaign drops out of THIS host's auction when its allocated budget here is spent; it still bids on its other hosts")
     spent = {(name, pub_id): here[name] for name in out_of_budget}
-    decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing, spent_usd=spent)
+    blocks = st.checkbox("This host blocks brands that sell what it sells", value=False,
+                         help="A host setting (D21). Off by default: most hosts allow non-identical brands.")
+    decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing, spent_usd=spent,
+                                  host_blocks_competitors=blocks)
     if decision is not None:
         ui.render_decision(decision, plans)
     else:

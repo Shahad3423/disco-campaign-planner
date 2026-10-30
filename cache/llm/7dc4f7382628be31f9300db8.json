@@ -1,0 +1,81 @@
+{
+  "business_summary": "Premium luggage brand selling carry-on and checked suitcases priced between $275 and $450, featuring a lifetime warranty. They target frequent flyers and gift-givers, with peak demand occurring in spring and before the holiday season.",
+  "product": "Carry-on and checked suitcases",
+  "is_consumer_product": true,
+  "price_point_usd": 362.5,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "lifetime warranty"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "The advertiser explicitly targets gift-givers, particularly before the holidays."
+    },
+    {
+      "tag": "home",
+      "weight": 0.25,
+      "why": "Suitcases are adjacent to home goods and travel storage."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "travel",
+    "home_goods"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_008",
+      "conflict": "disinterested_in premium/luxury-only messaging and high price sensitivity",
+      "evidence": "Suitcases are priced at $275-$450, which is a premium price point."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart is impulse-friendly and high-frequency, whereas $275-$450 suitcases are high-consideration, low-frequency purchases."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co. has older affluent shoppers with high AOV who respond to quality messaging, aligning with premium suitcases and a lifetime warranty."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Linden Park is the highest-AOV apparel publisher, matching the premium price point of the suitcases."
+    },
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot has a strong gifting season uplift (Nov-Dec), aligning with the advertiser's target of gift-givers before the holidays."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that gifting drives purchases, aligning with the advertiser's holiday gift-giving audience."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience, and seasonality are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "target acquisition cost (CPA/CAC)",
+    "specific materials or sustainability claims"
+  ],
+  "clarifying_questions": [
+    "What is your target Cost Per Acquisition (CPA) for these suitcases?",
+    "Do you offer any special holiday packaging or messaging specifically tailored for gift-givers?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

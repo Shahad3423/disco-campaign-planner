@@ -1,0 +1,108 @@
+{
+  "business_summary": "Membership-based online grocery service offering 25-30% off organic and non-GMO pantry goods for an annual fee of approximately $60.",
+  "product": "Membership grocery service",
+  "is_consumer_product": true,
+  "price_point_usd": 60.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Membership grocery, annual fee about $60 for 25-30% off organic and non-GMO pantry goods.",
+    "Perfect for families and health-minded shoppers who buy often."
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "organic",
+    "non-GMO"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "Core product category is grocery delivery."
+    },
+    {
+      "tag": "pantry",
+      "weight": 1.0,
+      "why": "Specifically offers organic and non-GMO pantry goods."
+    },
+    {
+      "tag": "organic",
+      "weight": 1.0,
+      "why": "Core value proposition is discounted organic goods."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Operates on an annual membership subscription model."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Highly adjacent to organic and non-GMO food preferences."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Targeted at health-minded shoppers."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "pantry"
+  ],
+  "persona_affinity_tags": [
+    "organic_grocery",
+    "premium_grocery",
+    "groceries",
+    "family_products",
+    "subscription_services",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Direct competitor in the grocery and convenience space."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": -1,
+      "why": "Direct competitor selling organic, natural pantry goods via subscription."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Direct competitor as they sell groceries and meal kits on subscription."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Strong overlap with premium grocery and wellness-seeking beverage buyers."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Kitchen and cookware buyers are highly likely to cook at home and buy pantry goods."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing model, target audience, and core value propositions are clearly defined and ready for matching.",
+  "missing_info": [
+    "Average order value (AOV)",
+    "Shipping fees or free shipping thresholds",
+    "Geographic availability (e.g., US nationwide or regional)"
+  ],
+  "clarifying_questions": [
+    "What is your average order value (AOV) for a member's typical basket?",
+    "Do you offer free shipping, or is there a minimum order threshold required?",
+    "Do you ship nationwide across the US, or are there regional restrictions?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

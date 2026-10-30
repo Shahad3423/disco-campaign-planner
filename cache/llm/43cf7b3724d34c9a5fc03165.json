@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Elegant holiday traditions, {first_name}",
+      "body": "Share a timeless classic. Delight them with holiday food gifts, pears, and gift baskets ranging from $40 to $150.",
+      "cta": "Shop holiday baskets",
+      "headline_no_name": "Elegant holiday food gifts and pears",
+      "angle": "heritage and understated quality",
+      "claims_used": [
+        "Gift baskets, pears, and holiday food gifts, $40-150"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The perfect host gift, {first_name}",
+      "body": "Make an impression this Halloween and throughout Q4. Beautiful gift baskets, pears, and holiday food gifts from $40 to $150.",
+      "cta": "Shop gift baskets",
+      "headline_no_name": "The perfect holiday host gifts",
+      "angle": "premium presentation and host gifting with Halloween seasonal relevance",
+      "claims_used": [
+        "Gift baskets, pears, and holiday food gifts, $40-150",
+        "Q4 is basically our whole year"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Holiday food gifts from $40, {first_name}",
+      "body": "Get clear, upfront pricing on holiday gifting. Choose from quality gift baskets, pears, and food gifts ranging from $40 to $150.",
+      "cta": "Shop holiday gifts",
+      "headline_no_name": "Holiday food gifts from $40 to $150",
+      "angle": "clear value articulation and price-point transparency",
+      "claims_used": [
+        "Gift baskets, pears, and holiday food gifts, $40-150"
+      ]
+    }
+  ]
+}

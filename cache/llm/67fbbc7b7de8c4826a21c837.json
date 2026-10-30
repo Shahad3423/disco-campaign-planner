@@ -1,0 +1,58 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "non-toxic cooking"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'non-toxic cooking' is unsupported by the stated claims, which only mention 'without PTFE'."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "non-toxic cooking"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'non-toxic cooking' is unsupported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "non-toxic cooking experience"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'non-toxic cooking experience' is unsupported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "sustainable choice",
+        "non-toxic materials"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claims 'sustainable choice' and 'non-toxic materials' are unsupported by the stated claims.",
+        "The persona avoids vague eco claims, but the ad uses 'sustainable choice' without specific sustainability proof or certifications."
+      ],
+      "passed": false
+    }
+  ]
+}

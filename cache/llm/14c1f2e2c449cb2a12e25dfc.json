@@ -1,0 +1,94 @@
+{
+  "business_summary": "Meal kit provider offering weekly subscriptions starting around $8 per serving with large discounts for new customers, targeting busy families and young professionals.",
+  "product": "Meal kits",
+  "is_consumer_product": true,
+  "price_point_usd": 8.0,
+  "price_tier": "mid",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "Young professionals and families",
+  "stated_claims": [
+    "Meal kits starting around $8 a serving",
+    "new customer discounts big"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Weekly subscription model",
+  "relevant_tags": [
+    {
+      "tag": "meal_kits",
+      "weight": 1.0,
+      "why": "This is the core product category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "The business operates on a weekly subscription model."
+    },
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Meal kits are highly convenient for the stated target of busy families and young professionals."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Adjacent food category that shares a similar utility of feeding households."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.25,
+      "why": "Weak adjacent interest as meal kits are prepared in the kitchen."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "meal_kits",
+    "convenience",
+    "family_products",
+    "groceries",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "disinterested_in subscription-only products",
+      "evidence": "Weekly subscription"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_015",
+      "alignment": -1,
+      "why": "Kitchenly is a direct competitor in the meal kits category."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot's audience of tech-adjacent urban professionals aligns well with the target of young professionals."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart's convenience-focused buyers are likely receptive to time-saving meal solutions."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, pricing, subscription model, and target demographics are clearly stated and viable for matching.",
+  "missing_info": [
+    "Dietary/menu customization options",
+    "Shipping costs and nationwide availability",
+    "Average order value (AOV) or minimum serving requirements per delivery"
+  ],
+  "clarifying_questions": [
+    "What is the minimum number of servings required per weekly order?",
+    "Do you cater to specific dietary preferences (e.g., vegetarian, keto, family-friendly)?",
+    "Is shipping free, or is there an additional delivery fee?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

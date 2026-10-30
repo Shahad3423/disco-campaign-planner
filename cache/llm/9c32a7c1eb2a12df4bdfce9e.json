@@ -1,0 +1,88 @@
+{
+  "business_summary": "DTC brand selling mattresses and bedding with a 100-night trial, free shipping, and free returns. Mattresses range from $600 to $2,000. Due to a low purchase frequency (once every 8 years), they target consumers undergoing life transitions like moving or home renovation.",
+  "product": "Mattresses and bedding",
+  "is_consumer_product": true,
+  "price_point_usd": 1300.0,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Mattresses run $600-2,000",
+    "100-night trial",
+    "Free shipping and returns",
+    "Once-every-8-years purchase"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "Free shipping and returns",
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category for mattresses and bedroom furniture."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 1.0,
+      "why": "Bedding is a primary home textile product."
+    },
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Direct product match."
+    },
+    {
+      "tag": "kitchen",
+      "weight": 0.5,
+      "why": "Highly relevant adjacent category for home renovators and new movers."
+    },
+    {
+      "tag": "cookware",
+      "weight": 0.5,
+      "why": "Purchased during similar life stages, such as moving into a new home."
+    }
+  ],
+  "competing_tags": [
+    "bedding",
+    "home_textiles"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor",
+    "household"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": -1,
+      "why": "Direct competitor selling bedding and home textiles."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "New-home life events of these kitchen buyers perfectly match the advertiser's target audience of movers and renovators."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "High-ticket, low-frequency mattress purchases conflict with the high-frequency, impulse-friendly, instant-delivery model."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, price point, target audience trigger (moving/renovating), and purchase model are clearly defined, making it easy to map to home-related publisher audiences.",
+  "missing_info": [
+    "Bedding price points",
+    "Specific target demographics (age, income level)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point and margin for your bedding products specifically?",
+    "Do you offer any special discounts or bundles tailored for movers/renovators?",
+    "What is your primary customer acquisition goal (e.g., volume or ROAS efficiency)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

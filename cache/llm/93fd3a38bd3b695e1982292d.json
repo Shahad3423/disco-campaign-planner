@@ -1,0 +1,43 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "headline": "Give {first_name} the gift of professional cookware",
+      "body": "Delight them with professional-quality kitchen sets used in restaurants. Gift sets run $600 or more, sold direct to your door.",
+      "cta": "Shop kitchen sets",
+      "headline_no_name": "Give the ultimate gift of professional cookware",
+      "angle": "premium gift sets and direct delivery",
+      "claims_used": [
+        "Professional-quality cookware and knives sold direct",
+        "Used in restaurants",
+        "Pans start around $100, sets run $600 or more"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Professional-quality cookware for {first_name}'s kitchen",
+      "body": "Bring restaurant-grade craftsmanship home. Direct-to-consumer pans start around $100, with complete culinary sets from $600.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Professional-quality cookware for your kitchen",
+      "angle": "understated craftsmanship and restaurant heritage",
+      "claims_used": [
+        "Professional-quality cookware and knives sold direct",
+        "Used in restaurants",
+        "Pans start around $100, sets run $600 or more"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "headline": "Built for heavy restaurant use, sold direct to {first_name}",
+      "body": "Choose professional-quality cookware designed for restaurant durability. Sold direct to consumer, with pans starting around $100.",
+      "cta": "Shop durable pans",
+      "headline_no_name": "Built for heavy restaurant use, sold direct to you",
+      "angle": "longevity of restaurant-grade quality and direct supply chain",
+      "claims_used": [
+        "Professional-quality cookware and knives sold direct",
+        "Used in restaurants",
+        "Pans start around $100, sets run $600 or more"
+      ]
+    }
+  ]
+}

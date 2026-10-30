@@ -1,0 +1,120 @@
+{
+  "business_summary": "Plant-based frozen smoothies, bowls, and soups delivered in boxes of 9-24 items, targeting wellness-minded women aged 25-45.",
+  "product": "Plant-based frozen smoothies, bowls, and soups",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": "25-45",
+  "stated_claims": [
+    "Plant-based frozen smoothies, bowls and soups",
+    "9-24 items per box",
+    "Targeted to wellness-minded women 25-45"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "plant-based",
+    "wellness"
+  ],
+  "fulfillment_notes": "Frozen shipping, 9-24 items per box",
+  "relevant_tags": [
+    {
+      "tag": "groceries",
+      "weight": 1.0,
+      "why": "The product consists of frozen smoothies, bowls, and soups, which are core grocery items."
+    },
+    {
+      "tag": "meal_kits",
+      "weight": 0.75,
+      "why": "Frozen prepared bowls and soups delivered in multi-item boxes are highly adjacent to meal kits."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.75,
+      "why": "Explicitly targets wellness-minded consumers with plant-based health foods."
+    },
+    {
+      "tag": "beverages",
+      "weight": 0.5,
+      "why": "Smoothies are a major component of the product offering."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Multi-item boxes (9-24 items) of frozen food are typically sold via subscription."
+    },
+    {
+      "tag": "women",
+      "weight": 0.5,
+      "why": "The advertiser explicitly targets women aged 25-45."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Plant-based frozen whole foods strongly align with natural food audiences."
+    }
+  ],
+  "competing_tags": [
+    "groceries",
+    "meal_kits"
+  ],
+  "persona_affinity_tags": [
+    "wellness",
+    "groceries",
+    "organic_grocery",
+    "premium_grocery",
+    "meal_kits",
+    "subscription_boxes",
+    "convenience"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers with strong crossover in wellness and beauty align perfectly with wellness-minded women."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid's audience actively spends on self-care and fitness, matching the wellness-minded profile."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood's audience is highly responsive to clean-ingredient, sustainability, and wellness claims."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form targets women interested in wellness, though they may require clear ingredient transparency."
+    },
+    {
+      "publisher_id": "pub_015",
+      "alignment": 1,
+      "why": "Kitchenly's audience is convenience-motivated but food-interested, making frozen healthy bowls a great fit."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Pop & Sip has strong overlap with wellness and premium grocery, matching the plant-based smoothie profile."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product category, box structure, and target demographic are clearly defined, allowing us to map relevant publishers and personas immediately.",
+  "missing_info": [
+    "price_point_usd",
+    "purchase_model",
+    "organic_certification_status"
+  ],
+  "clarifying_questions": [
+    "What is the average price point for a 9, 12, or 24-item box?",
+    "Is this product offered as a recurring subscription, one-time purchase, or both?",
+    "Are your plant-based ingredients certified organic or non-GMO?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

@@ -1,0 +1,124 @@
+{
+  "business_summary": "A functional beverage brand specializing in prebiotic and apple cider vinegar sodas priced at approximately $2.50 per can, heavily targeting Gen Z and Millennial consumers with a strong social media presence.",
+  "product": "Prebiotic and apple cider vinegar soda",
+  "is_consumer_product": true,
+  "price_point_usd": 2.5,
+  "price_tier": "premium",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": "Gen Z and Millennials",
+  "stated_claims": [
+    "Contains apple cider vinegar",
+    "Contains prebiotics",
+    "Priced at about $2.50 a can"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [
+    "gut health"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "This is the core category of the advertiser's product."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 1.0,
+      "why": "The product is explicitly marketed as a functional soda alternative."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 1.0,
+      "why": "Prebiotics and apple cider vinegar are heavily associated with gut health benefits."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Broad category matching the physical nature of the product."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Sodas are grocery items, making grocery shoppers highly relevant."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Canned sodas are shelf-stable pantry items."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Functional soda with health benefits targets wellness-minded DTC consumers."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "organic_grocery",
+    "premium_grocery",
+    "groceries",
+    "convenience"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in: ['trendy language', 'loud aesthetics', 'influencer positioning']",
+      "evidence": "Advertiser has a 'Heavy Gen Z and Millennial skew, big on Instagram' which heavily implies trendy branding and influencer-driven positioning."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Grocery delivery with high-frequency, impulse-friendly buyers is perfect for cheap, single-item additions like a $2.50 soda."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven shoppers responsive to clean-ingredient and wellness claims are highly aligned with prebiotic and ACV soda."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Audience consists of Gen Z and younger millennials with identity-driven purchasing habits, matching the advertiser's core demographic."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": -1,
+      "why": "This is a direct competitor selling functional beverages and soda alternatives, and would likely block this advertiser."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Audience consists of older affluent women, which conflicts with the advertiser's heavy Gen Z and Millennial skew."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Conservative brand sensibility and older demographic clash with an Instagram-heavy Gen Z/Millennial beverage brand."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product type, price point, core benefits, and target demographic are clearly defined, allowing for immediate planning.",
+  "missing_info": [
+    "Packaging configurations (e.g., do they sell in 12-packs, or only single cans?)",
+    "Shipping rates or free shipping thresholds",
+    "Presence of a subscription model"
+  ],
+  "clarifying_questions": [
+    "Are these sodas sold online primarily in multi-packs (e.g., 12-packs for $30), and what is the minimum order value?",
+    "Do you offer a subscribe-and-save option for recurring delivery?",
+    "What are your standard shipping costs and thresholds for free shipping?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

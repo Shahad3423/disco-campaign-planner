@@ -11,8 +11,13 @@ quality_weights:
   scale: 0.05            # log monthly impressions; tiny so big hosts don't win on size alone
   seasonality: 0.10      # gifting uplift close to Nov-Dec for giftable products
 
-# v2: price is a multiplier, softened by an exponent (0 = ignore price, 1 = full effect).
+# Aggregation family (docs/SCORING.md):
+#   score = category_fit^relevance_exponent x price_fit^price_exponent x M_p(quality components; weights)
+# M_p is the weighted power mean: p = 1 weighted average (today), p -> 0 geometric mean, p = -inf minimum.
+# p sets how much a strong signal can make up for a weak one; exponents are what a log-linear model learns.
+relevance_exponent: 1.0
 price_exponent: 0.5
+quality_p: 1.0
 
 category:
   category_only_cap: 0.5      # "apparel" alone can't make a strong match
@@ -21,7 +26,8 @@ category:
   attribute_bonus: 0.10       # per attribute tag (x its weight), e.g. sustainable
 
 penalties:
-  # competitor_conflict: now = pricing.yaml priors.competitor_approval_probability (expected value)
+  # No competitor penalty: competitor blocking is a HOST SETTING enforced at serving (DECISIONS D21),
+  # not a probability baked into fit. Planning only flags it.
   notes_misaligned: 0.80      # applied when notes_fit alignment == -1
 
 recommend:
@@ -61,3 +67,24 @@ personas:
 
 intake:
   self_consistency_samples: 3   # 1 = single greedy call; 3 = majority vote over tags/competitors/conflicts
+
+# Component shapes (were hard-coded; moved here so every number can be tuned and swept).
+shape:
+  neutral: 0.6                    # value when the advertiser didn't state something: mild, not zero
+  price_spread_above: 1.5         # price_fit = exp(-|ln(price/AOV)| / spread); price ABOVE host AOV
+  price_spread_below: 2.5         # ... price BELOW host AOV (more forgiving)
+  income_gap_penalty: 0.7         # x per income tier the host is below what the price tier needs
+  tier_match_value: 0.8           # price unknown but host income suits the tier
+  notes_values: {aligned: 1.0, neutral: 0.5, misaligned: 0.0}
+  seasonality_values: {in_season: 1.0, off_season: 0.75, non_gift_host: 0.3, non_gift_product: 0.5}
+
+persona_shape:
+  overlap_neutral: 0.6            # age-range overlap when either side is unknown
+  affinity_base: 0.6              # one shared interest tag
+  affinity_step: 0.2              # + per extra shared tag (cap 1)
+  gender_balanced: 0.8            # advertiser targets one gender, persona is balanced
+  gender_mismatch: 0.3
+  audience_gender_weight: 0.5     # audience_compat = w*gender + (1-w)*max(age, floor)
+  audience_age_floor: 0.3
+  host_category_match: 1.0        # host_fit category term when persona interests meet host tags
+  host_category_miss: 0.4

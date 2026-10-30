@@ -253,3 +253,17 @@ per host (win rate, average price paid, which campaigns they lose to, and the bi
 of auctions compared with their break-even), so the decision is "raise my target CPA or leave this host".
 Rival names appear (like Google's Auction Insights), rival bids never do (tested). Here the aggregate is
 simulated over sample shoppers; in production it comes from the auction logs.
+
+## D21. Competitor blocking: a host setting, not a scoring penalty (supersedes the D1/D2 penalty)
+
+**Measured:** only ~6% of all advertiser-host pairs are competitor-flagged (15 examples: 5.4%; holdout:
+6.1%). It looked dominant because in a 20-host catalog the best-fitting hosts are the ones selling similar
+things (26-38% of *recommended* pairs). In a network of thousands of hosts that share shrinks.
+**Decision.** Fit is fit: no competitor penalty in the score and no budget discount. A host that also sells
+the advertiser's product type gets a flag ("may need to opt in"); whether it actually blocks is the host's
+own setting, enforced at serving (`host_policy`, simulator toggle), and blocked budget simply reflows to the
+other hosts. Flags need 2 of 3 intake samples to agree. **One guard kept:** if *every* pick is flagged, the
+best non-competing host with a real category link is added as a fallback so the campaign can always run
+(dog food: Pawline and Ruffco lead on fit, Tailcrate is the fallback).
+**Earlier version** (score x P(approve)=0.4, union voting, capacity discount) over-weighted a rare event
+three times; kept in git history and EXPERIMENTS for the comparison.

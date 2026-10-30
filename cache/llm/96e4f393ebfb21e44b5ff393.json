@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, simplify dinner tonight",
+      "body": "Get fully prepared meals that go from fridge to plate in 2 minutes. Enjoy a weekly subscription delivered right to your door.",
+      "cta": "Order weekly meals",
+      "headline_no_name": "Simplify family dinner tonight",
+      "angle": "time-saving and family-friendly convenience",
+      "claims_used": [
+        "Fully prepared meals that go from fridge to plate in 2 minutes",
+        "weekly subscription"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Fast meals for {first_name}'s busy week",
+      "body": "Skip the cooking. Get fully prepared meals from fridge to plate in 2 minutes with our easy weekly subscription.",
+      "cta": "Subscribe for meals",
+      "headline_no_name": "Fast meals for your busy week",
+      "angle": "speed and frictionlessness",
+      "claims_used": [
+        "Fully prepared meals that go from fridge to plate in 2 minutes",
+        "weekly subscription"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your meal prep",
+      "body": "Fuel your routine with fully prepared meals that go from fridge to plate in 2 minutes. Convenient weekly subscription.",
+      "cta": "Order prepared meals",
+      "headline_no_name": "Optimize your meal prep",
+      "angle": "outcome-focused efficiency and meal prep optimization",
+      "claims_used": [
+        "Fully prepared meals that go from fridge to plate in 2 minutes",
+        "weekly subscription"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "{first_name}, no tricks, just great value",
+      "body": "Enjoy fully prepared meals from fridge to plate in 2 minutes. Just $11-14 per meal with our weekly subscription.",
+      "cta": "Get weekly meals",
+      "headline_no_name": "No tricks, just great meal value",
+      "angle": "discount-forward pricing combined with a seasonal Halloween theme",
+      "claims_used": [
+        "Fully prepared meals that go from fridge to plate in 2 minutes",
+        "$11-14 per meal",
+        "weekly subscription"
+      ]
+    }
+  ]
+}

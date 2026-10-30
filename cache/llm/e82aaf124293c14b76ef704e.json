@@ -1,0 +1,93 @@
+{
+  "business_summary": "Sells mattresses and bedding, priced between $600 and $2,000 for mattresses. Offers a 100-night trial with free shipping and returns. The product is a low-frequency purchase (once every 8 years) targeting consumers undergoing life transitions such as moving or renovating.",
+  "product": "Mattresses and bedding",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "100-night trial",
+    "free shipping and returns",
+    "Mattresses run $600-2,000",
+    "once-every-8-years purchase"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": "100-night trial, free shipping and returns.",
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core category match; the advertiser explicitly sells bedding."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Core category match; mattresses and bedding are fundamental home goods."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent category; bedding is a major segment of home textiles."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Adjacent category; consumers purchasing new bedding frequently refresh bath items."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_010",
+      "conflict": "Disinterested in self-care-only framing and prefers giftable items",
+      "evidence": "Mattresses are high-ticket, once-every-8-years utility purchases that are fundamentally non-giftable."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": -1,
+      "why": "Northbed is a direct competitor as they sell bedding and home textiles."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes that 'new-home life events drive purchase', which perfectly aligns with the advertiser's target of movers and renovators."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Swiftcart's audience is impulse-friendly and high-frequency, which directly conflicts with a high-ticket, once-every-8-years mattress purchase."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Marlowe & Co.'s audience is 'lower impulse but high AOV', which matches the high-consideration, high-ticket buying process of a mattress."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product offerings, pricing structure ($600-$2,000), specific life-event target audience (movers/renovators), and trial policies are highly clear and actionable for campaign planning.",
+  "missing_info": [
+    "Specific demographic details (e.g., age or income bracket) of target movers/renovators.",
+    "Pricing details specifically for the bedding line when sold separately from mattresses.",
+    "Primary digital marketing goals (e.g., target CPA or ROAS)."
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range for your bedding line when sold separately?",
+    "Do you target a specific household income bracket or demographic within the mover/renovator audience?",
+    "Do you have a target CPA or customer acquisition cost (CAC) for this channel?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}

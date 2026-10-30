@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "Upgrade your routine, {first_name}",
+      "body": "Upgrade your routine with a functional soda made with apple cider vinegar and prebiotics. Just about $2.50 a can.",
+      "cta": "Shop functional soda",
+      "headline_no_name": "Upgrade your daily routine",
+      "angle": "ingredient transparency and routine optimization",
+      "claims_used": [
+        "Soda with apple cider vinegar and prebiotics",
+        "About $2.50 a can"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "{first_name}, try the soda trending on Instagram",
+      "body": "Join the trend with a functional soda featuring apple cider vinegar and prebiotics. Refreshment for about $2.50 a can.",
+      "cta": "Shop trending soda",
+      "headline_no_name": "Try the functional soda trending on Instagram",
+      "angle": "social proof and trend-forward positioning",
+      "claims_used": [
+        "Soda with apple cider vinegar and prebiotics",
+        "About $2.50 a can",
+        "Big on Instagram"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, stock your fridge with functional soda",
+      "body": "A convenient choice for the whole home. Get functional soda with apple cider vinegar and prebiotics for about $2.50 a can.",
+      "cta": "Buy a soda pack",
+      "headline_no_name": "Stock your fridge with functional soda",
+      "angle": "convenience and family-friendly stocking",
+      "claims_used": [
+        "Soda with apple cider vinegar and prebiotics",
+        "About $2.50 a can"
+      ]
+    }
+  ]
+}

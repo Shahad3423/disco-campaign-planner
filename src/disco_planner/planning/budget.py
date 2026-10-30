@@ -10,7 +10,6 @@ All priors come from config/pricing.yaml, each tagged [sourced] / [benchmark] / 
 """
 from __future__ import annotations
 
-import re
 from datetime import date, timedelta
 
 from disco_planner.data import catalog
@@ -118,17 +117,6 @@ def pricing_plan(eco: Economics, inputs: AdvertiserInputs, category: str | None 
     )
 
 
-def _approval_probability(s: PublisherScore, base: float) -> float:
-    """P(host accepts our ad). Competitor hosts accept with `base`, interpolated by how sure
-    intake was that it's a competitor (the agreement % is in the flag text)."""
-    for flag in s.flags:
-        if flag.startswith("competitor_conflict"):
-            m = re.search(r"\((\d+)% of samples", flag)
-            share = int(m.group(1)) / 100 if m else 1.0
-            return round(1 - (1 - base) * share, 2)
-    return 1.0
-
-
 # ------------------------------------------------------------------ 3-4. budget / goal -> allocation
 
 
@@ -144,11 +132,12 @@ def _host_rows(picks: list[PublisherScore], eco: Economics, days: int, category:
         host_cvr = {k: v * fit for k, v in cvr.items()}
         cpc = _clamp_cpc(eco.target_cpa * host_cvr["mid"])
         ctr = pri["ctr"]["mid"] * fit
-        approval = _approval_probability(s, pri["competitor_approval_probability"])
+        approval = 1.0  # no discount: a host that blocks just doesn't spend; budget reflows (D21)
+        competitor = any(f.startswith("competitor_conflict") for f in s.flags)
         impressions_cap = pubs[s.publisher_id].monthly_impressions * pri["share_of_voice_cap"] * days / 30 * approval
         cost_per_mille = cpc * ctr * 1000
         rows.append(dict(
-            score=s, fit=fit, cpc=cpc, ctr=ctr, cvr=host_cvr, approval=approval, cpm=cost_per_mille,
+            score=s, fit=fit, cpc=cpc, ctr=ctr, cvr=host_cvr, approval=approval, competitor=competitor, cpm=cost_per_mille,
             impressions_cap=impressions_cap, capacity=impressions_cap / 1000 * cost_per_mille,
             min_viable=bud["min_clicks_per_publisher"] * cpc,
         ))
@@ -235,10 +224,11 @@ def budget_plan(
             expected_conversions=Range(**{k: round(v, 1) for k, v in conv.items()}),
             capacity_usd=round(r["capacity"], 2),
             expected_impressions=round(impr), expected_reach=round(impr / pri["avg_frequency"]),
-            requires_host_approval=r["approval"] < 1,
+            requires_host_approval=r["competitor"],
             rationale=(f"score {s.score:.2f} -> relative fit x{r['fit']:.2f} on CTR/CVR; max bid ${r['cpc']:.2f} "
                        f"(break-even at target CPA), start at {bud['start_bid_fraction']:.0%}"
-                       + ("; host sells a competing product, so it may decline (capacity discounted)" if r["approval"] < 1 else "")),
+                       + ("; host also sells this kind of product: confirm it allows competing brands, otherwise this "
+                          "budget reflows to the other hosts" if r["competitor"] else "")),
         ))
 
     pacing = "even daily pacing"
