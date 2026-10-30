@@ -151,3 +151,104 @@ class CreativeReview(BaseModel):
     distinct_from_others: bool
     issues: list[str] = Field(default_factory=list)
     passed: bool
+
+
+# ---------------------------------------------------------------- stage 4: campaign config
+# Shape rationale (README / DECISIONS D2, D6): every field is something a serving system,
+# a billing system, or a human approver needs; assumptions are first-class fields so the
+# advertiser can see and override them.
+
+Objective = Literal["acquisition", "awareness"]
+PricingModel = Literal["CPC", "CPM", "tCPA"]
+
+
+class AdvertiserInputs(BaseModel):
+    """Optional form fields. Anything left empty falls back to a labelled default."""
+
+    monthly_budget_usd: float | None = None
+    price_usd: float | None = None
+    gross_margin: float | None = Field(default=None, ge=0, le=1)
+    objective: Objective = "acquisition"
+    flight_days: int | None = None
+    has_conversion_tracking: bool = False
+
+
+class Range(BaseModel):
+    low: float
+    mid: float
+    high: float
+
+
+class Economics(BaseModel):
+    price_usd: float
+    price_source: Literal["stated", "form", "tier_default"]
+    gross_margin: float
+    margin_source: Literal["form", "category_default"]
+    expected_orders: float
+    max_affordable_cac: float
+    target_cpa: float
+    assumptions: list[str]
+
+
+class PricingPlan(BaseModel):
+    model: PricingModel
+    rationale: str
+    cpc_bid: Range | None = None
+    cpm_bid: float | None = None
+    target_cpa: float
+    tcpa_unlock: str
+
+
+class Allocation(BaseModel):
+    publisher_id: str
+    publisher_name: str
+    share: float
+    budget_usd: float
+    cpc_bid_usd: float
+    expected_clicks: Range
+    expected_conversions: Range
+    capacity_usd: float
+    requires_host_approval: bool
+    rationale: str
+
+
+class BudgetPlan(BaseModel):
+    monthly_budget_usd: float
+    budget_source: Literal["form", "recommended_learning_budget"]
+    daily_cap_usd: float
+    flight_start: str
+    flight_end: str
+    pacing: str
+    learning_budget_needed_usd: float
+    exploration_reserve_usd: float
+    exploration_candidates: list[str]
+    allocations: list[Allocation]
+    warnings: list[str] = Field(default_factory=list)
+
+
+class CreativeAssignment(BaseModel):
+    variant_id: str
+    persona_id: str
+    publisher_ids: list[str]
+    headline_template: str
+    headline_no_name: str
+    body: str
+    cta: str
+
+
+class CampaignConfig(BaseModel):
+    schema_version: str = "1.0"
+    status: Literal["draft", "needs_clarification", "not_eligible"]
+    planning_date: str
+    advertiser_summary: str
+    confidence: float
+    objective: Objective
+    economics: Economics | None
+    pricing: PricingPlan | None
+    budget: BudgetPlan | None
+    targeting: dict
+    creatives: list[CreativeAssignment]
+    frequency_cap: dict
+    guardrails: dict
+    measurement: dict
+    open_questions: list[str]

@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "{first_name}, feed your dog like family",
+      "body": "Vet-formulated, grain-free nutrition targeting joint health and longevity. Premium food for your loyal companion.",
+      "cta": "Explore Menu",
+      "headline_no_name": "Feed your senior dog like family",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "premium dog food for senior dogs",
+        "targeting joint health and longevity",
+        "grain-free",
+        "vet-formulated"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Never run out of senior dog food again",
+      "body": "Set up a flexible subscription for vet-formulated, grain-free senior meals designed to support joint health and longevity.",
+      "cta": "Subscribe Now",
+      "headline_no_name": "Never run out of senior dog food again",
+      "angle": "time-saving",
+      "claims_used": [
+        "subscription-based",
+        "vet-formulated",
+        "grain-free",
+        "targeting joint health and longevity"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "Automate your senior dog food delivery",
+      "body": "Get premium dog food for senior dogs delivered on repeat. Vet-formulated, grain-free meals focused on joint health.",
+      "cta": "Get Started",
+      "headline_no_name": "Automate your senior dog food delivery",
+      "angle": "subscription perks",
+      "claims_used": [
+        "subscription-based",
+        "premium dog food for senior dogs",
+        "vet-formulated",
+        "grain-free",
+        "targeting joint health and longevity"
+      ]
+    }
+  ]
+}
