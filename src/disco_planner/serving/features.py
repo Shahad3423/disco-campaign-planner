@@ -4,6 +4,9 @@ Every inferred feature is a `Feature` carrying a value (or a distribution), a
 `confidence` between 0 and 1, and a `source` saying where it came from. Confidence 0
 means "we know nothing", and the value is then an uninformative default. Nothing here
 raises on bad input: junk in, confidence 0 out (see docs/DECISIONS.md D3, D4, D5).
+
+Inferred gender and age are SOFT PRIORS ONLY: they are never referenced in ad copy and
+never used for hard exclusion (D5 guardrail 3).
 """
 import csv
 import json
@@ -17,6 +20,8 @@ from zoneinfo import ZoneInfo
 
 from pydantic import BaseModel, Field
 
+from disco_planner.serving import calendar, geo
+
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 AGE_BUCKETS = ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
 
@@ -28,19 +33,17 @@ ZIP_SOURCE_FACTOR = {"billing": 1.0, "shipping": 0.5, "unknown": 0.7}
 # Base confidence of each zip-derived feature when the zip is valid and billing.
 STATE_CONF, REGION_CONF, TIMEZONE_CONF = 0.95, 0.9, 0.85  # split states make tz approximate
 LOCAL_HOUR_CONF, URBANICITY_CONF, COLD_CONF = 0.85, 0.5, 0.4
-# Names: the age distribution is wide, so its confidence is capped (low-medium, D4).
-AGE_CONF_CAP = 0.6
+CLIMATE_CONF, NEARBY_CONF, INCOME_CONF = 0.6, 0.5, 0.5   # approximate lookups
+CALENDAR_CONF = 0.9
+# Names are a WEAK age signal: the distribution is wide, SSA counts are births not survivors
+# (biased old), and the data ends in 2017. So age confidence is capped very low.
+AGE_CONF_CAP = 0.15
 NAME_COUNT_FOR_FULL_TRUST = 5000  # names rarer than this get proportionally less trust
 
-# Gift probability = baseline + bumps. Deliberately low confidence (D4, 3rd order).
-GIFT_BASELINE, GIFT_SEASON_BUMP, GIFT_PUBLISHER_BUMP, GIFT_SHIPPING_BUMP = 0.05, 0.10, 0.15, 0.05
-GIFT_MONTHS = (11, 12)
+# Gift probability = baseline + calendar intensity + giftable-publisher bump + shipping bump.
+# Deliberately low confidence (D4, 3rd order).
+GIFT_BASELINE, GIFT_CALENDAR_WEIGHT, GIFT_PUBLISHER_BUMP, GIFT_SHIPPING_BUMP = 0.05, 0.25, 0.15, 0.05
 GIFT_CONF = 0.3
-
-# Cold / mountain: a coarse state-level guess, plus any zip at latitude >= 42.
-MOUNTAIN_STATES = {"CO", "UT", "WY", "MT", "ID", "NM"}
-COLD_STATES = {"ME", "NH", "VT", "NY", "MI", "WI", "MN", "ND", "SD", "AK"}
-COLD_LATITUDE = 42.0
 
 BAD_NAMES = {
     "test", "testing", "asdf", "asdfgh", "qwerty", "qwe", "abc", "xyz", "none", "null",
@@ -93,6 +96,24 @@ class ShopperFeatures(BaseModel):
     cart_prior: CartPrior
     gift_signal: Feature
     cold_or_mountain: Feature
+    # Geography beyond state/region (all approximate)
+    climate_band: Feature
+    mountain: Feature
+    coast_distance_km: Feature
+    is_coastal: Feature
+    hurricane_coast: Feature
+    sun_belt: Feature
+    nearest_metro: Feature
+    metro_distance_km: Feature
+    urbanicity_proxy: Feature
+    ski_distance_km: Feature
+    near_ski_area: Feature
+    delivery_speed_proxy: Feature
+    # Time and calendar (shopper local time, UTC if the zip is unknown)
+    day_of_week: Feature
+    is_weekend: Feature
+    daypart: Feature
+    active_moments: Feature        # distribution {moment name: intensity}
 
 
 # ---- Reference data (loaded lazily, once) -----------------------------------
@@ -197,34 +218,77 @@ def _clean_zip(raw: str) -> str | None:
     return text if len(text) == 5 and text.isdigit() else None
 
 
+GEO_FEATURE_NAMES = [
+    "state", "region", "timezone", "local_hour", "urbanicity", "cold_or_mountain",
+    "climate_band", "mountain", "coast_distance_km", "is_coastal", "hurricane_coast",
+    "sun_belt", "nearest_metro", "metro_distance_km", "urbanicity_proxy", "ski_distance_km",
+    "near_ski_area", "delivery_speed_proxy", "income_tier"]
+
+
 def _unknown_geo() -> dict[str, Feature]:
-    none = Feature(source="none")
-    return {"state": none, "region": none, "timezone": none, "local_hour": none,
-            "urbanicity": none, "cold_or_mountain": Feature(value=False, source="none")}
+    """Every zip-derived feature with confidence 0 (bad or missing zip)."""
+    return {name: Feature(source="none") for name in GEO_FEATURE_NAMES}
 
 
-def _geo_features(signals: ShopperSignals, now_utc: datetime) -> dict[str, Feature]:
-    """State, region, timezone, local hour, urbanicity and cold flag from the zip."""
+def _urbanicity_proxy(area_class: str, metro_km: float) -> str:
+    """Combine the zip's own urbanicity with distance to a big metro."""
+    points = {"urban": 2, "suburban": 1, "rural": 0}[area_class]
+    points += 1 if metro_km < 30 else (0 if metro_km < 80 else -1)
+    return "urban" if points >= 3 else ("suburban" if points >= 1 else "rural")
+
+
+def _delivery_speed(urbanicity: str, metro_km: float) -> str:
+    if urbanicity == "urban" or metro_km < geo.METRO_SAME_DAY_KM:
+        return "same_or_next_day_likely"
+    if metro_km < geo.METRO_NEXT_DAY_KM:
+        return "next_day_likely"
+    return "standard"
+
+
+def _geo_features(signals: ShopperSignals) -> dict[str, Feature]:
+    """Everything derived from the zip: state, climate, coast, metro, ski, delivery, income."""
     row = _zips().get(_clean_zip(signals.zip) or "")
     if row is None:
         return _unknown_geo()
 
     factor = ZIP_SOURCE_FACTOR[signals.zip_source]
     source = f"census_zcta_{signals.zip_source}_zip"
+    lat, lon, state = row["lat"], row["lon"], row["state"]
 
-    def feature(value, base_conf):
-        return Feature(value=value, confidence=round(base_conf * factor, 3), source=source)
+    def feature(value, base_conf, src=source):
+        return Feature(value=value, confidence=round(base_conf * factor, 3), source=src)
 
-    local_hour = now_utc.astimezone(ZoneInfo(row["timezone"])).hour
-    is_cold = (row["state"] in COLD_STATES or row["state"] in MOUNTAIN_STATES
-               or row["lat"] >= COLD_LATITUDE)
+    band = geo.climate_band(state, lat, lon)
+    mountain = geo.is_mountain(state, lat, lon)
+    coast_km = geo.nearest("coast_points.csv", lat, lon)[1]
+    metro_name, metro_km = geo.nearest("metros.csv", lat, lon)
+    ski_km = geo.nearest("ski_areas.csv", lat, lon)[1]
+    is_coastal = coast_km < geo.COAST_KM
+    sun_belt = band in ("hot_humid_sunbelt", "arid_desert") or (state == "CA" and lat < 35.5)
+    hurricane = state in geo.HURRICANE_STATES and coast_km < geo.HURRICANE_KM
+    income = row.get("income_tier") or None  # column only exists when built with a Census key
+    approx = "approx_" + source
+
     return {
-        "state": feature(row["state"], STATE_CONF),
+        "state": feature(state, STATE_CONF),
         "region": feature(row["region"] or None, REGION_CONF if row["region"] else 0.0),
         "timezone": feature(row["timezone"], TIMEZONE_CONF),
-        "local_hour": feature(float(local_hour), LOCAL_HOUR_CONF),
+        "local_hour": feature(None, LOCAL_HOUR_CONF),  # value filled in by build_features
         "urbanicity": feature(row["urbanicity"], URBANICITY_CONF),
-        "cold_or_mountain": feature(is_cold, COLD_CONF),
+        "cold_or_mountain": feature(band == "cold_snow_belt" or mountain, COLD_CONF, approx),
+        "climate_band": feature(band, CLIMATE_CONF, approx),
+        "mountain": feature(mountain, CLIMATE_CONF, approx),
+        "coast_distance_km": feature(round(coast_km, 1), NEARBY_CONF, approx),
+        "is_coastal": feature(is_coastal, NEARBY_CONF, approx),
+        "hurricane_coast": feature(hurricane, CLIMATE_CONF, approx),
+        "sun_belt": feature(sun_belt, CLIMATE_CONF, approx),
+        "nearest_metro": feature(metro_name, NEARBY_CONF, approx),
+        "metro_distance_km": feature(round(metro_km, 1), NEARBY_CONF, approx),
+        "urbanicity_proxy": feature(_urbanicity_proxy(row["urbanicity"], metro_km), NEARBY_CONF, approx),
+        "ski_distance_km": feature(round(ski_km, 1), NEARBY_CONF, approx),
+        "near_ski_area": feature(ski_km < geo.SKI_KM, NEARBY_CONF, approx),
+        "delivery_speed_proxy": feature(_delivery_speed(row["urbanicity"], metro_km), 0.4, approx),
+        "income_tier": feature(income, INCOME_CONF if income else 0.0, "census_acs_2022"),
     }
 
 
@@ -239,16 +303,17 @@ def _cart_prior(publisher: dict | None) -> CartPrior:
                      confidence=0.6, source="publisher_catalog")
 
 
-def _gift_signal(signals: ShopperSignals, publisher: dict | None, now_utc: datetime) -> Feature:
-    probability = GIFT_BASELINE
-    if now_utc.month in GIFT_MONTHS:
-        probability += GIFT_SEASON_BUMP
+def _gift_signal(signals: ShopperSignals, publisher: dict | None,
+                 moments: list[calendar.Moment]) -> Feature:
+    """Gift probability driven by the retail calendar (gifting moments), not fixed months."""
+    gift_intensity = max((m.intensity for m in moments if m.gifting), default=0.0)
+    probability = GIFT_BASELINE + GIFT_CALENDAR_WEIGHT * gift_intensity
     if publisher is not None and "gifting" in publisher["subcategories"]:
         probability += GIFT_PUBLISHER_BUMP
     if signals.zip_source == "shipping":  # shipping zip is more often a recipient's (D5)
         probability += GIFT_SHIPPING_BUMP
     return Feature(value=round(probability, 3), confidence=GIFT_CONF,
-                   source="season+publisher+zip_source")
+                   source="calendar+publisher+zip_source")
 
 
 # ---- Public entry point -----------------------------------------------------
@@ -259,20 +324,35 @@ def build_features(signals: ShopperSignals, now_utc: datetime) -> ShopperFeature
         now_utc = now_utc.replace(tzinfo=ZoneInfo("UTC"))
     publisher = _publishers().get(signals.publisher_id)
     name_valid, display_name, p_female, age_bucket = _name_features(signals.first_name)
-    geo = _geo_features(signals, now_utc)
+    geo_features = _geo_features(signals)
+
+    # Shopper local time via the zip's timezone; fall back to UTC (confidence 0).
+    timezone_feature = geo_features["timezone"]
+    if timezone_feature.value:
+        local_dt = now_utc.astimezone(ZoneInfo(timezone_feature.value))
+        time_conf, time_source = geo_features["local_hour"].confidence, timezone_feature.source
+        geo_features["local_hour"] = Feature(value=float(local_dt.hour),
+                                             confidence=time_conf, source=time_source)
+    else:
+        local_dt, time_conf, time_source = now_utc, 0.0, "utc_fallback"
+    time_info = calendar.time_features(local_dt)
+
+    def time_feature(value):
+        return Feature(value=value, confidence=time_conf, source=time_source)
+
+    moments = calendar.active_moments(local_dt)
     return ShopperFeatures(
         name_valid=name_valid,
         display_name=display_name,
         p_female=p_female,
         age_bucket=age_bucket,
-        state=geo["state"],
-        region=geo["region"],
-        timezone=geo["timezone"],
-        local_hour=geo["local_hour"],
-        urbanicity=geo["urbanicity"],
-        # ACS income was unavailable when building the tables (no API key): always unknown.
-        income_tier=Feature(source="none"),
         cart_prior=_cart_prior(publisher),
-        gift_signal=_gift_signal(signals, publisher, now_utc),
-        cold_or_mountain=geo["cold_or_mountain"],
+        gift_signal=_gift_signal(signals, publisher, moments),
+        day_of_week=time_feature(time_info["day_of_week"]),
+        is_weekend=time_feature(time_info["is_weekend"]),
+        daypart=time_feature(time_info["daypart"]),
+        active_moments=Feature(distribution={m.name: m.intensity for m in moments},
+                               confidence=CALENDAR_CONF * (1.0 if time_conf else 0.7),
+                               source="config/calendar.yaml"),
+        **geo_features,
     )

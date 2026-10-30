@@ -13,8 +13,14 @@ Names: the `babynames` dataset (Hadley Wickham's R package, github.com/hadley/ba
   do not work around that. Only the 1880-2017 span is available here.
 Zips: Census 2023 ZCTA Gazetteer (lat, lon, land area).
   ZCTA = ZIP Code Tabulation Area, the Census approximation of a ZIP code.
-Income / population: the keyless ACS API now redirects to a "missing key" page, so ACS
-  income and population are NOT included. Urbanicity therefore uses land area (see below).
+Income / population: the ACS 5-year API (2022) now needs a free key. If the environment
+  variable CENSUS_API_KEY is set, we fetch B19013_001E (median household income) and
+  B01003_001E (population) per ZCTA and add median_income, population, density,
+  income_tier and density-based urbanicity. Without a key these columns are omitted and
+  urbanicity falls back to land area (see below); the serving code then reports
+  income_tier with confidence 0.
+Hand-written tables used at serve time (data/reference/coast_points.csv, metros.csv,
+  ski_areas.csv) are NOT built here; see src/disco_planner/serving/geo.py.
 
 LIMITATIONS
 -----------
@@ -23,6 +29,7 @@ LIMITATIONS
 * Name data ends in 2017, so people born 2009-2017 (under 18) are excluded on purpose.
 """
 import io
+import os
 import zipfile
 from pathlib import Path
 
@@ -143,6 +150,46 @@ def urbanicity_from_area(land_sqmi: float) -> str:
     return "rural"
 
 
+# ACS-based cutoffs (used only when CENSUS_API_KEY is set).
+ACS_URL = "https://api.census.gov/data/2022/acs/acs5"
+INCOME_CUTOFFS = [(45_000, "low"), (80_000, "mid"), (120_000, "mid-high")]  # else "high"
+URBAN_MIN_DENSITY = 2000      # people per square mile
+SUBURBAN_MIN_DENSITY = 500
+
+
+def income_tier(income: float) -> str:
+    """low < $45k <= mid < $80k <= mid-high < $120k <= high (median household income)."""
+    if pd.isna(income):
+        return ""
+    for upper, label in INCOME_CUTOFFS:
+        if income < upper:
+            return label
+    return "high"
+
+
+def urbanicity_from_density(density: float) -> str:
+    if density >= URBAN_MIN_DENSITY:
+        return "urban"
+    if density >= SUBURBAN_MIN_DENSITY:
+        return "suburban"
+    return "rural"
+
+
+def fetch_acs(api_key: str) -> pd.DataFrame:
+    """Median income and population per ZCTA from the ACS 5-year API."""
+    response = requests.get(ACS_URL, timeout=120, params={
+        "get": "B19013_001E,B01003_001E", "for": "zip code tabulation area:*", "key": api_key})
+    response.raise_for_status()
+    rows = response.json()
+    acs = pd.DataFrame(rows[1:], columns=rows[0]).rename(columns={
+        "zip code tabulation area": "zip", "B19013_001E": "median_income",
+        "B01003_001E": "population"})
+    acs["median_income"] = pd.to_numeric(acs["median_income"], errors="coerce")
+    acs["population"] = pd.to_numeric(acs["population"], errors="coerce")
+    acs.loc[acs["median_income"] < 0, "median_income"] = float("nan")  # -666666666 = no data
+    return acs
+
+
 def download(url: str, path: Path) -> Path:
     """Download a file once (plain request, no header tricks)."""
     if not path.exists():
@@ -196,7 +243,19 @@ def build_zips() -> None:
     df["region"] = df["state"].map(STATE_TO_REGION).fillna("")  # PR / VI: no region
     df["timezone"] = df["zip"].str[:3].map(ZIP3_TZ_OVERRIDES).fillna(df["state"].map(STATE_TZ))
     df["urbanicity"] = df["land_sqmi"].map(urbanicity_from_area)
-    out = df[["zip", "lat", "lon", "land_sqmi", "state", "region", "timezone", "urbanicity"]]
+    columns = ["zip", "lat", "lon", "land_sqmi", "state", "region", "timezone", "urbanicity"]
+    api_key = os.environ.get("CENSUS_API_KEY")
+    if api_key:
+        df = df.merge(fetch_acs(api_key), on="zip", how="left")
+        df["density"] = (df["population"] / df["land_sqmi"].where(df["land_sqmi"] > 0)).round(1)
+        df["income_tier"] = df["median_income"].map(income_tier)
+        has_density = df["density"].notna()
+        df.loc[has_density, "urbanicity"] = df.loc[has_density, "density"].map(urbanicity_from_density)
+        columns += ["median_income", "population", "density", "income_tier"]
+        print("ACS income/population added")
+    else:
+        print("CENSUS_API_KEY not set: skipping ACS income/population")
+    out = df[columns]
     out.to_csv(OUT / "zips.csv", index=False, float_format="%.4f")
     print(f"zips.csv: {len(out)} zips")
 
