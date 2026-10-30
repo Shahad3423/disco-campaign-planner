@@ -1,0 +1,88 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
+  "product": "Sustainable activewear for women",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+  ],
+  "values": [
+    "sustainability",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category: brand makes activewear."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Core audience: activewear for women."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Core value: made from recycled ocean plastic."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Adjacent category: activewear is a subset of apparel."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Adjacent interest: typical activewear use case."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "sustainable_apparel",
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell sells apparel/activewear to women and has fitness-engaged shoppers."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on fitness and wellness."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features activewear and sustainability messaging."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, category, and core value proposition are clear. Price tier is implied by comparison, though exact numerical price and purchase model are missing.",
+  "missing_info": [
+    "exact price point in USD",
+    "purchase model (one-time vs subscription)",
+    "target age range"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value (AOV) in USD?",
+    "Is this a one-time purchase or do you offer subscriptions?",
+    "What is your gross margin or target customer acquisition cost?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

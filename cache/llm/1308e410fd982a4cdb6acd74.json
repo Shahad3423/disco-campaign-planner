@@ -1,0 +1,83 @@
+{
+  "business_summary": "Vet-formulated, grain-free dog food tailored for older dogs focused on joint health and longevity, sold via subscription.",
+  "product": "Vet-formulated, grain-free older dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-formulated",
+    "grain-free food for older dogs",
+    "focused on their dog's joints and living longer"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "The product is dog food."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Sold on a subscription model."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Grain-free vet-formulated pet food appeals to natural and health-conscious pet owners."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Focuses on joint health and longevity for older dogs."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is a pet subscription publisher whose owners are health-conscious and responsive to premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate features millennials treating dogs as family, aligning well with premium dog food."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product, target audience, and business model provided, though specific pricing is missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the price of a standard subscription order or box?",
+    "What is your gross margin percentage?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

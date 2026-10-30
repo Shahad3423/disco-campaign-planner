@@ -1,0 +1,77 @@
+{
+  "business_summary": "Handcrafted Italian leather handbags made to fit, sourced from Florence.",
+  "product": "Handcrafted Italian leather handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Handcrafted Italian leather handbags made to fit",
+    "From Florence"
+  ],
+  "values": [],
+  "fulfillment_notes": "6 weeks to ship",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Handbags fall under apparel and accessories."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "High-end luxury handbags are common luxury gifts."
+    },
+    {
+      "tag": "workwear",
+      "weight": 0.25,
+      "why": "Handbags can be used as professional work accessories."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "home_goods",
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in=['delayed fulfillment']",
+      "evidence": "6 weeks to ship"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV and responsiveness to quality messaging align well with luxury Italian leather goods."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with conservative brand sensibility matches luxury positioning and craftsmanship."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": -1,
+      "why": "Instant delivery and impulse-friendly traffic clash with a 6-week shipping time and $1,200 luxury price point."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear DTC luxury product with defined price and fulfillment details, enabling safe planning despite minor missing details.",
+  "missing_info": [
+    "target_gender",
+    "target_age_range",
+    "profit_margin"
+  ],
+  "clarifying_questions": [
+    "What is your target gender demographic (women, men, or unisex)?",
+    "What is your gross profit margin for these handbags?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

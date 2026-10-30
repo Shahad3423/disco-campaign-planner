@@ -1,0 +1,89 @@
+{
+  "business_summary": "Hand-poured natural soy candles from Vermont with no synthetic scents, primarily purchased as gifts.",
+  "product": "soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont",
+    "No synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural",
+    "handmade"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and household product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The advertiser explicitly states people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Made from natural soy with no synthetic scents."
+    },
+    {
+      "tag": "bath",
+      "weight": 0.5,
+      "why": "Candles are frequently used as an adjacent product in bathrooms and spa settings."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "Candles complement spa and relaxation experiences."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy candles align with sustainable product preferences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with candles being mostly bought as presents."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Home and gifting life events drive purchases, fitting candle gifting well."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home buyers have high cross-sell with home goods like candles."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, audience, and gifting positioning are clearly stated; minor missing pricing info can be addressed via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price point of your candles?",
+    "Do you offer any subscription options or are purchases strictly one-time/gift?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

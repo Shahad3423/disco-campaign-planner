@@ -1,0 +1,77 @@
+{
+  "business_summary": "A DTC brand selling protein bars, requesting ad copy with weight loss and FDA approval claims.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "clinically proven to cause weight loss",
+    "FDA approved"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Protein bars are health and wellness consumer products."
+    },
+    {
+      "tag": "fitness",
+      "weight": 0.5,
+      "why": "Protein bars are frequently consumed by fitness-focused shoppers."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Protein bars are food items sold in grocery contexts."
+    }
+  ],
+  "competing_tags": [
+    "meal_kits",
+    "groceries"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "prefers science-backed claims vs unsubstantiated or strict health claims",
+      "evidence": "claim that bars are clinically proven to cause weight loss and FDA approved (FDA generally does not 'approve' individual food or supplement products)"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers at Movewell align with protein bar consumption."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's science-forward audience is likely to be skeptical of unverified health and regulatory claims."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The product category (protein bars) is clear, but pricing, purchase model, and missing margin details are absent, and the requested claims (FDA approval for food/supplement products) require verification or refinement.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your protein bars?",
+    "Is this a one-time purchase or available as a subscription?",
+    "What is your target customer demographic or primary buyer profile?",
+    "Can you provide documentation or substantiation for the clinical weight loss and FDA approval claims?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

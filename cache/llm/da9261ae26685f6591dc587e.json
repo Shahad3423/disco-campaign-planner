@@ -1,0 +1,100 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned at a price point between Lululemon and Girlfriend Collective.",
+  "product": "Activewear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Made from recycled ocean plastic",
+    "Sustainable activewear brand for women"
+  ],
+  "values": [
+    "sustainable",
+    "eco-friendly",
+    "recycled materials"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category of the brand's products."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Key product value stated as made from recycled ocean plastic."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Target demographic is women."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Broad category encompassing activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Adjacent fitness activity strongly associated with activewear shoppers."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "Weak association for activewear consumers participating in fitness."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "sustainable_apparel",
+    "fitness",
+    "fashion"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_006",
+      "conflict": "vague eco claims",
+      "evidence": "Brief states 'made from recycled ocean plastic' but lacks specific third-party certifications or detailed supply chain transparency."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid has users actively spending on yoga and fitness classes, aligning with activewear."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features sustainable activewear and shoes with comfort + sustainability messaging."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, target audience, and core sustainability angle are clearly understood.",
+  "missing_info": [
+    "Exact numerical price point in USD",
+    "Purchase model (one-time vs subscription)",
+    "Target age range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range in USD for your pieces?",
+    "Is your purchase model strictly one-time or do you offer subscriptions?",
+    "What is your primary goal for the Disco campaign (e.g., customer acquisition, ROAS)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

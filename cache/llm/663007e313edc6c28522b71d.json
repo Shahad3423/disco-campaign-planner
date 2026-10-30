@@ -1,0 +1,76 @@
+{
+  "business_summary": "Hand-poured natural soy candles from Vermont with no synthetic scents, primarily purchased as gifts.",
+  "product": "soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont",
+    "No synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural",
+    "hand-poured"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and lifestyle product category."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief states people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "The candles are made with natural soy and no synthetic scents."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy candles often appeal to sustainability-minded shoppers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with candles being mostly bought as presents."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and new-home life events drive purchases, matching the product and gift positioning."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product and gifting positioning with sufficient detail to plan campaign targeting.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "Are these available as a subscription option or strictly one-time purchase/gifts?",
+    "What is your primary advertising goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

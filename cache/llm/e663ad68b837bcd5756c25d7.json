@@ -1,0 +1,30 @@
+{
+  "business_summary": "B2B SaaS provider offering patient recall workflow automation software tailored for dental practices.",
+  "product": "Patient recall workflow automation software for dental practices",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Automates patient recall workflows for dental practices"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "The advertiser offers B2B software for dental practices rather than a Direct-to-Consumer (DTC) product suitable for post-purchase checkout placement.",
+  "missing_info": [
+    "DTC consumer product offering",
+    "Consumer pricing and target audience"
+  ],
+  "clarifying_questions": [
+    "Do you offer any direct-to-consumer health or oral care products suitable for post-purchase DTC shoppers?"
+  ]
+}

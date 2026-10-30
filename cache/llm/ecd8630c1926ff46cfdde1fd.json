@@ -1,0 +1,51 @@
+{
+  "business_summary": "A DTC brand offering a new product specifically targeted at moms.",
+  "product": "A new kind of thing for moms",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "A new kind of thing for moms."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "The product is explicitly for moms."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Products for moms are frequently purchased as gifts by family members."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "kids_products",
+    "family_products"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The input is extremely vague, providing only that the product is 'for moms' without specifying what the product actually is, its price, purchase model, or category.",
+  "missing_info": [
+    "product category and exact functionality",
+    "price point and tier",
+    "purchase model (one-time vs subscription)",
+    "specific target audience details beyond 'moms'"
+  ],
+  "clarifying_questions": [
+    "What is the exact product you are selling?",
+    "What is the retail price of the product?",
+    "Is this a one-time purchase or a subscription?",
+    "What is your primary growth or customer acquisition goal?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

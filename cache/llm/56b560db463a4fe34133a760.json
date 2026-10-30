@@ -1,0 +1,92 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
+  "product": "Sustainable activewear for women made from recycled ocean plastic",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Made from recycled ocean plastic"
+  ],
+  "values": [
+    "sustainable",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category of the brand is activewear."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Target audience is exclusively women."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Products are made from recycled ocean plastic."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Activewear falls under the broader apparel category."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Adjacent fitness activity often associated with activewear shoppers."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "Fitness class attendees frequently purchase activewear."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "sustainable_apparel",
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features apparel/activewear and women shoppers with strong fitness engagement."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on fitness and self-care."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features activewear and sustainable messaging that directly aligns."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, target audience, and core value proposition are clear enough to plan campaigns, with only minor financial details missing.",
+  "missing_info": [
+    "price_point_usd",
+    "purchase_model",
+    "exact profit margin or AOV"
+  ],
+  "clarifying_questions": [
+    "What is the exact average price point or range in USD for your activewear pieces?",
+    "Is your purchase model strictly one-time or do you offer a subscription option?",
+    "What is your primary campaign goal (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

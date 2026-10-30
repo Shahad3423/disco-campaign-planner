@@ -1,0 +1,99 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
+  "product": "Sustainable activewear for women",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic",
+    "Price point sits between Lululemon and Girlfriend Collective"
+  ],
+  "values": [
+    "Sustainability",
+    "Eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "The core product category is women's activewear."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Activewear falls under the broader apparel category."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "The brand's key differentiator is being made from recycled ocean plastic."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "The target gender specified is women."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Activewear is commonly used for yoga and fitness classes."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Shoppers buying fitness classes are frequent purchasers of activewear."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "sustainable_apparel",
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features women's activewear and fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid caters to users actively spending on yoga and fitness classes who wear activewear."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot sells sustainable shoes and activewear, matching the audience and sustainability angle."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and sustainability value proposition are clear enough to plan campaigns, despite missing specific exact pricing and purchase model details.",
+  "missing_info": [
+    "Exact price point in USD",
+    "Purchase model (one-time vs subscription)"
+  ],
+  "clarifying_questions": [
+    "What is the exact average price point or range in USD?",
+    "Is your product sold as a one-time purchase or a subscription?",
+    "What is your primary customer acquisition goal on the network?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

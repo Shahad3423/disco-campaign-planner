@@ -1,0 +1,83 @@
+{
+  "business_summary": "Brand selling refillable, concentrated cleaning products designed to eliminate single-use plastic bottles while matching the performance of big brands.",
+  "product": "Refillable, concentrated cleaning products",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles",
+    "Works as well as the big brands"
+  ],
+  "values": [
+    "sustainability",
+    "plastic-reduction",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "Core category for cleaning products."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Home goods and cleaning supplies are a direct fit."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Advertiser explicitly targets shoppers who care about sustainability."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Adjacent interest for eco-conscious cleaning buyers."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Often overlaps with sustainable and eco-friendly household cleaners."
+    }
+  ],
+  "competing_tags": [
+    "household"
+  ],
+  "persona_affinity_tags": [
+    "household",
+    "home_goods",
+    "refillable_products",
+    "sustainable"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods features sustainability-motivated kitchen buyers who value eco-friendly home goods."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "Clear product category, value proposition, and target audience, though missing pricing details which are captured via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "exact product lineup / SKUs"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price range of your refill starter kits?",
+    "Is your product sold as a one-time purchase, a subscription, or both?",
+    "What is your primary conversion goal for the Disco network (e.g., maximizing ROAS, acquiring subscribers)?"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "business_summary": "B2B SaaS product for dental practices that automates their patient recall workflow.",
+  "product": "B2B SaaS software for dental practices",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "We automate their patient recall workflow."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "This is a B2B SaaS product for dental practices, not a consumer product sold on a DTC checkout thank-you page.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_audience",
+    "values"
+  ],
+  "clarifying_questions": [],
+  "tag_stability": {},
+  "sample_agreement": null
+}

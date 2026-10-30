@@ -1,0 +1,74 @@
+{
+  "business_summary": "The advertiser sells protein bars with claims of clinical weight loss efficacy and FDA approval.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "clinically proven to cause weight loss",
+    "FDA approved"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars are nutritional consumable supplements."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Health and weight loss messaging aligns with wellness consumers."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.25,
+      "why": "Food items can be purchased alongside groceries."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in novelty or unsubstantiated claims",
+      "evidence": "claims they are clinically proven to cause weight loss and FDA approved"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is skeptical of unsubstantiated health claims, which clashes with the weight loss claims."
+    },
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are a strong fit for protein bars."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and claims are clearly stated, though pricing and specific target metrics are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range",
+    "values"
+  ],
+  "clarifying_questions": [
+    "What is the price point of your protein bars?",
+    "Are these sold as a one-time purchase or subscription?",
+    "What is your primary advertising goal?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

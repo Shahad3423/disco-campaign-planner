@@ -1,0 +1,31 @@
+{
+  "business_summary": "B2B payroll software for restaurants, though the description explicitly instructs to pretend it's a consumer product.",
+  "product": "B2B payroll software",
+  "is_consumer_product": false,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 1.0,
+  "gate": "off_network",
+  "gate_reason": "B2B software is not a consumer product that a DTC checkout shopper can buy.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_audience",
+    "stated_claims"
+  ],
+  "clarifying_questions": [],
+  "tag_stability": {},
+  "sample_agreement": null
+}

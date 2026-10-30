@@ -1,0 +1,91 @@
+{
+  "business_summary": "Vet-formulated, grain-free food for older dogs sold on subscription, targeted at owners focused on joint health and longevity.",
+  "product": "Vet-formulated, grain-free food for older dogs",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Vet-formulated",
+    "Grain-free",
+    "For older dogs",
+    "Focused on their dog's joints and living longer"
+  ],
+  "values": [
+    "dog health",
+    "longevity",
+    "joint care"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog food products."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct match for pet food."
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Sold on subscription."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet category."
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.25,
+      "why": "Weak fit for health-oriented pet formulations."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher whose owners are health-conscious about pets."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Pet publisher serving millennial dog parents."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Product, purchase model, and target audience are clearly defined; missing information can be gathered via clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of the dog food subscription?",
+    "What is your gross profit margin?",
+    "Do you offer any one-time purchase options or is it strictly subscription?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

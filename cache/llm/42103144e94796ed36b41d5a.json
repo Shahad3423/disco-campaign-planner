@@ -1,0 +1,73 @@
+{
+  "business_summary": "DTC brand selling breathable bedding and linen made in Portugal, targeting customers seeking a more grown-up alternative to brands like Brooklinen or Parachute.",
+  "product": "Bedding and linen",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core product category for home bedding items."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 1.0,
+      "why": "Linens and bedding fall directly under home textiles."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Broad home category shoppers frequently buy bedding and home goods."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers align well with premium European linen."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV match the 'grown-up aesthetic' target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel/home publisher with conservative brand sensibility matches the mature positioning."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear, though price and specific purchase model need to be confirmed.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range",
+    "specific fabric materials (e.g., flax linen, cotton)"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range for your bedding sets?",
+    "Are your products sold primarily as one-time purchases or do you offer subscriptions?",
+    "What is your primary growth or customer acquisition goal for this campaign?"
+  ]
+}

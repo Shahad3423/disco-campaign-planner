@@ -1,0 +1,95 @@
+{
+  "business_summary": "Small-batch, hand-poured soy wax candles from Vermont made with natural soy wax and no synthetic fragrances, primarily bought as gifts.",
+  "product": "Hand-poured soy wax candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+  ],
+  "values": [
+    "natural",
+    "handcrafted",
+    "sustainable",
+    "non-toxic"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and household fragrance category."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief explicitly states the product is mostly bought as gifts."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "The product is made with natural soy wax."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 1.0,
+      "why": "The candles contain no synthetic fragrances."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Small-batch natural soy candles appeal to eco-conscious shoppers."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.5,
+      "why": "Candles fit well into self-care and spa-like home atmospheres."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch",
+    "sustainable"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with candles mostly bought as gifts."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers align with home fragrance products."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Life events and home goods focus aligns with home-oriented candles."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear consumer product with distinct attributes and use cases, though pricing and margin details are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "profit_margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of your candles?",
+    "What is your target profit margin per order?",
+    "Are these available as a subscription or strictly one-time/gift purchases?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

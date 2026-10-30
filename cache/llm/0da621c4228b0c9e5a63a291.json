@@ -1,0 +1,85 @@
+{
+  "business_summary": "A Vermont-based brand selling hand-poured natural soy candles with no synthetic scents, mostly bought as presents.",
+  "product": "Natural soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles from Vermont",
+    "No synthetic scents",
+    "People mostly buy them as presents"
+  ],
+  "values": [
+    "natural",
+    "non_toxic"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Stated that people mostly buy them as presents."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and fragrance product."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Made from natural soy."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 1.0,
+      "why": "Contains no synthetic scents."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Soy candles are often associated with sustainable and eco-friendly consumer preferences."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong gifting season uplift aligns with candles being mostly bought as presents."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers appreciate home and candle products."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Gifting and new-home life events drive purchase for home-oriented goods."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product category (soy candles), specific attributes (natural, no synthetic scents), and use case (gifts). Missing pricing can be addressed with clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "Are these available as a subscription or one-time purchase only?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

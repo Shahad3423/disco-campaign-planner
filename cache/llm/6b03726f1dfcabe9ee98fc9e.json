@@ -1,0 +1,78 @@
+{
+  "business_summary": "Concentrated refill cleaning products designed to eliminate single-use plastic bottles while offering performance comparable to major brands.",
+  "product": "Concentrated refill cleaning products",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Concentrated refill cleaning products so you stop buying plastic bottles",
+    "Cleans like the major brands"
+  ],
+  "values": [
+    "sustainability",
+    "eco-friendly",
+    "plastic-free"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Core focus is sustainability and stopping plastic bottle waste."
+    },
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "Cleaning products belong to the household category."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Adjacent to eco-friendly cleaning and natural home products."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Household cleaning products are used in the home."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "refillable_products",
+    "sustainable",
+    "household",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods shoppers are sustainability-motivated kitchen and home buyers."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product and target audience are clear, but key operational details like price and purchase model are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or kit price for your refill cleaning products?",
+    "Is this sold as a one-time purchase or a subscription?",
+    "What is your target customer demographic or main customer profile?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

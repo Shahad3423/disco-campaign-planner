@@ -1,0 +1,89 @@
+{
+  "business_summary": "The advertiser sells protein bars and requests ad copy claiming they are clinically proven to cause weight loss and are FDA approved.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "clinically proven to cause weight loss",
+    "FDA approved"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars are core consumable wellness/nutritional supplement products."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Protein bars fit squarely into the wellness DTC category."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Food products like protein bars are adjacent to grocery offerings."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Protein bars are shelf-stable food items found in pantries."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness participants commonly consume protein bars for recovery and nutrition."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "wellness",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in=['ultra-processed food'] / prefers=['science-backed claims']",
+      "evidence": "Protein bars are often classified or viewed as processed foods, and the claims requested ('clinically proven to cause weight loss', 'FDA approved') represent heavy regulatory/science-backed health claims that may conflict with clean-label scrutiny."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users are actively spending on fitness and wellness."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is skeptical of unsubstantiated health claims, and the requested claims (weight loss, FDA approval for standard food/bars) are high-risk."
+    },
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Health-curious shoppers overlap with wellness and functional nutrition."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and claims are clearly stated, allowing us to proceed to planning while noting the need to confirm standard pricing and packaging details.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range",
+    "pack_size_or_subscription_details"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of a pack or box of your protein bars?",
+    "Are these sold as a one-time purchase, a subscription, or both?",
+    "What is your primary growth goal for this campaign (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

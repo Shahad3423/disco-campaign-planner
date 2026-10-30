@@ -1,0 +1,81 @@
+{
+  "business_summary": "The advertiser sells protein bars and claims they are clinically proven to cause weight loss and are FDA approved.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "clinically proven to cause weight loss",
+    "FDA approved"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars fall directly under nutritional supplements."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Health-focused snack relevant to wellness audiences."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness attendees consume protein bars for recovery and energy."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "wellness"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "disinterested_in ultra-processed food and prefers science-backed claims",
+      "evidence": "Selling protein bars with weight loss claims may conflict with whole-food/minimal processing preferences, though it uses health claims."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are a strong fit for protein bars."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care are relevant."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is skeptical of unsubstantiated health claims, and the claims made might trigger skepticism."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "The product and claims are clear enough to plan targeting, despite missing pricing and purchase model details.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_gender",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the retail price per unit or pack of your protein bars?",
+    "Is this product sold as a one-time purchase, subscription, or both?",
+    "What is your target audience or ideal customer profile?",
+    "What is your gross margin or target customer acquisition cost?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

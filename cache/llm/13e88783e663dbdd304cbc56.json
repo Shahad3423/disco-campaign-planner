@@ -1,0 +1,79 @@
+{
+  "business_summary": "An advertiser selling protein bars formulated to taste good rather than like cardboard.",
+  "product": "Protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Protein bars that don't taste like cardboard"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars are a core dietary supplement and sports nutrition product."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness class attendees often consume protein bars for post-workout recovery."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Health-conscious consumers buying wellness products frequently purchase protein snacks."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.25,
+      "why": "Protein bars are often stored in home pantries as a quick snack."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "wellness",
+    "functional_beverages",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "Dislikes ultra-processed food",
+      "evidence": "Protein bars are frequently classified as or associated with processed foods, potentially conflicting with The Wellness Optimizer's preferences."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively engaged in fitness and self-care, matching a protein bar buyer."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form has a health-focused wellness audience that overlaps with sports nutrition."
+    }
+  ],
+  "confidence": 0.85,
+  "gate": "clarify",
+  "gate_reason": "The product category (protein bars) is clear, but critical commercial details like price point, packaging size, subscription availability, and margins are completely missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of your protein bars or starter bundle?",
+    "Are these sold primarily as a one-time purchase or via subscription?",
+    "What is your target audience's primary motivation (e.g., muscle gain, weight loss, healthy snacking)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

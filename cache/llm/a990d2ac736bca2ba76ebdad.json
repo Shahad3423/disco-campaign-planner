@@ -1,0 +1,75 @@
+{
+  "business_summary": "Sells workout supplements including pre-workout, creatine, and protein, competing on price by offering the same formulations as expensive brands for half the cost.",
+  "product": "Workout supplements (pre-workout, creatine, protein)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We compete on price, not on marketing",
+    "Same formulations as the expensive brands for half the cost"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core category: workout supplements, creatine, and protein."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Adjacent interest: fitness-focused shoppers."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Adjacent interest: active lifestyle shoppers."
+    }
+  ],
+  "competing_tags": [
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "Dislikes loud aesthetics / influencer positioning and prefers heritage/craftsmanship, which clashes with low-cost marketing claims.",
+      "evidence": "We compete on price, not on marketing. Same formulations as the expensive brands for half the cost."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers who cross over with wellness."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users are actively spending on fitness and self-care."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product category (workout supplements) and value proposition (low cost, same formulation), allowing for effective publisher targeting.",
+  "missing_info": [
+    "Exact price point",
+    "Product margins",
+    "Whether subscription is available"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or product price range?",
+    "Do you offer a subscription option alongside one-time purchases?",
+    "What are your average margins or customer acquisition cost targets?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,92 @@
+{
+  "business_summary": "DTC brand selling premium grain-free, vet-formulated dog food for senior dogs, focused on joint health and longevity via a subscription model.",
+  "product": "Senior dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Premium dog food for senior dogs",
+    "Grain-free",
+    "Vet-formulated",
+    "Targets joint health and longevity"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct category match for dog food"
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Offered via subscription model"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent category for pet owners"
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent for health-focused pet care products"
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "Health and longevity focus aligns broadly with wellness"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_services"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is subscription-heavy and owners are health-conscious about pets, aligning with premium senior pet food."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has a large pet audience with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate reaches millennial pet parents who treat dogs as family."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, audience, and purchase model are clear, though exact price point and margin are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "target_age_range",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value for your subscription?",
+    "Do you offer any one-time purchase options alongside the subscription?",
+    "What is your gross margin profile?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

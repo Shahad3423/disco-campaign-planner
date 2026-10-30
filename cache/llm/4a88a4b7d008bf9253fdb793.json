@@ -1,0 +1,78 @@
+{
+  "business_summary": "Sells protein bars formulated to taste good rather than like cardboard.",
+  "product": "Protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Protein bars that don't taste like cardboard"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars fall squarely under nutritional supplements and sports nutrition."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Protein bars are a staple of health and wellness DTC brands."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness enthusiasts frequently consume protein bars post-workout."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Protein bars are a common grocery and pantry snack item."
+    },
+    {
+      "tag": "pantry",
+      "weight": 0.5,
+      "why": "Snacks and bars are typically stored in the pantry."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "recovery",
+    "functional_beverages",
+    "supplements"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers at Movewell are a natural fit for protein bars."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and self-care at Studiogrid are prime targets for protein bars."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "We know the product is protein bars, but we are missing price point, purchase model details (one-time vs. subscription), and target margins or goals.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "subscription availability or bundle options",
+    "flavor varieties or ingredients"
+  ],
+  "clarifying_questions": [
+    "What is the average price of a box or pack of your protein bars?",
+    "Are these sold primarily as one-time purchases or via subscription?",
+    "What is your main growth goal on the network (e.g., maximizing ROAS, acquiring subscribers)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

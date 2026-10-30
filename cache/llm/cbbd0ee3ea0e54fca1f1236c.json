@@ -1,0 +1,69 @@
+{
+  "business_summary": "Handcrafted custom-fit Italian leather handbags made in Florence.",
+  "product": "Handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Custom-fit leather handbags",
+    "Italian-made",
+    "Handcrafted in Florence"
+  ],
+  "values": [],
+  "fulfillment_notes": "Minimum order ships in 6 weeks.",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Handbags are an adjacent fashion accessory to apparel."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.25,
+      "why": "High-end luxury handbags can occasionally serve as premium gifts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "home_goods",
+    "small_batch"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "Dislikes delayed fulfillment",
+      "evidence": "Minimum order ships in 6 weeks."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV respond well to quality and craftsmanship messaging."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with conservative brand sensibility aligns with luxury Italian leather goods."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, price point, and positioning are clear enough to proceed with planning.",
+  "missing_info": [
+    "target gender",
+    "target age range",
+    "profit margin"
+  ],
+  "clarifying_questions": [
+    "What is your target demographic (primary gender and age range)?",
+    "Are these handbags primarily designed for women, men, or unisex?",
+    "What is your target customer acquisition cost (CAC) or profit margin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,78 @@
+{
+  "business_summary": "A Vermont-based brand making hand-poured natural soy candles with no synthetic scents, largely purchased as gifts.",
+  "product": "Natural soy candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Hand-poured natural soy candles",
+    "From Vermont",
+    "No synthetic scents"
+  ],
+  "values": [
+    "natural",
+    "handmade"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are a core home decor and ambiance product."
+    },
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "The brief explicitly notes people mostly buy them as presents."
+    },
+    {
+      "tag": "natural",
+      "weight": 1.0,
+      "why": "Made from natural soy with no synthetic scents."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Absence of synthetic scents aligns with non-toxic preferences."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy candles often appeal to sustainability-conscious consumers."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Heartfoot features gifting season uplift and gifting tags, aligning with candles being bought as presents."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods notes gifting and home life events as key purchase drivers, fitting home-based gifts."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and core audience intent (gifting, home) are clear, though price and margin details are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the retail price point of your candles?",
+    "What is your target profit margin or AOV?",
+    "Are these available as a subscription or one-time purchase only?"
+  ]
+}

@@ -2,3 +2,5 @@ pydantic>=2
 pyyaml
 pytest
 tzdata
+google-genai>=1.0
+streamlit

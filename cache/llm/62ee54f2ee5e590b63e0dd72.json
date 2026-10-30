@@ -1,0 +1,77 @@
+{
+  "business_summary": "DTC brand selling protein bars formulated to taste good rather than like cardboard.",
+  "product": "Protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Protein bars that don't taste like cardboard."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Protein bars are a core fitness and dietary supplement product."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness class attendees frequently consume protein bars for recovery and energy."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.5,
+      "why": "Protein bars are commonly sold as grocery and pantry items."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Fit with general wellness and health-oriented consumer products."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fitness",
+    "recovery",
+    "gourmet_food"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers at Movewell are a strong fit for protein bars."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Yoga and fitness studio users are actively seeking post-workout nutrition."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Health-conscious shoppers looking at vitamins and supplements will appreciate functional nutrition."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The product category and audience are clear, but missing essential pricing, margin, and purchase model details to fully plan campaign economics.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model (one-time vs subscription)",
+    "target margins"
+  ],
+  "clarifying_questions": [
+    "What is the average retail price of a box or pack of your protein bars?",
+    "Do customers primarily buy as a one-time purchase or via subscription?",
+    "What is your gross margin or target CPA for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

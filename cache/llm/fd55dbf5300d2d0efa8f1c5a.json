@@ -1,0 +1,88 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
+  "product": "Sustainable women's activewear",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Made from recycled ocean plastic",
+    "Sustainable activewear for women"
+  ],
+  "values": [
+    "Sustainability",
+    "Eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category of the product."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Parent category for activewear."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Made from recycled ocean plastic."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Targeted specifically towards women."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Adjacent fitness activity often associated with activewear."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Target audience engages in fitness."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features apparel/activewear and a fitness-engaged audience."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot focuses on activewear and sustainable messaging."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and audience are clearly defined, but price point and exact purchase model need clarification.",
+  "missing_info": [
+    "price_point_usd",
+    "purchase_model",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the exact average price point in USD for your items?",
+    "Is your product sold as one-time purchases or via subscription?",
+    "What is your primary revenue or customer acquisition goal for this campaign?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

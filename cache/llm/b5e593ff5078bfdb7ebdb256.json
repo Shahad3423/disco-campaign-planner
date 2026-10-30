@@ -1,0 +1,91 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic.",
+  "product": "Sustainable women's activewear made from recycled ocean plastic",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Made from recycled ocean plastic"
+  ],
+  "values": [
+    "sustainable",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category of the brand's product."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Target gender for the activewear."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Key product feature and value (made from recycled ocean plastic)."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Broad category encompassing activewear."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "Adjacent interest for activewear shoppers."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.25,
+      "why": "Adjacent interest for activewear shoppers."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "sustainable_apparel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on fitness and self-care."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features activewear and sustainability messaging."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product, audience, and sustainability angle are clear, though exact pricing in USD and purchase model are missing.",
+  "missing_info": [
+    "Exact price point in USD",
+    "Purchase model (one-time vs subscription)"
+  ],
+  "clarifying_questions": [
+    "What is the exact price range or average order value in USD?",
+    "Is this a one-time purchase or a subscription model?",
+    "What is your primary advertising goal for Disco?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

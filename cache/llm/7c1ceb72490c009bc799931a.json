@@ -1,0 +1,71 @@
+{
+  "business_summary": "DTC brand selling actually-breathable linen bedding made in Portugal, targeting customers who want a more grown-up aesthetic than Brooklinen or Parachute.",
+  "product": "Linen bedding",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen and Parachute"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "bedding",
+      "weight": 1.0,
+      "why": "Core category: brand sells linen bedding."
+    },
+    {
+      "tag": "home_textiles",
+      "weight": 0.5,
+      "why": "Adjacent home category closely related to bedding."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Broad home category for decor and soft goods."
+    }
+  ],
+  "competing_tags": [
+    "bedding"
+  ],
+  "persona_affinity_tags": [
+    "home_goods",
+    "home_decor"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Older affluent women with high AOV who respond to quality messaging align well with grown-up premium linen."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative brand sensibility aligns with a grown-up aesthetic."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious urban/suburban buyers with high cross-sell in bedding and home textiles."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear, though missing exact price point and margin details which will be asked in clarifying questions.",
+  "missing_info": [
+    "price_point_usd",
+    "specific product margins"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or range for your linen bedding sets?",
+    "Are you primarily focused on one-time purchases, or do you offer bundles/subscriptions?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

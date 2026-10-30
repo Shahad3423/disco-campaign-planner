@@ -1,0 +1,82 @@
+{
+  "business_summary": "An affordable workout supplement brand offering pre-workout, creatine, and protein formulations identical to expensive brands at half the cost.",
+  "product": "Workout supplements (pre-workout, creatine, protein)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We compete on price, not on marketing.",
+    "Same formulations as the expensive brands for half the cost."
+  ],
+  "values": [
+    "value",
+    "affordability"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "The core product category is workout supplements."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Supplements fall under general wellness and health products."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "Attendees of fitness classes are frequent users of workout supplements."
+    }
+  ],
+  "competing_tags": [
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements",
+    "recovery"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell has fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on fitness and self-care."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": 1,
+      "why": "Daily Form has a science-forward wellness audience interested in supplements."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product and value proposition are clearly stated, allowing us to target fitness and wellness audiences effectively.",
+  "missing_info": [
+    "price_point_usd",
+    "target_age_range",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value of your supplement products?",
+    "Do you offer subscriptions or only one-time purchases?",
+    "What is your target customer demographic (age or gender skew, if any)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,69 @@
+{
+  "business_summary": "A brand selling custom-fit, Italian-made leather handbags handcrafted in Florence with an average price point of $1,200 and a 6-week minimum fulfillment time.",
+  "product": "Custom-fit leather handbags",
+  "is_consumer_product": true,
+  "price_point_usd": 1200.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Custom-fit leather handbags",
+    "Italian-made",
+    "Handcrafted in Florence"
+  ],
+  "values": [],
+  "fulfillment_notes": "Minimum order ships in 6 weeks.",
+  "relevant_tags": [
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Handbags are a primary fashion accessory closely aligned with apparel."
+    },
+    {
+      "tag": "gifting",
+      "weight": 0.5,
+      "why": "Luxury leather goods are frequently purchased as high-end gifts."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "fashion",
+    "home_goods",
+    "travel"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_007",
+      "conflict": "disinterested_in=['delayed fulfillment']",
+      "evidence": "Minimum order ships in 6 weeks."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "High AOV and appreciation for quality messaging align with a $1,200 luxury handbag."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": 1,
+      "why": "Highest-AOV apparel publisher with a conservative sensibility, matching a luxury price point."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear luxury product, price point, and fulfillment terms provided.",
+  "missing_info": [
+    "target_gender",
+    "target_age_range",
+    "exact margin details"
+  ],
+  "clarifying_questions": [
+    "What is your target gender demographic (women, men, or unisex)?",
+    "What is your target age range?",
+    "What is your gross product margin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

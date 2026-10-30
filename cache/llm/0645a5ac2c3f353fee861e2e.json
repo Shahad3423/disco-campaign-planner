@@ -1,0 +1,59 @@
+{
+  "business_summary": "DTC brand selling technical outerwear shells for serious backcountry skiers.",
+  "product": "Technical outerwear shells",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category for technical outerwear and outdoor sports."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category for outerwear and shells."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers are a strong cross-sell for technical outerwear."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product, pricing, and audience provided.",
+  "missing_info": [
+    "target_age_range",
+    "values",
+    "fulfillment_notes",
+    "target_gender"
+  ],
+  "clarifying_questions": [
+    "What is your target gender split or is it unisex?",
+    "Do you offer any subscription options or is it strictly one-time purchase?",
+    "What is your primary customer acquisition goal (e.g., ROAS, volume)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

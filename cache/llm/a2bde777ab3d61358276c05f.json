@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "For your new family member",
+      "body": "Carefully curated for the first three months of your cat's life with toys, food samples, and a helpful booklet.",
+      "cta": "Explore box",
+      "headline_no_name": "For your new family member",
+      "angle": "emotional connection",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Make those first months easier",
+      "body": "Everything you need for the first three months of your cat's life, including toys, food samples, and a helpful booklet.",
+      "cta": "Get started",
+      "headline_no_name": "Make those first months easier",
+      "angle": "time-saving",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "headline": "Get the complete kitten bundle",
+      "body": "Cover the first three months of your cat's life with toys, food samples, and an informative booklet in one pack.",
+      "cta": "Claim offer",
+      "headline_no_name": "Get the complete kitten bundle",
+      "angle": "bundle offers",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

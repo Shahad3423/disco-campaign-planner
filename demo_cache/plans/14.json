@@ -1,0 +1,1520 @@
+{
+ "brief": "Bedding. Linen. Actually-breathable stuff made in Portugal. Our customers are mostly people who got tired of the Brooklinen/Parachute aesthetic and want something a little more grown-up.",
+ "profile": {
+  "business_summary": "DTC brand selling breathable bedding and linen made in Portugal, targeting customers seeking a more grown-up alternative to brands like Brooklinen or Parachute.",
+  "product": "Bedding and linen",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+   "Actually-breathable stuff",
+   "Made in Portugal",
+   "More grown-up than Brooklinen/Parachute aesthetic"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+   {
+    "tag": "bedding",
+    "weight": 1.0,
+    "why": "Core product category for home bedding items."
+   },
+   {
+    "tag": "home_textiles",
+    "weight": 1.0,
+    "why": "Linens and bedding fall directly under home textiles."
+   },
+   {
+    "tag": "home",
+    "weight": 0.5,
+    "why": "Broad home category shoppers frequently buy bedding and home goods."
+   }
+  ],
+  "competing_tags": [
+   "bedding"
+  ],
+  "persona_affinity_tags": [
+   "home_goods",
+   "home_decor"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+   {
+    "publisher_id": "pub_011",
+    "alignment": 1,
+    "why": "Design-conscious urban/suburban buyers align well with premium European linen."
+   },
+   {
+    "publisher_id": "pub_004",
+    "alignment": 1,
+    "why": "Older affluent women with high AOV match the 'grown-up aesthetic' target demographic."
+   },
+   {
+    "publisher_id": "pub_005",
+    "alignment": 1,
+    "why": "Highest-AOV apparel/home publisher with conservative brand sensibility matches the mature positioning."
+   }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear, though price and specific purchase model need to be confirmed.",
+  "missing_info": [
+   "price_point_usd",
+   "price_tier",
+   "target_age_range",
+   "specific fabric materials (e.g., flax linen, cotton)"
+  ],
+  "clarifying_questions": [
+   "What is the average price point or range for your bedding sets?",
+   "Are your products sold primarily as one-time purchases or do you offer subscriptions?",
+   "What is your primary growth or customer acquisition goal for this campaign?"
+  ]
+ },
+ "publishers": [
+  {
+   "publisher_id": "pub_011",
+   "publisher_name": "Northbed",
+   "score": 0.2807,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches home_textiles, bedding, home (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Design-conscious urban/suburban buyers align well with premium European linen."
+    },
+    {
+     "name": "scale",
+     "value": 0.07388998640181474,
+     "weight": 0.05,
+     "detail": "3.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells bedding; may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches home_textiles, bedding, home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells bedding; may block the ad"
+  },
+  {
+   "publisher_id": "pub_014",
+   "publisher_name": "Hearthstone Goods",
+   "score": 0.2725,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches home (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.0,
+     "weight": 0.05,
+     "detail": "2.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": true,
+   "reason": "Recommended: matches home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+  },
+  {
+   "publisher_id": "pub_001",
+   "publisher_name": "Swiftcart",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 1.0,
+     "weight": 0.05,
+     "detail": "84.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.6060874465244197,
+     "weight": 0.05,
+     "detail": "22.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_003",
+   "publisher_name": "Studiogrid",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.4646747007633196,
+     "weight": 0.05,
+     "detail": "13.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_004",
+   "publisher_name": "Marlowe & Co.",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Older affluent women with high AOV match the 'grown-up aesthetic' target demographic."
+    },
+    {
+     "name": "scale",
+     "value": 0.32300750747115453,
+     "weight": 0.05,
+     "detail": "8.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_005",
+   "publisher_name": "Linden Park",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.15,
+     "detail": "Highest-AOV apparel/home publisher with conservative brand sensibility matches the mature positioning."
+    },
+    {
+     "name": "scale",
+     "value": 0.23372059473990484,
+     "weight": 0.05,
+     "detail": "6.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_006",
+   "publisher_name": "Everbody",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.29358155909879846,
+     "weight": 0.05,
+     "detail": "7.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_007",
+   "publisher_name": "Pawline",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.1584725731116732,
+     "weight": 0.05,
+     "detail": "4.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_008",
+   "publisher_name": "Pantrygood",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.3858013051641558,
+     "weight": 0.05,
+     "detail": "10.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_009",
+   "publisher_name": "Ruffco",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.9107130872687503,
+     "weight": 0.05,
+     "detail": "62.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_010",
+   "publisher_name": "Heartfoot",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2141123900358073,
+     "weight": 0.05,
+     "detail": "5.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.11921246038064834,
+     "weight": 0.05,
+     "detail": "4.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_013",
+   "publisher_name": "Velvetline",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2608796536728134,
+     "weight": 0.05,
+     "detail": "6.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_015",
+   "publisher_name": "Kitchenly",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.7508824789306602,
+     "weight": 0.05,
+     "detail": "36.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_016",
+   "publisher_name": "Stride & Stem",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.03926011273102486,
+     "weight": 0.05,
+     "detail": "3.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_017",
+   "publisher_name": "Cloudfoot",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.2141123900358073,
+     "weight": 0.05,
+     "detail": "5.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_018",
+   "publisher_name": "Tailcrate",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.32300750747115453,
+     "weight": 0.05,
+     "detail": "8.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_019",
+   "publisher_name": "Strandlab",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.08978651200829224,
+     "weight": 0.05,
+     "detail": "3.8M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_020",
+   "publisher_name": "Pop & Sip",
+   "score": 0.0,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.0,
+     "weight": 1.0,
+     "detail": "no category link (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 0.35,
+     "detail": "price not stated"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.15,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.1820062580736496,
+     "weight": 0.05,
+     "detail": "5.2M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: no category link (multiplier) for this product."
+  }
+ ],
+ "personas": [
+  {
+   "persona_id": "persona_003",
+   "persona_name": "The Gen Z Aesthete",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (home_decor)",
+    "price fit 0.70 (unknown product vs medium-high price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_014",
+    "pub_011"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "persona_name": "The Affluent Classic",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (home_goods)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_014",
+    "pub_011"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "persona_name": "The Sustainability Buyer",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (home_goods)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "persona_name": "The Gifter",
+   "score": 0.336,
+   "selected": true,
+   "reasons": [
+    "category affinity 0.60 (home_goods)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "persona_name": "The Wellness Optimizer",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_014",
+    "pub_011"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "persona_name": "The Busy Parent",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_004",
+   "persona_name": "The Pet Parent",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_007",
+   "persona_name": "The Convenience-First Millennial",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "persona_name": "The Value-Conscious Shopper",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs high price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_014",
+    "pub_011"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "persona_name": "The Fitness Enthusiast",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_011",
+    "pub_014"
+   ]
+  }
+ ],
+ "creatives": [
+  {
+   "persona_id": "persona_003",
+   "headline": "Upgrade your room vibe, {first_name}",
+   "body": "Trade basic bedding for an actually-breathable aesthetic that looks incredible on your feed. Made in Portugal.",
+   "cta": "See the aesthetic",
+   "headline_no_name": "Upgrade your room vibe",
+   "angle": "aesthetic-forward",
+   "claims_used": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "headline": "A more refined bedroom aesthetic",
+   "body": "Experience timeless Portuguese craftsmanship with actually-breathable linen designed for a truly grown-up home.",
+   "cta": "Explore linens",
+   "headline_no_name": "A more refined bedroom aesthetic",
+   "angle": "craftsmanship",
+   "claims_used": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "headline": "Thoughtfully crafted in Portugal",
+   "body": "Upgrade to actually-breathable bedding made in Portugal, offering a more mature alternative to mainstream linens.",
+   "cta": "Shop linens",
+   "headline_no_name": "Thoughtfully crafted in Portugal",
+   "angle": "supply chain transparency",
+   "claims_used": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "headline": "Give something remarkably grown-up",
+   "body": "Impress everyone this season with actually-breathable linen made in Portugal. A truly sophisticated gift.",
+   "cta": "Shop gifts",
+   "headline_no_name": "Give something remarkably grown-up",
+   "angle": "giftable",
+   "claims_used": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+   ]
+  }
+ ],
+ "reviews": [
+  {
+   "persona_id": "persona_003",
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_005",
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_006",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  }
+ ],
+ "config": {
+  "schema_version": "1.0",
+  "status": "draft",
+  "planning_date": "2026-10-30",
+  "advertiser_summary": "DTC brand selling breathable bedding and linen made in Portugal, targeting customers seeking a more grown-up alternative to brands like Brooklinen or Parachute.",
+  "confidence": 0.9,
+  "objective": "acquisition",
+  "economics": {
+   "price_usd": 60.0,
+   "price_source": "tier_default",
+   "gross_margin": 0.55,
+   "margin_source": "category_default",
+   "expected_orders": 1.1,
+   "max_affordable_cac": 36.3,
+   "target_cpa": 25.41,
+   "assumptions": [
+    "Price not given; assumed $60 for a 'unknown' product.",
+    "Gross margin not given; assumed 55% (typical for home).",
+    "Target CPA = 70% of max affordable CAC ($60 x 55% margin x 1.1 orders = $36.30)."
+   ]
+  },
+  "pricing": {
+   "model": "CPC",
+   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $25.41 x click-to-purchase rate (1.5%-5.0%). Clicks are observable without trusting a pixel, so both sides can verify billing.",
+   "cpc_bid": {
+    "low": 0.38,
+    "mid": 0.76,
+    "high": 1.27
+   },
+   "cpm_bid": null,
+   "target_cpa": 25.41,
+   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
+  },
+  "budget": {
+   "monthly_budget_usd": 750.0,
+   "budget_source": "recommended_learning_budget",
+   "daily_cap_usd": 25.0,
+   "flight_start": "2026-10-30",
+   "flight_end": "2026-11-29",
+   "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
+   "learning_budget_needed_usd": 748.24,
+   "exploration_reserve_usd": 0.0,
+   "exploration_candidates": [],
+   "allocations": [
+    {
+     "publisher_id": "pub_011",
+     "publisher_name": "Northbed",
+     "share": 0.507,
+     "budget_usd": 380.56,
+     "cpc_bid_usd": 1.07,
+     "expected_clicks": {
+      "low": 285.0,
+      "mid": 356.0,
+      "high": 427.0
+     },
+     "expected_conversions": {
+      "low": 7.5,
+      "mid": 14.9,
+      "high": 24.9
+     },
+     "capacity_usd": 1294.27,
+     "requires_host_approval": true,
+     "rationale": "score 0.28 -> fit x1.40 on CTR/CVR; bid $1.07; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_014",
+     "publisher_name": "Hearthstone Goods",
+     "share": 0.493,
+     "budget_usd": 369.44,
+     "cpc_bid_usd": 1.05,
+     "expected_clicks": {
+      "low": 281.0,
+      "mid": 352.0,
+      "high": 422.0
+     },
+     "expected_conversions": {
+      "low": 7.3,
+      "mid": 14.5,
+      "high": 24.2
+     },
+     "capacity_usd": 2428.38,
+     "requires_host_approval": false,
+     "rationale": "score 0.27 -> fit x1.38 on CTR/CVR; bid $1.05"
+    }
+   ],
+   "warnings": [
+    "No budget given: recommending $750, the smallest budget that buys 300 clicks per host."
+   ]
+  },
+  "targeting": {
+   "publishers_include": [
+    "pub_011",
+    "pub_014"
+   ],
+   "publishers_exclude": [
+    {
+     "id": "pub_001",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_002",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_003",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_004",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_005",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_006",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_007",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_008",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_009",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_010",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_012",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_013",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_015",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_016",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_017",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_018",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_019",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    },
+    {
+     "id": "pub_020",
+     "reason": "Excluded: no category link (multiplier) for this product."
+    }
+   ],
+   "personas": [
+    "persona_003",
+    "persona_005",
+    "persona_006",
+    "persona_010"
+   ],
+   "geo": "US (no advertiser geo restriction stated)",
+   "serve_time_signals": {
+    "platform": "publisher_id -> cart prior (category, AOV)",
+    "zip": "billing zip preferred; geo features down-weighted if shipping/unknown",
+    "first_name": "personalisation only + weak cohort prior; never in hard targeting"
+   },
+   "seasonal_moments": [
+    "Halloween"
+   ]
+  },
+  "creatives": [
+   {
+    "variant_id": "v1",
+    "persona_id": "persona_003",
+    "publisher_ids": [
+     "pub_014",
+     "pub_011"
+    ],
+    "headline_template": "Upgrade your room vibe, {first_name}",
+    "headline_no_name": "Upgrade your room vibe",
+    "body": "Trade basic bedding for an actually-breathable aesthetic that looks incredible on your feed. Made in Portugal.",
+    "cta": "See the aesthetic"
+   },
+   {
+    "variant_id": "v2",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_014",
+     "pub_011"
+    ],
+    "headline_template": "A more refined bedroom aesthetic",
+    "headline_no_name": "A more refined bedroom aesthetic",
+    "body": "Experience timeless Portuguese craftsmanship with actually-breathable linen designed for a truly grown-up home.",
+    "cta": "Explore linens"
+   },
+   {
+    "variant_id": "v3",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_011",
+     "pub_014"
+    ],
+    "headline_template": "Thoughtfully crafted in Portugal",
+    "headline_no_name": "Thoughtfully crafted in Portugal",
+    "body": "Upgrade to actually-breathable bedding made in Portugal, offering a more mature alternative to mainstream linens.",
+    "cta": "Shop linens"
+   },
+   {
+    "variant_id": "v4",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_011",
+     "pub_014"
+    ],
+    "headline_template": "Give something remarkably grown-up",
+    "headline_no_name": "Give something remarkably grown-up",
+    "body": "Impress everyone this season with actually-breathable linen made in Portugal. A truly sophisticated gift.",
+    "cta": "Shop gifts"
+   }
+  ],
+  "frequency_cap": {
+   "per_shopper_per_day": 1,
+   "per_shopper_per_week": 3
+  },
+  "guardrails": {
+   "claims_allowed": [
+    "Actually-breathable stuff",
+    "Made in Portugal",
+    "More grown-up than Brooklinen/Parachute aesthetic"
+   ],
+   "competitor_hosts_need_approval": [
+    "pub_011"
+   ],
+   "stop_loss": {
+    "cpa_multiple": 2.0,
+    "min_clicks": 150
+   },
+   "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
+  },
+  "measurement": {
+   "primary_kpi": "CPA vs target",
+   "attribution": "7-day click-through billed; view-through reported, never billed",
+   "holdout": "10% of eligible impressions withheld to measure incremental lift",
+   "review_after_days": 14
+  },
+  "open_questions": [
+   "What is the average price point or range for your bedding sets?",
+   "Are your products sold primarily as one-time purchases or do you offer subscriptions?",
+   "What is your primary growth or customer acquisition goal for this campaign?"
+  ]
+ },
+ "timings_s": {
+  "intake": 0.0,
+  "matching": 0.0,
+  "creative": 15.7
+ },
+ "creative_log": {
+  "rounds": 2,
+  "rewritten": [
+   "persona_006"
+  ]
+ }
+}

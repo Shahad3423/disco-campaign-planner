@@ -1,0 +1,73 @@
+{
+  "business_summary": "Workout supplements brand offering pre-workout, creatine, and protein with the same formulations as expensive brands for half the cost.",
+  "product": "Workout supplements (pre-workout, creatine, protein)",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "We compete on price, not on marketing",
+    "Same formulations as the expensive brands for half the cost"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "supplements",
+      "weight": 1.0,
+      "why": "Core category of workout supplements (pre-workout, creatine, protein)."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.5,
+      "why": "Fitness class attendees frequently use workout supplements."
+    },
+    {
+      "tag": "activewear",
+      "weight": 0.5,
+      "why": "Activewear shoppers overlap heavily with fitness and workout supplement consumers."
+    }
+  ],
+  "competing_tags": [
+    "supplements"
+  ],
+  "persona_affinity_tags": [
+    "fitness",
+    "supplements"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Fitness-engaged shoppers will have a strong affinity for workout supplements."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Users actively spending on fitness and personal training are direct targets for supplements."
+    },
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Audience is skeptical of unsubstantiated health claims, whereas these rely on value and formulation comparisons."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product line and value proposition are clear. Price point and specific margin need clarification.",
+  "missing_info": [
+    "price_point_usd",
+    "target_age_range",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price range for your products?",
+    "Are these products available for subscription as well as one-time purchase?",
+    "What is your primary goal for the Disco campaign (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

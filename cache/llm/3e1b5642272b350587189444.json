@@ -1,0 +1,98 @@
+{
+  "business_summary": "Hand-poured, small-batch candles made in Vermont from natural soy wax with no synthetic fragrances, primarily purchased as gifts.",
+  "product": "Small-batch hand-poured soy wax candles",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "gift",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+  ],
+  "values": [
+    "handcrafted",
+    "small-batch",
+    "natural",
+    "non-toxic"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "gifting",
+      "weight": 1.0,
+      "why": "Product is explicitly noted as mostly bought as gifts."
+    },
+    {
+      "tag": "home",
+      "weight": 1.0,
+      "why": "Candles are core home decor and home fragrance products."
+    },
+    {
+      "tag": "natural",
+      "weight": 0.5,
+      "why": "Uses natural soy wax."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Contains no synthetic fragrances."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 0.5,
+      "why": "Natural soy wax and handcrafted small-batch production appeal to sustainable shoppers."
+    },
+    {
+      "tag": "spa",
+      "weight": 0.25,
+      "why": "Aromatherapy and candles complement spa and relaxation environments."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "home_decor",
+    "home_goods",
+    "small_batch",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_010",
+      "alignment": 1,
+      "why": "Strong Nov-Dec gifting uplift aligns perfectly with planning date (Oct 30) and gift-heavy purchase intent."
+    },
+    {
+      "publisher_id": "pub_011",
+      "alignment": 1,
+      "why": "Design-conscious home audience has strong cross-sell affinity for home fragrance and craft items."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Non-toxic, sustainability-motivated audience buying for gifting and life events."
+    },
+    {
+      "publisher_id": "pub_004",
+      "alignment": 1,
+      "why": "Affluent demographic that responds well to quality craftsmanship and giftable items."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "Clear product category, core values, and primary use case (gifting/home) allow immediate targeting planning.",
+  "missing_info": [
+    "Retail price / AOV",
+    "Shipping times and fulfillment SLAs",
+    "Availability of gift options or bundled sets"
+  ],
+  "clarifying_questions": [
+    "What is the price point or average order value for your candle orders?",
+    "Do you offer dedicated gift packaging or custom gift messaging options?",
+    "What is your standard fulfillment/turnaround time for orders?"
+  ]
+}

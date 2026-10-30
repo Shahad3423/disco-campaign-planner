@@ -1,0 +1,41 @@
+{
+  "business_summary": "A brand that helps people feel better, lacking specific details on products, categories, or pricing.",
+  "product": "unknown",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "We help people feel better."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [],
+  "competing_tags": [],
+  "persona_affinity_tags": [],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 0.95,
+  "gate": "clarify",
+  "gate_reason": "The description is extremely vague, containing only a generic statement (\"We help people feel better\") without specifying the product type, price, or business model.",
+  "missing_info": [
+    "product",
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "target_gender",
+    "target_age_range",
+    "values",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What specific product or service do you sell?",
+    "What is the price point of your product?",
+    "Is your product a one-time purchase or a subscription?",
+    "Who is your target customer demographic?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

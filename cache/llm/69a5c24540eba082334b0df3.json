@@ -1,0 +1,84 @@
+{
+  "business_summary": "Refillable, concentrated cleaning products designed to replace single-use plastic bottles while matching the performance of big brands.",
+  "product": "Refillable, concentrated cleaning products",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles",
+    "Works as well as the big brands"
+  ],
+  "values": [
+    "sustainability",
+    "eco-friendly"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Advertiser explicitly targets people who care about sustainability."
+    },
+    {
+      "tag": "household",
+      "weight": 1.0,
+      "why": "Cleaning products belong directly in the household category."
+    },
+    {
+      "tag": "non_toxic",
+      "weight": 0.5,
+      "why": "Eco-friendly cleaning products often align with non-toxic attributes."
+    },
+    {
+      "tag": "home",
+      "weight": 0.5,
+      "why": "Cleaning products are used for home maintenance."
+    }
+  ],
+  "competing_tags": [
+    "household"
+  ],
+  "persona_affinity_tags": [
+    "sustainable_apparel",
+    "household",
+    "refillable_products",
+    "home_goods"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+    },
+    {
+      "publisher_id": "pub_014",
+      "alignment": 1,
+      "why": "Hearthstone Goods features sustainability-motivated kitchen buyers who value eco-friendly home goods."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Swiftcart handles household items with impulse-friendly, high-frequency shoppers."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Product and target audience are clear, though pricing and exact purchase model (e.g., subscription vs one-time) require clarification.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or kit price for your refillable cleaning products?",
+    "Are these sold as a one-time purchase or via a subscription model?",
+    "What is your primary conversion goal for the post-purchase thank-you page?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

@@ -1,0 +1,88 @@
+{
+  "business_summary": "A DTC brand selling premium, vet-formulated, grain-free senior dog food focused on joint health and longevity via a subscription model.",
+  "product": "Premium senior dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "senior dogs (owners are adults)",
+  "stated_claims": [
+    "premium dog food for senior dogs",
+    "targets owners who care about joint health and longevity",
+    "grain-free",
+    "vet-formulated"
+  ],
+  "values": [
+    "pet health",
+    "vet formulation",
+    "joint health"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for pet products"
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Core category matching dog food"
+    },
+    {
+      "tag": "subscription",
+      "weight": 1.0,
+      "why": "Matches the subscription-based model of the advertiser"
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent interest for pet owners purchasing supplies"
+    },
+    {
+      "tag": "pet_pharmacy",
+      "weight": 0.5,
+      "why": "Adjacent interest given the health/senior-dog focus"
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_health",
+    "pet_supplies",
+    "subscription_boxes"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Pawline is subscription-heavy and its health-conscious pet owners are responsive to premium positioning."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    },
+    {
+      "publisher_id": "pub_018",
+      "alignment": 1,
+      "why": "Tailcrate reaches millennials treating dogs as family, aligning well with pet wellness."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product and audience are clearly defined, allowing for accurate publisher matching.",
+  "missing_info": [
+    "price_point_usd"
+  ],
+  "clarifying_questions": [
+    "What is the exact price of a subscription box or bag?",
+    "What is your target customer acquisition cost or profit margin?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

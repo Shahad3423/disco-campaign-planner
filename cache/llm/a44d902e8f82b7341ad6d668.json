@@ -1,0 +1,74 @@
+{
+  "business_summary": "The advertiser sells dog food.",
+  "product": "dog food",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "pet",
+      "weight": 1.0,
+      "why": "Core category for dog food."
+    },
+    {
+      "tag": "pet_food",
+      "weight": 1.0,
+      "why": "Direct product match."
+    },
+    {
+      "tag": "pet_supplies",
+      "weight": 0.5,
+      "why": "Adjacent pet category."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.5,
+      "why": "Common model for pet food replenishment."
+    }
+  ],
+  "competing_tags": [
+    "pet_food"
+  ],
+  "persona_affinity_tags": [
+    "pet_food",
+    "pet_supplies",
+    "pet_health"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_007",
+      "alignment": 1,
+      "why": "Subscription-heavy pet publisher aligns with pet food."
+    },
+    {
+      "publisher_id": "pub_009",
+      "alignment": 1,
+      "why": "Largest pet audience in the catalog."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "Product is identified as dog food, but pricing, target audience details, and specific claims are missing.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model",
+    "stated_claims",
+    "target_age_range"
+  ],
+  "clarifying_questions": [
+    "What is the average price point or price tier of your dog food?",
+    "Is your dog food sold as a one-time purchase or a subscription?",
+    "Do you have specific health or ingredient claims you want to use in ads?",
+    "What is your primary advertising goal on Disco?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null
+}

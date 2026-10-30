@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "headline": "Fuel your next session, {first_name}",
+      "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+      "cta": "Shop & Save",
+      "headline_no_name": "Fuel your next hard workout",
+      "angle": "performance claims",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your stack for half the cost",
+      "body": "Same formulations as the expensive brands. We compete on price, not on marketing so you only pay for what works.",
+      "cta": "View Formulations",
+      "headline_no_name": "Optimize your stack for half the cost",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    }
+  ]
+}
