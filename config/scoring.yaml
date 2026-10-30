@@ -1,0 +1,35 @@
+# Publisher scoring (DECISIONS D8).
+#   score = category_fit * quality * penalties
+# category_fit (is this host's shopper even in-market?) multiplies everything, like pCTR
+# multiplies bid in eCPM: a perfect price/audience match can't rescue an irrelevant host.
+# quality = weighted mean of the components below (weights sum to 1).
+# Change a weight here, rerun `python -m disco_planner.eval.run`, compare metrics.
+quality_weights:
+  audience_fit: 0.35     # gender + age overlap with the advertiser's stated target
+  price_fit: 0.35        # advertiser price vs host AOV and income tier
+  notes_fit: 0.15        # LLM read of the host's free-text notes (bounded influence)
+  scale: 0.05            # log monthly impressions; tiny so big hosts don't win on size alone
+  seasonality: 0.10      # gifting uplift close to Nov-Dec for giftable products
+
+penalties:
+  competitor_conflict: 0.45   # host sells the same thing; host likely blocks us (D1)
+  notes_misaligned: 0.80      # applied when notes_fit alignment == -1
+
+recommend:
+  min_score: 0.15             # absolute floor
+  relative_to_top: 0.5        # and at least half the best host's score (scores are relative, not calibrated)
+  min_category_fit: 0.20      # never recommend a host with no category link, whatever else matches
+  max_publishers: 6
+
+# income tier ordering used by price_fit
+income_tiers: [low, mid, mid-high, high]
+price_tier_to_income: {budget: mid, mid: mid, premium: mid-high, luxury: high}
+
+gifting:
+  season_months: [11, 12]
+  lookahead_days: 45          # a planning date within this window of the season counts
+
+# Attribute-like tags: they refine a match but can't create one on their own
+# (otherwise "dog food subscription" matches an activewear subscription host).
+generic_tags: [women, men, subscription, dtc, sustainable, gifting, natural, organic, mid-life, casual, classic, personalized]
+generic_only_cap: 0.15
