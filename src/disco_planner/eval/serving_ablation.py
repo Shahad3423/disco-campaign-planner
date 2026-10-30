@@ -28,7 +28,7 @@ def _key(d) -> tuple:
 def main() -> None:
     plans = [CampaignPlan.model_validate_json(p.read_text()) for p in sorted((catalog.REPO_ROOT / "demo_cache" / "plans").glob("*.json"))]
     hosts = [p.id for p in catalog.publishers()]
-    total = changed_name = changed_zip = changed_time = served = 0
+    total = changed_name = changed_zip = changed_time = changed_household = served = 0
     for host, name, zip_, when in product(hosts, NAMES, ZIPS, TIMES):
         full = serve(ShopperSignals(publisher_id=host, zip=zip_, first_name=name, zip_source="billing"), when, plans)
         if not full.offers:
@@ -38,6 +38,8 @@ def main() -> None:
         no_zip = serve(ShopperSignals(publisher_id=host, zip="", first_name=name), when, plans)
         other_time = serve(ShopperSignals(publisher_id=host, zip=zip_, first_name=name, zip_source="billing"),
                            TIMES[1] if when == TIMES[0] else TIMES[0], plans)
+        no_household = serve(ShopperSignals(publisher_id=host, zip=zip_, first_name=name, zip_source="billing"), when, plans, use_household=False)
+        changed_household += _key(full) != _key(no_household)
         changed_name += _key(full) != _key(no_name)
         changed_zip += _key(full) != _key(no_zip)
         changed_time += _key(full) != _key(other_time)
@@ -49,6 +51,7 @@ def main() -> None:
         "| signal removed | decisions changed (top campaign or variant) |", "|---|---|",
         f"| first name (gender/age prior) | {changed_name / total:.1%} |",
         f"| zip (geo + local time) | {changed_zip / total:.1%} |",
+        f"| household / life-stage features only (P(kids), homeowner, seasons...) | {changed_household / total:.1%} |",
         f"| timestamp (Nov 20 vs Jan 5) | {changed_time / total:.1%} |", "",
         "The platform (host) is fixed in every row: it is the dominant signal by construction, since",
         "it decides which campaigns are eligible at all. A weak signal that changes many decisions is a",

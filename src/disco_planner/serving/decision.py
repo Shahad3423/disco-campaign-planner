@@ -56,10 +56,13 @@ def _temper(raw: float, confidence: float) -> float:
     return (1 - confidence) + confidence * raw
 
 
-def persona_posterior(features: ShopperFeatures, publisher_id: str, use_name: bool = True) -> tuple[dict[str, float], list[str]]:
+def persona_posterior(
+    features: ShopperFeatures, publisher_id: str, use_name: bool = True, use_household: bool = True,
+) -> tuple[dict[str, float], list[str]]:
     """P(persona | host, name, zip, time). Prior = how well each persona fits the host's audience."""
     cfg = _cfg()["posterior"]
     pub = catalog.publisher_by_id()[publisher_id]
+    household_cfg = catalog.config("household")
     notes = []
     scores = {}
     for persona in catalog.personas():
@@ -79,6 +82,14 @@ def persona_posterior(features: ShopperFeatures, publisher_id: str, use_name: bo
             like *= _temper(1 + cfg["gift_likelihood_scale"] * float(features.gift_signal.value), features.gift_signal.confidence)
         if persona.id == "persona_007" and features.delivery_speed_proxy.value == "same_or_next_day_likely":
             like *= _temper(cfg["fast_delivery_boost"], features.delivery_speed_proxy.confidence)
+        if use_household:
+            for link in household_cfg["persona_links"]:
+                if link["persona"] != persona.id:
+                    continue
+                feat = getattr(features, link["feature"])
+                if feat.value is not None:
+                    raw = max(0.2, 1 + link["strength"] * (float(feat.value) - link["baseline"]))
+                    like *= _temper(raw, feat.confidence)
         scores[persona.id] = prior * like
     total = sum(scores.values())
     posterior = {pid: round(v / total, 3) for pid, v in sorted(scores.items(), key=lambda kv: -kv[1])}
@@ -88,12 +99,20 @@ def persona_posterior(features: ShopperFeatures, publisher_id: str, use_name: bo
 
 
 def _campaign_tags(plan: CampaignPlan) -> set[str]:
-    return {t.tag for t in plan.profile.relevant_tags}
+    """Host-vocabulary tags plus persona-vocabulary tags (e.g. kids_products, home_goods)."""
+    return {t.tag for t in plan.profile.relevant_tags} | set(plan.profile.persona_affinity_tags)
 
 
-def _context_multiplier(features: ShopperFeatures, plan: CampaignPlan) -> tuple[float, list[str]]:
+def _context_multiplier(features: ShopperFeatures, plan: CampaignPlan, use_household: bool = True) -> tuple[float, list[str]]:
     cfg = _cfg()
     tags, mult, why = _campaign_tags(plan), 1.0, []
+    if use_household:
+        for rule in catalog.config("household")["tag_boosts"]:
+            feat = getattr(features, rule["feature"])
+            if feat.value is not None and float(feat.value) >= rule["threshold"] and tags & set(rule["tags"]):
+                m = _temper(rule["multiplier"], feat.confidence)
+                mult *= m
+                why.append(f"{rule['feature']}={float(feat.value):.2f} x{m:.2f}")
     for rule in cfg["context_boosts"]:
         feat = getattr(features, rule["feature"])
         if feat.value is True and tags & set(rule["tags"]):
@@ -119,10 +138,13 @@ def _render(template: str, fallback: str, features: ShopperFeatures) -> tuple[st
     return fallback, False
 
 
-def serve(signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan], use_name: bool = True) -> ServeDecision:
+def serve(
+    signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
+    use_name: bool = True, use_household: bool = True,
+) -> ServeDecision:
     cfg = _cfg()
     features = build_features(signals, now_utc)
-    posterior, reasons = persona_posterior(features, signals.publisher_id, use_name)
+    posterior, reasons = persona_posterior(features, signals.publisher_id, use_name, use_household)
     uncertain = max(posterior.values()) < cfg["posterior"]["uncertain_max_prob"]
     if uncertain:
         reasons.append("persona posterior is flat (low confidence): still picking the most likely persona; "
@@ -155,7 +177,7 @@ def serve(signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
             creative = default
         match = sum(posterior.get(c.persona_id, 0) for c in cfg_.creatives)
         rk = cfg["ranking"]
-        ctx, ctx_why = _context_multiplier(features, plan)
+        ctx, ctx_why = _context_multiplier(features, plan, use_household)
         ctr = priors["ctr"]["mid"] * fit * (rk["persona_match_floor"] + rk["persona_match_span"] * min(1.0, match * 2)) * ctx
         pricing = cfg_.pricing
         if pricing.model == "CPM" and pricing.cpm_bid:
