@@ -1,0 +1,79 @@
+{
+  "business_summary": "A consumer banking app offering no monthly fees and early direct deposit, targeting younger and mid-income Americans with the goal of driving new account signups.",
+  "product": "Banking app",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "budget",
+  "purchase_model": "subscription",
+  "target_gender": "any",
+  "target_age_range": "younger",
+  "stated_claims": [
+    "no monthly fees",
+    "early direct deposit"
+  ],
+  "claims_needing_substantiation": [],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "convenience",
+      "weight": 0.5,
+      "why": "Early direct deposit and mobile banking appeal to convenience-oriented users."
+    },
+    {
+      "tag": "dtc",
+      "weight": 0.5,
+      "why": "A digital-first direct-to-consumer financial service."
+    },
+    {
+      "tag": "subscription",
+      "weight": 0.25,
+      "why": "Ongoing financial account relationship, similar to a digital subscription model."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "convenience",
+    "subscription_services"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_005",
+      "conflict": "disinterested_in trendy/budget positioning, prefers heritage and premium products",
+      "evidence": "Banking app with no monthly fees targeting younger, mid-income Americans conflicts with the high-income, craftsmanship-oriented lifestyle of the Affluent Classic."
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_004",
+      "alignment": -1,
+      "why": "Target audience of older affluent women conflicts with the younger, mid-income target demographic."
+    },
+    {
+      "publisher_id": "pub_005",
+      "alignment": -1,
+      "why": "Highest-AOV host with a conservative brand sensibility; unlikely to align with a free digital banking app."
+    },
+    {
+      "publisher_id": "pub_013",
+      "alignment": 1,
+      "why": "Gen Z and younger millennial audience aligns perfectly with the advertiser's target demographic."
+    }
+  ],
+  "confidence": 0.95,
+  "gate": "proceed",
+  "gate_reason": "The product, target audience, and core value propositions are clearly stated, allowing for effective placement planning.",
+  "missing_info": [
+    "specific age range (e.g., 18-34)",
+    "geographical restrictions (e.g., US only)",
+    "any sign-up incentives or promotions"
+  ],
+  "clarifying_questions": [
+    "Are your services restricted to US residents only?",
+    "Do you offer any signup bonuses or incentives (e.g., $50 deposit) for opening a new account?",
+    "Do you have a specific age limit, such as 18+, for opening an account?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": null,
+  "competing_tag_share": {}
+}
