@@ -1,8 +1,8 @@
 {
  "brief": "A sustainable activewear brand for women. Made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
  "profile": {
-  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
-  "product": "Sustainable activewear for women",
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned at a price point between Lululemon and Girlfriend Collective.",
+  "product": "Activewear",
   "is_consumer_product": true,
   "price_point_usd": null,
   "price_tier": "premium",
@@ -10,19 +10,26 @@
   "target_gender": "female",
   "target_age_range": null,
   "stated_claims": [
-   "Sustainable activewear brand for women",
    "Made from recycled ocean plastic",
-   "Price point sits between Lululemon and Girlfriend Collective"
+   "Sustainable activewear brand for women"
   ],
+  "claims_needing_substantiation": [],
   "values": [
-   "sustainable"
+   "sustainable",
+   "eco-friendly",
+   "recycled materials"
   ],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "activewear",
     "weight": 1.0,
-    "why": "Core category of the brand."
+    "why": "Core category of the brand's products."
+   },
+   {
+    "tag": "sustainable",
+    "weight": 1.0,
+    "why": "Key product value stated as made from recycled ocean plastic."
    },
    {
     "tag": "women",
@@ -30,19 +37,19 @@
     "why": "Target demographic is women."
    },
    {
-    "tag": "sustainable",
-    "weight": 1.0,
-    "why": "Products made from recycled ocean plastic."
-   },
-   {
     "tag": "apparel",
-    "weight": 0.5,
-    "why": "Broader category covering activewear."
+    "weight": 0.667,
+    "why": "Broad category encompassing activewear."
    },
    {
     "tag": "yoga",
     "weight": 0.5,
-    "why": "Adjacent fitness activity often associated with activewear."
+    "why": "Adjacent fitness activity strongly associated with activewear shoppers."
+   },
+   {
+    "tag": "fitness_classes",
+    "weight": 0.25,
+    "why": "Weak association for activewear consumers participating in fitness."
    }
   ],
   "competing_tags": [
@@ -50,9 +57,8 @@
   ],
   "persona_affinity_tags": [
    "activewear",
-   "apparel",
-   "sustainable_apparel",
    "fitness",
+   "sustainable_apparel",
    "wellness"
   ],
   "persona_conflicts": [],
@@ -60,61 +66,79 @@
    {
     "publisher_id": "pub_002",
     "alignment": 1,
-    "why": "Movewell features apparel/activewear for women with fitness-engaged shoppers."
+    "why": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
    },
    {
     "publisher_id": "pub_003",
     "alignment": 1,
-    "why": "Studiogrid has yoga and fitness-focused users who are active activewear buyers."
+    "why": "Studiogrid has users actively spending on yoga and fitness classes, aligning with activewear."
    },
    {
     "publisher_id": "pub_017",
     "alignment": 1,
-    "why": "Cloudfoot features sustainable activewear and shoes with overlapping messaging."
+    "why": "Cloudfoot features sustainable activewear and shoes with comfort + sustainability messaging."
    }
   ],
-  "confidence": 0.9,
-  "gate": "clarify",
-  "gate_reason": "The product, target gender, and sustainability angle are clear, but specific pricing, purchase model (one-time vs. subscription), and exact numeric price point are missing.",
+  "confidence": 0.85,
+  "gate": "proceed",
+  "gate_reason": "Product, target audience, and core sustainability angle are clearly understood.",
   "missing_info": [
-   "Exact price point in USD",
+   "Exact numerical price point in USD",
    "Purchase model (one-time vs subscription)",
    "Target age range"
   ],
   "clarifying_questions": [
-   "What is the exact price point or average order value (AOV) in USD?",
-   "Is the purchase model primarily one-time purchase or subscription?",
-   "What is your primary growth or acquisition goal for this campaign?"
-  ]
+   "What is the average price point or range in USD for your pieces?",
+   "Is your purchase model strictly one-time or do you offer subscriptions?",
+   "What is your primary goal for the Disco campaign (e.g., customer acquisition, ROAS)?"
+  ],
+  "tag_stability": {
+   "activewear": 1.0,
+   "sustainable": 1.0,
+   "women": 1.0,
+   "apparel": 1.0,
+   "yoga": 1.0,
+   "fitness_classes": 0.67
+  },
+  "sample_agreement": 0.89,
+  "competing_tag_share": {
+   "activewear": 1.0
+  }
  },
  "publishers": [
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.5412,
+   "score": 0.3877,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.8,
+     "value": 0.7,
      "weight": 1.0,
-     "detail": "matches women, sustainable, apparel (multiplier)"
+     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.77,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "94% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.674935975609756,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -132,35 +156,147 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, sustainable, apparel (multiplier); strongest supporting signal price_fit (host income high suits premium)."
+   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
+  },
+  {
+   "publisher_id": "pub_003",
+   "publisher_name": "Studiogrid",
+   "score": 0.3339,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.525,
+     "weight": 1.0,
+     "detail": "matches yoga, fitness_classes (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6699999999999999,
+     "weight": 0.3,
+     "detail": "74% female; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6765701219512193,
+     "weight": 0.35,
+     "detail": "reaches The Wellness Optimizer best (host fit 0.71)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Studiogrid has users actively spending on yoga and fitness classes, aligning with activewear."
+    },
+    {
+     "name": "scale",
+     "value": 0.4646747007633196,
+     "weight": 0.05,
+     "detail": "13.6M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [],
+   "recommended": true,
+   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
+  },
+  {
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.305,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches activewear, women, apparel (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.71,
+     "weight": 0.3,
+     "detail": "82% female; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7555579268292681,
+     "weight": 0.35,
+     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Movewell features apparel/activewear and fitness-engaged shoppers who crossover with wellness."
+    },
+    {
+     "name": "scale",
+     "value": 0.6060874465244197,
+     "weight": 0.05,
+     "detail": "22.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.4512,
+   "score": 0.2864,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.65,
+     "value": 0.6,
      "weight": 1.0,
-     "detail": "matches women, apparel (multiplier)"
+     "detail": "matches women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.78,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "96% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.3812926829268292,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.45)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -178,35 +314,41 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, apparel (multiplier); strongest supporting signal price_fit (host income high suits premium)."
+   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.4506,
+   "score": 0.2856,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.65,
+     "value": 0.6,
      "weight": 1.0,
-     "detail": "matches women, apparel (multiplier)"
+     "detail": "matches women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.79,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "98% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.38163414634146337,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.46)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -224,134 +366,48 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, apparel (multiplier); strongest supporting signal price_fit (host income high suits premium)."
+   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
   },
   {
-   "publisher_id": "pub_003",
-   "publisher_name": "Studiogrid",
-   "score": 0.3689,
+   "publisher_id": "pub_017",
+   "publisher_name": "Cloudfoot",
+   "score": 0.2798,
    "components": [
     {
      "name": "category_fit",
-     "value": 0.5,
+     "value": 1.0,
      "weight": 1.0,
-     "detail": "matches yoga (multiplier)"
+     "detail": "matches activewear, sustainable, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
-     "value": 0.6699999999999999,
-     "weight": 0.35,
-     "detail": "74% female; age not stated"
+     "value": 0.56,
+     "weight": 0.3,
+     "detail": "52% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
-     "weight": 0.35,
-     "detail": "host income high suits premium"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Studiogrid has yoga and fitness-focused users who are active activewear buyers."
-    },
-    {
-     "name": "scale",
-     "value": 0.4646747007633196,
-     "weight": 0.05,
-     "detail": "13.6M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches yoga (multiplier); strongest supporting signal price_fit (host income high suits premium)."
-  },
-  {
-   "publisher_id": "pub_006",
-   "publisher_name": "Everbody",
-   "score": 0.3672,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.65,
      "weight": 1.0,
-     "detail": "matches women, apparel (multiplier)"
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
     },
     {
-     "name": "audience_fit",
-     "value": 0.7949999999999999,
+     "name": "persona_fit",
+     "value": 0.7615823170731706,
      "weight": 0.35,
-     "detail": "99% female; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.42,
-     "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.29358155909879846,
-     "weight": 0.05,
-     "detail": "7.6M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [],
-   "recommended": true,
-   "reason": "Recommended: matches women, apparel (multiplier); strongest supporting signal audience_fit (99% female; age not stated)."
-  },
-  {
-   "publisher_id": "pub_002",
-   "publisher_name": "Movewell",
-   "score": 0.3415,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches women, activewear, apparel (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.71,
-     "weight": 0.35,
-     "detail": "82% female; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.8,
-     "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.64)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Movewell features apparel/activewear for women with fitness-engaged shoppers."
+     "weight": 0.2,
+     "detail": "Cloudfoot features sustainable activewear and shoes with comfort + sustainability messaging."
     },
     {
      "name": "scale",
-     "value": 0.6060874465244197,
+     "value": 0.2141123900358073,
      "weight": 0.05,
-     "detail": "22.0M monthly impressions"
+     "detail": "5.8M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -361,38 +417,44 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells activewear; may block the ad"
+    "competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
    ],
    "recommended": true,
-   "reason": "Recommended: matches women, activewear, apparel (multiplier); strongest supporting signal price_fit (host income mid-high suits premium). Flags: competitor_conflict: host sells activewear; may block the ad"
+   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host sells activewear (100% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.3111,
+   "score": 0.2611,
    "components": [
     {
      "name": "category_fit",
      "value": 0.5,
      "weight": 1.0,
-     "detail": "matches apparel (multiplier)"
+     "detail": "matches apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.59,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "58% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7034725609756097,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -413,39 +475,45 @@
    "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
   },
   {
-   "publisher_id": "pub_017",
-   "publisher_name": "Cloudfoot",
-   "score": 0.309,
+   "publisher_id": "pub_006",
+   "publisher_name": "Everbody",
+   "score": 0.2426,
    "components": [
     {
      "name": "category_fit",
-     "value": 1.0,
+     "value": 0.6,
      "weight": 1.0,
-     "detail": "matches sustainable, activewear, apparel (multiplier)"
+     "detail": "matches women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
-     "value": 0.56,
-     "weight": 0.35,
-     "detail": "52% female; age not stated"
+     "value": 0.7949999999999999,
+     "weight": 0.3,
+     "detail": "99% female; age not stated"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6303018292682927,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Cloudfoot features sustainable activewear and shoes with overlapping messaging."
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
     },
     {
      "name": "scale",
-     "value": 0.2141123900358073,
+     "value": 0.29358155909879846,
      "weight": 0.05,
-     "detail": "5.8M monthly impressions"
+     "detail": "7.6M monthly impressions"
     },
     {
      "name": "seasonality",
@@ -454,16 +522,14 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells activewear; may block the ad"
-   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate. Flags: competitor_conflict: host sells activewear; may block the ad"
+   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
   },
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.1008,
+   "score": 0.0913,
    "components": [
     {
      "name": "category_fit",
@@ -474,19 +540,25 @@
     {
      "name": "audience_fit",
      "value": 0.745,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "89% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8593445121951219,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.96)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -520,19 +592,25 @@
     {
      "name": "audience_fit",
      "value": 0.54,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "48% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5512347560975609,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.46)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -566,19 +644,25 @@
     {
      "name": "audience_fit",
      "value": 0.61,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "62% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6338140243902439,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -612,19 +696,25 @@
     {
      "name": "audience_fit",
      "value": 0.655,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "71% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6768140243902439,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -658,19 +748,25 @@
     {
      "name": "audience_fit",
      "value": 0.62,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "64% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.702984756097561,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -704,19 +800,25 @@
     {
      "name": "audience_fit",
      "value": 0.645,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "69% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6774725609756096,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -750,19 +852,25 @@
     {
      "name": "audience_fit",
      "value": 0.755,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "91% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5544054878048781,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.60)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -796,19 +904,25 @@
     {
      "name": "audience_fit",
      "value": 0.69,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "78% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6767408536585365,
      "weight": 0.35,
-     "detail": "host income high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.73)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -842,19 +956,25 @@
     {
      "name": "audience_fit",
      "value": 0.635,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "67% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6771310975609756,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -888,19 +1008,25 @@
     {
      "name": "audience_fit",
      "value": 0.665,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "73% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7022530487804877,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -934,19 +1060,25 @@
     {
      "name": "audience_fit",
      "value": 0.765,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "93% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.42,
+     "weight": 1.0,
+     "detail": "host income mid below mid-high needed for premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6426981707317072,
      "weight": 0.35,
-     "detail": "host income mid below mid-high needed for premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -980,19 +1112,25 @@
     {
      "name": "audience_fit",
      "value": 0.655,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "71% female; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.8,
+     "weight": 1.0,
+     "detail": "host income mid-high suits premium (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7632469512195121,
      "weight": 0.35,
-     "detail": "host income mid-high suits premium"
+     "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1026,24 +1164,8 @@
    ],
    "best_publishers": [
     "pub_016",
-    "pub_006",
-    "pub_002"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "persona_name": "The Gifter",
-   "score": 0.42,
-   "selected": true,
-   "reasons": [
-    "category affinity 0.60 (apparel)",
-    "price fit 1.00 (premium product vs low price sensitivity)",
-    "audience fit 0.70"
-   ],
-   "best_publishers": [
-    "pub_006",
     "pub_002",
-    "pub_016"
+    "pub_003"
    ]
   },
   {
@@ -1057,9 +1179,9 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_002",
-    "pub_003",
-    "pub_016"
+    "pub_003"
    ]
   },
   {
@@ -1073,25 +1195,9 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_002",
-    "pub_003",
-    "pub_016"
-   ]
-  },
-  {
-   "persona_id": "persona_008",
-   "persona_name": "The Value-Conscious Shopper",
-   "score": 0.168,
-   "selected": false,
-   "reasons": [
-    "category affinity 0.60 (apparel)",
-    "price fit 0.35 (premium product vs high price sensitivity)",
-    "audience fit 0.80"
-   ],
-   "best_publishers": [
-    "pub_006",
-    "pub_016",
-    "pub_002"
+    "pub_003"
    ]
   },
   {
@@ -1105,9 +1211,9 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_003",
-    "pub_002",
-    "pub_016"
+    "pub_002"
    ]
   },
   {
@@ -1122,7 +1228,7 @@
    ],
    "best_publishers": [
     "pub_002",
-    "pub_006",
+    "pub_017",
     "pub_005"
    ]
   },
@@ -1138,8 +1244,8 @@
    ],
    "best_publishers": [
     "pub_003",
-    "pub_016",
-    "pub_006"
+    "pub_017",
+    "pub_016"
    ]
   },
   {
@@ -1155,7 +1261,7 @@
    "best_publishers": [
     "pub_005",
     "pub_004",
-    "pub_006"
+    "pub_016"
    ]
   },
   {
@@ -1169,7 +1275,39 @@
     "audience fit 0.70"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_003",
+    "pub_002"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "persona_name": "The Value-Conscious Shopper",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 0.35 (premium product vs high price sensitivity)",
+    "audience fit 0.80"
+   ],
+   "best_publishers": [
+    "pub_016",
+    "pub_002",
+    "pub_004"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "persona_name": "The Gifter",
+   "score": 0.0,
+   "selected": false,
+   "reasons": [
+    "category affinity 0.00 (no shared interests)",
+    "price fit 1.00 (premium product vs low price sensitivity)",
+    "audience fit 0.70"
+   ],
+   "best_publishers": [
+    "pub_017",
     "pub_002",
     "pub_016"
    ]
@@ -1178,35 +1316,23 @@
  "creatives": [
   {
    "persona_id": "persona_001",
-   "headline": "Upgrade your workout gear system",
-   "body": "Discover sustainable activewear for women designed for peak physical output. Premium quality engineered for your training regimen.",
+   "headline": "{first_name}, upgrade your workout gear systematically",
+   "body": "Optimize your routine with sustainable activewear for women made from recycled ocean plastic. High-performance gear for your system.",
    "cta": "Shop activewear",
-   "headline_no_name": "Upgrade your workout gear system",
+   "headline_no_name": "Upgrade your workout gear systematically",
    "angle": "outcome-focused",
    "claims_used": [
-    "Sustainable activewear brand for women"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "headline": "Find something special, {first_name}",
-   "body": "Sustainable activewear for women made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
-   "cta": "Explore Gifts",
-   "headline_no_name": "Find something special",
-   "angle": "giftable",
-   "claims_used": [
     "Sustainable activewear brand for women",
-    "Made from recycled ocean plastic",
-    "Price point sits between Lululemon and Girlfriend Collective"
+    "Made from recycled ocean plastic"
    ]
   },
   {
    "persona_id": "persona_009",
-   "headline": "Engineered for your training",
-   "body": "High-performance sustainable activewear for women made from recycled ocean plastic. Built to move through your toughest workouts.",
+   "headline": "Fuel your training with purpose",
+   "body": "Built for rigorous training. Discover sustainable activewear for women made from recycled ocean plastic to support your intense workouts.",
    "cta": "Shop performance",
-   "headline_no_name": "Engineered for your training",
-   "angle": "technical fabrics",
+   "headline_no_name": "Fuel your training with purpose",
+   "angle": "performance claims",
    "claims_used": [
     "Sustainable activewear brand for women",
     "Made from recycled ocean plastic"
@@ -1214,15 +1340,14 @@
   },
   {
    "persona_id": "persona_006",
-   "headline": "Shop mindfully, {first_name}",
-   "body": "Sustainable activewear for women made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
-   "cta": "Shop Sustainably",
-   "headline_no_name": "Shop mindfully",
-   "angle": "specific sustainability claims",
+   "headline": "{first_name}, shop conscious activewear",
+   "body": "Support sustainability with sustainable activewear for women made from recycled ocean plastic. Ditch fast fashion for good.",
+   "cta": "See The Collection",
+   "headline_no_name": "Shop conscious activewear today",
+   "angle": "specific sustainability claims and eco-friendly choices",
    "claims_used": [
-    "Sustainable activewear brand for women",
     "Made from recycled ocean plastic",
-    "Price point sits between Lululemon and Girlfriend Collective"
+    "Sustainable activewear brand for women"
    ]
   }
  ],
@@ -1234,51 +1359,37 @@
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [
-    "A bit generic for a wellness optimizer",
-    "Lacks specific ingredient or science metrics"
+    "A bit generic on the optimization angle given limited stated claims"
    ],
-   "passed": false
+   "passed": true
   },
   {
-   "persona_id": "persona_010",
-   "persona_fit": 2,
+   "persona_id": "persona_009",
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [
-    "Body copy reads like product specs rather than a gift appeal",
-    "Missing gift-wrap and presentation messaging"
+    "Leans heavily into performance claims without technical fabric details"
    ],
-   "passed": false
+   "passed": true
   },
   {
-   "persona_id": "persona_009",
+   "persona_id": "persona_006",
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [],
    "passed": true
-  },
-  {
-   "persona_id": "persona_006",
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [
-    "Body copy is identical to persona_010 variant",
-    "Lacks deep supply chain transparency or certifications"
-   ],
-   "passed": false
   }
  ],
  "config": {
   "schema_version": "1.0",
-  "status": "needs_clarification",
+  "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
-  "confidence": 0.9,
+  "advertiser_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned at a price point between Lululemon and Girlfriend Collective.",
+  "confidence": 0.85,
   "objective": "acquisition",
   "economics": {
    "price_usd": 90.0,
@@ -1307,132 +1418,158 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 3810.0,
+   "monthly_budget_usd": 3890.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 127.0,
+   "daily_cap_usd": 129.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 3811.76,
-   "exploration_reserve_usd": 571.5,
+   "learning_budget_needed_usd": 3889.41,
+   "exploration_reserve_usd": 583.5,
    "exploration_candidates": [
     "Heartfoot",
-    "Cloudfoot"
+    "Everbody"
    ],
    "allocations": [
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.211,
-     "budget_usd": 804.31,
+     "share": 0.175,
+     "budget_usd": 682.46,
      "cpc_bid_usd": 2.06,
+     "start_bid_usd": 1.44,
      "expected_clicks": {
-      "low": 312.0,
-      "mid": 390.0,
-      "high": 469.0
+      "low": 265.0,
+      "mid": 331.0,
+      "high": 398.0
      },
      "expected_conversions": {
-      "low": 8.2,
-      "mid": 16.4,
-      "high": 27.3
+      "low": 7.0,
+      "mid": 13.9,
+      "high": 23.2
      },
      "capacity_usd": 5537.28,
      "requires_host_approval": false,
-     "rationale": "score 0.54 -> fit x1.40 on CTR/CVR; bid $2.06"
-    },
-    {
-     "publisher_id": "pub_004",
-     "publisher_name": "Marlowe & Co.",
-     "share": 0.176,
-     "budget_usd": 670.56,
-     "cpc_bid_usd": 1.87,
-     "expected_clicks": {
-      "low": 287.0,
-      "mid": 359.0,
-      "high": 430.0
-     },
-     "expected_conversions": {
-      "low": 6.8,
-      "mid": 13.6,
-      "high": 22.7
-     },
-     "capacity_usd": 11940.87,
-     "requires_host_approval": false,
-     "rationale": "score 0.45 -> fit x1.27 on CTR/CVR; bid $1.87"
-    },
-    {
-     "publisher_id": "pub_005",
-     "publisher_name": "Linden Park",
-     "share": 0.176,
-     "budget_usd": 669.67,
-     "cpc_bid_usd": 1.87,
-     "expected_clicks": {
-      "low": 286.0,
-      "mid": 358.0,
-      "high": 430.0
-     },
-     "expected_conversions": {
-      "low": 6.8,
-      "mid": 13.6,
-      "high": 22.7
-     },
-     "capacity_usd": 8807.33,
-     "requires_host_approval": false,
-     "rationale": "score 0.45 -> fit x1.27 on CTR/CVR; bid $1.87"
+     "rationale": "score 0.39 -> fit x1.40 on CTR/CVR; max bid $2.06 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.144,
-     "budget_usd": 548.25,
-     "cpc_bid_usd": 1.69,
+     "share": 0.151,
+     "budget_usd": 587.76,
+     "cpc_bid_usd": 1.9,
+     "start_bid_usd": 1.33,
      "expected_clicks": {
-      "low": 260.0,
-      "mid": 324.0,
-      "high": 389.0
+      "low": 247.0,
+      "mid": 309.0,
+      "high": 371.0
      },
      "expected_conversions": {
-      "low": 5.6,
-      "mid": 11.1,
-      "high": 18.6
+      "low": 6.0,
+      "mid": 12.0,
+      "high": 19.9
      },
-     "capacity_usd": 15794.24,
+     "capacity_usd": 19984.44,
      "requires_host_approval": false,
-     "rationale": "score 0.37 -> fit x1.15 on CTR/CVR; bid $1.69"
+     "rationale": "score 0.33 -> fit x1.29 on CTR/CVR; max bid $1.90 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
-     "publisher_id": "pub_006",
-     "publisher_name": "Everbody",
-     "share": 0.143,
-     "budget_usd": 545.72,
-     "cpc_bid_usd": 1.68,
+     "publisher_id": "pub_002",
+     "publisher_name": "Movewell",
+     "share": 0.138,
+     "budget_usd": 536.88,
+     "cpc_bid_usd": 1.81,
+     "start_bid_usd": 1.27,
      "expected_clicks": {
-      "low": 260.0,
-      "mid": 325.0,
-      "high": 390.0
+      "low": 237.0,
+      "mid": 297.0,
+      "high": 356.0
      },
      "expected_conversions": {
-      "low": 5.6,
-      "mid": 11.1,
-      "high": 18.6
+      "low": 5.5,
+      "mid": 10.9,
+      "high": 18.2
      },
-     "capacity_usd": 8754.71,
+     "capacity_usd": 11748.68,
+     "requires_host_approval": true,
+     "rationale": "score 0.30 -> fit x1.23 on CTR/CVR; max bid $1.81 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_004",
+     "publisher_name": "Marlowe & Co.",
+     "share": 0.13,
+     "budget_usd": 504.14,
+     "cpc_bid_usd": 1.76,
+     "start_bid_usd": 1.23,
+     "expected_clicks": {
+      "low": 229.0,
+      "mid": 286.0,
+      "high": 344.0
+     },
+     "expected_conversions": {
+      "low": 5.1,
+      "mid": 10.2,
+      "high": 17.1
+     },
+     "capacity_usd": 10564.4,
      "requires_host_approval": false,
-     "rationale": "score 0.37 -> fit x1.14 on CTR/CVR; bid $1.68"
+     "rationale": "score 0.29 -> fit x1.19 on CTR/CVR; max bid $1.76 (break-even at target CPA), start at 70% and raise only if under-delivering"
+    },
+    {
+     "publisher_id": "pub_005",
+     "publisher_name": "Linden Park",
+     "share": 0.129,
+     "budget_usd": 502.73,
+     "cpc_bid_usd": 1.75,
+     "start_bid_usd": 1.22,
+     "expected_clicks": {
+      "low": 230.0,
+      "mid": 287.0,
+      "high": 345.0
+     },
+     "expected_conversions": {
+      "low": 5.1,
+      "mid": 10.2,
+      "high": 17.1
+     },
+     "capacity_usd": 7742.48,
+     "requires_host_approval": false,
+     "rationale": "score 0.29 -> fit x1.19 on CTR/CVR; max bid $1.75 (break-even at target CPA), start at 70% and raise only if under-delivering"
+    },
+    {
+     "publisher_id": "pub_017",
+     "publisher_name": "Cloudfoot",
+     "share": 0.127,
+     "budget_usd": 492.52,
+     "cpc_bid_usd": 1.74,
+     "start_bid_usd": 1.22,
+     "expected_clicks": {
+      "low": 226.0,
+      "mid": 283.0,
+      "high": 340.0
+     },
+     "expected_conversions": {
+      "low": 5.0,
+      "mid": 10.0,
+      "high": 16.7
+     },
+     "capacity_usd": 2851.64,
+     "requires_host_approval": true,
+     "rationale": "score 0.28 -> fit x1.18 on CTR/CVR; max bid $1.74 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     }
    ],
    "warnings": [
-    "No budget given: recommending $3,810, the smallest budget that buys 300 clicks per host.",
-    "Budget too small for Movewell: concentrating on fewer hosts."
+    "No budget given: recommending $3,890, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
    "publishers_include": [
+    "pub_002",
     "pub_003",
     "pub_004",
     "pub_005",
-    "pub_006",
-    "pub_016"
+    "pub_016",
+    "pub_017"
    ],
    "publishers_exclude": [
     {
@@ -1440,8 +1577,8 @@
      "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
     },
     {
-     "id": "pub_017",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate. Flags: competitor_conflict: host sells activewear; may block the ad"
+     "id": "pub_006",
+     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
     },
     {
      "id": "pub_012",
@@ -1494,7 +1631,6 @@
    ],
    "personas": [
     "persona_001",
-    "persona_010",
     "persona_009",
     "persona_006"
    ],
@@ -1514,48 +1650,39 @@
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_016",
-     "pub_006"
+     "pub_002",
+     "pub_003"
     ],
-    "headline_template": "Upgrade your workout gear system",
-    "headline_no_name": "Upgrade your workout gear system",
-    "body": "Discover sustainable activewear for women designed for peak physical output. Premium quality engineered for your training regimen.",
+    "headline_template": "{first_name}, upgrade your workout gear systematically",
+    "headline_no_name": "Upgrade your workout gear systematically",
+    "body": "Optimize your routine with sustainable activewear for women made from recycled ocean plastic. High-performance gear for your system.",
     "cta": "Shop activewear"
    },
    {
     "variant_id": "v2",
-    "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_006",
-     "pub_016"
-    ],
-    "headline_template": "Find something special, {first_name}",
-    "headline_no_name": "Find something special",
-    "body": "Sustainable activewear for women made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
-    "cta": "Explore Gifts"
-   },
-   {
-    "variant_id": "v3",
     "persona_id": "persona_009",
     "publisher_ids": [
-     "pub_003",
-     "pub_016"
+     "pub_017",
+     "pub_002",
+     "pub_003"
     ],
-    "headline_template": "Engineered for your training",
-    "headline_no_name": "Engineered for your training",
-    "body": "High-performance sustainable activewear for women made from recycled ocean plastic. Built to move through your toughest workouts.",
+    "headline_template": "Fuel your training with purpose",
+    "headline_no_name": "Fuel your training with purpose",
+    "body": "Built for rigorous training. Discover sustainable activewear for women made from recycled ocean plastic to support your intense workouts.",
     "cta": "Shop performance"
    },
    {
-    "variant_id": "v4",
+    "variant_id": "v3",
     "persona_id": "persona_006",
     "publisher_ids": [
-     "pub_003",
-     "pub_016"
+     "pub_017",
+     "pub_002",
+     "pub_003"
     ],
-    "headline_template": "Shop mindfully, {first_name}",
-    "headline_no_name": "Shop mindfully",
-    "body": "Sustainable activewear for women made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
-    "cta": "Shop Sustainably"
+    "headline_template": "{first_name}, shop conscious activewear",
+    "headline_no_name": "Shop conscious activewear today",
+    "body": "Support sustainability with sustainable activewear for women made from recycled ocean plastic. Ditch fast fashion for good.",
+    "cta": "See The Collection"
    }
   ],
   "frequency_cap": {
@@ -1564,12 +1691,13 @@
   },
   "guardrails": {
    "claims_allowed": [
-    "Sustainable activewear brand for women",
     "Made from recycled ocean plastic",
-    "Price point sits between Lululemon and Girlfriend Collective"
+    "Sustainable activewear brand for women"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_002"
+    "pub_002",
+    "pub_017"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1584,21 +1712,21 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the exact price point or average order value (AOV) in USD?",
-   "Is the purchase model primarily one-time purchase or subscription?",
-   "What is your primary growth or acquisition goal for this campaign?"
+   "What is the average price point or range in USD for your pieces?",
+   "Is your purchase model strictly one-time or do you offer subscriptions?",
+   "What is your primary goal for the Disco campaign (e.g., customer acquisition, ROAS)?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 6.91
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_010",
-   "persona_006"
+   "persona_001",
+   "persona_009"
   ]
  }
 }

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "headline": "For {first_name} and your furry family",
+      "body": "Every ingredient matters for your pets. Feed them real nutrition crafted with care because they are true family members.",
+      "cta": "Shop Premium Food",
+      "headline_no_name": "For you and your furry family",
+      "angle": "emotional connection",
+      "claims_used": []
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Never run out of dog food again",
+      "body": "Set up a simple delivery schedule so you can check one more thing off your family list without the extra trip.",
+      "cta": "Start Saving Time",
+      "headline_no_name": "Never run out of dog food again",
+      "angle": "time-saving",
+      "claims_used": []
+    }
+  ]
+}

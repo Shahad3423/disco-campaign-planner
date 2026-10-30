@@ -1,7 +1,7 @@
 {
  "brief": "Refillable, concentrated cleaning products. Skip the single-use plastic bottles. Works as well as the big brands. We want to show up where people who already care about sustainability are checking out.",
  "profile": {
-  "business_summary": "Brand selling refillable, concentrated cleaning products designed to eliminate single-use plastic bottles while matching the performance of big brands.",
+  "business_summary": "An eco-friendly brand offering refillable, concentrated cleaning products designed to replace single-use plastic bottles with performance comparable to big brands.",
   "product": "Refillable, concentrated cleaning products",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -14,13 +14,18 @@
    "Skip the single-use plastic bottles",
    "Works as well as the big brands"
   ],
+  "claims_needing_substantiation": [],
   "values": [
    "sustainability",
-   "plastic-reduction",
    "eco-friendly"
   ],
   "fulfillment_notes": null,
   "relevant_tags": [
+   {
+    "tag": "sustainable",
+    "weight": 1.0,
+    "why": "Core value proposition focuses on sustainability and reducing plastic."
+   },
    {
     "tag": "household",
     "weight": 1.0,
@@ -28,89 +33,156 @@
    },
    {
     "tag": "home",
-    "weight": 1.0,
-    "why": "Home goods and cleaning supplies are a direct fit."
-   },
-   {
-    "tag": "sustainable",
-    "weight": 1.0,
-    "why": "Advertiser explicitly targets shoppers who care about sustainability."
-   },
-   {
-    "tag": "natural",
-    "weight": 0.5,
-    "why": "Adjacent interest for eco-conscious cleaning buyers."
+    "weight": 0.667,
+    "why": "Adjacent home interest where cleaning products are used."
    },
    {
     "tag": "non_toxic",
     "weight": 0.5,
-    "why": "Often overlaps with sustainable and eco-friendly household cleaners."
+    "why": "Frequently overlaps with eco-friendly concentrated cleaning products."
+   },
+   {
+    "tag": "natural",
+    "weight": 0.333,
+    "why": "Adjacent interest for eco-conscious shoppers."
    }
   ],
   "competing_tags": [
    "household"
   ],
   "persona_affinity_tags": [
-   "household",
    "home_goods",
-   "refillable_products"
+   "household",
+   "refillable_products",
+   "sustainable_apparel"
   ],
   "persona_conflicts": [],
   "note_signals": [
    {
     "publisher_id": "pub_008",
     "alignment": 1,
-    "why": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+    "why": "Values-driven shoppers responsive to sustainability and wellness claims."
    },
    {
     "publisher_id": "pub_014",
     "alignment": 1,
-    "why": "Hearthstone Goods features sustainability-motivated kitchen buyers who value eco-friendly home goods."
+    "why": "Sustainability-motivated kitchen and home buyers."
    }
   ],
-  "confidence": 0.85,
+  "confidence": 0.84,
   "gate": "proceed",
-  "gate_reason": "Clear product category, value proposition, and target audience, though missing pricing details which are captured via clarifying questions.",
+  "gate_reason": "Clear consumer product with distinct value propositions and target audience, though missing price and specific purchase model details which are covered by clarifying questions.",
   "missing_info": [
    "price_point_usd",
    "price_tier",
-   "exact product lineup / SKUs"
+   "purchase_model (subscription vs one-time)"
   ],
   "clarifying_questions": [
-   "What is the average price point or price range of your refill starter kits?",
-   "Is your product sold as a one-time purchase, a subscription, or both?",
-   "What is your primary conversion goal for the Disco network (e.g., maximizing ROAS, acquiring subscribers)?"
-  ]
+   "What is the average price point or kit price for your products?",
+   "Are these products sold as a subscription, one-time purchase, or both?",
+   "What is your primary goal for the ad campaigns (e.g., ROAS, new customer acquisition)?"
+  ],
+  "tag_stability": {
+   "household": 1.0,
+   "sustainable": 1.0,
+   "home": 1.0,
+   "natural": 0.67,
+   "non_toxic": 1.0
+  },
+  "sample_agreement": 0.87,
+  "competing_tag_share": {
+   "household": 0.33
+  }
  },
  "publishers": [
   {
-   "publisher_id": "pub_014",
-   "publisher_name": "Hearthstone Goods",
-   "score": 0.62,
+   "publisher_id": "pub_001",
+   "publisher_name": "Swiftcart",
+   "score": 0.3662,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches home, non_toxic (multiplier)"
+     "detail": "matches household (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5646470588235294,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.61)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 1.0,
+     "weight": 0.05,
+     "detail": "84.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.5,
+     "weight": 0.1,
+     "detail": "not a gifting product"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells household (33% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches household (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells household (33% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_014",
+   "publisher_name": "Hearthstone Goods",
+   "score": 0.2486,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.5,
+     "weight": 1.0,
+     "detail": "matches home, non_toxic (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6051176470588234,
+     "weight": 0.35,
+     "detail": "reaches The Sustainability Buyer best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Hearthstone Goods features sustainability-motivated kitchen buyers who value eco-friendly home goods."
+     "weight": 0.2,
+     "detail": "Sustainability-motivated kitchen and home buyers."
     },
     {
      "name": "scale",
@@ -127,35 +199,41 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home, non_toxic (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+   "reason": "Recommended: matches home, non_toxic (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.5487,
+   "score": 0.2128,
    "components": [
     {
      "name": "category_fit",
-     "value": 1.0,
+     "value": 0.5,
      "weight": 1.0,
-     "detail": "matches home (multiplier)"
+     "detail": "matches home (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6165882352941177,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -173,60 +251,12 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
-  },
-  {
-   "publisher_id": "pub_001",
-   "publisher_name": "Swiftcart",
-   "score": 0.2678,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches household (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 1.0,
-     "weight": 0.05,
-     "detail": "84.0M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.5,
-     "weight": 0.1,
-     "detail": "not a gifting product"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells household; may block the ad"
-   ],
-   "recommended": false,
-   "reason": "Excluded: score 0.27 below cutoff 0.31; weakest signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells household; may block the ad"
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.0959,
+   "score": 0.0786,
    "components": [
     {
      "name": "category_fit",
@@ -237,20 +267,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6491176470588236,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Pantrygood shoppers are values-driven and responsive to sustainability claims."
+     "weight": 0.2,
+     "detail": "Values-driven shoppers responsive to sustainability and wellness claims."
     },
     {
      "name": "scale",
@@ -272,7 +308,7 @@
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.0834,
+   "score": 0.0687,
    "components": [
     {
      "name": "category_fit",
@@ -283,19 +319,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7162352941176471,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -318,7 +360,7 @@
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.082,
+   "score": 0.0652,
    "components": [
     {
      "name": "category_fit",
@@ -329,19 +371,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6550588235294117,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.60)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -375,19 +423,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6648235294117647,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -421,19 +475,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6181176470588234,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.67)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -467,19 +527,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.532,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Value-Conscious Shopper best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -513,19 +579,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.519470588235294,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Affluent Classic best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -559,19 +631,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6800588235294118,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Value-Conscious Shopper best (host fit 1.00)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -605,19 +683,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6923529411764706,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -651,19 +735,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7222941176470588,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.75)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -697,19 +787,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.758,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.77)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -743,19 +839,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.558235294117647,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -789,19 +891,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.4833529411764706,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.48)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -835,19 +943,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.712235294117647,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -881,19 +995,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6188823529411764,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -927,19 +1047,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5345294117647058,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.54)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -973,19 +1099,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5811764705882353,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1010,16 +1142,17 @@
   {
    "persona_id": "persona_006",
    "persona_name": "The Sustainability Buyer",
-   "score": 0.448,
+   "score": 0.56,
    "selected": true,
    "reasons": [
-    "category affinity 0.80 (home_goods, refillable_products)",
+    "category affinity 1.00 (home_goods, refillable_products, sustainable_apparel)",
     "price fit 0.70 (unknown product vs medium price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
     "pub_011",
-    "pub_014"
+    "pub_014",
+    "pub_001"
    ]
   },
   {
@@ -1034,6 +1167,7 @@
    ],
    "best_publishers": [
     "pub_011",
+    "pub_001",
     "pub_014"
    ]
   },
@@ -1049,7 +1183,8 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011"
+    "pub_011",
+    "pub_001"
    ]
   },
   {
@@ -1064,7 +1199,8 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011"
+    "pub_011",
+    "pub_001"
    ]
   },
   {
@@ -1079,7 +1215,8 @@
    ],
    "best_publishers": [
     "pub_011",
-    "pub_014"
+    "pub_014",
+    "pub_001"
    ]
   },
   {
@@ -1094,7 +1231,8 @@
    ],
    "best_publishers": [
     "pub_014",
-    "pub_011"
+    "pub_011",
+    "pub_001"
    ]
   },
   {
@@ -1108,6 +1246,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_001",
     "pub_014",
     "pub_011"
    ]
@@ -1124,7 +1263,8 @@
    ],
    "best_publishers": [
     "pub_011",
-    "pub_014"
+    "pub_014",
+    "pub_001"
    ]
   },
   {
@@ -1138,6 +1278,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_001",
     "pub_011",
     "pub_014"
    ]
@@ -1153,6 +1294,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_001",
     "pub_011",
     "pub_014"
    ]
@@ -1161,36 +1303,36 @@
  "creatives": [
   {
    "persona_id": "persona_006",
-   "headline": "Skip single-use plastic, {first_name}",
-   "body": "Switch to refillable, concentrated cleaning products that cut down waste while matching big brand performance.",
+   "headline": "{first_name}, skip single-use plastic bottles",
+   "body": "Make your cleaning routine sustainable. Our refillable, concentrated formulas deliver performance that works as well as the big brands.",
    "cta": "Shop Refills",
-   "headline_no_name": "Skip single-use plastic bottles",
+   "headline_no_name": "Skip single-use plastic bottles today",
    "angle": "specific sustainability claims",
    "claims_used": [
-    "Refillable, concentrated cleaning products",
     "Skip the single-use plastic bottles",
+    "Refillable, concentrated cleaning products",
     "Works as well as the big brands"
    ]
   },
   {
    "persona_id": "persona_002",
-   "headline": "Easy cleaning power for your home",
-   "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands.",
+   "headline": "{first_name}, stock up on easy refills",
+   "body": "Save time and skip the single-use plastic bottles with our refillable, concentrated cleaning products that work as well as the big brands.",
    "cta": "Get Started",
-   "headline_no_name": "Easy cleaning power for your home",
+   "headline_no_name": "Stock up on easy refills",
    "angle": "time-saving",
    "claims_used": [
-    "Refillable, concentrated cleaning products",
     "Skip the single-use plastic bottles",
+    "Refillable, concentrated cleaning products",
     "Works as well as the big brands"
    ]
   },
   {
    "persona_id": "persona_005",
-   "headline": "Refined cleaning without the waste",
-   "body": "Experience refillable, concentrated cleaning products designed to skip single-use plastic while matching big brand quality.",
-   "cta": "Discover More",
-   "headline_no_name": "Refined cleaning without the waste",
+   "headline": "{first_name}, elevate your cleaning routine",
+   "body": "Invest in refillable, concentrated cleaning products. Skip the single-use plastic bottles while getting performance equal to big brands.",
+   "cta": "Explore Collection",
+   "headline_no_name": "Elevate your cleaning routine",
    "angle": "quality-focused",
    "claims_used": [
     "Refillable, concentrated cleaning products",
@@ -1200,23 +1342,23 @@
   },
   {
    "persona_id": "persona_008",
-   "headline": "Smart cleaning that cuts out waste",
-   "body": "Get refillable, concentrated cleaning products that skip single-use plastic bottles and work as well as the big brands.",
-   "cta": "Save Now",
-   "headline_no_name": "Smart cleaning that cuts out waste",
+   "headline": "{first_name}, get more value from cleaning",
+   "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands for less waste.",
+   "cta": "Shop Bundles",
+   "headline_no_name": "Get more value from cleaning",
    "angle": "clear value props",
    "claims_used": [
-    "Refillable, concentrated cleaning products",
     "Skip the single-use plastic bottles",
+    "Refillable, concentrated cleaning products",
     "Works as well as the big brands"
    ]
   },
   {
    "persona_id": "persona_010",
-   "headline": "Give a complete home bundle this Halloween",
-   "body": "Gift a curated set of refillable, concentrated cleaning products to help friends skip single-use plastic bottles.",
-   "cta": "Shop Gift Sets",
-   "headline_no_name": "Give a complete home bundle this Halloween",
+   "headline": "A thoughtful home upgrade",
+   "body": "Give refillable, concentrated cleaning products designed to skip single-use plastic bottles with performance to match big brands.",
+   "cta": "Explore Sets",
+   "headline_no_name": "A thoughtful home upgrade",
    "angle": "giftable",
    "claims_used": [
     "Refillable, concentrated cleaning products",
@@ -1228,26 +1370,6 @@
  "reviews": [
   {
    "persona_id": "persona_006",
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_002",
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [
-    "Generic time-saving framing does not strongly highlight convenience or family appeal beyond standard copy"
-   ],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_005",
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1256,34 +1378,48 @@
    "passed": true
   },
   {
-   "persona_id": "persona_008",
+   "persona_id": "persona_002",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_005",
    "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Lacks specific discount or bundle details which this persona specifically prefers"
-   ],
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 2,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "References Halloween for a cleaning product, which feels awkward and unnatural for gifting"
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "Brand selling refillable, concentrated cleaning products designed to eliminate single-use plastic bottles while matching the performance of big brands.",
-  "confidence": 0.85,
+  "advertiser_summary": "An eco-friendly brand offering refillable, concentrated cleaning products designed to replace single-use plastic bottles with performance comparable to big brands.",
+  "confidence": 0.84,
   "objective": "acquisition",
   "economics": {
    "price_usd": 60.0,
@@ -1313,71 +1449,91 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 1660.0,
+   "monthly_budget_usd": 2210.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 55.33,
+   "daily_cap_usd": 73.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1658.82,
+   "learning_budget_needed_usd": 2205.88,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
-     "publisher_id": "pub_014",
-     "publisher_name": "Hearthstone Goods",
-     "share": 0.531,
-     "budget_usd": 880.64,
+     "publisher_id": "pub_001",
+     "publisher_name": "Swiftcart",
+     "share": 0.442,
+     "budget_usd": 977.89,
      "cpc_bid_usd": 2.43,
+     "start_bid_usd": 1.7,
      "expected_clicks": {
-      "low": 290.0,
-      "mid": 362.0,
-      "high": 435.0
+      "low": 322.0,
+      "mid": 402.0,
+      "high": 483.0
      },
      "expected_conversions": {
-      "low": 7.6,
-      "mid": 15.2,
-      "high": 25.4
+      "low": 8.5,
+      "mid": 16.9,
+      "high": 28.2
      },
-     "capacity_usd": 5715.36,
+     "capacity_usd": 137168.64,
+     "requires_host_approval": true,
+     "rationale": "score 0.37 -> fit x1.40 on CTR/CVR; max bid $2.43 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_014",
+     "publisher_name": "Hearthstone Goods",
+     "share": 0.3,
+     "budget_usd": 663.85,
+     "cpc_bid_usd": 1.98,
+     "start_bid_usd": 1.39,
+     "expected_clicks": {
+      "low": 268.0,
+      "mid": 335.0,
+      "high": 402.0
+     },
+     "expected_conversions": {
+      "low": 5.7,
+      "mid": 11.5,
+      "high": 19.2
+     },
+     "capacity_usd": 3802.38,
      "requires_host_approval": false,
-     "rationale": "score 0.62 -> fit x1.40 on CTR/CVR; bid $2.43"
+     "rationale": "score 0.25 -> fit x1.14 on CTR/CVR; max bid $1.98 (break-even at target CPA), start at 70% and raise only if under-delivering"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.469,
-     "budget_usd": 779.36,
-     "cpc_bid_usd": 2.27,
+     "share": 0.257,
+     "budget_usd": 568.26,
+     "cpc_bid_usd": 1.84,
+     "start_bid_usd": 1.29,
      "expected_clicks": {
-      "low": 275.0,
-      "mid": 343.0,
-      "high": 412.0
+      "low": 247.0,
+      "mid": 309.0,
+      "high": 371.0
      },
      "expected_conversions": {
-      "low": 6.7,
-      "mid": 13.5,
-      "high": 22.5
+      "low": 4.9,
+      "mid": 9.9,
+      "high": 16.4
      },
-     "capacity_usd": 6413.39,
+     "capacity_usd": 4232.27,
      "requires_host_approval": false,
-     "rationale": "score 0.55 -> fit x1.31 on CTR/CVR; bid $2.27"
+     "rationale": "score 0.21 -> fit x1.06 on CTR/CVR; max bid $1.84 (break-even at target CPA), start at 70% and raise only if under-delivering"
     }
    ],
    "warnings": [
-    "No budget given: recommending $1,660, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $2,210, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
    "publishers_include": [
+    "pub_001",
     "pub_011",
     "pub_014"
    ],
    "publishers_exclude": [
-    {
-     "id": "pub_001",
-     "reason": "Excluded: score 0.27 below cutoff 0.31; weakest signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells household; may block the ad"
-    },
     {
      "id": "pub_008",
      "reason": "Excluded: matches natural (attribute tags only) (multiplier) for this product."
@@ -1470,11 +1626,12 @@
     "persona_id": "persona_006",
     "publisher_ids": [
      "pub_011",
-     "pub_014"
+     "pub_014",
+     "pub_001"
     ],
-    "headline_template": "Skip single-use plastic, {first_name}",
-    "headline_no_name": "Skip single-use plastic bottles",
-    "body": "Switch to refillable, concentrated cleaning products that cut down waste while matching big brand performance.",
+    "headline_template": "{first_name}, skip single-use plastic bottles",
+    "headline_no_name": "Skip single-use plastic bottles today",
+    "body": "Make your cleaning routine sustainable. Our refillable, concentrated formulas deliver performance that works as well as the big brands.",
     "cta": "Shop Refills"
    },
    {
@@ -1482,11 +1639,12 @@
     "persona_id": "persona_002",
     "publisher_ids": [
      "pub_011",
+     "pub_001",
      "pub_014"
     ],
-    "headline_template": "Easy cleaning power for your home",
-    "headline_no_name": "Easy cleaning power for your home",
-    "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands.",
+    "headline_template": "{first_name}, stock up on easy refills",
+    "headline_no_name": "Stock up on easy refills",
+    "body": "Save time and skip the single-use plastic bottles with our refillable, concentrated cleaning products that work as well as the big brands.",
     "cta": "Get Started"
    },
    {
@@ -1494,36 +1652,39 @@
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_014",
-     "pub_011"
+     "pub_011",
+     "pub_001"
     ],
-    "headline_template": "Refined cleaning without the waste",
-    "headline_no_name": "Refined cleaning without the waste",
-    "body": "Experience refillable, concentrated cleaning products designed to skip single-use plastic while matching big brand quality.",
-    "cta": "Discover More"
+    "headline_template": "{first_name}, elevate your cleaning routine",
+    "headline_no_name": "Elevate your cleaning routine",
+    "body": "Invest in refillable, concentrated cleaning products. Skip the single-use plastic bottles while getting performance equal to big brands.",
+    "cta": "Explore Collection"
    },
    {
     "variant_id": "v4",
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_014",
-     "pub_011"
+     "pub_011",
+     "pub_001"
     ],
-    "headline_template": "Smart cleaning that cuts out waste",
-    "headline_no_name": "Smart cleaning that cuts out waste",
-    "body": "Get refillable, concentrated cleaning products that skip single-use plastic bottles and work as well as the big brands.",
-    "cta": "Save Now"
+    "headline_template": "{first_name}, get more value from cleaning",
+    "headline_no_name": "Get more value from cleaning",
+    "body": "Skip the single-use plastic bottles with refillable, concentrated cleaning products that work as well as the big brands for less waste.",
+    "cta": "Shop Bundles"
    },
    {
     "variant_id": "v5",
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_011",
-     "pub_014"
+     "pub_014",
+     "pub_001"
     ],
-    "headline_template": "Give a complete home bundle this Halloween",
-    "headline_no_name": "Give a complete home bundle this Halloween",
-    "body": "Gift a curated set of refillable, concentrated cleaning products to help friends skip single-use plastic bottles.",
-    "cta": "Shop Gift Sets"
+    "headline_template": "A thoughtful home upgrade",
+    "headline_no_name": "A thoughtful home upgrade",
+    "body": "Give refillable, concentrated cleaning products designed to skip single-use plastic bottles with performance to match big brands.",
+    "cta": "Explore Sets"
    }
   ],
   "frequency_cap": {
@@ -1536,7 +1697,10 @@
     "Skip the single-use plastic bottles",
     "Works as well as the big brands"
    ],
-   "competitor_hosts_need_approval": [],
+   "claims_blocked_pending_substantiation": [],
+   "competitor_hosts_need_approval": [
+    "pub_001"
+   ],
    "stop_loss": {
     "cpa_multiple": 2.0,
     "min_clicks": 150
@@ -1550,15 +1714,15 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the average price point or price range of your refill starter kits?",
-   "Is your product sold as a one-time purchase, a subscription, or both?",
-   "What is your primary conversion goal for the Disco network (e.g., maximizing ROAS, acquiring subscribers)?"
+   "What is the average price point or kit price for your products?",
+   "Are these products sold as a subscription, one-time purchase, or both?",
+   "What is your primary goal for the ad campaigns (e.g., ROAS, new customer acquisition)?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 16.92
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

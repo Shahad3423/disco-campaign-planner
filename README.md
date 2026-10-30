@@ -25,7 +25,17 @@ host inventory, minimum learnable spend per host, 15% exploration, start bid at 
 billed, view-through reported never billed, 10% holdout), and **open questions** when confidence is low.
 
 ## Results (blind golden labels for the 15 examples; `docs/EXPERIMENTS.md`)
-_RESULTS_
+| | baseline | final | | | final |
+|---|---|---|---|---|---|
+| precision of recommended hosts | 0.85 | **0.94** | | creative rule-check pass | **100%** |
+| must-exclude violations | 2 | **1** | | creative LLM-review pass | **95%** |
+| paraphrase stability (top-5 Jaccard) | 0.71 | **0.84** | | unsupported claims in copy | **0** |
+| gate accuracy (proceed/clarify/reject/off-network) | 0.87 | 0.87 | | prompt-injection cases | **4/4** |
+| must-include recall@5 | 0.80 | 0.70 | | mean persona fit (1–5) | 4.1 |
+
+Recall fell by 1–2 cases out of 15, within LLM run-to-run noise; the misses are debatable labels we chose not to
+tune to. The claims-injection eval caught a real hole (an advertiser could launder "FDA approved" by stating it);
+regulated claims are now blocked in code, not just in prompts.
 
 ## Hard vs easy
 **Easy:** calling an LLM, JSON schemas, a UI. **Hard, and where the work lives:** (1) *matching without

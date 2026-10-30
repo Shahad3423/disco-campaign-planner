@@ -1,0 +1,51 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, technical outerwear for your routine",
+      "body": "Optimize your cold-weather protocol with technical outerwear for serious backcountry skiers. Our shells are what patrollers wear.",
+      "cta": "Shop shells",
+      "headline_no_name": "Technical outerwear for your cold-weather routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "headline": "Invest in enduring quality for the slopes",
+      "body": "Discover technical outerwear for serious backcountry skiers built to last. Our shells are what patrollers wear season after season.",
+      "cta": "Explore shells",
+      "headline_no_name": "Invest in enduring quality for the slopes",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "{first_name}, find an impressive outdoor gift",
+      "body": "Looking for a standout gift this season? Technical outerwear for serious backcountry skiers makes a lasting impression.",
+      "cta": "Shop gifts",
+      "headline_no_name": "Find an impressive outdoor gift",
+      "angle": "giftable",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "headline": "Built with technical fabrics that perform",
+      "body": "Engineered as technical outerwear for serious backcountry skiers. Our shells are what patrollers wear in demanding conditions.",
+      "cta": "Upgrade gear",
+      "headline_no_name": "Built with technical fabrics that perform",
+      "angle": "technical fabrics",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Save on your first order",
+      "body": "Discover a new kind of thing for moms with our special bundle deal. Check out the reviews and save today.",
+      "cta": "Claim Bundle",
+      "headline_no_name": "Save on your first order",
+      "angle": "discount-forward bundle",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

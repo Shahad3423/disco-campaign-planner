@@ -1,8 +1,8 @@
 {
  "brief": "Bedding. Linen. Actually-breathable stuff made in Portugal. Our customers are mostly people who got tired of the Brooklinen/Parachute aesthetic and want something a little more grown-up.",
  "profile": {
-  "business_summary": "DTC brand selling breathable bedding and linen made in Portugal, targeting customers seeking a more grown-up alternative to brands like Brooklinen or Parachute.",
-  "product": "Bedding and linen",
+  "business_summary": "An DTC brand selling breathable linen bedding made in Portugal, targeted at consumers looking for a more mature aesthetic than Brooklinen or Parachute.",
+  "product": "Linen bedding",
   "is_consumer_product": true,
   "price_point_usd": null,
   "price_tier": "unknown",
@@ -10,98 +10,115 @@
   "target_gender": "any",
   "target_age_range": null,
   "stated_claims": [
-   "Actually-breathable stuff",
-   "Made in Portugal",
-   "More grown-up than Brooklinen/Parachute aesthetic"
+   "Actually-breathable stuff made in Portugal",
+   "Grown-up aesthetic alternative to Brooklinen/Parachute"
   ],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
     "tag": "bedding",
     "weight": 1.0,
-    "why": "Core product category for home bedding items."
-   },
-   {
-    "tag": "home_textiles",
-    "weight": 1.0,
-    "why": "Linens and bedding fall directly under home textiles."
+    "why": "Core category: advertiser sells linen bedding."
    },
    {
     "tag": "home",
-    "weight": 0.5,
-    "why": "Broad home category shoppers frequently buy bedding and home goods."
+    "weight": 0.667,
+    "why": "Adjacent category: bedding is a home product."
+   },
+   {
+    "tag": "home_textiles",
+    "weight": 0.667,
+    "why": "Adjacent category: linen bedding falls under home textiles."
    }
   ],
   "competing_tags": [
    "bedding"
   ],
   "persona_affinity_tags": [
-   "home_goods",
-   "home_decor"
+   "home_decor",
+   "home_goods"
   ],
   "persona_conflicts": [],
   "note_signals": [
    {
     "publisher_id": "pub_011",
     "alignment": 1,
-    "why": "Design-conscious urban/suburban buyers align well with premium European linen."
+    "why": "Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers."
    },
    {
     "publisher_id": "pub_004",
     "alignment": 1,
-    "why": "Older affluent women with high AOV match the 'grown-up aesthetic' target demographic."
+    "why": "Marlowe & Co. features older affluent women who respond to quality messaging."
    },
    {
     "publisher_id": "pub_005",
     "alignment": 1,
-    "why": "Highest-AOV apparel/home publisher with conservative brand sensibility matches the mature positioning."
+    "why": "Linden Park targets high-AOV, conservative brand sensibility shoppers."
    }
   ],
-  "confidence": 0.9,
+  "confidence": 0.74,
   "gate": "proceed",
-  "gate_reason": "Product and target audience are clear, though price and specific purchase model need to be confirmed.",
+  "gate_reason": "Clear product and target audience, though missing price point and specific purchase model.",
   "missing_info": [
    "price_point_usd",
    "price_tier",
-   "target_age_range",
-   "specific fabric materials (e.g., flax linen, cotton)"
+   "exact target age range",
+   "shipping and fulfillment details"
   ],
   "clarifying_questions": [
-   "What is the average price point or range for your bedding sets?",
-   "Are your products sold primarily as one-time purchases or do you offer subscriptions?",
-   "What is your primary growth or customer acquisition goal for this campaign?"
-  ]
+   "What is the average price point or price tier for your bedding sets?",
+   "Is your product sold primarily as individual pieces, bundles, or subscriptions?",
+   "What is your primary goal for running ads on Disco?"
+  ],
+  "tag_stability": {
+   "bedding": 1.0,
+   "home_textiles": 1.0,
+   "home": 1.0,
+   "bath": 0.33,
+   "sustainable": 0.33
+  },
+  "sample_agreement": 0.7,
+  "competing_tag_share": {
+   "bedding": 1.0
+  }
  },
  "publishers": [
   {
    "publisher_id": "pub_011",
    "publisher_name": "Northbed",
-   "score": 0.2807,
+   "score": 0.214,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches home_textiles, bedding, home (multiplier)"
+     "detail": "matches bedding, home, home_textiles (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.51475,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Design-conscious urban/suburban buyers align well with premium European linen."
+     "weight": 0.2,
+     "detail": "Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers."
     },
     {
      "name": "scale",
@@ -117,38 +134,44 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells bedding; may block the ad"
+    "competitor_conflict: host sells bedding (100% of samples agree); may block the ad"
    ],
    "recommended": true,
-   "reason": "Recommended: matches home_textiles, bedding, home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells bedding; may block the ad"
+   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells bedding (100% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_014",
    "publisher_name": "Hearthstone Goods",
-   "score": 0.2725,
+   "score": 0.1971,
    "components": [
     {
      "name": "category_fit",
      "value": 0.5,
      "weight": 1.0,
-     "detail": "matches home (multiplier)"
+     "detail": "matches home (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.511,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -166,7 +189,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches home (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated)."
+   "reason": "Recommended: matches home (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -182,19 +205,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5405,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -228,19 +257,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.58625,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -274,19 +309,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.51725,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.67)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -320,20 +361,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.54,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Affluent Classic best (host fit 0.73)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Older affluent women with high AOV match the 'grown-up aesthetic' target demographic."
+     "weight": 0.2,
+     "detail": "Marlowe & Co. features older affluent women who respond to quality messaging."
     },
     {
      "name": "scale",
@@ -366,20 +413,26 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.54125,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Affluent Classic best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Highest-AOV apparel/home publisher with conservative brand sensibility matches the mature positioning."
+     "weight": 0.2,
+     "detail": "Linden Park targets high-AOV, conservative brand sensibility shoppers."
     },
     {
      "name": "scale",
@@ -412,19 +465,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.57875,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -458,19 +517,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5445,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -504,19 +569,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5137499999999999,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -550,19 +621,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.597,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.75)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -596,19 +673,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6425,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.92)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -642,19 +725,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5515,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.66)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -688,19 +777,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6295000000000001,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.98)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -734,19 +829,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5345,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.69)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -780,19 +881,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.55425,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -826,19 +933,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.605,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gifter best (host fit 0.85)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -872,19 +985,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5462500000000001,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Sustainability Buyer best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -918,19 +1037,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6545000000000001,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.99)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -964,19 +1089,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.609,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Gen Z Aesthete best (host fit 0.83)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1152,54 +1283,50 @@
  "creatives": [
   {
    "persona_id": "persona_003",
-   "headline": "Upgrade your room vibe, {first_name}",
-   "body": "Trade basic bedding for an actually-breathable aesthetic that looks incredible on your feed. Made in Portugal.",
-   "cta": "See the aesthetic",
-   "headline_no_name": "Upgrade your room vibe",
+   "headline": "{first_name}, upgrade your room's vibe",
+   "body": "Swap basic for actually-breathable stuff made in Portugal. The grown-up aesthetic alternative to Brooklinen and Parachute.",
+   "cta": "Shop linen",
+   "headline_no_name": "Upgrade your room's vibe",
    "angle": "aesthetic-forward",
    "claims_used": [
-    "Actually-breathable stuff",
-    "Made in Portugal",
-    "More grown-up than Brooklinen/Parachute aesthetic"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_005",
-   "headline": "A more refined bedroom aesthetic",
-   "body": "Experience timeless Portuguese craftsmanship with actually-breathable linen designed for a truly grown-up home.",
-   "cta": "Explore linens",
-   "headline_no_name": "A more refined bedroom aesthetic",
+   "headline": "Refined comfort for your home",
+   "body": "Discover actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to Brooklinen and Parachute.",
+   "cta": "Explore collection",
+   "headline_no_name": "Refined comfort for your home",
    "angle": "craftsmanship",
    "claims_used": [
-    "Actually-breathable stuff",
-    "Made in Portugal",
-    "More grown-up than Brooklinen/Parachute aesthetic"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_006",
-   "headline": "Thoughtfully crafted in Portugal",
-   "body": "Upgrade to actually-breathable bedding made in Portugal, offering a more mature alternative to mainstream linens.",
-   "cta": "Shop linens",
-   "headline_no_name": "Thoughtfully crafted in Portugal",
+   "headline": "Crafted responsibly in Portugal",
+   "body": "Invest in actually-breathable stuff made in Portugal, offering a mindful, grown-up aesthetic alternative to Brooklinen or Parachute.",
+   "cta": "Discover origin",
+   "headline_no_name": "Crafted responsibly in Portugal",
    "angle": "supply chain transparency",
    "claims_used": [
-    "Actually-breathable stuff",
-    "Made in Portugal",
-    "More grown-up than Brooklinen/Parachute aesthetic"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_010",
-   "headline": "Give something remarkably grown-up",
-   "body": "Impress everyone this season with actually-breathable linen made in Portugal. A truly sophisticated gift.",
+   "headline": "{first_name}, give the gift of better sleep",
+   "body": "Impress with actually-breathable stuff made in Portugal. The ultimate grown-up aesthetic alternative to Brooklinen and Parachute.",
    "cta": "Shop gifts",
-   "headline_no_name": "Give something remarkably grown-up",
+   "headline_no_name": "Give the gift of better sleep",
    "angle": "giftable",
    "claims_used": [
-    "Actually-breathable stuff",
-    "Made in Portugal",
-    "More grown-up than Brooklinen/Parachute aesthetic"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   }
  ],
@@ -1215,15 +1342,6 @@
   },
   {
    "persona_id": "persona_005",
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_006",
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1232,8 +1350,19 @@
    "passed": true
   },
   {
+   "persona_id": "persona_006",
+   "persona_fit": 3,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [
+    "Relies on 'made in Portugal' to satisfy sustainability/transparency preferences without specific eco certifications."
+   ],
+   "passed": true
+  },
+  {
    "persona_id": "persona_010",
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1245,8 +1374,8 @@
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "DTC brand selling breathable bedding and linen made in Portugal, targeting customers seeking a more grown-up alternative to brands like Brooklinen or Parachute.",
-  "confidence": 0.9,
+  "advertiser_summary": "An DTC brand selling breathable linen bedding made in Portugal, targeted at consumers looking for a more mature aesthetic than Brooklinen or Parachute.",
+  "confidence": 0.74,
   "objective": "acquisition",
   "economics": {
    "price_usd": 60.0,
@@ -1275,59 +1404,61 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 750.0,
+   "monthly_budget_usd": 740.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 25.0,
+   "daily_cap_usd": 24.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 748.24,
+   "learning_budget_needed_usd": 737.65,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.507,
-     "budget_usd": 380.56,
+     "share": 0.521,
+     "budget_usd": 385.21,
      "cpc_bid_usd": 1.07,
+     "start_bid_usd": 0.75,
      "expected_clicks": {
-      "low": 285.0,
-      "mid": 356.0,
-      "high": 427.0
+      "low": 288.0,
+      "mid": 360.0,
+      "high": 432.0
      },
      "expected_conversions": {
-      "low": 7.5,
-      "mid": 14.9,
-      "high": 24.9
+      "low": 7.6,
+      "mid": 15.1,
+      "high": 25.2
      },
      "capacity_usd": 1294.27,
      "requires_host_approval": true,
-     "rationale": "score 0.28 -> fit x1.40 on CTR/CVR; bid $1.07; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.21 -> fit x1.40 on CTR/CVR; max bid $1.07 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.493,
-     "budget_usd": 369.44,
-     "cpc_bid_usd": 1.05,
+     "share": 0.479,
+     "budget_usd": 354.79,
+     "cpc_bid_usd": 1.02,
+     "start_bid_usd": 0.71,
      "expected_clicks": {
-      "low": 281.0,
-      "mid": 352.0,
-      "high": 422.0
+      "low": 278.0,
+      "mid": 348.0,
+      "high": 417.0
      },
      "expected_conversions": {
-      "low": 7.3,
-      "mid": 14.5,
-      "high": 24.2
+      "low": 7.0,
+      "mid": 13.9,
+      "high": 23.2
      },
-     "capacity_usd": 2428.38,
+     "capacity_usd": 2290.78,
      "requires_host_approval": false,
-     "rationale": "score 0.27 -> fit x1.38 on CTR/CVR; bid $1.05"
+     "rationale": "score 0.20 -> fit x1.34 on CTR/CVR; max bid $1.02 (break-even at target CPA), start at 70% and raise only if under-delivering"
     }
    ],
    "warnings": [
-    "No budget given: recommending $750, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $740, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
@@ -1433,10 +1564,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "Upgrade your room vibe, {first_name}",
-    "headline_no_name": "Upgrade your room vibe",
-    "body": "Trade basic bedding for an actually-breathable aesthetic that looks incredible on your feed. Made in Portugal.",
-    "cta": "See the aesthetic"
+    "headline_template": "{first_name}, upgrade your room's vibe",
+    "headline_no_name": "Upgrade your room's vibe",
+    "body": "Swap basic for actually-breathable stuff made in Portugal. The grown-up aesthetic alternative to Brooklinen and Parachute.",
+    "cta": "Shop linen"
    },
    {
     "variant_id": "v2",
@@ -1445,10 +1576,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "A more refined bedroom aesthetic",
-    "headline_no_name": "A more refined bedroom aesthetic",
-    "body": "Experience timeless Portuguese craftsmanship with actually-breathable linen designed for a truly grown-up home.",
-    "cta": "Explore linens"
+    "headline_template": "Refined comfort for your home",
+    "headline_no_name": "Refined comfort for your home",
+    "body": "Discover actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to Brooklinen and Parachute.",
+    "cta": "Explore collection"
    },
    {
     "variant_id": "v3",
@@ -1457,10 +1588,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "Thoughtfully crafted in Portugal",
-    "headline_no_name": "Thoughtfully crafted in Portugal",
-    "body": "Upgrade to actually-breathable bedding made in Portugal, offering a more mature alternative to mainstream linens.",
-    "cta": "Shop linens"
+    "headline_template": "Crafted responsibly in Portugal",
+    "headline_no_name": "Crafted responsibly in Portugal",
+    "body": "Invest in actually-breathable stuff made in Portugal, offering a mindful, grown-up aesthetic alternative to Brooklinen or Parachute.",
+    "cta": "Discover origin"
    },
    {
     "variant_id": "v4",
@@ -1469,9 +1600,9 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "Give something remarkably grown-up",
-    "headline_no_name": "Give something remarkably grown-up",
-    "body": "Impress everyone this season with actually-breathable linen made in Portugal. A truly sophisticated gift.",
+    "headline_template": "{first_name}, give the gift of better sleep",
+    "headline_no_name": "Give the gift of better sleep",
+    "body": "Impress with actually-breathable stuff made in Portugal. The ultimate grown-up aesthetic alternative to Brooklinen and Parachute.",
     "cta": "Shop gifts"
    }
   ],
@@ -1481,10 +1612,10 @@
   },
   "guardrails": {
    "claims_allowed": [
-    "Actually-breathable stuff",
-    "Made in Portugal",
-    "More grown-up than Brooklinen/Parachute aesthetic"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
     "pub_011"
    ],
@@ -1501,15 +1632,15 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What is the average price point or range for your bedding sets?",
-   "Are your products sold primarily as one-time purchases or do you offer subscriptions?",
-   "What is your primary growth or customer acquisition goal for this campaign?"
+   "What is the average price point or price tier for your bedding sets?",
+   "Is your product sold primarily as individual pieces, bundles, or subscriptions?",
+   "What is your primary goal for running ads on Disco?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 15.7
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,

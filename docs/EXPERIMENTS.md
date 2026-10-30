@@ -22,5 +22,7 @@ we treat paraphrase stability and violations as the primary signals and avoid tu
 - **Two changes at once hide causes**: v2e changed prompt and sampling together; the n=1 ablation showed the prompt's counter-example ("dog food vs dog toys") broke the cat-box competitor flag.
 - **Majority voting is wrong for asymmetric errors**: missing a competitor costs budget; a false flag costs an approval request. Final: flag on any sample, penalise by agreement share.
 - **Self-consistency buys stability**: paraphrase top-5 Jaccard 0.71 -> 0.84-0.94, at 3x intake cost (cached).
+- **Evals with creatives found claim laundering**: "only use stated claims" let an advertiser state "clinically proven weight loss, FDA approved" and get it into copy, and the LLM reviewer agreed. Fix: `config/claims_policy.yaml`, enforced in code at intake and in creative rule checks. After: injection 4/4, unsupported claims 0, creative review pass 95% (v3_full).
+- **Serving ablation**: removing the first name changes ~32% of decisions, all of them the creative *variant*, none the *campaign*; unisex names (low confidence) change 8%. A first version without a switch margin flipped on near-ties (42%).
 - **Remaining misses are mostly judgment calls** in the golden set (e.g. Marlowe & Co for linen bedding, Pantrygood for an NA drink); we did not tune to them.
 

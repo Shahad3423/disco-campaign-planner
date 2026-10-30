@@ -1,7 +1,7 @@
 {
  "brief": "idk just try it",
  "profile": {
-  "business_summary": "The input provided ('idk just try it') contains no information about the business, product, or target audience.",
+  "business_summary": "Unknown business providing no product or category details.",
   "product": "unknown",
   "is_consumer_product": false,
   "price_point_usd": null,
@@ -10,6 +10,7 @@
   "target_gender": "unknown",
   "target_age_range": null,
   "stated_claims": [],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
   "relevant_tags": [],
@@ -17,22 +18,25 @@
   "persona_affinity_tags": [],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 1.0,
+  "confidence": 0.33,
   "gate": "reject_low_signal",
-  "gate_reason": "The description contains no usable information about the product, category, pricing, or target market.",
+  "gate_reason": "The advertiser provided no information about their product, category, pricing, or audience.",
   "missing_info": [
-   "product_type",
-   "target_audience",
-   "price_point",
-   "business_model",
-   "value_proposition"
+   "product",
+   "business category",
+   "price point",
+   "target audience",
+   "purchase model"
   ],
   "clarifying_questions": [
-   "What product or service are you selling?",
-   "Who is your ideal customer or target audience?",
-   "What is the average order value or price point?",
-   "Is this a one-time purchase, subscription, or reorderable product?"
-  ]
+   "What specific product or service are you selling?",
+   "What is the price point of your product?",
+   "Is this a one-time purchase or a subscription?",
+   "Who is your target customer?"
+  ],
+  "tag_stability": {},
+  "sample_agreement": 0.0,
+  "competing_tag_share": {}
  },
  "publishers": [
   {
@@ -49,19 +53,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -79,7 +89,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_002",
@@ -95,19 +105,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -125,7 +141,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_003",
@@ -141,19 +157,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -171,7 +193,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_004",
@@ -187,19 +209,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -217,7 +245,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_005",
@@ -233,19 +261,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -263,7 +297,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_006",
@@ -279,19 +313,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -309,7 +349,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_007",
@@ -325,19 +365,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -355,7 +401,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_008",
@@ -371,19 +417,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -401,7 +453,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_009",
@@ -417,19 +469,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -447,7 +505,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_010",
@@ -463,19 +521,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -493,7 +557,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_011",
@@ -509,19 +573,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -539,7 +609,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_012",
@@ -555,19 +625,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -585,7 +661,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_013",
@@ -601,19 +677,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -631,7 +713,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_014",
@@ -647,19 +729,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -677,7 +765,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_015",
@@ -693,19 +781,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -723,7 +817,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_016",
@@ -739,19 +833,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -769,7 +869,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_017",
@@ -785,19 +885,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -815,7 +921,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_018",
@@ -831,19 +937,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -861,7 +973,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_019",
@@ -877,19 +989,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -907,7 +1025,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   },
   {
    "publisher_id": "pub_020",
@@ -923,19 +1041,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "no plausible personas yet"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -953,7 +1077,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+   "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
   }
  ],
  "personas": [
@@ -1084,8 +1208,8 @@
   "schema_version": "1.0",
   "status": "not_eligible",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "The input provided ('idk just try it') contains no information about the business, product, or target audience.",
-  "confidence": 1.0,
+  "advertiser_summary": "Unknown business providing no product or category details.",
+  "confidence": 0.33,
   "objective": "acquisition",
   "economics": null,
   "pricing": null,
@@ -1095,83 +1219,83 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_002",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_003",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_004",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_005",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_006",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_007",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_008",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_009",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_010",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_011",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_012",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_013",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_014",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_015",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_016",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_017",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_018",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_019",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     },
     {
      "id": "pub_020",
-     "reason": "Not recommended: The description contains no usable information about the product, category, pricing, or target market."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
     }
    ],
    "personas": [],
@@ -1192,6 +1316,7 @@
   },
   "guardrails": {
    "claims_allowed": [],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1206,10 +1331,10 @@
    "review_after_days": 14
   },
   "open_questions": [
-   "What product or service are you selling?",
-   "Who is your ideal customer or target audience?",
-   "What is the average order value or price point?",
-   "Is this a one-time purchase, subscription, or reorderable product?"
+   "What specific product or service are you selling?",
+   "What is the price point of your product?",
+   "Is this a one-time purchase or a subscription?",
+   "Who is your target customer?"
   ]
  },
  "timings_s": {

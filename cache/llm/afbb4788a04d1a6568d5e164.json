@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "headline": "Handcrafted in Florence",
+      "body": "Discover Italian-made leather handbags created through traditional artisan workshops. Built for enduring craftsmanship.",
+      "cta": "Explore Collection",
+      "headline_no_name": "Handcrafted in Florence",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Handcrafted in Florence",
+        "Italian-made",
+        "Custom-fit leather handbags"
+      ]
+    }
+  ]
+}

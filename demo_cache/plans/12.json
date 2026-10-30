@@ -1,7 +1,7 @@
 {
  "brief": "A subscription box for new cat owners. First three months of their cat's life. Toys, food samples, a little booklet about what to expect.",
  "profile": {
-  "business_summary": "A subscription box service designed for new cat owners, covering the first three months of a cat's life with toys, food samples, and an informative booklet.",
+  "business_summary": "A subscription box service designed specifically for new cat owners, covering the first three months of their cat's life with toys, food samples, and an informational booklet.",
   "product": "Subscription box for new cat owners",
   "is_consumer_product": true,
   "price_point_usd": null,
@@ -13,108 +13,129 @@
    "First three months of their cat's life",
    "Toys, food samples, a little booklet about what to expect"
   ],
+  "claims_needing_substantiation": [],
   "values": [],
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "subscription",
+    "weight": 1.0,
+    "why": "Offered as a subscription service."
+   },
+   {
     "tag": "pet",
     "weight": 1.0,
-    "why": "The product is explicitly for new cat owners."
+    "why": "Core category for pet products and services."
    },
    {
     "tag": "pet_supplies",
     "weight": 1.0,
-    "why": "The box includes toys and supplies for cats."
+    "why": "Includes toys and supplies for cats."
    },
    {
     "tag": "pet_food",
     "weight": 0.5,
-    "why": "The box includes food samples."
+    "why": "Includes food samples."
    },
    {
-    "tag": "subscription",
-    "weight": 1.0,
-    "why": "The product is a subscription box."
+    "tag": "toys",
+    "weight": 0.5,
+    "why": "Includes toys for the cat."
    },
    {
     "tag": "gifting",
-    "weight": 0.25,
-    "why": "Could be bought as a gift for a new pet owner."
+    "weight": 0.167,
+    "why": "Weak fit: could potentially be bought as a gift for a new cat owner."
    }
   ],
   "competing_tags": [
-   "pet",
-   "pet_supplies",
    "pet_food",
-   "subscription"
+   "pet_supplies"
   ],
   "persona_affinity_tags": [
+   "family_products",
    "pet_food",
    "pet_supplies",
-   "subscription_boxes",
-   "family_products"
+   "subscription_boxes"
   ],
   "persona_conflicts": [],
   "note_signals": [
    {
     "publisher_id": "pub_007",
     "alignment": 1,
-    "why": "Pawline is a pet subscription publisher whose owners are health-conscious and responsive to pet care."
+    "why": "Pawline has a heavy subscription focus and health-conscious pet owners."
    },
    {
     "publisher_id": "pub_009",
     "alignment": 1,
-    "why": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+    "why": "Ruffco has the largest pet audience in the catalog."
    },
    {
     "publisher_id": "pub_018",
     "alignment": 1,
-    "why": "Tailcrate focuses on pet supplies and subscription with playful brand voice fitting for a cat toy box."
+    "why": "Tailcrate specializes in pet supplies, subscriptions, toys, and treats."
    }
   ],
-  "confidence": 0.95,
+  "confidence": 0.88,
   "gate": "proceed",
-  "gate_reason": "Clear consumer product description with well-defined target audience and category, though missing exact pricing and margin details.",
+  "gate_reason": "Clear consumer subscription product for pets with well-defined target audience and contents, though pricing is missing.",
   "missing_info": [
    "price_point_usd",
-   "target_age_range",
-   "profit margin"
+   "price_tier"
   ],
   "clarifying_questions": [
    "What is the retail price of the subscription box?",
-   "What is your target margin or CPA goal?",
-   "Is the subscription strictly fixed to 3 months or ongoing?"
-  ]
+   "What is your target customer acquisition cost or profit margin?"
+  ],
+  "tag_stability": {
+   "pet": 1.0,
+   "pet_supplies": 1.0,
+   "pet_food": 1.0,
+   "subscription": 1.0,
+   "toys": 1.0,
+   "gifting": 0.67
+  },
+  "sample_agreement": 0.89,
+  "competing_tag_share": {
+   "pet_food": 0.33,
+   "pet_supplies": 0.33
+  }
  },
  "publishers": [
   {
    "publisher_id": "pub_009",
    "publisher_name": "Ruffco",
-   "score": 0.2905,
+   "score": 0.4874,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, pet, pet_food (multiplier)"
+     "detail": "matches pet, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8949090909090909,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.95)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Ruffco has the largest pet audience in the catalog with repeat-purchase behavior."
+     "weight": 0.2,
+     "detail": "Ruffco has the largest pet audience in the catalog."
     },
     {
      "name": "scale",
@@ -130,87 +151,45 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells pet, pet_food, pet_supplies; may block the ad"
+    "competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, pet_food (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells pet, pet_food, pet_supplies; may block the ad"
-  },
-  {
-   "publisher_id": "pub_018",
-   "publisher_name": "Tailcrate",
-   "score": 0.2773,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 1.0,
-     "weight": 1.0,
-     "detail": "matches subscription, pet_supplies, pet (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 1.0,
-     "weight": 0.15,
-     "detail": "Tailcrate focuses on pet supplies and subscription with playful brand voice fitting for a cat toy box."
-    },
-    {
-     "name": "scale",
-     "value": 0.32300750747115453,
-     "weight": 0.05,
-     "detail": "8.4M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.3,
-     "weight": 0.1,
-     "detail": "host not gifting-oriented"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells pet, pet_supplies, subscription; may block the ad"
-   ],
-   "recommended": true,
-   "reason": "Recommended: matches subscription, pet_supplies, pet (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells pet, pet_supplies, subscription; may block the ad"
+   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_007",
    "publisher_name": "Pawline",
-   "score": 0.2736,
+   "score": 0.4615,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches subscription, pet_supplies, pet, pet_food (multiplier)"
+     "detail": "matches subscription, pet, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8855454545454545,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.93)"
     },
     {
      "name": "notes_fit",
      "value": 1.0,
-     "weight": 0.15,
-     "detail": "Pawline is a pet subscription publisher whose owners are health-conscious and responsive to pet care."
+     "weight": 0.2,
+     "detail": "Pawline has a heavy subscription focus and health-conscious pet owners."
     },
     {
      "name": "scale",
@@ -226,15 +205,69 @@
     }
    ],
    "flags": [
-    "competitor_conflict: host sells pet, pet_food, pet_supplies, subscription; may block the ad"
+    "competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
    ],
    "recommended": true,
-   "reason": "Recommended: matches subscription, pet_supplies, pet, pet_food (multiplier); strongest supporting signal audience_fit (gender not stated; age not stated). Flags: competitor_conflict: host sells pet, pet_food, pet_supplies, subscription; may block the ad"
+   "reason": "Recommended: matches subscription, pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_food, pet_supplies (33% of samples agree); may block the ad"
+  },
+  {
+   "publisher_id": "pub_018",
+   "publisher_name": "Tailcrate",
+   "score": 0.4371,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 1.0,
+     "weight": 1.0,
+     "detail": "matches subscription, pet, pet_supplies, toys (specific) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7522727272727272,
+     "weight": 0.35,
+     "detail": "reaches The Pet Parent best (host fit 0.85)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 1.0,
+     "weight": 0.2,
+     "detail": "Tailcrate specializes in pet supplies, subscriptions, toys, and treats."
+    },
+    {
+     "name": "scale",
+     "value": 0.32300750747115453,
+     "weight": 0.05,
+     "detail": "8.4M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.3,
+     "weight": 0.1,
+     "detail": "host not gifting-oriented"
+    }
+   ],
+   "flags": [
+    "competitor_conflict: host sells pet_supplies (33% of samples agree); may block the ad"
+   ],
+   "recommended": true,
+   "reason": "Recommended: matches subscription, pet, pet_supplies, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host sells pet_supplies (33% of samples agree); may block the ad"
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.0909,
+   "score": 0.0784,
    "components": [
     {
      "name": "category_fit",
@@ -245,19 +278,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8122727272727274,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.77)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -280,7 +319,7 @@
   {
    "publisher_id": "pub_015",
    "publisher_name": "Kitchenly",
-   "score": 0.038,
+   "score": 0.0746,
    "components": [
     {
      "name": "category_fit",
@@ -291,19 +330,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.8417272727272729,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.74)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -319,64 +364,14 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells subscription; may block the ad"
-   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
-  },
-  {
-   "publisher_id": "pub_002",
-   "publisher_name": "Movewell",
-   "score": 0.0375,
-   "components": [
-    {
-     "name": "category_fit",
-     "value": 0.15,
-     "weight": 1.0,
-     "detail": "matches subscription (attribute tags only) (multiplier)"
-    },
-    {
-     "name": "audience_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "gender not stated; age not stated"
-    },
-    {
-     "name": "price_fit",
-     "value": 0.6,
-     "weight": 0.35,
-     "detail": "price not stated"
-    },
-    {
-     "name": "notes_fit",
-     "value": 0.5,
-     "weight": 0.15,
-     "detail": "no read on notes"
-    },
-    {
-     "name": "scale",
-     "value": 0.6060874465244197,
-     "weight": 0.05,
-     "detail": "22.0M monthly impressions"
-    },
-    {
-     "name": "seasonality",
-     "value": 0.3,
-     "weight": 0.1,
-     "detail": "host not gifting-oriented"
-    }
-   ],
-   "flags": [
-    "competitor_conflict: host sells subscription; may block the ad"
-   ],
-   "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
   },
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.0367,
+   "score": 0.0688,
    "components": [
     {
      "name": "category_fit",
@@ -387,19 +382,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7512727272727272,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.70)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -415,16 +416,14 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells subscription; may block the ad"
-   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
   },
   {
-   "publisher_id": "pub_012",
-   "publisher_name": "Daily Form",
-   "score": 0.0358,
+   "publisher_id": "pub_002",
+   "publisher_name": "Movewell",
+   "score": 0.0672,
    "components": [
     {
      "name": "category_fit",
@@ -435,19 +434,77 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6802727272727274,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.60)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
+     "detail": "no read on notes"
+    },
+    {
+     "name": "scale",
+     "value": 0.6060874465244197,
+     "weight": 0.05,
+     "detail": "22.0M monthly impressions"
+    },
+    {
+     "name": "seasonality",
+     "value": 0.3,
+     "weight": 0.1,
+     "detail": "host not gifting-oriented"
+    }
+   ],
+   "flags": [],
+   "recommended": false,
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+  },
+  {
+   "publisher_id": "pub_012",
+   "publisher_name": "Daily Form",
+   "score": 0.0602,
+   "components": [
+    {
+     "name": "category_fit",
+     "value": 0.15,
+     "weight": 1.0,
+     "detail": "matches subscription (attribute tags only) (multiplier)"
+    },
+    {
+     "name": "audience_fit",
+     "value": 0.6,
+     "weight": 0.3,
+     "detail": "gender not stated; age not stated"
+    },
+    {
+     "name": "price_fit",
+     "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.5770909090909091,
+     "weight": 0.35,
+     "detail": "reaches The Pet Parent best (host fit 0.55)"
+    },
+    {
+     "name": "notes_fit",
+     "value": 0.5,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -463,11 +520,9 @@
      "detail": "host not gifting-oriented"
     }
    ],
-   "flags": [
-    "competitor_conflict: host sells subscription; may block the ad"
-   ],
+   "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
   },
   {
    "publisher_id": "pub_001",
@@ -483,19 +538,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.617,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.55)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -529,19 +590,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7118181818181818,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -575,19 +642,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.47845454545454547,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Value-Conscious Shopper best (host fit 0.79)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -621,19 +694,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.42236363636363633,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Value-Conscious Shopper best (host fit 0.73)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -667,19 +746,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7213636363636363,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -713,19 +798,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7005454545454546,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.71)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -759,19 +850,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.43300000000000005,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.42)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -805,19 +902,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6828181818181818,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.68)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -851,19 +954,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7059090909090909,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.62)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -897,19 +1006,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.7572727272727273,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.72)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -943,19 +1058,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.49927272727272726,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.47)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -989,19 +1110,25 @@
     {
      "name": "audience_fit",
      "value": 0.6,
-     "weight": 0.35,
+     "weight": 0.3,
      "detail": "gender not stated; age not stated"
     },
     {
      "name": "price_fit",
      "value": 0.6,
+     "weight": 1.0,
+     "detail": "price not stated (multiplier ^0.5)"
+    },
+    {
+     "name": "persona_fit",
+     "value": 0.6125454545454545,
      "weight": 0.35,
-     "detail": "price not stated"
+     "detail": "reaches The Pet Parent best (host fit 0.61)"
     },
     {
      "name": "notes_fit",
      "value": 0.5,
-     "weight": 0.15,
+     "weight": 0.2,
      "detail": "no read on notes"
     },
     {
@@ -1187,10 +1314,10 @@
  "creatives": [
   {
    "persona_id": "persona_004",
-   "headline": "{first_name}, welcome your new kitten home right",
-   "body": "Carefully curated for the first three months of their life with quality food samples, toys, and an informative booklet.",
-   "cta": "Get Started",
-   "headline_no_name": "Welcome your new kitten home right",
+   "headline": "{first_name}, welcome your kitten home",
+   "body": "Care for the first three months of their life with curated toys, food samples, and a helpful booklet about what to expect.",
+   "cta": "Start Box",
+   "headline_no_name": "Welcome your new kitten home",
    "angle": "emotional connection",
    "claims_used": [
     "First three months of their cat's life",
@@ -1199,10 +1326,10 @@
   },
   {
    "persona_id": "persona_002",
-   "headline": "Make those first months easier",
-   "body": "Everything you need for the first three months of your cat's life, including toys, food samples, and a helpful booklet.",
-   "cta": "Get started",
-   "headline_no_name": "Make those first months easier",
+   "headline": "Save time with our easy subscription",
+   "body": "Everything you need for the first three months of life: toys, food samples, and a booklet on what to expect.",
+   "cta": "Start Box",
+   "headline_no_name": "Save time with our easy subscription",
    "angle": "time-saving",
    "claims_used": [
     "First three months of their cat's life",
@@ -1211,10 +1338,10 @@
   },
   {
    "persona_id": "persona_008",
-   "headline": "Everything for the first three months in one box",
-   "body": "Get toys, food samples, and a handy booklet about what to expect bundled together for your kitten's big start.",
+   "headline": "Everything for the first three months",
+   "body": "Get a bundled kit covering the first three months of your cat's life with toys, food samples, and an informational booklet.",
    "cta": "Claim Offer",
-   "headline_no_name": "Everything for the first three months in one box",
+   "headline_no_name": "Everything for the first three months",
    "angle": "bundle offers",
    "claims_used": [
     "First three months of their cat's life",
@@ -1255,8 +1382,8 @@
   "schema_version": "1.0",
   "status": "draft",
   "planning_date": "2026-10-30",
-  "advertiser_summary": "A subscription box service designed for new cat owners, covering the first three months of a cat's life with toys, food samples, and an informative booklet.",
-  "confidence": 0.95,
+  "advertiser_summary": "A subscription box service designed specifically for new cat owners, covering the first three months of their cat's life with toys, food samples, and an informational booklet.",
+  "confidence": 0.88,
   "objective": "acquisition",
   "economics": {
    "price_usd": 60.0,
@@ -1286,79 +1413,82 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 3300.0,
+   "monthly_budget_usd": 3260.0,
    "budget_source": "recommended_learning_budget",
-   "daily_cap_usd": 110.0,
+   "daily_cap_usd": 108.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 3296.47,
+   "learning_budget_needed_usd": 3264.71,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
-     "share": 0.345,
-     "budget_usd": 1139.35,
+     "share": 0.352,
+     "budget_usd": 1146.41,
      "cpc_bid_usd": 3.18,
+     "start_bid_usd": 2.23,
      "expected_clicks": {
-      "low": 287.0,
-      "mid": 358.0,
-      "high": 430.0
+      "low": 288.0,
+      "mid": 361.0,
+      "high": 433.0
      },
      "expected_conversions": {
-      "low": 7.5,
-      "mid": 15.0,
-      "high": 25.1
+      "low": 7.6,
+      "mid": 15.1,
+      "high": 25.2
      },
-     "capacity_usd": 66245.76,
+     "capacity_usd": 132491.52,
      "requires_host_approval": true,
-     "rationale": "score 0.29 -> fit x1.40 on CTR/CVR; bid $3.18; host sells a competing product, so it may decline (capacity discounted)"
-    },
-    {
-     "publisher_id": "pub_018",
-     "publisher_name": "Tailcrate",
-     "share": 0.33,
-     "budget_usd": 1087.58,
-     "cpc_bid_usd": 3.09,
-     "expected_clicks": {
-      "low": 282.0,
-      "mid": 352.0,
-      "high": 422.0
-     },
-     "expected_conversions": {
-      "low": 7.2,
-      "mid": 14.4,
-      "high": 24.0
-     },
-     "capacity_usd": 8494.77,
-     "requires_host_approval": true,
-     "rationale": "score 0.28 -> fit x1.36 on CTR/CVR; bid $3.09; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.49 -> fit x1.40 on CTR/CVR; max bid $3.18 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     },
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.325,
-     "budget_usd": 1073.07,
-     "cpc_bid_usd": 3.07,
+     "share": 0.333,
+     "budget_usd": 1085.49,
+     "cpc_bid_usd": 3.08,
+     "start_bid_usd": 2.16,
      "expected_clicks": {
-      "low": 280.0,
-      "mid": 350.0,
-      "high": 419.0
+      "low": 282.0,
+      "mid": 352.0,
+      "high": 423.0
      },
      "expected_conversions": {
-      "low": 7.1,
-      "mid": 14.2,
-      "high": 23.7
+      "low": 7.2,
+      "mid": 14.4,
+      "high": 23.9
      },
-     "capacity_usd": 4786.7,
+     "capacity_usd": 9633.17,
      "requires_host_approval": true,
-     "rationale": "score 0.27 -> fit x1.35 on CTR/CVR; bid $3.07; host sells a competing product, so it may decline (capacity discounted)"
+     "rationale": "score 0.46 -> fit x1.36 on CTR/CVR; max bid $3.08 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
+    },
+    {
+     "publisher_id": "pub_018",
+     "publisher_name": "Tailcrate",
+     "share": 0.315,
+     "budget_usd": 1028.1,
+     "cpc_bid_usd": 2.99,
+     "start_bid_usd": 2.09,
+     "expected_clicks": {
+      "low": 275.0,
+      "mid": 344.0,
+      "high": 413.0
+     },
+     "expected_conversions": {
+      "low": 6.8,
+      "mid": 13.6,
+      "high": 22.6
+     },
+     "capacity_usd": 15882.63,
+     "requires_host_approval": true,
+     "rationale": "score 0.44 -> fit x1.32 on CTR/CVR; max bid $2.99 (break-even at target CPA), start at 70% and raise only if under-delivering; host sells a competing product, so it may decline (capacity discounted)"
     }
    ],
    "warnings": [
-    "No budget given: recommending $3,300, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $3,260, the smallest budget that buys 300 clicks per host."
    ]
   },
   "targeting": {
@@ -1374,19 +1504,19 @@
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
-    },
-    {
-     "id": "pub_002",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+    },
+    {
+     "id": "pub_002",
+     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Flags: competitor_conflict: host sells subscription; may block the ad"
+     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
     },
     {
      "id": "pub_001",
@@ -1461,10 +1591,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, welcome your new kitten home right",
-    "headline_no_name": "Welcome your new kitten home right",
-    "body": "Carefully curated for the first three months of their life with quality food samples, toys, and an informative booklet.",
-    "cta": "Get Started"
+    "headline_template": "{first_name}, welcome your kitten home",
+    "headline_no_name": "Welcome your new kitten home",
+    "body": "Care for the first three months of their life with curated toys, food samples, and a helpful booklet about what to expect.",
+    "cta": "Start Box"
    },
    {
     "variant_id": "v2",
@@ -1474,10 +1604,10 @@
      "pub_009",
      "pub_018"
     ],
-    "headline_template": "Make those first months easier",
-    "headline_no_name": "Make those first months easier",
-    "body": "Everything you need for the first three months of your cat's life, including toys, food samples, and a helpful booklet.",
-    "cta": "Get started"
+    "headline_template": "Save time with our easy subscription",
+    "headline_no_name": "Save time with our easy subscription",
+    "body": "Everything you need for the first three months of life: toys, food samples, and a booklet on what to expect.",
+    "cta": "Start Box"
    },
    {
     "variant_id": "v3",
@@ -1487,9 +1617,9 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "Everything for the first three months in one box",
-    "headline_no_name": "Everything for the first three months in one box",
-    "body": "Get toys, food samples, and a handy booklet about what to expect bundled together for your kitten's big start.",
+    "headline_template": "Everything for the first three months",
+    "headline_no_name": "Everything for the first three months",
+    "body": "Get a bundled kit covering the first three months of your cat's life with toys, food samples, and an informational booklet.",
     "cta": "Claim Offer"
    }
   ],
@@ -1502,10 +1632,11 @@
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
    ],
+   "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
     "pub_009",
-    "pub_018",
-    "pub_007"
+    "pub_007",
+    "pub_018"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1521,14 +1652,13 @@
   },
   "open_questions": [
    "What is the retail price of the subscription box?",
-   "What is your target margin or CPA goal?",
-   "Is the subscription strictly fixed to 3 months or ongoing?"
+   "What is your target customer acquisition cost or profit margin?"
   ]
  },
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 21.5
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,
