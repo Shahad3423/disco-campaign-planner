@@ -86,7 +86,8 @@ def main() -> None:
 
     jobs = []
     for adv_id, brief, plan in load_holdout():
-        for a, b in sample_pairs(plan, args.pairs_per_advertiser, rng):
+        # seeded per advertiser: adding advertisers later doesn't change earlier pairs (cache reuse)
+        for a, b in sample_pairs(plan, args.pairs_per_advertiser, random.Random(f"{adv_id}-pairs")):
             jobs.append((adv_id, brief, a, b))
 
     def work(job):

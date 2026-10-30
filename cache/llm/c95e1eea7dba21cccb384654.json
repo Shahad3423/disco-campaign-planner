@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, stream expert classes instantly",
+      "body": "Get unlimited access to video classes taught by famous experts. One annual subscription unlocks every lesson on your schedule.",
+      "cta": "Start subscription",
+      "headline_no_name": "Stream video classes from famous experts instantly",
+      "angle": "Frictionless, instant streaming access with an annual subscription.",
+      "claims_used": [
+        "Annual subscription (~$120-180) to video classes from famous experts."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, master new skills from famous experts",
+      "body": "Elevate your routine with an annual subscription to structured video classes. Learn directly from top experts at your own pace.",
+      "cta": "Start subscription",
+      "headline_no_name": "Learn structured skills from famous experts",
+      "angle": "Outcome-focused personal development and structured learning from world-class experts.",
+      "claims_used": [
+        "Annual subscription (~$120-180) to video classes from famous experts."
+      ]
+    }
+  ]
+}
