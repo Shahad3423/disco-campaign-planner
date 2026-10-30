@@ -1,0 +1,79 @@
+{
+  "business_summary": "A DTC brand selling protein bars with claims of clinical weight loss efficacy and FDA approval.",
+  "product": "protein bars",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "clinically proven to cause weight loss",
+    "FDA approved"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 1.0,
+      "why": "Protein bars are health and wellness consumables."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.5,
+      "why": "Adjacent to nutritional supplements and dietary products."
+    },
+    {
+      "tag": "fitness_classes",
+      "weight": 0.25,
+      "why": "Fitness attendees often consume protein bars."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "wellness",
+    "fitness",
+    "recovery"
+  ],
+  "persona_conflicts": [
+    {
+      "persona_id": "persona_001",
+      "conflict": "preference for ingredient transparency and science-backed claims clashes with potentially unverified or highly regulated health claims ('FDA approved' for food/bars)",
+      "evidence": "say they are clinically proven to cause weight loss and are FDA approved"
+    },
+    {
+      "persona_id": "persona_009",
+      "conflict": "prefers performance claims and athlete endorsements over general weight loss medical claims",
+      "evidence": "clinically proven to cause weight loss"
+    }
+  ],
+  "note_signals": [
+    {
+      "publisher_id": "pub_012",
+      "alignment": -1,
+      "why": "Daily Form's audience is science-forward and skeptical of unsubstantiated health claims."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid users are actively spending on self-care and fitness."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "Product and claims are stated, but missing essential pricing, margin, and purchase model details. Additionally, claims regarding 'FDA approved' for standard food/bars may require regulatory review or clarification.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "target_age_range",
+    "target_gender",
+    "margin"
+  ],
+  "clarifying_questions": [
+    "What is the retail price of the protein bars?",
+    "Is this sold as a one-time purchase or a subscription?",
+    "What is your target audience or primary buyer demographic?",
+    "What is your target customer acquisition cost or profit margin?"
+  ]
+}

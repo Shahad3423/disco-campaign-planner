@@ -1,0 +1,87 @@
+{
+  "business_summary": "A sustainable activewear brand for women made from recycled ocean plastic, positioned between Lululemon and Girlfriend Collective.",
+  "product": "Sustainable activewear for women",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "premium",
+  "purchase_model": "unknown",
+  "target_gender": "female",
+  "target_age_range": null,
+  "stated_claims": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic",
+    "Price point sits between Lululemon and Girlfriend Collective"
+  ],
+  "values": [
+    "sustainable"
+  ],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category of the brand."
+    },
+    {
+      "tag": "women",
+      "weight": 1.0,
+      "why": "Target demographic is women."
+    },
+    {
+      "tag": "sustainable",
+      "weight": 1.0,
+      "why": "Products made from recycled ocean plastic."
+    },
+    {
+      "tag": "apparel",
+      "weight": 0.5,
+      "why": "Broader category covering activewear."
+    },
+    {
+      "tag": "yoga",
+      "weight": 0.5,
+      "why": "Adjacent fitness activity often associated with activewear."
+    }
+  ],
+  "competing_tags": [
+    "activewear"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "sustainable_apparel",
+    "fitness",
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell features apparel/activewear for women with fitness-engaged shoppers."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Studiogrid has yoga and fitness-focused users who are active activewear buyers."
+    },
+    {
+      "publisher_id": "pub_017",
+      "alignment": 1,
+      "why": "Cloudfoot features sustainable activewear and shoes with overlapping messaging."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "clarify",
+  "gate_reason": "The product, target gender, and sustainability angle are clear, but specific pricing, purchase model (one-time vs. subscription), and exact numeric price point are missing.",
+  "missing_info": [
+    "Exact price point in USD",
+    "Purchase model (one-time vs subscription)",
+    "Target age range"
+  ],
+  "clarifying_questions": [
+    "What is the exact price point or average order value (AOV) in USD?",
+    "Is the purchase model primarily one-time purchase or subscription?",
+    "What is your primary growth or acquisition goal for this campaign?"
+  ]
+}

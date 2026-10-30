@@ -1,0 +1,44 @@
+{
+  "business_summary": "The advertiser states a general mission to 'help people feel better', but provides no specific details about their product, pricing, business model, or target audience.",
+  "product": "unknown",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "unknown",
+  "target_gender": "unknown",
+  "target_age_range": null,
+  "stated_claims": [
+    "We help people feel better."
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.25,
+      "why": "General health/wellness mission implied, though no specific product is defined."
+    }
+  ],
+  "competing_tags": [],
+  "persona_affinity_tags": [
+    "wellness"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [],
+  "confidence": 0.2,
+  "gate": "clarify",
+  "gate_reason": "The description provides a high-level outcome ('help people feel better') but lacks specific information about the product type, pricing, purchase model, and target audience necessary to plan targeting.",
+  "missing_info": [
+    "Specific product or service being sold",
+    "Price point and price tier",
+    "Purchase model (one-time vs subscription)",
+    "Target audience demographics and gender",
+    "Fulfillment and shipping details"
+  ],
+  "clarifying_questions": [
+    "What specific product or service do you sell?",
+    "What is the average price point and purchase model (one-time vs. subscription)?",
+    "Who is your primary target customer?",
+    "Is this a physical direct-to-consumer product shipped to customers?"
+  ]
+}

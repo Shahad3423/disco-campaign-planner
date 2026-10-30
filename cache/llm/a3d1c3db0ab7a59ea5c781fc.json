@@ -1,0 +1,59 @@
+{
+  "business_summary": "Brand offering technical outerwear shells for serious backcountry skiers, worn by ski patrollers.",
+  "product": "Technical outerwear shells",
+  "is_consumer_product": true,
+  "price_point_usd": 650.0,
+  "price_tier": "luxury",
+  "purchase_model": "one_time",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear",
+    "Starts at $650, goes up from there"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "activewear",
+      "weight": 1.0,
+      "why": "Core category: technical outerwear for skiing falls directly under activewear."
+    },
+    {
+      "tag": "apparel",
+      "weight": 1.0,
+      "why": "Core category: outerwear shells are apparel."
+    }
+  ],
+  "competing_tags": [
+    "activewear",
+    "apparel"
+  ],
+  "persona_affinity_tags": [
+    "activewear",
+    "apparel",
+    "fitness",
+    "travel"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_002",
+      "alignment": 1,
+      "why": "Movewell's fitness-engaged shoppers align with serious backcountry skiing activewear."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product, target audience, and price point provided.",
+  "missing_info": [
+    "target_age_range",
+    "target_gender",
+    "fulfillment_notes"
+  ],
+  "clarifying_questions": [
+    "What is your target gender split or are these unisex shells?",
+    "Do you offer any payment plans or subscription options for gear, or is it strictly one-time purchase?"
+  ]
+}

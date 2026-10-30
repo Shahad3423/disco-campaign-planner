@@ -1,0 +1,103 @@
+{
+  "business_summary": "Produces a non-alcoholic sparkling beverage formulated with adaptogens, marketed as a functional alternative to cocktails for hangover-free relaxation.",
+  "product": "Non-alcoholic sparkling drink with adaptogens",
+  "is_consumer_product": true,
+  "price_point_usd": null,
+  "price_tier": "unknown",
+  "purchase_model": "repeat_consumable",
+  "target_gender": "any",
+  "target_age_range": null,
+  "stated_claims": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "Feel good without a hangover",
+    "Functional cocktail alternative"
+  ],
+  "values": [],
+  "fulfillment_notes": null,
+  "relevant_tags": [
+    {
+      "tag": "functional_beverages",
+      "weight": 1.0,
+      "why": "Direct product category fit for functional non-alcoholic drinks."
+    },
+    {
+      "tag": "beverages",
+      "weight": 1.0,
+      "why": "Core drink product category."
+    },
+    {
+      "tag": "soda_alternative",
+      "weight": 0.5,
+      "why": "Serves as a healthier alternative to traditional soda or alcoholic beverages."
+    },
+    {
+      "tag": "wellness_dtc",
+      "weight": 0.5,
+      "why": "Appeals to health and wellness consumers seeking adaptogenic benefits."
+    },
+    {
+      "tag": "gut_health",
+      "weight": 0.25,
+      "why": "Adjacent functional beverage interest area."
+    },
+    {
+      "tag": "supplements",
+      "weight": 0.25,
+      "why": "Contains adaptogens, overlapping with dietary supplement interests."
+    },
+    {
+      "tag": "groceries",
+      "weight": 0.25,
+      "why": "Consumable packaged beverage."
+    }
+  ],
+  "competing_tags": [
+    "functional_beverages",
+    "soda_alternative",
+    "beverages"
+  ],
+  "persona_affinity_tags": [
+    "functional_beverages",
+    "wellness",
+    "recovery",
+    "gourmet_food",
+    "organic_grocery"
+  ],
+  "persona_conflicts": [],
+  "note_signals": [
+    {
+      "publisher_id": "pub_020",
+      "alignment": 1,
+      "why": "Direct category match with strong overlap in functional beverages and wellness."
+    },
+    {
+      "publisher_id": "pub_008",
+      "alignment": 1,
+      "why": "Values-driven grocery audience interested in wellness and clean ingredients."
+    },
+    {
+      "publisher_id": "pub_001",
+      "alignment": 1,
+      "why": "Late-night traffic and alcohol category buyers present strong non-alcoholic cocktail alternative cross-sell."
+    },
+    {
+      "publisher_id": "pub_003",
+      "alignment": 1,
+      "why": "Self-care focused active consumers are key target audience for functional hangover-free drinks."
+    }
+  ],
+  "confidence": 0.9,
+  "gate": "proceed",
+  "gate_reason": "Clear product definition, functional benefits, and distinct audience positioning allowed straightforward tag mapping.",
+  "missing_info": [
+    "price_point_usd",
+    "price_tier",
+    "purchase_model (one-time vs subscription options)",
+    "target demographics"
+  ],
+  "clarifying_questions": [
+    "What is the retail price per unit or pack?",
+    "Do you offer subscription options or single unit/pack purchases?",
+    "What is your target demographic or core customer profile?"
+  ]
+}
