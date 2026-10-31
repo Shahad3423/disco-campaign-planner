@@ -1,0 +1,107 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "engineered to fit seamlessly",
+        "new formula"
+      ],
+      "distinct_from_others": false,
+      "issues": [
+        "The angle is too similar to Variant 1.",
+        "The CTA and body text invent product characteristics ('formula', 'engineered') not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "The angle and messaging are too similar to Variant 1 (both focus on saving time and simplifying schedules)."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "risk-free",
+        "easy returns"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Guarantees and return policies ('risk-free', 'easy returns') are unsupported by the stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

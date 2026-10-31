@@ -60,6 +60,7 @@ personas:
   min_score: 0.25
   min_selected: 3        # the brief asks for 3-5 variants; below this we say the extras are exploratory
   max_selected: 5
+  variants_per_persona: 3   # creatives per persona, each a different angle, split evenly at serving until a bandit learns
   # rows: advertiser price tier; columns: persona price_sensitivity
   price_compat:
     luxury:  {low: 1.0, low-medium: 0.8, medium: 0.5, medium-high: 0.3, high: 0.15}

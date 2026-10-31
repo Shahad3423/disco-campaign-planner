@@ -22,6 +22,11 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "women",
+    "weight": 1.0,
+    "why": "Target demographic is women."
+   },
+   {
     "tag": "activewear",
     "weight": 1.0,
     "why": "Core category of the brand's products."
@@ -30,11 +35,6 @@
     "tag": "sustainable",
     "weight": 1.0,
     "why": "Key product value stated as made from recycled ocean plastic."
-   },
-   {
-    "tag": "women",
-    "weight": 1.0,
-    "why": "Target demographic is women."
    },
    {
     "tag": "apparel",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, women, apparel (specific) (multiplier)"
+     "detail": "matches women, activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches women, activewear, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_017",
@@ -223,7 +223,7 @@
      "name": "category_fit",
      "value": 0.7,
      "weight": 1.0,
-     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
+     "detail": "matches women, sustainable, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -264,7 +264,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
+   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
@@ -1316,11 +1316,38 @@
  "creatives": [
   {
    "persona_id": "persona_001",
+   "variant": 1,
    "headline": "{first_name}, optimize your activewear.",
-   "body": "Engineered for your system. Our sustainable activewear brand for women uses materials made from recycled ocean plastic.",
-   "cta": "Shop activewear",
+   "body": "Upgrade your movement routine with a sustainable activewear brand for women. Made from recycled ocean plastic to support your system.",
+   "cta": "Shop sustainable",
    "headline_no_name": "Optimize your activewear.",
-   "angle": "Focuses on material utility and system-oriented optimization with transparent ocean plastic claims.",
+   "angle": "outcome-focused material optimization",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "headline": "Engineered from recycled ocean plastic",
+   "body": "A sustainable activewear brand for women. We turn ocean plastic into high-quality fiber designed for your daily physical output.",
+   "cta": "Shop recycled gear",
+   "headline_no_name": "Engineered from recycled ocean plastic",
+   "angle": "material and ingredient transparency",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "headline": "Optimize your daily movement, {first_name}",
+   "body": "Elevate your wellness routine with sustainable activewear for women, made from recycled ocean plastic.",
+   "cta": "Shop activewear",
+   "headline_no_name": "Optimize your daily movement",
+   "angle": "Outcome-focused optimization",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1328,11 +1355,38 @@
   },
   {
    "persona_id": "persona_009",
-   "headline": "Activewear built to perform, {first_name}.",
-   "body": "Gear up for your next workout. Discover a sustainable activewear brand for women, crafted from recycled ocean plastic.",
-   "cta": "Shop premium gear",
-   "headline_no_name": "Activewear built to perform.",
-   "angle": "Leans into performance-focused language for active training, avoiding fashion-only positioning.",
+   "variant": 1,
+   "headline": "{first_name}, activewear built for training",
+   "body": "Gear up with a sustainable activewear brand for women. Made from recycled ocean plastic to support your active lifestyle.",
+   "cta": "Shop activewear",
+   "headline_no_name": "Activewear built for training",
+   "angle": "performance-adjacent lifestyle gear",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "Activewear designed for daily training",
+   "body": "Meet your new go-to sustainable activewear brand for women. Responsibly made from recycled ocean plastic for high-performance days.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Activewear designed for daily training",
+   "angle": "athletic identity and performance",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "headline": "Activewear built for your toughest workouts, {first_name}",
+   "body": "Push your limits in sustainable activewear for women. Durable gear made from recycled ocean plastic.",
+   "cta": "Shop activewear",
+   "headline_no_name": "Activewear built for your toughest workouts",
+   "angle": "Performance and durability",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1340,20 +1394,68 @@
   },
   {
    "persona_id": "persona_006",
-   "headline": "{first_name}, wear the change.",
-   "body": "No vague eco-claims. Our sustainable activewear brand for women is made from recycled ocean plastic to reduce waste.",
-   "cta": "Shop sustainable",
-   "headline_no_name": "Wear the change.",
-   "angle": "Directly addresses sustainability and material sourcing to appeal to eco-conscious, greenwash-skeptical buyers.",
+   "variant": 1,
+   "headline": "{first_name}, wear the change you want to see",
+   "body": "Choose a sustainable activewear brand for women. Our pieces are made from recycled ocean plastic to help reduce waste.",
+   "cta": "Shop recycled gear",
+   "headline_no_name": "Wear the change you want to see",
+   "angle": "specific environmental impact",
    "claims_used": [
-    "Made from recycled ocean plastic",
-    "Sustainable activewear brand for women"
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 2,
+   "headline": "Activewear made from recycled ocean plastic",
+   "body": "A sustainable activewear brand for women that values transparency. Every piece is crafted from recycled ocean plastic.",
+   "cta": "Shop sustainable",
+   "headline_no_name": "Activewear made from recycled ocean plastic",
+   "angle": "supply chain and material honesty",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 3,
+   "headline": "{first_name}, choose truly sustainable activewear",
+   "body": "Skip fast fashion. Discover a sustainable activewear brand for women that creates quality apparel made from recycled ocean plastic.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Choose truly sustainable activewear",
+   "angle": "anti-fast-fashion ethical sourcing",
+   "claims_used": [
+    "Sustainable activewear brand for women",
+    "Made from recycled ocean plastic"
    ]
   }
  ],
  "reviews": [
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1363,6 +1465,41 @@
   },
   {
    "persona_id": "persona_009",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Durable gear"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "The claim that the activewear is 'durable gear' is unsupported by the advertiser's stated claims."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 1,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1372,6 +1509,17 @@
   },
   {
    "persona_id": "persona_006",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1399,12 +1547,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.59-$0.83 per click (median $0.69), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.60-$0.81 per click (median $0.71), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.59,
-    "mid": 0.69,
-    "high": 0.83
+    "low": 0.6,
+    "mid": 0.71,
+    "high": 0.81
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1412,7 +1560,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4919.53,
+   "planned_spend_usd": 4970.17,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1429,7 +1577,7 @@
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 36546.8,
-   "spend_at_full_inventory_usd": 743196.07,
+   "spend_at_full_inventory_usd": 732978.05,
    "replan_options": [],
    "expected_impressions": 312000,
    "expected_reach": 195000,
@@ -1441,16 +1589,16 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.895,
-     "budget_usd": 4401.67,
-     "cpc_bid_usd": 0.39,
-     "start_bid_usd": 0.39,
+     "share": 0.9,
+     "budget_usd": 4472.29,
+     "cpc_bid_usd": 0.4,
+     "start_bid_usd": 0.4,
      "win_share": 0.013,
-     "avg_price_paid": 0.38,
+     "avg_price_paid": 0.39,
      "market_price": {
       "low": 0.55,
       "mid": 0.65,
-      "high": 0.8
+      "high": 0.77
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1468,25 +1616,25 @@
       "mid": 404.2,
       "high": 727.6
      },
-     "capacity_usd": 314289.95,
+     "capacity_usd": 312271.7,
      "expected_impressions": 275000,
      "expected_reach": 171875,
      "requires_host_approval": true,
-     "rationale": "market price $0.55-$0.80 (median $0.65); bidding $0.39 wins ~1% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.55-$0.77 (median $0.65); bidding $0.40 wins ~1% of page views, paying ~$0.39 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.089,
-     "budget_usd": 439.72,
-     "cpc_bid_usd": 0.38,
-     "start_bid_usd": 0.38,
+     "share": 0.084,
+     "budget_usd": 417.59,
+     "cpc_bid_usd": 0.37,
+     "start_bid_usd": 0.37,
      "win_share": 0.005,
-     "avg_price_paid": 0.38,
+     "avg_price_paid": 0.36,
      "market_price": {
-      "low": 0.54,
-      "mid": 0.63,
-      "high": 0.75
+      "low": 0.53,
+      "mid": 0.62,
+      "high": 0.74
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1504,25 +1652,25 @@
       "mid": 38.7,
       "high": 69.7
      },
-     "capacity_usd": 77069.41,
+     "capacity_usd": 76268.35,
      "expected_impressions": 29000,
      "expected_reach": 18125,
      "requires_host_approval": true,
-     "rationale": "market price $0.54-$0.75 (median $0.63); bidding $0.38 wins ~0% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.53-$0.74 (median $0.62); bidding $0.37 wins ~0% of page views, paying ~$0.36 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
      "share": 0.016,
-     "budget_usd": 78.15,
-     "cpc_bid_usd": 0.31,
-     "start_bid_usd": 0.31,
+     "budget_usd": 80.29,
+     "cpc_bid_usd": 0.32,
+     "start_bid_usd": 0.32,
      "win_share": 0.003,
-     "avg_price_paid": 0.31,
+     "avg_price_paid": 0.32,
      "market_price": {
-      "low": 0.52,
-      "mid": 0.6,
-      "high": 0.69
+      "low": 0.53,
+      "mid": 0.62,
+      "high": 0.71
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1540,11 +1688,11 @@
       "mid": 6.7,
       "high": 12.1
      },
-     "capacity_usd": 32319.6,
+     "capacity_usd": 33220.07,
      "expected_impressions": 8000,
      "expected_reach": 5000,
      "requires_host_approval": false,
-     "rationale": "market price $0.52-$0.69 (median $0.60); bidding $0.31 wins ~0% of page views, paying ~$0.31 per click (second price)"
+     "rationale": "market price $0.53-$0.71 (median $0.62); bidding $0.32 wins ~0% of page views, paying ~$0.32 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
@@ -1557,8 +1705,8 @@
      "avg_price_paid": 0.0,
      "market_price": {
       "low": 0.71,
-      "mid": 0.85,
-      "high": 1.05
+      "mid": 0.83,
+      "high": 1.0
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1576,25 +1724,25 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 180311.49,
+     "capacity_usd": 177130.8,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.71-$1.05 (median $0.85); bidding $0.71 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.71-$1.00); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_010",
      "publisher_name": "Heartfoot",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.69,
-     "start_bid_usd": 0.69,
+     "cpc_bid_usd": 0.61,
+     "start_bid_usd": 0.61,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.69,
-      "mid": 0.8,
-      "high": 0.96
+      "low": 0.61,
+      "mid": 0.71,
+      "high": 0.81
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1612,25 +1760,25 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 66473.83,
+     "capacity_usd": 59324.44,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.69-$0.96 (median $0.80); bidding $0.69 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.61-$0.81); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_006",
      "publisher_name": "Everbody",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.59,
-     "start_bid_usd": 0.59,
+     "cpc_bid_usd": 0.6,
+     "start_bid_usd": 0.6,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.59,
-      "mid": 0.69,
-      "high": 0.83
+      "low": 0.6,
+      "mid": 0.71,
+      "high": 0.85
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1648,11 +1796,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 72731.8,
+     "capacity_usd": 74762.69,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.59-$0.83 (median $0.69); bidding $0.59 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.60-$0.85); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1675,38 +1823,38 @@
    "host_bids": [
     {
      "publisher_id": "pub_002",
-     "start_bid": 0.39,
-     "max_bid": 0.69,
+     "start_bid": 0.4,
+     "max_bid": 0.68,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 0.38,
+     "start_bid": 0.37,
      "max_bid": 0.66,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.31,
-     "max_bid": 0.63,
+     "start_bid": 0.32,
+     "max_bid": 0.65,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
      "start_bid": 0.71,
-     "max_bid": 0.92,
+     "max_bid": 0.9,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_010",
-     "start_bid": 0.69,
-     "max_bid": 0.86,
+     "start_bid": 0.61,
+     "max_bid": 0.73,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_006",
-     "start_bid": 0.59,
-     "max_bid": 0.75,
+     "start_bid": 0.6,
+     "max_bid": 0.77,
      "floor": 0.05
     }
    ],
@@ -1810,7 +1958,7 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_016",
@@ -1819,34 +1967,112 @@
     ],
     "headline_template": "{first_name}, optimize your activewear.",
     "headline_no_name": "Optimize your activewear.",
-    "body": "Engineered for your system. Our sustainable activewear brand for women uses materials made from recycled ocean plastic.",
+    "body": "Upgrade your movement routine with a sustainable activewear brand for women. Made from recycled ocean plastic to support your system.",
+    "cta": "Shop sustainable"
+   },
+   {
+    "variant_id": "persona_001:2",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_016",
+     "pub_006",
+     "pub_002"
+    ],
+    "headline_template": "Engineered from recycled ocean plastic",
+    "headline_no_name": "Engineered from recycled ocean plastic",
+    "body": "A sustainable activewear brand for women. We turn ocean plastic into high-quality fiber designed for your daily physical output.",
+    "cta": "Shop recycled gear"
+   },
+   {
+    "variant_id": "persona_001:3",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_016",
+     "pub_006",
+     "pub_002"
+    ],
+    "headline_template": "Optimize your daily movement, {first_name}",
+    "headline_no_name": "Optimize your daily movement",
+    "body": "Elevate your wellness routine with sustainable activewear for women, made from recycled ocean plastic.",
     "cta": "Shop activewear"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_009:1",
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_017",
      "pub_002",
      "pub_010"
     ],
-    "headline_template": "Activewear built to perform, {first_name}.",
-    "headline_no_name": "Activewear built to perform.",
-    "body": "Gear up for your next workout. Discover a sustainable activewear brand for women, crafted from recycled ocean plastic.",
-    "cta": "Shop premium gear"
+    "headline_template": "{first_name}, activewear built for training",
+    "headline_no_name": "Activewear built for training",
+    "body": "Gear up with a sustainable activewear brand for women. Made from recycled ocean plastic to support your active lifestyle.",
+    "cta": "Shop activewear"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_009:2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_010"
+    ],
+    "headline_template": "Activewear designed for daily training",
+    "headline_no_name": "Activewear designed for daily training",
+    "body": "Meet your new go-to sustainable activewear brand for women. Responsibly made from recycled ocean plastic for high-performance days.",
+    "cta": "Shop the collection"
+   },
+   {
+    "variant_id": "persona_009:3",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_010"
+    ],
+    "headline_template": "Activewear built for your toughest workouts, {first_name}",
+    "headline_no_name": "Activewear built for your toughest workouts",
+    "body": "Push your limits in sustainable activewear for women. Durable gear made from recycled ocean plastic.",
+    "cta": "Shop activewear"
+   },
+   {
+    "variant_id": "persona_006:1",
     "persona_id": "persona_006",
     "publisher_ids": [
      "pub_017",
      "pub_010",
      "pub_002"
     ],
-    "headline_template": "{first_name}, wear the change.",
-    "headline_no_name": "Wear the change.",
-    "body": "No vague eco-claims. Our sustainable activewear brand for women is made from recycled ocean plastic to reduce waste.",
+    "headline_template": "{first_name}, wear the change you want to see",
+    "headline_no_name": "Wear the change you want to see",
+    "body": "Choose a sustainable activewear brand for women. Our pieces are made from recycled ocean plastic to help reduce waste.",
+    "cta": "Shop recycled gear"
+   },
+   {
+    "variant_id": "persona_006:2",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_017",
+     "pub_010",
+     "pub_002"
+    ],
+    "headline_template": "Activewear made from recycled ocean plastic",
+    "headline_no_name": "Activewear made from recycled ocean plastic",
+    "body": "A sustainable activewear brand for women that values transparency. Every piece is crafted from recycled ocean plastic.",
     "cta": "Shop sustainable"
+   },
+   {
+    "variant_id": "persona_006:3",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_017",
+     "pub_010",
+     "pub_002"
+    ],
+    "headline_template": "{first_name}, choose truly sustainable activewear",
+    "headline_no_name": "Choose truly sustainable activewear",
+    "body": "Skip fast fashion. Discover a sustainable activewear brand for women that creates quality apparel made from recycled ocean plastic.",
+    "cta": "Shop the collection"
    }
   ],
   "frequency_cap": {
@@ -1881,12 +2107,21 @@
   ]
  },
  "timings_s": {
-  "intake": 0.01,
+  "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 50.62
  },
  "creative_log": {
-  "rounds": 1,
-  "rewritten": []
+  "rounds": 2,
+  "rewritten": [
+   [
+    "persona_001",
+    3
+   ],
+   [
+    "persona_009",
+    3
+   ]
+  ]
  }
 }

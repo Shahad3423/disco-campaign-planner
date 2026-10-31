@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 3,
+      "headline": "Smart supplement savings for {first_name}",
+      "body": "We compete on price, not on marketing. Get the exact same workout formulations as the expensive brands for half the cost.",
+      "cta": "Save on supplements",
+      "headline_no_name": "Same formulations, half the cost",
+      "angle": "Clear value proposition focusing on identical formulations at half the price",
+      "claims_used": [
+        "We compete on price, not on marketing.",
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    }
+  ]
+}

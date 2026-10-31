@@ -1,0 +1,134 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Transparent ingredients"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague eco claims ('clean, conscious home') and an unsupported claim of 'transparent ingredients' which may trigger greenwashing skepticism for this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Made responsibly"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague eco-positioning ('made responsibly') which this persona explicitly avoids."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "Lacks distinctiveness from Variant 1 and Variant 2, sharing highly repetitive phrasing and the same core angle."
+      ],
+      "passed": false
+    }
+  ]
+}

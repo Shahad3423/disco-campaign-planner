@@ -26,14 +26,14 @@
     "why": "The core product category is workout supplements."
    },
    {
-    "tag": "activewear",
-    "weight": 0.417,
-    "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
-   },
-   {
     "tag": "fitness_classes",
     "weight": 0.417,
     "why": "Attendees of fitness classes are frequent users of workout supplements."
+   },
+   {
+    "tag": "activewear",
+    "weight": 0.417,
+    "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
    },
    {
     "tag": "wellness_dtc",
@@ -1308,11 +1308,50 @@
  "creatives": [
   {
    "persona_id": "persona_009",
-   "headline": "{first_name}, get identical formulas for your training.",
-   "body": "Power your performance with the exact same formulations as expensive brands. We compete on price, not marketing, to fuel your workouts.",
+   "variant": 1,
+   "headline": "{first_name}, get the formulations your training demands",
+   "body": "Fuel your workouts with the exact same formulations as the expensive brands, for half the cost. We compete on price, not marketing.",
    "cta": "Shop formulations",
-   "headline_no_name": "Get identical formulas for your training.",
-   "angle": "High-performance formulations identical to premium brands",
+   "headline_no_name": "Get the formulations your training demands",
+   "angle": "Focusing on high-performance formulations matching the shopper's active lifestyle",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "Power your routine without paying for the hype",
+   "body": "Get same-formulation pre-workout and protein for half the cost. We compete on price, not on marketing, to keep you fueled.",
+   "cta": "Shop pre-workout",
+   "headline_no_name": "Power your routine without paying for the hype",
+   "angle": "Appealing to athletic performance without unnecessary brand markup",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "headline": "{first_name}, train smart with premium formulations",
+   "body": "Don't pay extra for flashy labels. Get the exact same formulations as expensive brands for half the cost.",
+   "cta": "Shop protein",
+   "headline_no_name": "Train smart with premium formulations",
+   "angle": "Smart athlete perspective focusing on identical ingredient performance",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost."
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 1,
+   "headline": "{first_name}, optimize your supplement system",
+   "body": "We offer the exact same formulations as the expensive brands for half the cost. No marketing fluff, just the ingredients you need.",
+   "cta": "Shop formulations",
+   "headline_no_name": "Optimize your supplement system",
+   "angle": "Appealing to system optimization and ingredient transparency",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
     "We compete on price, not on marketing."
@@ -1320,11 +1359,25 @@
   },
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, optimize your system with identical formulas.",
-   "body": "Optimize your system with the exact same formulations as expensive brands. We compete on price, not on marketing.",
-   "cta": "Shop formulations",
-   "headline_no_name": "Optimize your system with identical formulations.",
-   "angle": "Identical active formulations for precise system optimization",
+   "variant": 2,
+   "headline": "High-quality formulations, zero marketing hype",
+   "body": "We compete on price, not on marketing. Get the exact same workout formulations as expensive brands for half the cost.",
+   "cta": "Shop supplements",
+   "headline_no_name": "High-quality formulations, zero marketing hype",
+   "angle": "Stripping away marketing noise to focus purely on the formulation",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "headline": "{first_name}, why pay more for the exact same formulation?",
+   "body": "Get identical formulations to expensive brands for half the cost. We focus on the product, competing on price instead of marketing.",
+   "cta": "Shop creatine",
+   "headline_no_name": "Why pay more for the exact same formulation?",
+   "angle": "Logical, outcome-focused appeal highlighting identical inputs",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
     "We compete on price, not on marketing."
@@ -1332,11 +1385,38 @@
   },
   {
    "persona_id": "persona_008",
-   "headline": "Cut your supplement spend in half, {first_name}",
-   "body": "Why pay double? We offer the same formulations as the expensive brands for half the cost because we compete on price, not marketing.",
-   "cta": "Shop half-price",
-   "headline_no_name": "Cut your supplement spend in half",
-   "angle": "Direct price comparison and value-forward positioning",
+   "variant": 1,
+   "headline": "{first_name}, get identical formulations at half the cost",
+   "body": "Why pay double? We offer the same formulations as expensive brands for half the cost because we compete on price, not marketing.",
+   "cta": "Shop protein deals",
+   "headline_no_name": "Get identical formulations at half the cost",
+   "angle": "Direct price and value comparison for comparison shoppers",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "headline": "Skip the marketing markup on your supplements",
+   "body": "We compete on price, not marketing. Get the exact same formulations as expensive brands for half the cost. Save on your stack.",
+   "cta": "Shop supplements",
+   "headline_no_name": "Skip the marketing markup on your supplements",
+   "angle": "Clear value articulation showing how we keep prices low",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 3,
+   "headline": "Smart supplement savings for {first_name}",
+   "body": "We compete on price, not on marketing. Get the exact same workout formulations as the expensive brands for half the cost.",
+   "cta": "Save on supplements",
+   "headline_no_name": "Same formulations, half the cost",
+   "angle": "Clear value proposition focusing on identical formulations at half the price",
    "claims_used": [
     "We compete on price, not on marketing.",
     "Same formulations as the expensive brands for half the cost."
@@ -1346,6 +1426,27 @@
  "reviews": [
   {
    "persona_id": "persona_009",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1355,6 +1456,27 @@
   },
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1364,6 +1486,27 @@
   },
   {
    "persona_id": "persona_008",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1391,11 +1534,11 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.85-$1.16 per click (median $1.00), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.85-$1.16 per click (median $0.99), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
     "low": 0.85,
-    "mid": 1.0,
+    "mid": 0.99,
     "high": 1.16
    },
    "cpm_bid": null,
@@ -1404,7 +1547,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4841.6,
+   "planned_spend_usd": 4976.83,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1421,7 +1564,7 @@
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 24978.8,
-   "spend_at_full_inventory_usd": 674899.78,
+   "spend_at_full_inventory_usd": 670953.09,
    "replan_options": [],
    "expected_impressions": 189000,
    "expected_reach": 118125,
@@ -1434,15 +1577,15 @@
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
      "share": 1.0,
-     "budget_usd": 4841.6,
-     "cpc_bid_usd": 0.66,
-     "start_bid_usd": 0.66,
+     "budget_usd": 4976.83,
+     "cpc_bid_usd": 0.68,
+     "start_bid_usd": 0.68,
      "win_share": 0.045,
-     "avg_price_paid": 0.61,
+     "avg_price_paid": 0.63,
      "market_price": {
-      "low": 0.79,
-      "mid": 0.91,
-      "high": 1.06
+      "low": 0.81,
+      "mid": 0.94,
+      "high": 1.09
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1460,25 +1603,25 @@
       "mid": 361.2,
       "high": 650.1
      },
-     "capacity_usd": 85470.2,
+     "capacity_usd": 87820.71,
      "expected_impressions": 189000,
      "expected_reach": 118125,
      "requires_host_approval": true,
-     "rationale": "market price $0.79-$1.06 (median $0.91); bidding $0.66 wins ~4% of page views, paying ~$0.61 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.81-$1.09 (median $0.94); bidding $0.68 wins ~4% of page views, paying ~$0.63 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.89,
-     "start_bid_usd": 0.89,
+     "cpc_bid_usd": 0.88,
+     "start_bid_usd": 0.88,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.89,
-      "mid": 1.03,
-      "high": 1.2
+      "low": 0.88,
+      "mid": 1.02,
+      "high": 1.18
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1496,25 +1639,25 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 330836.03,
+     "capacity_usd": 328742.49,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.89-$1.20 (median $1.03); bidding $0.89 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.88-$1.18); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.79,
-     "start_bid_usd": 0.79,
+     "cpc_bid_usd": 0.78,
+     "start_bid_usd": 0.78,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.79,
-      "mid": 0.94,
-      "high": 1.14
+      "low": 0.78,
+      "mid": 0.9,
+      "high": 1.1
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1532,11 +1675,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 179505.8,
+     "capacity_usd": 175522.26,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.79-$1.14 (median $0.94); bidding $0.79 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.78-$1.10); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_017",
@@ -1549,7 +1692,7 @@
      "avg_price_paid": 0.0,
      "market_price": {
       "low": 0.85,
-      "mid": 1.0,
+      "mid": 0.99,
       "high": 1.16
      },
      "audience_weight": 1.0,
@@ -1568,11 +1711,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 79087.75,
+     "capacity_usd": 78867.63,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.85-$1.16 (median $1.00); bidding $0.85 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.85-$1.16); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1595,20 +1738,20 @@
    "host_bids": [
     {
      "publisher_id": "pub_012",
-     "start_bid": 0.66,
-     "max_bid": 0.97,
+     "start_bid": 0.68,
+     "max_bid": 1.0,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_002",
-     "start_bid": 0.89,
-     "max_bid": 1.1,
+     "start_bid": 0.88,
+     "max_bid": 1.07,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.79,
-     "max_bid": 1.01,
+     "start_bid": 0.78,
+     "max_bid": 0.98,
      "floor": 0.05
     },
     {
@@ -1724,43 +1867,121 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_009:1",
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_017",
      "pub_012",
      "pub_002"
     ],
-    "headline_template": "{first_name}, get identical formulas for your training.",
-    "headline_no_name": "Get identical formulas for your training.",
-    "body": "Power your performance with the exact same formulations as expensive brands. We compete on price, not marketing, to fuel your workouts.",
+    "headline_template": "{first_name}, get the formulations your training demands",
+    "headline_no_name": "Get the formulations your training demands",
+    "body": "Fuel your workouts with the exact same formulations as the expensive brands, for half the cost. We compete on price, not marketing.",
     "cta": "Shop formulations"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_009:2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_012",
+     "pub_002"
+    ],
+    "headline_template": "Power your routine without paying for the hype",
+    "headline_no_name": "Power your routine without paying for the hype",
+    "body": "Get same-formulation pre-workout and protein for half the cost. We compete on price, not on marketing, to keep you fueled.",
+    "cta": "Shop pre-workout"
+   },
+   {
+    "variant_id": "persona_009:3",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_012",
+     "pub_002"
+    ],
+    "headline_template": "{first_name}, train smart with premium formulations",
+    "headline_no_name": "Train smart with premium formulations",
+    "body": "Don't pay extra for flashy labels. Get the exact same formulations as expensive brands for half the cost.",
+    "cta": "Shop protein"
+   },
+   {
+    "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_012",
      "pub_002",
      "pub_003"
     ],
-    "headline_template": "{first_name}, optimize your system with identical formulas.",
-    "headline_no_name": "Optimize your system with identical formulations.",
-    "body": "Optimize your system with the exact same formulations as expensive brands. We compete on price, not on marketing.",
+    "headline_template": "{first_name}, optimize your supplement system",
+    "headline_no_name": "Optimize your supplement system",
+    "body": "We offer the exact same formulations as the expensive brands for half the cost. No marketing fluff, just the ingredients you need.",
     "cta": "Shop formulations"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_001:2",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_002",
+     "pub_003"
+    ],
+    "headline_template": "High-quality formulations, zero marketing hype",
+    "headline_no_name": "High-quality formulations, zero marketing hype",
+    "body": "We compete on price, not on marketing. Get the exact same workout formulations as expensive brands for half the cost.",
+    "cta": "Shop supplements"
+   },
+   {
+    "variant_id": "persona_001:3",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_002",
+     "pub_003"
+    ],
+    "headline_template": "{first_name}, why pay more for the exact same formulation?",
+    "headline_no_name": "Why pay more for the exact same formulation?",
+    "body": "Get identical formulations to expensive brands for half the cost. We focus on the product, competing on price instead of marketing.",
+    "cta": "Shop creatine"
+   },
+   {
+    "variant_id": "persona_008:1",
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_002",
      "pub_017",
      "pub_003"
     ],
-    "headline_template": "Cut your supplement spend in half, {first_name}",
-    "headline_no_name": "Cut your supplement spend in half",
-    "body": "Why pay double? We offer the same formulations as the expensive brands for half the cost because we compete on price, not marketing.",
-    "cta": "Shop half-price"
+    "headline_template": "{first_name}, get identical formulations at half the cost",
+    "headline_no_name": "Get identical formulations at half the cost",
+    "body": "Why pay double? We offer the same formulations as expensive brands for half the cost because we compete on price, not marketing.",
+    "cta": "Shop protein deals"
+   },
+   {
+    "variant_id": "persona_008:2",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_002",
+     "pub_017",
+     "pub_003"
+    ],
+    "headline_template": "Skip the marketing markup on your supplements",
+    "headline_no_name": "Skip the marketing markup on your supplements",
+    "body": "We compete on price, not marketing. Get the exact same formulations as expensive brands for half the cost. Save on your stack.",
+    "cta": "Shop supplements"
+   },
+   {
+    "variant_id": "persona_008:3",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_002",
+     "pub_017",
+     "pub_003"
+    ],
+    "headline_template": "Smart supplement savings for {first_name}",
+    "headline_no_name": "Same formulations, half the cost",
+    "body": "We compete on price, not on marketing. Get the exact same workout formulations as the expensive brands for half the cost.",
+    "cta": "Save on supplements"
    }
   ],
   "frequency_cap": {
@@ -1794,15 +2015,17 @@
   ]
  },
  "timings_s": {
-  "intake": 0.0,
+  "intake": 0.01,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 50.27
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_009",
-   "persona_001"
+   [
+    "persona_008",
+    3
+   ]
   ]
  }
 }

@@ -81,7 +81,7 @@ def grade_case(case: dict, plan: CampaignPlan) -> dict:
             and {a.publisher_id for a in b.allocations} <= set(rec)
         )
     if plan.creatives:
-        reviews = {r.persona_id: r for r in plan.reviews}
+        reviews = {(r.persona_id, r.variant): r for r in plan.reviews}
         pairs = list(itertools.combinations(plan.creatives, 2))
         jaccard = [
             len(_words(a.body) & _words(b.body)) / max(1, len(_words(a.body) | _words(b.body))) for a, b in pairs
@@ -93,6 +93,8 @@ def grade_case(case: dict, plan: CampaignPlan) -> dict:
             "mean_persona_fit": sum(r.persona_fit for r in plan.reviews) / max(1, len(plan.reviews)),
             "unsupported_claims": sum(len(r.unsupported_claims) for r in reviews.values()),
             "max_body_jaccard": round(max(jaccard), 2) if jaccard else 0.0,
+            "max_within_persona_jaccard": round(max((j for (a, b), j in zip(pairs, jaccard) if a.persona_id == b.persona_id), default=0.0), 2),
+            "variants_per_persona": round(len(plan.creatives) / max(1, len({v.persona_id for v in plan.creatives})), 2),
             "uses_placeholder": sum("{first_name}" in v.headline for v in plan.creatives),
             "rewrite_rounds": plan.creative_log.get("rounds"),
         })

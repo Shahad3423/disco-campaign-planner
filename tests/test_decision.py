@@ -85,9 +85,11 @@ def test_live_setting_is_one_offer_per_page(plans):
 
 def test_host_budget_cap_removes_campaign_from_that_host_only(plans):
     # pick a campaign allocated on 2+ hosts
-    plan = next(p for p in plans if p.config.budget and len(p.config.budget.allocations) >= 2)
+    # two FUNDED hosts (an unfunded host has no budget, so it's never bid on anyway)
+    funded = lambda p: [a for a in p.config.budget.allocations if a.budget_usd > 0] if p.config.budget else []
+    plan = next(p for p in plans if len(funded(p)) >= 2)
     name = plan.profile.product or plan.brief[:40]
-    capped_host, other_host = (a.publisher_id for a in plan.config.budget.allocations[:2])
+    capped_host, other_host = (a.publisher_id for a in funded(plan)[:2])
     cap_alloc = next(a for a in plan.config.budget.allocations if a.publisher_id == capped_host)
     spent = {(name, capped_host): cap_alloc.budget_usd}                # exactly used up
     for host, expect_present in ((capped_host, False), (other_host, True)):

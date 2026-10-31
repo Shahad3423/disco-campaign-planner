@@ -1,0 +1,108 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The messaging is generic and does not leverage the Wellness Optimizer's specific interest in tracking, systems, or science-backed claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Packaged beautifully",
+        "gift boxes"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad claims the product is 'packaged beautifully' and offers 'gift boxes', which are not supported by the advertiser's stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The Halloween-specific messaging limits the evergreen usability of this variant."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "premium protein sampler",
+        "gift box"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The ad references a 'premium protein sampler' and 'gift box' packaging, which are unsupported product offerings."
+      ],
+      "passed": false
+    }
+  ]
+}

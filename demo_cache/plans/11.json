@@ -1287,33 +1287,108 @@
  "creatives": [
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, optimize your nutrition.",
-   "body": "Support your system with protein bars that don't taste like cardboard. Pure fuel made to taste great.",
+   "variant": 1,
+   "headline": "{first_name}, optimize your post-workout fuel",
+   "body": "Treat your body like a system. Refuel with premium protein bars that don't taste like cardboard, designed for your daily routine.",
    "cta": "Shop protein bars",
-   "headline_no_name": "Optimize your daily nutrition.",
-   "angle": "outcome-focused nutrition optimization",
+   "headline_no_name": "Optimize your post-workout fuel",
+   "angle": "outcome-focused",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "headline": "{first_name}, upgrade your daily nutrition",
+   "body": "You track your inputs carefully. Choose protein bars that don't taste like cardboard and support your wellness goals.",
+   "cta": "Order protein bars",
+   "headline_no_name": "Upgrade your daily nutrition",
+   "angle": "ingredient transparency",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "headline": "Optimize your daily system, {first_name}",
+   "body": "Fuel your routine with protein bars that don't taste like cardboard. Integrate clean macros into your tracking without sacrificing flavor.",
+   "cta": "Shop protein bars",
+   "headline_no_name": "Optimize your daily system",
+   "angle": "outcome-focused system integration",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
   },
   {
    "persona_id": "persona_009",
-   "headline": "Fuel your training, {first_name}.",
-   "body": "You work hard, so eat well. Get protein bars that don't taste like cardboard to power your recovery.",
+   "variant": 1,
+   "headline": "{first_name}, fuel your recovery right",
+   "body": "You work out hard, so don't settle for dry snacks. Get protein bars that don't taste like cardboard to power your active lifestyle.",
+   "cta": "Shop protein bars",
+   "headline_no_name": "Fuel your recovery right",
+   "angle": "performance claims",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "Serious training deserves better protein",
+   "body": "Stop choking down chalky snacks after your workout. Try protein bars that don't taste like cardboard.",
    "cta": "Order protein bars",
-   "headline_no_name": "Fuel your training.",
-   "angle": "performance-focused training fuel",
+   "headline_no_name": "Serious training deserves better protein",
+   "angle": "performance claims",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "headline": "{first_name}, power up with real flavor",
+   "body": "Your active lifestyle demands quality fuel. Enjoy protein bars that don't taste like cardboard.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Power up with real flavor",
+   "angle": "performance claims",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
   },
   {
    "persona_id": "persona_010",
-   "headline": "A delicious gift for your gym partner, {first_name}",
-   "body": "Surprise your favorite workout buddy with protein bars that don't taste like cardboard. A thoughtful treat they will actually enjoy.",
+   "variant": 1,
+   "headline": "The perfect treat to share, {first_name}",
+   "body": "Gift the active people in your life protein bars that don't taste like cardboard. A delicious way to show you care.",
    "cta": "Shop protein bars",
-   "headline_no_name": "A delicious gift for your gym partner",
-   "angle": "thoughtful gifting for active friends",
+   "headline_no_name": "The perfect treat to share",
+   "angle": "gifting and sharing",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "A delicious Halloween treat they will love",
+   "body": "Skip the candy and gift premium protein bars that don't taste like cardboard. Perfect for the active people in your life.",
+   "cta": "Shop Halloween gifts",
+   "headline_no_name": "A delicious Halloween treat they will love",
+   "angle": "giftable",
+   "claims_used": [
+    "protein bars that don't taste like cardboard"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "headline": "A Halloween treat they'll love, {first_name}",
+   "body": "Skip the candy and share protein bars that don't taste like cardboard. The ultimate Halloween surprise for your fitness friends.",
+   "cta": "Shop protein bars",
+   "headline_no_name": "A Halloween treat they'll love",
+   "angle": "seasonal gifting",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1322,6 +1397,17 @@
  "reviews": [
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1330,7 +1416,38 @@
    "passed": true
   },
   {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
    "persona_id": "persona_009",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1340,12 +1457,33 @@
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 3,
+   "variant": 1,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": false,
    "issues": [
-    "The gifting angle is weak for a premium gifter who expects premium presentation or gift sets, rather than just suggesting buying regular protein bars for a buddy."
+    "Extremely similar to variant 2 (both use 'Skip the candy' and focus on Halloween gifting for active friends)."
    ],
    "passed": false
   }
@@ -1369,12 +1507,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.76-$1.03 per click (median $0.88), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.78-$1.06 per click (median $0.90), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.76,
-    "mid": 0.88,
-    "high": 1.03
+    "low": 0.78,
+    "mid": 0.9,
+    "high": 1.06
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1382,7 +1520,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4913.28,
+   "planned_spend_usd": 4928.14,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1390,19 +1528,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 190.1,
-    "mid": 380.2,
-    "high": 684.4
+    "low": 188.0,
+    "mid": 376.0,
+    "high": 676.8
    },
-   "forecast_without_share_cap": 380.2,
+   "forecast_without_share_cap": 376.0,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 13435.1,
-   "spend_at_full_inventory_usd": 259530.52,
+   "spend_at_full_inventory_usd": 257983.61,
    "replan_options": [],
-   "expected_impressions": 275000,
-   "expected_reach": 171875,
+   "expected_impressions": 288000,
+   "expected_reach": 180000,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1411,74 +1549,74 @@
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.527,
-     "budget_usd": 2590.07,
-     "cpc_bid_usd": 0.62,
-     "start_bid_usd": 0.62,
-     "win_share": 0.025,
-     "avg_price_paid": 0.59,
+     "share": 0.426,
+     "budget_usd": 2101.57,
+     "cpc_bid_usd": 0.63,
+     "start_bid_usd": 0.63,
+     "win_share": 0.02,
+     "avg_price_paid": 0.6,
      "market_price": {
-      "low": 0.76,
-      "mid": 0.88,
-      "high": 1.03
+      "low": 0.78,
+      "mid": 0.9,
+      "high": 1.06
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 3528.0,
-      "mid": 4410.0,
-      "high": 5292.0
+      "low": 2822.0,
+      "mid": 3528.0,
+      "high": 4234.0
      },
      "expected_conversions": {
-      "low": 96.3,
-      "mid": 200.7,
-      "high": 361.2
+      "low": 77.1,
+      "mid": 160.5,
+      "high": 288.9
      },
      "expected_units": {
-      "low": 100.3,
-      "mid": 200.7,
-      "high": 361.2
+      "low": 80.3,
+      "mid": 160.5,
+      "high": 288.9
      },
-     "capacity_usd": 82410.27,
-     "expected_impressions": 105000,
-     "expected_reach": 65625,
+     "capacity_usd": 84666.42,
+     "expected_impressions": 84000,
+     "expected_reach": 52500,
      "requires_host_approval": false,
-     "rationale": "market price $0.76-$1.03 (median $0.88); bidding $0.62 wins ~2% of page views, paying ~$0.59 per click (second price)"
+     "rationale": "market price $0.78-$1.06 (median $0.90); bidding $0.63 wins ~2% of page views, paying ~$0.60 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.473,
-     "budget_usd": 2323.21,
-     "cpc_bid_usd": 0.46,
-     "start_bid_usd": 0.46,
-     "win_share": 0.013,
+     "share": 0.574,
+     "budget_usd": 2826.56,
+     "cpc_bid_usd": 0.47,
+     "start_bid_usd": 0.47,
+     "win_share": 0.015,
      "avg_price_paid": 0.44,
      "market_price": {
-      "low": 0.68,
-      "mid": 0.8,
-      "high": 0.96
+      "low": 0.67,
+      "mid": 0.79,
+      "high": 0.93
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 4247.0,
-      "mid": 5308.0,
-      "high": 6370.0
+      "low": 5096.0,
+      "mid": 6370.0,
+      "high": 7644.0
      },
      "expected_conversions": {
-      "low": 86.2,
-      "mid": 179.6,
-      "high": 323.2
+      "low": 103.4,
+      "mid": 215.5,
+      "high": 387.9
      },
      "expected_units": {
-      "low": 89.8,
-      "mid": 179.6,
-      "high": 323.2
+      "low": 107.7,
+      "mid": 215.5,
+      "high": 387.9
      },
-     "capacity_usd": 177120.25,
-     "expected_impressions": 170000,
-     "expected_reach": 106250,
+     "capacity_usd": 173317.19,
+     "expected_impressions": 204000,
+     "expected_reach": 127500,
      "requires_host_approval": false,
-     "rationale": "market price $0.68-$0.96 (median $0.80); bidding $0.46 wins ~1% of page views, paying ~$0.44 per click (second price)"
+     "rationale": "market price $0.67-$0.93 (median $0.79); bidding $0.47 wins ~2% of page views, paying ~$0.44 per click (second price)"
     }
    ],
    "warnings": []
@@ -1501,14 +1639,14 @@
    "host_bids": [
     {
      "publisher_id": "pub_012",
-     "start_bid": 0.62,
-     "max_bid": 0.93,
+     "start_bid": 0.63,
+     "max_bid": 0.96,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.46,
-     "max_bid": 0.85,
+     "start_bid": 0.47,
+     "max_bid": 0.83,
      "floor": 0.05
     }
    ],
@@ -1624,39 +1762,111 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, optimize your nutrition.",
-    "headline_no_name": "Optimize your daily nutrition.",
-    "body": "Support your system with protein bars that don't taste like cardboard. Pure fuel made to taste great.",
+    "headline_template": "{first_name}, optimize your post-workout fuel",
+    "headline_no_name": "Optimize your post-workout fuel",
+    "body": "Treat your body like a system. Refuel with premium protein bars that don't taste like cardboard, designed for your daily routine.",
     "cta": "Shop protein bars"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_001:2",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_003"
+    ],
+    "headline_template": "{first_name}, upgrade your daily nutrition",
+    "headline_no_name": "Upgrade your daily nutrition",
+    "body": "You track your inputs carefully. Choose protein bars that don't taste like cardboard and support your wellness goals.",
+    "cta": "Order protein bars"
+   },
+   {
+    "variant_id": "persona_001:3",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_003"
+    ],
+    "headline_template": "Optimize your daily system, {first_name}",
+    "headline_no_name": "Optimize your daily system",
+    "body": "Fuel your routine with protein bars that don't taste like cardboard. Integrate clean macros into your tracking without sacrificing flavor.",
+    "cta": "Shop protein bars"
+   },
+   {
+    "variant_id": "persona_009:1",
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "Fuel your training, {first_name}.",
-    "headline_no_name": "Fuel your training.",
-    "body": "You work hard, so eat well. Get protein bars that don't taste like cardboard to power your recovery.",
+    "headline_template": "{first_name}, fuel your recovery right",
+    "headline_no_name": "Fuel your recovery right",
+    "body": "You work out hard, so don't settle for dry snacks. Get protein bars that don't taste like cardboard to power your active lifestyle.",
+    "cta": "Shop protein bars"
+   },
+   {
+    "variant_id": "persona_009:2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_012",
+     "pub_003"
+    ],
+    "headline_template": "Serious training deserves better protein",
+    "headline_no_name": "Serious training deserves better protein",
+    "body": "Stop choking down chalky snacks after your workout. Try protein bars that don't taste like cardboard.",
     "cta": "Order protein bars"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_009:3",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_012",
+     "pub_003"
+    ],
+    "headline_template": "{first_name}, power up with real flavor",
+    "headline_no_name": "Power up with real flavor",
+    "body": "Your active lifestyle demands quality fuel. Enjoy protein bars that don't taste like cardboard.",
+    "cta": "Shop the collection"
+   },
+   {
+    "variant_id": "persona_010:1",
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "A delicious gift for your gym partner, {first_name}",
-    "headline_no_name": "A delicious gift for your gym partner",
-    "body": "Surprise your favorite workout buddy with protein bars that don't taste like cardboard. A thoughtful treat they will actually enjoy.",
+    "headline_template": "The perfect treat to share, {first_name}",
+    "headline_no_name": "The perfect treat to share",
+    "body": "Gift the active people in your life protein bars that don't taste like cardboard. A delicious way to show you care.",
+    "cta": "Shop protein bars"
+   },
+   {
+    "variant_id": "persona_010:2",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_003",
+     "pub_012"
+    ],
+    "headline_template": "A delicious Halloween treat they will love",
+    "headline_no_name": "A delicious Halloween treat they will love",
+    "body": "Skip the candy and gift premium protein bars that don't taste like cardboard. Perfect for the active people in your life.",
+    "cta": "Shop Halloween gifts"
+   },
+   {
+    "variant_id": "persona_010:3",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_003",
+     "pub_012"
+    ],
+    "headline_template": "A Halloween treat they'll love, {first_name}",
+    "headline_no_name": "A Halloween treat they'll love",
+    "body": "Skip the candy and share protein bars that don't taste like cardboard. The ultimate Halloween surprise for your fitness friends.",
     "cta": "Shop protein bars"
    }
   ],
@@ -1691,12 +1901,23 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 50.36
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_010"
+   [
+    "persona_001",
+    3
+   ],
+   [
+    "persona_010",
+    1
+   ],
+   [
+    "persona_010",
+    3
+   ]
   ]
  }
 }

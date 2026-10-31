@@ -18,9 +18,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "pet",
+    "tag": "pet_supplies",
     "weight": 1.0,
-    "why": "Core category for pet products and services."
+    "why": "Includes toys and supplies for cats."
    },
    {
     "tag": "subscription",
@@ -28,9 +28,9 @@
     "why": "Offered as a subscription service."
    },
    {
-    "tag": "pet_supplies",
+    "tag": "pet",
     "weight": 1.0,
-    "why": "Includes toys and supplies for cats."
+    "why": "Core category for pet products and services."
    },
    {
     "tag": "toys",
@@ -105,7 +105,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, pet_supplies, pet_food (specific) (multiplier)"
+     "detail": "matches pet_supplies, pet, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -146,7 +146,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_007",
@@ -157,7 +157,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_supplies, pet_food (specific) (multiplier)"
+     "detail": "matches pet_supplies, subscription, pet, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -198,7 +198,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches pet_supplies, subscription, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_018",
@@ -209,7 +209,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_supplies, toys (specific) (multiplier)"
+     "detail": "matches pet_supplies, subscription, pet, toys (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -250,7 +250,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches pet_supplies, subscription, pet, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
@@ -1302,11 +1302,38 @@
  "creatives": [
   {
    "persona_id": "persona_004",
-   "headline": "{first_name}, a spooktacular start for your kitten",
-   "body": "Treat your new family member this Halloween. Get toys, food samples, and a guide for their first three months of life.",
-   "cta": "Start subscription",
-   "headline_no_name": "A spooktacular start for your kitten",
-   "angle": "emotional connection with a seasonal Halloween touch for a new family member",
+   "variant": 1,
+   "headline": "Welcome your new family member, {first_name}",
+   "body": "Give your kitten the best start. Get toys, food samples, and a helpful booklet for their first three months of life.",
+   "cta": "Start their box",
+   "headline_no_name": "Welcome your new feline family member",
+   "angle": "emotional connection",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_004",
+   "variant": 2,
+   "headline": "Cherish their first three months, {first_name}",
+   "body": "Bond with your new kitten using curated toys, food samples, and an informational booklet about what to expect.",
+   "cta": "Order the kitten box",
+   "headline_no_name": "Cherish their first three months",
+   "angle": "quality bonding experience",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_004",
+   "variant": 3,
+   "headline": "{first_name}, start your kitten's journey right",
+   "body": "Nurture your new pet with a subscription box featuring toys, food samples, and a booklet for their first three months.",
+   "cta": "Get the starter kit",
+   "headline_no_name": "Start your kitten's journey right",
+   "angle": "premium quality care",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1314,11 +1341,38 @@
   },
   {
    "persona_id": "persona_002",
-   "headline": "{first_name}, kitten care made easy",
-   "body": "Save time with a subscription covering their first three months. Get toys, food samples, and a helpful guide delivered to your door.",
-   "cta": "Subscribe now",
-   "headline_no_name": "Kitten care made easy",
-   "angle": "time-saving and convenience-focused subscription box",
+   "variant": 1,
+   "headline": "{first_name}, simplify your new kitten routine",
+   "body": "Save time with a subscription box for their first three months, packed with toys, food samples, and a handy guide booklet.",
+   "cta": "Get the kitten box",
+   "headline_no_name": "Simplify your new kitten routine",
+   "angle": "time-saving and convenience",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 2,
+   "headline": "Everything your new kitten needs, {first_name}",
+   "body": "No guesswork. Get toys, food samples, and an informational booklet covering their first three months in one easy box.",
+   "cta": "Order your box",
+   "headline_no_name": "Everything your new kitten needs",
+   "angle": "easy onboarding and parenting trust",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 3,
+   "headline": "{first_name}, make kitten parenting easier",
+   "body": "Get toys, food samples, and a booklet for your cat's first three months delivered to your door. Save time and skip the store trips.",
+   "cta": "Start subscription",
+   "headline_no_name": "Make kitten parenting easier",
+   "angle": "time-saving",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1326,11 +1380,38 @@
   },
   {
    "persona_id": "persona_008",
-   "headline": "The ultimate kitten value bundle, {first_name}",
-   "body": "Highly rated by new owners. Get toys, food samples, and a helpful booklet for their first three months in one affordable bundle.",
+   "variant": 1,
+   "headline": "{first_name}, get the ultimate kitten bundle",
+   "body": "Discover what they love. Get toys, food samples, and an informational booklet for their first three months, all in one box.",
    "cta": "Get the bundle",
-   "headline_no_name": "The ultimate kitten value bundle",
-   "angle": "Clear price-to-value bundle articulation and social proof from reviews.",
+   "headline_no_name": "Get the ultimate kitten bundle",
+   "angle": "bundle offers and clear value props",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "headline": "Try before you buy bulk, {first_name}",
+   "body": "Test food samples and toys before buying more. Includes an informational booklet for their first three months of life.",
+   "cta": "Order a starter box",
+   "headline_no_name": "Try before you buy bulk",
+   "angle": "smart trial to avoid waste",
+   "claims_used": [
+    "First three months of their cat's life",
+    "Toys, food samples, a little booklet about what to expect"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 3,
+   "headline": "The essential kit for your kitten, {first_name}",
+   "body": "Get maximum value for their first three months with toys, food samples, and a helpful booklet delivered to your door.",
+   "cta": "Buy the starter kit",
+   "headline_no_name": "The essential kit for your kitten",
+   "angle": "all-in-one value proposition",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1340,6 +1421,27 @@
  "reviews": [
   {
    "persona_id": "persona_004",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_004",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_004",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1349,6 +1451,27 @@
   },
   {
    "persona_id": "persona_002",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1358,16 +1481,33 @@
   },
   {
    "persona_id": "persona_008",
-   "persona_fit": 5,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "Highly rated by new owners"
-   ],
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "The claim 'Highly rated by new owners' is unsupported by the advertiser's stated claims."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1389,12 +1529,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.60-$0.81 per click (median $0.69), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.61-$0.84 per click (median $0.71), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.6,
-    "mid": 0.69,
-    "high": 0.81
+    "low": 0.61,
+    "mid": 0.71,
+    "high": 0.84
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1402,7 +1542,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4961.94,
+   "planned_spend_usd": 4943.56,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1410,19 +1550,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 250.6,
-    "mid": 501.3,
-    "high": 902.3
+    "low": 231.1,
+    "mid": 462.1,
+    "high": 831.8
    },
-   "forecast_without_share_cap": 501.3,
+   "forecast_without_share_cap": 462.1,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 71746.5,
-   "spend_at_full_inventory_usd": 1001438.53,
+   "spend_at_full_inventory_usd": 1029342.36,
    "replan_options": [],
-   "expected_impressions": 310000,
-   "expected_reach": 193750,
+   "expected_impressions": 299000,
+   "expected_reach": 186875,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1431,110 +1571,110 @@
     {
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
-     "share": 1.0,
-     "budget_usd": 4961.94,
+     "share": 0.508,
+     "budget_usd": 2513.09,
      "cpc_bid_usd": 0.39,
      "start_bid_usd": 0.39,
-     "win_share": 0.005,
-     "avg_price_paid": 0.38,
+     "win_share": 0.003,
+     "avg_price_paid": 0.39,
      "market_price": {
-      "low": 0.51,
-      "mid": 0.57,
-      "high": 0.68
+      "low": 0.53,
+      "mid": 0.59,
+      "high": 0.7
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 10416.0,
-      "mid": 13020.0,
-      "high": 15624.0
+      "low": 5208.0,
+      "mid": 6510.0,
+      "high": 7812.0
      },
      "expected_conversions": {
-      "low": 240.6,
-      "mid": 501.3,
-      "high": 902.3
+      "low": 120.3,
+      "mid": 250.6,
+      "high": 451.1
      },
      "expected_units": {
-      "low": 250.6,
-      "mid": 501.3,
-      "high": 902.3
+      "low": 125.3,
+      "mid": 250.6,
+      "high": 451.1
      },
-     "capacity_usd": 808783.32,
-     "expected_impressions": 310000,
-     "expected_reach": 193750,
+     "capacity_usd": 831306.28,
+     "expected_impressions": 155000,
+     "expected_reach": 96875,
      "requires_host_approval": false,
-     "rationale": "market price $0.51-$0.68 (median $0.57); bidding $0.39 wins ~0% of page views, paying ~$0.38 per click (second price)"
+     "rationale": "market price $0.53-$0.70 (median $0.59); bidding $0.39 wins ~0% of page views, paying ~$0.39 per click (second price)"
     },
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.0,
-     "budget_usd": 0.0,
-     "cpc_bid_usd": 0.61,
-     "start_bid_usd": 0.61,
-     "win_share": 0.0,
-     "avg_price_paid": 0.0,
+     "share": 0.215,
+     "budget_usd": 1061.07,
+     "cpc_bid_usd": 0.45,
+     "start_bid_usd": 0.45,
+     "win_share": 0.013,
+     "avg_price_paid": 0.43,
      "market_price": {
-      "low": 0.61,
-      "mid": 0.69,
-      "high": 0.81
+      "low": 0.63,
+      "mid": 0.71,
+      "high": 0.84
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 1955.0,
+      "mid": 2443.0,
+      "high": 2932.0
      },
      "expected_conversions": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 43.8,
+      "mid": 91.2,
+      "high": 164.2
      },
      "expected_units": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 45.6,
+      "mid": 91.2,
+      "high": 164.2
      },
-     "capacity_usd": 72001.09,
-     "expected_impressions": 0,
-     "expected_reach": 0,
+     "capacity_usd": 74012.37,
+     "expected_impressions": 60000,
+     "expected_reach": 37500,
      "requires_host_approval": false,
-     "rationale": "market price $0.61-$0.81 (median $0.69); bidding $0.61 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "market price $0.63-$0.84 (median $0.71); bidding $0.45 wins ~1% of page views, paying ~$0.43 per click (second price)"
     },
     {
      "publisher_id": "pub_018",
      "publisher_name": "Tailcrate",
-     "share": 0.0,
-     "budget_usd": 0.0,
-     "cpc_bid_usd": 0.6,
-     "start_bid_usd": 0.6,
-     "win_share": 0.0,
-     "avg_price_paid": 0.0,
+     "share": 0.277,
+     "budget_usd": 1369.4,
+     "cpc_bid_usd": 0.43,
+     "start_bid_usd": 0.43,
+     "win_share": 0.01,
+     "avg_price_paid": 0.41,
      "market_price": {
-      "low": 0.6,
-      "mid": 0.7,
-      "high": 0.85
+      "low": 0.61,
+      "mid": 0.72,
+      "high": 0.87
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 2656.0,
+      "mid": 3320.0,
+      "high": 3984.0
      },
      "expected_conversions": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 57.7,
+      "mid": 120.3,
+      "high": 216.5
      },
      "expected_units": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 60.1,
+      "mid": 120.3,
+      "high": 216.5
      },
-     "capacity_usd": 120654.12,
-     "expected_impressions": 0,
-     "expected_reach": 0,
+     "capacity_usd": 124023.71,
+     "expected_impressions": 84000,
+     "expected_reach": 52500,
      "requires_host_approval": false,
-     "rationale": "market price $0.60-$0.85 (median $0.70); bidding $0.60 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "market price $0.61-$0.87 (median $0.72); bidding $0.43 wins ~1% of page views, paying ~$0.41 per click (second price)"
     }
    ],
    "warnings": []
@@ -1558,19 +1698,19 @@
     {
      "publisher_id": "pub_009",
      "start_bid": 0.39,
-     "max_bid": 0.61,
+     "max_bid": 0.63,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_007",
-     "start_bid": 0.61,
-     "max_bid": 0.74,
+     "start_bid": 0.45,
+     "max_bid": 0.76,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_018",
-     "start_bid": 0.6,
-     "max_bid": 0.75,
+     "start_bid": 0.43,
+     "max_bid": 0.78,
      "floor": 0.05
     }
    ],
@@ -1683,43 +1823,121 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_004:1",
     "persona_id": "persona_004",
     "publisher_ids": [
      "pub_009",
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, a spooktacular start for your kitten",
-    "headline_no_name": "A spooktacular start for your kitten",
-    "body": "Treat your new family member this Halloween. Get toys, food samples, and a guide for their first three months of life.",
-    "cta": "Start subscription"
+    "headline_template": "Welcome your new family member, {first_name}",
+    "headline_no_name": "Welcome your new feline family member",
+    "body": "Give your kitten the best start. Get toys, food samples, and a helpful booklet for their first three months of life.",
+    "cta": "Start their box"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_004:2",
+    "persona_id": "persona_004",
+    "publisher_ids": [
+     "pub_009",
+     "pub_007",
+     "pub_018"
+    ],
+    "headline_template": "Cherish their first three months, {first_name}",
+    "headline_no_name": "Cherish their first three months",
+    "body": "Bond with your new kitten using curated toys, food samples, and an informational booklet about what to expect.",
+    "cta": "Order the kitten box"
+   },
+   {
+    "variant_id": "persona_004:3",
+    "persona_id": "persona_004",
+    "publisher_ids": [
+     "pub_009",
+     "pub_007",
+     "pub_018"
+    ],
+    "headline_template": "{first_name}, start your kitten's journey right",
+    "headline_no_name": "Start your kitten's journey right",
+    "body": "Nurture your new pet with a subscription box featuring toys, food samples, and a booklet for their first three months.",
+    "cta": "Get the starter kit"
+   },
+   {
+    "variant_id": "persona_002:1",
     "persona_id": "persona_002",
     "publisher_ids": [
      "pub_007",
      "pub_009",
      "pub_018"
     ],
-    "headline_template": "{first_name}, kitten care made easy",
-    "headline_no_name": "Kitten care made easy",
-    "body": "Save time with a subscription covering their first three months. Get toys, food samples, and a helpful guide delivered to your door.",
-    "cta": "Subscribe now"
+    "headline_template": "{first_name}, simplify your new kitten routine",
+    "headline_no_name": "Simplify your new kitten routine",
+    "body": "Save time with a subscription box for their first three months, packed with toys, food samples, and a handy guide booklet.",
+    "cta": "Get the kitten box"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_002:2",
+    "persona_id": "persona_002",
+    "publisher_ids": [
+     "pub_007",
+     "pub_009",
+     "pub_018"
+    ],
+    "headline_template": "Everything your new kitten needs, {first_name}",
+    "headline_no_name": "Everything your new kitten needs",
+    "body": "No guesswork. Get toys, food samples, and an informational booklet covering their first three months in one easy box.",
+    "cta": "Order your box"
+   },
+   {
+    "variant_id": "persona_002:3",
+    "persona_id": "persona_002",
+    "publisher_ids": [
+     "pub_007",
+     "pub_009",
+     "pub_018"
+    ],
+    "headline_template": "{first_name}, make kitten parenting easier",
+    "headline_no_name": "Make kitten parenting easier",
+    "body": "Get toys, food samples, and a booklet for your cat's first three months delivered to your door. Save time and skip the store trips.",
+    "cta": "Start subscription"
+   },
+   {
+    "variant_id": "persona_008:1",
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_009",
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "The ultimate kitten value bundle, {first_name}",
-    "headline_no_name": "The ultimate kitten value bundle",
-    "body": "Highly rated by new owners. Get toys, food samples, and a helpful booklet for their first three months in one affordable bundle.",
+    "headline_template": "{first_name}, get the ultimate kitten bundle",
+    "headline_no_name": "Get the ultimate kitten bundle",
+    "body": "Discover what they love. Get toys, food samples, and an informational booklet for their first three months, all in one box.",
     "cta": "Get the bundle"
+   },
+   {
+    "variant_id": "persona_008:2",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_009",
+     "pub_007",
+     "pub_018"
+    ],
+    "headline_template": "Try before you buy bulk, {first_name}",
+    "headline_no_name": "Try before you buy bulk",
+    "body": "Test food samples and toys before buying more. Includes an informational booklet for their first three months of life.",
+    "cta": "Order a starter box"
+   },
+   {
+    "variant_id": "persona_008:3",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_009",
+     "pub_007",
+     "pub_018"
+    ],
+    "headline_template": "The essential kit for your kitten, {first_name}",
+    "headline_no_name": "The essential kit for your kitten",
+    "body": "Get maximum value for their first three months with toys, food samples, and a helpful booklet delivered to your door.",
+    "cta": "Buy the starter kit"
    }
   ],
   "frequency_cap": {
@@ -1752,12 +1970,15 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 43.31
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_008"
+   [
+    "persona_002",
+    3
+   ]
   ]
  }
 }

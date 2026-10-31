@@ -99,7 +99,7 @@ def run(
         },
         creatives=[
             CreativeAssignment(
-                variant_id=f"v{i + 1}", persona_id=v.persona_id,
+                variant_id=f"{v.persona_id}:{v.variant}", persona_id=v.persona_id,
                 publisher_ids=[p for p in by_persona[v.persona_id].best_publishers if p in allowed_hosts],
                 headline_template=v.headline, headline_no_name=v.headline_no_name, body=v.body, cta=v.cta,
             )

@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Optimize your backcountry system, {first_name}",
+      "body": "Protect your physical output. Our technical outerwear shells are what patrollers wear, built for serious backcountry skiers.",
+      "cta": "Shop our shells",
+      "headline_no_name": "Optimize your backcountry system",
+      "angle": "Outcome-focused physical system optimization",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    }
+  ]
+}

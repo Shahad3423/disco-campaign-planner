@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "Optimize your daily movement, {first_name}",
+      "body": "Elevate your wellness routine with sustainable activewear for women, made from recycled ocean plastic.",
+      "cta": "Shop activewear",
+      "headline_no_name": "Optimize your daily movement",
+      "angle": "Outcome-focused optimization",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 3,
+      "headline": "Activewear built for your toughest workouts, {first_name}",
+      "body": "Push your limits in sustainable activewear for women. Durable gear made from recycled ocean plastic.",
+      "cta": "Shop activewear",
+      "headline_no_name": "Activewear built for your toughest workouts",
+      "angle": "Performance and durability",
+      "claims_used": [
+        "Made from recycled ocean plastic",
+        "Sustainable activewear brand for women"
+      ]
+    }
+  ]
+}

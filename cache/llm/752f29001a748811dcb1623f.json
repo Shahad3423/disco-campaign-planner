@@ -1,0 +1,172 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The material 'linen' is not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Cool sheets for warm nights",
+        "No sweat"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported temperature regulation and performance claims ('Cool sheets for warm nights', 'No sweat')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen",
+        "linen sheets",
+        "lasting aesthetic"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The material 'linen' and the durability claim 'lasting' are unsupported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen bedding",
+        "Timeless"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The material 'linen' and the durability claim 'Timeless' are unsupported."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "restful sleep",
+        "linen bedding",
+        "never goes out of style"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported health/benefit claims ('restful sleep'), durability claims ('never goes out of style'), and material claims ('linen')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen"
+      ],
+      "distinct_from_others": false,
+      "issues": [
+        "Fails to provide specific sustainability or supply chain claims, instead using a vague eco term ('mindful home') which this persona explicitly avoids. Copy is highly repetitive across all three variants for this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen"
+      ],
+      "distinct_from_others": false,
+      "issues": [
+        "Fails to provide sustainability or supply chain transparency. Copy is extremely similar to variants 1 and 3."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen"
+      ],
+      "distinct_from_others": false,
+      "issues": [
+        "Fails to provide sustainability or supply chain transparency. Copy is extremely similar to variants 1 and 2."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Portuguese linen",
+        "linen gifts",
+        "cherish for years"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The material 'linen' and the longevity claim 'cherish for years' are unsupported."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The material 'linen' is unsupported. The angle is 'gift sets' but the copy does not mention sets."
+      ],
+      "passed": false
+    }
+  ]
+}

@@ -9,6 +9,7 @@ counter store before the eCPM ranking (not simulated here).
 """
 from __future__ import annotations
 
+import zlib
 from datetime import datetime
 
 from pydantic import BaseModel, Field
@@ -262,16 +263,18 @@ def serve(
         default = max(cfg_.creatives, key=lambda c: host_fit(by_id[c.persona_id], pub))
         best = max(cfg_.creatives, key=lambda c: posterior.get(c.persona_id, 0))
         margin = cfg["posterior"]["switch_margin"]
-        if posterior.get(best.persona_id, 0) > (1 + margin) * posterior.get(default.persona_id, 0):
-            creative = best
-        else:
-            creative = default
-        match = sum(posterior.get(c.persona_id, 0) for c in cfg_.creatives)
+        chosen = best if posterior.get(best.persona_id, 0) > (1 + margin) * posterior.get(default.persona_id, 0) else default
+        # Several variants per persona: split evenly by a stable hash of the shopper, so each variant gets a
+        # fair share of traffic (the A/B/C test a bandit later learns from).
+        options = [c for c in cfg_.creatives if c.persona_id == chosen.persona_id]
+        creative = options[zlib.crc32(f"{signals.first_name}|{signals.zip}|{plan.brief}".encode()) % len(options)]
+        campaign_personas = {c.persona_id for c in cfg_.creatives}  # distinct personas: don't count variants twice
+        match = sum(posterior.get(pid, 0) for pid in campaign_personas)
         rk = cfg["ranking"]
         ctx, ctx_why = _context_multiplier(features, plan, use_household)
         ctr = priors["ctr"]["mid"] * fit * (rk["persona_match_floor"] + rk["persona_match_span"] * min(1.0, match * 2)) * ctx
         pricing = cfg_.pricing
-        prior_match = sum(prior.get(c.persona_id, 0) for c in cfg_.creatives)
+        prior_match = sum(prior.get(pid, 0) for pid in campaign_personas)
         bid, breakdown = final_bid(plan, signals.publisher_id, match, prior_match, phase, pacing_ratio)
         ecpm = bid if pricing.model == "CPM" else bid * ctr * 1000
         headline, used = _render(creative.headline_template, creative.headline_no_name, features)
@@ -279,7 +282,8 @@ def serve(
             campaign=campaign, publisher_id=signals.publisher_id, host_budget_left_usd=round(budget_left, 2),
             persona_id=creative.persona_id, headline=headline, body=creative.body, cta=creative.cta,
             pricing_model=pricing.model, bid=bid, bid_breakdown=breakdown, expected_ctr=round(ctr, 4), ecpm=round(ecpm, 2),
-            reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> variant for {by_id[creative.persona_id].name}",
+            reasons=[f"host fit x{fit:.2f}", f"persona match {match:.2f} -> {by_id[creative.persona_id].name}, "
+                     f"variant {creative.variant_id.split(':')[-1]} of {len(options)} (even split)",
                      *ctx_why, f"bid {breakdown}", f"{'name inserted' if used else 'no-name headline'}"],
         ))
     landscape = [

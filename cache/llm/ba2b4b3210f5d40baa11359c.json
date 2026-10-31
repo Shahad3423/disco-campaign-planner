@@ -1,0 +1,152 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, ready for a grown-up bedroom?",
+      "body": "Ditch the basic sheets everyone else has. Get a grown-up aesthetic alternative to Brooklinen or Parachute, made in Portugal.",
+      "cta": "Shop linen bedding",
+      "headline_no_name": "Ready for a grown-up bedroom?",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Cool sheets for warm nights, {first_name}",
+      "body": "No sweat, just style. This is actually-breathable stuff made in Portugal, designed for people who care about how their space looks.",
+      "cta": "Upgrade your bedroom",
+      "headline_no_name": "Cool sheets for warm nights",
+      "angle": "playful",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "headline": "The bedroom upgrade you deserve",
+      "body": "Discover a mature aesthetic alternative to Brooklinen and Parachute. Beautifully crafted in Portugal for a space that feels like you.",
+      "cta": "Shop the collection",
+      "headline_no_name": "The bedroom upgrade you deserve",
+      "angle": "novelty",
+      "claims_used": [
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "Discover Portuguese linen craftsmanship",
+      "body": "Beautifully crafted in Portugal. Experience actually-breathable stuff made for those who appreciate a mature, lasting aesthetic.",
+      "cta": "Shop linen sheets",
+      "headline_no_name": "Discover Portuguese linen craftsmanship",
+      "angle": "craftsmanship",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "{first_name}, elevate your bedroom aesthetic",
+      "body": "A refined, grown-up aesthetic alternative to Brooklinen or Parachute. Timeless linen bedding designed to elevate your home.",
+      "cta": "Shop mature bedding",
+      "headline_no_name": "Elevate your bedroom aesthetic",
+      "angle": "understated",
+      "claims_used": [
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "headline": "Refined comfort for restful sleep",
+      "body": "Invest in your sleep with actually-breathable stuff made in Portugal. A mature aesthetic that never goes out of style.",
+      "cta": "Shop linen bedding",
+      "headline_no_name": "Refined comfort for restful sleep",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, discover linen made in Portugal",
+      "body": "Skip mass production. Choose actually-breathable stuff made in Portugal, offering a mature aesthetic alternative to mainstream brands.",
+      "cta": "Shop European linen",
+      "headline_no_name": "Discover linen made in Portugal",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "A mature alternative to mainstream bedding",
+      "body": "Invest in a grown-up aesthetic alternative to Brooklinen or Parachute. Thoughtfully made in Portugal to last through the seasons.",
+      "cta": "Shop durable linen",
+      "headline_no_name": "A mature alternative to mainstream bedding",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "headline": "Naturally breathable linen bedding",
+      "body": "Rest easy with actually-breathable stuff made in Portugal. A sophisticated, grown-up aesthetic alternative to common bedding brands.",
+      "cta": "Shop breathable linen",
+      "headline_no_name": "Naturally breathable linen bedding",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Give a more mature bedroom aesthetic",
+      "body": "A sophisticated, grown-up aesthetic alternative to Brooklinen or Parachute. Perfect for gifting those who appreciate the finer things.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give a more mature bedroom aesthetic",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, give the gift of Portuguese linen",
+      "body": "Delight them with actually-breathable stuff made in Portugal. A beautiful, mature aesthetic gift they will cherish for years.",
+      "cta": "Shop linen gifts",
+      "headline_no_name": "Give the gift of Portuguese linen",
+      "angle": "giftable",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "headline": "The ultimate gift of breathable comfort",
+      "body": "Give actually-breathable stuff made in Portugal. A refined, grown-up aesthetic alternative to common bedding brands they'll love.",
+      "cta": "Gift linen bedding",
+      "headline_no_name": "The ultimate gift of breathable comfort",
+      "angle": "gift sets",
+      "claims_used": [
+        "Actually-breathable stuff made in Portugal",
+        "Grown-up aesthetic alternative to Brooklinen/Parachute"
+      ]
+    }
+  ]
+}

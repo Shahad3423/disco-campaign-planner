@@ -1,0 +1,190 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Refill at home with your own tap water"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Factual claim about product usage ('Refill at home with your own tap water') is not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "parent-trusted",
+        "Busy families trust our refillable, concentrated cleaning products"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported social proof/endorsement claims ('parent-trusted', 'Busy families trust...')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "shipped directly to you on your schedule",
+        "Start a subscription"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported claims about subscription model and shipping schedule."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "crafted to last"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported durability/craftsmanship claim ('crafted to last')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "lasting quality"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported quality claim ('lasting quality')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Save money",
+        "smart for your budget"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported financial/savings claims ('Save money', 'smart for your budget')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "better value",
+        "get more value out of every refill"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported value claims ('better value', 'get more value')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 3,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "reliable, long-lasting performance"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported performance claim ('reliable, long-lasting performance')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

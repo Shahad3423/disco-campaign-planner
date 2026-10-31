@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, optimize how you feel",
+      "body": "We focus on one simple outcome: we help people feel better. Add this seamless step to your daily optimization routine.",
+      "cta": "Feel better today",
+      "headline_no_name": "Optimize how you feel",
+      "angle": "Outcome-focused",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "headline": "{first_name}, easy routines to feel better",
+      "body": "With a busy household, simple is best. We help people feel better with straightforward routines that fit into your hectic schedule.",
+      "cta": "Feel better today",
+      "headline_no_name": "Easy routines to feel better",
+      "angle": "Time-saving",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    }
+  ]
+}

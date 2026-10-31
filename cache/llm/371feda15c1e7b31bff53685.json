@@ -1,0 +1,119 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "{first_name}, get the formulations your training demands",
+      "body": "Fuel your workouts with the exact same formulations as the expensive brands, for half the cost. We compete on price, not marketing.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Get the formulations your training demands",
+      "angle": "Focusing on high-performance formulations matching the shopper's active lifestyle",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Power your routine without paying for the hype",
+      "body": "Get same-formulation pre-workout and protein for half the cost. We compete on price, not on marketing, to keep you fueled.",
+      "cta": "Shop pre-workout",
+      "headline_no_name": "Power your routine without paying for the hype",
+      "angle": "Appealing to athletic performance without unnecessary brand markup",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 3,
+      "headline": "{first_name}, train smart with premium formulations",
+      "body": "Don't pay extra for flashy labels. Get the exact same formulations as expensive brands for half the cost.",
+      "cta": "Shop protein",
+      "headline_no_name": "Train smart with premium formulations",
+      "angle": "Smart athlete perspective focusing on identical ingredient performance",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your supplement system",
+      "body": "We offer the exact same formulations as the expensive brands for half the cost. No marketing fluff, just the ingredients you need.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Optimize your supplement system",
+      "angle": "Appealing to system optimization and ingredient transparency",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "High-quality formulations, zero marketing hype",
+      "body": "We compete on price, not on marketing. Get the exact same workout formulations as expensive brands for half the cost.",
+      "cta": "Shop supplements",
+      "headline_no_name": "High-quality formulations, zero marketing hype",
+      "angle": "Stripping away marketing noise to focus purely on the formulation",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "{first_name}, why pay more for the exact same formulation?",
+      "body": "Get identical formulations to expensive brands for half the cost. We focus on the product, competing on price instead of marketing.",
+      "cta": "Shop creatine",
+      "headline_no_name": "Why pay more for the exact same formulation?",
+      "angle": "Logical, outcome-focused appeal highlighting identical inputs",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get identical formulations at half the cost",
+      "body": "Why pay double? We offer the same formulations as expensive brands for half the cost because we compete on price, not marketing.",
+      "cta": "Shop protein deals",
+      "headline_no_name": "Get identical formulations at half the cost",
+      "angle": "Direct price and value comparison for comparison shoppers",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Skip the marketing markup on your supplements",
+      "body": "We compete on price, not marketing. Get the exact same formulations as expensive brands for half the cost. Save on your stack.",
+      "cta": "Shop supplements",
+      "headline_no_name": "Skip the marketing markup on your supplements",
+      "angle": "Clear value articulation showing how we keep prices low",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 3,
+      "headline": "{first_name}, no tricks, just half-price formulations",
+      "body": "This Halloween, don't get spooked by high prices. Get the same formulations as expensive brands for half the cost.",
+      "cta": "Shop workout deals",
+      "headline_no_name": "No tricks, just half-price formulations",
+      "angle": "Seasonal Halloween angle emphasizing savings over spooky prices",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    }
+  ]
+}
