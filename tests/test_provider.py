@@ -45,3 +45,32 @@ def test_claims_field_is_owned_by_code():
     p = parse_brief("We sell a self-cleaning litter box for cats", FakeProvider({"litter": json.dumps(profile)}), date(2026, 10, 30), n_samples=1)
     assert "Self-cleaning" in p.stated_claims
     assert p.claims_needing_substantiation == ["Vet-recommended"]
+
+
+def test_live_mode_neither_reads_nor_writes_cache(tmp_path, monkeypatch):
+    from disco_planner.llm import provider as prov
+
+    class Counting:
+        name, model = "counting", "m"
+        def __init__(self):
+            self.calls = 0
+        def complete(self, system, user, temperature):
+            self.calls += 1
+            return ONE
+
+    monkeypatch.setattr(prov, "CACHE_DIR", tmp_path)
+    p = Counting()
+    stats_token = prov.CALL_STATS.set({})
+    prov.generate(p, "s", "u", ReviewSet)            # first call: live, then cached on disk
+    prov.generate(p, "s", "u", ReviewSet)            # same input: served from cache
+    assert p.calls == 1 and prov.CALL_STATS.get() == {"live": 1, "cached": 1}
+    files_before = sorted(tmp_path.iterdir())
+    token = prov.CACHE_ENABLED.set(False)             # live mode
+    try:
+        prov.generate(p, "s", "u", ReviewSet)        # must call the model again ...
+        prov.generate(p, "s", "u2", ReviewSet)       # ... and write nothing new
+    finally:
+        prov.CACHE_ENABLED.reset(token)
+        prov.CALL_STATS.reset(stats_token)
+    assert p.calls == 3
+    assert sorted(tmp_path.iterdir()) == files_before

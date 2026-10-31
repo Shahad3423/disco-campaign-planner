@@ -115,22 +115,39 @@ def get_api_key() -> str | None:
     return next((os.environ[n] for n in CREDENTIAL_NAMES if os.environ.get(n)), None)
 
 
-def plan_campaign(brief: str, inputs: AdvertiserInputs) -> tuple[CampaignPlan | None, str | None, str]:
+def describe_calls(provider, stats: dict) -> str:
+    """Truthful footer: how many LLM answers were fresh calls vs reused from the cache."""
+    live, cached = stats.get("live", 0), stats.get("cached", 0)
+    backend = getattr(provider, "last_backend_used", None) or getattr(provider, "backend", None)
+    model = getattr(provider, "last_model_used", None) or getattr(provider, "model", "")
+    parts = []
+    if live:
+        parts.append(f"{live} live LLM call(s): {model}" + (f" via {backend}" if backend else ""))
+    if cached:
+        parts.append(f"{cached} answer(s) reused from the LLM cache (same model, prompt and input)")
+    return "; ".join(parts) or "no LLM calls needed"
+
+
+def plan_campaign(brief: str, inputs: AdvertiserInputs, live: bool = False) -> tuple[CampaignPlan | None, str | None, str]:
     """Return (plan, notice, model_label). Falls back to a cached plan when the brief is an
     example and live planning is unavailable (no key, quota, 503, bad output)."""
     notice, error = None, None
     if not get_api_key():
         error = "No LLM credentials configured (VERTEX_API_KEY or GEMINI_API_KEY)."
     else:
+        from disco_planner.llm.provider import CACHE_ENABLED, CALL_STATS
+
+        cache_token = CACHE_ENABLED.set(not live)  # live = fresh LLM calls, no cache read or write
+        stats_token = CALL_STATS.set({})
         try:
             provider = default_provider()
             plan = pipeline.run(brief, provider, PLANNING_DATE, inputs)
-            backend = getattr(provider, "last_backend_used", None) or getattr(provider, "backend", None)
-            model = getattr(provider, "last_model_used", None) or getattr(provider, "model", None)
-            model = f"{model} via {backend}" if backend else (model or "LLM disk cache (no live call needed)")
-            return plan, None, model
+            return plan, None, describe_calls(provider, CALL_STATS.get())
         except Exception as e:  # LLMError, quota, network: any failure should degrade gracefully
             error = f"Live planning failed ({type(e).__name__}: {str(e)[:160]})."
+        finally:
+            CACHE_ENABLED.reset(cache_token)
+            CALL_STATS.reset(stats_token)
 
     n = find_example_number(brief)
     cached = load_cached_plan(n) if n else None
@@ -411,7 +428,7 @@ def render_config(plan: CampaignPlan) -> None:
 
 def render_footer(plan: CampaignPlan, model_label: str) -> None:
     timings = " | ".join(f"{k} {v:.1f}s" for k, v in plan.timings_s.items())
-    st.caption(f"Stage timings: {timings or 'n/a'} | Model: {model_label}")
+    st.caption(f"Stage timings: {timings or 'n/a'} | LLM: {model_label}")
 
 
 def render_plan(plan: CampaignPlan, model_label: str) -> None:
