@@ -1,0 +1,58 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "headline": "{first_name}, skip single-use plastic bottles",
+      "body": "By shipping only concentrated cleaning products, we eliminate single-use plastic bottles. Refill at home with your own tap water.",
+      "cta": "Shop refillable kits",
+      "headline_no_name": "Skip single-use plastic bottles at home",
+      "angle": "Refillable system mechanism",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, parent-trusted cleaning that works",
+      "body": "Busy families trust our refillable, concentrated cleaning products. Skip single-use plastic bottles with formulas that work like big brands.",
+      "cta": "Shop family bundles",
+      "headline_no_name": "Parent-trusted cleaning that works",
+      "angle": "Parent-trusted performance",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, discover cleaning crafted to last",
+      "body": "Elegant, refillable, concentrated cleaning products. Skip single-use plastic bottles with a system that works as well as the big brands.",
+      "cta": "Shop the classic set",
+      "headline_no_name": "Discover cleaning crafted to last",
+      "angle": "Craftsmanship and longevity",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, the perfect housewarming gift",
+      "body": "Give a beautiful, premium gift. Our refillable, concentrated cleaning products let them skip single-use plastic bottles in their new home.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The perfect housewarming gift",
+      "angle": "Premium housewarming gift",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    }
+  ]
+}

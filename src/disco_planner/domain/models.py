@@ -142,6 +142,7 @@ class PersonaMatch(BaseModel):
 
 class CreativeVariant(BaseModel):
     persona_id: str
+    variant: int = Field(default=1, ge=1, le=5, description="1..n within the persona: different angles to A/B/C test")
     headline: str = Field(description="<= 60 chars. May contain {first_name} once.")
     body: str = Field(description="<= 140 chars, fits a thank-you-page offer card")
     cta: str
@@ -152,6 +153,7 @@ class CreativeVariant(BaseModel):
 
 class CreativeReview(BaseModel):
     persona_id: str
+    variant: int = 1
     persona_fit: int = Field(ge=1, le=5)
     claims_ok: bool
     unsupported_claims: list[str] = Field(default_factory=list)

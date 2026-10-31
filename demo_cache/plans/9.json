@@ -22,14 +22,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "household",
-    "weight": 1.0,
-    "why": "Core category for cleaning products."
-   },
-   {
     "tag": "sustainable",
     "weight": 1.0,
     "why": "Core value proposition focuses on sustainability and reducing plastic."
+   },
+   {
+    "tag": "household",
+    "weight": 1.0,
+    "why": "Core category for cleaning products."
    },
    {
     "tag": "home",
@@ -1287,11 +1287,66 @@
  "creatives": [
   {
    "persona_id": "persona_006",
-   "headline": "{first_name}, skip single-use plastic bottles.",
-   "body": "Choose refillable, concentrated cleaning products and skip the single-use plastic bottles. Works as well as the big brands.",
-   "cta": "Shop refills",
-   "headline_no_name": "Skip single-use plastic bottles.",
-   "angle": "Eliminating single-use plastic waste with high-performance refillable concentrates",
+   "variant": 1,
+   "headline": "{first_name}, ready to skip single-use plastic?",
+   "body": "Use our refillable, concentrated cleaning products. It is the easy way to skip the single-use plastic bottles in your home.",
+   "cta": "Shop refill kits",
+   "headline_no_name": "Ready to skip single-use plastic bottles?",
+   "angle": "specific sustainability claims",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 2,
+   "headline": "Clean sustainably, {first_name}",
+   "body": "Our refillable, concentrated cleaning products work as well as the big brands. Skip the single-use plastic bottles for good.",
+   "cta": "Switch to refills",
+   "headline_no_name": "Clean sustainably without compromise",
+   "angle": "performance comparison",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Works as well as the big brands",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 3,
+   "headline": "{first_name}, skip single-use plastic bottles",
+   "body": "By shipping only concentrated cleaning products, we eliminate single-use plastic bottles. Refill at home with your own tap water.",
+   "cta": "Shop refillable kits",
+   "headline_no_name": "Skip single-use plastic bottles at home",
+   "angle": "Refillable system mechanism",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 1,
+   "headline": "Simplify your cleaning, {first_name}",
+   "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands to keep up with life.",
+   "cta": "Order a starter kit",
+   "headline_no_name": "Simplify your family's cleaning",
+   "angle": "time-saving",
+   "claims_used": [
+    "Skip the single-use plastic bottles",
+    "Refillable, concentrated cleaning products",
+    "Works as well as the big brands"
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 2,
+   "headline": "{first_name}, parent-trusted cleaning that works",
+   "body": "Busy families trust our refillable, concentrated cleaning products. Skip single-use plastic bottles with formulas that work like big brands.",
+   "cta": "Shop family bundles",
+   "headline_no_name": "Parent-trusted cleaning that works",
+   "angle": "Parent-trusted performance",
    "claims_used": [
     "Refillable, concentrated cleaning products",
     "Skip the single-use plastic bottles",
@@ -1300,35 +1355,78 @@
   },
   {
    "persona_id": "persona_002",
-   "headline": "Powerful cleaning for {first_name}'s busy home",
-   "body": "Our concentrated cleaning products work as well as the big brands. Just add water to refill and keep your home sparkling clean.",
-   "cta": "Shop refill packs",
-   "headline_no_name": "Powerful cleaning for busy homes",
-   "angle": "Convenience and high performance that saves time for busy households",
+   "variant": 3,
+   "headline": "Never run out of cleaner again",
+   "body": "Skip the single-use plastic bottles. Get refillable, concentrated cleaning products shipped directly to you on your schedule.",
+   "cta": "Start a subscription",
+   "headline_no_name": "Never run out of cleaner again",
+   "angle": "convenience",
    "claims_used": [
-    "Works as well as the big brands",
+    "Skip the single-use plastic bottles",
     "Refillable, concentrated cleaning products"
    ]
   },
   {
    "persona_id": "persona_005",
-   "headline": "Elegant cleaning solutions for {first_name}",
-   "body": "Experience concentrated cleaning products that work as well as the big brands. Designed to last and eliminate unsightly plastic clutter.",
-   "cta": "Shop the starter kit",
-   "headline_no_name": "Elegant, refillable cleaning solutions",
-   "angle": "Understated quality and design-forward longevity over trendy aesthetics",
+   "variant": 1,
+   "headline": "{first_name}, discover cleaning crafted to last",
+   "body": "Elegant, refillable, concentrated cleaning products. Skip single-use plastic bottles with a system that works as well as the big brands.",
+   "cta": "Shop the classic set",
+   "headline_no_name": "Discover cleaning crafted to last",
+   "angle": "Craftsmanship and longevity",
    "claims_used": [
     "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles",
     "Works as well as the big brands"
    ]
   },
   {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "Invest in bottles you keep, {first_name}",
+   "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products offer lasting quality and excellent performance.",
+   "cta": "Buy the starter set",
+   "headline_no_name": "Invest in bottles you keep",
+   "angle": "longevity",
+   "claims_used": [
+    "Skip the single-use plastic bottles",
+    "Refillable, concentrated cleaning products"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
+   "headline": "Elegant, concentrated cleaning",
+   "body": "Refillable, concentrated cleaning products designed for your home. Skip the single-use plastic bottles without losing performance.",
+   "cta": "Shop concentrates",
+   "headline_no_name": "Elegant, concentrated cleaning",
+   "angle": "understated",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
    "persona_id": "persona_008",
-   "headline": "{first_name}, get big-brand power for less",
-   "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands at a better value.",
-   "cta": "Shop value refills",
-   "headline_no_name": "Get big-brand cleaning power for less",
-   "angle": "Clear value proposition focused on smart spending and concentration over buying water",
+   "variant": 1,
+   "headline": "Save money and skip the plastic, {first_name}",
+   "body": "Refillable, concentrated cleaning products are smart for your budget. Skip single-use plastic bottles with refills that last.",
+   "cta": "Shop refill bundles",
+   "headline_no_name": "Save money and skip the plastic bottles",
+   "angle": "clear value props",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "headline": "Big brand power, better value",
+   "body": "Our concentrated cleaning products work as well as the big brands. Skip single-use plastic bottles and get more value out of every refill.",
+   "cta": "Get the starter pack",
+   "headline_no_name": "Big brand power, better value",
+   "angle": "discount-forward",
    "claims_used": [
     "Refillable, concentrated cleaning products",
     "Works as well as the big brands",
@@ -1336,14 +1434,55 @@
    ]
   },
   {
-   "persona_id": "persona_010",
-   "headline": "A beautiful, sustainable home gift for {first_name}",
-   "body": "Gift them refillable, concentrated cleaning products. A thoughtful way to help loved ones skip the single-use plastic bottles.",
-   "cta": "Shop gift sets",
-   "headline_no_name": "A beautiful, sustainable home gift",
-   "angle": "Premium and thoughtful presentation suitable for eco-conscious gifting",
+   "persona_id": "persona_008",
+   "variant": 3,
+   "headline": "{first_name}, get more from your cleaner",
+   "body": "Choose refillable, concentrated cleaning products. Skip the single-use plastic bottles and get reliable, long-lasting performance.",
+   "cta": "Shop value bundles",
+   "headline_no_name": "Get more from your household cleaner",
+   "angle": "bundle offers",
    "claims_used": [
     "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "headline": "A beautiful, sustainable gift for {first_name}",
+   "body": "Gift our refillable, concentrated cleaning products. Help them skip the single-use plastic bottles with a practical and premium set.",
+   "cta": "Shop gift sets",
+   "headline_no_name": "A beautiful, sustainable gift set",
+   "angle": "premium presentation",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "{first_name}, the perfect housewarming gift",
+   "body": "Give a beautiful, premium gift. Our refillable, concentrated cleaning products let them skip single-use plastic bottles in their new home.",
+   "cta": "Shop gift sets",
+   "headline_no_name": "The perfect housewarming gift",
+   "angle": "Premium housewarming gift",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Skip the single-use plastic bottles"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "headline": "Gift a cleaner home, {first_name}",
+   "body": "Share refillable, concentrated cleaning products that work as well as the big brands. Help them skip the single-use plastic bottles.",
+   "cta": "Send a gift kit",
+   "headline_no_name": "Gift a cleaner, greener home",
+   "angle": "gift sets",
+   "claims_used": [
+    "Refillable, concentrated cleaning products",
+    "Works as well as the big brands",
     "Skip the single-use plastic bottles"
    ]
   }
@@ -1351,17 +1490,17 @@
  "reviews": [
   {
    "persona_id": "persona_006",
-   "persona_fit": 3,
+   "variant": 1,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "The copy relies on vague eco claims ('skip single-use plastic bottles') which this persona explicitly avoids, preferring specific sustainability metrics, supply chain transparency, or certifications."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
-   "persona_id": "persona_002",
+   "persona_id": "persona_006",
+   "variant": 2,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1370,35 +1509,165 @@
    "passed": true
   },
   {
-   "persona_id": "persona_005",
+   "persona_id": "persona_006",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": false,
    "unsupported_claims": [
-    "Designed to last"
+    "Refill at home with your own tap water"
    ],
    "distinct_from_others": true,
    "issues": [
-    "The claim 'Designed to last' is unsupported by the stated claims, which do not mention the durability or materials of the containers."
+    "Factual claim about product usage ('Refill at home with your own tap water') is not supported by the stated claims."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "parent-trusted",
+    "Busy families trust our refillable, concentrated cleaning products"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported social proof/endorsement claims ('parent-trusted', 'Busy families trust...')."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "shipped directly to you on your schedule",
+    "Start a subscription"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported claims about subscription model and shipping schedule."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "crafted to last"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported durability/craftsmanship claim ('crafted to last')."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "lasting quality"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported quality claim ('lasting quality')."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Save money",
+    "smart for your budget"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported financial/savings claims ('Save money', 'smart for your budget')."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_008",
+   "variant": 2,
    "persona_fit": 4,
    "claims_ok": false,
    "unsupported_claims": [
-    "for less",
-    "at a better value"
+    "better value",
+    "get more value out of every refill"
    ],
    "distinct_from_others": true,
    "issues": [
-    "The claims of being 'for less' and 'at a better value' are unsupported as there is no pricing or comparative value information in the stated claims."
+    "Contains unsupported value claims ('better value', 'get more value')."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 3,
+   "persona_fit": 3,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "reliable, long-lasting performance"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Contains unsupported performance claim ('reliable, long-lasting performance')."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 4,
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1425,12 +1694,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $1.09-$1.45 per click (median $1.25), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $1.12-$1.49 per click (median $1.28), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 1.09,
-    "mid": 1.25,
-    "high": 1.45
+    "low": 1.12,
+    "mid": 1.28,
+    "high": 1.49
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1438,7 +1707,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4903.84,
+   "planned_spend_usd": 4846.09,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1446,19 +1715,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 108.1,
-    "mid": 216.2,
-    "high": 389.1
+    "low": 106.4,
+    "mid": 212.7,
+    "high": 382.9
    },
-   "forecast_without_share_cap": 216.2,
+   "forecast_without_share_cap": 212.7,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 45277.6,
-   "spend_at_full_inventory_usd": 1214633.39,
+   "spend_at_full_inventory_usd": 1248508.69,
    "replan_options": [],
-   "expected_impressions": 273000,
-   "expected_reach": 170625,
+   "expected_impressions": 266000,
+   "expected_reach": 166250,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1467,16 +1736,16 @@
     {
      "publisher_id": "pub_001",
      "publisher_name": "Swiftcart",
-     "share": 0.67,
-     "budget_usd": 3286.84,
-     "cpc_bid_usd": 0.37,
-     "start_bid_usd": 0.37,
+     "share": 0.697,
+     "budget_usd": 3377.67,
+     "cpc_bid_usd": 0.38,
+     "start_bid_usd": 0.38,
      "win_share": 0.003,
-     "avg_price_paid": 0.37,
+     "avg_price_paid": 0.38,
      "market_price": {
-      "low": 0.54,
-      "mid": 0.61,
-      "high": 0.71
+      "low": 0.55,
+      "mid": 0.62,
+      "high": 0.73
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1494,47 +1763,47 @@
       "mid": 185.2,
       "high": 333.4
      },
-     "capacity_usd": 1155955.56,
+     "capacity_usd": 1188179.57,
      "expected_impressions": 210000,
      "expected_reach": 131250,
      "requires_host_approval": false,
-     "rationale": "market price $0.54-$0.71 (median $0.61); bidding $0.37 wins ~0% of page views, paying ~$0.37 per click (second price)"
+     "rationale": "market price $0.55-$0.73 (median $0.62); bidding $0.38 wins ~0% of page views, paying ~$0.38 per click (second price)"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.33,
-     "budget_usd": 1617.0,
-     "cpc_bid_usd": 0.86,
-     "start_bid_usd": 0.86,
-     "win_share": 0.022,
-     "avg_price_paid": 0.82,
+     "share": 0.303,
+     "budget_usd": 1468.42,
+     "cpc_bid_usd": 0.88,
+     "start_bid_usd": 0.88,
+     "win_share": 0.02,
+     "avg_price_paid": 0.84,
      "market_price": {
-      "low": 1.09,
-      "mid": 1.25,
-      "high": 1.45
+      "low": 1.12,
+      "mid": 1.28,
+      "high": 1.49
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 1579.0,
-      "mid": 1974.0,
-      "high": 2369.0
+      "low": 1404.0,
+      "mid": 1755.0,
+      "high": 2106.0
      },
      "expected_conversions": {
-      "low": 14.8,
-      "mid": 30.9,
-      "high": 55.7
+      "low": 13.2,
+      "mid": 27.5,
+      "high": 49.5
      },
      "expected_units": {
-      "low": 15.5,
-      "mid": 30.9,
-      "high": 55.7
+      "low": 13.7,
+      "mid": 27.5,
+      "high": 49.5
      },
-     "capacity_usd": 58677.83,
-     "expected_impressions": 63000,
-     "expected_reach": 39375,
+     "capacity_usd": 60329.13,
+     "expected_impressions": 56000,
+     "expected_reach": 35000,
      "requires_host_approval": false,
-     "rationale": "market price $1.09-$1.45 (median $1.25); bidding $0.86 wins ~2% of page views, paying ~$0.82 per click (second price)"
+     "rationale": "market price $1.12-$1.49 (median $1.28); bidding $0.88 wins ~2% of page views, paying ~$0.84 per click (second price)"
     }
    ],
    "warnings": []
@@ -1557,14 +1826,14 @@
    "host_bids": [
     {
      "publisher_id": "pub_001",
-     "start_bid": 0.37,
-     "max_bid": 0.64,
+     "start_bid": 0.38,
+     "max_bid": 0.66,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_014",
-     "start_bid": 0.86,
-     "max_bid": 1.31,
+     "start_bid": 0.88,
+     "max_bid": 1.34,
      "floor": 0.05
     }
    ],
@@ -1682,64 +1951,184 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_006:1",
     "persona_id": "persona_006",
     "publisher_ids": [
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "{first_name}, skip single-use plastic bottles.",
-    "headline_no_name": "Skip single-use plastic bottles.",
-    "body": "Choose refillable, concentrated cleaning products and skip the single-use plastic bottles. Works as well as the big brands.",
-    "cta": "Shop refills"
+    "headline_template": "{first_name}, ready to skip single-use plastic?",
+    "headline_no_name": "Ready to skip single-use plastic bottles?",
+    "body": "Use our refillable, concentrated cleaning products. It is the easy way to skip the single-use plastic bottles in your home.",
+    "cta": "Shop refill kits"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_006:2",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "Clean sustainably, {first_name}",
+    "headline_no_name": "Clean sustainably without compromise",
+    "body": "Our refillable, concentrated cleaning products work as well as the big brands. Skip the single-use plastic bottles for good.",
+    "cta": "Switch to refills"
+   },
+   {
+    "variant_id": "persona_006:3",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "{first_name}, skip single-use plastic bottles",
+    "headline_no_name": "Skip single-use plastic bottles at home",
+    "body": "By shipping only concentrated cleaning products, we eliminate single-use plastic bottles. Refill at home with your own tap water.",
+    "cta": "Shop refillable kits"
+   },
+   {
+    "variant_id": "persona_002:1",
     "persona_id": "persona_002",
     "publisher_ids": [
      "pub_001",
      "pub_014"
     ],
-    "headline_template": "Powerful cleaning for {first_name}'s busy home",
-    "headline_no_name": "Powerful cleaning for busy homes",
-    "body": "Our concentrated cleaning products work as well as the big brands. Just add water to refill and keep your home sparkling clean.",
-    "cta": "Shop refill packs"
+    "headline_template": "Simplify your cleaning, {first_name}",
+    "headline_no_name": "Simplify your family's cleaning",
+    "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands to keep up with life.",
+    "cta": "Order a starter kit"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_002:2",
+    "persona_id": "persona_002",
+    "publisher_ids": [
+     "pub_001",
+     "pub_014"
+    ],
+    "headline_template": "{first_name}, parent-trusted cleaning that works",
+    "headline_no_name": "Parent-trusted cleaning that works",
+    "body": "Busy families trust our refillable, concentrated cleaning products. Skip single-use plastic bottles with formulas that work like big brands.",
+    "cta": "Shop family bundles"
+   },
+   {
+    "variant_id": "persona_002:3",
+    "persona_id": "persona_002",
+    "publisher_ids": [
+     "pub_001",
+     "pub_014"
+    ],
+    "headline_template": "Never run out of cleaner again",
+    "headline_no_name": "Never run out of cleaner again",
+    "body": "Skip the single-use plastic bottles. Get refillable, concentrated cleaning products shipped directly to you on your schedule.",
+    "cta": "Start a subscription"
+   },
+   {
+    "variant_id": "persona_005:1",
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "Elegant cleaning solutions for {first_name}",
-    "headline_no_name": "Elegant, refillable cleaning solutions",
-    "body": "Experience concentrated cleaning products that work as well as the big brands. Designed to last and eliminate unsightly plastic clutter.",
-    "cta": "Shop the starter kit"
+    "headline_template": "{first_name}, discover cleaning crafted to last",
+    "headline_no_name": "Discover cleaning crafted to last",
+    "body": "Elegant, refillable, concentrated cleaning products. Skip single-use plastic bottles with a system that works as well as the big brands.",
+    "cta": "Shop the classic set"
    },
    {
-    "variant_id": "v4",
+    "variant_id": "persona_005:2",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "Invest in bottles you keep, {first_name}",
+    "headline_no_name": "Invest in bottles you keep",
+    "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products offer lasting quality and excellent performance.",
+    "cta": "Buy the starter set"
+   },
+   {
+    "variant_id": "persona_005:3",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "Elegant, concentrated cleaning",
+    "headline_no_name": "Elegant, concentrated cleaning",
+    "body": "Refillable, concentrated cleaning products designed for your home. Skip the single-use plastic bottles without losing performance.",
+    "cta": "Shop concentrates"
+   },
+   {
+    "variant_id": "persona_008:1",
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "{first_name}, get big-brand power for less",
-    "headline_no_name": "Get big-brand cleaning power for less",
-    "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands at a better value.",
-    "cta": "Shop value refills"
+    "headline_template": "Save money and skip the plastic, {first_name}",
+    "headline_no_name": "Save money and skip the plastic bottles",
+    "body": "Refillable, concentrated cleaning products are smart for your budget. Skip single-use plastic bottles with refills that last.",
+    "cta": "Shop refill bundles"
    },
    {
-    "variant_id": "v5",
+    "variant_id": "persona_008:2",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "Big brand power, better value",
+    "headline_no_name": "Big brand power, better value",
+    "body": "Our concentrated cleaning products work as well as the big brands. Skip single-use plastic bottles and get more value out of every refill.",
+    "cta": "Get the starter pack"
+   },
+   {
+    "variant_id": "persona_008:3",
+    "persona_id": "persona_008",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "{first_name}, get more from your cleaner",
+    "headline_no_name": "Get more from your household cleaner",
+    "body": "Choose refillable, concentrated cleaning products. Skip the single-use plastic bottles and get reliable, long-lasting performance.",
+    "cta": "Shop value bundles"
+   },
+   {
+    "variant_id": "persona_010:1",
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_014",
      "pub_001"
     ],
-    "headline_template": "A beautiful, sustainable home gift for {first_name}",
-    "headline_no_name": "A beautiful, sustainable home gift",
-    "body": "Gift them refillable, concentrated cleaning products. A thoughtful way to help loved ones skip the single-use plastic bottles.",
+    "headline_template": "A beautiful, sustainable gift for {first_name}",
+    "headline_no_name": "A beautiful, sustainable gift set",
+    "body": "Gift our refillable, concentrated cleaning products. Help them skip the single-use plastic bottles with a practical and premium set.",
     "cta": "Shop gift sets"
+   },
+   {
+    "variant_id": "persona_010:2",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "{first_name}, the perfect housewarming gift",
+    "headline_no_name": "The perfect housewarming gift",
+    "body": "Give a beautiful, premium gift. Our refillable, concentrated cleaning products let them skip single-use plastic bottles in their new home.",
+    "cta": "Shop gift sets"
+   },
+   {
+    "variant_id": "persona_010:3",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_014",
+     "pub_001"
+    ],
+    "headline_template": "Gift a cleaner home, {first_name}",
+    "headline_no_name": "Gift a cleaner, greener home",
+    "body": "Share refillable, concentrated cleaning products that work as well as the big brands. Help them skip the single-use plastic bottles.",
+    "cta": "Send a gift kit"
    }
   ],
   "frequency_cap": {
@@ -1772,14 +2161,29 @@
   ]
  },
  "timings_s": {
-  "intake": 0.0,
-  "matching": 0.0,
-  "creative": 0.01
+  "intake": 0.01,
+  "matching": 0.01,
+  "creative": 69.6
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_006"
+   [
+    "persona_006",
+    3
+   ],
+   [
+    "persona_002",
+    2
+   ],
+   [
+    "persona_005",
+    1
+   ],
+   [
+    "persona_010",
+    2
+   ]
   ]
  }
 }

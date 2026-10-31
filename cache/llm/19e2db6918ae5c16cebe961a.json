@@ -1,0 +1,137 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Skip mass production"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The variant fails to provide specific sustainability claims or supply chain transparency, instead using a vague 'Skip mass production' claim which the persona avoids as greenwashing."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "durable linen",
+        "to last through the seasons"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Fails to provide specific sustainability claims or certifications. Uses vague durability claims which this persona avoids."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Naturally breathable"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Does not contain any specific sustainability claims, supply chain transparency, or certifications, making it a poor fit for the Sustainability Buyer."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

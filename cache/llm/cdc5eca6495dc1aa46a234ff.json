@@ -1,0 +1,112 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your daily baseline, {first_name}",
+      "body": "We focus on one simple, essential outcome to support your system: we help people feel better. Elevate your routine.",
+      "cta": "Feel better today",
+      "headline_no_name": "Optimize your daily baseline",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, prioritize how you feel",
+      "body": "No unnecessary additions or hype. We have one clear, singular goal: we help people feel better.",
+      "cta": "Start feeling better",
+      "headline_no_name": "Prioritize how you feel",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "The ultimate metric: how you feel",
+      "body": "Track your progress and simplify your daily ritual. We help people feel better, pure and simple.",
+      "cta": "Feel better now",
+      "headline_no_name": "The ultimate metric: how you feel",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "A simpler way to feel better, {first_name}",
+      "body": "Busy days demand simple solutions. We help people feel better with zero hassle and easy routines.",
+      "cta": "Feel better today",
+      "headline_no_name": "A simpler way to feel better",
+      "angle": "time-saving",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "Made to help your family feel better",
+      "body": "Trusted support for hectic schedules. We help people feel better so you can focus on what matters most.",
+      "cta": "Start feeling better",
+      "headline_no_name": "Made to help your family feel better",
+      "angle": "family-friendly",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "headline": "No tricks, {first_name}, just feeling better",
+      "body": "Skip the chaos this Halloween. We help people feel better, making it easy to keep your energy up.",
+      "cta": "Feel better now",
+      "headline_no_name": "No tricks, just feeling better",
+      "angle": "time-saving",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, match your vibe to your wellness",
+      "body": "Good energy only. We help people feel better, inside and out.",
+      "cta": "Feel better now",
+      "headline_no_name": "Match your vibe to your wellness",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "A better way to feel better",
+      "body": "Real care, no corporate fluff. We help people feel better on their own terms.",
+      "cta": "Start feeling better",
+      "headline_no_name": "A better way to feel better",
+      "angle": "values-aligned",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "headline": "Upgrade your daily mood, {first_name}",
+      "body": "Shift your perspective. We help people feel better with a routine you will actually look forward to.",
+      "cta": "Feel better today",
+      "headline_no_name": "Upgrade your daily mood",
+      "angle": "playful",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    }
+  ]
+}

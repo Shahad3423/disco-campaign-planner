@@ -1,0 +1,118 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "ships in 6 weeks"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported shipping timeline claim"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "shipping in 6 weeks"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported shipping timeline claim",
+        "6-week shipping timeline conflicts with the persona's preference for last-minute shipping"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "shipping in 6 weeks"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported shipping timeline claim",
+        "6-week shipping timeline conflicts with the persona's preference for last-minute shipping"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "shipping in 6 weeks"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported shipping timeline claim",
+        "Lacks the specific sustainability claims or certifications preferred by this persona"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 3,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "reducing waste through slow manufacturing"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains unsupported environmental claim",
+        "Uses a vague eco claim ('reducing waste through slow manufacturing') which this persona explicitly avoids"
+      ],
+      "passed": false
+    }
+  ]
+}

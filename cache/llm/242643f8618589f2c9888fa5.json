@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "Optimize your daily system, {first_name}",
+      "body": "Fuel your routine with protein bars that don't taste like cardboard. Integrate clean macros into your tracking without sacrificing flavor.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Optimize your daily system",
+      "angle": "outcome-focused system integration",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The perfect treat to share, {first_name}",
+      "body": "Gift the active people in your life protein bars that don't taste like cardboard. A delicious way to show you care.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "The perfect treat to share",
+      "angle": "gifting and sharing",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 3,
+      "headline": "A Halloween treat they'll love, {first_name}",
+      "body": "Skip the candy and share protein bars that don't taste like cardboard. The ultimate Halloween surprise for your fitness friends.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "A Halloween treat they'll love",
+      "angle": "seasonal gifting",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}

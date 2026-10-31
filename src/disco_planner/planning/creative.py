@@ -81,6 +81,8 @@ def generate_creatives(
         fulfillment=profile.fulfillment_notes or "none stated",
         moments=", ".join(moments) or "none", personas=personas,
     )
+    n_variants = catalog.config("scoring")["personas"]["variants_per_persona"]
+    key = lambda x: (x.persona_id, x.variant)
     log = {"rounds": 0, "rewritten": []}
     feedback = ""
     variants: list[CreativeVariant] = []
@@ -88,22 +90,23 @@ def generate_creatives(
 
     for round_ in range(2):  # generate, then at most one rewrite of failures
         log["rounds"] = round_ + 1
-        system, user = prompts.render("creative_generate", feedback=feedback, **context)
-        new = generate(provider, system, user, CreativeSet, temperature=0.7).variants
-        new_by_persona = {v.persona_id: v for v in new}
+        system, user = prompts.render("creative_generate", feedback=feedback, n_variants=str(n_variants), **context)
+        new = {key(v): v for v in generate(provider, system, user, CreativeSet, temperature=0.7).variants}
         if not variants:
-            variants = [new_by_persona[m.persona_id] for m in selected if m.persona_id in new_by_persona]
+            wanted = [(m.persona_id, i) for m in selected for i in range(1, n_variants + 1)]
+            variants = [new[k] for k in wanted if k in new]
         else:
-            variants = [new_by_persona.get(v.persona_id, v) if v.persona_id in log["rewritten"] else v for v in variants]
+            rewritten = {tuple(k) for k in log["rewritten"]}
+            variants = [new.get(key(v), v) if key(v) in rewritten else v for v in variants]
 
         system, user = prompts.render(
             "creative_review", claims=context["claims"], personas=personas,
             variants=json.dumps([v.model_dump() for v in variants], indent=1),
         )
         reviews = generate(provider, system, user, ReviewSet, temperature=0.0).reviews
-        review_by_persona = {r.persona_id: r for r in reviews}
+        review_by_key = {key(r): r for r in reviews}
         for v in variants:
-            r = review_by_persona.get(v.persona_id)
+            r = review_by_key.get(key(v))
             rules = rule_check(v)
             if r and rules:
                 r.issues.extend(rules)
@@ -112,8 +115,8 @@ def generate_creatives(
         failed = [r for r in reviews if not r.passed]
         if not failed or round_ == 1:
             break
-        log["rewritten"] = [r.persona_id for r in failed]
-        feedback = "Rewrite ONLY these variants, fixing the reviewer's issues (return just them):\n" + "\n".join(
-            f"- {r.persona_id}: issues={r.issues}; unsupported_claims={r.unsupported_claims}" for r in failed
+        log["rewritten"] = [list(key(r)) for r in failed]
+        feedback = "Rewrite ONLY these variants (keep their persona_id and variant number), fixing the reviewer's issues:\n" + "\n".join(
+            f"- {r.persona_id} variant {r.variant}: issues={r.issues}; unsupported_claims={r.unsupported_claims}" for r in failed
         )
     return variants, reviews, log

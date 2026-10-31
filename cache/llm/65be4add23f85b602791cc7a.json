@@ -1,0 +1,130 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "{first_name}, protect your morning workout",
+      "body": "Swap alcohol for a functional cocktail alternative. Enjoy a non-alcoholic sparkling drink with adaptogens and feel good tomorrow.",
+      "cta": "Shop cocktail swaps",
+      "headline_no_name": "Protect your morning workout",
+      "angle": "performance claims and recovery optimization",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Hit your goals without the hangover",
+      "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+      "cta": "Shop sparkling cans",
+      "headline_no_name": "Hit your goals without the hangover",
+      "angle": "performance-focused hangover avoidance",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 3,
+      "headline": "{first_name}, meet your new functional swap",
+      "body": "A sparkling drink with adaptogens. It's a functional cocktail alternative designed for those who want to feel good without a hangover.",
+      "cta": "Shop adaptogens",
+      "headline_no_name": "Meet your new functional swap",
+      "angle": "technical/functional alternative swap",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your evening ritual",
+      "body": "Choose a non-alcoholic sparkling drink with adaptogens. A functional cocktail alternative for people who want to feel good.",
+      "cta": "Shop adaptogens",
+      "headline_no_name": "Optimize your evening ritual",
+      "angle": "outcome-focused routine optimization",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Upgrade to functional adaptogens",
+      "body": "Try a non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative to help you feel good without a hangover.",
+      "cta": "Shop functional cans",
+      "headline_no_name": "Upgrade to functional adaptogens",
+      "angle": "ingredient transparency and functional benefits",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "Feel good tomorrow with zero hangover",
+      "body": "Swap alcohol for a functional cocktail alternative. A sparkling drink with adaptogens made for people who want to feel good.",
+      "cta": "Shop the alternative",
+      "headline_no_name": "Feel good tomorrow with zero hangover",
+      "angle": "system-focused hangover avoidance",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "All the vibes, none of the hangover",
+      "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+      "cta": "Shop sparkling cans",
+      "headline_no_name": "All the vibes, none of the hangover",
+      "angle": "vibe-forward identity expression",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "{first_name}, spooky season, zero hangovers",
+      "body": "Halloween fun, zero hangover. Try this non-alcoholic sparkling drink with adaptogens, a functional cocktail alternative to feel good.",
+      "cta": "Shop festive sips",
+      "headline_no_name": "Spooky season, zero hangovers",
+      "angle": "seasonal playful moment",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 3,
+      "headline": "{first_name}, meet your new favorite aesthetic",
+      "body": "A gorgeous non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+      "cta": "Try functional sips",
+      "headline_no_name": "Meet your new favorite aesthetic",
+      "angle": "aesthetic-forward styling",
+      "claims_used": [
+        "Non-alcoholic sparkling drink with adaptogens",
+        "For people who want to feel good without a hangover",
+        "Kind of like a functional cocktail alternative"
+      ]
+    }
+  ]
+}

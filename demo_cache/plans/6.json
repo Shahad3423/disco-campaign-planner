@@ -1277,11 +1277,50 @@
  "creatives": [
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "headline": "{first_name}, optimize your backcountry system",
+   "body": "Technical outerwear engineered for serious backcountry skiers. Experience the shells that professional patrollers trust.",
+   "cta": "Shop technical gear",
+   "headline_no_name": "Optimize your backcountry system",
+   "angle": "outcome-focused and technical system optimization",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
    "headline": "Optimize your backcountry system, {first_name}",
-   "body": "Technical outerwear designed for serious backcountry skiers. Optimize your mountain system with the actual shells that patrollers wear.",
+   "body": "Protect your physical output. Our technical outerwear shells are what patrollers wear, built for serious backcountry skiers.",
    "cta": "Shop our shells",
    "headline_no_name": "Optimize your backcountry system",
-   "angle": "Framing technical outerwear as a high-performance system validated by the field-testing of ski patrollers.",
+   "angle": "Outcome-focused physical system optimization",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "headline": "{first_name}, gear built for the backcountry",
+   "body": "Elevate your winter performance. Discover technical outerwear designed specifically for serious backcountry skiers.",
+   "cta": "Shop our shells",
+   "headline_no_name": "Gear built for the backcountry",
+   "angle": "outcome-focused physical performance optimization",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 1,
+   "headline": "{first_name}, the choice of mountain patrollers",
+   "body": "Invest in lasting quality. Our technical outerwear shells are what patrollers wear for serious backcountry skiing.",
+   "cta": "Shop quality shells",
+   "headline_no_name": "The choice of mountain patrollers",
+   "angle": "heritage and trust-focused professional standard",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1289,11 +1328,37 @@
   },
   {
    "persona_id": "persona_005",
-   "headline": "{first_name}, discover the choice of patrollers",
-   "body": "Built for longevity and serious backcountry skiers. Our technical outerwear shells are trusted and worn by professional patrollers.",
+   "variant": 2,
+   "headline": "Technical outerwear for serious skiers",
+   "body": "Built for the demanding conditions of the backcountry. Discover the shells trusted and worn by professional patrollers.",
    "cta": "Shop our shells",
-   "headline_no_name": "Discover the choice of patrollers",
-   "angle": "understated quality, longevity, and professional trust",
+   "headline_no_name": "Technical outerwear for serious skiers",
+   "angle": "understated quality and longevity",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
+   "headline": "{first_name}, understated backcountry protection",
+   "body": "Classic design meets elite performance. Explore the technical outerwear shells designed for serious backcountry skiers.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Understated backcountry protection",
+   "angle": "understated aesthetic and premium craftsmanship",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "headline": "{first_name}, the ultimate gift for serious skiers",
+   "body": "Gift the technical outerwear shells that professional patrollers wear. Perfect for the serious backcountry skier in your life.",
+   "cta": "Shop premium gifts",
+   "headline_no_name": "The ultimate gift for serious skiers",
+   "angle": "premium and impressive gifting",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1301,11 +1366,25 @@
   },
   {
    "persona_id": "persona_010",
-   "headline": "The ultimate gift for serious skiers, {first_name}",
-   "body": "Give the technical outerwear that patrollers wear. Our high-performance shells are designed for serious backcountry skiers.",
-   "cta": "Shop premium shells",
-   "headline_no_name": "The ultimate gift for serious skiers",
-   "angle": "premium and impressive gifting for serious skiers",
+   "variant": 2,
+   "headline": "Give the shells that professional patrollers wear",
+   "body": "Make an impression with technical outerwear designed for serious backcountry skiers. A premium gift built for the mountains.",
+   "cta": "Gift our shells",
+   "headline_no_name": "Give the shells that professional patrollers wear",
+   "angle": "impressive presentation and elite standard gift",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "headline": "{first_name}, early winter gifting made easy",
+   "body": "Beat the winter rush. Gift them the technical outerwear shells worn by professional patrollers and serious backcountry skiers.",
+   "cta": "Shop winter gifts",
+   "headline_no_name": "Early winter gifting made easy",
+   "angle": "seasonal gifting convenience",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1313,11 +1392,37 @@
   },
   {
    "persona_id": "persona_009",
-   "headline": "Perform at your peak, {first_name}",
-   "body": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear to perform in the toughest mountain conditions.",
+   "variant": 1,
+   "headline": "{first_name}, high-performance backcountry shells",
+   "body": "Engineered for peak performance. Our technical outerwear shells are designed for serious backcountry skiers.",
    "cta": "Shop technical gear",
-   "headline_no_name": "Perform at your peak",
-   "angle": "athletic performance and professional patroller endorsement",
+   "headline_no_name": "High-performance backcountry shells",
+   "angle": "technical fabric and high performance",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "Wear what professional patrollers wear",
+   "body": "Train hard in technical outerwear built for serious backcountry skiers. These shells are what professional patrollers rely on.",
+   "cta": "Shop patroller gear",
+   "headline_no_name": "Wear what professional patrollers wear",
+   "angle": "athlete and professional endorsement",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "headline": "{first_name}, gear for serious backcountry skiing",
+   "body": "Match your intensity. Experience technical outerwear shells built for serious backcountry skiers and trusted by patrollers.",
+   "cta": "Shop our shells",
+   "headline_no_name": "Gear for serious backcountry skiing",
+   "angle": "identity-adjacent athletic intensity",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1327,6 +1432,29 @@
  "reviews": [
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": false,
+   "issues": [
+    "Headline and angle are nearly identical to Variant 1, only shifting the placement of the first name placeholder."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1336,6 +1464,27 @@
   },
   {
    "persona_id": "persona_005",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1345,7 +1494,28 @@
   },
   {
    "persona_id": "persona_010",
-   "persona_fit": 4,
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1354,6 +1524,27 @@
   },
   {
    "persona_id": "persona_009",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1381,12 +1572,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.51-$0.71 per click (median $0.59), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.51-$0.70 per click (median $0.59), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
     "low": 0.51,
     "mid": 0.59,
-    "high": 0.71
+    "high": 0.7
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1394,7 +1585,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4959.74,
+   "planned_spend_usd": 4972.47,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1402,19 +1593,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 221.7,
-    "mid": 443.5,
-    "high": 798.2
+    "low": 221.5,
+    "mid": 443.0,
+    "high": 797.3
    },
-   "forecast_without_share_cap": 443.5,
+   "forecast_without_share_cap": 443.0,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 25854.6,
-   "spend_at_full_inventory_usd": 412790.58,
+   "spend_at_full_inventory_usd": 407040.14,
    "replan_options": [],
-   "expected_impressions": 310000,
-   "expected_reach": 193750,
+   "expected_impressions": 313000,
+   "expected_reach": 195625,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1423,88 +1614,88 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.56,
-     "budget_usd": 2775.52,
+     "share": 0.364,
+     "budget_usd": 1810.2,
      "cpc_bid_usd": 0.41,
      "start_bid_usd": 0.41,
-     "win_share": 0.007,
-     "avg_price_paid": 0.4,
+     "win_share": 0.005,
+     "avg_price_paid": 0.39,
      "market_price": {
       "low": 0.53,
-      "mid": 0.64,
-      "high": 0.76
+      "mid": 0.62,
+      "high": 0.74
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 5544.0,
-      "mid": 6930.0,
-      "high": 8316.0
+      "low": 3696.0,
+      "mid": 4620.0,
+      "high": 5544.0
      },
      "expected_conversions": {
-      "low": 116.4,
-      "mid": 242.5,
-      "high": 436.6
+      "low": 77.6,
+      "mid": 161.7,
+      "high": 291.1
      },
      "expected_units": {
-      "low": 121.3,
-      "mid": 242.5,
-      "high": 436.6
+      "low": 80.8,
+      "mid": 161.7,
+      "high": 291.1
      },
-     "capacity_usd": 307609.33,
-     "expected_impressions": 165000,
-     "expected_reach": 103125,
+     "capacity_usd": 302021.19,
+     "expected_impressions": 110000,
+     "expected_reach": 68750,
      "requires_host_approval": false,
-     "rationale": "market price $0.53-$0.76 (median $0.64); bidding $0.41 wins ~1% of page views, paying ~$0.40 per click (second price)"
+     "rationale": "market price $0.53-$0.74 (median $0.62); bidding $0.41 wins ~0% of page views, paying ~$0.39 per click (second price)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.44,
-     "budget_usd": 2184.22,
+     "share": 0.636,
+     "budget_usd": 3162.26,
      "cpc_bid_usd": 0.4,
      "start_bid_usd": 0.4,
-     "win_share": 0.025,
-     "avg_price_paid": 0.37,
+     "win_share": 0.035,
+     "avg_price_paid": 0.38,
      "market_price": {
       "low": 0.51,
-      "mid": 0.59,
-      "high": 0.71
+      "mid": 0.58,
+      "high": 0.69
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 4730.0,
-      "mid": 5912.0,
-      "high": 7095.0
+      "low": 6622.0,
+      "mid": 8277.0,
+      "high": 9933.0
      },
      "expected_conversions": {
-      "low": 96.4,
-      "mid": 200.9,
-      "high": 361.6
+      "low": 135.0,
+      "mid": 281.3,
+      "high": 506.3
      },
      "expected_units": {
-      "low": 100.5,
-      "mid": 200.9,
-      "high": 361.6
+      "low": 140.6,
+      "mid": 281.3,
+      "high": 506.3
      },
-     "capacity_usd": 73972.52,
-     "expected_impressions": 145000,
-     "expected_reach": 90625,
+     "capacity_usd": 72941.4,
+     "expected_impressions": 203000,
+     "expected_reach": 126875,
      "requires_host_approval": false,
-     "rationale": "market price $0.51-$0.71 (median $0.59); bidding $0.40 wins ~2% of page views, paying ~$0.37 per click (second price)"
+     "rationale": "market price $0.51-$0.69 (median $0.58); bidding $0.40 wins ~4% of page views, paying ~$0.38 per click (second price)"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.5,
-     "start_bid_usd": 0.5,
+     "cpc_bid_usd": 0.51,
+     "start_bid_usd": 0.51,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.5,
-      "mid": 0.58,
-      "high": 0.68
+      "low": 0.51,
+      "mid": 0.59,
+      "high": 0.7
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1522,11 +1713,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 31208.72,
+     "capacity_usd": 32077.55,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.50-$0.68 (median $0.58); bidding $0.50 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.51-$0.70); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1550,19 +1741,19 @@
     {
      "publisher_id": "pub_002",
      "start_bid": 0.41,
-     "max_bid": 0.69,
+     "max_bid": 0.66,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
      "start_bid": 0.4,
-     "max_bid": 0.63,
+     "max_bid": 0.62,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.5,
-     "max_bid": 0.62,
+     "start_bid": 0.51,
+     "max_bid": 0.64,
      "floor": 0.05
     }
    ],
@@ -1676,7 +1867,20 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_001:1",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_016",
+     "pub_002",
+     "pub_017"
+    ],
+    "headline_template": "{first_name}, optimize your backcountry system",
+    "headline_no_name": "Optimize your backcountry system",
+    "body": "Technical outerwear engineered for serious backcountry skiers. Experience the shells that professional patrollers trust.",
+    "cta": "Shop technical gear"
+   },
+   {
+    "variant_id": "persona_001:2",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_016",
@@ -1685,47 +1889,138 @@
     ],
     "headline_template": "Optimize your backcountry system, {first_name}",
     "headline_no_name": "Optimize your backcountry system",
-    "body": "Technical outerwear designed for serious backcountry skiers. Optimize your mountain system with the actual shells that patrollers wear.",
+    "body": "Protect your physical output. Our technical outerwear shells are what patrollers wear, built for serious backcountry skiers.",
     "cta": "Shop our shells"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_001:3",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_016",
+     "pub_002",
+     "pub_017"
+    ],
+    "headline_template": "{first_name}, gear built for the backcountry",
+    "headline_no_name": "Gear built for the backcountry",
+    "body": "Elevate your winter performance. Discover technical outerwear designed specifically for serious backcountry skiers.",
+    "cta": "Shop our shells"
+   },
+   {
+    "variant_id": "persona_005:1",
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_016",
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "{first_name}, discover the choice of patrollers",
-    "headline_no_name": "Discover the choice of patrollers",
-    "body": "Built for longevity and serious backcountry skiers. Our technical outerwear shells are trusted and worn by professional patrollers.",
+    "headline_template": "{first_name}, the choice of mountain patrollers",
+    "headline_no_name": "The choice of mountain patrollers",
+    "body": "Invest in lasting quality. Our technical outerwear shells are what patrollers wear for serious backcountry skiing.",
+    "cta": "Shop quality shells"
+   },
+   {
+    "variant_id": "persona_005:2",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_016",
+     "pub_002",
+     "pub_017"
+    ],
+    "headline_template": "Technical outerwear for serious skiers",
+    "headline_no_name": "Technical outerwear for serious skiers",
+    "body": "Built for the demanding conditions of the backcountry. Discover the shells trusted and worn by professional patrollers.",
     "cta": "Shop our shells"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_005:3",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_016",
+     "pub_002",
+     "pub_017"
+    ],
+    "headline_template": "{first_name}, understated backcountry protection",
+    "headline_no_name": "Understated backcountry protection",
+    "body": "Classic design meets elite performance. Explore the technical outerwear shells designed for serious backcountry skiers.",
+    "cta": "Shop the collection"
+   },
+   {
+    "variant_id": "persona_010:1",
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_017",
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "The ultimate gift for serious skiers, {first_name}",
+    "headline_template": "{first_name}, the ultimate gift for serious skiers",
     "headline_no_name": "The ultimate gift for serious skiers",
-    "body": "Give the technical outerwear that patrollers wear. Our high-performance shells are designed for serious backcountry skiers.",
-    "cta": "Shop premium shells"
+    "body": "Gift the technical outerwear shells that professional patrollers wear. Perfect for the serious backcountry skier in your life.",
+    "cta": "Shop premium gifts"
    },
    {
-    "variant_id": "v4",
+    "variant_id": "persona_010:2",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_016"
+    ],
+    "headline_template": "Give the shells that professional patrollers wear",
+    "headline_no_name": "Give the shells that professional patrollers wear",
+    "body": "Make an impression with technical outerwear designed for serious backcountry skiers. A premium gift built for the mountains.",
+    "cta": "Gift our shells"
+   },
+   {
+    "variant_id": "persona_010:3",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_016"
+    ],
+    "headline_template": "{first_name}, early winter gifting made easy",
+    "headline_no_name": "Early winter gifting made easy",
+    "body": "Beat the winter rush. Gift them the technical outerwear shells worn by professional patrollers and serious backcountry skiers.",
+    "cta": "Shop winter gifts"
+   },
+   {
+    "variant_id": "persona_009:1",
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_017",
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "Perform at your peak, {first_name}",
-    "headline_no_name": "Perform at your peak",
-    "body": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear to perform in the toughest mountain conditions.",
+    "headline_template": "{first_name}, high-performance backcountry shells",
+    "headline_no_name": "High-performance backcountry shells",
+    "body": "Engineered for peak performance. Our technical outerwear shells are designed for serious backcountry skiers.",
     "cta": "Shop technical gear"
+   },
+   {
+    "variant_id": "persona_009:2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_016"
+    ],
+    "headline_template": "Wear what professional patrollers wear",
+    "headline_no_name": "Wear what professional patrollers wear",
+    "body": "Train hard in technical outerwear built for serious backcountry skiers. These shells are what professional patrollers rely on.",
+    "cta": "Shop patroller gear"
+   },
+   {
+    "variant_id": "persona_009:3",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_017",
+     "pub_002",
+     "pub_016"
+    ],
+    "headline_template": "{first_name}, gear for serious backcountry skiing",
+    "headline_no_name": "Gear for serious backcountry skiing",
+    "body": "Match your intensity. Experience technical outerwear shells built for serious backcountry skiers and trusted by patrollers.",
+    "cta": "Shop our shells"
    }
   ],
   "frequency_cap": {
@@ -1758,12 +2053,15 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 44.54
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_001"
+   [
+    "persona_001",
+    2
+   ]
   ]
  }
 }

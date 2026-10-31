@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "headline": "{first_name}, make kitten parenting easier",
+      "body": "Get toys, food samples, and a booklet for your cat's first three months delivered to your door. Save time and skip the store trips.",
+      "cta": "Start subscription",
+      "headline_no_name": "Make kitten parenting easier",
+      "angle": "time-saving",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

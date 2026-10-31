@@ -1303,10 +1303,11 @@
  "creatives": [
   {
    "persona_id": "persona_003",
-   "headline": "Spooky season cozy vibes, {first_name}",
-   "body": "Get ready for Halloween with small-batch soy candles. Hand-poured in Vermont with natural soy wax and no synthetic fragrances.",
-   "cta": "Shop spooky season",
-   "headline_no_name": "Spooky season cozy vibes",
+   "variant": 1,
+   "headline": "{first_name}, upgrade your space's vibe",
+   "body": "Hand-poured in Vermont in small batches. Made with natural soy wax and absolutely no synthetic fragrances.",
+   "cta": "Shop hand-poured",
+   "headline_no_name": "Upgrade your space's vibe",
    "angle": "aesthetic-forward",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1315,11 +1316,40 @@
    ]
   },
   {
-   "persona_id": "persona_005",
-   "headline": "Hand-poured Vermont candles for {first_name}",
-   "body": "Discover small-batch candles poured by hand in Vermont. Made with natural soy wax and absolutely no synthetic fragrances.",
+   "persona_id": "persona_003",
+   "variant": 2,
+   "headline": "Set a cozy, spooky mood, {first_name}",
+   "body": "Perfect for Halloween. Small-batch soy candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances.",
+   "cta": "Shop cozy candles",
+   "headline_no_name": "Set a cozy, spooky mood",
+   "angle": "novelty",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 3,
+   "headline": "Real ingredients only for your space",
+   "body": "No synthetic fragrances here. Just natural soy wax candles, poured by hand in small batches in Vermont.",
    "cta": "Shop small-batch",
-   "headline_no_name": "Hand-poured Vermont candles",
+   "headline_no_name": "Real ingredients only for your space",
+   "angle": "values-aligned",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 1,
+   "headline": "{first_name}, discover Vermont craftsmanship.",
+   "body": "Hand-poured in small batches, our soy wax candles feature no synthetic fragrances. Simple, understated quality for your home.",
+   "cta": "Shop soy candles",
+   "headline_no_name": "Discover Vermont craftsmanship.",
    "angle": "craftsmanship",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1328,11 +1358,55 @@
    ]
   },
   {
-   "persona_id": "persona_006",
-   "headline": "{first_name}, meet Vermont small-batch candles.",
-   "body": "Know exactly how your candle is made. We hand-pour every small batch in Vermont using natural soy wax and zero synthetic fragrances.",
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "{first_name}, discover understated quality",
+   "body": "Elegant small-batch candles poured by hand in Vermont. Crafted with natural soy wax and free from synthetic fragrances.",
    "cta": "Shop soy candles",
-   "headline_no_name": "Small-batch candles, poured by hand in Vermont.",
+   "headline_no_name": "Discover understated quality",
+   "angle": "understated",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
+   "headline": "An elegant gift from Vermont",
+   "body": "Mostly bought as gifts, these small-batch candles are poured by hand with natural soy wax and contain no synthetic fragrances.",
+   "cta": "Shop premium gifts",
+   "headline_no_name": "An elegant gift from Vermont",
+   "angle": "quality-focused",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 1,
+   "headline": "{first_name}, choose natural soy wax.",
+   "body": "Our Vermont candles are hand-poured in small batches using only natural soy wax and absolutely no synthetic fragrances.",
+   "cta": "Shop soy candles",
+   "headline_no_name": "Choose natural soy wax.",
+   "angle": "specific sustainability claims",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 2,
+   "headline": "Pure candles with zero synthetic fragrances",
+   "body": "Hand-poured in Vermont in small batches using only natural soy wax. Transparent ingredients for a clean, conscious home.",
+   "cta": "Shop clean candles",
+   "headline_no_name": "Pure candles with zero synthetic fragrances",
    "angle": "supply chain transparency",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
@@ -1341,23 +1415,89 @@
    ]
   },
   {
-   "persona_id": "persona_010",
-   "headline": "The perfect gift for {first_name}'s list",
-   "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont with natural soy wax and no synthetic fragrances.",
-   "cta": "Shop candle gifts",
-   "headline_no_name": "The perfect hand-poured gift",
-   "angle": "giftable",
+   "persona_id": "persona_006",
+   "variant": 3,
+   "headline": "Support small-batch Vermont craft",
+   "body": "Our candles are poured by hand in Vermont in small batches. Made responsibly with natural soy wax and no synthetic fragrances.",
+   "cta": "Shop small-batch",
+   "headline_no_name": "Support small-batch Vermont craft",
+   "angle": "specific sustainability claims",
    "claims_used": [
-    "Mostly bought as gifts",
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
     "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "headline": "Give a thoughtful gift from Vermont",
+   "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont using natural soy wax and no synthetic fragrances.",
+   "cta": "Shop gift candles",
+   "headline_no_name": "Give a thoughtful gift from Vermont",
+   "angle": "giftable",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "{first_name}, find the perfect gift",
+   "body": "Mostly bought as gifts, our hand-poured Vermont soy candles feature natural soy wax and absolutely no synthetic fragrances.",
+   "cta": "Browse gifts",
+   "headline_no_name": "Find the perfect gift",
+   "angle": "premium presentation",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 3,
+   "headline": "Hand-poured gifts they will love",
+   "body": "These small-batch Vermont candles make the perfect gift. Crafted with natural soy wax and free from synthetic fragrances.",
+   "cta": "Shop candle gifts",
+   "headline_no_name": "Hand-poured gifts they will love",
+   "angle": "giftable",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
    ]
   }
  ],
  "reviews": [
   {
    "persona_id": "persona_003",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1367,6 +1507,7 @@
   },
   {
    "persona_id": "persona_005",
+   "variant": 1,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1375,7 +1516,76 @@
    "passed": true
   },
   {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
    "persona_id": "persona_006",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 2,
+   "persona_fit": 3,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Transparent ingredients"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Uses vague eco claims ('clean, conscious home') and an unsupported claim of 'transparent ingredients' which may trigger greenwashing skepticism for this persona."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 3,
+   "persona_fit": 3,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Made responsibly"
+   ],
+   "distinct_from_others": true,
+   "issues": [
+    "Uses vague eco-positioning ('made responsibly') which this persona explicitly avoids."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1385,14 +1595,15 @@
   },
   {
    "persona_id": "persona_010",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
    "issues": [
-    "The phrasing 'Mostly bought as gifts.' at the start of the body copy is grammatically awkward."
+    "Lacks distinctiveness from Variant 1 and Variant 2, sharing highly repetitive phrasing and the same core angle."
    ],
-   "passed": true
+   "passed": false
   }
  ],
  "config": {
@@ -1414,12 +1625,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.83-$1.08 per click (median $0.93), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.85-$1.11 per click (median $0.96), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.83,
-    "mid": 0.93,
-    "high": 1.08
+    "low": 0.85,
+    "mid": 0.96,
+    "high": 1.11
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1427,7 +1638,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4982.41,
+   "planned_spend_usd": 4945.19,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1435,19 +1646,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 80.1,
-    "mid": 160.2,
-    "high": 288.4
+    "low": 78.3,
+    "mid": 156.6,
+    "high": 281.8
    },
-   "forecast_without_share_cap": 160.2,
+   "forecast_without_share_cap": 156.6,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 6961.3,
-   "spend_at_full_inventory_usd": 317622.89,
+   "spend_at_full_inventory_usd": 318689.61,
    "replan_options": [],
-   "expected_impressions": 232000,
-   "expected_reach": 145000,
+   "expected_impressions": 243000,
+   "expected_reach": 151875,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1456,110 +1667,110 @@
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.626,
-     "budget_usd": 3117.78,
-     "cpc_bid_usd": 0.69,
-     "start_bid_usd": 0.69,
-     "win_share": 0.04,
-     "avg_price_paid": 0.66,
+     "share": 0.564,
+     "budget_usd": 2789.64,
+     "cpc_bid_usd": 0.7,
+     "start_bid_usd": 0.7,
+     "win_share": 0.035,
+     "avg_price_paid": 0.68,
      "market_price": {
-      "low": 0.83,
-      "mid": 0.93,
-      "high": 1.08
+      "low": 0.85,
+      "mid": 0.96,
+      "high": 1.11
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 3763.0,
-      "mid": 4704.0,
-      "high": 5645.0
+      "low": 3293.0,
+      "mid": 4116.0,
+      "high": 4939.0
      },
      "expected_conversions": {
-      "low": 47.4,
-      "mid": 98.8,
-      "high": 177.8
+      "low": 41.5,
+      "mid": 86.4,
+      "high": 155.6
      },
      "expected_units": {
-      "low": 49.4,
-      "mid": 98.8,
-      "high": 177.8
+      "low": 43.2,
+      "mid": 86.4,
+      "high": 155.6
      },
-     "capacity_usd": 58999.26,
-     "expected_impressions": 112000,
-     "expected_reach": 70000,
+     "capacity_usd": 60654.59,
+     "expected_impressions": 98000,
+     "expected_reach": 61250,
      "requires_host_approval": false,
-     "rationale": "market price $0.83-$1.08 (median $0.93); bidding $0.69 wins ~4% of page views, paying ~$0.66 per click (second price)"
+     "rationale": "market price $0.85-$1.11 (median $0.96); bidding $0.70 wins ~4% of page views, paying ~$0.68 per click (second price)"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.087,
-     "budget_usd": 431.42,
-     "cpc_bid_usd": 0.65,
-     "start_bid_usd": 0.65,
-     "win_share": 0.005,
-     "avg_price_paid": 0.61,
+     "share": 0.042,
+     "budget_usd": 206.06,
+     "cpc_bid_usd": 0.58,
+     "start_bid_usd": 0.58,
+     "win_share": 0.003,
+     "avg_price_paid": 0.58,
      "market_price": {
-      "low": 0.92,
-      "mid": 1.05,
-      "high": 1.24
+      "low": 0.95,
+      "mid": 1.08,
+      "high": 1.27
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 570.0,
-      "mid": 713.0,
-      "high": 856.0
+      "low": 285.0,
+      "mid": 357.0,
+      "high": 428.0
      },
      "expected_conversions": {
-      "low": 6.8,
-      "mid": 14.1,
-      "high": 25.4
+      "low": 3.4,
+      "mid": 7.1,
+      "high": 12.7
      },
      "expected_units": {
-      "low": 7.1,
-      "mid": 14.1,
-      "high": 25.4
+      "low": 3.5,
+      "mid": 7.1,
+      "high": 12.7
      },
-     "capacity_usd": 80442.12,
-     "expected_impressions": 18000,
-     "expected_reach": 11250,
+     "capacity_usd": 82702.1,
+     "expected_impressions": 9000,
+     "expected_reach": 5625,
      "requires_host_approval": false,
-     "rationale": "market price $0.92-$1.24 (median $1.05); bidding $0.65 wins ~0% of page views, paying ~$0.61 per click (second price)"
+     "rationale": "market price $0.95-$1.27 (median $1.08); bidding $0.58 wins ~0% of page views, paying ~$0.58 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.288,
-     "budget_usd": 1433.2,
+     "share": 0.394,
+     "budget_usd": 1949.49,
      "cpc_bid_usd": 0.5,
      "start_bid_usd": 0.5,
-     "win_share": 0.007,
-     "avg_price_paid": 0.46,
+     "win_share": 0.01,
+     "avg_price_paid": 0.47,
      "market_price": {
-      "low": 0.69,
-      "mid": 0.84,
-      "high": 1.0
+      "low": 0.68,
+      "mid": 0.81,
+      "high": 0.96
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 2485.0,
-      "mid": 3107.0,
-      "high": 3728.0
+      "low": 3314.0,
+      "mid": 4142.0,
+      "high": 4971.0
      },
      "expected_conversions": {
-      "low": 22.7,
-      "mid": 47.3,
-      "high": 85.2
+      "low": 30.3,
+      "mid": 63.1,
+      "high": 113.5
      },
      "expected_units": {
-      "low": 23.7,
-      "mid": 47.3,
-      "high": 85.2
+      "low": 31.5,
+      "mid": 63.1,
+      "high": 113.5
      },
-     "capacity_usd": 178181.51,
-     "expected_impressions": 102000,
-     "expected_reach": 63750,
+     "capacity_usd": 175332.92,
+     "expected_impressions": 136000,
+     "expected_reach": 85000,
      "requires_host_approval": false,
-     "rationale": "market price $0.69-$1.00 (median $0.84); bidding $0.50 wins ~1% of page views, paying ~$0.46 per click (second price)"
+     "rationale": "market price $0.68-$0.96 (median $0.81); bidding $0.50 wins ~1% of page views, paying ~$0.47 per click (second price)"
     }
    ],
    "warnings": []
@@ -1582,20 +1793,20 @@
    "host_bids": [
     {
      "publisher_id": "pub_014",
-     "start_bid": 0.69,
-     "max_bid": 0.98,
+     "start_bid": 0.7,
+     "max_bid": 1.01,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_011",
-     "start_bid": 0.65,
-     "max_bid": 1.11,
+     "start_bid": 0.58,
+     "max_bid": 1.14,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
      "start_bid": 0.5,
-     "max_bid": 0.89,
+     "max_bid": 0.86,
      "floor": 0.05
     }
    ],
@@ -1709,55 +1920,159 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_003:1",
     "persona_id": "persona_003",
     "publisher_ids": [
      "pub_014",
      "pub_003",
      "pub_011"
     ],
-    "headline_template": "Spooky season cozy vibes, {first_name}",
-    "headline_no_name": "Spooky season cozy vibes",
-    "body": "Get ready for Halloween with small-batch soy candles. Hand-poured in Vermont with natural soy wax and no synthetic fragrances.",
-    "cta": "Shop spooky season"
+    "headline_template": "{first_name}, upgrade your space's vibe",
+    "headline_no_name": "Upgrade your space's vibe",
+    "body": "Hand-poured in Vermont in small batches. Made with natural soy wax and absolutely no synthetic fragrances.",
+    "cta": "Shop hand-poured"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_003:2",
+    "persona_id": "persona_003",
+    "publisher_ids": [
+     "pub_014",
+     "pub_003",
+     "pub_011"
+    ],
+    "headline_template": "Set a cozy, spooky mood, {first_name}",
+    "headline_no_name": "Set a cozy, spooky mood",
+    "body": "Perfect for Halloween. Small-batch soy candles poured by hand in Vermont with natural soy wax and zero synthetic fragrances.",
+    "cta": "Shop cozy candles"
+   },
+   {
+    "variant_id": "persona_003:3",
+    "persona_id": "persona_003",
+    "publisher_ids": [
+     "pub_014",
+     "pub_003",
+     "pub_011"
+    ],
+    "headline_template": "Real ingredients only for your space",
+    "headline_no_name": "Real ingredients only for your space",
+    "body": "No synthetic fragrances here. Just natural soy wax candles, poured by hand in small batches in Vermont.",
+    "cta": "Shop small-batch"
+   },
+   {
+    "variant_id": "persona_005:1",
     "persona_id": "persona_005",
     "publisher_ids": [
      "pub_014",
      "pub_003",
      "pub_011"
     ],
-    "headline_template": "Hand-poured Vermont candles for {first_name}",
-    "headline_no_name": "Hand-poured Vermont candles",
-    "body": "Discover small-batch candles poured by hand in Vermont. Made with natural soy wax and absolutely no synthetic fragrances.",
-    "cta": "Shop small-batch"
+    "headline_template": "{first_name}, discover Vermont craftsmanship.",
+    "headline_no_name": "Discover Vermont craftsmanship.",
+    "body": "Hand-poured in small batches, our soy wax candles feature no synthetic fragrances. Simple, understated quality for your home.",
+    "cta": "Shop soy candles"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_005:2",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_014",
+     "pub_003",
+     "pub_011"
+    ],
+    "headline_template": "{first_name}, discover understated quality",
+    "headline_no_name": "Discover understated quality",
+    "body": "Elegant small-batch candles poured by hand in Vermont. Crafted with natural soy wax and free from synthetic fragrances.",
+    "cta": "Shop soy candles"
+   },
+   {
+    "variant_id": "persona_005:3",
+    "persona_id": "persona_005",
+    "publisher_ids": [
+     "pub_014",
+     "pub_003",
+     "pub_011"
+    ],
+    "headline_template": "An elegant gift from Vermont",
+    "headline_no_name": "An elegant gift from Vermont",
+    "body": "Mostly bought as gifts, these small-batch candles are poured by hand with natural soy wax and contain no synthetic fragrances.",
+    "cta": "Shop premium gifts"
+   },
+   {
+    "variant_id": "persona_006:1",
     "persona_id": "persona_006",
     "publisher_ids": [
      "pub_011",
      "pub_003",
      "pub_014"
     ],
-    "headline_template": "{first_name}, meet Vermont small-batch candles.",
-    "headline_no_name": "Small-batch candles, poured by hand in Vermont.",
-    "body": "Know exactly how your candle is made. We hand-pour every small batch in Vermont using natural soy wax and zero synthetic fragrances.",
+    "headline_template": "{first_name}, choose natural soy wax.",
+    "headline_no_name": "Choose natural soy wax.",
+    "body": "Our Vermont candles are hand-poured in small batches using only natural soy wax and absolutely no synthetic fragrances.",
     "cta": "Shop soy candles"
    },
    {
-    "variant_id": "v4",
+    "variant_id": "persona_006:2",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_011",
+     "pub_003",
+     "pub_014"
+    ],
+    "headline_template": "Pure candles with zero synthetic fragrances",
+    "headline_no_name": "Pure candles with zero synthetic fragrances",
+    "body": "Hand-poured in Vermont in small batches using only natural soy wax. Transparent ingredients for a clean, conscious home.",
+    "cta": "Shop clean candles"
+   },
+   {
+    "variant_id": "persona_006:3",
+    "persona_id": "persona_006",
+    "publisher_ids": [
+     "pub_011",
+     "pub_003",
+     "pub_014"
+    ],
+    "headline_template": "Support small-batch Vermont craft",
+    "headline_no_name": "Support small-batch Vermont craft",
+    "body": "Our candles are poured by hand in Vermont in small batches. Made responsibly with natural soy wax and no synthetic fragrances.",
+    "cta": "Shop small-batch"
+   },
+   {
+    "variant_id": "persona_010:1",
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_003",
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "The perfect gift for {first_name}'s list",
-    "headline_no_name": "The perfect hand-poured gift",
-    "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont with natural soy wax and no synthetic fragrances.",
+    "headline_template": "Give a thoughtful gift from Vermont",
+    "headline_no_name": "Give a thoughtful gift from Vermont",
+    "body": "Mostly bought as gifts. These small-batch candles are poured by hand in Vermont using natural soy wax and no synthetic fragrances.",
+    "cta": "Shop gift candles"
+   },
+   {
+    "variant_id": "persona_010:2",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_003",
+     "pub_011",
+     "pub_014"
+    ],
+    "headline_template": "{first_name}, find the perfect gift",
+    "headline_no_name": "Find the perfect gift",
+    "body": "Mostly bought as gifts, our hand-poured Vermont soy candles feature natural soy wax and absolutely no synthetic fragrances.",
+    "cta": "Browse gifts"
+   },
+   {
+    "variant_id": "persona_010:3",
+    "persona_id": "persona_010",
+    "publisher_ids": [
+     "pub_003",
+     "pub_011",
+     "pub_014"
+    ],
+    "headline_template": "Hand-poured gifts they will love",
+    "headline_no_name": "Hand-poured gifts they will love",
+    "body": "These small-batch Vermont candles make the perfect gift. Crafted with natural soy wax and free from synthetic fragrances.",
     "cta": "Shop candle gifts"
    }
   ],
@@ -1794,12 +2109,19 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 44.16
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_006"
+   [
+    "persona_005",
+    1
+   ],
+   [
+    "persona_006",
+    1
+   ]
   ]
  }
 }

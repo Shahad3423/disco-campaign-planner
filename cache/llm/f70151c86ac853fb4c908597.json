@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 3,
+      "headline": "{first_name}, try this new thing for moms",
+      "body": "Save on a new kind of thing for moms. Get yours today with our exclusive first-order discount.",
+      "cta": "Get my discount",
+      "headline_no_name": "Try this new thing for moms",
+      "angle": "First-order discount",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 3,
+      "headline": "{first_name}, optimize your daily system",
+      "body": "A new kind of thing for moms, engineered to fit seamlessly into your daily wellness routine.",
+      "cta": "Shop the new formula",
+      "headline_no_name": "Optimize your daily system",
+      "angle": "Outcome-focused wellness optimization",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, save time with this new essential",
+      "body": "Simplify your busy schedule with a new kind of thing for moms. Designed to make your daily routine easier.",
+      "cta": "Simplify my routine",
+      "headline_no_name": "Save time with this new essential",
+      "angle": "Time-saving convenience",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 3,
+      "headline": "{first_name}, try this risk-free today",
+      "body": "Discover a new kind of thing for moms with the peace of mind of easy returns if it is not the perfect fit.",
+      "cta": "Try it risk-free",
+      "headline_no_name": "Try this new essential risk-free",
+      "angle": "Easy returns",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

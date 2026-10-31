@@ -1286,11 +1286,40 @@
  "creatives": [
   {
    "persona_id": "persona_009",
-   "headline": "Fuel your active recovery, {first_name}.",
-   "body": "A non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for people who want to feel good without a hangover.",
-   "cta": "Shop functional cans",
-   "headline_no_name": "Fuel your active recovery.",
-   "angle": "performance and active recovery focus using functional ingredients",
+   "variant": 1,
+   "headline": "{first_name}, protect your morning workout",
+   "body": "Swap alcohol for a functional cocktail alternative. Enjoy a non-alcoholic sparkling drink with adaptogens and feel good tomorrow.",
+   "cta": "Shop cocktail swaps",
+   "headline_no_name": "Protect your morning workout",
+   "angle": "performance claims and recovery optimization",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "Hit your goals without the hangover",
+   "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+   "cta": "Shop sparkling cans",
+   "headline_no_name": "Hit your goals without the hangover",
+   "angle": "performance-focused hangover avoidance",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "headline": "{first_name}, protect your morning workout.",
+   "body": "Keep your training on track. This non-alcoholic sparkling drink with adaptogens is a functional cocktail alternative with zero hangovers.",
+   "cta": "Shop adaptogens",
+   "headline_no_name": "Protect your morning workout.",
+   "angle": "Active lifestyle and training day optimization",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
     "For people who want to feel good without a hangover",
@@ -1299,24 +1328,82 @@
   },
   {
    "persona_id": "persona_001",
-   "headline": "{first_name}, optimize your night with adaptogens",
-   "body": "A functional cocktail alternative made for people who want to feel good without a hangover. Enjoy a non-alcoholic sparkling drink.",
-   "cta": "Order adaptogens",
-   "headline_no_name": "Optimize your night with adaptogens",
-   "angle": "Leans into an outcome-focused, transparent, and systemic approach to wellness using adaptogens as functional tools.",
+   "variant": 1,
+   "headline": "{first_name}, optimize your evening ritual",
+   "body": "Choose a non-alcoholic sparkling drink with adaptogens. A functional cocktail alternative for people who want to feel good.",
+   "cta": "Shop adaptogens",
+   "headline_no_name": "Optimize your evening ritual",
+   "angle": "outcome-focused routine optimization",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
-    "Kind of like a functional cocktail alternative",
-    "For people who want to feel good without a hangover"
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "headline": "Upgrade to functional adaptogens",
+   "body": "Try a non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative to help you feel good without a hangover.",
+   "cta": "Shop functional cans",
+   "headline_no_name": "Upgrade to functional adaptogens",
+   "angle": "ingredient transparency and functional benefits",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "headline": "{first_name}, optimize your evening ritual.",
+   "body": "Protect your sleep metrics. This non-alcoholic sparkling drink with adaptogens is a functional cocktail alternative for zero hangovers.",
+   "cta": "Shop adaptogens",
+   "headline_no_name": "Optimize your evening ritual.",
+   "angle": "System optimization and sleep protection",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
    ]
   },
   {
    "persona_id": "persona_003",
-   "headline": "Upgrade your social hour, {first_name}.",
-   "body": "This functional cocktail alternative matches your vibe. A non-alcoholic sparkling drink with adaptogens to feel good with no hangover.",
+   "variant": 1,
+   "headline": "All the vibes, none of the hangover",
+   "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
    "cta": "Shop sparkling cans",
-   "headline_no_name": "Upgrade your social hour.",
-   "angle": "aesthetic-forward and vibe-focused social drink alternative",
+   "headline_no_name": "All the vibes, none of the hangover",
+   "angle": "vibe-forward identity expression",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 2,
+   "headline": "{first_name}, elevate your aesthetic.",
+   "body": "A non-alcoholic sparkling drink with adaptogens that looks as good as it feels. A functional cocktail alternative with zero hangover.",
+   "cta": "Shop adaptogen sips",
+   "headline_no_name": "Elevate your aesthetic.",
+   "angle": "Aesthetic-forward social alternative",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover",
+    "Kind of like a functional cocktail alternative"
+   ]
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 3,
+   "headline": "{first_name}, meet your new favorite aesthetic",
+   "body": "A gorgeous non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+   "cta": "Try functional sips",
+   "headline_no_name": "Meet your new favorite aesthetic",
+   "angle": "aesthetic-forward styling",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
     "For people who want to feel good without a hangover",
@@ -1327,19 +1414,74 @@
  "reviews": [
   {
    "persona_id": "persona_009",
+   "variant": 1,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "Fuel your active recovery"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 3,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": false,
    "issues": [
-    "The headline claims the product fuels 'active recovery', which is an unsupported physiological/performance claim not present in the stated claims."
+    "Headline is identical to Variant 1 (except for a period), making the variants too similar for a clean A/B test."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_001",
+   "variant": 1,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 3,
+   "persona_fit": 5,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Protect your sleep metrics"
+   ],
+   "distinct_from_others": false,
+   "issues": [
+    "Headline is identical to Variant 1 (except for a period).",
+    "The claim 'Protect your sleep metrics' is unsupported by the advertiser's stated claims."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 1,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1349,6 +1491,17 @@
   },
   {
    "persona_id": "persona_003",
+   "variant": 2,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1376,12 +1529,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $1.15-$1.57 per click (median $1.33), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $1.18-$1.61 per click (median $1.36), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 1.15,
-    "mid": 1.33,
-    "high": 1.57
+    "low": 1.18,
+    "mid": 1.36,
+    "high": 1.61
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1389,7 +1542,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4860.57,
+   "planned_spend_usd": 4995.65,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1406,7 +1559,7 @@
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 10033.7,
-   "spend_at_full_inventory_usd": 165484.49,
+   "spend_at_full_inventory_usd": 170126.19,
    "replan_options": [],
    "expected_impressions": 247000,
    "expected_reach": 154375,
@@ -1419,15 +1572,15 @@
      "publisher_id": "pub_020",
      "publisher_name": "Pop & Sip",
      "share": 1.0,
-     "budget_usd": 4860.57,
-     "cpc_bid_usd": 0.49,
-     "start_bid_usd": 0.49,
+     "budget_usd": 4995.65,
+     "cpc_bid_usd": 0.51,
+     "start_bid_usd": 0.51,
      "win_share": 0.048,
-     "avg_price_paid": 0.47,
+     "avg_price_paid": 0.48,
      "market_price": {
-      "low": 0.6,
-      "mid": 0.7,
-      "high": 0.82
+      "low": 0.62,
+      "mid": 0.72,
+      "high": 0.85
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1445,25 +1598,25 @@
       "mid": 580.9,
       "high": 1045.7
      },
-     "capacity_usd": 80945.47,
+     "capacity_usd": 83206.83,
      "expected_impressions": 247000,
      "expected_reach": 154375,
      "requires_host_approval": true,
-     "rationale": "market price $0.60-$0.82 (median $0.70); bidding $0.49 wins ~5% of page views, paying ~$0.47 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.62-$0.85 (median $0.72); bidding $0.51 wins ~5% of page views, paying ~$0.48 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 1.15,
-     "start_bid_usd": 1.15,
+     "cpc_bid_usd": 1.18,
+     "start_bid_usd": 1.18,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 1.15,
-      "mid": 1.33,
-      "high": 1.57
+      "low": 1.18,
+      "mid": 1.36,
+      "high": 1.61
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1481,11 +1634,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 84539.01,
+     "capacity_usd": 86919.36,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $1.15-$1.57 (median $1.33); bidding $1.15 wins ~0% of page views, paying ~$0.00 per click (second price)"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.18-$1.61); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1508,14 +1661,14 @@
    "host_bids": [
     {
      "publisher_id": "pub_020",
-     "start_bid": 0.49,
-     "max_bid": 0.75,
+     "start_bid": 0.51,
+     "max_bid": 0.77,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_012",
-     "start_bid": 1.15,
-     "max_bid": 1.43,
+     "start_bid": 1.18,
+     "max_bid": 1.47,
      "floor": 0.05
     }
    ],
@@ -1631,40 +1784,112 @@
   },
   "creatives": [
    {
-    "variant_id": "v1",
+    "variant_id": "persona_009:1",
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_020",
      "pub_012"
     ],
-    "headline_template": "Fuel your active recovery, {first_name}.",
-    "headline_no_name": "Fuel your active recovery.",
-    "body": "A non-alcoholic sparkling drink with adaptogens. The functional cocktail alternative for people who want to feel good without a hangover.",
-    "cta": "Shop functional cans"
+    "headline_template": "{first_name}, protect your morning workout",
+    "headline_no_name": "Protect your morning workout",
+    "body": "Swap alcohol for a functional cocktail alternative. Enjoy a non-alcoholic sparkling drink with adaptogens and feel good tomorrow.",
+    "cta": "Shop cocktail swaps"
    },
    {
-    "variant_id": "v2",
+    "variant_id": "persona_009:2",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_020",
+     "pub_012"
+    ],
+    "headline_template": "Hit your goals without the hangover",
+    "headline_no_name": "Hit your goals without the hangover",
+    "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+    "cta": "Shop sparkling cans"
+   },
+   {
+    "variant_id": "persona_009:3",
+    "persona_id": "persona_009",
+    "publisher_ids": [
+     "pub_020",
+     "pub_012"
+    ],
+    "headline_template": "{first_name}, protect your morning workout.",
+    "headline_no_name": "Protect your morning workout.",
+    "body": "Keep your training on track. This non-alcoholic sparkling drink with adaptogens is a functional cocktail alternative with zero hangovers.",
+    "cta": "Shop adaptogens"
+   },
+   {
+    "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_012",
      "pub_020"
     ],
-    "headline_template": "{first_name}, optimize your night with adaptogens",
-    "headline_no_name": "Optimize your night with adaptogens",
-    "body": "A functional cocktail alternative made for people who want to feel good without a hangover. Enjoy a non-alcoholic sparkling drink.",
-    "cta": "Order adaptogens"
+    "headline_template": "{first_name}, optimize your evening ritual",
+    "headline_no_name": "Optimize your evening ritual",
+    "body": "Choose a non-alcoholic sparkling drink with adaptogens. A functional cocktail alternative for people who want to feel good.",
+    "cta": "Shop adaptogens"
    },
    {
-    "variant_id": "v3",
+    "variant_id": "persona_001:2",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_020"
+    ],
+    "headline_template": "Upgrade to functional adaptogens",
+    "headline_no_name": "Upgrade to functional adaptogens",
+    "body": "Try a non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative to help you feel good without a hangover.",
+    "cta": "Shop functional cans"
+   },
+   {
+    "variant_id": "persona_001:3",
+    "persona_id": "persona_001",
+    "publisher_ids": [
+     "pub_012",
+     "pub_020"
+    ],
+    "headline_template": "{first_name}, optimize your evening ritual.",
+    "headline_no_name": "Optimize your evening ritual.",
+    "body": "Protect your sleep metrics. This non-alcoholic sparkling drink with adaptogens is a functional cocktail alternative for zero hangovers.",
+    "cta": "Shop adaptogens"
+   },
+   {
+    "variant_id": "persona_003:1",
     "persona_id": "persona_003",
     "publisher_ids": [
      "pub_020",
      "pub_012"
     ],
-    "headline_template": "Upgrade your social hour, {first_name}.",
-    "headline_no_name": "Upgrade your social hour.",
-    "body": "This functional cocktail alternative matches your vibe. A non-alcoholic sparkling drink with adaptogens to feel good with no hangover.",
+    "headline_template": "All the vibes, none of the hangover",
+    "headline_no_name": "All the vibes, none of the hangover",
+    "body": "A non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
     "cta": "Shop sparkling cans"
+   },
+   {
+    "variant_id": "persona_003:2",
+    "persona_id": "persona_003",
+    "publisher_ids": [
+     "pub_020",
+     "pub_012"
+    ],
+    "headline_template": "{first_name}, elevate your aesthetic.",
+    "headline_no_name": "Elevate your aesthetic.",
+    "body": "A non-alcoholic sparkling drink with adaptogens that looks as good as it feels. A functional cocktail alternative with zero hangover.",
+    "cta": "Shop adaptogen sips"
+   },
+   {
+    "variant_id": "persona_003:3",
+    "persona_id": "persona_003",
+    "publisher_ids": [
+     "pub_020",
+     "pub_012"
+    ],
+    "headline_template": "{first_name}, meet your new favorite aesthetic",
+    "headline_no_name": "Meet your new favorite aesthetic",
+    "body": "A gorgeous non-alcoholic sparkling drink with adaptogens. It's a functional cocktail alternative for people who want to feel good.",
+    "cta": "Try functional sips"
    }
   ],
   "frequency_cap": {
@@ -1701,13 +1926,23 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 56.97
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
-   "persona_009",
-   "persona_003"
+   [
+    "persona_009",
+    3
+   ],
+   [
+    "persona_001",
+    3
+   ],
+   [
+    "persona_003",
+    2
+   ]
   ]
  }
 }
