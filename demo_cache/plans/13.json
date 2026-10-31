@@ -200,11 +200,9 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended as fallback: matches activewear (specific) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
@@ -255,8 +253,8 @@
     }
    ],
    "flags": [],
-   "recommended": false,
-   "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches fitness_classes (specific) (multiplier))."
+   "recommended": true,
+   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_017",
@@ -307,8 +305,8 @@
     }
    ],
    "flags": [],
-   "recommended": false,
-   "reason": "Excluded: score 0.23 below cutoff 0.34; weakest signal category_fit (matches activewear (specific) (multiplier))."
+   "recommended": true,
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -1155,6 +1153,7 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_012",
     "pub_002"
    ]
@@ -1171,7 +1170,8 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002"
+    "pub_002",
+    "pub_003"
    ]
   },
   {
@@ -1185,8 +1185,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_002",
-    "pub_012"
+    "pub_017",
+    "pub_003",
+    "pub_002"
    ]
   },
   {
@@ -1201,7 +1202,8 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002"
+    "pub_002",
+    "pub_017"
    ]
   },
   {
@@ -1215,8 +1217,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_002",
-    "pub_012"
+    "pub_003",
+    "pub_017",
+    "pub_002"
    ]
   },
   {
@@ -1232,7 +1235,8 @@
    ],
    "best_publishers": [
     "pub_012",
-    "pub_002"
+    "pub_002",
+    "pub_003"
    ]
   },
   {
@@ -1246,8 +1250,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_002",
-    "pub_012"
+    "pub_003"
    ]
   },
   {
@@ -1261,8 +1266,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
-    "pub_002",
-    "pub_012"
+    "pub_017",
+    "pub_003",
+    "pub_002"
    ]
   },
   {
@@ -1271,14 +1277,15 @@
    "score": 0.0,
    "selected": true,
    "reasons": [
-    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.72); included to reach 3 variants",
+    "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.73); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (budget product vs high price sensitivity)",
     "audience fit 0.80"
    ],
    "best_publishers": [
     "pub_002",
-    "pub_012"
+    "pub_017",
+    "pub_003"
    ]
   },
   {
@@ -1292,8 +1299,9 @@
     "audience fit 0.80"
    ],
    "best_publishers": [
+    "pub_017",
     "pub_002",
-    "pub_012"
+    "pub_003"
    ]
   }
  ],
@@ -1400,69 +1408,115 @@
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
   },
   "budget": {
-   "monthly_budget_usd": 610.0,
+   "monthly_budget_usd": 1080.0,
    "budget_source": "recommended_learning_budget",
    "delivery_goal": "budget",
-   "expected_impressions": 47844,
-   "expected_reach": 29902,
+   "expected_impressions": 107945,
+   "expected_reach": 67466,
    "goal_feasible": true,
-   "daily_cap_usd": 20.33,
+   "daily_cap_usd": 36.0,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 610.59,
+   "learning_budget_needed_usd": 1076.47,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.71,
-     "budget_usd": 432.81,
+     "share": 0.469,
+     "budget_usd": 506.08,
      "cpc_bid_usd": 1.04,
      "start_bid_usd": 0.73,
      "expected_clicks": {
-      "low": 333.0,
-      "mid": 416.0,
-      "high": 499.0
+      "low": 389.0,
+      "mid": 487.0,
+      "high": 584.0
      },
      "expected_conversions": {
-      "low": 7.6,
-      "mid": 15.1,
-      "high": 26.5
+      "low": 8.9,
+      "mid": 17.7,
+      "high": 31.0
      },
      "capacity_usd": 3669.12,
-     "expected_impressions": 24772,
-     "expected_reach": 15482,
+     "expected_impressions": 28965,
+     "expected_reach": 18103,
      "requires_host_approval": true,
      "rationale": "score 0.67 -> relative fit x1.40 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.29,
-     "budget_usd": 177.19,
+     "share": 0.192,
+     "budget_usd": 207.19,
      "cpc_bid_usd": 0.69,
      "start_bid_usd": 0.48,
      "expected_clicks": {
-      "low": 205.0,
-      "mid": 257.0,
-      "high": 308.0
+      "low": 240.0,
+      "mid": 300.0,
+      "high": 360.0
+     },
+     "expected_conversions": {
+      "low": 3.6,
+      "mid": 7.2,
+      "high": 12.7
+     },
+     "capacity_usd": 8447.86,
+     "expected_impressions": 26978,
+     "expected_reach": 16861,
+     "requires_host_approval": false,
+     "rationale": "score 0.28 -> relative fit x0.93 on CTR/CVR; max bid $0.69 (break-even at target CPA), start at 70%"
+    },
+    {
+     "publisher_id": "pub_003",
+     "publisher_name": "Studiogrid",
+     "share": 0.177,
+     "budget_usd": 191.36,
+     "cpc_bid_usd": 0.67,
+     "start_bid_usd": 0.47,
+     "expected_clicks": {
+      "low": 228.0,
+      "mid": 286.0,
+      "high": 343.0
+     },
+     "expected_conversions": {
+      "low": 3.4,
+      "mid": 6.7,
+      "high": 11.7
+     },
+     "capacity_usd": 4934.1,
+     "expected_impressions": 26372,
+     "expected_reach": 16483,
+     "requires_host_approval": false,
+     "rationale": "score 0.26 -> relative fit x0.90 on CTR/CVR; max bid $0.67 (break-even at target CPA), start at 70%"
+    },
+    {
+     "publisher_id": "pub_017",
+     "publisher_name": "Cloudfoot",
+     "share": 0.162,
+     "budget_usd": 175.37,
+     "cpc_bid_usd": 0.65,
+     "start_bid_usd": 0.45,
+     "expected_clicks": {
+      "low": 216.0,
+      "mid": 270.0,
+      "high": 324.0
      },
      "expected_conversions": {
       "low": 3.1,
       "mid": 6.2,
       "high": 10.8
      },
-     "capacity_usd": 8447.86,
-     "expected_impressions": 23072,
-     "expected_reach": 14420,
+     "capacity_usd": 1984.28,
+     "expected_impressions": 25630,
+     "expected_reach": 16019,
      "requires_host_approval": false,
-     "rationale": "score 0.28 -> relative fit x0.93 on CTR/CVR; max bid $0.69 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.23 -> relative fit x0.88 on CTR/CVR; max bid $0.65 (break-even at target CPA), start at 70%"
     }
    ],
    "warnings": [
-    "No budget given: recommending $610, the smallest budget that buys 300 clicks per host."
+    "No budget given: recommending $1,080, the smallest budget that buys 300 clicks per host."
    ]
   },
   "bid_strategy": {
@@ -1498,6 +1552,18 @@
      "start_bid": 0.48,
      "max_bid": 0.69,
      "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_003",
+     "start_bid": 0.47,
+     "max_bid": 0.67,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_017",
+     "start_bid": 0.45,
+     "max_bid": 0.65,
+     "floor": 0.25
     }
    ],
    "adjustments": [
@@ -1519,17 +1585,11 @@
   "targeting": {
    "publishers_include": [
     "pub_002",
-    "pub_012"
+    "pub_003",
+    "pub_012",
+    "pub_017"
    ],
    "publishers_exclude": [
-    {
-     "id": "pub_003",
-     "reason": "Excluded: score 0.26 below cutoff 0.34; weakest signal category_fit (matches fitness_classes (specific) (multiplier))."
-    },
-    {
-     "id": "pub_017",
-     "reason": "Excluded: score 0.23 below cutoff 0.34; weakest signal category_fit (matches activewear (specific) (multiplier))."
-    },
     {
      "id": "pub_001",
      "reason": "Excluded: no category link (multiplier) for this product."
@@ -1615,6 +1675,7 @@
     "variant_id": "v1",
     "persona_id": "persona_009",
     "publisher_ids": [
+     "pub_017",
      "pub_012",
      "pub_002"
     ],
@@ -1628,7 +1689,8 @@
     "persona_id": "persona_001",
     "publisher_ids": [
      "pub_012",
-     "pub_002"
+     "pub_002",
+     "pub_003"
     ],
     "headline_template": "{first_name}, optimize your system with identical formulas.",
     "headline_no_name": "Optimize your system with identical formulations.",
@@ -1640,7 +1702,8 @@
     "persona_id": "persona_008",
     "publisher_ids": [
      "pub_002",
-     "pub_012"
+     "pub_017",
+     "pub_003"
     ],
     "headline_template": "Cut your supplement spend in half, {first_name}",
     "headline_no_name": "Cut your supplement spend in half",
@@ -1659,8 +1722,7 @@
    ],
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_012",
-    "pub_002"
+    "pub_012"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,

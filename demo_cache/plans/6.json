@@ -18,14 +18,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "apparel",
-    "weight": 1.0,
-    "why": "Core category as jackets and outerwear."
-   },
-   {
     "tag": "activewear",
     "weight": 1.0,
     "why": "Core category for technical outerwear and shells."
+   },
+   {
+    "tag": "apparel",
+    "weight": 1.0,
+    "why": "Core category as jackets and outerwear."
    }
   ],
   "competing_tags": [],
@@ -74,7 +74,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches apparel, activewear (specific) (multiplier)"
+     "detail": "matches activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -117,7 +117,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_017",
@@ -128,7 +128,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches apparel, activewear (specific) (multiplier)"
+     "detail": "matches activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -171,7 +171,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_016",
@@ -1692,7 +1692,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

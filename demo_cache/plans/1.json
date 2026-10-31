@@ -24,6 +24,11 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
+    "tag": "subscription",
+    "weight": 1.0,
+    "why": "The product is offered on a subscription model."
+   },
+   {
     "tag": "pet",
     "weight": 1.0,
     "why": "Core category for pet products."
@@ -32,11 +37,6 @@
     "tag": "pet_food",
     "weight": 1.0,
     "why": "Core product category being sold."
-   },
-   {
-    "tag": "subscription",
-    "weight": 1.0,
-    "why": "The product is offered on a subscription model."
    },
    {
     "tag": "pet_supplies",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, pet_food, subscription, pet_supplies (specific) (multiplier)"
+     "detail": "matches subscription, pet, pet_food, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,7 @@
     "competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet, pet_food, subscription, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches subscription, pet, pet_food, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_009",
@@ -223,7 +223,7 @@
      "name": "category_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_supplies (specific) (multiplier)"
+     "detail": "matches subscription, pet, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -262,11 +262,9 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended as fallback: matches pet, subscription, pet_supplies (specific) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   "reason": "Recommended: matches subscription, pet, pet_supplies (specific) (multiplier); strongest supporting signal price_fit (host income mid below mid-high needed for premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_012",
@@ -318,7 +316,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.13 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
+   "reason": "Excluded: score 0.13 below cutoff 0.14; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_015",
@@ -1579,7 +1577,7 @@
    "publishers_exclude": [
     {
      "id": "pub_012",
-     "reason": "Excluded: score 0.13 below cutoff 0.34; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
+     "reason": "Excluded: score 0.13 below cutoff 0.14; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
     },
     {
      "id": "pub_015",
@@ -1716,8 +1714,7 @@
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
     "pub_007",
-    "pub_009",
-    "pub_018"
+    "pub_009"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1737,7 +1734,7 @@
   ]
  },
  "timings_s": {
-  "intake": 0.01,
+  "intake": 0.03,
   "matching": 0.0,
   "creative": 0.0
  },
