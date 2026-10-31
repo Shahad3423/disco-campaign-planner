@@ -51,19 +51,25 @@ def optional_inputs() -> AdvertiserInputs:
                                help="Targets are averages the bidder aims at, not per-click limits.")
         target_cpa = k2.number_input("Target CPA (USD)", min_value=0.0, value=0.0, step=5.0, disabled=bidding != "target_cpa")
         target_roas = k2.number_input("Target ROAS (x)", min_value=0.0, value=0.0, step=0.5, disabled=bidding != "target_roas")
-        max_cpc = k3.number_input("Max CPC cap (USD, optional)", min_value=0.0, value=0.0, step=0.25,
-                                  help="Hard per-click limit. 0 = labelled category default.")
-        e1, e2, e3 = st.columns(3)
-        price = e1.number_input("Typical price (USD)", min_value=0.0, value=0.0, step=5.0, help="0 = stated or tier default")
-        margin = e2.number_input("Gross margin (%)", min_value=0.0, max_value=100.0, value=0.0, step=5.0,
-                                 help="Only for the break-even guidance; 0 = category default")
-        tracking = e3.checkbox("Has conversion tracking")
+        max_cpc = k3.number_input("Max CPC (USD, optional)", min_value=0.0, value=0.0, step=0.25,
+                                  help="Your own hard per-click limit. 0 = no limit beyond the aggressiveness setting.")
+        e1, e2, e3, e4 = st.columns(4)
+        aggressiveness = e1.selectbox("How aggressively to bid", ["balanced", "conservative", "aggressive"],
+                                      help="The most of each host's page views to try to win: 30% / 60% / 90%. "
+                                           "Winning more means outbidding stronger rivals, so each unit costs more.")
+        share = e2.slider("Max share of budget per host", 0.2, 1.0, 1.0, 0.05,
+                          help="Optional: spreads the risk of one host under-delivering (1.0 = off). "
+                               "The plan shows what it costs, and warns if it leaves budget unspent.")
+        price = e3.number_input("Typical price (USD)", min_value=0.0, value=0.0, step=5.0,
+                                help="Only needed for target ROAS; 0 = stated or tier default")
+        tracking = e4.checkbox("Has conversion tracking")
     return AdvertiserInputs(
         monthly_budget_usd=budget or None, flight_days=int(flight) or None, objective=objective,
         goal_target=int(goal) or None, when_goal_met="stop" if when.startswith("stop") else "continue",
         bidding=bidding if objective in ("conversions", "clicks") else "maximize",
         target_cpa_usd=target_cpa or None, target_roas=target_roas or None, max_cpc_usd=max_cpc or None,
-        price_usd=price or None, gross_margin=(margin / 100) or None, has_conversion_tracking=tracking,
+        aggressiveness=aggressiveness, max_share_per_host=share,
+        price_usd=price or None, has_conversion_tracking=tracking,
     )
 
 

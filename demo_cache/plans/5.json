@@ -1424,8 +1424,8 @@
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "budget_cap_usd": 5000.0,
-   "max_cpc_cap_usd": null,
-   "stop_loss": null,
+   "max_cpc_usd": null,
+   "max_share_per_host": null,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {

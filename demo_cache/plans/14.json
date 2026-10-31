@@ -23,14 +23,14 @@
     "why": "Core category: advertiser sells linen bedding."
    },
    {
-    "tag": "home_textiles",
-    "weight": 0.667,
-    "why": "Adjacent category: linen bedding falls under home textiles."
-   },
-   {
     "tag": "home",
     "weight": 0.667,
     "why": "Adjacent category: bedding is a home product."
+   },
+   {
+    "tag": "home_textiles",
+    "weight": 0.667,
+    "why": "Adjacent category: linen bedding falls under home textiles."
    }
   ],
   "competing_tags": [
@@ -94,7 +94,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches bedding, home_textiles, home (specific) (multiplier)"
+     "detail": "matches bedding, home, home_textiles (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -137,7 +137,7 @@
     "competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches bedding, home_textiles, home (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_014",
@@ -1386,116 +1386,124 @@
    "price_usd": 60.0,
    "price_source": "tier_default",
    "expected_orders": 1.1,
-   "gross_margin": 0.55,
-   "margin_source": "category_default",
-   "break_even_cac": 36.3,
    "target_cpa": null,
    "target_source": "none",
-   "assumptions": [
-    "Price not given; assumed $60 for a 'unknown' product.",
-    "Margin not given; assumed 55% (typical for home) for the break-even estimate only.",
-    "Break-even per customer (guidance, not enforced): $60 x 55% x 1.1 orders = $36.30."
-   ]
+   "assumptions": []
   },
   "pricing": {
    "model": "CPC",
    "bidding": "maximize",
-   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $2.50 cap (category default) to spend it well; no CPA target is invented. Guidance: at the assumed margin, a click is worth about $0.44; bidding above that loses money per customer. Set a target CPA or a lower max CPC to enforce it.",
-   "max_cpc_cap": 2.5,
-   "cap_source": "category_default",
+   "aggressiveness": "balanced",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $1.25-$1.64 per click (median $1.41), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "max_cpc": null,
    "cpc_range": {
     "low": 1.25,
-    "mid": 1.75,
-    "high": 2.5
+    "mid": 1.41,
+    "high": 1.64
    },
    "cpm_bid": null,
    "target_cpa": null,
-   "break_even_cpc": 0.44,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 5000.0,
+   "planned_spend_usd": 4863.53,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
    "when_goal_met": "stop",
+   "aggressiveness": "balanced",
+   "max_share_per_host": 1.0,
    "forecast": {
-    "low": 17.3,
-    "mid": 34.5,
-    "high": 60.4
+    "low": 75.4,
+    "mid": 150.8,
+    "high": 271.5
    },
+   "forecast_without_share_cap": 150.8,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 43.2,
-   "spend_at_full_inventory_usd": 7107.52,
+   "max_deliverable": 2561.2,
+   "spend_at_full_inventory_usd": 139126.24,
    "replan_options": [],
-   "expected_impressions": 225473,
-   "expected_reach": 140921,
+   "expected_impressions": 171000,
+   "expected_reach": 106875,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing",
-   "learning_floor_usd": 873.0,
-   "exploration_reserve_usd": 0.0,
-   "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.743,
-     "budget_usd": 3714.5,
-     "cpc_bid_usd": 2.5,
-     "start_bid_usd": 1.75,
+     "share": 1.0,
+     "budget_usd": 4863.53,
+     "cpc_bid_usd": 0.71,
+     "start_bid_usd": 0.71,
+     "win_share": 0.048,
+     "avg_price_paid": 0.68,
+     "market_price": {
+      "low": 0.88,
+      "mid": 0.98,
+      "high": 1.13
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 1698.0,
-      "mid": 2123.0,
-      "high": 2547.0
+      "low": 5746.0,
+      "mid": 7182.0,
+      "high": 8618.0
      },
      "expected_conversions": {
-      "low": 17.8,
-      "mid": 35.7,
-      "high": 62.4
+      "low": 72.4,
+      "mid": 150.8,
+      "high": 271.5
      },
      "expected_units": {
-      "low": 12.8,
-      "mid": 25.6,
-      "high": 44.8
+      "low": 75.4,
+      "mid": 150.8,
+      "high": 271.5
      },
-     "capacity_usd": 5292.0,
-     "expected_impressions": 126344,
-     "expected_reach": 78965,
+     "capacity_usd": 79899.78,
+     "expected_impressions": 171000,
+     "expected_reach": 106875,
      "requires_host_approval": true,
-     "rationale": "score 0.48, relative fit x1.40; 0.0096 conversions/$ at the start, falling as the host saturates; bid $1.75 (cap $2.50); host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "market price $0.88-$1.13 (median $0.98); bidding $0.71 wins ~5% of page views, paying ~$0.68 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.257,
-     "budget_usd": 1285.5,
-     "cpc_bid_usd": 1.66,
-     "start_bid_usd": 1.16,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 1.25,
+     "start_bid_usd": 1.25,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 1.25,
+      "mid": 1.41,
+      "high": 1.64
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 887.0,
-      "mid": 1108.0,
-      "high": 1330.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 6.2,
-      "mid": 12.4,
-      "high": 21.7
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 4.4,
-      "mid": 8.9,
-      "high": 15.5
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 1815.52,
-     "expected_impressions": 99129,
-     "expected_reach": 61955,
+     "capacity_usd": 59226.45,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "score 0.20, relative fit x0.93; 0.0096 conversions/$ at the start, falling as the host saturates; bid $1.16 (cap $1.66)"
+     "rationale": "market price $1.25-$1.64 (median $1.41); bidding $1.25 wins ~0% of page views, paying ~$0.00 per click (second price)"
     }
    ],
    "warnings": []
@@ -1505,28 +1513,28 @@
    "phases": [
     {
      "name": "learning",
-     "until": "14 days or 300 clicks per host",
-     "rule": "fixed start bid per host; pacing only",
-     "why": "stable bids so measured CTR/CVR aren't confounded"
+     "until": "14 days",
+     "rule": "planned bid per host; pacing only",
+     "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
-     "why": "no CPA target was set, so the goal is the most units for the budget"
+     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "why": "most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_011",
-     "start_bid": 1.75,
-     "max_bid": 2.5,
-     "floor": 0.25
+     "start_bid": 0.71,
+     "max_bid": 1.03,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_014",
-     "start_bid": 1.16,
-     "max_bid": 1.66,
-     "floor": 0.25
+     "start_bid": 1.25,
+     "max_bid": 1.47,
+     "floor": 0.05
     }
    ],
    "adjustments": [
@@ -1543,7 +1551,7 @@
      "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Maximise conversions within the budget, never above the $2.50 cap (category default)."
+   "rationale": "Maximise conversions within the budget; the ceiling per host is the price that wins your 'balanced' share."
   },
   "targeting": {
    "publishers_include": [
@@ -1704,8 +1712,8 @@
     "pub_011"
    ],
    "budget_cap_usd": 5000.0,
-   "max_cpc_cap_usd": 2.5,
-   "stop_loss": null,
+   "max_cpc_usd": null,
+   "max_share_per_host": 1.0,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
@@ -1723,7 +1731,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,

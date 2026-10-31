@@ -167,6 +167,7 @@ class CreativeReview(BaseModel):
 
 Objective = Literal["conversions", "clicks", "impressions", "reach"]
 Bidding = Literal["maximize", "target_cpa", "target_roas"]
+Aggressiveness = Literal["conservative", "balanced", "aggressive"]
 PricingModel = Literal["CPC", "CPM", "tCPA"]
 OBJECTIVE_UNIT = {"conversions": "conversions", "clicks": "clicks", "impressions": "impressions", "reach": "unique shoppers"}
 
@@ -183,9 +184,10 @@ class AdvertiserInputs(BaseModel):
     bidding: Bidding = "maximize"
     target_cpa_usd: float | None = Field(default=None, gt=0)
     target_roas: float | None = Field(default=None, gt=0, description="revenue / ad spend, e.g. 3.0")
-    max_cpc_usd: float | None = Field(default=None, gt=0, description="optional hard bid cap per click")
-    price_usd: float | None = None
-    gross_margin: float | None = Field(default=None, ge=0, le=1, description="only for break-even guidance")
+    max_cpc_usd: float | None = Field(default=None, gt=0, description="optional hard bid cap per click (yours)")
+    aggressiveness: Aggressiveness = "balanced"
+    max_share_per_host: float | None = Field(default=None, gt=0, le=1, description="None/1.0 = off (default); e.g. 0.5 spreads risk")
+    price_usd: float | None = Field(default=None, description="only needed for target ROAS")
     has_conversion_tracking: bool = False
 
 
@@ -196,14 +198,11 @@ class Range(BaseModel):
 
 
 class Economics(BaseModel):
-    """Targets come only from the advertiser; break-even is guidance (shown, never enforced)."""
+    """Only what the advertiser told us. Margins and break-even are the advertiser's business (D24)."""
 
     price_usd: float
     price_source: Literal["stated", "form", "tier_default"]
     expected_orders: float
-    gross_margin: float | None
-    margin_source: Literal["form", "category_default"]
-    break_even_cac: float = Field(description="guidance: price x margin x orders; above this a customer loses money")
     target_cpa: float | None = None
     target_source: Literal["target_cpa", "target_roas", "none"] = "none"
     assumptions: list[str]
@@ -212,13 +211,12 @@ class Economics(BaseModel):
 class PricingPlan(BaseModel):
     model: PricingModel
     bidding: Bidding
+    aggressiveness: Aggressiveness
     rationale: str
-    max_cpc_cap: float = Field(description="hard per-click cap (guardrail): advertiser's own or a category default")
-    cap_source: Literal["advertiser", "category_default"]
-    cpc_range: Range | None = None
+    max_cpc: float | None = Field(default=None, description="the advertiser's own cap, if any")
+    cpc_range: Range | None = Field(default=None, description="market price to win across the recommended hosts")
     cpm_bid: float | None = None
     target_cpa: float | None = None
-    break_even_cpc: float | None = Field(default=None, description="guidance: break-even CAC x expected CVR")
     tcpa_unlock: str
 
 
@@ -227,12 +225,16 @@ class Allocation(BaseModel):
     publisher_name: str
     share: float
     budget_usd: float
-    cpc_bid_usd: float = Field(description="hard max bid on this host (never exceeded)")
-    start_bid_usd: float | None = Field(default=None, description="learning-phase bid")
+    cpc_bid_usd: float = Field(description="planned bid on this host (the price that wins the planned share)")
+    start_bid_usd: float | None = None
+    win_share: float = Field(description="share of this host's page views the planned bid wins")
+    avg_price_paid: float = Field(description="average second price paid per click")
+    market_price: Range = Field(description="price to win a page view here: 25th / 50th / 75th percentile")
+    audience_weight: float = Field(default=1.0, description="share of units counted as in-audience")
     expected_clicks: Range
     expected_conversions: Range
     expected_units: Range = Field(description="forecast in the objective's unit")
-    capacity_usd: float
+    capacity_usd: float = Field(description="spend if we won every page view we'd bid for here")
     expected_impressions: int = 0
     expected_reach: int = 0
     requires_host_approval: bool
@@ -246,11 +248,14 @@ class BudgetPlan(BaseModel):
     unit: str
     goal_target: int | None = None
     when_goal_met: Literal["stop", "continue"] = "stop"
+    aggressiveness: Aggressiveness = "balanced"
+    max_share_per_host: float = 1.0
     forecast: Range = Field(description="objective units the planned spend buys")
+    forecast_without_share_cap: float | None = Field(default=None, description="mid forecast if the share cap were off")
     goal_status: Literal["no_goal", "reachable", "money_limited", "inventory_limited"]
     binding_constraint: Literal["budget", "inventory", "goal"]
     spend_to_reach_goal_usd: float | None = None
-    max_deliverable: float = Field(description="objective units if every host's reachable inventory were bought")
+    max_deliverable: float = Field(description="units available at this aggressiveness if budget were unlimited")
     spend_at_full_inventory_usd: float
     replan_options: list[str] = Field(default_factory=list)
     expected_impressions: int = 0
@@ -259,9 +264,6 @@ class BudgetPlan(BaseModel):
     flight_start: str
     flight_end: str
     pacing: str
-    learning_floor_usd: float = Field(description="spend needed to measure every recommended host (info, not a suggestion)")
-    exploration_reserve_usd: float
-    exploration_candidates: list[str]
     allocations: list[Allocation]
     warnings: list[str] = Field(default_factory=list)
 

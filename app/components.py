@@ -223,13 +223,10 @@ def render_economics(plan: CampaignPlan) -> None:
     eco = plan.config.economics
     if not eco:
         return
-    st.markdown("**Economics** <span class='muted'>targets come only from you; break-even is guidance</span>", unsafe_allow_html=True)
+    st.markdown("**Targets** <span class='muted'>only what you set; your margins are your business</span>", unsafe_allow_html=True)
     rows = [
-        ("Price", f"${eco.price_usd:,.2f}", eco.price_source),
-        ("Expected orders per customer", f"{eco.expected_orders:g}", "model"),
-        ("Gross margin", f"{eco.gross_margin:.0%}" if eco.gross_margin is not None else "n/a", eco.margin_source),
-        ("Break-even per customer (guidance)", f"${eco.break_even_cac:,.2f}", "derived"),
         ("Target CPA", f"${eco.target_cpa:,.2f}" if eco.target_cpa else "none (maximise within budget)", eco.target_source),
+        ("Price (used for ROAS only)", f"${eco.price_usd:,.2f}", eco.price_source),
     ]
     df = pd.DataFrame(rows, columns=["item", "value", "source"])
     df["status"] = df["source"].map(lambda s: "assumed" if s in ("tier_default", "category_default", "model") else "provided or derived")
@@ -367,7 +364,7 @@ def render_auction_insights(plan: CampaignPlan) -> None:
     if rows:
         df = pd.DataFrame([{
             "host": r["publisher_name"], "win_rate": r["win_rate"], "avg_price_paid": r["avg_price_paid"], "your_bid": r["avg_bid"],
-            "break_even_max": r["max_bid"], "rivals_here": r["competitors_on_host"],
+            "your_max_bid": r["max_bid"], "rivals_here": r["competitors_on_host"],
             "top_rival": ", ".join(f"{n} ({s:.0%})" for n, s in r["top_rivals"][:2]),
             "bid_for_50%_wins": r["bid_for_win_rate"].get("50%"), "verdict": r["verdict"], "what to do": r["suggestion"],
         } for r in rows])
@@ -382,9 +379,10 @@ def render_config(plan: CampaignPlan) -> None:
     if cfg.pricing:
         pr = cfg.pricing
         st.markdown(f"**Pricing: {pr.model} · bidding: {pr.bidding.replace('_', ' ')}**  \n{html.escape(pr.rationale)}", unsafe_allow_html=True)
-        st.markdown(f"Hard max CPC: ${pr.max_cpc_cap:.2f} ({pr.cap_source.replace('_', ' ')})"
-                    + (f" · break-even CPC (guidance): ${pr.break_even_cpc:.2f}" if pr.break_even_cpc else "")
-                    + f" · *tCPA unlock:* {pr.tcpa_unlock}")
+        if pr.cpc_range:
+            st.markdown(f"Market price to win on these hosts: ${pr.cpc_range.low:.2f}-${pr.cpc_range.high:.2f} per click "
+                        f"(median ${pr.cpc_range.mid:.2f}) · bidding: {pr.aggressiveness}"
+                        + (f" · your max CPC ${pr.max_cpc:.2f}" if pr.max_cpc else "") + f" · *tCPA unlock:* {pr.tcpa_unlock}")
     if not cfg.budget:
         st.info("No budget set. Enter your budget in Campaign setup to see the allocation and the forecast; "
                 "we don't suggest one.")
@@ -402,13 +400,17 @@ def render_config(plan: CampaignPlan) -> None:
                     f"binding constraint: **{b.binding_constraint}** · Pacing: {html.escape(b.pacing)}", unsafe_allow_html=True)
         for opt in b.replan_options:
             st.markdown(f"- {html.escape(opt)}")
-        st.caption(f"Up to {b.max_deliverable:,.0f} {b.unit} are available on these hosts in the flight (~${b.spend_at_full_inventory_usd:,.0f}). "
-                   f"Measuring every host needs ~${b.learning_floor_usd:,.0f}. Expected impressions {b.expected_impressions:,}, "
-                   f"reach {b.expected_reach:,}.")
+        cap_cost = ""
+        if b.forecast_without_share_cap and b.forecast_without_share_cap > b.forecast.mid * 1.001:
+            cap_cost = (f" The {b.max_share_per_host:.0%} per-host cap costs ~{1 - b.forecast.mid / b.forecast_without_share_cap:.0%} "
+                        f"of forecast {b.unit} ({b.forecast_without_share_cap:,.0f} without it) in exchange for spreading risk.")
+        st.caption(f"At '{b.aggressiveness}' bidding these hosts offer up to {b.max_deliverable:,.0f} {b.unit} in the flight "
+                   f"(~${b.spend_at_full_inventory_usd:,.0f}). Expected impressions {b.expected_impressions:,}, reach {b.expected_reach:,}." + cap_cost)
         if b.allocations:
             df = pd.DataFrame([{
                 "publisher": a.publisher_name, "share_pct": round(a.share * 100), "budget_usd": a.budget_usd,
-                f"{b.unit} (mid)": a.expected_units.mid, "start_bid_usd": a.start_bid_usd, "max_bid_usd": a.cpc_bid_usd,
+                f"{b.unit} (mid)": a.expected_units.mid, "bid_usd": a.cpc_bid_usd, "win_share": a.win_share,
+                "avg_price_paid": a.avg_price_paid, "market_price (p25-p75)": f"${a.market_price.low:.2f}-${a.market_price.high:.2f}",
                 "impressions": a.expected_impressions, "clicks (mid)": a.expected_clicks.mid,
                 "host approval": "confirm opt-in" if a.requires_host_approval else "", "rationale": a.rationale,
             } for a in b.allocations])

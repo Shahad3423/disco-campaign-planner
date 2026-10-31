@@ -69,11 +69,12 @@ def run(
     eco = pricing = plan = bids = None
     if eligible and any(s.recommended for s in scores):
         category = _primary_category(profile, scores)
-        eco = budget.economics(profile, inputs, category)
-        pricing = budget.pricing_plan(eco, inputs, category)
-        plan = budget.budget_plan(scores, eco, pricing, inputs, today, gifting_moment, category)
         days = inputs.flight_days or catalog.config("pricing")["budget"]["flight_days"]
-        bids = budget.bid_strategy(pricing, budget.host_rows(scores, eco, pricing, inputs, days, category), inputs)
+        eco = budget.economics(profile, inputs, category)
+        markets = budget.host_markets(scores, brief, eco, inputs, days, category)
+        pricing = budget.pricing_plan(eco, inputs, markets)
+        plan = budget.budget_plan(markets, inputs, today, gifting_moment)
+        bids = budget.bid_strategy(pricing, markets, inputs, plan)
 
     status = {"proceed": "draft", "clarify": "needs_clarification"}.get(profile.gate, "not_eligible")
     by_persona = {m.persona_id: m for m in persona_matches}
@@ -111,8 +112,8 @@ def run(
             "competitor_hosts_need_approval": [s.publisher_id for s in scores if s.recommended
                                                and any(f.startswith("competitor_conflict") for f in s.flags)],
             "budget_cap_usd": inputs.monthly_budget_usd,
-            "max_cpc_cap_usd": pricing.max_cpc_cap if pricing else None,
-            "stop_loss": catalog.config("pricing")["budget"]["stop_loss"] if eco and eco.target_cpa else None,
+            "max_cpc_usd": inputs.max_cpc_usd,
+            "max_share_per_host": plan.max_share_per_host if plan else None,
             "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name",
         },
         measurement={

@@ -22,11 +22,6 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "women",
-    "weight": 1.0,
-    "why": "Target demographic is women."
-   },
-   {
     "tag": "activewear",
     "weight": 1.0,
     "why": "Core category of the brand's products."
@@ -35,6 +30,11 @@
     "tag": "sustainable",
     "weight": 1.0,
     "why": "Key product value stated as made from recycled ocean plastic."
+   },
+   {
+    "tag": "women",
+    "weight": 1.0,
+    "why": "Target demographic is women."
    },
    {
     "tag": "apparel",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches women, activewear, apparel (specific) (multiplier)"
+     "detail": "matches activewear, women, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches women, activewear, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits premium (multiplier ^0.5)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_017",
@@ -223,7 +223,7 @@
      "name": "category_fit",
      "value": 0.7,
      "weight": 1.0,
-     "detail": "matches women, sustainable, apparel (category only) (multiplier)"
+     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -264,7 +264,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
+   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal price_fit (host income high suits premium (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_003",
@@ -1391,228 +1391,268 @@
    "price_usd": 90.0,
    "price_source": "tier_default",
    "expected_orders": 1.3,
-   "gross_margin": 0.6,
-   "margin_source": "category_default",
-   "break_even_cac": 70.2,
    "target_cpa": null,
    "target_source": "none",
-   "assumptions": [
-    "Price not given; assumed $90 for a 'premium' product.",
-    "Margin not given; assumed 60% (typical for apparel) for the break-even estimate only.",
-    "Break-even per customer (guidance, not enforced): $90 x 60% x 1.3 orders = $70.20."
-   ]
+   "assumptions": []
   },
   "pricing": {
    "model": "CPC",
    "bidding": "maximize",
-   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $1.80 cap (category default) to spend it well; no CPA target is invented. Guidance: at the assumed margin, a click is worth about $1.40; bidding above that loses money per customer. Set a target CPA or a lower max CPC to enforce it.",
-   "max_cpc_cap": 1.8,
-   "cap_source": "category_default",
+   "aggressiveness": "balanced",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.59-$0.83 per click (median $0.69), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "max_cpc": null,
    "cpc_range": {
-    "low": 0.9,
-    "mid": 1.26,
-    "high": 1.8
+    "low": 0.59,
+    "mid": 0.69,
+    "high": 0.83
    },
    "cpm_bid": null,
    "target_cpa": null,
-   "break_even_cpc": 1.4,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 5000.0,
+   "planned_spend_usd": 4919.53,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
    "when_goal_met": "stop",
+   "aggressiveness": "balanced",
+   "max_share_per_host": 1.0,
    "forecast": {
-    "low": 52.5,
-    "mid": 105.1,
-    "high": 183.8
+    "low": 224.8,
+    "mid": 449.7,
+    "high": 809.4
    },
+   "forecast_without_share_cap": 449.7,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 616.1,
-   "spend_at_full_inventory_usd": 43829.2,
+   "max_deliverable": 36546.8,
+   "spend_at_full_inventory_usd": 743196.07,
    "replan_options": [],
-   "expected_impressions": 332073,
-   "expected_reach": 207546,
+   "expected_impressions": 312000,
+   "expected_reach": 195000,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing",
-   "learning_floor_usd": 1776.0,
-   "exploration_reserve_usd": 0.0,
-   "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.52,
-     "budget_usd": 2602.0,
-     "cpc_bid_usd": 1.8,
-     "start_bid_usd": 1.26,
+     "share": 0.895,
+     "budget_usd": 4401.67,
+     "cpc_bid_usd": 0.39,
+     "start_bid_usd": 0.39,
+     "win_share": 0.013,
+     "avg_price_paid": 0.38,
+     "market_price": {
+      "low": 0.55,
+      "mid": 0.65,
+      "high": 0.8
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 1652.0,
-      "mid": 2065.0,
-      "high": 2478.0
+      "low": 9240.0,
+      "mid": 11550.0,
+      "high": 13860.0
      },
      "expected_conversions": {
-      "low": 28.9,
-      "mid": 57.8,
-      "high": 101.2
+      "low": 194.0,
+      "mid": 404.2,
+      "high": 727.6
      },
      "expected_units": {
-      "low": 27.4,
-      "mid": 54.7,
-      "high": 95.7
+      "low": 202.1,
+      "mid": 404.2,
+      "high": 727.6
      },
-     "capacity_usd": 23284.8,
-     "expected_impressions": 122921,
-     "expected_reach": 76826,
+     "capacity_usd": 314289.95,
+     "expected_impressions": 275000,
+     "expected_reach": 171875,
      "requires_host_approval": true,
-     "rationale": "score 0.68, relative fit x1.40; 0.0222 conversions/$ at the start, falling as the host saturates; bid $1.26 (cap $1.80); host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "market price $0.55-$0.80 (median $0.65); bidding $0.39 wins ~1% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.127,
-     "budget_usd": 635.0,
-     "cpc_bid_usd": 1.72,
-     "start_bid_usd": 1.2,
+     "share": 0.089,
+     "budget_usd": 439.72,
+     "cpc_bid_usd": 0.38,
+     "start_bid_usd": 0.38,
+     "win_share": 0.005,
+     "avg_price_paid": 0.38,
+     "market_price": {
+      "low": 0.54,
+      "mid": 0.63,
+      "high": 0.75
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 423.0,
-      "mid": 529.0,
-      "high": 635.0
+      "low": 928.0,
+      "mid": 1161.0,
+      "high": 1393.0
      },
      "expected_conversions": {
-      "low": 7.1,
-      "mid": 14.1,
-      "high": 24.7
+      "low": 18.6,
+      "mid": 38.7,
+      "high": 69.7
      },
      "expected_units": {
-      "low": 6.7,
-      "mid": 13.3,
-      "high": 23.4
+      "low": 19.4,
+      "mid": 38.7,
+      "high": 69.7
      },
-     "capacity_usd": 5570.88,
-     "expected_impressions": 33056,
-     "expected_reach": 20660,
+     "capacity_usd": 77069.41,
+     "expected_impressions": 29000,
+     "expected_reach": 18125,
      "requires_host_approval": true,
-     "rationale": "score 0.62, relative fit x1.33; 0.0222 conversions/$ at the start, falling as the host saturates; bid $1.20 (cap $1.72); host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "market price $0.54-$0.75 (median $0.63); bidding $0.38 wins ~0% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.057,
-     "budget_usd": 285.0,
-     "cpc_bid_usd": 1.36,
-     "start_bid_usd": 0.95,
+     "share": 0.016,
+     "budget_usd": 78.15,
+     "cpc_bid_usd": 0.31,
+     "start_bid_usd": 0.31,
+     "win_share": 0.003,
+     "avg_price_paid": 0.31,
+     "market_price": {
+      "low": 0.52,
+      "mid": 0.6,
+      "high": 0.69
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 240.0,
-      "mid": 300.0,
-      "high": 360.0
+      "low": 203.0,
+      "mid": 254.0,
+      "high": 305.0
      },
      "expected_conversions": {
       "low": 3.2,
-      "mid": 6.3,
-      "high": 11.1
+      "mid": 6.7,
+      "high": 12.1
      },
      "expected_units": {
-      "low": 2.9,
-      "mid": 5.9,
-      "high": 10.3
+      "low": 3.4,
+      "mid": 6.7,
+      "high": 12.1
      },
-     "capacity_usd": 1929.06,
-     "expected_impressions": 23638,
-     "expected_reach": 14774,
+     "capacity_usd": 32319.6,
+     "expected_impressions": 8000,
+     "expected_reach": 5000,
      "requires_host_approval": false,
-     "rationale": "score 0.39, relative fit x1.06; 0.0223 conversions/$ at the start, falling as the host saturates; bid $0.95 (cap $1.36)"
+     "rationale": "market price $0.52-$0.69 (median $0.60); bidding $0.31 wins ~0% of page views, paying ~$0.31 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.168,
-     "budget_usd": 842.0,
-     "cpc_bid_usd": 1.28,
-     "start_bid_usd": 0.89,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.71,
+     "start_bid_usd": 0.71,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.71,
+      "mid": 0.85,
+      "high": 1.05
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 757.0,
-      "mid": 946.0,
-      "high": 1135.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 9.4,
-      "mid": 18.8,
-      "high": 32.9
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 8.9,
-      "mid": 17.8,
-      "high": 31.1
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 7219.54,
-     "expected_impressions": 79307,
-     "expected_reach": 49567,
+     "capacity_usd": 180311.49,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "score 0.33, relative fit x0.99; 0.0223 conversions/$ at the start, falling as the host saturates; bid $0.89 (cap $1.28)"
+     "rationale": "market price $0.71-$1.05 (median $0.85); bidding $0.71 wins ~0% of page views, paying ~$0.00 per click (second price)"
     },
     {
      "publisher_id": "pub_010",
      "publisher_name": "Heartfoot",
-     "share": 0.057,
-     "budget_usd": 283.5,
-     "cpc_bid_usd": 1.17,
-     "start_bid_usd": 0.82,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.69,
+     "start_bid_usd": 0.69,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.69,
+      "mid": 0.8,
+      "high": 0.96
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 277.0,
-      "mid": 346.0,
-      "high": 415.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 3.1,
-      "mid": 6.3,
-      "high": 11.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 3.0,
-      "mid": 5.9,
-      "high": 10.4
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 2591.56,
-     "expected_impressions": 31724,
-     "expected_reach": 19828,
+     "capacity_usd": 66473.83,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "score 0.26, relative fit x0.91; 0.0222 conversions/$ at the start, falling as the host saturates; bid $0.82 (cap $1.17)"
+     "rationale": "market price $0.69-$0.96 (median $0.80); bidding $0.69 wins ~0% of page views, paying ~$0.00 per click (second price)"
     },
     {
      "publisher_id": "pub_006",
      "publisher_name": "Everbody",
-     "share": 0.07,
-     "budget_usd": 352.5,
-     "cpc_bid_usd": 1.14,
-     "start_bid_usd": 0.8,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.59,
+     "start_bid_usd": 0.59,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.59,
+      "mid": 0.69,
+      "high": 0.83
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 352.0,
-      "mid": 441.0,
-      "high": 529.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 3.9,
-      "mid": 7.8,
-      "high": 13.7
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 3.7,
-      "mid": 7.4,
-      "high": 13.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 3233.36,
-     "expected_impressions": 41427,
-     "expected_reach": 25892,
+     "capacity_usd": 72731.8,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "score 0.24, relative fit x0.89; 0.0222 conversions/$ at the start, falling as the host saturates; bid $0.80 (cap $1.14)"
+     "rationale": "market price $0.59-$0.83 (median $0.69); bidding $0.59 wins ~0% of page views, paying ~$0.00 per click (second price)"
     }
    ],
    "warnings": []
@@ -1622,52 +1662,52 @@
    "phases": [
     {
      "name": "learning",
-     "until": "14 days or 300 clicks per host",
-     "rule": "fixed start bid per host; pacing only",
-     "why": "stable bids so measured CTR/CVR aren't confounded"
+     "until": "14 days",
+     "rule": "planned bid per host; pacing only",
+     "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
-     "why": "no CPA target was set, so the goal is the most units for the budget"
+     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "why": "most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_002",
-     "start_bid": 1.26,
-     "max_bid": 1.8,
-     "floor": 0.25
+     "start_bid": 0.39,
+     "max_bid": 0.69,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 1.2,
-     "max_bid": 1.72,
-     "floor": 0.25
+     "start_bid": 0.38,
+     "max_bid": 0.66,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.95,
-     "max_bid": 1.36,
-     "floor": 0.25
+     "start_bid": 0.31,
+     "max_bid": 0.63,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.89,
-     "max_bid": 1.28,
-     "floor": 0.25
+     "start_bid": 0.71,
+     "max_bid": 0.92,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_010",
-     "start_bid": 0.82,
-     "max_bid": 1.17,
-     "floor": 0.25
+     "start_bid": 0.69,
+     "max_bid": 0.86,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_006",
-     "start_bid": 0.8,
-     "max_bid": 1.14,
-     "floor": 0.25
+     "start_bid": 0.59,
+     "max_bid": 0.75,
+     "floor": 0.05
     }
    ],
    "adjustments": [
@@ -1684,7 +1724,7 @@
      "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Maximise conversions within the budget, never above the $1.80 cap (category default)."
+   "rationale": "Maximise conversions within the budget; the ceiling per host is the price that wins your 'balanced' share."
   },
   "targeting": {
    "publishers_include": [
@@ -1824,8 +1864,8 @@
     "pub_017"
    ],
    "budget_cap_usd": 5000.0,
-   "max_cpc_cap_usd": 1.8,
-   "stop_loss": null,
+   "max_cpc_usd": null,
+   "max_share_per_host": 1.0,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
@@ -1841,7 +1881,7 @@
   ]
  },
  "timings_s": {
-  "intake": 0.0,
+  "intake": 0.01,
   "matching": 0.0,
   "creative": 0.0
  },
