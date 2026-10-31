@@ -18,9 +18,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "pet_supplies",
+    "tag": "subscription",
     "weight": 1.0,
-    "why": "Includes toys and supplies for cats."
+    "why": "Offered as a subscription service."
    },
    {
     "tag": "pet",
@@ -28,9 +28,9 @@
     "why": "Core category for pet products and services."
    },
    {
-    "tag": "subscription",
+    "tag": "pet_supplies",
     "weight": 1.0,
-    "why": "Offered as a subscription service."
+    "why": "Includes toys and supplies for cats."
    },
    {
     "tag": "toys",
@@ -105,7 +105,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, pet, pet_food (specific) (multiplier)"
+     "detail": "matches pet, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -146,7 +146,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_007",
@@ -157,7 +157,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, pet, subscription, pet_food (specific) (multiplier)"
+     "detail": "matches subscription, pet, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -198,7 +198,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, subscription, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches subscription, pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_018",
@@ -209,7 +209,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, pet, subscription, toys (specific) (multiplier)"
+     "detail": "matches subscription, pet, pet_supplies, toys (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -250,7 +250,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, subscription, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches subscription, pet, pet_supplies, toys (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",

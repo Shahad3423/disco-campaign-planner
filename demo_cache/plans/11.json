@@ -27,14 +27,14 @@
     "why": "Protein bars are a core wellness and nutrition DTC product category."
    },
    {
-    "tag": "groceries",
-    "weight": 0.5,
-    "why": "Protein bars are frequently purchased as grocery or snack items."
-   },
-   {
     "tag": "fitness_classes",
     "weight": 0.5,
     "why": "Fitness class attendees often consume protein bars for pre- or post-workout nutrition."
+   },
+   {
+    "tag": "groceries",
+    "weight": 0.5,
+    "why": "Protein bars are frequently purchased as grocery or snack items."
    }
   ],
   "competing_tags": [],

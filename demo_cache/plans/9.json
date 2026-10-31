@@ -22,14 +22,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "sustainable",
-    "weight": 1.0,
-    "why": "Core value proposition focuses on sustainability and reducing plastic."
-   },
-   {
     "tag": "household",
     "weight": 1.0,
     "why": "Core category for cleaning products."
+   },
+   {
+    "tag": "sustainable",
+    "weight": 1.0,
+    "why": "Core value proposition focuses on sustainability and reducing plastic."
    },
    {
     "tag": "home",
@@ -1749,7 +1749,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

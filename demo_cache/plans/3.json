@@ -29,14 +29,14 @@
     "why": "The drink contains adaptogens and functions as a cocktail alternative."
    },
    {
-    "tag": "soda_alternative",
-    "weight": 0.5,
-    "why": "It is a non-alcoholic sparkling drink that can serve as an alternative beverage option."
-   },
-   {
     "tag": "wellness_dtc",
     "weight": 0.5,
     "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
+   },
+   {
+    "tag": "soda_alternative",
+    "weight": 0.5,
+    "why": "It is a non-alcoholic sparkling drink that can serve as an alternative beverage option."
    }
   ],
   "competing_tags": [
@@ -190,11 +190,9 @@
      "detail": "not a gifting product"
     }
    ],
-   "flags": [
-    "fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
-   ],
+   "flags": [],
    "recommended": true,
-   "reason": "Recommended as fallback: matches wellness_dtc (category only) (multiplier). Flags: fallback_host: every other pick also sells this kind of product; kept so the campaign can run if they don't opt in"
+   "reason": "Recommended: matches wellness_dtc (category only) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -1655,8 +1653,7 @@
    ],
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [
-    "pub_020",
-    "pub_012"
+    "pub_020"
    ],
    "stop_loss": {
     "cpa_multiple": 2.0,
@@ -1679,7 +1676,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

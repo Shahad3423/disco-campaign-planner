@@ -23,14 +23,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "natural",
-    "weight": 1.0,
-    "why": "Made with natural soy wax and no synthetic fragrances."
-   },
-   {
     "tag": "gifting",
     "weight": 1.0,
     "why": "The advertiser states they are mostly bought as gifts."
+   },
+   {
+    "tag": "natural",
+    "weight": 1.0,
+    "why": "Made with natural soy wax and no synthetic fragrances."
    },
    {
     "tag": "home",
@@ -1755,7 +1755,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,
