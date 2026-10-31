@@ -209,6 +209,10 @@ def score_publisher(
     )
 
 
+def _component(s: PublisherScore, name: str) -> float:
+    return next(c.value for c in s.components if c.name == name)
+
+
 def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherScore]:
     """Score every host, then decide recommend vs exclude with a human-readable reason."""
     from disco_planner.planning.personas import persona_weights
@@ -225,7 +229,12 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
             s.reason = f"Not recommended: {profile.gate_reason}"
         return scores
 
-    cutoff = max(rec["min_score"], rec["relative_to_top"] * scores[0].score)
+    # Anchor the relative cutoff to the best host we can count on running: the best NON-competing
+    # host with a real category link. A competitor may refuse (host setting, D21), so its score must not
+    # raise the bar for everyone else. Competitors are still listed when they clear this bar.
+    is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
+    anchor = next((s for s in scores if not is_comp(s) and s.components[0].value >= rec["min_category_fit"]), scores[0])
+    cutoff = max(rec["min_score"], rec["relative_to_top"] * anchor.score)
     # If no host matches a specific subcategory, the network has no strong home for this
     # product: say so and propose a small test on a few hosts instead of a full spread.
     def is_strong(s: PublisherScore) -> bool:
@@ -239,6 +248,9 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
         cat = next(c for c in s.components if c.name == "category_fit")
         if cat.value < rec["min_category_fit"]:
             s.reason = f"Excluded: {cat.detail} for this product."
+        elif "(category only)" in cat.detail and _component(s, "persona_fit") < rec["category_only_min_persona_fit"]:
+            s.reason = (f"Excluded: linked only by a broad category ({cat.detail}) and the shoppers this product is for "
+                        f"are rare here (persona fit {_component(s, 'persona_fit'):.2f}).")
         elif s.score < cutoff:
             weakest = min(s.components[:3], key=lambda c: c.value)  # among relevance, audience, price
             s.reason = f"Excluded: score {s.score:.2f} below cutoff {cutoff:.2f}; weakest signal {weakest.name} ({weakest.detail})."
@@ -254,16 +266,4 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
         if s.flags:
             s.reason += " Flags: " + " | ".join(s.flags)
 
-    # Don't put every egg in a basket that can refuse: if all picks are possible competitors,
-    # add the best non-competing host with a real category link as a fallback (D21).
-    picks = [s for s in scores if s.recommended]
-    is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
-    if picks and all(is_comp(s) for s in picks):
-        fallback = next((s for s in scores if not s.recommended and not is_comp(s)
-                         and s.components[0].value >= rec["min_category_fit"]), None)
-        if fallback:
-            fallback.recommended = True
-            fallback.flags.append("fallback_host: every other pick also sells this kind of product; "
-                                  "kept so the campaign can run if they don't opt in")
-            fallback.reason = (f"Recommended as fallback: {fallback.components[0].detail}. Flags: " + " | ".join(fallback.flags))
     return scores
