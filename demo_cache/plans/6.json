@@ -1373,146 +1373,160 @@
    "price_usd": 650.0,
    "price_source": "stated",
    "expected_orders": 1.1,
-   "gross_margin": 0.6,
-   "margin_source": "category_default",
-   "break_even_cac": 429.0,
    "target_cpa": null,
    "target_source": "none",
-   "assumptions": [
-    "Margin not given; assumed 60% (typical for apparel) for the break-even estimate only.",
-    "Break-even per customer (guidance, not enforced): $650 x 60% x 1.1 orders = $429.00."
-   ]
+   "assumptions": []
   },
   "pricing": {
    "model": "CPC",
    "bidding": "maximize",
-   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $1.80 cap (category default) to spend it well; no CPA target is invented.",
-   "max_cpc_cap": 1.8,
-   "cap_source": "category_default",
+   "aggressiveness": "balanced",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.51-$0.71 per click (median $0.59), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "max_cpc": null,
    "cpc_range": {
-    "low": 0.9,
-    "mid": 1.26,
-    "high": 1.8
+    "low": 0.51,
+    "mid": 0.59,
+    "high": 0.71
    },
    "cpm_bid": null,
    "target_cpa": null,
-   "break_even_cpc": 8.58,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 5000.0,
+   "planned_spend_usd": 4959.74,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
    "when_goal_met": "stop",
+   "aggressiveness": "balanced",
+   "max_share_per_host": 1.0,
    "forecast": {
-    "low": 44.1,
-    "mid": 88.3,
-    "high": 154.5
+    "low": 221.7,
+    "mid": 443.5,
+    "high": 798.2
    },
+   "forecast_without_share_cap": 443.5,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 435.8,
-   "spend_at_full_inventory_usd": 31015.76,
+   "max_deliverable": 25854.6,
+   "spend_at_full_inventory_usd": 412790.58,
    "replan_options": [],
-   "expected_impressions": 213091,
-   "expected_reach": 133182,
+   "expected_impressions": 310000,
+   "expected_reach": 193750,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing",
-   "learning_floor_usd": 1032.0,
-   "exploration_reserve_usd": 750.0,
-   "exploration_candidates": [
-    "Linden Park",
-    "Marlowe & Co."
-   ],
    "allocations": [
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.632,
-     "budget_usd": 3160.38,
-     "cpc_bid_usd": 1.8,
-     "start_bid_usd": 1.26,
+     "share": 0.56,
+     "budget_usd": 2775.52,
+     "cpc_bid_usd": 0.41,
+     "start_bid_usd": 0.41,
+     "win_share": 0.007,
+     "avg_price_paid": 0.4,
+     "market_price": {
+      "low": 0.53,
+      "mid": 0.64,
+      "high": 0.76
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 2007.0,
-      "mid": 2508.0,
-      "high": 3010.0
+      "low": 5544.0,
+      "mid": 6930.0,
+      "high": 8316.0
      },
      "expected_conversions": {
-      "low": 35.1,
-      "mid": 70.2,
-      "high": 122.9
+      "low": 116.4,
+      "mid": 242.5,
+      "high": 436.6
      },
      "expected_units": {
-      "low": 32.8,
-      "mid": 65.7,
-      "high": 114.9
+      "low": 121.3,
+      "mid": 242.5,
+      "high": 436.6
      },
-     "capacity_usd": 23284.8,
-     "expected_impressions": 149300,
-     "expected_reach": 93312,
+     "capacity_usd": 307609.33,
+     "expected_impressions": 165000,
+     "expected_reach": 103125,
      "requires_host_approval": false,
-     "rationale": "score 0.29, relative fit x1.40; 0.0222 conversions/$ at the start, falling as the host saturates; bid $1.26 (cap $1.80)"
+     "rationale": "market price $0.53-$0.76 (median $0.64); bidding $0.41 wins ~1% of page views, paying ~$0.40 per click (second price)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.16,
-     "budget_usd": 801.62,
-     "cpc_bid_usd": 1.75,
-     "start_bid_usd": 1.22,
+     "share": 0.44,
+     "budget_usd": 2184.22,
+     "cpc_bid_usd": 0.4,
+     "start_bid_usd": 0.4,
+     "win_share": 0.025,
+     "avg_price_paid": 0.37,
+     "market_price": {
+      "low": 0.51,
+      "mid": 0.59,
+      "high": 0.71
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 526.0,
-      "mid": 657.0,
-      "high": 788.0
+      "low": 4730.0,
+      "mid": 5912.0,
+      "high": 7095.0
      },
      "expected_conversions": {
-      "low": 8.9,
-      "mid": 17.9,
-      "high": 31.3
+      "low": 96.4,
+      "mid": 200.9,
+      "high": 361.6
      },
      "expected_units": {
-      "low": 8.3,
-      "mid": 16.7,
-      "high": 29.2
+      "low": 100.5,
+      "mid": 200.9,
+      "high": 361.6
      },
-     "capacity_usd": 5770.6,
-     "expected_impressions": 40285,
-     "expected_reach": 25178,
+     "capacity_usd": 73972.52,
+     "expected_impressions": 145000,
+     "expected_reach": 90625,
      "requires_host_approval": false,
-     "rationale": "score 0.27, relative fit x1.36; 0.0223 conversions/$ at the start, falling as the host saturates; bid $1.22 (cap $1.75)"
+     "rationale": "market price $0.51-$0.71 (median $0.59); bidding $0.40 wins ~2% of page views, paying ~$0.37 per click (second price)"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.058,
-     "budget_usd": 288.0,
-     "cpc_bid_usd": 1.37,
-     "start_bid_usd": 0.96,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.5,
+     "start_bid_usd": 0.5,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.5,
+      "mid": 0.58,
+      "high": 0.68
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 240.0,
-      "mid": 300.0,
-      "high": 360.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 3.2,
-      "mid": 6.4,
-      "high": 11.2
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 3.0,
-      "mid": 5.9,
-      "high": 10.4
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 1960.37,
-     "expected_impressions": 23506,
-     "expected_reach": 14691,
+     "capacity_usd": 31208.72,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "score 0.17, relative fit x1.06; 0.0222 conversions/$ at the start, falling as the host saturates; bid $0.96 (cap $1.37)"
+     "rationale": "market price $0.50-$0.68 (median $0.58); bidding $0.50 wins ~0% of page views, paying ~$0.00 per click (second price)"
     }
    ],
    "warnings": []
@@ -1522,34 +1536,34 @@
    "phases": [
     {
      "name": "learning",
-     "until": "14 days or 300 clicks per host",
-     "rule": "fixed start bid per host; pacing only",
-     "why": "stable bids so measured CTR/CVR aren't confounded"
+     "until": "14 days",
+     "rule": "planned bid per host; pacing only",
+     "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
-     "why": "no CPA target was set, so the goal is the most units for the budget"
+     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "why": "most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_002",
-     "start_bid": 1.26,
-     "max_bid": 1.8,
-     "floor": 0.25
+     "start_bid": 0.41,
+     "max_bid": 0.69,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 1.22,
-     "max_bid": 1.75,
-     "floor": 0.25
+     "start_bid": 0.4,
+     "max_bid": 0.63,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.96,
-     "max_bid": 1.37,
-     "floor": 0.25
+     "start_bid": 0.5,
+     "max_bid": 0.62,
+     "floor": 0.05
     }
    ],
    "adjustments": [
@@ -1566,7 +1580,7 @@
      "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Maximise conversions within the budget, never above the $1.80 cap (category default)."
+   "rationale": "Maximise conversions within the budget; the ceiling per host is the price that wins your 'balanced' share."
   },
   "targeting": {
    "publishers_include": [
@@ -1726,8 +1740,8 @@
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "budget_cap_usd": 5000.0,
-   "max_cpc_cap_usd": 1.8,
-   "stop_loss": null,
+   "max_cpc_usd": null,
+   "max_share_per_host": 1.0,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {

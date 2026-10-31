@@ -23,9 +23,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "home",
+    "tag": "natural",
     "weight": 1.0,
-    "why": "Candles are a core home decor and household product."
+    "why": "Made with natural soy wax and no synthetic fragrances."
    },
    {
     "tag": "gifting",
@@ -33,9 +33,9 @@
     "why": "The advertiser states they are mostly bought as gifts."
    },
    {
-    "tag": "natural",
+    "tag": "home",
     "weight": 1.0,
-    "why": "Made with natural soy wax and no synthetic fragrances."
+    "why": "Candles are a core home decor and household product."
    },
    {
     "tag": "sustainable",
@@ -1406,144 +1406,160 @@
    "price_usd": 60.0,
    "price_source": "tier_default",
    "expected_orders": 1.0,
-   "gross_margin": 0.55,
-   "margin_source": "category_default",
-   "break_even_cac": 33.0,
    "target_cpa": null,
    "target_source": "none",
-   "assumptions": [
-    "Price not given; assumed $60 for a 'unknown' product.",
-    "Margin not given; assumed 55% (typical for home) for the break-even estimate only.",
-    "Break-even per customer (guidance, not enforced): $60 x 55% x 1.0 orders = $33.00."
-   ]
+   "assumptions": []
   },
   "pricing": {
    "model": "CPC",
    "bidding": "maximize",
-   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $2.50 cap (category default) to spend it well; no CPA target is invented. Guidance: at the assumed margin, a click is worth about $0.40; bidding above that loses money per customer. Set a target CPA or a lower max CPC to enforce it.",
-   "max_cpc_cap": 2.5,
-   "cap_source": "category_default",
+   "aggressiveness": "balanced",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.83-$1.08 per click (median $0.93), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "max_cpc": null,
    "cpc_range": {
-    "low": 1.25,
-    "mid": 1.75,
-    "high": 2.5
+    "low": 0.83,
+    "mid": 0.93,
+    "high": 1.08
    },
    "cpm_bid": null,
    "target_cpa": null,
-   "break_even_cpc": 0.4,
    "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 5000.0,
+   "planned_spend_usd": 4982.41,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
    "when_goal_met": "stop",
+   "aggressiveness": "balanced",
+   "max_share_per_host": 1.0,
    "forecast": {
-    "low": 21.1,
-    "mid": 42.3,
-    "high": 74.0
+    "low": 80.1,
+    "mid": 160.2,
+    "high": 288.4
    },
+   "forecast_without_share_cap": 160.2,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 117.3,
-   "spend_at_full_inventory_usd": 19343.25,
+   "max_deliverable": 6961.3,
+   "spend_at_full_inventory_usd": 317622.89,
    "replan_options": [],
-   "expected_impressions": 258437,
-   "expected_reach": 161523,
+   "expected_impressions": 232000,
+   "expected_reach": 145000,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
    "pacing": "even daily pacing",
-   "learning_floor_usd": 1401.0,
-   "exploration_reserve_usd": 0.0,
-   "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_014",
      "publisher_name": "Hearthstone Goods",
-     "share": 0.212,
-     "budget_usd": 1062.5,
-     "cpc_bid_usd": 2.5,
-     "start_bid_usd": 1.75,
+     "share": 0.626,
+     "budget_usd": 3117.78,
+     "cpc_bid_usd": 0.69,
+     "start_bid_usd": 0.69,
+     "win_share": 0.04,
+     "avg_price_paid": 0.66,
+     "market_price": {
+      "low": 0.83,
+      "mid": 0.93,
+      "high": 1.08
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 486.0,
-      "mid": 607.0,
-      "high": 729.0
+      "low": 3763.0,
+      "mid": 4704.0,
+      "high": 5645.0
      },
      "expected_conversions": {
-      "low": 5.1,
-      "mid": 10.2,
-      "high": 17.9
+      "low": 47.4,
+      "mid": 98.8,
+      "high": 177.8
      },
      "expected_units": {
-      "low": 4.5,
-      "mid": 9.0,
-      "high": 15.7
+      "low": 49.4,
+      "mid": 98.8,
+      "high": 177.8
      },
-     "capacity_usd": 4116.0,
-     "expected_impressions": 36139,
-     "expected_reach": 22587,
+     "capacity_usd": 58999.26,
+     "expected_impressions": 112000,
+     "expected_reach": 70000,
      "requires_host_approval": false,
-     "rationale": "score 0.25, relative fit x1.40; 0.0096 conversions/$ at the start, falling as the host saturates; bid $1.75 (cap $2.50)"
+     "rationale": "market price $0.83-$1.08 (median $0.93); bidding $0.69 wins ~4% of page views, paying ~$0.66 per click (second price)"
     },
     {
      "publisher_id": "pub_011",
      "publisher_name": "Northbed",
-     "share": 0.244,
-     "budget_usd": 1220.0,
-     "cpc_bid_usd": 2.36,
-     "start_bid_usd": 1.65,
+     "share": 0.087,
+     "budget_usd": 431.42,
+     "cpc_bid_usd": 0.65,
+     "start_bid_usd": 0.65,
+     "win_share": 0.005,
+     "avg_price_paid": 0.61,
+     "market_price": {
+      "low": 0.92,
+      "mid": 1.05,
+      "high": 1.24
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 592.0,
-      "mid": 739.0,
-      "high": 887.0
+      "low": 570.0,
+      "mid": 713.0,
+      "high": 856.0
      },
      "expected_conversions": {
-      "low": 5.9,
-      "mid": 11.7,
-      "high": 20.5
+      "low": 6.8,
+      "mid": 14.1,
+      "high": 25.4
      },
      "expected_units": {
-      "low": 5.2,
-      "mid": 10.3,
-      "high": 18.1
+      "low": 7.1,
+      "mid": 14.1,
+      "high": 25.4
      },
-     "capacity_usd": 4705.94,
-     "expected_impressions": 46664,
-     "expected_reach": 29165,
+     "capacity_usd": 80442.12,
+     "expected_impressions": 18000,
+     "expected_reach": 11250,
      "requires_host_approval": false,
-     "rationale": "score 0.23, relative fit x1.32; 0.0096 conversions/$ at the start, falling as the host saturates; bid $1.65 (cap $2.36)"
+     "rationale": "market price $0.92-$1.24 (median $1.05); bidding $0.65 wins ~0% of page views, paying ~$0.61 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.543,
-     "budget_usd": 2717.5,
-     "cpc_bid_usd": 1.81,
-     "start_bid_usd": 1.27,
+     "share": 0.288,
+     "budget_usd": 1433.2,
+     "cpc_bid_usd": 0.5,
+     "start_bid_usd": 0.5,
+     "win_share": 0.007,
+     "avg_price_paid": 0.46,
+     "market_price": {
+      "low": 0.69,
+      "mid": 0.84,
+      "high": 1.0
+     },
+     "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 1712.0,
-      "mid": 2140.0,
-      "high": 2568.0
+      "low": 2485.0,
+      "mid": 3107.0,
+      "high": 3728.0
      },
      "expected_conversions": {
-      "low": 13.0,
-      "mid": 26.1,
-      "high": 45.6
+      "low": 22.7,
+      "mid": 47.3,
+      "high": 85.2
      },
      "expected_units": {
-      "low": 11.5,
-      "mid": 23.0,
-      "high": 40.2
+      "low": 23.7,
+      "mid": 47.3,
+      "high": 85.2
      },
-     "capacity_usd": 10521.32,
-     "expected_impressions": 175634,
-     "expected_reach": 109771,
+     "capacity_usd": 178181.51,
+     "expected_impressions": 102000,
+     "expected_reach": 63750,
      "requires_host_approval": false,
-     "rationale": "score 0.13, relative fit x1.02; 0.0096 conversions/$ at the start, falling as the host saturates; bid $1.27 (cap $1.81)"
+     "rationale": "market price $0.69-$1.00 (median $0.84); bidding $0.50 wins ~1% of page views, paying ~$0.46 per click (second price)"
     }
    ],
    "warnings": []
@@ -1553,34 +1569,34 @@
    "phases": [
     {
      "name": "learning",
-     "until": "14 days or 300 clicks per host",
-     "rule": "fixed start bid per host; pacing only",
-     "why": "stable bids so measured CTR/CVR aren't confounded"
+     "until": "14 days",
+     "rule": "planned bid per host; pacing only",
+     "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
-     "why": "no CPA target was set, so the goal is the most units for the budget"
+     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "why": "most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_014",
-     "start_bid": 1.75,
-     "max_bid": 2.5,
-     "floor": 0.25
+     "start_bid": 0.69,
+     "max_bid": 0.98,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_011",
-     "start_bid": 1.65,
-     "max_bid": 2.36,
-     "floor": 0.25
+     "start_bid": 0.65,
+     "max_bid": 1.11,
+     "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 1.27,
-     "max_bid": 1.81,
-     "floor": 0.25
+     "start_bid": 0.5,
+     "max_bid": 0.89,
+     "floor": 0.05
     }
    ],
    "adjustments": [
@@ -1597,7 +1613,7 @@
      "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Maximise conversions within the budget, never above the $2.50 cap (category default)."
+   "rationale": "Maximise conversions within the budget; the ceiling per host is the price that wins your 'balanced' share."
   },
   "targeting": {
    "publishers_include": [
@@ -1759,8 +1775,8 @@
    "claims_blocked_pending_substantiation": [],
    "competitor_hosts_need_approval": [],
    "budget_cap_usd": 5000.0,
-   "max_cpc_cap_usd": 2.5,
-   "stop_loss": null,
+   "max_cpc_usd": null,
+   "max_share_per_host": 1.0,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
@@ -1778,7 +1794,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

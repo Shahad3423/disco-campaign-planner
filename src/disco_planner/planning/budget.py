@@ -1,20 +1,20 @@
-"""Economics, bids, budget allocation, forecast and bid strategy (DECISIONS D2, D6, D15, D23).
+"""Economics, market prices, allocation, forecast and bid strategy (DECISIONS D2, D15, D23, D24).
 
-The advertiser sets the budget (a hard cap; we never suggest one), an objective (conversions, clicks,
-impressions or reach), optionally a goal number, and a bidding mode (maximise within budget, or a
-target CPA / ROAS). We then:
-  1. economics    break-even per customer as GUIDANCE; a target exists only if the advertiser set one
-  2. bids         a hard max bid per click (advertiser's own, or a labelled category default)
-  3. per host     expected price, CTR, CVR, inventory, and a diminishing-returns response curve
-  4. allocation   learning floor on every host first, then water-filling: each next dollar goes to the
-                  host buying the most objective units per dollar (stops at the goal if asked)
-  5. forecast     what the planned spend buys (a range), and whether the goal is reachable,
-                  money-limited or inventory-limited, with concrete replan options
-  6. bid strategy learning (fixed) -> maximise / enhanced (adjusted per shopper, capped) -> tCPA
-All priors come from config/pricing.yaml, each tagged [sourced] / [benchmark] / [assumed].
+Disco's job: deliver the advertiser's objective within their budget, at market prices. The advertiser
+owns everything about their own economics (margins, what a customer is worth); they express it only
+through their budget, objective, optional goal, optional target CPA / ROAS and optional max CPC.
+
+  1. economics   a target exists only if the advertiser set one
+  2. market      per host, the bid landscape: price to win each page view vs the other campaigns
+  3. allocation  buy the cheapest objective units first across hosts (greedy on rising unit costs),
+                 until the budget, the goal, the aggressiveness limit, the share cap or a price cap stops it
+  4. forecast    what the plan buys (a range) and whether the goal is reachable, budget-limited or
+                 inventory-limited, with concrete replan options
+  5. bids        per host: the planned bid (the price that wins the planned share) and its ceiling
 """
 from __future__ import annotations
 
+import heapq
 import math
 from datetime import date, timedelta
 
@@ -23,13 +23,14 @@ from disco_planner.domain.models import (
     OBJECTIVE_UNIT, AdvertiserInputs, AdvertiserProfile, Allocation, BidAdjustment, BidStrategy, BudgetPlan,
     Economics, HostBid, PricingPlan, PublisherScore, Range,
 )
+from disco_planner.planning import market
 
 
 def _cfg() -> dict:
     return catalog.config("pricing")
 
 
-# ------------------------------------------------------------------ 1. economics (guidance + targets)
+# ------------------------------------------------------------------ 1. economics (the advertiser's targets only)
 
 
 def economics(profile: AdvertiserProfile, inputs: AdvertiserInputs, primary_category: str | None) -> Economics:
@@ -41,41 +42,18 @@ def economics(profile: AdvertiserProfile, inputs: AdvertiserInputs, primary_cate
         price, price_src = profile.price_point_usd, "stated"
     else:
         price, price_src = eco["default_price_by_tier"][profile.price_tier], "tier_default"
-        assumptions.append(f"Price not given; assumed ${price:.0f} for a '{profile.price_tier}' product.")
     orders = eco["expected_orders"][profile.purchase_model]
-    if profile.purchase_model in ("subscription", "repeat_consumable"):
-        assumptions.append(f"{profile.purchase_model}: assumed {orders} orders per customer over ~6 months.")
-
-    if inputs.gross_margin is not None:
-        margin, margin_src = inputs.gross_margin, "form"
-    else:
-        margin = eco["default_gross_margin"].get(primary_category or "", eco["default_gross_margin"]["default"])
-        margin_src = "category_default"
-        assumptions.append(f"Margin not given; assumed {margin:.0%} (typical for {primary_category or 'DTC'}) "
-                           "for the break-even estimate only.")
-    break_even = price * margin * orders
-    assumptions.append(f"Break-even per customer (guidance, not enforced): ${price:.0f} x {margin:.0%} x {orders} "
-                       f"orders = ${break_even:.2f}.")
-
     target, source = None, "none"
     if inputs.bidding == "target_cpa" and inputs.target_cpa_usd:
         target, source = inputs.target_cpa_usd, "target_cpa"
     elif inputs.bidding == "target_roas" and inputs.target_roas:
         target, source = price * orders / inputs.target_roas, "target_roas"
-        assumptions.append(f"Target CPA from ROAS: revenue per customer ${price * orders:.0f} / {inputs.target_roas:g} "
-                           f"= ${target:.2f}.")
-    return Economics(price_usd=price, price_source=price_src, expected_orders=orders, gross_margin=margin,
-                     margin_source=margin_src, break_even_cac=round(break_even, 2),
+        if price_src == "tier_default":
+            assumptions.append(f"Price not given; assumed ${price:.0f} ('{profile.price_tier}') to turn ROAS into a CPA.")
+        assumptions.append(f"Target CPA from ROAS: revenue per customer ${price * orders:.0f} "
+                           f"(${price:.0f} x {orders} orders) / {inputs.target_roas:g} = ${target:.2f}.")
+    return Economics(price_usd=price, price_source=price_src, expected_orders=orders,
                      target_cpa=round(target, 2) if target else None, target_source=source, assumptions=assumptions)
-
-
-# ------------------------------------------------------------------ 2. bids and caps
-
-
-def relative_fit(score: float, top: float) -> float:
-    """CTR/CVR multiplier vs an AVERAGE host: best-fitting host x1.4, weakest pick x0.6 (a ratio, so > 1 is fine)."""
-    m = _cfg()["priors"]["relative_fit_multiplier"]
-    return m["min"] + (m["max"] - m["min"]) * (score / top if top else 0)
 
 
 def category_cvr(category: str | None) -> dict[str, float]:
@@ -84,276 +62,250 @@ def category_cvr(category: str | None) -> dict[str, float]:
     return {k: v * mult for k, v in pri["cvr"].items()}
 
 
-def _cap(inputs: AdvertiserInputs, category: str | None) -> tuple[float, str]:
-    if inputs.max_cpc_usd:
-        return inputs.max_cpc_usd, "advertiser"
-    table = _cfg()["default_max_cpc_by_category"]
-    return table.get(category or "", table["default"]), "category_default"
+relative_fit = market.relative_fit  # re-exported for serving
 
 
-def pricing_plan(eco: Economics, inputs: AdvertiserInputs, category: str | None = None) -> PricingPlan:
-    pri, pm, bud = _cfg()["priors"], _cfg()["pricing_models"], _cfg()["budget"]
-    cvr = category_cvr(category)
-    cap, cap_src = _cap(inputs, category)
-    floor = _cfg()["economics"]["cpc_floor"]
-    clamp = lambda x: round(min(max(x, floor), cap), 2)
-    break_even_cpc = round(eco.break_even_cac * cvr["mid"], 2)
-    unlock = (f"tCPA unlocks after conversion tracking is verified and {pm['tcpa_requirements']['min_conversions']} "
-              "click-through conversions are recorded.")
-    if eco.target_cpa:
-        cpc = Range(**{k: clamp(eco.target_cpa * cvr[k]) for k in ("low", "mid", "high")})
-        why = (f"Bid toward target CPA ${eco.target_cpa:.2f}: the click price that hits it is target x conversion rate "
-               f"({cvr['low']:.1%}-{cvr['high']:.1%}); hard cap ${cap:.2f} ({cap_src.replace('_', ' ')}).")
-    else:
-        cpc = Range(low=clamp(cap * 0.5), mid=clamp(cap * bud["start_bid_fraction"]), high=cap)
-        why = (f"Maximise {OBJECTIVE_UNIT[inputs.objective]} within the budget: bids move between ${floor:.2f} and the "
-               f"${cap:.2f} cap ({cap_src.replace('_', ' ')}) to spend it well; no CPA target is invented.")
-    if cap > break_even_cpc:
-        why += (f" Guidance: at the assumed margin, a click is worth about ${break_even_cpc:.2f}; bidding above that "
-                "loses money per customer. Set a target CPA or a lower max CPC to enforce it.")
-    if inputs.objective in ("impressions", "reach"):
-        cpm = round(cpc.mid * pri["ctr"]["mid"] * 1000, 2)
-        return PricingPlan(model="CPM", bidding=inputs.bidding, max_cpc_cap=cap, cap_source=cap_src, cpc_range=cpc,
-                           cpm_bid=cpm, target_cpa=eco.target_cpa, break_even_cpc=break_even_cpc, tcpa_unlock=unlock,
-                           rationale=f"{inputs.objective.capitalize()} objective: pay per 1,000 views; ${cpm} CPM is the "
-                                     f"click-equivalent of a ${cpc.mid:.2f} bid at a {pri['ctr']['mid']:.1%} CTR. " + why)
-    return PricingPlan(model="CPC", bidding=inputs.bidding, max_cpc_cap=cap, cap_source=cap_src, cpc_range=cpc,
-                       target_cpa=eco.target_cpa, break_even_cpc=break_even_cpc, tcpa_unlock=unlock,
-                       rationale="Pay per click: verifiable without trusting a pixel. " + why)
+# ------------------------------------------------------------------ 2. market per host
 
 
-# ------------------------------------------------------------------ 3. per-host economics and response curves
-
-
-def host_rows(scores: list[PublisherScore], eco: Economics, pricing: PricingPlan, inputs: AdvertiserInputs,
-              days: int, category: str | None) -> list[dict]:
-    pri, bud = _cfg()["priors"], _cfg()["budget"]
+def host_markets(scores: list[PublisherScore], brief: str, eco: Economics, inputs: AdvertiserInputs,
+                 days: int, category: str | None) -> list[dict]:
+    """Per recommended host: click/conversion rates, page views in the flight, the bid landscape, and how
+    much of it we may buy (aggressiveness + price caps)."""
+    pri = _cfg()["priors"]
     pubs = catalog.publisher_by_id()
     picks = [s for s in scores if s.recommended]
-    top = picks[0].score if picks else 1.0
+    if not picks:
+        return []
+    top = picks[0].score
     cvr_all = category_cvr(category)
-    cap, floor = pricing.max_cpc_cap, _cfg()["economics"]["cpc_floor"]
-    best_cvr = cvr_all["mid"] * relative_fit(top, top)
-    rows = []
+    k_share = _cfg()["aggressiveness"][inputs.aggressiveness]
+    out = []
     for s in picks:
-        fit = relative_fit(s.score, top)
-        cvr = {k: v * fit for k, v in cvr_all.items()}
-        ctr = pri["ctr"]["mid"] * fit
-        if eco.target_cpa:                       # bid that hits the target on average, capped
-            max_bid = min(cap, max(floor, eco.target_cpa * cvr["mid"]))
-        elif inputs.objective == "conversions":  # maximise conversions: bid in proportion to expected CVR
-            max_bid = max(floor, cap * cvr["mid"] / best_cvr)
-        else:                                     # clicks / impressions / reach: same cap everywhere
-            max_bid = cap
-        start = max(floor, round(max_bid * bud["start_bid_fraction"], 2))
-        cpm = pricing.cpm_bid if pricing.model == "CPM" else start * ctr * 1000
-        impressions_cap = pubs[s.publisher_id].monthly_impressions * pri["share_of_voice_cap"] * days / 30
-        spend_cap = impressions_cap / 1000 * cpm
-        per_dollar = {  # objective units per dollar at the start of the curve
-            "conversions": ctr * cvr["mid"] * 1000 / cpm,
-            "clicks": ctr * 1000 / cpm,
-            "impressions": 1000 / cpm,
-            "reach": 1000 / (cpm * pri["avg_frequency"]),
-        }[inputs.objective]
-        rows.append(dict(score=s, fit=fit, cvr=cvr, ctr=ctr, max_bid=round(max_bid, 2), start=start, cpm=cpm,
-                         impressions_cap=impressions_cap, spend_cap=spend_cap, inventory_cap=spend_cap, rate=per_dollar,
-                         floor=min(spend_cap, bud["min_clicks_per_publisher"] * start),
-                         competitor=any(f.startswith("competitor_conflict") for f in s.flags)))
-    return rows
+        fit = market.relative_fit(s.score, top)
+        ctr, cvr = pri["ctr"]["mid"] * fit, {k: v * fit for k, v in cvr_all.items()}
+        needed = market.landscape(s.publisher_id, ctr, exclude_brief=brief)
+        # price caps: the advertiser's max CPC, and with a target CPA the click price that hits it on average
+        caps = [c for c in (inputs.max_cpc_usd, eco.target_cpa * cvr["mid"] if eco.target_cpa else None) if c]
+        price_cap = min(caps) if caps else math.inf
+        k_max = sum(1 for i, n in enumerate(needed) if n <= price_cap and i < int(k_share * len(needed)))
+        audience = s.score / top if inputs.objective != "conversions" else 1.0  # in-audience units (CVR covers conversions)
+        unit_per_view = {"conversions": ctr * cvr["mid"], "clicks": ctr, "impressions": 1.0,
+                         "reach": 1.0 / pri["avg_frequency"]}[inputs.objective] * audience
+        views = pubs[s.publisher_id].monthly_impressions * days / 30
+        out.append(dict(score=s, fit=fit, ctr=ctr, cvr=cvr, needed=needed, k_max=k_max, audience=audience,
+                        unit_per_view=unit_per_view, views=views, bucket=views / len(needed),
+                        competitor=any(f.startswith("competitor_conflict") for f in s.flags)))
+    return out
 
 
-def _units(row: dict, spend: float) -> float:
-    """Diminishing returns: rate x S x (1 - exp(-c s / S)) / c. S = the host's INVENTORY in dollars
-    (saturation is about how much of its audience we've bought), not any budget cap."""
-    c, S = _cfg()["allocation"]["curvature"], row["inventory_cap"]
-    if S <= 0:
-        return 0.0
-    return row["rate"] * S * (1 - math.exp(-c * min(spend, S) / S)) / c
+def _bucket_cost(m: dict, k: int) -> float:
+    """Expected spend for the k-th cheapest bucket of page views: we pay per click, the second price."""
+    return m["bucket"] * m["ctr"] * m["needed"][k]
 
 
-def _marginal(row: dict, spend: float) -> float:
-    """Marginal units per dollar; 0 once the host hits its hard spend cap (inventory or diversification)."""
-    c, S = _cfg()["allocation"]["curvature"], row["inventory_cap"]
-    return 0.0 if spend >= row["spend_cap"] or S <= 0 else row["rate"] * math.exp(-c * spend / S)
-
-
-def _water_fill(rows: list[dict], start: dict[str, float], budget: float, goal: float | None) -> dict[str, float]:
-    """Greedy on concave curves (optimal for separable concave objectives): each step goes to the host
-    with the highest marginal units per dollar; stops at the budget, at full inventory, or at the goal."""
-    spend = dict(start)
-    step = max(budget / _cfg()["allocation"]["steps"], 1.0)
-    remaining = budget - sum(spend.values())
-    while remaining > 1e-6:
-        if goal is not None and sum(_units(r, spend[r["score"].publisher_id]) for r in rows) >= goal:
+def allocate(markets: list[dict], budget: float, goal: float | None, share_cap: float) -> dict[str, int]:
+    """Greedy: always buy the bucket with the most units per dollar. Each host's unit cost only rises as we
+    buy more of it, so this is optimal for the separable problem (tested against brute force)."""
+    taken = {m["score"].publisher_id: 0 for m in markets}
+    spent = {pid: 0.0 for pid in taken}
+    heap = [(-(m["unit_per_view"] * m["bucket"]) / _bucket_cost(m, 0), i) for i, m in enumerate(markets) if m["k_max"] > 0]
+    heapq.heapify(heap)
+    total, units = 0.0, 0.0
+    while heap:
+        _, i = heapq.heappop(heap)
+        m = markets[i]
+        pid, k = m["score"].publisher_id, taken[m["score"].publisher_id]
+        cost = _bucket_cost(m, k)
+        if total + cost > budget + 1e-9 or spent[pid] + cost > share_cap * budget + 1e-9:
+            continue  # this host is done (budget or its share cap): its next buckets only cost more
+        taken[pid] += 1
+        spent[pid] += cost
+        total += cost
+        units += m["unit_per_view"] * m["bucket"]
+        if goal is not None and units >= goal:
             break
-        best = max(rows, key=lambda r: _marginal(r, spend[r["score"].publisher_id]), default=None)
-        if best is None or _marginal(best, spend[best["score"].publisher_id]) <= 0:
-            break  # every host at capacity
-        pid = best["score"].publisher_id
-        add = min(step, remaining, best["spend_cap"] - spend[pid])
-        spend[pid] += add
-        remaining -= add
-    return spend
+        if taken[pid] < m["k_max"]:
+            heapq.heappush(heap, (-(m["unit_per_view"] * m["bucket"]) / _bucket_cost(m, taken[pid]), i))
+    return taken
 
 
-def _cost_to_goal(rows: list[dict], floors: dict, goal: float, spend_full: float) -> float:
-    """Spend needed to reach the goal with true inventory (the share cap scales with a bigger budget)."""
-    sim = [{**r, "spend_cap": r["inventory_cap"]} for r in rows]
-    return round(sum(_water_fill(sim, floors, spend_full + 1, goal).values()), 2)
+def _summary(markets: list[dict], taken: dict[str, int]) -> tuple[float, float]:
+    spend = sum(sum(_bucket_cost(m, k) for k in range(taken[m["score"].publisher_id])) for m in markets)
+    units = sum(m["unit_per_view"] * m["bucket"] * taken[m["score"].publisher_id] for m in markets)
+    return spend, units
 
 
-# ------------------------------------------------------------------ 4-5. allocation + forecast
+def pricing_plan(eco: Economics, inputs: AdvertiserInputs, markets: list[dict]) -> PricingPlan:
+    pri, pm = _cfg()["priors"], _cfg()["pricing_models"]
+    q = lambda p: round(sorted(market.quantile(m["needed"], p) for m in markets)[len(markets) // 2], 2)
+    cpc = Range(low=q(0.25), mid=q(0.5), high=q(0.75)) if markets else None
+    unlock = (f"tCPA unlocks after conversion tracking is verified and {pm['tcpa_requirements']['min_conversions']} "
+              "click-through conversions are recorded.")
+    agg = _cfg()["aggressiveness"][inputs.aggressiveness]
+    why = (f"Market price to win a page view on these hosts: ${cpc.low:.2f}-${cpc.high:.2f} per click (median ${cpc.mid:.2f}), "
+           f"from the simulated auction against the other campaigns. '{inputs.aggressiveness}' bidding tries to win up to "
+           f"{agg:.0%} of each host's page views; the planned bid per host is the price that wins its planned share."
+           if cpc else "No recommended hosts.")
+    if eco.target_cpa:
+        why += f" Target CPA ${eco.target_cpa:.2f}: bids stay at or below target x conversion rate on each host."
+    if inputs.max_cpc_usd:
+        why += f" Your max CPC ${inputs.max_cpc_usd:.2f} is never exceeded."
+    if inputs.objective in ("impressions", "reach") and cpc:
+        cpm = round(cpc.mid * pri["ctr"]["mid"] * 1000, 2)
+        return PricingPlan(model="CPM", bidding="maximize", aggressiveness=inputs.aggressiveness, cpc_range=cpc,
+                           cpm_bid=cpm, max_cpc=inputs.max_cpc_usd, target_cpa=None, tcpa_unlock=unlock,
+                           rationale=f"{inputs.objective.capitalize()}: pay per 1,000 views (~${cpm} CPM at the median price). " + why)
+    return PricingPlan(model="CPC", bidding=inputs.bidding, aggressiveness=inputs.aggressiveness, cpc_range=cpc,
+                       max_cpc=inputs.max_cpc_usd, target_cpa=eco.target_cpa, tcpa_unlock=unlock,
+                       rationale="Pay per click (verifiable without trusting a pixel). " + why)
 
 
-def budget_plan(
-    scores: list[PublisherScore], eco: Economics, pricing: PricingPlan, inputs: AdvertiserInputs,
-    today: date, gifting_moment: str | None, category: str | None = None,
-) -> BudgetPlan | None:
-    if not inputs.monthly_budget_usd:
+# ------------------------------------------------------------------ 3-4. allocation + forecast
+
+
+def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gifting_moment: str | None) -> BudgetPlan | None:
+    if not inputs.monthly_budget_usd or not markets:
         return None  # the advertiser chooses the budget; without it there is nothing to allocate
     cfg = _cfg()
-    pri, bud = cfg["priors"], cfg["budget"]
     budget = inputs.monthly_budget_usd
-    days = inputs.flight_days or bud["flight_days"]
+    days = inputs.flight_days or cfg["budget"]["flight_days"]
     unit = OBJECTIVE_UNIT[inputs.objective]
     goal = float(inputs.goal_target) if inputs.goal_target else None
-    explore = [s.publisher_name for s in scores if not s.recommended and "exploration candidate" in s.reason][:3]
-    rows = host_rows(scores, eco, pricing, inputs, days, category)
-    warnings: list[str] = []
-
-    learning_floor = sum(r["floor"] for r in rows)
     stop_at_goal = goal is not None and inputs.when_goal_met == "stop"
-    reserve = budget * bud["exploration_share"] if explore and not stop_at_goal else 0.0
-    spendable = budget - reserve
-    while rows and sum(r["floor"] for r in rows) > spendable:
-        dropped = rows.pop()  # weakest first: concentrate rather than learn nothing everywhere
-        warnings.append(f"Budget can't measure every host: dropped {dropped['score'].publisher_name} "
-                        f"(needs ~${dropped['floor']:,.0f} to learn).")
+    share_cap = inputs.max_share_per_host or cfg["allocation"]["max_share_per_host_default"]
+    share_cap = max(share_cap, 1 / len(markets))  # a cap below 1/n hosts could never spend the budget
 
-    floors = {r["score"].publisher_id: r["floor"] for r in rows}
-    # diversification: cap each host's spend at a share of the budget (water-filling respects spend_cap)
-    share_cap = max(cfg["allocation"]["max_share_per_host"], 1 / max(1, len(rows)))
-    for r in rows:
-        r["spend_cap"] = min(r["inventory_cap"], share_cap * spendable)
-    spend = _water_fill(rows, floors, spendable, goal if stop_at_goal else None)
-    units_mid = sum(_units(r, spend[r["score"].publisher_id]) for r in rows)
+    taken = allocate(markets, budget, goal if stop_at_goal else None, share_cap)
+    spend, units = _summary(markets, taken)
+    _, units_uncapped = _summary(markets, allocate(markets, budget, goal if stop_at_goal else None, 1.0))
+    full = {m["score"].publisher_id: m["k_max"] for m in markets}
+    spend_full, max_deliverable = _summary(markets, full)
     lo, hi = cfg["allocation"]["forecast_spread"][inputs.objective]
-    full = {r["score"].publisher_id: r["inventory_cap"] for r in rows}
-    max_deliverable = sum(_units(r, full[r["score"].publisher_id]) for r in rows)
-    spend_full = sum(full.values())
-    host_spend = sum(spend.values())
-    all_capped = all(spend[r["score"].publisher_id] >= r["spend_cap"] - 1 for r in rows) if rows else True
-    inventory_bound = all(spend[r["score"].publisher_id] >= r["inventory_cap"] - 1 for r in rows) if rows else True
 
-    status, binding, to_goal, options = "no_goal", ("inventory" if inventory_bound else "budget"), None, []
+    status, options, to_goal = "no_goal", [], None
+    exhausted = all(taken[pid] >= full[pid] for pid in taken)
+    binding = "inventory" if exhausted else "budget"
+    aggressive_more = inputs.aggressiveness != "aggressive"
     if goal is not None:
-        if units_mid >= goal * 0.999:
-            status = "reachable"
-            binding = "goal" if stop_at_goal else binding
-            to_goal = round(sum(spend.values()), 2) if stop_at_goal else _cost_to_goal(rows, floors, goal, spend_full)
-            if stop_at_goal and host_spend < spendable - 1:
-                options.append(f"Goal reached with ~${host_spend:,.0f} of your ${budget:,.0f}; the rest stays unspent "
-                               "(switch to 'keep spending' to buy more).")
+        if units >= goal * 0.999:
+            status, binding = "reachable", ("goal" if stop_at_goal else binding)
+            to_goal = round(_summary(markets, allocate(markets, math.inf, goal, 1.0))[0], 2)
+            if stop_at_goal and spend < budget - 1:
+                options.append(f"Goal reached with ~${spend:,.0f} of your ${budget:,.0f}; the rest stays unspent "
+                               "(choose 'keep spending' to buy more).")
         elif max_deliverable >= goal:
             status, binding = "money_limited", "budget"
-            to_goal = _cost_to_goal(rows, floors, goal, spend_full)
-            options += [f"Raise the budget to ~${to_goal + reserve:,.0f} to reach {goal:,.0f} {unit}.",
-                        f"Or accept ~{units_mid:,.0f} {unit} at ${budget:,.0f}."]
+            to_goal = round(_summary(markets, allocate(markets, math.inf, goal, 1.0))[0], 2)
+            options += [f"Raise the budget to ~${to_goal:,.0f} to reach {goal:,.0f} {unit}.",
+                        f"Or accept ~{units:,.0f} {unit} at ${budget:,.0f}."]
         else:
             status, binding = "inventory_limited", "inventory"
             need_days = math.ceil(days * goal / max(max_deliverable, 1e-9))
-            options += [f"These hosts can deliver only ~{max_deliverable:,.0f} {unit} in {days} days, whatever the budget.",
-                        f"Extend the flight to ~{need_days} days, or add hosts (candidates: {', '.join(explore) or 'none'}).",
-                        f"Or accept ~{max_deliverable:,.0f} {unit} (spend ~${spend_full:,.0f})."]
-    elif all_capped and host_spend < spendable - 1:
-        why = ("these hosts' inventory" if inventory_bound
-               else f"the {cfg['allocation']['max_share_per_host']:.0%} per-host diversification cap")
-        warnings.append(f"Only ~${host_spend:,.0f} can be spent given {why}; add hosts or lower the budget.")
+            options += [f"At '{inputs.aggressiveness}' bidding these hosts offer ~{max_deliverable:,.0f} {unit} in {days} days, "
+                        "whatever the budget."]
+            if aggressive_more:
+                options.append("Bid more aggressively to win a larger share of each host's page views (costs more per unit).")
+            options += [f"Or extend the flight to ~{need_days} days, add hosts, or accept ~{max_deliverable:,.0f} {unit}."]
+    elif not exhausted and spend < budget - 1 and not stop_at_goal and share_cap < 1:
+        options.append(f"Your {share_cap:.0%} per-host cap leaves ~${budget - spend:,.0f} unspent: the other hosts can't "
+                       f"absorb it at '{inputs.aggressiveness}' bidding. Raise or remove the cap, or add hosts.")
+    elif exhausted and spend < budget - 1:
+        options.append(f"Only ~${spend:,.0f} can be spent at '{inputs.aggressiveness}' bidding on these hosts"
+                       + ("; bid more aggressively or add hosts." if aggressive_more else "; add hosts or lower the budget."))
 
-    planned = host_spend + reserve
+    pri = cfg["priors"]
     allocations = []
-    for r in rows:
-        s, pid = r["score"], r["score"].publisher_id
-        b = spend[pid]
-        impressions = b / r["cpm"] * 1000 if r["cpm"] else 0
-        clicks = impressions * r["ctr"]
-        units = _units(r, b)
+    for m in markets:
+        s, pid = m["score"], m["score"].publisher_id
+        k = taken[pid]
+        spent_h = sum(_bucket_cost(m, i) for i in range(k))
+        impressions = m["bucket"] * k
+        clicks = impressions * m["ctr"]
+        units_h = m["unit_per_view"] * impressions
+        bid = round(m["needed"][k - 1], 2) if k else round(market.quantile(m["needed"], 0.25), 2)
+        avg_paid = spent_h / clicks if clicks else 0.0
+        p25, p50, p75 = (round(market.quantile(m["needed"], q), 2) for q in (0.25, 0.5, 0.75))
         allocations.append(Allocation(
-            publisher_id=pid, publisher_name=s.publisher_name, share=round(b / planned, 3) if planned else 0,
-            budget_usd=round(b, 2), cpc_bid_usd=r["max_bid"], start_bid_usd=r["start"],
+            publisher_id=pid, publisher_name=s.publisher_name, share=round(spent_h / spend, 3) if spend else 0,
+            budget_usd=round(spent_h, 2), cpc_bid_usd=bid, start_bid_usd=bid, win_share=round(k / len(m["needed"]), 3),
+            avg_price_paid=round(avg_paid, 2), market_price=Range(low=p25, mid=p50, high=p75),
+            audience_weight=round(m["audience"], 2),
             expected_clicks=Range(low=round(clicks * 0.8), mid=round(clicks), high=round(clicks * 1.2)),
-            expected_conversions=Range(**{k: round(clicks * r["cvr"][k], 1) for k in ("low", "mid", "high")}),
-            expected_units=Range(low=round(units * lo, 1), mid=round(units, 1), high=round(units * hi, 1)),
-            capacity_usd=round(r["spend_cap"], 2), expected_impressions=round(impressions),
-            expected_reach=round(impressions / pri["avg_frequency"]), requires_host_approval=r["competitor"],
-            rationale=(f"score {s.score:.2f}, relative fit x{r['fit']:.2f}; {r['rate']:.4f} {unit}/$ at the start, "
-                       f"falling as the host saturates; bid ${r['start']:.2f} (cap ${r['max_bid']:.2f})"
-                       + ("; host also sells this kind of product: confirm it allows competing brands, otherwise "
-                          "this budget reflows to the other hosts" if r["competitor"] else "")),
+            expected_conversions=Range(**{q: round(clicks * m["cvr"][q], 1) for q in ("low", "mid", "high")}),
+            expected_units=Range(low=round(units_h * lo, 1), mid=round(units_h, 1), high=round(units_h * hi, 1)),
+            capacity_usd=round(sum(_bucket_cost(m, i) for i in range(m["k_max"])), 2),
+            expected_impressions=round(impressions), expected_reach=round(impressions / pri["avg_frequency"]),
+            requires_host_approval=m["competitor"],
+            rationale=((f"not funded at this budget: cheaper {unit} are available on the other hosts first "
+                        f"(market price here ${p25:.2f}-${p75:.2f}); it gets budget as the budget grows or if a funded host declines"
+                        if not k else
+                        f"market price ${p25:.2f}-${p75:.2f} (median ${p50:.2f}); bidding ${bid:.2f} wins ~{k / len(m['needed']):.0%} "
+                        f"of page views, paying ~${avg_paid:.2f} per click (second price)")
+                       + (f"; {m['audience']:.0%} of units counted as in-audience" if m["audience"] < 1 else "")
+                       + ("; host also sells this kind of product: confirm it allows competing brands" if m["competitor"] else "")),
         ))
-
     pacing = "even daily pacing"
     if gifting_moment:
-        pacing = f"front-loaded x{bud['gifting_front_load']} during '{gifting_moment}', even otherwise"
+        pacing = f"front-loaded x{cfg['budget']['gifting_front_load']} during '{gifting_moment}', even otherwise"
     if stop_at_goal:
         pacing += "; stop when the goal is reached"
-    if eco.target_cpa:
-        stop = bud["stop_loss"]
-        pacing += f"; pause a host if CPA > {stop['cpa_multiple']}x target after {stop['min_clicks']} clicks"
     total_impr = sum(a.expected_impressions for a in allocations)
     return BudgetPlan(
-        monthly_budget_usd=round(budget, 2), planned_spend_usd=round(planned, 2), objective=inputs.objective, unit=unit,
-        goal_target=inputs.goal_target, when_goal_met=inputs.when_goal_met,
-        forecast=Range(low=round(units_mid * lo, 1), mid=round(units_mid, 1), high=round(units_mid * hi, 1)),
-        goal_status=status, binding_constraint=binding, spend_to_reach_goal_usd=to_goal,
-        max_deliverable=round(max_deliverable, 1), spend_at_full_inventory_usd=round(spend_full, 2),
-        replan_options=options, expected_impressions=total_impr, expected_reach=round(total_impr / pri["avg_frequency"]),
+        monthly_budget_usd=round(budget, 2), planned_spend_usd=round(spend, 2), objective=inputs.objective, unit=unit,
+        goal_target=inputs.goal_target, when_goal_met=inputs.when_goal_met, aggressiveness=inputs.aggressiveness,
+        max_share_per_host=round(share_cap, 2),
+        forecast=Range(low=round(units * lo, 1), mid=round(units, 1), high=round(units * hi, 1)),
+        forecast_without_share_cap=round(units_uncapped, 1), goal_status=status, binding_constraint=binding,
+        spend_to_reach_goal_usd=to_goal, max_deliverable=round(max_deliverable, 1),
+        spend_at_full_inventory_usd=round(spend_full, 2), replan_options=options,
+        expected_impressions=total_impr, expected_reach=round(total_impr / pri["avg_frequency"]),
         daily_cap_usd=round(budget / days, 2), flight_start=today.isoformat(),
-        flight_end=(today + timedelta(days=days)).isoformat(), pacing=pacing,
-        learning_floor_usd=round(learning_floor, 2), exploration_reserve_usd=round(reserve, 2),
-        exploration_candidates=explore, allocations=allocations, warnings=warnings,
+        flight_end=(today + timedelta(days=days)).isoformat(), pacing=pacing, allocations=allocations, warnings=[],
     )
 
 
-# ------------------------------------------------------------------ 6. bid strategy
+# ------------------------------------------------------------------ 5. bid strategy
 
 
-def bid_strategy(pricing: PricingPlan, rows: list[dict], inputs: AdvertiserInputs) -> BidStrategy:
+def bid_strategy(pricing: PricingPlan, markets: list[dict], inputs: AdvertiserInputs, plan: BudgetPlan | None) -> BidStrategy:
     cfg = _cfg()["bid_strategy"]
     floor = _cfg()["economics"]["cpc_floor"]
-    learn, adj = cfg["learning_phase"], cfg["adjustments"]
+    adj = cfg["adjustments"]
+    planned = {a.publisher_id: a.cpc_bid_usd for a in plan.allocations} if plan else {}
+    host_bids = []
+    for m in markets:
+        pid = m["score"].publisher_id
+        ceiling = m["needed"][m["k_max"] - 1] if m["k_max"] else market.quantile(m["needed"], 0.25)
+        if inputs.max_cpc_usd:
+            ceiling = min(ceiling, inputs.max_cpc_usd)  # the advertiser's cap always wins
+        start = planned.get(pid) or round(market.quantile(m["needed"], 0.5), 2)
+        host_bids.append(HostBid(publisher_id=pid, start_bid=round(min(start, ceiling), 2), max_bid=round(ceiling, 2), floor=floor))
     pacing = BidAdjustment(signal="pacing", min_multiplier=adj["pacing"]["min"], max_multiplier=adj["pacing"]["max"],
                            reason="Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down.")
     conv = BidAdjustment(signal="conversion_likelihood", min_multiplier=adj["conversion_likelihood"]["min"],
                          max_multiplier=adj["conversion_likelihood"]["max"],
                          reason="Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper).")
-    learning = {"name": "learning", "until": f"{learn['days']} days or {learn['min_clicks_per_host']} clicks per host",
-                "rule": "fixed start bid per host; pacing only", "why": "stable bids so measured CTR/CVR aren't confounded"}
-    host_bids = [HostBid(publisher_id=r["score"].publisher_id, start_bid=r["start"], max_bid=r["max_bid"], floor=floor)
-                 for r in rows]
+    learning = {"name": "learning", "until": f"{cfg['learning_phase']['days']} days",
+                "rule": "planned bid per host; pacing only", "why": "stable bids so measured rates aren't confounded"}
+    ceiling_note = (f"the ceiling per host is the price that wins your '{inputs.aggressiveness}' share"
+                    + (f", never above your ${inputs.max_cpc_usd:.2f} max CPC" if inputs.max_cpc_usd else ""))
     if pricing.model == "CPM":
         return BidStrategy(current_phase="fixed_cpm", host_bids=host_bids, adjustments=[pacing],
                            phases=[{"name": "fixed_cpm", "rule": f"${pricing.cpm_bid} CPM; pacing only"}],
-                           rationale="Buying views: per-shopper conversion adjustments don't apply; pacing keeps delivery on plan.")
+                           rationale=f"Buying views at market prices; {ceiling_note}.")
     if inputs.bidding == "maximize":
-        rule = ("bid = start x pacing" + (" x conversion likelihood" if inputs.objective == "conversions" else "")
-                + ", within [floor, cap]: spend the budget on the best opportunities")
-        return BidStrategy(
-            current_phase="learning", host_bids=host_bids,
-            adjustments=[pacing] + ([conv] if inputs.objective == "conversions" else []),
-            phases=[learning, {"name": "maximize", "rule": rule,
-                               "why": "no CPA target was set, so the goal is the most units for the budget"}],
-            rationale=f"Maximise {OBJECTIVE_UNIT[inputs.objective]} within the budget, never above the "
-                      f"${pricing.max_cpc_cap:.2f} cap ({pricing.cap_source.replace('_', ' ')}).",
-        )
+        rule = "planned bid x pacing" + (" x conversion likelihood" if inputs.objective == "conversions" else "") + ", up to the ceiling"
+        return BidStrategy(current_phase="learning", host_bids=host_bids,
+                           adjustments=[pacing] + ([conv] if inputs.objective == "conversions" else []),
+                           phases=[learning, {"name": "maximize", "rule": rule, "why": "most units for the budget"}],
+                           rationale=f"Maximise {OBJECTIVE_UNIT[inputs.objective]} within the budget; {ceiling_note}.")
     return BidStrategy(
         current_phase="learning", host_bids=host_bids, adjustments=[pacing, conv],
         phases=[learning,
-                {"name": "enhanced_cpc", "until": pricing.tcpa_unlock,
-                 "rule": "bid = start x conversion likelihood x pacing, within [floor, cap]",
+                {"name": "enhanced_cpc", "until": pricing.tcpa_unlock, "rule": "planned bid x conversion likelihood x pacing, up to the ceiling",
                  "why": "aim at the target on average while learning who converts"},
                 {"name": "target_cpa", "rule": f"Disco bids automatically toward ${pricing.target_cpa:.2f} average CPA",
-                 "why": "only once Disco can predict this brand's conversion rate"}],
-        rationale=f"Target ${pricing.target_cpa:.2f} CPA as an average (a goal for the bidder, not a per-click limit); "
-                  f"the hard limit is the ${pricing.max_cpc_cap:.2f} cap.",
+                 "why": "once Disco can predict this brand's conversion rate"}],
+        rationale=f"Target ${pricing.target_cpa:.2f} CPA as an average, not a per-click limit; {ceiling_note}.",
     )

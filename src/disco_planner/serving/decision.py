@@ -179,7 +179,7 @@ def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: 
         conv = clamp(match / prior_match if prior_match else 1.0,
                      adj["conversion_likelihood"]["min"], adj["conversion_likelihood"]["max"])
     bid = clamp(start * conv * pace, floor, ceiling)
-    capped = " (capped at break-even)" if start * conv * pace > ceiling else ""
+    capped = " (capped at the ceiling)" if start * conv * pace > ceiling else ""
     return round(bid, 2), (f"{phase}: start ${start:.2f} x conversion likelihood {conv:.2f} x pacing {pace:.2f} "
                            f"= ${bid:.2f}{capped}; ceiling ${ceiling:.2f}")
 

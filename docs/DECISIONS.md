@@ -301,3 +301,29 @@ Supersedes the "delivery goal instead of a budget" and "suggested learning budge
   dog-food example and removes single-host dependence. With the clicks objective the optimiser buys the
   cheapest available clicks regardless of quality, which is what that objective means.
 - Evals and the cached demo plans use a stated $5,000 budget so allocations exist and invariants are checked.
+
+## D24. Prices from a simulated market; Disco optimises the advertiser's objective, not their economics
+
+**What Disco owns vs what the advertiser owns.** Disco is a marketplace paid on spend: it needs advertisers to
+hit their goals (renewals), budgets delivered on time (revenue), host pages protected (supply) and trustworthy
+billing. The advertiser's margins, break-even and "what a click is worth" are theirs; they express them only via
+budget, objective, goal, target CPA/ROAS and max CPC. Removed: category default bid caps, break-even guidance,
+margin inputs, stop-loss, learning floors, exploration reserve, the assumed 5% share of voice.
+**Market.** Every known campaign (15 demo + 100 holdout) bids a benchmark CPC (by category: e-commerce/Meta/native
+ranges) x price tier x relative fit x a fixed per-advertiser spread, varying log-normally per page view (winning
+prices in ad auctions are close to log-normal, Cui et al. KDD 2011). Bids are calibrated so the median clearing
+price equals a benchmark $0.90/click (benchmarks are prices paid; in a one-slot auction the strongest of many
+rivals sets the price, so raw bids would clear ~3x higher). CTR prior raised to 3% (Rokt reports ~4% for
+post-purchase offers, vendor claim).
+**Bid landscape and diminishing returns.** Per host: the bid needed to win each simulated page view = top rival's
+eCPM / our CTR (second price = what we pay). Winning more of a host means outbidding stronger rivals, so each extra
+unit costs more: the diminishing return comes from the auction, not an assumed curve.
+**Allocation.** Greedy cheapest-units-first across hosts (optimal for this separable problem; tested against brute
+force), stopped by budget, goal, aggressiveness (win up to 30/60/90% of a host's page views), the advertiser's max
+CPC or target, and an optional per-host share cap. Output per host: bid, win share, average price paid, spend,
+units, market price range (the "sensible starting bid range").
+**Share cap: off by default.** The bidding eval showed a 50% default cost 24-79% of forecast units when one host is
+much better and the others can't absorb the spend; it stays an advertiser setting and the plan reports its cost.
+**Evaluation (reports/bidding_eval.md):** clearing CPC median in benchmark range on 20/20 hosts; forecast range
+covers 77% of replayed flights (target 80%; next: derive the range from replays to include price uncertainty);
+allocation beats equal, score-proportional and all-on-best-host splits; truthful bidding is optimal in all plans.
