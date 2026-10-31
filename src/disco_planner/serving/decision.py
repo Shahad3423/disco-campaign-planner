@@ -175,7 +175,7 @@ def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: 
     floor = host.floor if host else catalog.config("pricing")["economics"]["cpc_floor"]
 
     conv = 1.0
-    if phase == "enhanced_cpc":
+    if phase in ("enhanced_cpc", "maximize"):  # both adjust for likely converters, within the cap
         conv = clamp(match / prior_match if prior_match else 1.0,
                      adj["conversion_likelihood"]["min"], adj["conversion_likelihood"]["max"])
     bid = clamp(start * conv * pace, floor, ceiling)

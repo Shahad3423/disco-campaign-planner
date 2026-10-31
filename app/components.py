@@ -223,14 +223,13 @@ def render_economics(plan: CampaignPlan) -> None:
     eco = plan.config.economics
     if not eco:
         return
-    st.markdown("**Economics** " + badge("assumed", "assumed") + " <span class='muted'>override these in Optional details</span>", unsafe_allow_html=True)
+    st.markdown("**Economics** <span class='muted'>targets come only from you; break-even is guidance</span>", unsafe_allow_html=True)
     rows = [
         ("Price", f"${eco.price_usd:,.2f}", eco.price_source),
-        ("Target CPA from", eco.cpa_source.replace("_", " "), "form" if eco.cpa_source != "margin" else eco.margin_source),
-        ("Gross margin", f"{eco.gross_margin:.0%}" if eco.gross_margin is not None else "not needed", eco.margin_source),
-        ("Expected orders (month)", f"{eco.expected_orders:,.0f}", "model"),
-        ("Max affordable CAC", f"${eco.max_affordable_cac:,.2f}", "derived"),
-        ("Target CPA", f"${eco.target_cpa:,.2f}", "derived"),
+        ("Expected orders per customer", f"{eco.expected_orders:g}", "model"),
+        ("Gross margin", f"{eco.gross_margin:.0%}" if eco.gross_margin is not None else "n/a", eco.margin_source),
+        ("Break-even per customer (guidance)", f"${eco.break_even_cac:,.2f}", "derived"),
+        ("Target CPA", f"${eco.target_cpa:,.2f}" if eco.target_cpa else "none (maximise within budget)", eco.target_source),
     ]
     df = pd.DataFrame(rows, columns=["item", "value", "source"])
     df["status"] = df["source"].map(lambda s: "assumed" if s in ("tier_default", "category_default", "model") else "provided or derived")
@@ -382,28 +381,36 @@ def render_config(plan: CampaignPlan) -> None:
     st.markdown(f"Status: {badge(cfg.status)}", unsafe_allow_html=True)
     if cfg.pricing:
         pr = cfg.pricing
-        st.markdown(f"**Pricing model: {pr.model}**  \n{pr.rationale}")
-        if pr.cpc_bid:
-            st.markdown(f"CPC range: ${pr.cpc_bid.low:.2f} to ${pr.cpc_bid.high:.2f} (mid ${pr.cpc_bid.mid:.2f}). Target CPA ${pr.target_cpa:.2f}. *tCPA unlock:* {pr.tcpa_unlock}")
+        st.markdown(f"**Pricing: {pr.model} · bidding: {pr.bidding.replace('_', ' ')}**  \n{html.escape(pr.rationale)}", unsafe_allow_html=True)
+        st.markdown(f"Hard max CPC: ${pr.max_cpc_cap:.2f} ({pr.cap_source.replace('_', ' ')})"
+                    + (f" · break-even CPC (guidance): ${pr.break_even_cpc:.2f}" if pr.break_even_cpc else "")
+                    + f" · *tCPA unlock:* {pr.tcpa_unlock}")
+    if not cfg.budget:
+        st.info("No budget set. Enter your budget in Campaign setup to see the allocation and the forecast; "
+                "we don't suggest one.")
     if cfg.budget:
         b = cfg.budget
-        source = badge("assumed", "assumed") if b.budget_source != "form" else badge("from form", "ok")
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Monthly budget", f"${b.monthly_budget_usd:,.0f}")
-        c2.metric("Daily cap", f"${b.daily_cap_usd:,.0f}")
-        c3.metric("Flight", f"{b.flight_start} to {b.flight_end}")
-        c4.metric("Exploration reserve", f"${b.exploration_reserve_usd:,.0f}")
-        st.markdown(f"Budget source: {source} &nbsp; Pacing: {html.escape(b.pacing)}", unsafe_allow_html=True)
-        d1, d2, d3 = st.columns(3)
-        d1.metric("Expected impressions", f"{b.expected_impressions:,}")
-        d2.metric("Expected reach (unique shoppers)", f"{b.expected_reach:,}")
-        d3.metric("Delivery goal", f"{b.delivery_goal}" + ("" if b.goal_feasible else " (not feasible)"))
+        c1.metric("Budget (your cap)", f"${b.monthly_budget_usd:,.0f}")
+        c2.metric("Planned spend", f"${b.planned_spend_usd:,.0f}")
+        c3.metric(f"Forecast {b.unit}", f"{b.forecast.mid:,.0f}", help=f"range {b.forecast.low:,.0f} to {b.forecast.high:,.0f}")
+        c4.metric("Flight", f"{b.flight_start} to {b.flight_end}")
+        status_text = {"no_goal": "no goal set", "reachable": "goal reachable", "money_limited": "budget-limited",
+                       "inventory_limited": "inventory-limited"}[b.goal_status]
+        goal_txt = f"{b.goal_target:,} {b.unit}" if b.goal_target else "none"
+        st.markdown(f"Goal: {goal_txt} · status: {badge(status_text, 'ok' if b.goal_status in ('reachable', 'no_goal') else 'assumed')} · "
+                    f"binding constraint: **{b.binding_constraint}** · Pacing: {html.escape(b.pacing)}", unsafe_allow_html=True)
+        for opt in b.replan_options:
+            st.markdown(f"- {html.escape(opt)}")
+        st.caption(f"Up to {b.max_deliverable:,.0f} {b.unit} are available on these hosts in the flight (~${b.spend_at_full_inventory_usd:,.0f}). "
+                   f"Measuring every host needs ~${b.learning_floor_usd:,.0f}. Expected impressions {b.expected_impressions:,}, "
+                   f"reach {b.expected_reach:,}.")
         if b.allocations:
             df = pd.DataFrame([{
-                "publisher": a.publisher_name, "share_pct": round(a.share * 100), "budget_usd": a.budget_usd, "cpc_bid_usd": a.cpc_bid_usd,
-                "start_bid_usd": a.start_bid_usd, "impressions": a.expected_impressions,
-                "clicks (mid)": a.expected_clicks.mid, "conversions (mid)": a.expected_conversions.mid,
-                "host approval": "needs approval" if a.requires_host_approval else "", "rationale": a.rationale,
+                "publisher": a.publisher_name, "share_pct": round(a.share * 100), "budget_usd": a.budget_usd,
+                f"{b.unit} (mid)": a.expected_units.mid, "start_bid_usd": a.start_bid_usd, "max_bid_usd": a.cpc_bid_usd,
+                "impressions": a.expected_impressions, "clicks (mid)": a.expected_clicks.mid,
+                "host approval": "confirm opt-in" if a.requires_host_approval else "", "rationale": a.rationale,
             } for a in b.allocations])
             st.dataframe(df, hide_index=True, width="stretch", column_config={
                 "share_pct": st.column_config.ProgressColumn("share", min_value=0, max_value=100, format="%d%%"),

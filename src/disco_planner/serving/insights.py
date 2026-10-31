@@ -2,7 +2,7 @@
 
 Bids are sealed (see DECISIONS D19). What advertisers get instead is aggregate feedback per host:
 how often they win, what they pay, who they lose to (by name only when it's a pool, never a bid),
-and what bid it would take to win more, compared with their break-even ceiling. That last line
+and what bid it would take to win more, compared with their max bid (their cap). That last line
 turns "I'm losing" into a decision: raise the target CPA, or stop chasing this host.
 
 Here the aggregate is simulated: sample shoppers x the host, with the other campaigns in the pool
@@ -37,7 +37,7 @@ class HostInsight(BaseModel):
     win_rate: float
     avg_price_paid: float | None   # per click (CPC) or per 1,000 (CPM), when we won
     avg_bid: float
-    max_bid: float                 # break-even ceiling (never exceeded)
+    max_bid: float                 # the campaign's hard bid cap on this host (never exceeded)
     top_rivals: list[tuple[str, float]]   # (campaign, share of the auctions we lost that it won)
     bid_for_win_rate: dict[str, float]    # win target -> bid needed (CPC), estimated
     verdict: str
@@ -97,15 +97,15 @@ def auction_insights(plan: CampaignPlan, competitors: list[CampaignPlan], phase:
         elif affordable and len(affordable) < len(needed):
             top = affordable[-1]
             verdict, tip = "winnable", (f"Winning {top} of page views needs a bid of about ${needed[top]:.2f}, still under your "
-                                        f"${max_bid:.2f} break-even. Raise the start bid; going beyond that would cost more than a customer is worth.")
+                                        f"${max_bid:.2f} max bid. Raise the start bid; going beyond your cap means raising the cap itself.")
         elif affordable:
-            verdict, tip = "winnable", f"You can reach every target below your ${max_bid:.2f} break-even; raise the start bid to ${needed[affordable[-1]]:.2f}."
+            verdict, tip = "winnable", f"You can reach every target below your ${max_bid:.2f} max bid; raise the start bid to ${needed[affordable[-1]]:.2f}."
         else:
             first = next(iter(needed.values()), None)
             verdict, tip = "not worth chasing", (
-                (f"Even the cheapest extra wins need ~${first:.2f}, above your ${max_bid:.2f} break-even." if first else
+                (f"Even the cheapest extra wins need ~${first:.2f}, above your ${max_bid:.2f} max bid." if first else
                  "Rivals outbid you on nearly every page view.")
-                + " Either raise your target CPA (accept paying more per customer) or move this budget to other hosts.")
+                + " Either raise your cap / target CPA (accept paying more per customer) or move this budget to other hosts.")
         out.append(HostInsight(
             publisher_id=pid, publisher_name=alloc.publisher_name, pricing_model=plan.config.pricing.model,
             auctions=auctions, competitors_on_host=len(other_campaigns), win_rate=round(win_rate, 3),

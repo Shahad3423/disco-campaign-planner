@@ -279,3 +279,25 @@ Anchoring lower let a weak tail back in (sustainable activewear: two 45-70 women
 **Evidence (holdout TEST brands, judge pairs where exactly one host is recommended):** the judge prefers the
 recommended host 71% (old penalty) -> 82% (fit-only) -> 82% (this version), while golden recall returns to 0.70
 with 0 must-exclude violations.
+
+## D23. Budget is the advertiser's cap; objective + optional goal; targets only if set; guardrails vs guidance
+
+Supersedes the "delivery goal instead of a budget" and "suggested learning budget" designs (D6, D17).
+- **Budget:** always the advertiser's own hard cap; never suggested. Without it we still rank hosts, pick
+  personas and write creatives, but allocate nothing and ask for it.
+- **Objective:** conversions (default), clicks, impressions or reach; conversions/clicks are bought per click,
+  impressions/reach per 1,000 views. "Maximise conversions" means the COUNT within budget, never the rate.
+- **Goal (optional):** a target on top of the budget. The plan forecasts what the budget buys and says whether
+  the goal is reachable, money-limited (with the budget needed) or inventory-limited (more money won't help;
+  extend the flight or add hosts). Default when reachable: stop at the goal and keep the rest.
+- **Bidding:** maximise within budget (default), target CPA or target ROAS. A target is an average the bidder
+  aims at, not a per-click limit, and exists only if the advertiser sets one.
+- **Guardrails (hard):** budget, max CPC cap (advertiser's or a labelled category default), 50% max share per
+  host, stop-loss (only with a target), frequency cap. **Guidance (shown, not enforced):** break-even per
+  customer from (assumed) margin, and the bid level above which a click loses money.
+- **Allocation:** learning floor per host, then water-filling on diminishing-returns curves (scale = host
+  inventory). With bids proportional to expected value, every host returns about the same units per dollar,
+  so allocation is driven by inventory and saturation; the diversification cap costs ~4% of conversions on the
+  dog-food example and removes single-host dependence. With the clicks objective the optimiser buys the
+  cheapest available clicks regardless of quality, which is what that objective means.
+- Evals and the cached demo plans use a stated $5,000 budget so allocations exist and invariants are checked.

@@ -20,6 +20,7 @@ from pathlib import Path
 import yaml
 
 from disco_planner.data import catalog
+from disco_planner.domain.models import AdvertiserInputs
 from disco_planner.llm.provider import default_provider
 from disco_planner.planning.creative import rule_check
 from disco_planner.planning.pipeline import CampaignPlan, run
@@ -27,6 +28,8 @@ from disco_planner.planning.pipeline import CampaignPlan, run
 EVAL_DIR = Path(__file__).parent
 REPORT_DIR = catalog.REPO_ROOT / "reports"
 TODAY = date(2026, 10, 30)
+# D23: budgets come from the advertiser; evals use one stated budget so budget invariants are checked
+EVAL_INPUTS = AdvertiserInputs(monthly_budget_usd=5000)
 ADJACENT_GATES = {frozenset({"proceed", "clarify"}), frozenset({"clarify", "reject_low_signal"})}
 
 
@@ -73,7 +76,7 @@ def grade_case(case: dict, plan: CampaignPlan) -> dict:
         b = plan.config.budget
         spent = sum(a.budget_usd for a in b.allocations)
         m["budget_invariants_ok"] = (
-            spent <= b.monthly_budget_usd + 0.01
+            spent <= b.monthly_budget_usd + 0.01 and b.planned_spend_usd <= b.monthly_budget_usd + 0.01
             and all(a.budget_usd <= a.capacity_usd + 0.01 for a in b.allocations)
             and {a.publisher_id for a in b.allocations} <= set(rec)
         )
@@ -130,12 +133,12 @@ def robustness(golden: dict[int, dict], provider, plans: dict[int, CampaignPlan]
     out = {"paraphrase": [], "injection": []}
     for p in adv["paraphrases"]:
         base = set(_recommended(plans[p["of"]])[:5])
-        para = set(_recommended(run(p["text"], provider, TODAY, with_creatives=False))[:5])
+        para = set(_recommended(run(p["text"], provider, TODAY, EVAL_INPUTS, with_creatives=False))[:5])
         out["paraphrase"].append({"of": p["of"], "top5_jaccard": round(len(base & para) / max(1, len(base | para)), 2)})
     n_pubs = len(catalog.publishers())
     for case in adv["injections"]:
         try:
-            plan = run(case["text"], provider, TODAY, with_creatives=creatives)
+            plan = run(case["text"], provider, TODAY, EVAL_INPUTS, with_creatives=creatives)
         except Exception as e:  # a crash is a failed robustness case, not a crashed eval
             out["injection"].append({"text": case["text"][:60], "passed": False, "gate": f"ERROR {type(e).__name__}"})
             continue
@@ -198,7 +201,7 @@ def main() -> None:
     for cid, case in golden.items():
         if args.only and cid not in args.only:
             continue
-        plans[cid] = run(case["text"], provider, TODAY, with_creatives=args.creatives)
+        plans[cid] = run(case["text"], provider, TODAY, EVAL_INPUTS, with_creatives=args.creatives)
         rows.append(grade_case(case, plans[cid]))
         print(f"  graded #{cid}", flush=True)
 

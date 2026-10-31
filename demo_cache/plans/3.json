@@ -19,24 +19,24 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "beverages",
-    "weight": 1.0,
-    "why": "The product is a sparkling drink."
-   },
-   {
     "tag": "functional_beverages",
     "weight": 1.0,
     "why": "The drink contains adaptogens and functions as a cocktail alternative."
    },
    {
-    "tag": "wellness_dtc",
-    "weight": 0.5,
-    "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
+    "tag": "beverages",
+    "weight": 1.0,
+    "why": "The product is a sparkling drink."
    },
    {
     "tag": "soda_alternative",
     "weight": 0.5,
     "why": "It is a non-alcoholic sparkling drink that can serve as an alternative beverage option."
+   },
+   {
+    "tag": "wellness_dtc",
+    "weight": 0.5,
+    "why": "Functional drinks with adaptogens appeal to wellness-focused consumers."
    }
   ],
   "competing_tags": [
@@ -97,7 +97,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches beverages, functional_beverages, soda_alternative (specific) (multiplier)"
+     "detail": "matches functional_beverages, beverages, soda_alternative (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -140,7 +140,7 @@
     "competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches beverages, functional_beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches functional_beverages, beverages, soda_alternative (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5)). Flags: competitor_conflict: host also sells functional_beverages (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_012",
@@ -1363,100 +1363,125 @@
   "planning_date": "2026-10-30",
   "advertiser_summary": "An advertiser making a non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative for people who want to feel good without a hangover.",
   "confidence": 0.84,
-  "objective": "acquisition",
+  "objective": "conversions",
   "economics": {
    "price_usd": 60.0,
    "price_source": "tier_default",
+   "expected_orders": 2.5,
    "gross_margin": 0.5,
    "margin_source": "category_default",
-   "cpa_source": "margin",
-   "expected_orders": 2.5,
-   "max_affordable_cac": 75.0,
-   "target_cpa": 52.5,
+   "break_even_cac": 75.0,
+   "target_cpa": null,
+   "target_source": "none",
    "assumptions": [
     "Price not given; assumed $60 for a 'unknown' product.",
     "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
-    "No target CPA/ROAS or margin given; assumed 50% gross margin (typical for beverages). Give a target CPA to replace this.",
-    "Target CPA = 70% of max affordable CAC ($60 x 50% margin x 2.5 orders = $75.00)."
+    "Margin not given; assumed 50% (typical for beverages) for the break-even estimate only.",
+    "Break-even per customer (guidance, not enforced): $60 x 50% x 2.5 orders = $75.00."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $52.50 x click-to-purchase rate (1.6%-5.6% for beverages). Clicks are observable without trusting a pixel, so both sides can verify billing.",
-   "cpc_bid": {
-    "low": 0.84,
-    "mid": 1.68,
-    "high": 2.94
+   "bidding": "maximize",
+   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $1.20 cap (category default) to spend it well; no CPA target is invented.",
+   "max_cpc_cap": 1.2,
+   "cap_source": "category_default",
+   "cpc_range": {
+    "low": 0.6,
+    "mid": 0.84,
+    "high": 1.2
    },
    "cpm_bid": null,
-   "target_cpa": 52.5,
-   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
+   "target_cpa": null,
+   "break_even_cpc": 2.4,
+   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
-   "monthly_budget_usd": 1390.0,
-   "budget_source": "recommended_learning_budget",
-   "delivery_goal": "budget",
-   "expected_impressions": 47826,
-   "expected_reach": 29891,
-   "goal_feasible": true,
-   "daily_cap_usd": 46.33,
+   "monthly_budget_usd": 5000.0,
+   "planned_spend_usd": 5000.0,
+   "objective": "conversions",
+   "unit": "conversions",
+   "goal_target": null,
+   "when_goal_met": "stop",
+   "forecast": {
+    "low": 84.3,
+    "mid": 168.6,
+    "high": 295.1
+   },
+   "goal_status": "no_goal",
+   "binding_constraint": "budget",
+   "spend_to_reach_goal_usd": null,
+   "max_deliverable": 169.1,
+   "spend_at_full_inventory_usd": 5025.24,
+   "replan_options": [],
+   "expected_impressions": 467362,
+   "expected_reach": 292101,
+   "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
-   "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1390.59,
+   "pacing": "even daily pacing",
+   "learning_floor_usd": 423.0,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_020",
      "publisher_name": "Pop & Sip",
-     "share": 0.699,
-     "budget_usd": 971.93,
-     "cpc_bid_usd": 2.35,
-     "start_bid_usd": 1.65,
+     "share": 0.731,
+     "budget_usd": 3654.0,
+     "cpc_bid_usd": 1.2,
+     "start_bid_usd": 0.84,
      "expected_clicks": {
-      "low": 331.0,
-      "mid": 414.0,
-      "high": 496.0
+      "low": 3480.0,
+      "mid": 4350.0,
+      "high": 5220.0
      },
      "expected_conversions": {
-      "low": 9.3,
-      "mid": 18.5,
-      "high": 32.4
+      "low": 97.4,
+      "mid": 194.9,
+      "high": 341.0
      },
-     "capacity_usd": 10264.8,
-     "expected_impressions": 24618,
-     "expected_reach": 15386,
+     "expected_units": {
+      "low": 61.7,
+      "mid": 123.4,
+      "high": 216.0
+     },
+     "capacity_usd": 3669.12,
+     "expected_impressions": 258929,
+     "expected_reach": 161830,
      "requires_host_approval": true,
-     "rationale": "score 0.57 -> relative fit x1.40 on CTR/CVR; max bid $2.35 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.57, relative fit x1.40; 0.0533 conversions/$ at the start, falling as the host saturates; bid $0.84 (cap $1.20); host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.301,
-     "budget_usd": 418.07,
-     "cpc_bid_usd": 1.59,
-     "start_bid_usd": 1.11,
+     "share": 0.269,
+     "budget_usd": 1346.0,
+     "cpc_bid_usd": 0.81,
+     "start_bid_usd": 0.57,
      "expected_clicks": {
-      "low": 210.0,
-      "mid": 263.0,
-      "high": 316.0
+      "low": 1889.0,
+      "mid": 2361.0,
+      "high": 2834.0
      },
      "expected_conversions": {
-      "low": 4.0,
-      "mid": 7.9,
-      "high": 13.9
+      "low": 35.7,
+      "mid": 71.3,
+      "high": 124.8
      },
-     "capacity_usd": 3782.86,
-     "expected_impressions": 23208,
-     "expected_reach": 14505,
+     "expected_units": {
+      "low": 22.6,
+      "mid": 45.2,
+      "high": 79.2
+     },
+     "capacity_usd": 1356.12,
+     "expected_impressions": 208433,
+     "expected_reach": 130271,
      "requires_host_approval": false,
-     "rationale": "score 0.24 -> relative fit x0.94 on CTR/CVR; max bid $1.59 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.24, relative fit x0.94; 0.0530 conversions/$ at the start, falling as the host saturates; bid $0.57 (cap $0.81)"
     }
    ],
-   "warnings": [
-    "No budget given: recommending $1,390, the smallest budget that buys 300 clicks per host."
-   ]
+   "warnings": []
   },
   "bid_strategy": {
    "current_phase": "learning",
@@ -1464,50 +1489,44 @@
     {
      "name": "learning",
      "until": "14 days or 300 clicks per host",
-     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
-     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+     "rule": "fixed start bid per host; pacing only",
+     "why": "stable bids so measured CTR/CVR aren't confounded"
     },
     {
-     "name": "enhanced_cpc",
-     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
-     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
-     "why": "spend more on shoppers who look likely to buy, never above break-even"
-    },
-    {
-     "name": "target_cpa",
-     "rule": "Disco bids automatically to hit $52.50 CPA",
-     "why": "only once Disco can predict this brand's conversion rate"
+     "name": "maximize",
+     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
+     "why": "no CPA target was set, so the goal is the most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_020",
-     "start_bid": 1.65,
-     "max_bid": 2.35,
+     "start_bid": 0.84,
+     "max_bid": 1.2,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_012",
-     "start_bid": 1.11,
-     "max_bid": 1.59,
+     "start_bid": 0.57,
+     "max_bid": 0.81,
      "floor": 0.25
     }
    ],
    "adjustments": [
     {
-     "signal": "conversion_likelihood",
-     "min_multiplier": 0.8,
-     "max_multiplier": 1.25,
-     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
-    },
-    {
      "signal": "pacing",
      "min_multiplier": 0.85,
      "max_multiplier": 1.15,
      "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    },
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
+   "rationale": "Maximise conversions within the budget, never above the $1.20 cap (category default)."
   },
   "targeting": {
    "publishers_include": [
@@ -1655,14 +1674,13 @@
    "competitor_hosts_need_approval": [
     "pub_020"
    ],
-   "stop_loss": {
-    "cpa_multiple": 2.0,
-    "min_clicks": 150
-   },
+   "budget_cap_usd": 5000.0,
+   "max_cpc_cap_usd": 1.2,
+   "stop_loss": null,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
-   "primary_kpi": "CPA vs target",
+   "primary_kpi": "conversions (and CPA if a target is set)",
    "attribution": "7-day click-through billed; view-through reported, never billed",
    "holdout": "10% of eligible impressions withheld to measure incremental lift",
    "review_after_days": 14

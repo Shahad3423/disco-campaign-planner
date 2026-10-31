@@ -92,3 +92,29 @@ bid_strategy:
     conversion_likelihood: {min: 0.80, max: 1.25}
     # pacing: under-delivering -> bid up a little; over-delivering -> bid down
     pacing: {min: 0.85, max: 1.15}
+
+# Guardrail (D23): hard per-click cap when the advertiser gives none. [assumed] no public data on
+# Disco CPCs; conservative values for a learning phase, always shown as "category default".
+default_max_cpc_by_category:
+  pet: 2.00
+  apparel: 1.80
+  beauty: 1.50
+  beverages: 1.20
+  groceries: 1.00
+  home: 2.50
+  wellness_dtc: 2.00
+  wellness_services: 2.00
+  meal_kits: 2.00
+  instant_delivery: 1.00
+  default: 1.80
+
+allocation:
+  # [assumed] diminishing returns per host: units(s) = rate x S x (1 - exp(-c s / S)) / c, S = host's
+  # spend capacity. Marginal value starts at `rate` and decays as we saturate a host (frequency fatigue).
+  curvature: 1.0
+  steps: 400                      # greedy water-filling granularity
+  # Diversification guardrail: no host takes more than this share of the budget (unless there are fewer
+  # hosts than 1/share). One host can fail (block us, under-deliver); concentration makes that fatal.
+  max_share_per_host: 0.5
+  # forecast spread around the mid estimate, per objective (ranges, not point predictions)
+  forecast_spread: {conversions: [0.5, 1.75], clicks: [0.8, 1.2], impressions: [0.85, 1.15], reach: [0.8, 1.15]}
