@@ -99,15 +99,20 @@ def load_all_cached_plans() -> list[CampaignPlan]:
 # ------------------------------------------------------------------ running the planner
 
 
+CREDENTIAL_NAMES = ("VERTEX_API_KEY", "GEMINI_API_KEY")  # Vertex (cloud credits) first, free AI Studio key as backup
+
+
 def get_api_key() -> str | None:
-    """Streamlit Cloud secrets first, then environment / .env (loaded by the provider module)."""
-    try:
-        key = st.secrets.get("GEMINI_API_KEY")
-    except Exception:  # no secrets file locally
-        key = None
-    if key:
-        os.environ["GEMINI_API_KEY"] = key
-    return os.environ.get("GEMINI_API_KEY")
+    """Streamlit Cloud secrets first, then environment / .env (loaded by the provider module).
+    Copies any secrets found into the environment so default_provider() builds the Vertex -> AI Studio chain."""
+    for name in CREDENTIAL_NAMES:
+        try:
+            value = st.secrets.get(name)
+        except Exception:  # no secrets file locally
+            value = None
+        if value:
+            os.environ[name] = value
+    return next((os.environ[n] for n in CREDENTIAL_NAMES if os.environ.get(n)), None)
 
 
 def plan_campaign(brief: str, inputs: AdvertiserInputs) -> tuple[CampaignPlan | None, str | None, str]:
@@ -115,12 +120,14 @@ def plan_campaign(brief: str, inputs: AdvertiserInputs) -> tuple[CampaignPlan | 
     example and live planning is unavailable (no key, quota, 503, bad output)."""
     notice, error = None, None
     if not get_api_key():
-        error = "No GEMINI_API_KEY is configured."
+        error = "No LLM credentials configured (VERTEX_API_KEY or GEMINI_API_KEY)."
     else:
         try:
             provider = default_provider()
             plan = pipeline.run(brief, provider, PLANNING_DATE, inputs)
-            model = getattr(provider, "last_model_used", None) or "LLM disk cache (no live call needed)"
+            backend = getattr(provider, "last_backend_used", None) or getattr(provider, "backend", None)
+            model = getattr(provider, "last_model_used", None) or getattr(provider, "model", None)
+            model = f"{model} via {backend}" if backend else (model or "LLM disk cache (no live call needed)")
             return plan, None, model
         except Exception as e:  # LLMError, quota, network: any failure should degrade gracefully
             error = f"Live planning failed ({type(e).__name__}: {str(e)[:160]})."
