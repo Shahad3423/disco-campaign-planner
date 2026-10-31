@@ -11,7 +11,7 @@
      "proceed": 7
     },
     "mean_confidence": 0.72,
-    "mean_recommended": 1.0,
+    "mean_recommended": 0.933,
     "weak_fit_rate_when_planned": 0.0
    },
    "in_catalog": {
@@ -20,7 +20,7 @@
      "proceed": 55
     },
     "mean_confidence": 0.872,
-    "mean_recommended": 3.127,
+    "mean_recommended": 3.727,
     "weak_fit_rate_when_planned": 0.074
    },
    "out_of_catalog": {
@@ -29,8 +29,8 @@
      "proceed": 30
     },
     "mean_confidence": 0.827,
-    "mean_recommended": 2.0,
-    "weak_fit_rate_when_planned": 0.435
+    "mean_recommended": 1.867,
+    "weak_fit_rate_when_planned": 0.409
    }
   },
   "confidence_by_clarity": {
@@ -39,36 +39,36 @@
    "vague": 0.74
   },
   "host_recommendation_share": {
-   "Swiftcart": 0.25,
-   "Daily Form": 0.24,
+   "Daily Form": 0.26,
+   "Swiftcart": 0.26,
+   "Hearthstone Goods": 0.23,
+   "Northbed": 0.22,
+   "Cloudfoot": 0.22,
    "Pantrygood": 0.22,
-   "Northbed": 0.2,
-   "Hearthstone Goods": 0.2,
-   "Kitchenly": 0.19,
-   "Movewell": 0.18,
-   "Cloudfoot": 0.18,
-   "Heartfoot": 0.16,
-   "Marlowe & Co.": 0.13,
-   "Velvetline": 0.13,
+   "Movewell": 0.21,
+   "Heartfoot": 0.2,
+   "Kitchenly": 0.2,
+   "Stride & Stem": 0.17,
+   "Everbody": 0.16,
+   "Marlowe & Co.": 0.15,
    "Strandlab": 0.13,
+   "Velvetline": 0.12,
    "Pop & Sip": 0.12,
+   "Tailcrate": 0.11,
    "Pawline": 0.1,
    "Ruffco": 0.1,
-   "Tailcrate": 0.1,
-   "Everbody": 0.1,
-   "Linden Park": 0.08,
-   "Stride & Stem": 0.08,
-   "Studiogrid": 0.07
+   "Studiogrid": 0.1,
+   "Linden Park": 0.1
   },
   "hosts_never_recommended": [],
   "creatives": {
    "plans_with_creatives": 92,
    "rule_fail": 0,
-   "review_fail": 63,
+   "review_fail": 60,
    "regulated_claims_in_copy": 0,
    "briefs_with_blocked_claims": 1
   },
-  "wall_time_s": 43.4
+  "wall_time_s": 105.7
  },
  "rows": [
   {
@@ -141,11 +141,13 @@
    "gate": "proceed",
    "confidence": 0.87,
    "agreement": 0.83,
-   "n_recommended": 3,
+   "n_recommended": 5,
    "recommended": [
     "pub_007",
     "pub_009",
-    "pub_011"
+    "pub_011",
+    "pub_014",
+    "pub_018"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -256,11 +258,14 @@
    "gate": "proceed",
    "confidence": 0.91,
    "agreement": 0.92,
-   "n_recommended": 3,
+   "n_recommended": 6,
    "recommended": [
     "pub_002",
     "pub_017",
-    "pub_004"
+    "pub_003",
+    "pub_016",
+    "pub_006",
+    "pub_010"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -284,11 +289,14 @@
    "gate": "proceed",
    "confidence": 0.72,
    "agreement": 0.52,
-   "n_recommended": 3,
+   "n_recommended": 6,
    "recommended": [
     "pub_002",
     "pub_017",
-    "pub_010"
+    "pub_010",
+    "pub_003",
+    "pub_006",
+    "pub_016"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -374,12 +382,14 @@
    "gate": "proceed",
    "confidence": 0.83,
    "agreement": 0.76,
-   "n_recommended": 4,
+   "n_recommended": 6,
    "recommended": [
     "pub_017",
     "pub_016",
     "pub_004",
-    "pub_006"
+    "pub_006",
+    "pub_002",
+    "pub_005"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -403,10 +413,14 @@
    "gate": "proceed",
    "confidence": 0.85,
    "agreement": 0.77,
-   "n_recommended": 2,
+   "n_recommended": 6,
    "recommended": [
     "pub_010",
-    "pub_002"
+    "pub_002",
+    "pub_006",
+    "pub_004",
+    "pub_017",
+    "pub_016"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -415,7 +429,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 42.5
+   "seconds": 0.0
   },
   {
    "id": "h013",
@@ -430,12 +444,14 @@
    "gate": "proceed",
    "confidence": 0.95,
    "agreement": 1.0,
-   "n_recommended": 4,
+   "n_recommended": 6,
    "recommended": [
     "pub_006",
     "pub_010",
     "pub_002",
-    "pub_016"
+    "pub_016",
+    "pub_017",
+    "pub_004"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -459,10 +475,14 @@
    "gate": "proceed",
    "confidence": 0.79,
    "agreement": 0.66,
-   "n_recommended": 2,
+   "n_recommended": 6,
    "recommended": [
     "pub_010",
-    "pub_017"
+    "pub_017",
+    "pub_016",
+    "pub_002",
+    "pub_006",
+    "pub_004"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -486,11 +506,14 @@
    "gate": "proceed",
    "confidence": 0.78,
    "agreement": 0.64,
-   "n_recommended": 3,
+   "n_recommended": 6,
    "recommended": [
     "pub_002",
     "pub_017",
-    "pub_005"
+    "pub_005",
+    "pub_004",
+    "pub_010",
+    "pub_016"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -514,12 +537,14 @@
    "gate": "proceed",
    "confidence": 0.92,
    "agreement": 0.9,
-   "n_recommended": 4,
+   "n_recommended": 6,
    "recommended": [
     "pub_002",
     "pub_017",
     "pub_003",
-    "pub_006"
+    "pub_006",
+    "pub_016",
+    "pub_010"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -543,12 +568,14 @@
    "gate": "proceed",
    "confidence": 0.9,
    "agreement": 0.89,
-   "n_recommended": 4,
+   "n_recommended": 6,
    "recommended": [
     "pub_002",
     "pub_017",
     "pub_003",
-    "pub_004"
+    "pub_016",
+    "pub_010",
+    "pub_006"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -603,13 +630,14 @@
    "gate": "proceed",
    "confidence": 0.9,
    "agreement": 0.89,
-   "n_recommended": 5,
+   "n_recommended": 6,
    "recommended": [
     "pub_006",
     "pub_004",
     "pub_005",
     "pub_016",
-    "pub_002"
+    "pub_002",
+    "pub_017"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -660,10 +688,11 @@
    "gate": "proceed",
    "confidence": 0.78,
    "agreement": 0.64,
-   "n_recommended": 2,
+   "n_recommended": 3,
    "recommended": [
     "pub_019",
-    "pub_013"
+    "pub_013",
+    "pub_011"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -964,10 +993,11 @@
    "gate": "proceed",
    "confidence": 0.86,
    "agreement": 0.81,
-   "n_recommended": 2,
+   "n_recommended": 3,
    "recommended": [
     "pub_020",
-    "pub_001"
+    "pub_001",
+    "pub_012"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -991,11 +1021,12 @@
    "gate": "proceed",
    "confidence": 0.85,
    "agreement": 0.76,
-   "n_recommended": 3,
+   "n_recommended": 4,
    "recommended": [
     "pub_008",
     "pub_012",
-    "pub_015"
+    "pub_015",
+    "pub_001"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -1022,8 +1053,8 @@
    "n_recommended": 3,
    "recommended": [
     "pub_008",
-    "pub_001",
-    "pub_015"
+    "pub_015",
+    "pub_014"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -1051,16 +1082,16 @@
    "recommended": [
     "pub_008",
     "pub_015",
-    "pub_001"
+    "pub_014"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
    "n_creatives": 3,
    "creative_rule_fail": 0,
-   "creative_review_fail": 2,
+   "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 14.0
   },
   {
    "id": "h036",
@@ -1276,10 +1307,11 @@
    "gate": "proceed",
    "confidence": 0.87,
    "agreement": 0.83,
-   "n_recommended": 2,
+   "n_recommended": 3,
    "recommended": [
     "pub_008",
-    "pub_015"
+    "pub_015",
+    "pub_001"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -1413,11 +1445,12 @@
    "gate": "proceed",
    "confidence": 0.82,
    "agreement": 0.74,
-   "n_recommended": 3,
+   "n_recommended": 4,
    "recommended": [
     "pub_008",
     "pub_001",
-    "pub_015"
+    "pub_015",
+    "pub_011"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -2006,13 +2039,12 @@
    "gate": "proceed",
    "confidence": 0.89,
    "agreement": 0.87,
-   "n_recommended": 5,
+   "n_recommended": 4,
    "recommended": [
     "pub_017",
     "pub_010",
     "pub_002",
-    "pub_016",
-    "pub_004"
+    "pub_016"
    ],
    "weak_fit": false,
    "competitor_flagged": true,
@@ -2269,20 +2301,19 @@
    "gate": "proceed",
    "confidence": 0.83,
    "agreement": 0.76,
-   "n_recommended": 3,
+   "n_recommended": 2,
    "recommended": [
     "pub_005",
-    "pub_004",
-    "pub_010"
+    "pub_004"
    ],
    "weak_fit": true,
    "competitor_flagged": false,
    "n_creatives": 3,
    "creative_rule_fail": 0,
-   "creative_review_fail": 1,
+   "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 13.5
   },
   {
    "id": "h081",
@@ -2408,19 +2439,16 @@
    "gate": "proceed",
    "confidence": 0.84,
    "agreement": 0.78,
-   "n_recommended": 2,
-   "recommended": [
-    "pub_014",
-    "pub_011"
-   ],
-   "weak_fit": true,
+   "n_recommended": 0,
+   "recommended": [],
+   "weak_fit": false,
    "competitor_flagged": false,
    "n_creatives": 3,
    "creative_rule_fail": 0,
-   "creative_review_fail": 0,
+   "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 37.9
   },
   {
    "id": "h086",
@@ -2760,11 +2788,10 @@
    "gate": "proceed",
    "confidence": 0.76,
    "agreement": 0.69,
-   "n_recommended": 5,
+   "n_recommended": 4,
    "recommended": [
     "pub_014",
     "pub_019",
-    "pub_013",
     "pub_011",
     "pub_001"
    ],
@@ -2772,10 +2799,10 @@
    "competitor_flagged": false,
    "n_creatives": 3,
    "creative_rule_fail": 0,
-   "creative_review_fail": 1,
+   "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 39.0
   },
   {
    "id": "h100",

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Quality reading for {first_name}",
+      "body": "Discover a premium e-reader built for avid readers and travelers. Understated design, priced from $100 to $200.",
+      "cta": "Shop e-readers",
+      "headline_no_name": "Quality reading made for avid readers",
+      "angle": "quality-focused",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "Optimize your reading, {first_name}",
+      "body": "A dedicated device for avid readers and travelers. Focus on your reading goals with e-readers from $100-$200.",
+      "cta": "Shop e-readers",
+      "headline_no_name": "Optimize your daily reading habits",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "An easy gift for your loved ones, {first_name}",
+      "body": "Take the stress out of gifting. These e-readers are perfect for avid readers and travelers. Priced from $100-$200.",
+      "cta": "Gift an e-reader",
+      "headline_no_name": "An easy gift for the readers in your life",
+      "angle": "family-friendly",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    }
+  ]
+}

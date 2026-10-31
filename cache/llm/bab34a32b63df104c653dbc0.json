@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, a timeless choice for your library.",
+      "body": "Designed for avid readers and travelers. Discover elegant e-readers priced from $100 to $200, perfect for your collection.",
+      "cta": "Shop e-readers",
+      "headline_no_name": "A timeless choice for your library.",
+      "angle": "Understated quality and design for avid readers",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "headline": "{first_name}, optimize your daily reading habit.",
+      "body": "An efficient tool for avid readers and travelers. Streamline your routine with e-readers priced from $100 to $200.",
+      "cta": "Shop e-readers",
+      "headline_no_name": "Optimize your daily reading habit.",
+      "angle": "Outcome-focused routine optimization",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "{first_name}, the easiest gift for your readers.",
+      "body": "Skip the stress this Halloween. These e-readers make great gifts for travelers and avid readers. Priced from $100 to $200.",
+      "cta": "Shop gift e-readers",
+      "headline_no_name": "The easiest gift for your favorite readers.",
+      "angle": "Convenient gift-giving for busy lifestyles during Halloween",
+      "claims_used": [
+        "E-readers, $100-$200",
+        "For avid readers, travelers, and as gifts"
+      ]
+    }
+  ]
+}
