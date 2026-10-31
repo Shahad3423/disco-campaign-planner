@@ -39,6 +39,7 @@ recommend:
   max_publishers: 6
   weak_fit_max_publishers: 3   # no 'strong' host -> small test only
   strong_min_price_fit: 0.40    # strong = specific subcategory match AND shoppers spend near this price
+  category_only_min_persona_fit: 0.5  # a host linked only by a broad category ('apparel') needs audience evidence too
 
 # income tier ordering used by price_fit
 income_tiers: [low, mid, mid-high, high]

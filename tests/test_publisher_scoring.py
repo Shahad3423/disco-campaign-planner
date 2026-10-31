@@ -29,9 +29,9 @@ def by_id(scores):
 
 def test_pet_hosts_beat_unrelated_hosts():
     scores = by_id(rank_publishers(dog_food_profile(), TODAY))
-    # Tailcrate (pet supplies, not a food seller) stays in as the non-competing fallback
+    # Tailcrate (pet supplies, not a food seller) is the best non-competing host: it anchors the cutoff,
+    # so it's always recommended, whatever the competitors score
     assert scores["pub_018"].recommended
-    assert any(f.startswith("fallback_host") for f in scores["pub_018"].flags)
     assert not scores["pub_003"].recommended  # Studiogrid: fitness classes
     assert "no category link" in scores["pub_003"].reason
 
@@ -76,3 +76,13 @@ def test_power_mean_family():
     arith, geo, harsh = power_mean(parts, 1), power_mean(parts, 0), power_mean(parts, -5)
     assert abs(arith - 0.5) < 1e-9 and abs(geo - 0.3) < 1e-9
     assert harsh < geo < arith            # lower p = a weak signal counts for more
+
+
+def test_cutoff_is_anchored_to_best_non_competitor():
+    # a competitor's high score must not push non-competing hosts out of the plan
+    profile = dog_food_profile()
+    scores = rank_publishers(profile, TODAY)
+    is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
+    best_non_comp = next(s for s in scores if not is_comp(s) and s.components[0].value >= 0.2)
+    assert best_non_comp.recommended
+    assert "below cutoff" not in best_non_comp.reason

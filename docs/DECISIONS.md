@@ -267,3 +267,15 @@ best non-competing host with a real category link is added as a fallback so the 
 (dog food: Pawline and Ruffco lead on fit, Tailcrate is the fallback).
 **Earlier version** (score x P(approve)=0.4, union voting, capacity discount) over-weighted a rare event
 three times; kept in git history and EXPERIMENTS for the comparison.
+
+## D22. Cutoff anchored to the best non-competing host; broad-category hosts need audience evidence
+
+The relative cutoff ("at least half the best host's score") was anchored to the top host. Once competitors
+ranked on true fit, a competitor (which may refuse) often set that bar, pushing good non-competing hosts out;
+a fallback rule patched it. **Decision:** anchor to the best non-competing host with a real category link (it
+always clears its own bar, so the fallback rule is gone); competitors are still listed if they clear it.
+Anchoring lower let a weak tail back in (sustainable activewear: two 45-70 women's apparel hosts linked only by
+"apparel"), so a host linked **only** by a broad category also needs persona fit >= 0.5.
+**Evidence (holdout TEST brands, judge pairs where exactly one host is recommended):** the judge prefers the
+recommended host 71% (old penalty) -> 82% (fit-only) -> 82% (this version), while golden recall returns to 0.70
+with 0 must-exclude violations.
