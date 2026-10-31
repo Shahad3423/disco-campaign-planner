@@ -56,9 +56,10 @@ def optional_inputs() -> AdvertiserInputs:
     )
 
 
-def run_and_store(brief: str, inputs: AdvertiserInputs) -> None:
-    with st.status("Planning: intake, publisher scoring, personas, creatives, budget...", expanded=False) as status:
-        plan, notice, model = ui.plan_campaign(brief, inputs)
+def run_and_store(brief: str, inputs: AdvertiserInputs, live: bool = False) -> None:
+    label = "Planning live (fresh LLM calls, ~30-60s)" if live else "Planning: intake, publisher scoring, personas, creatives, budget..."
+    with st.status(label, expanded=False) as status:
+        plan, notice, model = ui.plan_campaign(brief, inputs, live=live)
         status.update(label="Done" if plan else "Could not plan", state="complete" if plan else "error")
     st.session_state["notice"] = notice
     if plan:
@@ -74,8 +75,11 @@ with tab_plan:
     brief = st.text_area("Advertiser brief", value=default_brief, height=110, key=f"brief_{choice}",
                          placeholder="Describe the product, who it's for, price, and any claims you can make.")
     inputs = optional_inputs()
+    live = st.toggle("Run live (skip the LLM cache)", value=False,
+                     help="Off: identical inputs reuse earlier LLM answers, so results are reproducible and instant. "
+                          "On: fresh Gemini calls end to end (slower); nothing is written to the cache.")
     if st.button("Plan campaign", type="primary", disabled=not brief.strip()):
-        run_and_store(brief.strip(), inputs)
+        run_and_store(brief.strip(), inputs, live=live)
 
     if st.session_state.get("notice"):
         st.warning(st.session_state["notice"])
@@ -83,7 +87,7 @@ with tab_plan:
     if plan:
         qa = ui.render_clarify_form(plan)
         if qa:
-            run_and_store(ui.brief_with_answers(st.session_state["brief"], qa), inputs)
+            run_and_store(ui.brief_with_answers(st.session_state["brief"], qa), inputs, live=live)
             st.rerun()
         ui.render_plan(plan, st.session_state.get("model", "unknown"))
 

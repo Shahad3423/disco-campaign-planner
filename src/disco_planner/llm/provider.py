@@ -10,6 +10,7 @@ Design:
 """
 from __future__ import annotations
 
+import contextvars
 import hashlib
 import json
 import os
@@ -24,6 +25,17 @@ from disco_planner.data.catalog import REPO_ROOT
 
 T = TypeVar("T", bound=BaseModel)
 CACHE_DIR = REPO_ROOT / "cache" / "llm"
+# The disk cache makes evals reproducible and avoids paying twice for identical calls. A "live" run
+# (the app's toggle) sets this to False for its own context: no cache read, no cache write.
+CACHE_ENABLED: contextvars.ContextVar[bool] = contextvars.ContextVar("cache_enabled", default=True)
+# Per-run call accounting, so the UI can say truthfully how an answer was produced.
+CALL_STATS: contextvars.ContextVar[dict | None] = contextvars.ContextVar("call_stats", default=None)
+
+
+def _count(kind: str) -> None:
+    stats = CALL_STATS.get()
+    if stats is not None:
+        stats[kind] = stats.get(kind, 0) + 1
 
 
 def _load_dotenv() -> None:
@@ -212,12 +224,16 @@ def generate(
     user: str,
     schema: type[T],
     temperature: float = 0.2,
-    use_cache: bool = True,
+    use_cache: bool | None = None,
 ) -> T:
+    if use_cache is None:
+        use_cache = CACHE_ENABLED.get()  # per session/thread: a live run in one app session doesn't affect others
     key = hashlib.sha256(f"{provider.model}\n{system}\n{user}\n{temperature}".encode()).hexdigest()[:24]
     path = CACHE_DIR / f"{key}.json"
     if use_cache and path.exists():
+        _count("cached")
         return schema.model_validate_json(path.read_text())
+    _count("live")
 
     schema_hint = json.dumps(schema.model_json_schema())
     prompt = f"{user}\n\nReturn ONLY a JSON object matching this JSON Schema:\n{schema_hint}"
@@ -232,7 +248,7 @@ def generate(
     else:
         raise LLMError(f"{schema.__name__}: output failed validation twice: {last_error[:500]}")
 
-    if provider.name != "fake":
+    if provider.name != "fake" and use_cache:  # a live run never overwrites the cached answers evals rely on
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
         path.write_text(result.model_dump_json(indent=2))
     return result
