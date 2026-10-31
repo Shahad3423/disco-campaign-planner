@@ -237,8 +237,11 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
             capacity_usd=round(sum(_bucket_cost(m, i) for i in range(m["k_max"])), 2),
             expected_impressions=round(impressions), expected_reach=round(impressions / pri["avg_frequency"]),
             requires_host_approval=m["competitor"],
-            rationale=(f"market price ${p25:.2f}-${p75:.2f} (median ${p50:.2f}); bidding ${bid:.2f} wins ~{k / len(m['needed']):.0%} "
-                       f"of page views, paying ~${avg_paid:.2f} per click (second price)"
+            rationale=((f"not funded at this budget: cheaper {unit} are available on the other hosts first "
+                        f"(market price here ${p25:.2f}-${p75:.2f}); it gets budget as the budget grows or if a funded host declines"
+                        if not k else
+                        f"market price ${p25:.2f}-${p75:.2f} (median ${p50:.2f}); bidding ${bid:.2f} wins ~{k / len(m['needed']):.0%} "
+                        f"of page views, paying ~${avg_paid:.2f} per click (second price)")
                        + (f"; {m['audience']:.0%} of units counted as in-audience" if m["audience"] < 1 else "")
                        + ("; host also sells this kind of product: confirm it allows competing brands" if m["competitor"] else "")),
         ))

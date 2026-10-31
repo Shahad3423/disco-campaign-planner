@@ -68,7 +68,7 @@
    "regulated_claims_in_copy": 0,
    "briefs_with_blocked_claims": 1
   },
-  "wall_time_s": 105.7
+  "wall_time_s": 3.3
  },
  "rows": [
   {
@@ -97,7 +97,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.3
   },
   {
    "id": "h002",
@@ -522,7 +522,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h016",
@@ -553,7 +553,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h017",
@@ -584,7 +584,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h018",
@@ -1091,7 +1091,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 14.0
+   "seconds": 0.0
   },
   {
    "id": "h036",
@@ -1836,7 +1836,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h063",
@@ -1941,7 +1941,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h067",
@@ -2053,7 +2053,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h071",
@@ -2313,7 +2313,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 13.5
+   "seconds": 0.0
   },
   {
    "id": "h081",
@@ -2341,7 +2341,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "h082",
@@ -2448,7 +2448,7 @@
    "creative_review_fail": 1,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 37.9
+   "seconds": 0.0
   },
   {
    "id": "h086",
@@ -2802,7 +2802,7 @@
    "creative_review_fail": 0,
    "regulated_in_copy": false,
    "blocked_claims": [],
-   "seconds": 39.0
+   "seconds": 0.0
   },
   {
    "id": "h100",

@@ -70,7 +70,7 @@
   "regulated_claims_in_copy": 0,
   "briefs_with_blocked_claims": 1
  },
- "wall_time_s": 105.7
+ "wall_time_s": 3.3
 }
 ```
 
