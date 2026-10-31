@@ -26,14 +26,14 @@
     "why": "The core product category is workout supplements."
    },
    {
-    "tag": "activewear",
-    "weight": 0.417,
-    "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
-   },
-   {
     "tag": "fitness_classes",
     "weight": 0.417,
     "why": "Attendees of fitness classes are frequent users of workout supplements."
+   },
+   {
+    "tag": "activewear",
+    "weight": 0.417,
+    "why": "Shoppers buying activewear overlap strongly with fitness and workout supplement consumers."
    },
    {
     "tag": "wellness_dtc",
@@ -1378,146 +1378,181 @@
   "planning_date": "2026-10-30",
   "advertiser_summary": "An affordable workout supplement brand offering pre-workout, creatine, and protein formulations identical to expensive brands at half the cost.",
   "confidence": 0.84,
-  "objective": "acquisition",
+  "objective": "conversions",
   "economics": {
    "price_usd": 25.0,
    "price_source": "tier_default",
+   "expected_orders": 2.5,
    "gross_margin": 0.65,
    "margin_source": "category_default",
-   "cpa_source": "margin",
-   "expected_orders": 2.5,
-   "max_affordable_cac": 40.62,
-   "target_cpa": 28.44,
+   "break_even_cac": 40.62,
+   "target_cpa": null,
+   "target_source": "none",
    "assumptions": [
     "Price not given; assumed $25 for a 'budget' product.",
     "repeat_consumable: assumed 2.5 orders per customer over ~6 months.",
-    "No target CPA/ROAS or margin given; assumed 65% gross margin (typical for wellness_dtc). Give a target CPA to replace this.",
-    "Target CPA = 70% of max affordable CAC ($25 x 65% margin x 2.5 orders = $40.62)."
+    "Margin not given; assumed 65% (typical for wellness_dtc) for the break-even estimate only.",
+    "Break-even per customer (guidance, not enforced): $25 x 65% x 2.5 orders = $40.62."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $28.44 x click-to-purchase rate (1.3%-4.6% for wellness_dtc). Clicks are observable without trusting a pixel, so both sides can verify billing.",
-   "cpc_bid": {
-    "low": 0.37,
-    "mid": 0.74,
-    "high": 1.29
+   "bidding": "maximize",
+   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $2.00 cap (category default) to spend it well; no CPA target is invented. Guidance: at the assumed margin, a click is worth about $1.06; bidding above that loses money per customer. Set a target CPA or a lower max CPC to enforce it.",
+   "max_cpc_cap": 2.0,
+   "cap_source": "category_default",
+   "cpc_range": {
+    "low": 1.0,
+    "mid": 1.4,
+    "high": 2.0
    },
    "cpm_bid": null,
-   "target_cpa": 28.44,
-   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
+   "target_cpa": null,
+   "break_even_cpc": 1.06,
+   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
-   "monthly_budget_usd": 1080.0,
-   "budget_source": "recommended_learning_budget",
-   "delivery_goal": "budget",
-   "expected_impressions": 107945,
-   "expected_reach": 67466,
-   "goal_feasible": true,
-   "daily_cap_usd": 36.0,
+   "monthly_budget_usd": 5000.0,
+   "planned_spend_usd": 5000.0,
+   "objective": "conversions",
+   "unit": "conversions",
+   "goal_target": null,
+   "when_goal_met": "stop",
+   "forecast": {
+    "low": 59.0,
+    "mid": 118.0,
+    "high": 206.5
+   },
+   "goal_status": "no_goal",
+   "binding_constraint": "budget",
+   "spend_to_reach_goal_usd": null,
+   "max_deliverable": 421.1,
+   "spend_at_full_inventory_usd": 25639.75,
+   "replan_options": [],
+   "expected_impressions": 444400,
+   "expected_reach": 277750,
+   "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
-   "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 1076.47,
+   "pacing": "even daily pacing",
+   "learning_floor_usd": 1233.0,
    "exploration_reserve_usd": 0.0,
    "exploration_candidates": [],
    "allocations": [
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.469,
-     "budget_usd": 506.08,
-     "cpc_bid_usd": 1.04,
-     "start_bid_usd": 0.73,
+     "share": 0.194,
+     "budget_usd": 970.0,
+     "cpc_bid_usd": 2.0,
+     "start_bid_usd": 1.4,
      "expected_clicks": {
-      "low": 389.0,
-      "mid": 487.0,
-      "high": 584.0
+      "low": 554.0,
+      "mid": 693.0,
+      "high": 831.0
      },
      "expected_conversions": {
-      "low": 8.9,
-      "mid": 17.7,
-      "high": 31.0
+      "low": 12.6,
+      "mid": 25.2,
+      "high": 44.1
      },
-     "capacity_usd": 3669.12,
-     "expected_impressions": 28965,
-     "expected_reach": 18103,
+     "expected_units": {
+      "low": 11.4,
+      "mid": 22.9,
+      "high": 40.1
+     },
+     "capacity_usd": 4939.2,
+     "expected_impressions": 41241,
+     "expected_reach": 25776,
      "requires_host_approval": true,
-     "rationale": "score 0.67 -> relative fit x1.40 on CTR/CVR; max bid $1.04 (break-even at target CPA), start at 70%; host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
+     "rationale": "score 0.67, relative fit x1.40; 0.0260 conversions/$ at the start, falling as the host saturates; bid $1.40 (cap $2.00); host also sells this kind of product: confirm it allows competing brands, otherwise this budget reflows to the other hosts"
     },
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.192,
-     "budget_usd": 207.19,
-     "cpc_bid_usd": 0.69,
-     "start_bid_usd": 0.48,
+     "share": 0.438,
+     "budget_usd": 2191.5,
+     "cpc_bid_usd": 1.33,
+     "start_bid_usd": 0.93,
      "expected_clicks": {
-      "low": 240.0,
-      "mid": 300.0,
-      "high": 360.0
+      "low": 1885.0,
+      "mid": 2356.0,
+      "high": 2828.0
      },
      "expected_conversions": {
-      "low": 3.6,
-      "mid": 7.2,
-      "high": 12.7
+      "low": 28.4,
+      "mid": 56.8,
+      "high": 99.4
      },
-     "capacity_usd": 8447.86,
-     "expected_impressions": 26978,
-     "expected_reach": 16861,
+     "expected_units": {
+      "low": 25.8,
+      "mid": 51.7,
+      "high": 90.5
+     },
+     "capacity_usd": 11386.24,
+     "expected_impressions": 211716,
+     "expected_reach": 132322,
      "requires_host_approval": false,
-     "rationale": "score 0.28 -> relative fit x0.93 on CTR/CVR; max bid $0.69 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.28, relative fit x0.93; 0.0259 conversions/$ at the start, falling as the host saturates; bid $0.93 (cap $1.33)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.177,
-     "budget_usd": 191.36,
-     "cpc_bid_usd": 0.67,
-     "start_bid_usd": 0.47,
+     "share": 0.262,
+     "budget_usd": 1312.0,
+     "cpc_bid_usd": 1.29,
+     "start_bid_usd": 0.9,
      "expected_clicks": {
-      "low": 228.0,
-      "mid": 286.0,
-      "high": 343.0
+      "low": 1166.0,
+      "mid": 1458.0,
+      "high": 1749.0
      },
      "expected_conversions": {
-      "low": 3.4,
-      "mid": 6.7,
-      "high": 11.7
+      "low": 17.1,
+      "mid": 34.2,
+      "high": 59.9
      },
-     "capacity_usd": 4934.1,
-     "expected_impressions": 26372,
-     "expected_reach": 16483,
+     "expected_units": {
+      "low": 15.5,
+      "mid": 31.0,
+      "high": 54.3
+     },
+     "capacity_usd": 6627.89,
+     "expected_impressions": 134607,
+     "expected_reach": 84129,
      "requires_host_approval": false,
-     "rationale": "score 0.26 -> relative fit x0.90 on CTR/CVR; max bid $0.67 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.26, relative fit x0.90; 0.0261 conversions/$ at the start, falling as the host saturates; bid $0.90 (cap $1.29)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.162,
-     "budget_usd": 175.37,
-     "cpc_bid_usd": 0.65,
-     "start_bid_usd": 0.45,
+     "share": 0.105,
+     "budget_usd": 526.5,
+     "cpc_bid_usd": 1.25,
+     "start_bid_usd": 0.88,
      "expected_clicks": {
-      "low": 216.0,
-      "mid": 270.0,
-      "high": 324.0
+      "low": 479.0,
+      "mid": 598.0,
+      "high": 718.0
      },
      "expected_conversions": {
-      "low": 3.1,
-      "mid": 6.2,
-      "high": 10.8
+      "low": 6.8,
+      "mid": 13.6,
+      "high": 23.9
      },
-     "capacity_usd": 1984.28,
-     "expected_impressions": 25630,
-     "expected_reach": 16019,
+     "expected_units": {
+      "low": 6.2,
+      "mid": 12.4,
+      "high": 21.7
+     },
+     "capacity_usd": 2686.41,
+     "expected_impressions": 56836,
+     "expected_reach": 35523,
      "requires_host_approval": false,
-     "rationale": "score 0.23 -> relative fit x0.88 on CTR/CVR; max bid $0.65 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.23, relative fit x0.88; 0.0259 conversions/$ at the start, falling as the host saturates; bid $0.88 (cap $1.25)"
     }
    ],
-   "warnings": [
-    "No budget given: recommending $1,080, the smallest budget that buys 300 clicks per host."
-   ]
+   "warnings": []
   },
   "bid_strategy": {
    "current_phase": "learning",
@@ -1525,62 +1560,56 @@
     {
      "name": "learning",
      "until": "14 days or 300 clicks per host",
-     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
-     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+     "rule": "fixed start bid per host; pacing only",
+     "why": "stable bids so measured CTR/CVR aren't confounded"
     },
     {
-     "name": "enhanced_cpc",
-     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
-     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
-     "why": "spend more on shoppers who look likely to buy, never above break-even"
-    },
-    {
-     "name": "target_cpa",
-     "rule": "Disco bids automatically to hit $28.44 CPA",
-     "why": "only once Disco can predict this brand's conversion rate"
+     "name": "maximize",
+     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
+     "why": "no CPA target was set, so the goal is the most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_012",
-     "start_bid": 0.73,
-     "max_bid": 1.04,
+     "start_bid": 1.4,
+     "max_bid": 2.0,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_002",
-     "start_bid": 0.48,
-     "max_bid": 0.69,
+     "start_bid": 0.93,
+     "max_bid": 1.33,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.47,
-     "max_bid": 0.67,
+     "start_bid": 0.9,
+     "max_bid": 1.29,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 0.45,
-     "max_bid": 0.65,
+     "start_bid": 0.88,
+     "max_bid": 1.25,
      "floor": 0.25
     }
    ],
    "adjustments": [
     {
-     "signal": "conversion_likelihood",
-     "min_multiplier": 0.8,
-     "max_multiplier": 1.25,
-     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
-    },
-    {
      "signal": "pacing",
      "min_multiplier": 0.85,
      "max_multiplier": 1.15,
      "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    },
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
+   "rationale": "Maximise conversions within the budget, never above the $2.00 cap (category default)."
   },
   "targeting": {
    "publishers_include": [
@@ -1724,14 +1753,13 @@
    "competitor_hosts_need_approval": [
     "pub_012"
    ],
-   "stop_loss": {
-    "cpa_multiple": 2.0,
-    "min_clicks": 150
-   },
+   "budget_cap_usd": 5000.0,
+   "max_cpc_cap_usd": 2.0,
+   "stop_loss": null,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
-   "primary_kpi": "CPA vs target",
+   "primary_kpi": "conversions (and CPA if a target is set)",
    "attribution": "7-day click-through billed; view-through reported, never billed",
    "holdout": "10% of eligible impressions withheld to measure incremental lift",
    "review_after_days": 14

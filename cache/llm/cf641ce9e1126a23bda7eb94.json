@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "headline": "Get natural toothpaste & deodorant for $5, {first_name}",
+      "body": "Switch to natural toothpaste and deodorant that actually fits your budget. Daily essentials for about $5 each.",
+      "cta": "Shop $5 essentials",
+      "headline_no_name": "Get natural toothpaste & deodorant for $5",
+      "angle": "clear value props",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "headline": "{first_name}, easy natural personal care for $5",
+      "body": "Simplify your routine with natural toothpaste and deodorant. Just $5 each and incredibly easy to order.",
+      "cta": "Order now for $5",
+      "headline_no_name": "Easy natural personal care for $5",
+      "angle": "one-click speed and simplicity",
+      "claims_used": [
+        "Natural toothpaste and deodorant",
+        "Cheap, like $5 or so"
+      ]
+    }
+  ]
+}

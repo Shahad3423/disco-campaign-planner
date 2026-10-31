@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "{first_name}, discover understated leather pieces",
+      "body": "Refined slim leather wallets and everyday carry bags. Crafted for those who appreciate quiet quality and timeless style.",
+      "cta": "Shop leather wallets",
+      "headline_no_name": "Discover understated leather pieces",
+      "angle": "quality-focused and understated craftsmanship",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "headline": "Upgrade your daily carry, {first_name}",
+      "body": "Slim leather wallets and everyday carry bags designed to elevate your aesthetic. Premium pieces from $80 to $200.",
+      "cta": "Shop slim wallets",
+      "headline_no_name": "Upgrade your daily carry",
+      "angle": "aesthetic-forward and visual appeal",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "$80-200 price range"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "Perfect gifts for fathers and grads, {first_name}",
+      "body": "Slim leather wallets and everyday carry bags are a common gift for fathers and grads. Timeless essentials they will carry daily.",
+      "cta": "Shop gifts",
+      "headline_no_name": "Perfect gifts for fathers and grads",
+      "angle": "premium and giftable framing",
+      "claims_used": [
+        "Slim leather wallets and everyday carry bags",
+        "A common gift for fathers and grads"
+      ]
+    }
+  ]
+}

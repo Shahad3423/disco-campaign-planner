@@ -18,14 +18,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "activewear",
-    "weight": 1.0,
-    "why": "Core category for technical outerwear and shells."
-   },
-   {
     "tag": "apparel",
     "weight": 1.0,
     "why": "Core category as jackets and outerwear."
+   },
+   {
+    "tag": "activewear",
+    "weight": 1.0,
+    "why": "Core category for technical outerwear and shells."
    }
   ],
   "competing_tags": [],
@@ -74,7 +74,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, apparel (specific) (multiplier)"
+     "detail": "matches apparel, activewear (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -117,7 +117,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_017",
@@ -128,7 +128,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, apparel (specific) (multiplier)"
+     "detail": "matches apparel, activewear (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -171,7 +171,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_016",
@@ -1368,46 +1368,63 @@
   "planning_date": "2026-10-30",
   "advertiser_summary": "Brand selling technical outerwear designed for serious backcountry skiers.",
   "confidence": 0.79,
-  "objective": "acquisition",
+  "objective": "conversions",
   "economics": {
    "price_usd": 650.0,
    "price_source": "stated",
+   "expected_orders": 1.1,
    "gross_margin": 0.6,
    "margin_source": "category_default",
-   "cpa_source": "margin",
-   "expected_orders": 1.1,
-   "max_affordable_cac": 429.0,
-   "target_cpa": 300.3,
+   "break_even_cac": 429.0,
+   "target_cpa": null,
+   "target_source": "none",
    "assumptions": [
-    "No target CPA/ROAS or margin given; assumed 60% gross margin (typical for apparel). Give a target CPA to replace this.",
-    "Target CPA = 70% of max affordable CAC ($650 x 60% margin x 1.1 orders = $429.00)."
+    "Margin not given; assumed 60% (typical for apparel) for the break-even estimate only.",
+    "Break-even per customer (guidance, not enforced): $650 x 60% x 1.1 orders = $429.00."
    ]
   },
   "pricing": {
    "model": "CPC",
-   "rationale": "Acquisition goal with no conversion history: pay per click. Max CPC = target CPA $300.30 x click-to-purchase rate (1.0%-3.5% for apparel). Clicks are observable without trusting a pixel, so both sides can verify billing.",
-   "cpc_bid": {
-    "low": 3.0,
-    "mid": 6.0,
-    "high": 6.0
+   "bidding": "maximize",
+   "rationale": "Pay per click: verifiable without trusting a pixel. Maximise conversions within the budget: bids move between $0.25 and the $1.80 cap (category default) to spend it well; no CPA target is invented.",
+   "max_cpc_cap": 1.8,
+   "cap_source": "category_default",
+   "cpc_range": {
+    "low": 0.9,
+    "mid": 1.26,
+    "high": 1.8
    },
    "cpm_bid": null,
-   "target_cpa": 300.3,
-   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand."
+   "target_cpa": null,
+   "break_even_cpc": 8.58,
+   "tcpa_unlock": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded."
   },
   "budget": {
-   "monthly_budget_usd": 6350.0,
-   "budget_source": "recommended_learning_budget",
-   "delivery_goal": "budget",
-   "expected_impressions": 54329,
-   "expected_reach": 33956,
-   "goal_feasible": true,
-   "daily_cap_usd": 211.67,
+   "monthly_budget_usd": 5000.0,
+   "planned_spend_usd": 5000.0,
+   "objective": "conversions",
+   "unit": "conversions",
+   "goal_target": null,
+   "when_goal_met": "stop",
+   "forecast": {
+    "low": 44.1,
+    "mid": 88.3,
+    "high": 154.5
+   },
+   "goal_status": "no_goal",
+   "binding_constraint": "budget",
+   "spend_to_reach_goal_usd": null,
+   "max_deliverable": 435.8,
+   "spend_at_full_inventory_usd": 31015.76,
+   "replan_options": [],
+   "expected_impressions": 213091,
+   "expected_reach": 133182,
+   "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
-   "pacing": "even daily pacing; pause a host if CPA > 2.0x target after 150 clicks",
-   "learning_budget_needed_usd": 6352.94,
-   "exploration_reserve_usd": 952.5,
+   "pacing": "even daily pacing",
+   "learning_floor_usd": 1032.0,
+   "exploration_reserve_usd": 750.0,
    "exploration_candidates": [
     "Linden Park",
     "Marlowe & Co."
@@ -1416,54 +1433,89 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.436,
-     "budget_usd": 2769.38,
-     "cpc_bid_usd": 6.0,
-     "start_bid_usd": 4.2,
+     "share": 0.632,
+     "budget_usd": 3160.38,
+     "cpc_bid_usd": 1.8,
+     "start_bid_usd": 1.26,
      "expected_clicks": {
-      "low": 369.0,
-      "mid": 462.0,
-      "high": 554.0
+      "low": 2007.0,
+      "mid": 2508.0,
+      "high": 3010.0
      },
      "expected_conversions": {
-      "low": 6.5,
-      "mid": 12.9,
-      "high": 22.6
+      "low": 35.1,
+      "mid": 70.2,
+      "high": 122.9
      },
-     "capacity_usd": 110880.0,
-     "expected_impressions": 27474,
-     "expected_reach": 17171,
+     "expected_units": {
+      "low": 32.8,
+      "mid": 65.7,
+      "high": 114.9
+     },
+     "capacity_usd": 23284.8,
+     "expected_impressions": 149300,
+     "expected_reach": 93312,
      "requires_host_approval": false,
-     "rationale": "score 0.29 -> relative fit x1.40 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.29, relative fit x1.40; 0.0222 conversions/$ at the start, falling as the host saturates; bid $1.26 (cap $1.80)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.414,
-     "budget_usd": 2628.12,
-     "cpc_bid_usd": 6.0,
-     "start_bid_usd": 4.2,
+     "share": 0.16,
+     "budget_usd": 801.62,
+     "cpc_bid_usd": 1.75,
+     "start_bid_usd": 1.22,
      "expected_clicks": {
-      "low": 350.0,
-      "mid": 438.0,
-      "high": 526.0
+      "low": 526.0,
+      "mid": 657.0,
+      "high": 788.0
      },
      "expected_conversions": {
-      "low": 6.0,
-      "mid": 11.9,
-      "high": 20.8
+      "low": 8.9,
+      "mid": 17.9,
+      "high": 31.3
      },
-     "capacity_usd": 28379.99,
-     "expected_impressions": 26855,
-     "expected_reach": 16785,
+     "expected_units": {
+      "low": 8.3,
+      "mid": 16.7,
+      "high": 29.2
+     },
+     "capacity_usd": 5770.6,
+     "expected_impressions": 40285,
+     "expected_reach": 25178,
      "requires_host_approval": false,
-     "rationale": "score 0.27 -> relative fit x1.36 on CTR/CVR; max bid $6.00 (break-even at target CPA), start at 70%"
+     "rationale": "score 0.27, relative fit x1.36; 0.0223 conversions/$ at the start, falling as the host saturates; bid $1.22 (cap $1.75)"
+    },
+    {
+     "publisher_id": "pub_016",
+     "publisher_name": "Stride & Stem",
+     "share": 0.058,
+     "budget_usd": 288.0,
+     "cpc_bid_usd": 1.37,
+     "start_bid_usd": 0.96,
+     "expected_clicks": {
+      "low": 240.0,
+      "mid": 300.0,
+      "high": 360.0
+     },
+     "expected_conversions": {
+      "low": 3.2,
+      "mid": 6.4,
+      "high": 11.2
+     },
+     "expected_units": {
+      "low": 3.0,
+      "mid": 5.9,
+      "high": 10.4
+     },
+     "capacity_usd": 1960.37,
+     "expected_impressions": 23506,
+     "expected_reach": 14691,
+     "requires_host_approval": false,
+     "rationale": "score 0.17, relative fit x1.06; 0.0222 conversions/$ at the start, falling as the host saturates; bid $0.96 (cap $1.37)"
     }
    ],
-   "warnings": [
-    "No budget given: recommending $6,350, the smallest budget that buys 300 clicks per host.",
-    "Budget too small for Stride & Stem: concentrating on fewer hosts."
-   ]
+   "warnings": []
   },
   "bid_strategy": {
    "current_phase": "learning",
@@ -1471,54 +1523,55 @@
     {
      "name": "learning",
      "until": "14 days or 300 clicks per host",
-     "rule": "bid = start bid per host (70% of break-even); pacing adjustment only",
-     "why": "stable bids so measured CTR/CVR aren't confounded by bid changes"
+     "rule": "fixed start bid per host; pacing only",
+     "why": "stable bids so measured CTR/CVR aren't confounded"
     },
     {
-     "name": "enhanced_cpc",
-     "until": "tCPA unlocks after conversion tracking is verified and 50 click-through conversions are recorded; until then Disco can't predict conversion rate for this brand.",
-     "rule": "bid = start bid x conversion_likelihood x pacing, clamped to [floor, max bid]",
-     "why": "spend more on shoppers who look likely to buy, never above break-even"
-    },
-    {
-     "name": "target_cpa",
-     "rule": "Disco bids automatically to hit $300.30 CPA",
-     "why": "only once Disco can predict this brand's conversion rate"
+     "name": "maximize",
+     "rule": "bid = start x pacing x conversion likelihood, within [floor, cap]: spend the budget on the best opportunities",
+     "why": "no CPA target was set, so the goal is the most units for the budget"
     }
    ],
    "host_bids": [
     {
      "publisher_id": "pub_002",
-     "start_bid": 4.2,
-     "max_bid": 6.0,
+     "start_bid": 1.26,
+     "max_bid": 1.8,
      "floor": 0.25
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 4.2,
-     "max_bid": 6.0,
+     "start_bid": 1.22,
+     "max_bid": 1.75,
+     "floor": 0.25
+    },
+    {
+     "publisher_id": "pub_016",
+     "start_bid": 0.96,
+     "max_bid": 1.37,
      "floor": 0.25
     }
    ],
    "adjustments": [
     {
-     "signal": "conversion_likelihood",
-     "min_multiplier": 0.8,
-     "max_multiplier": 1.25,
-     "reason": "Bid higher when the shopper looks like a high converter: their persona match for this campaign vs the host's average shopper (from the serve-time persona posterior)."
-    },
-    {
      "signal": "pacing",
      "min_multiplier": 0.85,
      "max_multiplier": 1.15,
      "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
+    },
+    {
+     "signal": "conversion_likelihood",
+     "min_multiplier": 0.8,
+     "max_multiplier": 1.25,
+     "reason": "Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper)."
     }
    ],
-   "rationale": "Start below break-even and fixed so the first two weeks measure the hosts, not the bidder; then bid per shopper within a hard ceiling (max CPC = target CPA x CVR), so a single click can never cost more than it's expected to earn."
+   "rationale": "Maximise conversions within the budget, never above the $1.80 cap (category default)."
   },
   "targeting": {
    "publishers_include": [
     "pub_002",
+    "pub_016",
     "pub_017"
    ],
    "publishers_exclude": [
@@ -1612,6 +1665,7 @@
     "variant_id": "v1",
     "persona_id": "persona_001",
     "publisher_ids": [
+     "pub_016",
      "pub_002",
      "pub_017"
     ],
@@ -1624,6 +1678,7 @@
     "variant_id": "v2",
     "persona_id": "persona_005",
     "publisher_ids": [
+     "pub_016",
      "pub_002",
      "pub_017"
     ],
@@ -1637,7 +1692,8 @@
     "persona_id": "persona_010",
     "publisher_ids": [
      "pub_017",
-     "pub_002"
+     "pub_002",
+     "pub_016"
     ],
     "headline_template": "The ultimate gift for serious skiers, {first_name}",
     "headline_no_name": "The ultimate gift for serious skiers",
@@ -1649,7 +1705,8 @@
     "persona_id": "persona_009",
     "publisher_ids": [
      "pub_017",
-     "pub_002"
+     "pub_002",
+     "pub_016"
     ],
     "headline_template": "Perform at your peak, {first_name}",
     "headline_no_name": "Perform at your peak",
@@ -1667,19 +1724,14 @@
     "Our shells are what patrollers wear"
    ],
    "claims_blocked_pending_substantiation": [],
-   "competitor_hosts_need_approval": [
-    "pub_002",
-    "pub_017",
-    "pub_016"
-   ],
-   "stop_loss": {
-    "cpa_multiple": 2.0,
-    "min_clicks": 150
-   },
+   "competitor_hosts_need_approval": [],
+   "budget_cap_usd": 5000.0,
+   "max_cpc_cap_usd": 1.8,
+   "stop_loss": null,
    "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name"
   },
   "measurement": {
-   "primary_kpi": "CPA vs target",
+   "primary_kpi": "conversions (and CPA if a target is set)",
    "attribution": "7-day click-through billed; view-through reported, never billed",
    "holdout": "10% of eligible impressions withheld to measure incremental lift",
    "review_after_days": 14

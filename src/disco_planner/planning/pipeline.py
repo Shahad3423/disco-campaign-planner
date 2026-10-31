@@ -72,11 +72,14 @@ def run(
         eco = budget.economics(profile, inputs, category)
         pricing = budget.pricing_plan(eco, inputs, category)
         plan = budget.budget_plan(scores, eco, pricing, inputs, today, gifting_moment, category)
-        bids = budget.bid_strategy(pricing, plan)
+        days = inputs.flight_days or catalog.config("pricing")["budget"]["flight_days"]
+        bids = budget.bid_strategy(pricing, budget.host_rows(scores, eco, pricing, inputs, days, category), inputs)
 
     status = {"proceed": "draft", "clarify": "needs_clarification"}.get(profile.gate, "not_eligible")
     by_persona = {m.persona_id: m for m in persona_matches}
-    allowed_hosts = {a.publisher_id for a in plan.allocations} if plan else set()
+    # without a budget the plan still names its hosts; nothing is allocated until the advertiser sets one
+    allowed_hosts = ({a.publisher_id for a in plan.allocations} if plan
+                     else {s.publisher_id for s in scores if s.recommended})
     config = CampaignConfig(
         status=status, planning_date=today.isoformat(), advertiser_summary=profile.business_summary or brief,
         confidence=profile.confidence, objective=inputs.objective,
@@ -105,17 +108,23 @@ def run(
         guardrails={
             "claims_allowed": profile.stated_claims,
             "claims_blocked_pending_substantiation": profile.claims_needing_substantiation,
-            "competitor_hosts_need_approval": [s.publisher_id for s in scores if s.recommended and s.flags],
-            "stop_loss": catalog.config("pricing")["budget"]["stop_loss"],
+            "competitor_hosts_need_approval": [s.publisher_id for s in scores if s.recommended
+                                               and any(f.startswith("competitor_conflict") for f in s.flags)],
+            "budget_cap_usd": inputs.monthly_budget_usd,
+            "max_cpc_cap_usd": pricing.max_cpc_cap if pricing else None,
+            "stop_loss": catalog.config("pricing")["budget"]["stop_loss"] if eco and eco.target_cpa else None,
             "creative_rules": "no inferred-demographic references; {first_name} falls back to headline_no_name",
         },
         measurement={
-            "primary_kpi": "CPA vs target" if inputs.objective == "acquisition" else "reach and CTR",
+            "primary_kpi": {"conversions": "conversions (and CPA if a target is set)", "clicks": "clicks and CPC",
+                            "impressions": "impressions delivered", "reach": "unique shoppers reached"}[inputs.objective],
             "attribution": "7-day click-through billed; view-through reported, never billed",
             "holdout": "10% of eligible impressions withheld to measure incremental lift",
             "review_after_days": 14,
         },
-        open_questions=profile.clarifying_questions,
+        open_questions=profile.clarifying_questions + (
+            [] if inputs.monthly_budget_usd or status == "not_eligible"
+            else ["What's your budget for this flight? We don't suggest one; enter it to see the allocation and forecast."]),
     )
     return CampaignPlan(
         brief=brief, profile=profile, publishers=scores, personas=persona_matches,

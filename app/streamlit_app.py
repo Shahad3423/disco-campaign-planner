@@ -25,34 +25,45 @@ tab_plan, tab_sim, tab_eval, tab_how = st.tabs(["Plan a campaign", "Shopper simu
 # ---------------------------------------------------------------- plan page
 
 
+UNIT = {"conversions": "conversions", "clicks": "clicks", "impressions": "impressions", "reach": "unique shoppers"}
+
+
 def optional_inputs() -> AdvertiserInputs:
-    """Optional-details form. Blank / zero means 'use the labelled default'."""
-    with st.expander("Optional details (override our assumptions)"):
-        st.markdown("**What are you buying?**")
-        g1, g2, g3 = st.columns(3)
-        goal = g1.selectbox("Delivery goal", ["budget", "impressions", "reach"],
-                            help="Set a budget, or a number of impressions / unique shoppers and we work out the budget")
-        budget = g2.number_input("Monthly budget (USD)", min_value=0.0, value=0.0, step=500.0, help="0 = recommend a learning budget",
-                                 disabled=goal != "budget")
-        target_n = g3.number_input("Target impressions" if goal == "impressions" else "Target unique shoppers (reach)",
-                                   min_value=0, value=0, step=10_000, disabled=goal == "budget")
-        st.markdown("**What can you pay per customer?** (first one given wins)")
-        c1, c2, c3, c4 = st.columns(4)
-        target_cpa = c1.number_input("Target CPA (USD)", min_value=0.0, value=0.0, step=5.0)
-        target_roas = c2.number_input("Target ROAS (x)", min_value=0.0, value=0.0, step=0.5, help="revenue / ad spend")
-        margin = c3.number_input("Gross margin (%)", min_value=0.0, max_value=100.0, value=0.0, step=5.0,
-                                 help="only used if no target CPA or ROAS; 0 = category default")
-        price = c4.number_input("Typical price (USD)", min_value=0.0, value=0.0, step=5.0, help="0 = use stated or tier default")
-        c5, c6, c7 = st.columns(3)
-        objective = c5.selectbox("Objective", ["acquisition", "awareness"])
-        flight = c6.number_input("Flight days", min_value=0, value=0, step=7, help="0 = default")
-        tracking = c7.checkbox("Has conversion tracking")
+    """Campaign setup. The budget is the advertiser's to choose (never suggested): without it we still
+    rank hosts, pick personas and write creatives, but don't allocate or forecast."""
+    with st.expander("Campaign setup: budget, objective, bidding", expanded=True):
+        b1, b2, b3 = st.columns(3)
+        budget = b1.number_input("Budget for the flight (USD)", min_value=0.0, value=0.0, step=500.0,
+                                 help="Your hard spending cap. We don't suggest one; leave 0 to plan without allocating.")
+        flight = b2.number_input("Flight days", min_value=0, value=0, step=7, help="0 = 30 days")
+        objective = b3.selectbox("Objective", ["conversions", "clicks", "impressions", "reach"],
+                                 help="Conversions/clicks are bought per click; impressions/reach per 1,000 views.")
+        g1, g2 = st.columns(2)
+        goal = g1.number_input(f"Goal (optional): {UNIT[objective]}", min_value=0, value=0, step=100,
+                               help="A target on top of the budget. We forecast whether the budget gets there.")
+        when = g2.radio("When the goal is reached", ["stop (save the rest)", "keep spending"], horizontal=True,
+                        disabled=goal == 0)
+        k1, k2, k3 = st.columns(3)
+        bidding = k1.selectbox("Bidding", ["maximize", "target_cpa", "target_roas"],
+                               format_func={"maximize": "Maximise within budget", "target_cpa": "Target CPA",
+                                            "target_roas": "Target ROAS"}.get,
+                               disabled=objective in ("impressions", "reach"),
+                               help="Targets are averages the bidder aims at, not per-click limits.")
+        target_cpa = k2.number_input("Target CPA (USD)", min_value=0.0, value=0.0, step=5.0, disabled=bidding != "target_cpa")
+        target_roas = k2.number_input("Target ROAS (x)", min_value=0.0, value=0.0, step=0.5, disabled=bidding != "target_roas")
+        max_cpc = k3.number_input("Max CPC cap (USD, optional)", min_value=0.0, value=0.0, step=0.25,
+                                  help="Hard per-click limit. 0 = labelled category default.")
+        e1, e2, e3 = st.columns(3)
+        price = e1.number_input("Typical price (USD)", min_value=0.0, value=0.0, step=5.0, help="0 = stated or tier default")
+        margin = e2.number_input("Gross margin (%)", min_value=0.0, max_value=100.0, value=0.0, step=5.0,
+                                 help="Only for the break-even guidance; 0 = category default")
+        tracking = e3.checkbox("Has conversion tracking")
     return AdvertiserInputs(
-        monthly_budget_usd=budget or None, price_usd=price or None, gross_margin=(margin / 100) or None,
-        target_cpa_usd=target_cpa or None, target_roas=target_roas or None,
-        delivery_goal=goal, target_impressions=int(target_n) if goal == "impressions" and target_n else None,
-        target_reach=int(target_n) if goal == "reach" and target_n else None,
-        objective=objective, flight_days=int(flight) or None, has_conversion_tracking=tracking,
+        monthly_budget_usd=budget or None, flight_days=int(flight) or None, objective=objective,
+        goal_target=int(goal) or None, when_goal_met="stop" if when.startswith("stop") else "continue",
+        bidding=bidding if objective in ("conversions", "clicks") else "maximize",
+        target_cpa_usd=target_cpa or None, target_roas=target_roas or None, max_cpc_usd=max_cpc or None,
+        price_usd=price or None, gross_margin=(margin / 100) or None, has_conversion_tracking=tracking,
     )
 
 

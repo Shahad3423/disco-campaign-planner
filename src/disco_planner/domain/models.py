@@ -165,25 +165,27 @@ class CreativeReview(BaseModel):
 # a billing system, or a human approver needs; assumptions are first-class fields so the
 # advertiser can see and override them.
 
-Objective = Literal["acquisition", "awareness"]
+Objective = Literal["conversions", "clicks", "impressions", "reach"]
+Bidding = Literal["maximize", "target_cpa", "target_roas"]
 PricingModel = Literal["CPC", "CPM", "tCPA"]
+OBJECTIVE_UNIT = {"conversions": "conversions", "clicks": "clicks", "impressions": "impressions", "reach": "unique shoppers"}
 
 
 class AdvertiserInputs(BaseModel):
-    """Optional form fields. Anything left empty falls back to a labelled default."""
+    """What the advertiser sets. The budget is THEIRS to choose: we never suggest one (D23).
+    Without a budget we still rank hosts, pick personas and write creatives, but don't allocate."""
 
-    monthly_budget_usd: float | None = None
-    price_usd: float | None = None
-    # How much can we pay per customer? Most marketers know one of these; first one given wins.
+    monthly_budget_usd: float | None = Field(default=None, gt=0, description="hard spending cap for the flight")
+    flight_days: int | None = None
+    objective: Objective = "conversions"
+    goal_target: int | None = Field(default=None, gt=0, description="optional: number of objective units to reach")
+    when_goal_met: Literal["stop", "continue"] = "stop"
+    bidding: Bidding = "maximize"
     target_cpa_usd: float | None = Field(default=None, gt=0)
     target_roas: float | None = Field(default=None, gt=0, description="revenue / ad spend, e.g. 3.0")
-    gross_margin: float | None = Field(default=None, ge=0, le=1)
-    objective: Objective = "acquisition"
-    # What the advertiser sets: a budget, or a delivery goal that we turn into a budget.
-    delivery_goal: Literal["budget", "impressions", "reach"] = "budget"
-    target_impressions: int | None = Field(default=None, gt=0)
-    target_reach: int | None = Field(default=None, gt=0, description="unique shoppers")
-    flight_days: int | None = None
+    max_cpc_usd: float | None = Field(default=None, gt=0, description="optional hard bid cap per click")
+    price_usd: float | None = None
+    gross_margin: float | None = Field(default=None, ge=0, le=1, description="only for break-even guidance")
     has_conversion_tracking: bool = False
 
 
@@ -194,23 +196,29 @@ class Range(BaseModel):
 
 
 class Economics(BaseModel):
+    """Targets come only from the advertiser; break-even is guidance (shown, never enforced)."""
+
     price_usd: float
     price_source: Literal["stated", "form", "tier_default"]
-    gross_margin: float | None
-    margin_source: Literal["form", "category_default", "not_needed"]
-    cpa_source: Literal["target_cpa", "target_roas", "margin"] = "margin"
     expected_orders: float
-    max_affordable_cac: float
-    target_cpa: float
+    gross_margin: float | None
+    margin_source: Literal["form", "category_default"]
+    break_even_cac: float = Field(description="guidance: price x margin x orders; above this a customer loses money")
+    target_cpa: float | None = None
+    target_source: Literal["target_cpa", "target_roas", "none"] = "none"
     assumptions: list[str]
 
 
 class PricingPlan(BaseModel):
     model: PricingModel
+    bidding: Bidding
     rationale: str
-    cpc_bid: Range | None = None
+    max_cpc_cap: float = Field(description="hard per-click cap (guardrail): advertiser's own or a category default")
+    cap_source: Literal["advertiser", "category_default"]
+    cpc_range: Range | None = None
     cpm_bid: float | None = None
-    target_cpa: float
+    target_cpa: float | None = None
+    break_even_cpc: float | None = Field(default=None, description="guidance: break-even CAC x expected CVR")
     tcpa_unlock: str
 
 
@@ -219,10 +227,11 @@ class Allocation(BaseModel):
     publisher_name: str
     share: float
     budget_usd: float
-    cpc_bid_usd: float = Field(description="Max (break-even) CPC for this host")
-    start_bid_usd: float | None = Field(default=None, description="Where to start bidding; raise only if under-delivering")
+    cpc_bid_usd: float = Field(description="hard max bid on this host (never exceeded)")
+    start_bid_usd: float | None = Field(default=None, description="learning-phase bid")
     expected_clicks: Range
     expected_conversions: Range
+    expected_units: Range = Field(description="forecast in the objective's unit")
     capacity_usd: float
     expected_impressions: int = 0
     expected_reach: int = 0
@@ -231,17 +240,26 @@ class Allocation(BaseModel):
 
 
 class BudgetPlan(BaseModel):
-    monthly_budget_usd: float
-    budget_source: Literal["form", "recommended_learning_budget", "impression_goal", "reach_goal"]
-    delivery_goal: str = "budget"
+    monthly_budget_usd: float = Field(description="the advertiser's cap")
+    planned_spend_usd: float = Field(description="<= budget; less when stopping at a reached goal")
+    objective: Objective
+    unit: str
+    goal_target: int | None = None
+    when_goal_met: Literal["stop", "continue"] = "stop"
+    forecast: Range = Field(description="objective units the planned spend buys")
+    goal_status: Literal["no_goal", "reachable", "money_limited", "inventory_limited"]
+    binding_constraint: Literal["budget", "inventory", "goal"]
+    spend_to_reach_goal_usd: float | None = None
+    max_deliverable: float = Field(description="objective units if every host's reachable inventory were bought")
+    spend_at_full_inventory_usd: float
+    replan_options: list[str] = Field(default_factory=list)
     expected_impressions: int = 0
     expected_reach: int = 0
-    goal_feasible: bool = True
     daily_cap_usd: float
     flight_start: str
     flight_end: str
     pacing: str
-    learning_budget_needed_usd: float
+    learning_floor_usd: float = Field(description="spend needed to measure every recommended host (info, not a suggestion)")
     exploration_reserve_usd: float
     exploration_candidates: list[str]
     allocations: list[Allocation]
@@ -251,7 +269,7 @@ class BudgetPlan(BaseModel):
 class HostBid(BaseModel):
     publisher_id: str
     start_bid: float
-    max_bid: float = Field(description="break-even CPC at target CPA; never exceeded")
+    max_bid: float = Field(description="hard cap; never exceeded")
     floor: float
 
 
@@ -266,7 +284,7 @@ class BidStrategy(BaseModel):
     """How the price is set per impression (glossary: 'bid higher when the user looks like a
     high-converter'). Phased, because adjusting bids before we can measure anything just adds noise."""
 
-    current_phase: Literal["learning", "enhanced_cpc", "target_cpa", "fixed_cpm"]
+    current_phase: Literal["learning", "maximize", "enhanced_cpc", "target_cpa", "fixed_cpm"]
     phases: list[dict]
     host_bids: list[HostBid]
     adjustments: list[BidAdjustment]

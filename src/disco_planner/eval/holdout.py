@@ -22,6 +22,7 @@ from datetime import date
 import yaml
 
 from disco_planner.data import catalog
+from disco_planner.domain.models import AdvertiserInputs
 from disco_planner.llm.provider import default_provider
 from disco_planner.planning import claims
 from disco_planner.planning.creative import rule_check
@@ -49,7 +50,7 @@ def main() -> None:
     for c in cases:
         t0 = time.time()
         try:
-            plan = run(c["text"], provider, TODAY, with_creatives=c["id"] in with_creatives)
+            plan = run(c["text"], provider, TODAY, AdvertiserInputs(monthly_budget_usd=5000), with_creatives=c["id"] in with_creatives)
         except Exception as e:  # record, don't stop: crash rate is a metric
             rows.append({**c, "error": f"{type(e).__name__}: {str(e)[:120]}"})
             print(f"  {c['id']} ERROR {type(e).__name__}", flush=True)

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "headline": "Elevate your pantry, {first_name}.",
+      "body": "Enjoy exceptional flavor with Sichuan chili crisp and other sauces, available in jars for $15-$20.",
+      "cta": "Shop Sichuan sauces",
+      "headline_no_name": "Elevate your pantry with Sichuan sauces.",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Sichuan chili crisp and other sauces",
+        "jars $15-20"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "headline": "The perfect holiday gift, {first_name}.",
+      "body": "Delight the foodies on your list with curated gift sets for the holidays, featuring Sichuan chili crisp and other sauces.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Give the gift of exceptional flavor.",
+      "angle": "gift sets",
+      "claims_used": [
+        "gift sets for the holidays",
+        "Sichuan chili crisp and other sauces"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "headline": "Quick, flavorful dinners, {first_name}.",
+      "body": "Bring easy flavor to dinner. Try our Sichuan chili crisp and other sauces, available in convenient $15-$20 jars.",
+      "cta": "Shop $15-$20 jars",
+      "headline_no_name": "Quick, flavorful dinners made easy.",
+      "angle": "time-saving",
+      "claims_used": [
+        "Sichuan chili crisp and other sauces",
+        "jars $15-20"
+      ]
+    }
+  ]
+}
