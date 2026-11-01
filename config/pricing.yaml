@@ -102,4 +102,3 @@ bid_strategy:
   learning_phase: {days: 14}
   adjustments:
     conversion_likelihood: {min: 0.80, max: 1.25}
-    pacing: {min: 0.85, max: 1.15}

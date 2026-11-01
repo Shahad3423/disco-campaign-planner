@@ -4,7 +4,7 @@
     -> eligible campaigns -> expected eCPM -> creative variant -> rendered copy
 
 Production notes: features are table lookups; campaigns and creatives come pre-generated
-from planning; budget pacing and frequency caps would be checked against a low-latency
+from planning; budget caps and frequency caps would be checked against a low-latency
 counter store before the eCPM ranking (not simulated here).
 """
 from __future__ import annotations
@@ -157,18 +157,16 @@ def host_prior(publisher_id: str) -> dict[str, float]:
 
 
 def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: float,
-              phase: str, pacing_ratio: float) -> tuple[float, str]:
-    """Bid strategy at serve time (config.bid_strategy). pacing_ratio = share of budget spent /
-    share of flight elapsed (1.0 = on plan)."""
+              phase: str) -> tuple[float, str]:
+    """Bid strategy at serve time (config.bid_strategy): the planned start bid, adjusted for how likely
+    this shopper is to convert, clamped between the floor and the ceiling."""
     cfg = plan.config
     pricing, strategy = cfg.pricing, cfg.bid_strategy
     adj = catalog.config("pricing")["bid_strategy"]["adjustments"]
     clamp = lambda x, lo, hi: max(lo, min(hi, x))
-    pace = clamp(1 / max(pacing_ratio, 1e-6), adj["pacing"]["min"], adj["pacing"]["max"])
 
     if pricing.model == "CPM" and pricing.cpm_bid:
-        bid = pricing.cpm_bid * pace
-        return round(bid, 2), f"CPM ${pricing.cpm_bid} x pacing {pace:.2f}"
+        return round(pricing.cpm_bid, 2), f"CPM ${pricing.cpm_bid}"
     alloc = next(a for a in cfg.budget.allocations if a.publisher_id == publisher_id)
     host = next((h for h in strategy.host_bids if h.publisher_id == publisher_id), None) if strategy else None
     start = host.start_bid if host else (alloc.start_bid_usd or alloc.cpc_bid_usd)
@@ -179,9 +177,9 @@ def final_bid(plan: CampaignPlan, publisher_id: str, match: float, prior_match: 
     if phase in ("enhanced_cpc", "maximize"):  # both adjust for likely converters, within the cap
         conv = clamp(match / prior_match if prior_match else 1.0,
                      adj["conversion_likelihood"]["min"], adj["conversion_likelihood"]["max"])
-    bid = clamp(start * conv * pace, floor, ceiling)
-    capped = " (capped at the ceiling)" if start * conv * pace > ceiling else ""
-    return round(bid, 2), (f"{phase}: start ${start:.2f} x conversion likelihood {conv:.2f} x pacing {pace:.2f} "
+    bid = clamp(start * conv, floor, ceiling)
+    capped = " (capped at the ceiling)" if start * conv > ceiling else ""
+    return round(bid, 2), (f"{phase}: start ${start:.2f} x conversion likelihood {conv:.2f} "
                            f"= ${bid:.2f}{capped}; ceiling ${ceiling:.2f}")
 
 
@@ -217,7 +215,7 @@ def run_auction(offers: list[Offer], cfg: dict) -> tuple[list[Offer], list[str]]
 def serve(
     signals: ShopperSignals, now_utc: datetime, plans: list[CampaignPlan],
     use_name: bool = True, use_household: bool = True,
-    phase: str = "learning", pacing_ratio: float = 1.0,
+    phase: str = "learning",
     spent_usd: dict[tuple[str, str], float] | None = None,
     host_blocks_competitors: bool | None = None,
 ) -> ServeDecision:
@@ -275,7 +273,7 @@ def serve(
         ctr = priors["ctr"]["mid"] * fit * (rk["persona_match_floor"] + rk["persona_match_span"] * min(1.0, match * 2)) * ctx
         pricing = cfg_.pricing
         prior_match = sum(prior.get(pid, 0) for pid in campaign_personas)
-        bid, breakdown = final_bid(plan, signals.publisher_id, match, prior_match, phase, pacing_ratio)
+        bid, breakdown = final_bid(plan, signals.publisher_id, match, prior_match, phase)
         ecpm = bid if pricing.model == "CPM" else bid * ctr * 1000
         headline, used = _render(creative.headline_template, creative.headline_no_name, features)
         offers.append(Offer(

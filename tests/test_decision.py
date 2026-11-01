@@ -44,13 +44,12 @@ def test_final_bid_never_exceeds_the_ceiling(plans):
     # ceiling = the price that wins the advertiser's aggressiveness share (or their own max CPC)
     sig = ShopperSignals(publisher_id="pub_017", zip="80435", first_name="Jordan")
     for phase in ("learning", "enhanced_cpc", "maximize"):
-        for pacing in (0.3, 1.0, 3.0):
-            d = serve(sig, NOW, plans, phase=phase, pacing_ratio=pacing)
-            for o in d.offers:
-                plan = next(p for p in plans if (p.profile.product or p.brief[:40]) == o.campaign)
-                if o.pricing_model == "CPC":
-                    host = next(h for h in plan.config.bid_strategy.host_bids if h.publisher_id == "pub_017")
-                    assert o.bid <= host.max_bid + 1e-9
+        d = serve(sig, NOW, plans, phase=phase)
+        for o in d.offers:
+            plan = next(p for p in plans if (p.profile.product or p.brief[:40]) == o.campaign)
+            if o.pricing_model == "CPC":
+                host = next(h for h in plan.config.bid_strategy.host_bids if h.publisher_id == "pub_017")
+                assert o.bid <= host.max_bid + 1e-9
 
 
 def test_learning_phase_ignores_conversion_likelihood(plans):

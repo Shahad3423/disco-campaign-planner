@@ -293,29 +293,27 @@ def bid_strategy(pricing: PricingPlan, markets: list[dict], inputs: AdvertiserIn
             ceiling = min(ceiling, inputs.max_cpc_usd)  # the advertiser's cap always wins
         start = planned.get(pid) or round(market.quantile(m["needed"], 0.5), 2)
         host_bids.append(HostBid(publisher_id=pid, start_bid=round(min(start, ceiling), 2), max_bid=round(ceiling, 2), floor=floor))
-    pacing = BidAdjustment(signal="pacing", min_multiplier=adj["pacing"]["min"], max_multiplier=adj["pacing"]["max"],
-                           reason="Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down.")
     conv = BidAdjustment(signal="conversion_likelihood", min_multiplier=adj["conversion_likelihood"]["min"],
                          max_multiplier=adj["conversion_likelihood"]["max"],
                          reason="Bid higher when the shopper looks like a likely converter (persona match vs the host's average shopper).")
     learning = {"name": "learning", "until": f"{cfg['learning_phase']['days']} days",
-                "rule": "planned bid per host; pacing only", "why": "stable bids so measured rates aren't confounded"}
+                "rule": "planned bid per host, no adjustments", "why": "stable bids so measured rates aren't confounded"}
     ceiling_note = (f"the ceiling per host is the price that wins your '{inputs.aggressiveness}' share"
                     + (f", never above your ${inputs.max_cpc_usd:.2f} max CPC" if inputs.max_cpc_usd else ""))
     if pricing.model == "CPM":
-        return BidStrategy(current_phase="fixed_cpm", host_bids=host_bids, adjustments=[pacing],
-                           phases=[{"name": "fixed_cpm", "rule": f"${pricing.cpm_bid} CPM; pacing only"}],
+        return BidStrategy(current_phase="fixed_cpm", host_bids=host_bids, adjustments=[],
+                           phases=[{"name": "fixed_cpm", "rule": f"${pricing.cpm_bid} CPM, fixed"}],
                            rationale=f"Buying views at market prices; {ceiling_note}.")
     if inputs.bidding == "maximize":
-        rule = "planned bid x pacing" + (" x conversion likelihood" if inputs.objective == "conversions" else "") + ", up to the ceiling"
+        rule = "planned bid" + (" x conversion likelihood" if inputs.objective == "conversions" else "") + ", up to the ceiling"
         return BidStrategy(current_phase="learning", host_bids=host_bids,
-                           adjustments=[pacing] + ([conv] if inputs.objective == "conversions" else []),
+                           adjustments=([conv] if inputs.objective == "conversions" else []),
                            phases=[learning, {"name": "maximize", "rule": rule, "why": "most units for the budget"}],
                            rationale=f"Maximise {OBJECTIVE_UNIT[inputs.objective]} within the budget; {ceiling_note}.")
     return BidStrategy(
-        current_phase="learning", host_bids=host_bids, adjustments=[pacing, conv],
+        current_phase="learning", host_bids=host_bids, adjustments=[conv],
         phases=[learning,
-                {"name": "enhanced_cpc", "until": pricing.tcpa_unlock, "rule": "planned bid x conversion likelihood x pacing, up to the ceiling",
+                {"name": "enhanced_cpc", "until": pricing.tcpa_unlock, "rule": "planned bid x conversion likelihood, up to the ceiling",
                  "why": "aim at the target on average while learning who converts"},
                 {"name": "target_cpa", "rule": f"Disco bids automatically toward ${pricing.target_cpa:.2f} average CPA",
                  "why": "once Disco can predict this brand's conversion rate"}],
