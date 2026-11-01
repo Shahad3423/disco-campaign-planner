@@ -1,7 +1,9 @@
 """Stage 1: advertiser text -> AdvertiserProfile, then sanity checks in code."""
 from __future__ import annotations
 
+import contextvars
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 
 from disco_planner.data import catalog
@@ -124,12 +126,17 @@ def parse_brief(brief: str, provider: Provider, today: date, n_samples: int | No
         )
     n = n_samples or catalog.config("scoring")["intake"]["self_consistency_samples"]
     system, user = prompts.render("intake", brief=brief, today=today.isoformat(), **_catalog_context())
-    samples = []
-    for k in range(n):
+    def sample(k: int) -> AdvertiserProfile:
         # Sample 0 is greedy; the rest are diverse. The sample id goes in the prompt so each
         # sample gets its own cache entry (otherwise the cache would return sample 0 n times).
         temp, suffix = (0.0, "") if k == 0 else (0.8, f"\n\n(sample {k})")
-        samples.append(_enforce_vocabulary(generate(provider, system, user + suffix, AdvertiserProfile, temperature=temp)))
+        return _enforce_vocabulary(generate(provider, system, user + suffix, AdvertiserProfile, temperature=temp))
+
+    # The samples are independent, so they run in parallel (wall time ~ one call, not n). Each task runs in a
+    # copy of the caller's context so the app's live/cache toggle and call counter still apply in the threads.
+    with ThreadPoolExecutor(max_workers=n) as pool:
+        futures = [pool.submit(contextvars.copy_context().run, sample, k) for k in range(n)]
+        samples = [f.result() for f in futures]  # in sample order; a failure re-raises here
     profile = merge_samples(samples)
 
     # Regulated claims leave the allowed list, and we ask for substantiation instead. This field is
