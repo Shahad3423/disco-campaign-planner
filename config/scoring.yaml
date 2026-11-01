@@ -27,6 +27,20 @@ category:
   extra_specific_bonus: 0.10  # per additional specific tag (x its weight)
   attribute_bonus: 0.10       # per attribute tag (x its weight), e.g. sustainable
 
+# Relevance (D26): "will this host's shoppers care?" comes from the TOPIC link (tags) or, failing that, from a
+# strong STATED audience fit. A host is not excluded just because its category differs (Red Bull can sell on a
+# mattress site if the audience is right); it needs one of the two.
+relevance:
+  audience_evidence_min: 0.7      # at least this share of the host's shoppers must be in the stated audience
+  audience_requires_age: true     # one broad demographic ("women") matches half the population and proves nothing
+  audience_only_discount: 0.6     # audience-only relevance = discount x audience fit: below a real topic link
+
+# Exploration (D26): hosts we would not recommend, tested with a small slice so outcomes exist to learn from.
+exploration:
+  max_hosts: 2
+  budget_share: 0.05
+  relevance_floor: 0.2            # ranks candidates as if their relevance were at least this
+
 penalties:
   # No competitor penalty: competitor blocking is a HOST SETTING enforced at serving (DECISIONS D21),
   # not a probability baked into fit. Planning only flags it.

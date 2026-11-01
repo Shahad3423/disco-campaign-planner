@@ -340,3 +340,25 @@ read every note and judged that one not relevant (a reading, not missing data).
 price_fit = 1. Only a product costing more is penalised: exp(-ln(price/AOV) / 1.5).
 **Measured:** golden metrics unchanged; holdout TEST: judge prefers recommended hosts 84% (was 82%), ranking
 agreement 0.790 (was 0.786); the fill constant no longer exists and the price exponent's sensitivity fell 0.17 -> 0.10.
+
+## D26. Relevance is "topic link OR stated audience", not a hard category gate; plus an exploration slice
+
+**Problem.** A host below category_fit 0.2 was excluded no matter how well the audience matched. But a host's category is
+a proxy for "are the people here likely to buy this?", and post-purchase is cross-category by design. A hard gate also
+blocks learning: a pair we never show is a pair we never observe.
+**Rule.** relevance = max(topic link, 0.6 x audience density), where audience density is the share of the host's shoppers
+who are in the advertiser's STATED audience (gender share x share of the host's age range inside the target, assuming
+independence), counted only when the advertiser stated an age (one broad demographic such as "women" matches half the
+population and proves nothing) and only when at least 70% of the host's shoppers are in it. A topic link still beats an
+audience-only guess (the 0.6 discount; audience-led relevance tops out around 0.6, like a broad-category match).
+**A first version failed and was fixed.** It used audience_fit (does the host's age range COVER the advertiser's range?),
+which a broad host range satisfies trivially: prestige skincare for women 30-55 landed on two pet stores. Density fixes it
+(Pawline: 62% x 100% = 62% < 70%). audience_fit (a quality component) still uses coverage; align it with density when
+audience handling is reworked with the taxonomy.
+**Exploration.** Up to 2 excluded hosts, ranked as if their relevance were at least 0.2 (skipping competitor-flagged and
+notes-conflicting hosts), share 5% of the budget as a separate test; never when stopping at a goal; they never enter the
+forecast or the main plan's goal math. They exist so outcomes exist for pairs the rules would never show.
+**Evidence.** Golden unchanged (0.94 / 0.70 / 0 violations). Holdout dev: judge prefers our picks 87.0% -> 89.7% (the
+measure was tuned on dev examples, so read this as optimistic). Holdout TEST, used once: 83.5% -> 82.5%, ranking agreement
+71.4% -> 72.2%: neutral. 12 audience-led recommendations across the dev briefs, each with the reason spelled out. The judge
+and golden labels are category-minded and cannot reward cross-category placements; click and conversion outcomes will.

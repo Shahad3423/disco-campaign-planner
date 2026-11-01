@@ -126,6 +126,8 @@ class PublisherScore(BaseModel):
     flags: list[str] = Field(default_factory=list)
     recommended: bool
     reason: str
+    relevance_source: Literal["topic", "audience", "none"] = "topic"
+    exploration: bool = Field(default=False, description="excluded from the main plan, but worth a small paid test")
 
 
 class PersonaMatch(BaseModel):
@@ -240,6 +242,7 @@ class Allocation(BaseModel):
     expected_impressions: int = 0
     expected_reach: int = 0
     requires_host_approval: bool
+    exploration: bool = Field(default=False, description="a small test outside the main plan, to learn where else the offer works")
     rationale: str
 
 

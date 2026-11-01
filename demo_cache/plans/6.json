@@ -117,7 +117,9 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_017",
@@ -171,7 +173,9 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_016",
@@ -225,7 +229,9 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.78)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.78)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_005",
@@ -277,7 +283,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5))."
+   "reason": "Excluded: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5)). Exploration test: would score 0.15 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_004",
@@ -329,7 +337,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5))."
+   "reason": "Excluded: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5)). Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_010",
@@ -381,7 +391,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_006",
@@ -433,7 +445,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $89 (7.3x the typical order); host income mid below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $89 (7.3x the typical order); host income mid below high needed for luxury (multiplier ^0.5)).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_001",
@@ -485,7 +499,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_003",
@@ -537,7 +553,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_007",
@@ -589,7 +607,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_008",
@@ -641,7 +661,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_009",
@@ -693,7 +715,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_011",
@@ -745,7 +769,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_012",
@@ -797,7 +823,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_013",
@@ -849,7 +877,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_014",
@@ -901,7 +931,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_015",
@@ -953,7 +985,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_018",
@@ -1005,7 +1039,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_019",
@@ -1057,7 +1093,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_020",
@@ -1109,7 +1147,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   }
  ],
  "personas": [
@@ -1498,12 +1538,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.54-$0.74 per click (median $0.62), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.53-$0.72 per click (median $0.61), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.54,
-    "mid": 0.62,
-    "high": 0.74
+    "low": 0.53,
+    "mid": 0.61,
+    "high": 0.72
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1511,7 +1551,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4971.7,
+   "planned_spend_usd": 4924.3,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1519,19 +1559,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 212.4,
-    "mid": 424.7,
-    "high": 764.5
+    "low": 203.5,
+    "mid": 406.9,
+    "high": 732.4
    },
-   "forecast_without_share_cap": 424.7,
+   "forecast_without_share_cap": 406.9,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 25141.1,
-   "spend_at_full_inventory_usd": 406924.71,
+   "spend_at_full_inventory_usd": 406654.69,
    "replan_options": [],
-   "expected_impressions": 308500,
-   "expected_reach": 192812,
+   "expected_impressions": 309500,
+   "expected_reach": 193438,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1540,8 +1580,8 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.75,
-     "budget_usd": 3730.33,
+     "share": 0.759,
+     "budget_usd": 3738.34,
      "cpc_bid_usd": 0.42,
      "start_bid_usd": 0.42,
      "win_share": 0.01,
@@ -1567,61 +1607,63 @@
       "mid": 323.4,
       "high": 582.1
      },
-     "capacity_usd": 302021.19,
+     "capacity_usd": 302674.61,
      "expected_impressions": 220000,
      "expected_reach": 137500,
      "requires_host_approval": false,
+     "exploration": false,
      "rationale": "market price $0.53-$0.74 (median $0.62); bidding $0.42 wins ~1% of page views, paying ~$0.40 per click (second price)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.214,
-     "budget_usd": 1065.15,
-     "cpc_bid_usd": 0.39,
-     "start_bid_usd": 0.39,
-     "win_share": 0.013,
-     "avg_price_paid": 0.38,
+     "share": 0.166,
+     "budget_usd": 819.34,
+     "cpc_bid_usd": 0.37,
+     "start_bid_usd": 0.37,
+     "win_share": 0.01,
+     "avg_price_paid": 0.37,
      "market_price": {
-      "low": 0.54,
+      "low": 0.53,
       "mid": 0.61,
-      "high": 0.73
+      "high": 0.72
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 2229.0,
-      "mid": 2786.0,
-      "high": 3343.0
+      "low": 1783.0,
+      "mid": 2229.0,
+      "high": 2675.0
      },
      "expected_conversions": {
-      "low": 42.8,
-      "mid": 89.2,
-      "high": 160.6
+      "low": 34.3,
+      "mid": 71.4,
+      "high": 128.5
      },
      "expected_units": {
-      "low": 44.6,
-      "mid": 89.2,
-      "high": 160.6
+      "low": 35.7,
+      "mid": 71.4,
+      "high": 128.5
      },
-     "capacity_usd": 72859.8,
-     "expected_impressions": 72500,
-     "expected_reach": 45312,
+     "capacity_usd": 72741.25,
+     "expected_impressions": 58000,
+     "expected_reach": 36250,
      "requires_host_approval": false,
-     "rationale": "market price $0.54-$0.73 (median $0.61); bidding $0.39 wins ~1% of page views, paying ~$0.38 per click (second price)"
+     "exploration": false,
+     "rationale": "market price $0.53-$0.72 (median $0.61); bidding $0.37 wins ~1% of page views, paying ~$0.37 per click (second price)"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.035,
-     "budget_usd": 176.23,
+     "share": 0.036,
+     "budget_usd": 175.59,
      "cpc_bid_usd": 0.37,
      "start_bid_usd": 0.37,
      "win_share": 0.005,
-     "avg_price_paid": 0.37,
+     "avg_price_paid": 0.36,
      "market_price": {
-      "low": 0.54,
-      "mid": 0.63,
-      "high": 0.74
+      "low": 0.53,
+      "mid": 0.61,
+      "high": 0.72
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1639,11 +1681,86 @@
       "mid": 12.1,
       "high": 21.8
      },
-     "capacity_usd": 32043.72,
+     "capacity_usd": 31238.83,
      "expected_impressions": 16000,
      "expected_reach": 10000,
      "requires_host_approval": false,
-     "rationale": "market price $0.54-$0.74 (median $0.63); bidding $0.37 wins ~0% of page views, paying ~$0.37 per click (second price)"
+     "exploration": false,
+     "rationale": "market price $0.53-$0.72 (median $0.61); bidding $0.37 wins ~0% of page views, paying ~$0.36 per click (second price)"
+    },
+    {
+     "publisher_id": "pub_005",
+     "publisher_name": "Linden Park",
+     "share": 0.039,
+     "budget_usd": 191.03,
+     "cpc_bid_usd": 0.42,
+     "start_bid_usd": 0.42,
+     "win_share": 0.003,
+     "avg_price_paid": 0.42,
+     "market_price": {
+      "low": 0.7,
+      "mid": 0.79,
+      "high": 0.94
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 361.0,
+      "mid": 451.0,
+      "high": 541.0
+     },
+     "expected_conversions": {
+      "low": 5.3,
+      "mid": 10.9,
+      "high": 19.7
+     },
+     "expected_units": {
+      "low": 5.5,
+      "mid": 10.9,
+      "high": 19.7
+     },
+     "capacity_usd": 76470.63,
+     "expected_impressions": 15500,
+     "expected_reach": 9688,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5)). Exploration test: would score 0.15 with a relevance of 0.2; gets a small separate test budget.). market price $0.70-$0.94 (median $0.79); bidding $0.42 wins ~0% of page views, paying ~$0.42 per click (second price)"
+    },
+    {
+     "publisher_id": "pub_004",
+     "publisher_name": "Marlowe & Co.",
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.66,
+     "start_bid_usd": 0.66,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.66,
+      "mid": 0.75,
+      "high": 0.89
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_conversions": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_units": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "capacity_usd": 96166.77,
+     "expected_impressions": 0,
+     "expected_reach": 0,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5)). Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.66-$0.89); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1672,14 +1789,26 @@
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 0.39,
+     "start_bid": 0.37,
      "max_bid": 0.65,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
      "start_bid": 0.37,
-     "max_bid": 0.67,
+     "max_bid": 0.64,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_005",
+     "start_bid": 0.42,
+     "max_bid": 0.85,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_004",
+     "start_bid": 0.66,
+     "max_bid": 0.79,
      "floor": 0.05
     }
    ],
@@ -1702,18 +1831,12 @@
   "targeting": {
    "publishers_include": [
     "pub_002",
+    "pub_004",
+    "pub_005",
     "pub_016",
     "pub_017"
    ],
    "publishers_exclude": [
-    {
-     "id": "pub_005",
-     "reason": "Excluded: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5))."
-    },
-    {
-     "id": "pub_004",
-     "reason": "Excluded: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5))."
-    },
     {
      "id": "pub_010",
      "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5))."
@@ -1926,8 +2049,8 @@
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.01,
-  "creative": 52.65
+  "matching": 0.0,
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

@@ -123,3 +123,20 @@ def test_cap_that_strands_budget_is_called_out():
     _, _, plan, *_ = plan_for(AdvertiserInputs(monthly_budget_usd=50_000, max_share_per_host=0.34, aggressiveness="conservative"))
     if plan.planned_spend_usd < 50_000 - 1 and plan.binding_constraint == "budget":
         assert any("leaves" in o and "unspent" in o for o in plan.replan_options)
+
+
+def test_exploration_gets_a_small_separate_test_budget_and_never_touches_the_goal_math():
+    from disco_planner.data import catalog
+    _, _, plan, *_ = plan_for(AdvertiserInputs(monthly_budget_usd=10_000))
+    share = catalog.config("scoring")["exploration"]["budget_share"]
+    explore = [a for a in plan.allocations if a.exploration]
+    main = [a for a in plan.allocations if not a.exploration]
+    assert explore and main
+    assert sum(a.budget_usd for a in explore) <= share * 10_000 + 0.01          # a small slice
+    assert plan.planned_spend_usd <= plan.monthly_budget_usd + 0.01
+    assert all("EXPLORATION TEST" in a.rationale for a in explore)
+
+
+def test_no_exploration_budget_when_stopping_at_a_goal():
+    _, _, plan, *_ = plan_for(AdvertiserInputs(monthly_budget_usd=50_000, objective="clicks", goal_target=300))
+    assert all(a.budget_usd == 0 for a in plan.allocations if a.exploration)

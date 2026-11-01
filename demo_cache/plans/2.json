@@ -22,9 +22,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "activewear",
+    "tag": "sustainable",
     "weight": 1.0,
-    "why": "Core category of the brand's products."
+    "why": "Key product value stated as made from recycled ocean plastic."
    },
    {
     "tag": "women",
@@ -32,9 +32,9 @@
     "why": "Target demographic is women."
    },
    {
-    "tag": "sustainable",
+    "tag": "activewear",
     "weight": 1.0,
-    "why": "Key product value stated as made from recycled ocean plastic."
+    "why": "Core category of the brand's products."
    },
    {
     "tag": "apparel",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, women, apparel (specific) (multiplier)"
+     "detail": "matches women, activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,9 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.74)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches women, activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.74)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_017",
@@ -169,7 +171,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches activewear, sustainable, apparel (specific) (multiplier)"
+     "detail": "matches sustainable, activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -212,7 +214,9 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.64)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches sustainable, activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.64)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_016",
@@ -223,7 +227,7 @@
      "name": "category_fit",
      "value": 0.7,
      "weight": 1.0,
-     "detail": "matches women, sustainable, apparel (category only) (multiplier)"
+     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -264,7 +268,9 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal audience_fit (94% female)."
+   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal audience_fit (94% female).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_003",
@@ -316,7 +322,9 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.71))."
+   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.71)).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_005",
@@ -368,7 +376,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39)."
+   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_004",
@@ -420,7 +430,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38)."
+   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_006",
@@ -472,7 +484,9 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal audience_fit (99% female)."
+   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal audience_fit (99% female).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_010",
@@ -524,7 +538,9 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.66))."
+   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.66)).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_012",
@@ -576,7 +592,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_001",
@@ -628,7 +646,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_007",
@@ -680,7 +700,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_008",
@@ -732,7 +754,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_009",
@@ -784,7 +808,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_011",
@@ -836,7 +862,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_013",
@@ -888,7 +916,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_014",
@@ -940,7 +970,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_015",
@@ -992,7 +1024,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_018",
@@ -1044,7 +1078,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_019",
@@ -1096,7 +1132,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_020",
@@ -1148,7 +1186,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   }
  ],
  "personas": [
@@ -1500,7 +1540,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4969.75,
+   "planned_spend_usd": 4889.93,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1508,19 +1548,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 223.4,
-    "mid": 446.9,
-    "high": 804.4
+    "low": 211.1,
+    "mid": 422.1,
+    "high": 759.8
    },
-   "forecast_without_share_cap": 446.9,
+   "forecast_without_share_cap": 422.1,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 36405.1,
-   "spend_at_full_inventory_usd": 732970.11,
+   "spend_at_full_inventory_usd": 729746.79,
    "replan_options": [],
-   "expected_impressions": 312000,
-   "expected_reach": 195000,
+   "expected_impressions": 305000,
+   "expected_reach": 190625,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1529,8 +1569,8 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.9,
-     "budget_usd": 4472.29,
+     "share": 0.917,
+     "budget_usd": 4481.89,
      "cpc_bid_usd": 0.4,
      "start_bid_usd": 0.4,
      "win_share": 0.013,
@@ -1538,7 +1578,7 @@
      "market_price": {
       "low": 0.55,
       "mid": 0.65,
-      "high": 0.77
+      "high": 0.78
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1556,96 +1596,99 @@
       "mid": 404.2,
       "high": 727.6
      },
-     "capacity_usd": 312271.7,
+     "capacity_usd": 312947.71,
      "expected_impressions": 275000,
      "expected_reach": 171875,
      "requires_host_approval": true,
-     "rationale": "market price $0.55-$0.77 (median $0.65); bidding $0.40 wins ~1% of page views, paying ~$0.39 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "exploration": false,
+     "rationale": "market price $0.55-$0.78 (median $0.65); bidding $0.40 wins ~1% of page views, paying ~$0.39 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.084,
-     "budget_usd": 417.14,
-     "cpc_bid_usd": 0.38,
-     "start_bid_usd": 0.38,
-     "win_share": 0.005,
-     "avg_price_paid": 0.37,
+     "share": 0.042,
+     "budget_usd": 203.28,
+     "cpc_bid_usd": 0.36,
+     "start_bid_usd": 0.36,
+     "win_share": 0.003,
+     "avg_price_paid": 0.36,
      "market_price": {
-      "low": 0.55,
-      "mid": 0.64,
-      "high": 0.76
+      "low": 0.54,
+      "mid": 0.63,
+      "high": 0.74
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 892.0,
-      "mid": 1115.0,
-      "high": 1339.0
+      "low": 446.0,
+      "mid": 558.0,
+      "high": 669.0
      },
      "expected_conversions": {
-      "low": 17.2,
-      "mid": 35.8,
-      "high": 64.4
+      "low": 8.6,
+      "mid": 17.9,
+      "high": 32.2
      },
      "expected_units": {
-      "low": 17.9,
-      "mid": 35.8,
-      "high": 64.4
+      "low": 8.9,
+      "mid": 17.9,
+      "high": 32.2
      },
-     "capacity_usd": 76214.2,
-     "expected_impressions": 29000,
-     "expected_reach": 18125,
+     "capacity_usd": 74469.71,
+     "expected_impressions": 14500,
+     "expected_reach": 9062,
      "requires_host_approval": true,
-     "rationale": "market price $0.55-$0.76 (median $0.64); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "exploration": false,
+     "rationale": "market price $0.54-$0.74 (median $0.63); bidding $0.36 wins ~0% of page views, paying ~$0.36 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.016,
-     "budget_usd": 80.32,
-     "cpc_bid_usd": 0.31,
-     "start_bid_usd": 0.31,
-     "win_share": 0.003,
-     "avg_price_paid": 0.31,
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.5,
+     "start_bid_usd": 0.5,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.52,
-      "mid": 0.61,
-      "high": 0.7
+      "low": 0.5,
+      "mid": 0.59,
+      "high": 0.68
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 205.0,
-      "mid": 257.0,
-      "high": 308.0
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_conversions": {
-      "low": 3.3,
-      "mid": 6.9,
-      "high": 12.4
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
      "expected_units": {
-      "low": 3.4,
-      "mid": 6.9,
-      "high": 12.4
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
      },
-     "capacity_usd": 33227.32,
-     "expected_impressions": 8000,
-     "expected_reach": 5000,
+     "capacity_usd": 31882.03,
+     "expected_impressions": 0,
+     "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "market price $0.52-$0.70 (median $0.61); bidding $0.31 wins ~0% of page views, paying ~$0.31 per click (second price)"
+     "exploration": false,
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.50-$0.68); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.72,
-     "start_bid_usd": 0.72,
+     "cpc_bid_usd": 0.7,
+     "start_bid_usd": 0.7,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.72,
-      "mid": 0.84,
+      "low": 0.7,
+      "mid": 0.83,
       "high": 1.01
      },
      "audience_weight": 1.0,
@@ -1664,11 +1707,12 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 177113.82,
+     "capacity_usd": 176013.53,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.72-$1.01); it gets budget as the budget grows or if a funded host declines"
+     "exploration": false,
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.70-$1.01); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_006",
@@ -1700,10 +1744,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 74841.3,
+     "capacity_usd": 75003.4,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
+     "exploration": false,
      "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.57-$0.80); it gets budget as the budget grows or if a funded host declines"
     },
     {
@@ -1717,7 +1762,7 @@
      "avg_price_paid": 0.0,
      "market_price": {
       "low": 0.62,
-      "mid": 0.72,
+      "mid": 0.73,
       "high": 0.83
      },
      "audience_weight": 1.0,
@@ -1736,11 +1781,86 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 59301.75,
+     "capacity_usd": 59430.41,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
+     "exploration": false,
      "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.62-$0.83); it gets budget as the budget grows or if a funded host declines"
+    },
+    {
+     "publisher_id": "pub_005",
+     "publisher_name": "Linden Park",
+     "share": 0.042,
+     "budget_usd": 204.76,
+     "cpc_bid_usd": 0.46,
+     "start_bid_usd": 0.46,
+     "win_share": 0.003,
+     "avg_price_paid": 0.46,
+     "market_price": {
+      "low": 0.71,
+      "mid": 0.82,
+      "high": 0.95
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 354.0,
+      "mid": 442.0,
+      "high": 530.0
+     },
+     "expected_conversions": {
+      "low": 5.0,
+      "mid": 10.5,
+      "high": 18.9
+     },
+     "expected_units": {
+      "low": 5.2,
+      "mid": 10.5,
+      "high": 18.9
+     },
+     "capacity_usd": 75933.76,
+     "expected_impressions": 15500,
+     "expected_reach": 9688,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.). market price $0.71-$0.95 (median $0.82); bidding $0.46 wins ~0% of page views, paying ~$0.46 per click (second price)"
+    },
+    {
+     "publisher_id": "pub_004",
+     "publisher_name": "Marlowe & Co.",
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 0.68,
+     "start_bid_usd": 0.68,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 0.68,
+      "mid": 0.78,
+      "high": 0.92
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_conversions": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_units": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "capacity_usd": 99671.45,
+     "expected_impressions": 0,
+     "expected_reach": 0,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.68-$0.92); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1764,24 +1884,24 @@
     {
      "publisher_id": "pub_002",
      "start_bid": 0.4,
-     "max_bid": 0.68,
-     "floor": 0.05
-    },
-    {
-     "publisher_id": "pub_017",
-     "start_bid": 0.38,
      "max_bid": 0.69,
      "floor": 0.05
     },
     {
+     "publisher_id": "pub_017",
+     "start_bid": 0.36,
+     "max_bid": 0.66,
+     "floor": 0.05
+    },
+    {
      "publisher_id": "pub_016",
-     "start_bid": 0.31,
-     "max_bid": 0.64,
+     "start_bid": 0.5,
+     "max_bid": 0.62,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.72,
+     "start_bid": 0.7,
      "max_bid": 0.91,
      "floor": 0.05
     },
@@ -1795,6 +1915,18 @@
      "publisher_id": "pub_010",
      "start_bid": 0.62,
      "max_bid": 0.75,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_005",
+     "start_bid": 0.46,
+     "max_bid": 0.86,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_004",
+     "start_bid": 0.68,
+     "max_bid": 0.83,
      "floor": 0.05
     }
    ],
@@ -1818,20 +1950,14 @@
    "publishers_include": [
     "pub_002",
     "pub_003",
+    "pub_004",
+    "pub_005",
     "pub_006",
     "pub_010",
     "pub_016",
     "pub_017"
    ],
    "publishers_exclude": [
-    {
-     "id": "pub_005",
-     "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39)."
-    },
-    {
-     "id": "pub_004",
-     "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38)."
-    },
     {
      "id": "pub_012",
      "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
@@ -2010,7 +2136,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 43.68
+  "creative": 0.0
  },
  "creative_log": {
   "rounds": 2,

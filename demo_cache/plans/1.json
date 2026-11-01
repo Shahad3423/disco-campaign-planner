@@ -24,11 +24,6 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "pet",
-    "weight": 1.0,
-    "why": "Core category for pet products."
-   },
-   {
     "tag": "subscription",
     "weight": 1.0,
     "why": "The product is offered on a subscription model."
@@ -37,6 +32,11 @@
     "tag": "pet_food",
     "weight": 1.0,
     "why": "Core product category being sold."
+   },
+   {
+    "tag": "pet",
+    "weight": 1.0,
+    "why": "Core category for pet products."
    },
    {
     "tag": "pet_supplies",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_food, pet_supplies (specific) (multiplier)"
+     "detail": "matches subscription, pet_food, pet, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,9 @@
     "competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_food, pet_supplies (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.93)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches subscription, pet_food, pet, pet_supplies (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.93)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_009",
@@ -169,7 +171,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet, pet_food, pet_supplies, pet_pharmacy (specific) (multiplier)"
+     "detail": "matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -212,7 +214,9 @@
     "competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches pet, pet_food, pet_supplies, pet_pharmacy (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.95)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches pet_food, pet, pet_supplies, pet_pharmacy (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.95)). Flags: competitor_conflict: host also sells pet_food (100% of samples agree); it may need to opt in to show a competing brand",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_018",
@@ -223,7 +227,7 @@
      "name": "category_fit",
      "value": 0.6,
      "weight": 1.0,
-     "detail": "matches pet, subscription, pet_supplies (specific) (multiplier)"
+     "detail": "matches subscription, pet, pet_supplies (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -264,7 +268,9 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.85))."
+   "reason": "Recommended: matches subscription, pet, pet_supplies (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.85)).",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_012",
@@ -316,7 +322,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
+   "reason": "Excluded: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier)). Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_015",
@@ -368,7 +376,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.",
+   "relevance_source": "topic",
+   "exploration": true
   },
   {
    "publisher_id": "pub_008",
@@ -420,7 +430,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_002",
@@ -472,7 +484,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_001",
@@ -524,7 +538,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_003",
@@ -576,7 +592,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_004",
@@ -628,7 +646,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_005",
@@ -680,7 +700,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_006",
@@ -732,7 +754,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_010",
@@ -784,7 +808,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_011",
@@ -836,7 +862,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_013",
@@ -888,7 +916,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_014",
@@ -940,7 +970,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_016",
@@ -992,7 +1024,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_017",
@@ -1044,7 +1078,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_019",
@@ -1096,7 +1132,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_020",
@@ -1148,7 +1186,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   }
  ],
  "personas": [
@@ -1506,7 +1546,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4956.87,
+   "planned_spend_usd": 4595.75,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1514,19 +1554,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 242.9,
-    "mid": 485.9,
-    "high": 874.5
+    "low": 218.5,
+    "mid": 437.0,
+    "high": 786.5
    },
-   "forecast_without_share_cap": 485.9,
+   "forecast_without_share_cap": 437.0,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 62241.7,
-   "spend_at_full_inventory_usd": 1047776.35,
+   "spend_at_full_inventory_usd": 1049719.05,
    "replan_options": [],
-   "expected_impressions": 334000,
-   "expected_reach": 208750,
+   "expected_impressions": 287000,
+   "expected_reach": 179375,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1535,12 +1575,12 @@
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.077,
-     "budget_usd": 382.21,
-     "cpc_bid_usd": 0.41,
-     "start_bid_usd": 0.41,
-     "win_share": 0.005,
-     "avg_price_paid": 0.38,
+     "share": 0.516,
+     "budget_usd": 2371.07,
+     "cpc_bid_usd": 0.45,
+     "start_bid_usd": 0.45,
+     "win_share": 0.028,
+     "avg_price_paid": 0.43,
      "market_price": {
       "low": 0.58,
       "mid": 0.67,
@@ -1548,35 +1588,36 @@
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 806.0,
-      "mid": 1008.0,
-      "high": 1210.0
+      "low": 4435.0,
+      "mid": 5544.0,
+      "high": 6653.0
      },
      "expected_conversions": {
-      "low": 18.6,
-      "mid": 38.8,
-      "high": 69.9
+      "low": 102.5,
+      "mid": 213.4,
+      "high": 384.2
      },
      "expected_units": {
-      "low": 19.4,
-      "mid": 38.8,
-      "high": 69.9
+      "low": 106.7,
+      "mid": 213.4,
+      "high": 384.2
      },
-     "capacity_usd": 71142.88,
-     "expected_impressions": 24000,
-     "expected_reach": 15000,
+     "capacity_usd": 71223.72,
+     "expected_impressions": 132000,
+     "expected_reach": 82500,
      "requires_host_approval": true,
-     "rationale": "market price $0.58-$0.79 (median $0.67); bidding $0.41 wins ~0% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "exploration": false,
+     "rationale": "market price $0.58-$0.79 (median $0.67); bidding $0.45 wins ~3% of page views, paying ~$0.43 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
-     "share": 0.923,
-     "budget_usd": 4574.66,
-     "cpc_bid_usd": 0.38,
-     "start_bid_usd": 0.38,
-     "win_share": 0.005,
-     "avg_price_paid": 0.37,
+     "share": 0.484,
+     "budget_usd": 2224.68,
+     "cpc_bid_usd": 0.36,
+     "start_bid_usd": 0.36,
+     "win_share": 0.003,
+     "avg_price_paid": 0.36,
      "market_price": {
       "low": 0.57,
       "mid": 0.66,
@@ -1584,25 +1625,26 @@
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 9837.0,
-      "mid": 12296.0,
-      "high": 14755.0
+      "low": 4918.0,
+      "mid": 6148.0,
+      "high": 7377.0
      },
      "expected_conversions": {
-      "low": 214.6,
-      "mid": 447.0,
-      "high": 804.7
+      "low": 107.3,
+      "mid": 223.5,
+      "high": 402.3
      },
      "expected_units": {
-      "low": 223.5,
-      "mid": 447.0,
-      "high": 804.7
+      "low": 111.8,
+      "mid": 223.5,
+      "high": 402.3
      },
-     "capacity_usd": 852736.42,
-     "expected_impressions": 310000,
-     "expected_reach": 193750,
+     "capacity_usd": 854583.28,
+     "expected_impressions": 155000,
+     "expected_reach": 96875,
      "requires_host_approval": true,
-     "rationale": "market price $0.57-$0.76 (median $0.66); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "exploration": false,
+     "rationale": "market price $0.57-$0.76 (median $0.66); bidding $0.36 wins ~0% of page views, paying ~$0.36 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_018",
@@ -1634,11 +1676,86 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 123897.05,
+     "capacity_usd": 123912.05,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
+     "exploration": false,
      "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.82-$1.11); it gets budget as the budget grows or if a funded host declines"
+    },
+    {
+     "publisher_id": "pub_012",
+     "publisher_name": "Daily Form",
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 1.56,
+     "start_bid_usd": 1.56,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 1.56,
+      "mid": 1.83,
+      "high": 2.11
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_conversions": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_units": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "capacity_usd": 87731.06,
+     "expected_impressions": 0,
+     "expected_reach": 0,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier)). Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.56-$2.11); it gets budget as the budget grows or if a funded host declines"
+    },
+    {
+     "publisher_id": "pub_015",
+     "publisher_name": "Kitchenly",
+     "share": 0.0,
+     "budget_usd": 0.0,
+     "cpc_bid_usd": 1.04,
+     "start_bid_usd": 1.04,
+     "win_share": 0.0,
+     "avg_price_paid": 0.0,
+     "market_price": {
+      "low": 1.04,
+      "mid": 1.22,
+      "high": 1.47
+     },
+     "audience_weight": 1.0,
+     "expected_clicks": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_conversions": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "expected_units": {
+      "low": 0.0,
+      "mid": 0.0,
+      "high": 0.0
+     },
+     "capacity_usd": 479714.59,
+     "expected_impressions": 0,
+     "expected_reach": 0,
+     "requires_host_approval": false,
+     "exploration": true,
+     "rationale": "EXPLORATION TEST (not in the main plan: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.04-$1.47); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1661,13 +1778,13 @@
    "host_bids": [
     {
      "publisher_id": "pub_007",
-     "start_bid": 0.41,
+     "start_bid": 0.45,
      "max_bid": 0.71,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_009",
-     "start_bid": 0.38,
+     "start_bid": 0.36,
      "max_bid": 0.7,
      "floor": 0.05
     },
@@ -1675,6 +1792,18 @@
      "publisher_id": "pub_018",
      "start_bid": 0.82,
      "max_bid": 1.01,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_012",
+     "start_bid": 1.56,
+     "max_bid": 1.96,
+     "floor": 0.05
+    },
+    {
+     "publisher_id": "pub_015",
+     "start_bid": 1.04,
+     "max_bid": 1.32,
      "floor": 0.05
     }
    ],
@@ -1698,17 +1827,11 @@
    "publishers_include": [
     "pub_007",
     "pub_009",
+    "pub_012",
+    "pub_015",
     "pub_018"
    ],
    "publishers_exclude": [
-    {
-     "id": "pub_012",
-     "reason": "Excluded: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier))."
-    },
-    {
-     "id": "pub_015",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
-    },
     {
      "id": "pub_008",
      "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
@@ -1898,9 +2021,9 @@
   ]
  },
  "timings_s": {
-  "intake": 0.02,
+  "intake": 0.01,
   "matching": 0.0,
-  "creative": 52.15
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,

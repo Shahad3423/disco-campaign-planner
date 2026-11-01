@@ -417,7 +417,8 @@ def render_config(plan: CampaignPlan) -> None:
                    f"(~${b.spend_at_full_inventory_usd:,.0f}). Expected impressions {b.expected_impressions:,}, reach {b.expected_reach:,}." + cap_cost)
         if b.allocations:
             df = pd.DataFrame([{
-                "publisher": a.publisher_name, "share_pct": round(a.share * 100), "budget_usd": a.budget_usd,
+                "publisher": a.publisher_name, "role": "exploration test" if a.exploration else "main plan",
+                "share_pct": round(a.share * 100), "budget_usd": a.budget_usd,
                 f"{b.unit} (mid)": a.expected_units.mid, "bid_usd": a.cpc_bid_usd, "win_share": a.win_share,
                 "avg_price_paid": a.avg_price_paid, "market_price (p25-p75)": f"${a.market_price.low:.2f}-${a.market_price.high:.2f}",
                 "impressions": a.expected_impressions, "clicks (mid)": a.expected_clicks.mid,

@@ -78,7 +78,7 @@ def grade_case(case: dict, plan: CampaignPlan) -> dict:
         m["budget_invariants_ok"] = (
             spent <= b.monthly_budget_usd + 0.01 and b.planned_spend_usd <= b.monthly_budget_usd + 0.01
             and all(a.budget_usd <= a.capacity_usd + 0.01 for a in b.allocations)
-            and {a.publisher_id for a in b.allocations} <= set(rec)
+            and {a.publisher_id for a in b.allocations if not a.exploration} <= set(rec)
         )
     if plan.creatives:
         reviews = {(r.persona_id, r.variant): r for r in plan.reviews}
