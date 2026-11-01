@@ -101,7 +101,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.6744,
+   "score": 0.8734,
    "components": [
     {
      "name": "category_fit",
@@ -111,13 +111,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
@@ -141,21 +141,21 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [
     "competitor_conflict: host also sells supplements (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5)). Flags: competitor_conflict: host also sells supplements (100% of samples agree); it may need to opt in to show a competing brand"
+   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal persona_fit (reaches The Fitness Enthusiast best (host fit 0.87)). Flags: competitor_conflict: host also sells supplements (100% of samples agree); it may need to opt in to show a competing brand"
   },
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.2761,
+   "score": 0.3547,
    "components": [
     {
      "name": "category_fit",
@@ -165,19 +165,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.8000833333333334,
+     "value": 0.8000833333333333,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.84)"
     },
@@ -195,19 +195,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Fitness Enthusiast best (host fit 0.84))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.255,
+   "score": 0.3154,
    "components": [
     {
      "name": "category_fit",
@@ -217,19 +217,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6587499999999998,
+     "value": 0.65875,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.62)"
     },
@@ -247,19 +247,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal price_fit (host income high suits budget (multiplier ^0.5))."
+   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal persona_fit (reaches The Fitness Enthusiast best (host fit 0.62))."
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.2337,
+   "score": 0.2756,
    "components": [
     {
      "name": "category_fit",
@@ -269,19 +269,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.8167500000000001,
+     "value": 0.8167499999999999,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.94)"
     },
@@ -299,14 +299,14 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal price_fit (host income mid-high suits budget (multiplier ^0.5))."
+   "reason": "Recommended: matches activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Fitness Enthusiast best (host fit 0.94))."
   },
   {
    "publisher_id": "pub_001",
@@ -321,19 +321,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.5766666666666668,
+     "value": 0.5766666666666667,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.66)"
     },
@@ -351,9 +351,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -373,19 +373,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.3713333333333333,
+     "value": 0.37133333333333335,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.45)"
     },
@@ -403,9 +403,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -425,19 +425,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.37074999999999997,
+     "value": 0.37075,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.46)"
     },
@@ -455,9 +455,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -477,19 +477,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6021666666666667,
+     "value": 0.6021666666666666,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
@@ -507,9 +507,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -529,13 +529,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
@@ -559,9 +559,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -581,19 +581,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6604166666666667,
+     "value": 0.6604166666666665,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.63)"
     },
@@ -611,9 +611,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -633,13 +633,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
@@ -663,9 +663,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -685,13 +685,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
@@ -715,9 +715,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -737,19 +737,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6619999999999999,
+     "value": 0.662,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.64)"
     },
@@ -767,9 +767,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -789,13 +789,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
@@ -819,9 +819,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -841,19 +841,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.657,
+     "value": 0.6569999999999999,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.61)"
     },
@@ -871,9 +871,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -893,13 +893,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
@@ -923,9 +923,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -945,19 +945,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income high suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6475833333333333,
+     "value": 0.6475833333333334,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
@@ -975,9 +975,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -997,19 +997,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6884166666666668,
+     "value": 0.6884166666666666,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.67)"
     },
@@ -1027,9 +1027,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1049,19 +1049,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid suits budget (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6445833333333333,
+     "value": 0.6445833333333334,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.59)"
     },
@@ -1079,9 +1079,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1101,13 +1101,13 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.8,
+     "value": 1.0,
      "weight": 1.0,
      "detail": "host income mid-high suits budget (multiplier ^0.5)"
     },
@@ -1131,9 +1131,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1145,12 +1145,12 @@
   {
    "persona_id": "persona_009",
    "persona_name": "The Fitness Enthusiast",
-   "score": 0.448,
+   "score": 0.56,
    "selected": true,
    "reasons": [
     "category affinity 0.80 (recovery, supplements)",
     "price fit 0.70 (budget product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1161,12 +1161,12 @@
   {
    "persona_id": "persona_001",
    "persona_name": "The Wellness Optimizer",
-   "score": 0.32,
+   "score": 0.4,
    "selected": true,
    "reasons": [
     "category affinity 0.80 (fitness, supplements)",
     "price fit 0.50 (budget product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1182,7 +1182,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.90 (budget product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1198,7 +1198,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (budget product vs medium-high price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1214,7 +1214,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (budget product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1231,7 +1231,7 @@
     "EXCLUDED: conflicts with 'disinterested_in = 'loud aesthetics', 'influencer positioning'; prefers quality and craftsmanship' because the brief says: Focuses on competing purely on price ('half the cost') rather than quality or craftsmanship.",
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (budget product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1247,7 +1247,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.90 (budget product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1263,7 +1263,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.90 (budget product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1280,7 +1280,7 @@
     "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.73); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (budget product vs high price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_002",
@@ -1296,7 +1296,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (budget product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1309,117 +1309,76 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "{first_name}, get the formulations your training demands",
-   "body": "Fuel your workouts with the exact same formulations as the expensive brands, for half the cost. We compete on price, not marketing.",
+   "headline": "Get identical formulations for your training, {first_name}.",
+   "body": "Power your workouts with the same formulations as the expensive brands. We compete on price, not on marketing.",
    "cta": "Shop formulations",
-   "headline_no_name": "Get the formulations your training demands",
-   "angle": "Focusing on high-performance formulations matching the shopper's active lifestyle",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "headline": "Power your routine without paying for the hype",
-   "body": "Get same-formulation pre-workout and protein for half the cost. We compete on price, not on marketing, to keep you fueled.",
-   "cta": "Shop pre-workout",
-   "headline_no_name": "Power your routine without paying for the hype",
-   "angle": "Appealing to athletic performance without unnecessary brand markup",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 3,
-   "headline": "{first_name}, train smart with premium formulations",
-   "body": "Don't pay extra for flashy labels. Get the exact same formulations as expensive brands for half the cost.",
-   "cta": "Shop protein",
-   "headline_no_name": "Train smart with premium formulations",
-   "angle": "Smart athlete perspective focusing on identical ingredient performance",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 1,
-   "headline": "{first_name}, optimize your supplement system",
-   "body": "We offer the exact same formulations as the expensive brands for half the cost. No marketing fluff, just the ingredients you need.",
-   "cta": "Shop formulations",
-   "headline_no_name": "Optimize your supplement system",
-   "angle": "Appealing to system optimization and ingredient transparency",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 2,
-   "headline": "High-quality formulations, zero marketing hype",
-   "body": "We compete on price, not on marketing. Get the exact same workout formulations as expensive brands for half the cost.",
-   "cta": "Shop supplements",
-   "headline_no_name": "High-quality formulations, zero marketing hype",
-   "angle": "Stripping away marketing noise to focus purely on the formulation",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "headline": "{first_name}, why pay more for the exact same formulation?",
-   "body": "Get identical formulations to expensive brands for half the cost. We focus on the product, competing on price instead of marketing.",
-   "cta": "Shop creatine",
-   "headline_no_name": "Why pay more for the exact same formulation?",
-   "angle": "Logical, outcome-focused appeal highlighting identical inputs",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 1,
-   "headline": "{first_name}, get identical formulations at half the cost",
-   "body": "Why pay double? We offer the same formulations as expensive brands for half the cost because we compete on price, not marketing.",
-   "cta": "Shop protein deals",
-   "headline_no_name": "Get identical formulations at half the cost",
-   "angle": "Direct price and value comparison for comparison shoppers",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 2,
-   "headline": "Skip the marketing markup on your supplements",
-   "body": "We compete on price, not marketing. Get the exact same formulations as expensive brands for half the cost. Save on your stack.",
-   "cta": "Shop supplements",
-   "headline_no_name": "Skip the marketing markup on your supplements",
-   "angle": "Clear value articulation showing how we keep prices low",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 3,
-   "headline": "Smart supplement savings for {first_name}",
-   "body": "We compete on price, not on marketing. Get the exact same workout formulations as the expensive brands for half the cost.",
-   "cta": "Save on supplements",
-   "headline_no_name": "Same formulations, half the cost",
-   "angle": "Clear value proposition focusing on identical formulations at half the price",
+   "headline_no_name": "Get identical formulations for your training.",
+   "angle": "Focuses on formulation parity for high-intensity training, framing the price-to-marketing claim around workout performance.",
    "claims_used": [
     "We compete on price, not on marketing.",
     "Same formulations as the expensive brands for half the cost."
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "No tricks, {first_name}, just pure performance",
+   "body": "Skip the expensive marketing. Get the same supplement formulations as the expensive brands for half the cost.",
+   "cta": "Shop supplements",
+   "headline_no_name": "No tricks, just pure performance",
+   "angle": "Halloween themed performance focus",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost."
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 1,
+   "headline": "Optimize your stack, {first_name}",
+   "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+   "cta": "Shop formulas",
+   "headline_no_name": "Optimize your supplement stack",
+   "angle": "Systematic optimization of supplement stack",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 2,
+   "headline": "Smart formulation sourcing for {first_name}",
+   "body": "Why pay for branding? Get the same formulations as the expensive brands for half the cost.",
+   "cta": "Shop supplements",
+   "headline_no_name": "Smart formulation sourcing",
+   "angle": "Logical and evidence-based pricing efficiency",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost."
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 1,
+   "headline": "Identical formulations at half price, {first_name}",
+   "body": "Stop paying for expensive marketing. Get the same supplement formulations as the big brands for half the cost.",
+   "cta": "Shop half-price",
+   "headline_no_name": "Identical formulations at half price",
+   "angle": "Clear value and price comparison",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost."
+   ]
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "headline": "Same formulations, half the price for {first_name}",
+   "body": "We compete on price, not on marketing. Get the exact same formulations as expensive brands for half the cost.",
+   "cta": "Shop supplements",
+   "headline_no_name": "Same formulations, half the price",
+   "angle": "No marketing markup value proposition",
+   "claims_used": [
+    "Same formulations as the expensive brands for half the cost.",
+    "We compete on price, not on marketing."
    ]
   }
  ],
@@ -1437,16 +1396,6 @@
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 3,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1457,7 +1406,7 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1467,46 +1416,32 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The copy is heavily price-focused, which does not align well with the Wellness Optimizer's low price sensitivity and preference for science-backed/ingredient-transparent messaging."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_008",
    "variant": 1,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "same supplement formulations as the big brands"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "The claim refers to 'big brands' whereas the stated claim only supports equivalence to 'expensive brands'."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_008",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1534,12 +1469,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.85-$1.16 per click (median $0.99), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.87-$1.18 per click (median $1.01), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.85,
-    "mid": 0.99,
-    "high": 1.16
+    "low": 0.87,
+    "mid": 1.01,
+    "high": 1.18
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1563,8 +1498,8 @@
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 24978.8,
-   "spend_at_full_inventory_usd": 670953.09,
+   "max_deliverable": 24576.8,
+   "spend_at_full_inventory_usd": 670883.51,
    "replan_options": [],
    "expected_impressions": 189000,
    "expected_reach": 118125,
@@ -1639,7 +1574,7 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 328742.49,
+     "capacity_usd": 328732.08,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
@@ -1650,14 +1585,14 @@
      "publisher_name": "Studiogrid",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.78,
-     "start_bid_usd": 0.78,
+     "cpc_bid_usd": 0.79,
+     "start_bid_usd": 0.79,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.78,
-      "mid": 0.9,
-      "high": 1.1
+      "low": 0.79,
+      "mid": 0.92,
+      "high": 1.12
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1675,25 +1610,25 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 175522.26,
+     "capacity_usd": 175488.98,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.78-$1.10); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.79-$1.12); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.85,
-     "start_bid_usd": 0.85,
+     "cpc_bid_usd": 0.87,
+     "start_bid_usd": 0.87,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.85,
-      "mid": 0.99,
-      "high": 1.16
+      "low": 0.87,
+      "mid": 1.01,
+      "high": 1.19
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1711,11 +1646,11 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 78867.63,
+     "capacity_usd": 78841.75,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.85-$1.16); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.87-$1.19); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1750,14 +1685,14 @@
     },
     {
      "publisher_id": "pub_003",
-     "start_bid": 0.78,
-     "max_bid": 0.98,
+     "start_bid": 0.79,
+     "max_bid": 0.99,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 0.85,
-     "max_bid": 1.05,
+     "start_bid": 0.87,
+     "max_bid": 1.09,
      "floor": 0.05
     }
    ],
@@ -1874,9 +1809,9 @@
      "pub_012",
      "pub_002"
     ],
-    "headline_template": "{first_name}, get the formulations your training demands",
-    "headline_no_name": "Get the formulations your training demands",
-    "body": "Fuel your workouts with the exact same formulations as the expensive brands, for half the cost. We compete on price, not marketing.",
+    "headline_template": "Get identical formulations for your training, {first_name}.",
+    "headline_no_name": "Get identical formulations for your training.",
+    "body": "Power your workouts with the same formulations as the expensive brands. We compete on price, not on marketing.",
     "cta": "Shop formulations"
    },
    {
@@ -1887,23 +1822,10 @@
      "pub_012",
      "pub_002"
     ],
-    "headline_template": "Power your routine without paying for the hype",
-    "headline_no_name": "Power your routine without paying for the hype",
-    "body": "Get same-formulation pre-workout and protein for half the cost. We compete on price, not on marketing, to keep you fueled.",
-    "cta": "Shop pre-workout"
-   },
-   {
-    "variant_id": "persona_009:3",
-    "persona_id": "persona_009",
-    "publisher_ids": [
-     "pub_017",
-     "pub_012",
-     "pub_002"
-    ],
-    "headline_template": "{first_name}, train smart with premium formulations",
-    "headline_no_name": "Train smart with premium formulations",
-    "body": "Don't pay extra for flashy labels. Get the exact same formulations as expensive brands for half the cost.",
-    "cta": "Shop protein"
+    "headline_template": "No tricks, {first_name}, just pure performance",
+    "headline_no_name": "No tricks, just pure performance",
+    "body": "Skip the expensive marketing. Get the same supplement formulations as the expensive brands for half the cost.",
+    "cta": "Shop supplements"
    },
    {
     "variant_id": "persona_001:1",
@@ -1913,10 +1835,10 @@
      "pub_002",
      "pub_003"
     ],
-    "headline_template": "{first_name}, optimize your supplement system",
-    "headline_no_name": "Optimize your supplement system",
-    "body": "We offer the exact same formulations as the expensive brands for half the cost. No marketing fluff, just the ingredients you need.",
-    "cta": "Shop formulations"
+    "headline_template": "Optimize your stack, {first_name}",
+    "headline_no_name": "Optimize your supplement stack",
+    "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+    "cta": "Shop formulas"
    },
    {
     "variant_id": "persona_001:2",
@@ -1926,23 +1848,10 @@
      "pub_002",
      "pub_003"
     ],
-    "headline_template": "High-quality formulations, zero marketing hype",
-    "headline_no_name": "High-quality formulations, zero marketing hype",
-    "body": "We compete on price, not on marketing. Get the exact same workout formulations as expensive brands for half the cost.",
+    "headline_template": "Smart formulation sourcing for {first_name}",
+    "headline_no_name": "Smart formulation sourcing",
+    "body": "Why pay for branding? Get the same formulations as the expensive brands for half the cost.",
     "cta": "Shop supplements"
-   },
-   {
-    "variant_id": "persona_001:3",
-    "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_012",
-     "pub_002",
-     "pub_003"
-    ],
-    "headline_template": "{first_name}, why pay more for the exact same formulation?",
-    "headline_no_name": "Why pay more for the exact same formulation?",
-    "body": "Get identical formulations to expensive brands for half the cost. We focus on the product, competing on price instead of marketing.",
-    "cta": "Shop creatine"
    },
    {
     "variant_id": "persona_008:1",
@@ -1952,10 +1861,10 @@
      "pub_017",
      "pub_003"
     ],
-    "headline_template": "{first_name}, get identical formulations at half the cost",
-    "headline_no_name": "Get identical formulations at half the cost",
-    "body": "Why pay double? We offer the same formulations as expensive brands for half the cost because we compete on price, not marketing.",
-    "cta": "Shop protein deals"
+    "headline_template": "Identical formulations at half price, {first_name}",
+    "headline_no_name": "Identical formulations at half price",
+    "body": "Stop paying for expensive marketing. Get the same supplement formulations as the big brands for half the cost.",
+    "cta": "Shop half-price"
    },
    {
     "variant_id": "persona_008:2",
@@ -1965,23 +1874,10 @@
      "pub_017",
      "pub_003"
     ],
-    "headline_template": "Skip the marketing markup on your supplements",
-    "headline_no_name": "Skip the marketing markup on your supplements",
-    "body": "We compete on price, not marketing. Get the exact same formulations as expensive brands for half the cost. Save on your stack.",
+    "headline_template": "Same formulations, half the price for {first_name}",
+    "headline_no_name": "Same formulations, half the price",
+    "body": "We compete on price, not on marketing. Get the exact same formulations as expensive brands for half the cost.",
     "cta": "Shop supplements"
-   },
-   {
-    "variant_id": "persona_008:3",
-    "persona_id": "persona_008",
-    "publisher_ids": [
-     "pub_002",
-     "pub_017",
-     "pub_003"
-    ],
-    "headline_template": "Smart supplement savings for {first_name}",
-    "headline_no_name": "Same formulations, half the cost",
-    "body": "We compete on price, not on marketing. Get the exact same workout formulations as the expensive brands for half the cost.",
-    "cta": "Save on supplements"
    }
   ],
   "frequency_cap": {
@@ -2015,16 +1911,16 @@
   ]
  },
  "timings_s": {
-  "intake": 0.01,
+  "intake": 0.0,
   "matching": 0.0,
-  "creative": 50.27
+  "creative": 62.14
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_008",
-    3
+    "persona_009",
+    1
    ]
   ]
  }

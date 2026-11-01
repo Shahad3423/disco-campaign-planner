@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "{first_name}, inspect every ingredient for your new kitten",
+      "body": "Get food samples to review, plus toys and an educational booklet covering the first three months of your cat's life.",
+      "cta": "Get your kitten kit",
+      "headline_no_name": "Inspect every ingredient for your new kitten",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, simplify your new kitten routine",
+      "body": "Save time with toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
+      "cta": "Order the kitten kit",
+      "headline_no_name": "Simplify your new kitten routine",
+      "angle": "time-saving",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get a complete kitten bundle",
+      "body": "All-in-one value: toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
+      "cta": "Claim your kit",
+      "headline_no_name": "Get a complete kitten bundle",
+      "angle": "bundle offers",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "{first_name}, top-rated value for new kittens",
+      "body": "Highly reviewed: get toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
+      "cta": "Shop the kitten pack",
+      "headline_no_name": "Top-rated value for new kittens",
+      "angle": "reviews",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

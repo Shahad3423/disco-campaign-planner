@@ -1,0 +1,86 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The headline 'brave the spookiest winter slopes' uses awkward seasonal phrasing ('spookiest') that doesn't fit the fitness enthusiast persona and feels out of place for technical ski gear."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

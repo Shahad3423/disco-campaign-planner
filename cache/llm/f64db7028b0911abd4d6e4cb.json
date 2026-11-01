@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Need a premium gift for your active friend, {first_name}?",
+      "body": "Give them a beautifully presented gift box of protein bars that don't taste like cardboard. Delicious flavor in every bite.",
+      "cta": "Shop gift boxes",
+      "headline_no_name": "A premium gift for the active person in your life",
+      "angle": "premium presentation and gift sets",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, ready to skip single-use plastic?",
+      "body": "Choose our refillable, concentrated cleaning products. Skip the single-use plastic bottles with zero compromise on performance.",
+      "cta": "Shop refills",
+      "headline_no_name": "Ready to skip single-use plastic bottles?",
+      "angle": "Specific environmental impact focusing on plastic reduction",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Powerful cleaning, zero single-use plastic",
+      "body": "Get refillable, concentrated cleaning products that work as well as the big brands. Skip the single-use plastic bottles today.",
+      "cta": "Switch to refills",
+      "headline_no_name": "Powerful cleaning, zero single-use plastic",
+      "angle": "High performance verification combined with sustainability claims",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, simplify your cleaning routine",
+      "body": "Our refillable, concentrated cleaning products mean fewer heavy bottles to buy. Skip the single-use plastic bottles.",
+      "cta": "Get starter kit",
+      "headline_no_name": "Simplify your household cleaning routine",
+      "angle": "Convenience and reduced physical clutter for busy households",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "Cleaning power that fits your busy life",
+      "body": "These refillable, concentrated cleaning products work as well as the big brands. Skip the single-use plastic bottles easily.",
+      "cta": "Shop refills",
+      "headline_no_name": "Cleaning power that fits your busy life",
+      "angle": "Reliability and high performance for demanding family schedules",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, discover a classic way to clean",
+      "body": "Choose refillable, concentrated cleaning products designed to last. Skip the single-use plastic bottles without sacrificing quality.",
+      "cta": "Shop premium refills",
+      "headline_no_name": "Discover an elevated way to clean",
+      "angle": "Quality, longevity, and elegant design of refillables",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Exceptional cleaning, designed for your home",
+      "body": "Our refillable, concentrated cleaning products work as well as the big brands. Skip the single-use plastic bottles beautifully.",
+      "cta": "Explore refill kits",
+      "headline_no_name": "Exceptional cleaning, designed for your home",
+      "angle": "Understated quality and high performance comparison",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get more value from your cleaning",
+      "body": "Skip the single-use plastic bottles. Our refillable, concentrated cleaning products work as well as the big brands for less waste.",
+      "cta": "Shop concentrates",
+      "headline_no_name": "Get more value from your cleaning products",
+      "angle": "Clear economic value of concentrates over water-heavy bottles",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Smart cleaning that works as well as big brands",
+      "body": "Switch to refillable, concentrated cleaning products. Skip the single-use plastic bottles while keeping the performance you trust.",
+      "cta": "Buy refillable kit",
+      "headline_no_name": "Smart cleaning that works as well as big brands",
+      "angle": "Smart purchasing comparison highlighting performance parity",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, the perfect sustainable gift",
+      "body": "Gift our refillable, concentrated cleaning products. Help them skip the single-use plastic bottles with a beautiful, useful present.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The perfect sustainable gift for any home",
+      "angle": "Gifting utility and premium presentation of starter kits",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Don't let plastic waste haunt your home",
+      "body": "Skip the single-use plastic bottles this Halloween. Use refillable, concentrated cleaning products that work as well as the big brands.",
+      "cta": "Shop refill kits",
+      "headline_no_name": "Don't let plastic waste haunt your home",
+      "angle": "Seasonal Halloween angle focusing on eliminating scary plastic waste",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, experience premium eco-friendly cleaning",
+      "body": "Skip single-use plastic bottles. Our refillable, concentrated formulas work as well as the big brands to keep your home pristine.",
+      "cta": "Shop refillable kits",
+      "headline_no_name": "Experience premium eco-friendly cleaning",
+      "angle": "Understated quality and performance",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get smart cleaning that works",
+      "body": "Skip single-use plastic bottles. Get concentrated refills that work as well as the big brands for a smart, eco-friendly clean.",
+      "cta": "Shop refill packs",
+      "headline_no_name": "Get smart cleaning that works",
+      "angle": "Clear value of concentrated refills",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Highly rated eco-friendly cleaning for {first_name}",
+      "body": "See why shoppers love switching to refillable, concentrated formulas that work as well as the big brands. Skip the plastic waste.",
+      "cta": "Shop refill kits",
+      "headline_no_name": "Highly rated eco-friendly cleaning",
+      "angle": "Review-focused performance comparison",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, the perfect sustainable gift set",
+      "body": "Gift a beautiful, eco-friendly upgrade. Skip single-use plastic bottles with refillable, concentrated products that work like big brands.",
+      "cta": "Shop eco gift sets",
+      "headline_no_name": "The perfect sustainable gift set",
+      "angle": "Premium gift set for hosts",
+      "claims_used": [
+        "Refillable, concentrated cleaning products",
+        "Skip the single-use plastic bottles",
+        "Works as well as the big brands"
+      ]
+    }
+  ]
+}

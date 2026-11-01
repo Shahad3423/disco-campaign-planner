@@ -1,0 +1,113 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen sheets"
+      ],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen",
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Seasonal Halloween reference limits the ad's evergreen usability and creates irrelevant urgency outside of October."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen",
+        "linen bedding"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy tells the user to 'skip vague eco-buzzwords' but fails to provide any of the specific sustainability claims or certifications this persona actively looks for."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen",
+        "linen sheets"
+      ],
+      "distinct_from_others": false,
+      "issues": [
+        "The angle is nearly identical to Variant 1, relying on 'made in Portugal' as a proxy for transparency without offering actual supply chain details.",
+        "Uses the vague term 'transparently made' which the persona is skeptical of without concrete proof."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen",
+        "gift sets"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The CTA references 'gift sets' which are not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "linen"
+      ],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": false
+    }
+  ]
+}

@@ -76,17 +76,20 @@ def test_live_mode_neither_reads_nor_writes_cache(tmp_path, monkeypatch):
     assert sorted(tmp_path.iterdir()) == files_before
 
 
-def test_three_variants_per_persona_and_targeted_rewrite():
+def test_n_variants_per_persona_and_targeted_rewrite():
     import json
+    from disco_planner.data import catalog
     from disco_planner.domain.models import AdvertiserProfile, PersonaMatch
     from disco_planner.llm.provider import FakeProvider
     from disco_planner.planning.creative import generate_creatives
+    n = catalog.config("scoring")["personas"]["variants_per_persona"]
+    ids = range(1, n + 1)
     variant = lambda pid, i, head="Good headline": {"persona_id": pid, "variant": i, "headline": head, "body": f"Body {pid} {i}",
                                                     "cta": "Shop now", "headline_no_name": head, "angle": f"angle {i}"}
-    first = json.dumps({"variants": [variant(p, i) for p in ("persona_004", "persona_002") for i in (1, 2, 3)]})
+    first = json.dumps({"variants": [variant(p, i) for p in ("persona_004", "persona_002") for i in ids]})
     review = lambda passed_all: json.dumps({"reviews": [
         {"persona_id": p, "variant": i, "persona_fit": 5, "claims_ok": True, "distinct_from_others": True,
-         "passed": passed_all or not (p == "persona_002" and i == 2)} for p in ("persona_004", "persona_002") for i in (1, 2, 3)]})
+         "passed": passed_all or not (p == "persona_002" and i == 2)} for p in ("persona_004", "persona_002") for i in ids]})
     profile = AdvertiserProfile(business_summary="dog food", product="dog food", is_consumer_product=True,
                                 confidence=0.9, gate="proceed", gate_reason="x")
     selected = [PersonaMatch(persona_id=p, persona_name=p, score=0.5, selected=True, reasons=[]) for p in ("persona_004", "persona_002")]
@@ -103,6 +106,6 @@ def test_three_variants_per_persona_and_targeted_rewrite():
             return first
 
     variants, reviews, log = generate_creatives(profile, selected, [], Scripted({}))
-    assert len(variants) == 6 and {(v.persona_id, v.variant) for v in variants} == {(p, i) for p in ("persona_004", "persona_002") for i in (1, 2, 3)}
+    assert len(variants) == 2 * n and {(v.persona_id, v.variant) for v in variants} == {(p, i) for p in ("persona_004", "persona_002") for i in ids}
     assert log["rewritten"] == [["persona_002", 2]]
     assert next(v for v in variants if (v.persona_id, v.variant) == ("persona_002", 2)).headline == "Rewritten headline"

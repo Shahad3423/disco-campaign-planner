@@ -1,0 +1,106 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your backcountry system.",
+      "body": "Technical outerwear for serious backcountry skiers. Designed to handle the elements so you can perform at your peak.",
+      "cta": "Shop outer shells",
+      "headline_no_name": "Optimize your backcountry system.",
+      "angle": "outcome-focused performance optimization",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Engineered for the harshest alpine environments.",
+      "body": "Our shells are what patrollers wear. Get the ultimate technical outerwear designed for serious backcountry skiers.",
+      "cta": "Shop patroller gear",
+      "headline_no_name": "Engineered for the harshest alpine environments.",
+      "angle": "evidence-backed professional standards",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, invest in enduring alpine quality.",
+      "body": "Technical outerwear for serious backcountry skiers. Built for longevity and trusted by the pros who spend every day on the mountain.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Invest in enduring alpine quality.",
+      "angle": "quality-focused and longevity",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Professional-grade protection on the slopes.",
+      "body": "Our shells are what patrollers wear. Understated, durable, and designed specifically for serious backcountry skiers.",
+      "cta": "Shop durable shells",
+      "headline_no_name": "Professional-grade protection on the slopes.",
+      "angle": "understated heritage and trust",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the ultimate ski gift.",
+      "body": "Technical outerwear for serious backcountry skiers. Our premium shells are what patrollers wear, making them the perfect gift.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the ultimate ski gift.",
+      "angle": "premium giftable presentation",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Gift the gear trusted by mountain professionals.",
+      "body": "Surprise the skier in your life. Our shells are what patrollers wear, offering technical outerwear for serious backcountry skiers.",
+      "cta": "Gift a shell",
+      "headline_no_name": "Gift the gear trusted by mountain professionals.",
+      "angle": "impressive professional-grade gift",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "{first_name}, brave the spookiest winter slopes.",
+      "body": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear to brave the elements all season long.",
+      "cta": "Shop outer shells",
+      "headline_no_name": "Brave the spookiest winter slopes.",
+      "angle": "seasonal moment integration with technical performance",
+      "claims_used": [
+        "Technical outerwear for serious backcountry skiers",
+        "Our shells are what patrollers wear"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "High-performance shells built for the elements.",
+      "body": "Our shells are what patrollers wear. Get the technical outerwear designed for serious backcountry skiers who demand peak performance.",
+      "cta": "Shop technical gear",
+      "headline_no_name": "High-performance shells built for the elements.",
+      "angle": "technical fabric and athlete standard",
+      "claims_used": [
+        "Our shells are what patrollers wear",
+        "Technical outerwear for serious backcountry skiers"
+      ]
+    }
+  ]
+}

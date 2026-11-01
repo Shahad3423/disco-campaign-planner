@@ -1,0 +1,73 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The body copy is heavily focused on price and marketing, which does not align well with this persona's low-to-medium price sensitivity and preference for performance-first messaging.",
+        "The body copy is identical to persona_001 variant 1, showing a lack of distinctiveness across the campaign."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The body copy is identical to persona_009 variant 1, showing a lack of distinctiveness across the campaign."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The headline phrasing 'Smart formulation sourcing for {first_name}' feels slightly awkward when combined with a first name."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The headline phrasing 'Same formulations, half the price for {first_name}' reads awkwardly with the personalization token."
+      ],
+      "passed": true
+    }
+  ]
+}
