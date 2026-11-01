@@ -1,0 +1,85 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "{first_name}, give your dog the best",
+      "body": "Keep your beloved family dog active with our natural hip, joint, and probiotic supplements. Made naturally for their daily wellness.",
+      "cta": "Shop natural chews",
+      "headline_no_name": "Give your dog the very best",
+      "angle": "emotional connection and ingredient quality",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "A healthy Halloween treat for your pup",
+      "body": "Skip the spooky ingredients. Keep your dog happy and moving with natural probiotic and hip/joint supplements for around $35.",
+      "cta": "Shop dog supplements",
+      "headline_no_name": "Healthy Halloween treats for your pup",
+      "angle": "seasonal moment combined with wholesome ingredients",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "headline": "{first_name}, put dog wellness on autopilot",
+      "body": "Never run out of natural probiotic and hip/joint chews. Set up easy auto-ship delivery for around $35 a bag.",
+      "cta": "Set up auto-ship",
+      "headline_no_name": "Put your dog's wellness on autopilot",
+      "angle": "convenience and subscription perks",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "headline": "The easiest way to support your dog",
+      "body": "Get natural hip, joint, and probiotic supplements delivered straight to your door. Simple auto-ship keeps your pup healthy.",
+      "cta": "Start auto-ship",
+      "headline_no_name": "The easiest way to support your dog",
+      "angle": "speed and frictionlessness of delivery",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your dog's daily routine",
+      "body": "Support your dog's system with natural probiotics and hip/joint chews. Targeted daily supplements for around $35 a bag.",
+      "cta": "Shop joint chews",
+      "headline_no_name": "Optimize your dog's daily routine",
+      "angle": "system optimization and outcome-focused daily habits",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews",
+        "around $35 a bag"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Targeted natural supplements for your dog",
+      "body": "Optimize your pet's joint health and digestion. Clean, natural probiotics and hip/joint supplements for active dogs.",
+      "cta": "Shop probiotics",
+      "headline_no_name": "Targeted natural supplements for your dog",
+      "angle": "ingredient transparency and targeted physical outcomes",
+      "claims_used": [
+        "Natural supplements for dogs",
+        "mostly probiotics and hip/joint chews"
+      ]
+    }
+  ]
+}

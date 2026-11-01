@@ -1,0 +1,73 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Lacks the discount-forward, bundle, or review-focused messaging preferred by this price-sensitive persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Support your physical well-being"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Implies an unsubstantiated health/wellness outcome for basic socks and tees.",
+        "Fails to provide the science-backed or ingredient-transparent messaging preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 1,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Completely misses the persona's preferences for science-backed, ingredient-transparent, and outcome-focused optimization, focusing instead on generic lifestyle/values alignment."
+      ],
+      "passed": false
+    }
+  ]
+}

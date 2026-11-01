@@ -34,9 +34,12 @@ EVAL = catalog.REPO_ROOT / "src/disco_planner/eval"
 REPORTS = catalog.REPO_ROOT / "reports"
 
 # name -> {"file.dotted.path": value}
+TREE = {"scoring.category.method": "tree"}
+TREE = {"scoring.category.method": "tree"}
 VARIANTS: dict[str, dict[str, object]] = {
-    "hard gate (topic only)": {"scoring.relevance.audience_evidence_min": 99.0},
-    "soft: topic OR stated audience": {},
+    "A tags + soft relevance (previous)": {"scoring.category.method": "tags"},
+    "F flat apparel, guard 0.5": {**TREE},
+    "G flat apparel, guard 0.8": {**TREE, "scoring.recommend.weak_topic_below": 0.8},
 }
 
 

@@ -1,0 +1,72 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Train through any weather"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'Train through any weather' implies weather-resistant technical features which are unsupported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "built to last"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The durability claim 'built to last' is unsupported by the stated claims."
+      ],
+      "passed": false
+    }
+  ]
+}

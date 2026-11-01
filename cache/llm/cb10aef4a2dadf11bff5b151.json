@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "Only the best for your cats, {first_name}",
+      "body": "Show your cats some extra love. Keep their home fresh with our self-cleaning litter box, backed by a worry-free 90-day trial.",
+      "cta": "Start 90-day trial",
+      "headline_no_name": "Only the best for your beloved cats",
+      "angle": "emotional connection and multi-cat care",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "90-day trial helps conversion",
+        "Prefer multi-cat households"
+      ]
+    }
+  ]
+}

@@ -362,3 +362,25 @@ forecast or the main plan's goal math. They exist so outcomes exist for pairs th
 measure was tuned on dev examples, so read this as optimistic). Holdout TEST, used once: 83.5% -> 82.5%, ranking agreement
 71.4% -> 72.2%: neutral. 12 audience-led recommendations across the dev briefs, each with the reason spelled out. The judge
 and golden labels are category-minded and cannot reward cross-category placements; click and conversion outcomes will.
+
+## D27. Product taxonomy + facets: built, measured, NOT adopted as the default
+
+**Idea.** Replace the three tag kinds (specific / broad category / attribute) with a standard hierarchy (data/taxonomy.yaml:
+40 product nodes in 5 top-level trees + food_drink and wellness groupings) and pull the 17 non-product tags (audience,
+business model, values, occasion, style, channel, benefit) out as facets matched separately (`facet_fit`). category_fit
+becomes the best (advertiser tag weight x Wu-Palmer tree similarity) over the host's most specific product nodes: no
+branches, no caps, no bonuses, no attribute list. Tailcrate now gets 0.8 for dog food because its treats sit under pet
+food in the tree.
+**Result (golden 15 + 49 dev brands; the test brands were NOT used for this decision).** Best of five tree variants:
+golden precision 0.88 vs 0.94, recall 0.70 = 0.70, violations 0 = 0, dev judge preference 86.1% vs 89.7%. Not within the
+bar set beforehand (precision -0.03, judge -2 points), so the default stays `category.method: tags`.
+**What the tree variants showed.** (1) Synthetic middle levels inflate sibling similarity (a `clothing` node made
+activewear/workwear 0.67 and let Linden Park into a ski-shell plan); removed. (2) The advertiser's broad tags next to
+their own children add nothing (use most specific nodes only, as for hosts). (3) Sibling credit is the real question:
+squaring the similarity cut it but recall fell to 0.33. (4) Structural cross-links (household under home, alcohol under
+beverages) put Swiftcart on several plans; plausible placements that category-minded labels count against us.
+**Caveat.** The tag rules were tuned over many iterations on exactly these golden and dev sets and the tree was not, so the
+comparison favours the tag rules. The honest next step is to FIT the tree's schedule (credit for same node / parent-child /
+sibling / same domain) from the dev judge pairs and then check the test brands once, or to compare on outcomes.
+**Kept:** taxonomy.py, taxonomy.yaml, facet_fit and tests behind the switch (behaviour-neutral by default), plus the
+tree-distance features a learned model would use (D-learned path: tree distance, facet matches, missingness flags).

@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, optimize your skin's daily formula",
+      "body": "Target acne and anti-aging with custom formulas prescribed by licensed providers. Order your personalized free trial, just pay shipping.",
+      "cta": "Get custom formula",
+      "headline_no_name": "Optimize your skin's daily formula",
+      "angle": "Analytical and outcome-focused systematic approach to skincare with licensed providers",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "No tricks, {first_name}—just custom skin glow",
+      "body": "Target acne and anti-aging with custom formulas from licensed providers. Snag your spooky-season free trial, just pay shipping.",
+      "cta": "Claim my free trial",
+      "headline_no_name": "No tricks—just custom skin glow",
+      "angle": "Playful Halloween-themed aesthetic-forward pitch",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "ready to gift"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim 'ready to gift' implies special gift packaging or presentation services which are not supported by the advertiser's stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "designed to last",
+        "designed for long-term apartment living"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The persona avoids vague eco claims, and the durability claims are unsupported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "not in a landfill",
+        "lasting designs"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The persona is highly skeptical of greenwashing and vague eco claims. The assertion that these products will not end up in a landfill is an unsupported environmental claim."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}

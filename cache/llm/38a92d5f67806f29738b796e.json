@@ -1,0 +1,78 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "{first_name}, elevate your dog's daily walks",
+      "body": "Your dog deserves the best on every stroll. Discover our premium, design-forward dog walking gear made for daily adventures.",
+      "cta": "Shop walking gear",
+      "headline_no_name": "Elevate your dog's daily walks",
+      "angle": "emotional connection to pet's daily experience",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "Spooktacular walks with your best friend, {first_name}",
+      "body": "Keep your pup stylish this Halloween. Our design-forward dog walking gear is perfect for trick-or-treating together.",
+      "cta": "Shop premium gear",
+      "headline_no_name": "Spooktacular walks with your best friend",
+      "angle": "seasonal moment with emotional focus",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "Understated design-forward dog walking gear",
+      "body": "Invest in premium essentials designed to last. Explore our curated collection of design-forward dog walking gear.",
+      "cta": "Shop premium gear",
+      "headline_no_name": "Understated design-forward dog walking gear",
+      "angle": "understated craftsmanship and quality focus",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "{first_name}, discover timeless dog walking gear",
+      "body": "Elevate your outings with premium accessories. Beautifully crafted design-forward dog walking gear with orders usually $60-120.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Discover timeless dog walking gear",
+      "angle": "heritage and classic styling with price transparency",
+      "claims_used": [
+        "Design-forward dog walking gear",
+        "Orders usually $60-120"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "Easy, stress-free walks for {first_name}",
+      "body": "Get out the door faster. Our design-forward dog walking gear makes daily family strolls simple, reliable, and organized.",
+      "cta": "Shop easy walk gear",
+      "headline_no_name": "Easy, stress-free walks with your pup",
+      "angle": "family-friendly convenience and time-saving design",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "Streamline your daily walks, {first_name}",
+      "body": "Simplify your routine with design-forward dog walking gear. High-quality essentials, with orders usually $60-120.",
+      "cta": "Shop walking gear",
+      "headline_no_name": "Streamline your daily walks",
+      "angle": "efficiency and budget planning for busy households",
+      "claims_used": [
+        "Design-forward dog walking gear",
+        "Orders usually $60-120"
+      ]
+    }
+  ]
+}

@@ -11,6 +11,7 @@ from datetime import date
 
 from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, Publisher, PublisherScore, ScoreComponent
+from disco_planner.planning import taxonomy
 
 def _shape() -> dict:
     return catalog.config("scoring")["shape"]
@@ -26,6 +27,47 @@ def _age_range(text: str | None) -> tuple[int, int] | None:
 
 
 def category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
+    """Topic link: how close the advertiser's product tags are to what the host sells."""
+    if catalog.config("scoring")["category"]["method"] == "tree":
+        return tree_category_fit(profile, pub)
+    return tag_category_fit(profile, pub)
+
+
+def tree_category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
+    """D27: best over (advertiser tag, host product) pairs of  tag weight x tree similarity. No branches, no bonuses.
+    Facet tags (subscription, women, sustainable...) are not products and never create a topic link."""
+    cfg = catalog.config("scoring")["category"]
+    host_nodes = taxonomy.host_products(pub)
+    adv = [t for t in profile.relevant_tags if taxonomy.is_product(t.tag)]
+    if cfg["specific_only"]:  # a broad tag listed next to its own children adds nothing (same rule as for hosts)
+        ancestors = {a for t in adv for a in taxonomy.path(t.tag)[1:]}
+        adv = [t for t in adv if t.tag not in ancestors]
+    best, why = 0.0, "no product in common with the host's range"
+    for t in adv:
+        for h in sorted(host_nodes):
+            sim = taxonomy.similarity(t.tag, h) ** cfg["similarity_power"]
+            if t.weight * sim > best:
+                best = t.weight * sim
+                why = (f"'{t.tag}' (weight {t.weight:g}) vs host '{h}': similarity {sim:.2f} -> {best:.2f}"
+                       + ("" if t.tag != h else " (same product)"))
+    return best, why
+
+
+def facet_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float | None, str]:
+    """Share (by weight) of the advertiser's stated facets that the host also has. None if none stated or method=tags."""
+    if catalog.config("scoring")["category"]["method"] != "tree":
+        return None, "facets not used by this method"
+    stated = [(t.weight, t.tag) for t in profile.relevant_tags if taxonomy.is_facet(t.tag)]
+    if not stated:
+        return None, "no facets stated (left out)"
+    have = taxonomy.host_facets(pub)
+    matched = [(w, t) for w, t in stated if t in have]
+    value = sum(w for w, _ in matched) / sum(w for w, _ in stated)
+    return value, (f"host has {', '.join(t for _, t in matched) or 'none'} of the stated facets "
+                   f"({', '.join(t for _, t in stated)})")
+
+
+def tag_category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
     """Relevance from tag matches, with a tag hierarchy:
     - specific subcategory match (e.g. "bedding"): full weight
     - category-only match (e.g. "apparel"): capped, because every apparel host has it
@@ -215,6 +257,7 @@ def score_publisher(
     pfit, pfit_d = persona_fit(pub, weights or {})
     scale, scale_d = scale_fit(pub)
     season, season_d = seasonality_fit(profile, pub, today)
+    facet, facet_d = facet_fit(profile, pub)
 
     components = [
         ScoreComponent(name="category_fit", value=cat, weight=1.0, detail=cat_d + " (multiplier)"),
@@ -225,6 +268,7 @@ def score_publisher(
         ScoreComponent(name="notes_fit", value=notes, weight=w["notes_fit"], detail=notes_d),
         ScoreComponent(name="scale", value=scale, weight=w["scale"], detail=scale_d),
         ScoreComponent(name="seasonality", value=season, weight=w["seasonality"], detail=season_d),
+        ScoreComponent(name="facet_fit", value=facet, weight=w["facet_fit"], detail=facet_d),
     ]
     # score = relevance^a x affordability^b x M_p(quality)  (docs/SCORING.md):
     # relevance ~ will they click, affordability ~ will they buy, quality ~ everything else.
@@ -250,7 +294,9 @@ def score_publisher(
 
 
 def _component(s: PublisherScore, name: str) -> float:
-    return next(c.value for c in s.components if c.name == name)
+    """A component's value; 0.0 when it was left out (no evidence cannot satisfy an evidence requirement)."""
+    value = next(c.value for c in s.components if c.name == name)
+    return 0.0 if value is None else value
 
 
 def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherScore]:
@@ -278,9 +324,16 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
     cutoff = max(rec["min_score"], rec["relative_to_top"] * anchor.score)
     # If no host matches a specific subcategory, the network has no strong home for this
     # product: say so and propose a small test on a few hosts instead of a full spread.
+    tree = catalog.config("scoring")["category"]["method"] == "tree"
+
     def is_strong(s: PublisherScore) -> bool:
         cat, price = s.components[0], next(c for c in s.components if c.name == "price_fit")
-        return "(specific)" in cat.detail and (price.value is None or price.value >= rec["strong_min_price_fit"])
+        close_topic = (s.relevance_source == "topic" and cat.value >= rec["strong_min_relevance"]) if tree else "(specific)" in cat.detail
+        return close_topic and (price.value is None or price.value >= rec["strong_min_price_fit"])
+
+    def weak_topic(s: PublisherScore) -> bool:
+        cat = s.components[0]
+        return (s.relevance_source == "topic" and cat.value < rec["weak_topic_below"]) if tree else "(category only)" in cat.detail
 
     strong = any(is_strong(s) for s in scores if s.score >= cutoff)
     max_picks = rec["max_publishers"] if strong else rec["weak_fit_max_publishers"]
@@ -289,8 +342,8 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
         cat = next(c for c in s.components if c.name == "category_fit")
         if cat.value < rec["min_category_fit"]:
             s.reason = f"Excluded: {cat.detail} for this product."
-        elif "(category only)" in cat.detail and _component(s, "persona_fit") < rec["category_only_min_persona_fit"]:
-            s.reason = (f"Excluded: linked only by a broad category ({cat.detail}) and the shoppers this product is for "
+        elif weak_topic(s) and _component(s, "persona_fit") < rec["category_only_min_persona_fit"]:
+            s.reason = (f"Excluded: only a weak topic link ({cat.detail}) and the shoppers this product is for "
                         f"are rare here (persona fit {_component(s, 'persona_fit'):.2f}).")
         elif s.score < cutoff:
             weakest = min((c for c in s.components[:3] if c.value is not None), key=lambda c: c.value)

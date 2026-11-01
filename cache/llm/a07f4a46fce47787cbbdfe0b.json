@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Gear up for your next PR, {first_name}.",
+      "body": "Get our lifting and training leggings and tees from $30-$60. Grab your first-order discount and unlock free shipping thresholds.",
+      "cta": "Shop lifting gear",
+      "headline_no_name": "Gear up for your next heavy lift.",
+      "angle": "Performance-focused training gear with first-order savings",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    }
+  ]
+}

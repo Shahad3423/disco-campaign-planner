@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Save on comfort packs, {first_name}",
+      "body": "Grab our multi-packs that are great for families. Plus, every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop multi-packs",
+      "headline_no_name": "Save on comfort packs",
+      "angle": "bundle offers and clear value for families",
+      "claims_used": [
+        "Great for families buying multi-packs",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your daily comfort, {first_name}",
+      "body": "Streamline your daily routine with comfort socks and tees. Every purchase donates an essential item to someone experiencing homelessness.",
+      "cta": "Shop comfort socks",
+      "headline_no_name": "Optimize your daily comfort",
+      "angle": "outcome-focused daily routine optimization",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Systemize your daily wear, {first_name}",
+      "body": "Build an efficient daily baseline with comfort socks and tees. Every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop comfort tees",
+      "headline_no_name": "Systemize your daily wear",
+      "angle": "system-based daily wear baseline optimization",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

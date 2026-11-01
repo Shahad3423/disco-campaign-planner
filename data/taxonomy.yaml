@@ -1,0 +1,65 @@
+# Product taxonomy for scoring (D27). Replaces the old "specific / broad category / attribute" tag kinds.
+#
+# product_tree: child -> parent (null = top level). Level 1 = the top (apparel, home, pet, ...).
+# Tags that hosts and the LLM use are tree nodes; two nodes are synthetic top-level groupings (food_drink, wellness)
+# that no host carries and the LLM never picks, so that e.g. beverages, groceries and meal kits share a domain.
+# Synthetic MIDDLE levels were tried and removed: they inflate sibling similarity (activewear vs workwear 0.67).
+# Similarity between two nodes = Wu-Palmer (1994): 2 x depth(deepest shared ancestor) / (depth(a) + depth(b)),
+# depth counted from the top level (= 1); nodes in different top-level trees share nothing, similarity 0.
+#
+# facets: tags that are NOT product categories. They describe an audience, a business model, a value, an occasion,
+# a style or a sales channel. They are matched separately (facet_fit) and never create a topic link.
+product_tree:
+  apparel: null
+  activewear: apparel
+  workwear: apparel
+  basics: apparel
+  socks: basics
+  intimates: apparel
+  underwear: intimates
+  shoes: apparel
+  home: null
+  home_textiles: home
+  bedding: home_textiles
+  bath: home_textiles
+  kitchen: home
+  cookware: kitchen
+  household: home
+  pet: null
+  pet_food: pet
+  treats: pet_food
+  pet_supplies: pet
+  toys: pet_supplies
+  pet_pharmacy: pet
+  beauty: null
+  skincare: beauty
+  makeup: beauty
+  haircare: beauty
+  food_drink: null             # synthetic top level
+  groceries: food_drink
+  pantry: groceries
+  meal_kits: food_drink
+  beverages: food_drink
+  functional_beverages: beverages
+  soda_alternative: beverages
+  alcohol: beverages
+  wellness: null               # synthetic top level
+  wellness_dtc: wellness
+  supplements: wellness_dtc
+  vitamins: supplements
+  wellness_services: wellness
+  fitness_classes: wellness_services
+  yoga: fitness_classes
+  personal_training: wellness_services
+  spa: wellness_services
+
+synthetic: [food_drink, wellness]
+
+facets:
+  audience: [women, men, mid-life, plus_size]
+  business_model: [subscription, dtc, personalized]
+  values: [sustainable, natural, organic, non_toxic]
+  occasion: [gifting]
+  style: [casual, classic]
+  channel: [convenience, instant_delivery]
+  benefit: [gut_health]

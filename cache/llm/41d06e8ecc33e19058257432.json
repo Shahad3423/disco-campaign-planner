@@ -1,0 +1,79 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, meet your new vanity aesthetic",
+      "body": "Skincare and makeup for 'skin first' people. Meet the brand known for Boy Brow and Cloud Paint.",
+      "cta": "Shop Boy Brow",
+      "headline_no_name": "Meet your new vanity aesthetic",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "No scary routines here, {first_name}",
+      "body": "Keep it simple this Halloween. Try our skincare and makeup for 'skin first' people to get that effortless glow.",
+      "cta": "Shop skin first",
+      "headline_no_name": "No scary beauty routines here",
+      "angle": "novelty",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your routine",
+      "body": "Discover skincare and makeup for 'skin first' people. Simplify your regimen with products designed to prioritize your skin.",
+      "cta": "Shop skin first",
+      "headline_no_name": "Optimize your beauty routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Streamlined essentials for {first_name}",
+      "body": "Build an efficient daily routine. Try skincare and makeup for 'skin first' people, known for Boy Brow and Cloud Paint.",
+      "cta": "Shop the essentials",
+      "headline_no_name": "Streamlined beauty essentials",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The perfect gift for someone special, {first_name}",
+      "body": "Give the gift of skincare and makeup for 'skin first' people, featuring the brand known for Boy Brow and Cloud Paint.",
+      "cta": "Shop gift favorites",
+      "headline_no_name": "The perfect gift for someone special",
+      "angle": "giftable",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, give the gift of effortless beauty",
+      "body": "Delight them with skincare and makeup for 'skin first' people. Perfect for anyone who appreciates beautiful, simple routines.",
+      "cta": "Shop beauty gifts",
+      "headline_no_name": "Give the gift of effortless beauty",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people"
+      ]
+    }
+  ]
+}

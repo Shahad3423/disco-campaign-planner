@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the gift of premium comfort",
+      "body": "Share our highly anticipated drops. Premium loungewear, shapewear, and underwear designed for everyone in inclusive sizes XXS-5X.",
+      "cta": "Shop the gift drop",
+      "headline_no_name": "Give the gift of premium comfort",
+      "angle": "giftable",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "The ultimate gift drop is here, {first_name}",
+      "body": "Discover premium shapewear, loungewear, and underwear. Beautifully packaged and available in inclusive sizes XXS-5X.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The ultimate gift drop is here",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "Designed for every body, {first_name}",
+      "body": "True size inclusivity in every drop. Express yourself in shapewear, loungewear, and underwear made for everyone in sizes XXS-5X.",
+      "cta": "Shop the new drop",
+      "headline_no_name": "Designed for every single body",
+      "angle": "values-aligned",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "{first_name}, treat yourself to our latest drop",
+      "body": "No tricks, just perfect fits. Elevate your aesthetic with shapewear, loungewear, and underwear in inclusive sizes XXS-5X.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Treat yourself to our latest drop",
+      "angle": "playful",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily foundation",
+      "body": "Support your body system. Premium shapewear, loungewear, and underwear engineered for an exact fit in inclusive sizes XXS-5X.",
+      "cta": "Shop supportive fits",
+      "headline_no_name": "Optimize your daily foundation",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Precise fits for your body, {first_name}",
+      "body": "Elevate your daily routine with shapewear, loungewear, and underwear designed for optimal fit in inclusive sizes XXS-5X.",
+      "cta": "Shop inclusive sizes",
+      "headline_no_name": "Precise fits for your body",
+      "angle": "size inclusivity",
+      "claims_used": [
+        "Inclusive sizing XXS-5X",
+        "Shapewear, loungewear and underwear"
+      ]
+    }
+  ]
+}

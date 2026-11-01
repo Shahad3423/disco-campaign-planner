@@ -1,0 +1,85 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, discover quality that lasts",
+      "body": "Invest in beautifully crafted, stylish clothing designed for sizes 00-40. Experience true quality in extended sizes.",
+      "cta": "Shop quality sizes",
+      "headline_no_name": "Discover quality that lasts",
+      "angle": "quality-focused craftsmanship",
+      "claims_used": [
+        "Quality in extended sizes",
+        "Stylish clothing for women in sizes 00-40"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Understated style in sizes 00-40",
+      "body": "Classic wardrobe essentials designed with quality in extended sizes. Enjoy the peace of mind of free exchanges within a year.",
+      "cta": "Shop classic styles",
+      "headline_no_name": "Understated style in sizes 00-40",
+      "angle": "understated style and convenient service",
+      "claims_used": [
+        "Stylish clothing for women in sizes 00-40",
+        "Quality in extended sizes",
+        "Free exchanges within a year"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Give the gift of perfect style, {first_name}",
+      "body": "Delight them with stylish clothing in sizes 00-40. With free exchanges within a year, finding the right fit is completely worry-free.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the gift of perfect style",
+      "angle": "giftable with flexible exchange policy",
+      "claims_used": [
+        "Stylish clothing for women in sizes 00-40",
+        "Free exchanges within a year"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "An impressive gift in sizes 00-40",
+      "body": "Give high-quality apparel she will love. We offer quality in extended sizes and free exchanges within a year for easy gifting.",
+      "cta": "Shop gift styles",
+      "headline_no_name": "An impressive gift in sizes 00-40",
+      "angle": "premium gift presentation and quality focus",
+      "claims_used": [
+        "Quality in extended sizes",
+        "Free exchanges within a year",
+        "Stylish clothing for women in sizes 00-40"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, serve looks in sizes 00-40",
+      "body": "Get into stylish clothing designed for every body. High-quality pieces in sizes 00-40 that actually match your aesthetic.",
+      "cta": "Shop stylish sizes",
+      "headline_no_name": "Serve looks in sizes 00-40",
+      "angle": "playful aesthetic and inclusive sizing",
+      "claims_used": [
+        "Stylish clothing for women in sizes 00-40",
+        "Quality in extended sizes"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Your new favorite fit is here",
+      "body": "Uncompromising quality in extended sizes 00-40. Try new styles risk-free with free exchanges within a year.",
+      "cta": "Find your fit",
+      "headline_no_name": "Your new favorite fit is here",
+      "angle": "values-aligned quality and effortless exchange",
+      "claims_used": [
+        "Quality in extended sizes",
+        "Free exchanges within a year",
+        "Stylish clothing for women in sizes 00-40"
+      ]
+    }
+  ]
+}

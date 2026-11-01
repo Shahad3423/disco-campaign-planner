@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the gift of premium comfort",
+      "body": "Delight them with soft, performance-y everyday clothing designed to go from the gym to coffee. Beautifully packaged and ready.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the gift of premium comfort",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "The ultimate premium gift sets for {first_name}",
+      "body": "Gift them ultra-soft, performance-y everyday clothing. Perfect for transitioning from workouts to coffee dates with ease.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The ultimate premium gift sets",
+      "angle": "gift sets",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily transition",
+      "body": "Streamline your day in soft, performance-y everyday clothing. Engineered to easily go from the gym to coffee.",
+      "cta": "Shop everyday wear",
+      "headline_no_name": "Optimize your daily transition",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Designed for performance and comfort, {first_name}",
+      "body": "Experience premium, soft, performance-y everyday clothing that lets your body transition smoothly from the gym to coffee.",
+      "cta": "Shop performance",
+      "headline_no_name": "Designed for performance and comfort",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Built for the gym and beyond, {first_name}",
+      "body": "Stay in your zone. This soft, performance-y everyday clothing is engineered to go from the gym to coffee seamlessly.",
+      "cta": "Shop performance",
+      "headline_no_name": "Built for the gym and beyond",
+      "angle": "performance claims",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "No tricks, just premium gear for {first_name}",
+      "body": "Treat yourself to soft, performance-y everyday clothing this Halloween. Transition smoothly from the gym to coffee.",
+      "cta": "Shop performance",
+      "headline_no_name": "No tricks, just premium performance gear",
+      "angle": "performance claims",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    }
+  ]
+}

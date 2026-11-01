@@ -1,0 +1,69 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "{first_name}, get spooky-good hair.",
+      "body": "Treat yourself this Halloween to fun, scent-forward hair care. Grab our dry shampoo, texture spray, and body care.",
+      "cta": "Shop scent-forward",
+      "headline_no_name": "Get spooky-good hair.",
+      "angle": "Playful / Seasonal",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the gift of great hair.",
+      "body": "Surprise them with fun, scent-forward hair care and body care. They'll love our dry shampoo and texture spray.",
+      "cta": "Gift hair care",
+      "headline_no_name": "Give the gift of great hair.",
+      "angle": "Giftable",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, need a quick gift?",
+      "body": "Get fun, scent-forward hair care and body care delivered fast. Give the gift of dry shampoo and texture spray.",
+      "cta": "Shop gifts now",
+      "headline_no_name": "Need a quick gift?",
+      "angle": "Last-minute gifting",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, refresh your daily routine.",
+      "body": "Keep your hair clean and styled. Our dry shampoo and texture spray offer straightforward, scent-forward hair care and body care.",
+      "cta": "Shop hair care",
+      "headline_no_name": "Refresh your daily routine.",
+      "angle": "Outcome-focused",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, functional care for active days.",
+      "body": "Simplify your post-workout refresh. Use our dry shampoo, texture spray, and body care for clean, scent-forward hair care.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Functional care for active days.",
+      "angle": "Functional performance",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, elevate your home with understated cat design",
+      "body": "Discover modern cat trees and wall-mounted furniture designed to blend seamlessly into your elegant apartment.",
+      "cta": "Shop cat furniture",
+      "headline_no_name": "Elevate your home with understated cat design",
+      "angle": "understated quality and design-conscious integration",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, find the perfect gift for cat lovers",
+      "body": "Surprise them with modern cat trees and scratchers designed for apartment living. No ugly carpet towers here.",
+      "cta": "Shop cat gifts",
+      "headline_no_name": "The perfect premium gift for cat lovers",
+      "angle": "premium and design-conscious gifting",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "{first_name}, give your cat a beautiful space of their own",
+      "body": "Treat your pet to modern scratchers and wall-mounted furniture designed for apartment living, without the ugly carpet towers.",
+      "cta": "Shop cat scratchers",
+      "headline_no_name": "Give your cat a beautiful space of their own",
+      "angle": "emotional connection and pet happiness in a design-conscious home",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, choose cat furniture designed to last",
+      "body": "Say goodbye to cheap, disposable carpet towers. Our modern wall-mounted furniture is designed for long-term apartment living.",
+      "cta": "Shop cat furniture",
+      "headline_no_name": "Choose modern cat furniture designed to last",
+      "angle": "reducing waste by choosing long-lasting modern alternatives to disposable carpet towers",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Modern cat furniture, not a temporary carpet tower",
+      "body": "Invest in thoughtfully designed wall-mounted furniture and scratchers that belong in your apartment, not in a landfill.",
+      "cta": "Shop lasting designs",
+      "headline_no_name": "Modern cat furniture, not a temporary carpet tower",
+      "angle": "avoiding the environmental footprint of disposable, low-quality pet products",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, upgrade your apartment's cat aesthetic",
+      "body": "Finally, modern cat trees and wall-mounted furniture that match your vibe. No ugly carpet towers allowed.",
+      "cta": "Shop modern designs",
+      "headline_no_name": "Upgrade your apartment's cat aesthetic",
+      "angle": "aesthetic-forward and highly visual apartment styling",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    }
+  ]
+}

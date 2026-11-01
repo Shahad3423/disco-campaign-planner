@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Gear up for your next marathon, {first_name}",
+      "body": "Engineered for the serious recreational marathoner. Elevate your training with our New England heritage singlets from $58.",
+      "cta": "Shop singlets",
+      "headline_no_name": "Gear up for your next marathon",
+      "angle": "performance claims",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Engineered for serious marathoners, {first_name}",
+      "body": "Train through any weather. Premium New England heritage jackets from $200+ designed for the dedicated recreational marathoner.",
+      "cta": "Shop premium jackets",
+      "headline_no_name": "Engineered for serious marathoners",
+      "angle": "performance claims",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "jackets $200+",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your marathon training, {first_name}",
+      "body": "Support your training system. Heritage New England running apparel engineered for serious recreational marathoners. Singlets from $58.",
+      "cta": "Shop running apparel",
+      "headline_no_name": "Optimize your marathon training",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    }
+  ]
+}

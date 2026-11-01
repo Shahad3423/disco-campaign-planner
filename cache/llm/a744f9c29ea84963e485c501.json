@@ -1,0 +1,72 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "This variant is too similar in angle, structure, and wording to Variant 1."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Halloween is an unusual holiday for gifting socks and tees, but the seasonal angle is distinct."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The wellness optimizer persona expects science-backed claims and ingredient transparency. Framing basic socks and tees as 'routine optimization' feels superficial and does not align with their core preferences."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 2,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The wellness optimizer persona expects science-backed claims and ingredient transparency. Framing basic socks and tees as 'systemizing daily wear' feels superficial and does not align with their core preferences."
+      ],
+      "passed": false
+    }
+  ]
+}

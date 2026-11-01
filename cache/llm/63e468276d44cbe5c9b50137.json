@@ -1,0 +1,128 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "Elegant cat furniture for your home, {first_name}",
+      "body": "Upgrade to modern cat trees and wall-mounted furniture designed for sophisticated apartment living. No carpet-covered towers here.",
+      "cta": "Shop modern pieces",
+      "headline_no_name": "Elegant cat furniture for your home",
+      "angle": "understated quality and sophisticated design",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Architectural cat furniture designed for your home",
+      "body": "Discover wall-mounted cat furniture and trees that complement your decor. Beautifully crafted for design-conscious apartment owners.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Architectural cat furniture designed for your home",
+      "angle": "craftsmanship and integration with home decor",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The ultimate gift for cat lovers, {first_name}",
+      "body": "Delight a cat parent with premium wall-mounted furniture and modern scratchers that beautifully elevate apartment living.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "The ultimate gift for cat lovers",
+      "angle": "premium giftable presentation",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Elegant cat furniture ready to gift",
+      "body": "Give a gift that elevates their space. Modern cat trees and scratchers designed for design-conscious apartment dwellers.",
+      "cta": "Shop gift selection",
+      "headline_no_name": "Elegant cat furniture ready to gift",
+      "angle": "premium gift presentation and design focus",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "Give your cat the perfect view, {first_name}",
+      "body": "Treat your family companion to modern wall-mounted furniture and trees that fit your apartment and keep them active.",
+      "cta": "Shop cat trees",
+      "headline_no_name": "Give your cat the perfect view",
+      "angle": "emotional connection and enriching their cat's apartment life",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "Cat furniture that honors your home and your pet",
+      "body": "Your cat deserves the best. Ditch the carpet-covered towers for modern trees and scratchers designed for stylish apartment living.",
+      "cta": "Shop scratchers",
+      "headline_no_name": "Cat furniture that honors your home and your pet",
+      "angle": "quality alternative to generic pet products",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "Cat furniture built for longevity, {first_name}",
+      "body": "Avoid temporary, carpet-covered towers. Invest in modern wall-mounted furniture and trees crafted for design-conscious apartment life.",
+      "cta": "Shop modern trees",
+      "headline_no_name": "Cat furniture built for longevity",
+      "angle": "buying once and avoiding disposable carpet towers",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Minimalist cat furniture for apartment living",
+      "body": "Maximize your apartment space with wall-mounted modern furniture designed to blend seamlessly into your home.",
+      "cta": "Shop wall furniture",
+      "headline_no_name": "Minimalist cat furniture for apartment living",
+      "angle": "space efficiency and minimalist design",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "Cat furniture that actually matches your vibe, {first_name}",
+      "body": "Say goodbye to ugly carpet-covered towers. Get modern cat trees and wall-mounted pieces designed for your aesthetic apartment.",
+      "cta": "Shop the aesthetic",
+      "headline_no_name": "Cat furniture that actually matches your vibe",
+      "angle": "aesthetic-forward apartment styling",
+      "claims_used": [
+        "Modern cat trees, scratchers and wall-mounted furniture that doesn't look like a carpet-covered tower.",
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Spooky season style for your cat’s setup",
+      "body": "Level up your apartment aesthetic this Halloween with modern scratchers and sleek wall-mounted cat furniture.",
+      "cta": "Shop modern designs",
+      "headline_no_name": "Spooky season style for your cat’s setup",
+      "angle": "playful seasonal novelty",
+      "claims_used": [
+        "We're after design-conscious apartment dwellers who own cats."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, premium organic cotton is now affordable",
+      "body": "Get fair trade organic cotton underwear, tees, and baby clothes. Quality essentials that are affordable, around $30 an item.",
+      "cta": "Shop under $30",
+      "headline_no_name": "Premium organic cotton is now affordable",
+      "angle": "clear value props",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Affordable, around $30 an item"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Organic cotton essentials for around $30",
+      "body": "Discover fair trade organic cotton baby clothes, tees, and underwear. High-quality sustainable basics at an affordable price.",
+      "cta": "Shop affordable",
+      "headline_no_name": "Organic cotton essentials for around $30",
+      "angle": "discount-forward",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Affordable, around $30 an item"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the gift of organic cotton",
+      "body": "Beautiful fair trade organic cotton baby clothes and tees. Perfect, sustainable gifts for eco-minded parents and little ones.",
+      "cta": "Shop gift ideas",
+      "headline_no_name": "Give the gift of organic cotton",
+      "angle": "giftable",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Sweet organic cotton treats for Halloween",
+      "body": "Gift cozy fair trade organic cotton tees and baby clothes. Perfect for eco-minded parents looking for sustainable autumn comfort.",
+      "cta": "Shop cozy gifts",
+      "headline_no_name": "Sweet organic cotton treats for Halloween",
+      "angle": "gift sets",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, simplified organic clothes for your family",
+      "body": "Fair trade organic cotton baby clothes, tees, and underwear. Loved by eco-minded parents for daily, affordable comfort around $30.",
+      "cta": "Shop family basics",
+      "headline_no_name": "Simplified organic clothes for your family",
+      "angle": "family-friendly",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially",
+        "Affordable, around $30 an item"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "Easy organic essentials for eco-minded parents",
+      "body": "Stock up on fair trade organic cotton tees, underwear, and baby clothes. Simple, sustainable daily wear for around $30 an item.",
+      "cta": "Shop organic wear",
+      "headline_no_name": "Easy organic essentials for eco-minded parents",
+      "angle": "time-saving",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially",
+        "Affordable, around $30 an item"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, choose fair trade organic cotton",
+      "body": "Ethically made fair trade organic cotton underwear, tees, and baby clothes. Truly sustainable choices for eco-minded parents.",
+      "cta": "Shop sustainable",
+      "headline_no_name": "Choose fair trade organic cotton",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Sustainable organic wear for eco-minded parents",
+      "body": "Protect the planet with fair trade organic cotton underwear, tees, and baby clothes. Ethical, sustainable, and around $30 an item.",
+      "cta": "Shop ethical cotton",
+      "headline_no_name": "Sustainable organic wear for eco-minded parents",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Eco-minded parents especially",
+        "Affordable, around $30 an item"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "Hey {first_name}, get spooky-good hair",
+      "body": "Level up your vibe this Halloween with our fun, scent-forward hair care. Treat your locks to dry shampoo and texture spray.",
+      "cta": "Shop hair care",
+      "headline_no_name": "Get spooky-good hair this Halloween",
+      "angle": "playful",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Your vanity's next obsession, {first_name}",
+      "body": "Bring the aesthetic to your routine with fun, scent-forward hair care, texture spray, and body care.",
+      "cta": "Shop scent-forward care",
+      "headline_no_name": "Your vanity's next obsession",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, the ultimate gift for scent lovers",
+      "body": "Delight them with fun, scent-forward hair care. Beautifully packaged dry shampoo, texture spray, and body care sets.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The ultimate gift for scent lovers",
+      "angle": "giftable",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Gift shopping made easy for {first_name}",
+      "body": "Share the joy of fun, scent-forward hair care. Grab dry shampoo, texture spray, and body care perfect for anyone.",
+      "cta": "Shop gifts now",
+      "headline_no_name": "Gift shopping made easy",
+      "angle": "last-minute shipping",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your scent routine, {first_name}",
+      "body": "Support your daily system with fun, scent-forward hair care and body care. Refresh with dry shampoo and texture spray.",
+      "cta": "Shop body care",
+      "headline_no_name": "Optimize your scent routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Simple, scent-forward hair care for {first_name}",
+      "body": "Elevate your personal care system. Try our dry shampoo, texture spray, and body care designed to fit your day.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Simple, scent-forward hair care",
+      "angle": "ingredient transparency",
+      "claims_used": [
+        "Fun, scent-forward hair care",
+        "Dry shampoo, texture spray, body care"
+      ]
+    }
+  ]
+}

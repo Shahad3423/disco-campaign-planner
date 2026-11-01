@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Give {first_name} the gift of transparent pricing",
+      "body": "Looking for the perfect gift? Discover wardrobe staples made by a brand that cares about where stuff is made. Beautifully presented.",
+      "cta": "Shop staples",
+      "headline_no_name": "Give the gift of transparent pricing",
+      "angle": "giftable",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, know where your clothes are made",
+      "body": "We believe in transparent-pricing wardrobe staples and care deeply about where stuff is made. Shop with complete supply chain clarity.",
+      "cta": "Shop transparently",
+      "headline_no_name": "Know exactly where your clothes are made",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    }
+  ]
+}
