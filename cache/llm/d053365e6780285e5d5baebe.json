@@ -1,0 +1,87 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Ready for your next PR, {first_name}?",
+      "body": "Upgrade your training with lifting apparel designed for the 18-30 crowd. Get a first-order discount on our $30-60 leggings and tees.",
+      "cta": "Shop lifting gear",
+      "headline_no_name": "Built for your next PR",
+      "angle": "Focuses on lifting identity and dedicated training apparel performance",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Elevate your training session, {first_name}",
+      "body": "Gear up for your weekly sessions. Save with a first-order discount on $30-60 lifting leggings and tees, plus free shipping.",
+      "cta": "Claim my discount",
+      "headline_no_name": "Elevate your training session",
+      "angle": "Focuses on the value offer of first-order discounts and free shipping thresholds",
+      "claims_used": [
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The perfect gift for your lifting partner, {first_name}",
+      "body": "Gift premium lifting and training apparel. Shop leggings and tees in the $30-60 range with a first-order discount today.",
+      "cta": "Shop gifts",
+      "headline_no_name": "The perfect gift for your lifting partner",
+      "angle": "Frames the training apparel as a premium gift option for workout partners",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range",
+        "First-order discount"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "A Halloween treat for your favorite lifter, {first_name}",
+      "body": "Treat them to new lifting leggings and tees in the $30-60 range. Get a first-order discount and unlock free shipping thresholds.",
+      "cta": "Shop training gear",
+      "headline_no_name": "A Halloween treat for your favorite lifter",
+      "angle": "Leans into the Halloween seasonal moment for gifting",
+      "claims_used": [
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your training sessions, {first_name}",
+      "body": "Support your lifting routine with dedicated training apparel. High-quality leggings and tees in the $30-60 range.",
+      "cta": "Shop lifting gear",
+      "headline_no_name": "Optimize your training sessions",
+      "angle": "Appeals to the optimizer's focus on supporting physical routines and training outcomes",
+      "claims_used": [
+        "Lifting and training apparel for a 18-30 crowd",
+        "Leggings and tees in the $30-60 range"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Gear built for your training metrics, {first_name}",
+      "body": "Elevate your physical system. Get a first-order discount on $30-60 lifting leggings and tees, plus free shipping thresholds.",
+      "cta": "Get my training gear",
+      "headline_no_name": "Gear built for your training metrics",
+      "angle": "Focuses on building an optimal kit using the first-order discount and free shipping thresholds",
+      "claims_used": [
+        "Leggings and tees in the $30-60 range",
+        "First-order discount",
+        "Big on free shipping thresholds"
+      ]
+    }
+  ]
+}

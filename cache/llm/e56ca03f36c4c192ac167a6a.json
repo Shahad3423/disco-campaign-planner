@@ -1,0 +1,16 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, optimize your hair's structural bonds",
+      "body": "Optimize your hair routine with targeted bond repair for damaged hair. Formulated to support structural bond health at the core.",
+      "cta": "Shop bond repair",
+      "headline_no_name": "Optimize your hair's structural bonds",
+      "angle": "science-backed claims",
+      "claims_used": [
+        "Bond repair for damaged hair"
+      ]
+    }
+  ]
+}

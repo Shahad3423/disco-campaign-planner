@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "{first_name}, help your dog stay calm this Halloween",
+      "body": "Halloween noises can be scary. Support your anxious or older dog with our premium hemp oil and chews. Backed by a 30-day guarantee.",
+      "cta": "Shop calming chews",
+      "headline_no_name": "Help your dog stay calm this Halloween",
+      "angle": "Seasonal moment and emotional connection to keep pets calm during stressful events",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "Give your senior dog the comfort they deserve, {first_name}",
+      "body": "Keep your family member happy. Our hemp oil and chews support anxious or older dogs. Try it risk-free with our 30-day guarantee.",
+      "cta": "Shop senior hemp oil",
+      "headline_no_name": "Give your senior dog the comfort they deserve",
+      "angle": "Emotional connection targeting owners of senior dogs who view pets as family",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your dog's daily wellness, {first_name}",
+      "body": "Target your dog's wellness routine. Our premium hemp oil and chews are crafted for anxious or older dogs. Includes a 30-day guarantee.",
+      "cta": "Shop hemp oil",
+      "headline_no_name": "Optimize your dog's daily wellness",
+      "angle": "Outcome-focused quality targeting system-minded wellness optimization for pets",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, support your dog's natural balance",
+      "body": "Help your anxious or older dog thrive. Try our premium quality hemp oil and chews completely risk-free with a 30-day guarantee.",
+      "cta": "Try hemp chews",
+      "headline_no_name": "Support your dog's natural balance",
+      "angle": "Supportive functional outcome focusing on premium ingredient formulation",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, stress-free support for your dog",
+      "body": "Keep family life peaceful. Try our hemp oil and chews for anxious or older dogs risk-free with an easy 30-day guarantee.",
+      "cta": "Try risk-free",
+      "headline_no_name": "Stress-free support for your dog",
+      "angle": "Easy returns and hassle-free peace of mind for busy households",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "An easy routine for your anxious or older dog",
+      "body": "No complicated steps. Support your busy household's dog with our hemp oil and chews, backed by a simple 30-day guarantee.",
+      "cta": "Shop dog hemp chews",
+      "headline_no_name": "An easy routine for your anxious or older dog",
+      "angle": "Time-saving simplicity and straightforward routine integration",
+      "claims_used": [
+        "30-day guarantee",
+        "Hemp oil and chews for anxious or older dogs"
+      ]
+    }
+  ]
+}

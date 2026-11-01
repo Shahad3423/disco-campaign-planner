@@ -1,0 +1,116 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, upgrade your daily uniform",
+      "body": "Get aesthetic silk for $60 and cashmere sweaters for $50. Real luxury materials without the markup. Your closet will thank you.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Upgrade your daily uniform",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "silk for $60",
+        "Cashmere sweaters for $50",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Real silk and cashmere, no gatekeeping",
+      "body": "We believe in transparent pricing. Get premium silk for $60 and cashmere sweaters for $50, made without traditional retail markups.",
+      "cta": "Get the look",
+      "headline_no_name": "Real silk and cashmere, no gatekeeping",
+      "angle": "values-aligned",
+      "claims_used": [
+        "silk for $60",
+        "Cashmere sweaters for $50",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Give luxury they'll actually wear, {first_name}",
+      "body": "Gift them pure cashmere sweaters for $50 and silk for $60. High-quality materials without the traditional retail markup.",
+      "cta": "Shop luxury gifts",
+      "headline_no_name": "Give luxury they'll actually wear",
+      "angle": "giftable",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Unbelievable gifts, transparent prices",
+      "body": "Delight them with cashmere sweaters for $50 and silk for $60. Luxury materials without the markup make the perfect gift.",
+      "cta": "Shop gift collection",
+      "headline_no_name": "Unbelievable gifts, transparent prices",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "Timeless luxury materials, {first_name}",
+      "body": "Invest in classic cashmere sweaters for $50 and elegant silk for $60. Experience luxury materials without the traditional retail markup.",
+      "cta": "Shop classic styles",
+      "headline_no_name": "Timeless luxury materials",
+      "angle": "quality-focused",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Understated elegance, transparently priced",
+      "body": "Enjoy pure silk for $60 and luxury cashmere sweaters for $50. High-quality wardrobe foundations, offered without traditional markups.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Understated elegance, transparently priced",
+      "angle": "understated",
+      "claims_used": [
+        "silk for $60",
+        "Cashmere sweaters for $50",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, skip the traditional retail markup",
+      "body": "Get cashmere sweaters for $50 and real silk for $60. Enjoy affordable luxury materials with transparent pricing and no retail markup.",
+      "cta": "Shop the savings",
+      "headline_no_name": "Skip the traditional retail markup",
+      "angle": "clear value props",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Cashmere for $50, silk for $60",
+      "body": "Why pay more? Get luxury materials without the traditional retail markup. Transparent pricing means high quality at fair prices.",
+      "cta": "Shop direct prices",
+      "headline_no_name": "Cashmere for $50, silk for $60",
+      "angle": "discount-forward",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    }
+  ]
+}

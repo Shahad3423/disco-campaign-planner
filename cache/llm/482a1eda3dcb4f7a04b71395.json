@@ -1,0 +1,80 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your hair routine.",
+      "body": "Get customized shampoo and conditioner formulated for your specific hair type, goals, and scent preferences via our quiz.",
+      "cta": "Take the hair quiz",
+      "headline_no_name": "Optimize your hair routine.",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Precision hair care for {first_name}.",
+      "body": "A personalized formula built from your hair type and goals. Get automatic refills delivered to your door every 2 months.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Precision hair care, customized.",
+      "angle": "science-backed claims",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent.",
+        "Subscription refills every 2 months."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, match your hair to your vibe.",
+      "body": "No generic bottles here. Take our quiz to customize your shampoo and conditioner by hair type, goals, and your favorite scent.",
+      "cta": "Customize my bottles",
+      "headline_no_name": "Match your hair to your vibe.",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "No scary hair days for {first_name}.",
+      "body": "Skip the tricks. Get customized shampoo and conditioner built from a quiz for your hair type, goals, and scent, delivered every 2 months.",
+      "cta": "Take the quiz",
+      "headline_no_name": "No scary hair days.",
+      "angle": "playful",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent.",
+        "Subscription refills every 2 months."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "headline": "{first_name}, never run out of shampoo.",
+      "body": "Get customized shampoo and conditioner built from a quick quiz. Refills are automatically delivered to your door every 2 months.",
+      "cta": "Get auto-refills",
+      "headline_no_name": "Never run out of shampoo again.",
+      "angle": "subscription perks",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent.",
+        "Subscription refills every 2 months."
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "headline": "Your custom hair routine, sorted for {first_name}.",
+      "body": "Quiz to customize your shampoo and conditioner by hair type, goals, and scent. Auto-refills delivered every 2 months.",
+      "cta": "Take the hair quiz",
+      "headline_no_name": "Your custom hair routine, sorted.",
+      "angle": "speed",
+      "claims_used": [
+        "Customized shampoo and conditioner built from a quiz - hair type, goals, scent.",
+        "Subscription refills every 2 months."
+      ]
+    }
+  ]
+}

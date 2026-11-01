@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give a gift made with care",
+      "body": "Impress them with transparent-pricing wardrobe staples. Perfect for someone who cares about where their clothes are made.",
+      "cta": "Shop staple gifts",
+      "headline_no_name": "Give a gift made with care",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "The perfect gift for their wardrobe, {first_name}",
+      "body": "Gift transparent-pricing wardrobe staples. High-quality tees and denim for someone who cares about where stuff is made.",
+      "cta": "Shop daily staples",
+      "headline_no_name": "The perfect gift for their wardrobe",
+      "angle": "giftable essentials",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, discover transparent pricing",
+      "body": "Get wardrobe staples without the mystery markup. We offer transparent-pricing wardrobe staples and care about where stuff is made.",
+      "cta": "Shop honest pricing",
+      "headline_no_name": "Discover transparent pricing",
+      "angle": "clear value props",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "No tricks, just transparent pricing",
+      "body": "This Halloween, treat yourself to transparent-pricing wardrobe staples from a brand that cares about where stuff is made.",
+      "cta": "Shop staple value",
+      "headline_no_name": "No tricks, just transparent pricing",
+      "angle": "seasonal value",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, know where your clothes are made",
+      "body": "We care about where stuff is made. Shop our transparent-pricing wardrobe staples crafted with ethical manufacturing values.",
+      "cta": "Shop ethical denim",
+      "headline_no_name": "Know where your clothes are made",
+      "angle": "ethical manufacturing",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Staples designed with total transparency",
+      "body": "Choose transparent-pricing wardrobe staples. We are a brand that cares about where stuff is made and how it's priced.",
+      "cta": "Shop honest staples",
+      "headline_no_name": "Staples designed with total transparency",
+      "angle": "supply chain transparency",
+      "claims_used": [
+        "Transparent-pricing wardrobe staples",
+        "Cares about where stuff is made"
+      ]
+    }
+  ]
+}

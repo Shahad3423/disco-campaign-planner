@@ -1,0 +1,88 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your skin's health.",
+      "body": "Get a custom skincare formula targeting acne or anti-aging, prescribed by licensed providers. Try it free, just pay shipping.",
+      "cta": "Claim my free trial",
+      "headline_no_name": "Optimize your skin's health.",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "A formula tailored to your skin.",
+      "body": "Licensed providers design custom skincare formulas targeting acne and anti-aging. Start your trial today, just pay shipping.",
+      "cta": "Start my free trial",
+      "headline_no_name": "A formula tailored to your skin.",
+      "angle": "science-backed claims",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, no scary skin tricks here.",
+      "body": "Skip the spooky routines. Get custom skincare formulas from licensed providers for acne or anti-aging. Free trial, just pay shipping.",
+      "cta": "Claim my free trial",
+      "headline_no_name": "No scary skin tricks here.",
+      "angle": "playful",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "Skincare made uniquely for you.",
+      "body": "Say goodbye to generic bottles. Get custom formulas for acne and anti-aging from licensed providers. Free trial, just pay shipping.",
+      "cta": "Start my free trial",
+      "headline_no_name": "Skincare made uniquely for you.",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "headline": "{first_name}, skip the store. Your formula is here.",
+      "body": "Get custom skincare formulas targeting acne and anti-aging from licensed providers sent to you. Free trial, just pay shipping.",
+      "cta": "Claim my free trial",
+      "headline_no_name": "Skip the store. Your custom formula is here.",
+      "angle": "speed",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "headline": "Custom skincare, delivered directly.",
+      "body": "Licensed providers design custom formulas targeting acne and anti-aging. Get yours shipped straight to you. Free trial, just pay shipping.",
+      "cta": "Start my free trial",
+      "headline_no_name": "Custom skincare, delivered directly.",
+      "angle": "one-click",
+      "claims_used": [
+        "Custom skincare formulas from licensed providers",
+        "Mostly acne and anti-aging",
+        "Free trial, just pay shipping"
+      ]
+    }
+  ]
+}

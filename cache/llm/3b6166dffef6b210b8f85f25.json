@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give the gift of premium comfort",
+      "body": "Give soft, performance-y everyday clothing that transitions beautifully. Perfect for anyone who wants to go from gym to coffee.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the gift of premium comfort",
+      "angle": "giftable",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "The ultimate premium gift set for {first_name}",
+      "body": "Gift them soft, performance-y everyday clothing. They can easily go from gym to coffee in style with this premium presentation.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "The ultimate premium clothing gift",
+      "angle": "gift sets",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your daily routine, {first_name}",
+      "body": "Streamline your day with soft, performance-y everyday clothing. Designed to help you go from gym to coffee with zero friction.",
+      "cta": "Shop performance",
+      "headline_no_name": "Optimize your daily routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "{first_name}, functional wear built to transition",
+      "body": "Invest in durable, soft, performance-y everyday clothing. Engineered to let you go from gym to coffee efficiently.",
+      "cta": "Shop everyday gear",
+      "headline_no_name": "Functional wear built to transition",
+      "angle": "avoiding fast fashion with high-utility essentials",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "{first_name}, gear built for your active day",
+      "body": "Get soft, performance-y everyday clothing that keeps up. Designed to go from gym to coffee without missing a beat.",
+      "cta": "Shop active joggers",
+      "headline_no_name": "Gear built for your active day",
+      "angle": "performance claims",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "A treat for your training, {first_name}",
+      "body": "No tricks here. Get soft, performance-y everyday clothing designed to easily go from gym to coffee this season.",
+      "cta": "Shop activewear",
+      "headline_no_name": "A treat for your training",
+      "angle": "seasonal moment with performance focus",
+      "claims_used": [
+        "Soft, performance-y everyday clothing",
+        "Go from gym to coffee"
+      ]
+    }
+  ]
+}

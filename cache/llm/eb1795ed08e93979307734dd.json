@@ -1,0 +1,108 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "headline": "{first_name}, choose fewer, better things.",
+      "body": "Discover high-quality leather totes, cashmere wraps, and capsule wardrobe pieces designed for those who have outgrown fast fashion.",
+      "cta": "Shop leather totes",
+      "headline_no_name": "Choose fewer, better things.",
+      "angle": "understated quality and craftsmanship focus",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "{first_name}, invest in classic style.",
+      "body": "Elevate your wardrobe with high-quality leather totes and cashmere wraps designed to last. Understated elegance for every day.",
+      "cta": "Shop cashmere wraps",
+      "headline_no_name": "Invest in classic style.",
+      "angle": "longevity and classic heritage focus",
+      "claims_used": [
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Give the gift of classic quality, {first_name}.",
+      "body": "Delight them with high-quality leather totes and cashmere wraps. Beautifully designed capsule wardrobe pieces made for lasting style.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give the gift of classic quality.",
+      "angle": "premium giftability and presentation",
+      "claims_used": [
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, find the perfect premium gift.",
+      "body": "Gift fewer, better things. Our high-quality leather totes and cashmere wraps are designed for those who appreciate lasting elegance.",
+      "cta": "Gift cashmere wraps",
+      "headline_no_name": "Find the perfect premium gift.",
+      "angle": "thoughtful luxury gifting",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, embrace fewer, better things.",
+      "body": "Choose sustainable, classic capsule wardrobe pieces and high-quality leather totes designed to help you outgrow fast fashion.",
+      "cta": "Shop capsule pieces",
+      "headline_no_name": "Embrace fewer, better things.",
+      "angle": "sustainability and capsule wardrobe focus",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Ready to outgrow fast fashion, {first_name}?",
+      "body": "Invest in sustainable, high-quality leather totes and cashmere wraps. Classic pieces designed for longevity, not landfills.",
+      "cta": "Shop slow fashion",
+      "headline_no_name": "Ready to outgrow fast fashion?",
+      "angle": "anti-fast-fashion ethical footprint",
+      "claims_used": [
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "{first_name}, curate your dream capsule.",
+      "body": "Elevate your aesthetic with sustainable, high-quality leather totes and cashmere wraps. Classic pieces made to last.",
+      "cta": "Shop leather totes",
+      "headline_no_name": "Curate your dream capsule.",
+      "angle": "aesthetic-forward curation",
+      "claims_used": [
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "{first_name}, it’s time for fewer, better things.",
+      "body": "Ditch the fast fashion cycle. Discover high-quality leather totes and classic capsule wardrobe pieces designed for your signature style.",
+      "cta": "Shop capsule pieces",
+      "headline_no_name": "It’s time for fewer, better things.",
+      "angle": "values-aligned alternative to fast fashion trends",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, save on multi-packs",
+      "body": "Comfort socks and tees made for the whole family. Grab our multi-packs to get more value and donate to those in need with every purchase.",
+      "cta": "Shop multi-packs",
+      "headline_no_name": "Save on multi-packs for the family",
+      "angle": "bundle offers and family value",
+      "claims_used": [
+        "Great for families buying multi-packs",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Double the impact of your everyday basics",
+      "body": "Get cozy comfort socks and tees that do good. Every single purchase donates an essential item to someone experiencing homelessness.",
+      "cta": "Shop comfort basics",
+      "headline_no_name": "Double the impact of your everyday basics",
+      "angle": "clear value proposition and social good impact",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give a gift that gives back",
+      "body": "Our comfort socks and tees are great for gifting. Plus, every purchase donates an essential item to someone experiencing homelessness.",
+      "cta": "Shop gift sets",
+      "headline_no_name": "Give a gift that gives back",
+      "angle": "gift sets and premium presentation",
+      "claims_used": [
+        "Great for gifting",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Treat them to cozy comfort this Halloween",
+      "body": "These comfort socks and tees make the perfect cozy gift. Every purchase donates an item to someone experiencing homelessness.",
+      "cta": "Shop gift collection",
+      "headline_no_name": "Treat them to cozy comfort this Halloween",
+      "angle": "seasonal gifting moment",
+      "claims_used": [
+        "Great for gifting",
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily comfort",
+      "body": "Support your physical well-being with premium comfort socks and tees designed for daily wear. Every purchase donates to someone in need.",
+      "cta": "Shop comfort socks",
+      "headline_no_name": "Optimize your daily comfort",
+      "angle": "outcome-focused physical comfort",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Align your daily basics with your values",
+      "body": "Elevate your daily routine. Every single purchase of our comfort socks and tees donates an item to someone experiencing homelessness.",
+      "cta": "Shop comfort tees",
+      "headline_no_name": "Align your daily basics with your values",
+      "angle": "values alignment and purposeful living",
+      "claims_used": [
+        "Every purchase donates an item to someone experiencing homelessness"
+      ]
+    }
+  ]
+}

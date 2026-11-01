@@ -10,6 +10,7 @@ quality_weights:
   notes_fit: 0.20        # LLM read of the host's free-text notes (bounded influence)
   scale: 0.05            # log monthly impressions; tiny so big hosts don't win on size alone
   seasonality: 0.10      # gifting uplift close to Nov-Dec for giftable products
+  facet_fit: 0.10        # tree method: share of the advertiser's stated facets (values, model, occasion...) the host also has
 
 # Aggregation family (docs/SCORING.md):
 #   score = category_fit^relevance_exponent x price_fit^price_exponent x M_p(quality components; weights)
@@ -22,6 +23,9 @@ price_exponent: 0.5
 quality_p: 1.0
 
 category:
+  method: tags                # tags = tag-kind rules (default); tree = taxonomy similarity + facets (D27, experimental: did not beat tags)
+  specific_only: true         # tree: use only the advertiser's most specific product tags (drop a tag whose child is also listed)
+  similarity_power: 1.0       # tree: similarity ** power; 2 makes siblings count for less
   category_only_cap: 0.5      # "apparel" alone can't make a strong match
   attribute_only_cap: 0.15
   extra_specific_bonus: 0.10  # per additional specific tag (x its weight)
@@ -54,6 +58,8 @@ recommend:
   weak_fit_max_publishers: 3   # no 'strong' host -> small test only
   strong_min_price_fit: 0.40    # strong = specific subcategory match AND shoppers spend near this price
   category_only_min_persona_fit: 0.5  # a host linked only by a broad category ('apparel') needs audience evidence too
+  weak_topic_below: 0.5              # tree method: a topic link weaker than this also needs persona fit >= category_only_min_persona_fit
+  strong_min_relevance: 0.8          # tree method: 'strong' fit = topic similarity at least this (same product or a close sibling)
 
 # income tier ordering used by price_fit
 income_tiers: [low, mid, mid-high, high]

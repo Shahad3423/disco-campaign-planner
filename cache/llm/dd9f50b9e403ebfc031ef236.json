@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "{first_name}, discover classic design for your daily walks.",
+      "body": "Elevate your daily routine with design-forward dog walking gear made for longevity, simplicity, and understated style.",
+      "cta": "Shop walking gear",
+      "headline_no_name": "Discover classic design for your daily walks.",
+      "angle": "quality-focused and understated design",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, make dog walks easier and more organized.",
+      "body": "Simplify your family routine with design-forward dog walking gear that keeps you organized and ready to go in seconds.",
+      "cta": "Shop easy walk gear",
+      "headline_no_name": "Make dog walks easier and more organized.",
+      "angle": "time-saving and family-friendly convenience",
+      "claims_used": [
+        "Design-forward dog walking gear"
+      ]
+    }
+  ]
+}

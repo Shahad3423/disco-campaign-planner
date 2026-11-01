@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "Looking for the perfect eco-friendly gift, {first_name}?",
+      "body": "Give beautiful fair trade organic cotton baby clothes and tees. Premium quality that parents love, all for around $30 an item.",
+      "cta": "Shop organic gifts",
+      "headline_no_name": "Looking for the perfect eco-friendly gift?",
+      "angle": "Premium presentation and giftable organic sets for eco-minded parents",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Affordable, around $30 an item",
+        "Eco-minded parents especially"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Ethical & fair trade organic cotton for {first_name}",
+      "body": "We source fair trade organic cotton underwear and tees. Know your clothes are ethically made and sustainably sourced, around $30 an item.",
+      "cta": "Shop fair trade",
+      "headline_no_name": "Ethical & fair trade organic cotton essentials",
+      "angle": "Ethical supply chain transparency focusing on fair trade and organic cotton",
+      "claims_used": [
+        "Fair trade organic cotton underwear, tees and baby clothes",
+        "Affordable, around $30 an item"
+      ]
+    }
+  ]
+}

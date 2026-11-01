@@ -1,0 +1,148 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "renewable",
+        "sustainable"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline.",
+        "Uses vague eco claims ('sustainable', 'renewable') which this persona explicitly avoids in favor of specific certifications and supply chain transparency."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "sustainable"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague eco claims ('sustainable') which this persona explicitly avoids in favor of specific certifications and supply chain transparency."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "natural"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "high-performance"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "natural",
+        "premium",
+        "understated luxury"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "premium"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the end of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "last",
+        "built for daily wear"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the end of the headline.",
+        "Fails to include discount-forward, bundle, or review-focused messaging preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "keep them feeling like new"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline.",
+        "Fails to include discount-forward, bundle, or review-focused messaging preferred by this persona."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement at the start of the headline.",
+        "Seasonal reference ('autumn', 'No tricks here') limits evergreen ad usage."
+      ],
+      "passed": false
+    }
+  ]
+}

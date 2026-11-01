@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, try renewable tree-fiber sneakers",
+      "body": "Made from sustainable Merino wool and tree-fiber, these comfort-first sneakers are fully machine-washable.",
+      "cta": "Shop sustainable",
+      "headline_no_name": "Try renewable tree-fiber sneakers",
+      "angle": "Material transparency",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "Sustainable Merino wool & tree-fiber shoes",
+      "body": "Choose comfort-first sneakers made with sustainable Merino wool and tree-fiber. Fully machine-washable for easy care.",
+      "cta": "Shop Merino styles",
+      "headline_no_name": "Sustainable Merino wool & tree-fiber shoes",
+      "angle": "Material-driven sustainability",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "{first_name}, get easy-to-clean comfort",
+      "body": "Invest in comfort-first sneakers made from Merino wool and tree-fiber. They are machine-washable to keep them feeling like new.",
+      "cta": "Shop washable styles",
+      "headline_no_name": "Get easy-to-clean comfort",
+      "angle": "Value through easy maintenance",
+      "claims_used": [
+        "Merino wool and tree-fiber sneakers",
+        "Machine-washable",
+        "Comfort-first"
+      ]
+    }
+  ]
+}

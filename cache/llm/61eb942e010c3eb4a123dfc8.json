@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Give the gift of luxury, {first_name}",
+      "body": "Delight them with cashmere sweaters for $50 and silk for $60. High-quality luxury materials without the traditional markup.",
+      "cta": "Shop luxury gifts",
+      "headline_no_name": "Give the gift of luxury",
+      "angle": "giftable",
+      "claims_used": [
+        "Cashmere sweaters for $50",
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "headline": "Classic cashmere and silk styles for {first_name}",
+      "body": "Invest in timeless wardrobe essentials. Enjoy high-quality luxury materials like silk for $60, without the traditional markup.",
+      "cta": "Shop classic styles",
+      "headline_no_name": "Classic cashmere and silk styles",
+      "angle": "quality-focused",
+      "claims_used": [
+        "silk for $60",
+        "luxury materials without the markup"
+      ]
+    }
+  ]
+}

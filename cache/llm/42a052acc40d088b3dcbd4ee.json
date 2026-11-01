@@ -1,0 +1,88 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "{first_name}, give a gift with heritage.",
+      "body": "Surprise the marathon runner in your life with premium New England running apparel. Our classic jackets start at $200+.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Give a gift with heritage.",
+      "angle": "gifting premium presentation",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "jackets $200+"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "The ultimate gift for serious marathoners",
+      "body": "Delight them with classic New England running apparel. Gift premium singlets from $58 and iconic jackets from $200+.",
+      "cta": "Shop running apparel",
+      "headline_no_name": "The ultimate gift for serious marathoners",
+      "angle": "giftable premium apparel",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "jackets $200+",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Built for serious recreational marathoners",
+      "body": "Gear up for your next 26.2. Classic New England running apparel, from singlets starting at $58 to premium jackets.",
+      "cta": "Shop running gear",
+      "headline_no_name": "Built for serious recreational marathoners",
+      "angle": "performance and athlete focus",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "{first_name}, gear up like a marathoner.",
+      "body": "Train hard in premium New England running apparel. High-quality singlets from $58 and running jackets from $200+.",
+      "cta": "Shop the collection",
+      "headline_no_name": "Gear up like a serious marathoner.",
+      "angle": "technical gear focus",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "singlets from $58",
+        "jackets $200+",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your marathon training.",
+      "body": "Invest in durable, heritage New England running apparel. Built for serious recreational marathoners who demand quality.",
+      "cta": "Shop premium apparel",
+      "headline_no_name": "Optimize your marathon training.",
+      "angle": "outcome-focused quality",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Premium running apparel built to last",
+      "body": "Skip fast fashion. Choose New England heritage running apparel crafted for serious recreational marathoners. Jackets $200+.",
+      "cta": "Shop premium jackets",
+      "headline_no_name": "Premium running apparel built to last",
+      "angle": "avoiding fast fashion",
+      "claims_used": [
+        "Running apparel with a heritage, New England feel",
+        "jackets $200+",
+        "Our customer is a serious recreational marathoner, higher income, 30-55"
+      ]
+    }
+  ]
+}

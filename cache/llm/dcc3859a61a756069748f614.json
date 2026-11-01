@@ -1,0 +1,17 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Prioritize your skin's health, {first_name}.",
+      "body": "Optimize your beauty routine with skincare and makeup for 'skin first' people. Discover our signature Boy Brow and Cloud Paint.",
+      "cta": "Shop skin-first",
+      "headline_no_name": "Prioritize your skin's health first.",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Skincare and makeup for 'skin first' people",
+        "known for Boy Brow and Cloud Paint"
+      ]
+    }
+  ]
+}

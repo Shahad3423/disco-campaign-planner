@@ -1,0 +1,83 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your hair routine",
+      "body": "Target structural damage. Our bond repair for damaged hair is a formula everyone should be using for optimal results.",
+      "cta": "Shop bond repair",
+      "headline_no_name": "Optimize your hair routine",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Salon-grade bond repair for {first_name}",
+      "body": "Get the formula designed for salon and retail. Our bond repair for damaged hair is a staple everyone should be using.",
+      "cta": "Buy the treatment",
+      "headline_no_name": "Salon-grade bond repair",
+      "angle": "science-backed claims",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it",
+        "Salon and retail"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "The hair routine upgrade {first_name} needs",
+      "body": "Swap damaged hair for your best look yet. This bond repair treatment is the staple everyone should be using.",
+      "cta": "Get the treatment",
+      "headline_no_name": "The hair routine upgrade you need",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "No scary hair days this season, {first_name}",
+      "body": "Keep your hair looking gorgeous, not ghostly. Try our bond repair for damaged hair, available in salon and retail.",
+      "cta": "Shop bond repair",
+      "headline_no_name": "No scary hair days this season",
+      "angle": "playful",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Salon and retail"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The premium hair gift {first_name} can share",
+      "body": "Share the ultimate upgrade. Our bond repair for damaged hair is a salon-quality treatment everyone should be using.",
+      "cta": "Shop the treatment",
+      "headline_no_name": "The premium hair gift everyone wants",
+      "angle": "giftable",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Everyone should be using it"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, give the gift of salon-quality hair",
+      "body": "Perfect for gifting. Find our bond repair for damaged hair, available online and in both salon and retail locations.",
+      "cta": "Buy the treatment",
+      "headline_no_name": "Give the gift of salon-quality hair",
+      "angle": "premium presentation",
+      "claims_used": [
+        "Bond repair for damaged hair",
+        "Salon and retail"
+      ]
+    }
+  ]
+}

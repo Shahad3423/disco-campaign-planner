@@ -1,0 +1,90 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, save time on daily chores",
+      "body": "Let this self-cleaning litter box handle the mess. Perfect for busy multi-cat homes. Try it risk-free with our 90-day trial.",
+      "cta": "Start 90-day trial",
+      "headline_no_name": "Save time on daily chores",
+      "angle": "time-saving and easy returns",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, less scooping for your busy home",
+      "body": "A self-cleaning litter box makes chores easier for the whole family. Great for multi-cat households. Try it for 90 days.",
+      "cta": "Shop the litter box",
+      "headline_no_name": "Less scooping for your busy home",
+      "angle": "family-friendly and multi-cat focus without luxury positioning",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "{first_name}, give your cats the best care",
+      "body": "Designed for pet parents who invest in quality. This self-cleaning litter box is ideal for multi-cat homes. Try it for 90 days.",
+      "cta": "Shop the litter box",
+      "headline_no_name": "Give your cats the best care",
+      "angle": "emotional connection and high-spending pet owner focus",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Converts well with people who already spend on pets",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "No scary chores for your cats, {first_name}",
+      "body": "Treat your pets this Halloween. This self-cleaning litter box is built for multi-cat homes. Try it risk-free for 90 days.",
+      "cta": "Start 90-day trial",
+      "headline_no_name": "No scary chores for your cats",
+      "angle": "Halloween seasonal moment and multi-cat focus",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "headline": "{first_name}, never scoop litter again",
+      "body": "Upgrade to a self-cleaning litter box. No hassle, perfect for multi-cat homes. Try it risk-free with a 90-day trial.",
+      "cta": "Try the litter box",
+      "headline_no_name": "Never scoop litter again",
+      "angle": "speed and frictionlessness",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "headline": "{first_name}, the ultimate chore shortcut",
+      "body": "Get a self-cleaning litter box for your multi-cat home. Priced at $500-700 with an easy 90-day trial.",
+      "cta": "Start 90-day trial",
+      "headline_no_name": "The ultimate chore shortcut",
+      "angle": "convenience and transparent pricing",
+      "claims_used": [
+        "Self-cleaning litter box",
+        "Priced at $500-700",
+        "Prefer multi-cat households",
+        "90-day trial helps conversion"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Equip your workout system, {first_name}",
+      "body": "Support your physical training system with activewear at $25-50 per piece. Billed monthly with a skip option to match your regimen.",
+      "cta": "Join the VIP club",
+      "headline_no_name": "Equip your workout system",
+      "angle": "outcome-focused system integration",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Smart activewear savings, {first_name}",
+      "body": "Get activewear at $25-50 per piece through our VIP membership. Billed monthly with a skip option so you only pay when you want.",
+      "cta": "Start VIP membership",
+      "headline_no_name": "Smart activewear savings",
+      "angle": "clear value props",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your movement routine, {first_name}",
+      "body": "Support your active lifestyle system. Get women's activewear at $25-50 per piece with a monthly VIP membership. Skip any month.",
+      "cta": "Join the VIP club",
+      "headline_no_name": "Optimize your daily movement routine",
+      "angle": "Systematic workout support",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Workout gear tailored to your schedule, {first_name}",
+      "body": "Build your optimal activewear collection. Our monthly VIP membership offers pieces at $25-50, with an easy skip option.",
+      "cta": "Get VIP activewear",
+      "headline_no_name": "Workout gear tailored to your schedule",
+      "angle": "Flexible scheduling and control",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "headline": "Activewear on autopilot, {first_name}",
+      "body": "Elevate your wardrobe effortlessly. Get women's activewear at $25-50 per piece, billed monthly with an easy skip option.",
+      "cta": "Start my membership",
+      "headline_no_name": "Activewear on autopilot",
+      "angle": "Autopilot subscription convenience",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "headline": "{first_name}, activewear that fits your schedule",
+      "body": "Enjoy the ultimate perk. Access women's activewear at $25-50 per piece with a flexible monthly membership. Skip anytime.",
+      "cta": "Join the VIP club",
+      "headline_no_name": "Activewear that fits your schedule",
+      "angle": "Frictionless flexibility with skip option",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "Smart savings on activewear, {first_name}",
+      "body": "Unlock value. Get women's activewear at just $25-50 per piece through our VIP membership. Billed monthly with a skip option.",
+      "cta": "Unlock VIP pricing",
+      "headline_no_name": "Smart savings on activewear",
+      "angle": "Direct price-to-value proposition",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "{first_name}, get premium activewear for less",
+      "body": "Pay only $25-50 per piece for women's activewear. Our monthly VIP membership lets you skip any month to stay on budget.",
+      "cta": "Shop VIP activewear",
+      "headline_no_name": "Get premium activewear for less",
+      "angle": "Budget control with skip option",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Gear up for your next workout, {first_name}",
+      "body": "Keep your training rotation fresh. Get women's activewear at $25-50 per piece with a monthly VIP membership and skip option.",
+      "cta": "Get my workout gear",
+      "headline_no_name": "Gear up for your next workout",
+      "angle": "Frequent training rotation support",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "{first_name}, activewear built for your routine",
+      "body": "Fuel your dedication. Our monthly VIP membership delivers women's activewear at $25-50 per piece. Skip any month.",
+      "cta": "Start my membership",
+      "headline_no_name": "Activewear built for your routine",
+      "angle": "Consistent activewear supply",
+      "claims_used": [
+        "VIP membership gives women activewear at $25-50 per piece",
+        "Billed monthly with skip option"
+      ]
+    }
+  ]
+}

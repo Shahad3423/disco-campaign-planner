@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "Looking for the perfect gift, {first_name}?",
+      "body": "Gift them premium studio-to-street apparel. High-end pieces priced from $80 to $130, perfect for everyone on your list.",
+      "cta": "Shop premium gifts",
+      "headline_no_name": "Looking for the perfect premium gift?",
+      "angle": "Premium giftability",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel",
+        "$80-130 per piece"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Upgrade your movement, {first_name}",
+      "body": "Premium yoga and studio-to-street apparel designed to transition with you. Active pieces priced from $80 to $130.",
+      "cta": "Shop yoga apparel",
+      "headline_no_name": "Upgrade your movement",
+      "angle": "Studio-to-street transition",
+      "claims_used": [
+        "Premium yoga and studio-to-street apparel",
+        "$80-130 per piece"
+      ]
+    }
+  ]
+}

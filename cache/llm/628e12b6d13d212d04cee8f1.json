@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "Choose fewer, better things, {first_name}",
+      "body": "Move past the fast fashion cycle. Discover high-quality leather totes, cashmere wraps, and capsule wardrobe pieces.",
+      "cta": "Shop capsule pieces",
+      "headline_no_name": "Choose fewer, better things",
+      "angle": "Focuses on intentional consumption and the fewer, better things philosophy as an alternative to fast fashion waste",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "headline": "For those who have outgrown fast fashion",
+      "body": "Streamline your closet with high-quality leather totes, cashmere wraps, and capsule pieces. Choose fewer, better things.",
+      "cta": "Shop the collection",
+      "headline_no_name": "For those who have outgrown fast fashion",
+      "angle": "Focuses on the transition away from fast fashion towards curated, high-quality pieces",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "An aesthetic built on fewer, better things",
+      "body": "Outgrow fast fashion. Elevate your daily look with high-quality leather totes, cashmere wraps, and classic capsule wardrobe pieces.",
+      "cta": "Shop the collection",
+      "headline_no_name": "An aesthetic built on fewer, better things",
+      "angle": "Aesthetic-forward curation focusing on elevated, high-quality essentials",
+      "claims_used": [
+        "Fewer, better things",
+        "High-quality leather totes, cashmere wraps, and capsule wardrobe pieces",
+        "Designed for affluent women who have outgrown fast fashion"
+      ]
+    }
+  ]
+}

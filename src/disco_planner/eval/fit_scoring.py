@@ -34,7 +34,7 @@ from disco_planner.planning.publisher_scoring import rank_publishers
 
 TODAY = date(2026, 10, 30)
 REPORTS = catalog.REPO_ROOT / "reports"
-QUALITY = ["audience_fit", "persona_fit", "notes_fit", "scale", "seasonality"]
+QUALITY = ["audience_fit", "persona_fit", "notes_fit", "scale", "seasonality", "facet_fit"]
 # Specification choices, from the grid in reports/fit_scoring.md:
 # EPS floors components before log(). At 1e-3 a zero category fit becomes log = -6.9, and the few judge
 # answers that prefer a no-link host make the fitter flatten the relevance exponent to escape huge log-loss

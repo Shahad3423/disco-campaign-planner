@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "High-quality tees and denim"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Invented product categories (tees and denim) and quality claims (high-quality) not supported by the stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Contains seasonal reference ('This Halloween') which limits the evergreen usage of the ad."
+      ],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "ethical denim",
+        "ethical manufacturing values"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The CTA introduces 'denim' which is not in the stated claims.",
+        "Caring about where stuff is made does not automatically substantiate 'ethical manufacturing values' or 'ethical denim', which also borders on vague eco/ethical claims that this persona avoids."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    }
+  ]
+}
