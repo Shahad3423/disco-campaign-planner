@@ -55,6 +55,42 @@ def category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str
     return min(1.0, base + bonus), detail
 
 
+def audience_density(profile: AdvertiserProfile, pub: Publisher) -> tuple[float | None, str]:
+    """Share of this host's shoppers who are in the advertiser's STATED audience (D26):
+    P(gender) x P(age in range), assuming the two are independent. Unlike audience_fit (does the host's age range
+    COVER my range?), this is a density: a broad host range covers any narrow target but is mostly out of it."""
+    parts, details = [], []
+    if profile.target_gender in ("female", "male"):
+        share = pub.audience.gender_split.get(profile.target_gender, 0.0)
+        parts.append(share)
+        details.append(f"{share:.0%} {profile.target_gender}")
+    target, host = _age_range(profile.target_age_range), _age_range(pub.audience.age_skew)
+    if target and host:
+        overlap = max(0, min(target[1], host[1]) - max(target[0], host[0]))
+        parts.append(overlap / max(1, host[1] - host[0]))
+        details.append(f"{overlap / max(1, host[1] - host[0]):.0%} of ages {pub.audience.age_skew} inside {profile.target_age_range}")
+    if not parts:
+        return None, "audience not stated"
+    density = 1.0
+    for part in parts:
+        density *= part
+    return density, " x ".join(details)
+
+
+def relevance(profile: AdvertiserProfile, pub: Publisher, topic: float, topic_detail: str) -> tuple[float, str, str]:
+    """Relevance = the larger of the topic link and a discounted audience density, when the advertiser stated an age
+    (one broad demographic proves nothing) and enough of the host's shoppers are in it. Returns (value, detail, source)."""
+    cfg = catalog.config("scoring")["relevance"]
+    density, density_d = audience_density(profile, pub)
+    if density is not None and cfg["audience_requires_age"] and not _age_range(profile.target_age_range):
+        density = None
+    audience_led = cfg["audience_only_discount"] * density if density is not None and density >= cfg["audience_evidence_min"] else 0.0
+    if audience_led > topic:
+        return audience_led, (f"audience-led: {density:.0%} of this host's shoppers are in your stated audience ({density_d}); "
+                              f"x {cfg['audience_only_discount']:g} = {audience_led:.2f}; topic link {topic:.2f} ({topic_detail})"), "audience"
+    return topic, topic_detail, ("topic" if topic > 0 else "none")
+
+
 def audience_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float | None, str]:
     """Average of the parts the advertiser actually stated (gender share, age overlap); None if neither."""
     parts, details = [], []
@@ -155,13 +191,25 @@ def power_mean(parts: list[tuple[float, float]], p: float, eps: float = 1e-3) ->
     return sum(w * v**p for v, w in parts) ** (1 / p)
 
 
+def combine(components: list[ScoreComponent], relevance_value: float) -> float:
+    """score = relevance^a x price^b x M_p(quality parts), with unknown parts left out."""
+    cfg = catalog.config("scoring")
+    price = next(c.value for c in components if c.name == "price_fit")
+    quality_parts = [(c.value, c.weight) for c in components
+                     if c.name not in ("category_fit", "price_fit") and c.value is not None]  # known parts only
+    quality = power_mean(quality_parts, cfg["quality_p"]) if quality_parts else 1.0
+    price_term = price ** cfg["price_exponent"] if price is not None else 1.0  # unknown price: no information
+    return relevance_value ** cfg["relevance_exponent"] * price_term * quality
+
+
 def score_publisher(
     profile: AdvertiserProfile, pub: Publisher, today: date, weights: dict[str, float] | None = None,
 ) -> PublisherScore:
     cfg = catalog.config("scoring")
     w = cfg["quality_weights"]
-    cat, cat_d = category_fit(profile, pub)
+    topic, topic_d = category_fit(profile, pub)
     aud, aud_d = audience_fit(profile, pub)
+    cat, cat_d, rel_source = relevance(profile, pub, topic, topic_d)
     price, price_d = price_fit(profile, pub)
     notes, notes_d, alignment = notes_fit(profile, pub)
     pfit, pfit_d = persona_fit(pub, weights or {})
@@ -180,11 +228,7 @@ def score_publisher(
     ]
     # score = relevance^a x affordability^b x M_p(quality)  (docs/SCORING.md):
     # relevance ~ will they click, affordability ~ will they buy, quality ~ everything else.
-    quality_parts = [(c.value, c.weight) for c in components
-                     if c.name not in ("category_fit", "price_fit") and c.value is not None]  # known parts only
-    quality = power_mean(quality_parts, cfg["quality_p"]) if quality_parts else 1.0
-    price_term = price ** cfg["price_exponent"] if price is not None else 1.0  # unknown price: no information
-    score = cat ** cfg["relevance_exponent"] * price_term * quality
+    score = combine(components, cat)
 
     flags = []
     competing = sorted(pub.tags & set(profile.competing_tags))
@@ -201,7 +245,7 @@ def score_publisher(
 
     return PublisherScore(
         publisher_id=pub.id, publisher_name=pub.name, score=round(score, 4),
-        components=components, flags=flags, recommended=False, reason="",
+        components=components, flags=flags, recommended=False, reason="", relevance_source=rel_source,
     )
 
 
@@ -229,7 +273,8 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
     # host with a real category link. A competitor may refuse (host setting, D21), so its score must not
     # raise the bar for everyone else. Competitors are still listed when they clear this bar.
     is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
-    anchor = next((s for s in scores if not is_comp(s) and s.components[0].value >= rec["min_category_fit"]), scores[0])
+    anchor = next((s for s in scores if not is_comp(s) and s.relevance_source == "topic"
+                   and s.components[0].value >= rec["min_category_fit"]), scores[0])
     cutoff = max(rec["min_score"], rec["relative_to_top"] * anchor.score)
     # If no host matches a specific subcategory, the network has no strong home for this
     # product: say so and propose a small test on a few hosts instead of a full spread.
@@ -263,4 +308,23 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
         if s.flags:
             s.reason += " Flags: " + " | ".join(s.flags)
 
+    mark_exploration(scores, picked > 0)
     return scores
+
+
+def mark_exploration(scores: list[PublisherScore], has_plan: bool) -> None:
+    """Pick the best EXCLUDED hosts as a small paid test (D26), so outcomes exist for pairs we'd otherwise never
+    observe. Ranked as if their relevance were at least the floor; skips competitor-flagged hosts and hosts whose
+    notes conflict with the brief."""
+    cfg = catalog.config("scoring")["exploration"]
+    if not has_plan or cfg["max_hosts"] <= 0:
+        return
+    candidates = []
+    for s in scores:
+        if s.recommended or any(f.startswith(("competitor_conflict", "audience_note_conflict")) for f in s.flags):
+            continue
+        candidates.append((combine(s.components, max(s.components[0].value, cfg["relevance_floor"])), s))
+    for floor_score, s in sorted(candidates, key=lambda x: -x[0])[: cfg["max_hosts"]]:
+        s.exploration = True
+        s.reason = (s.reason.split(" Flags:")[0] + f" Exploration test: would score {floor_score:.2f} with a relevance of "
+                    f"{cfg['relevance_floor']:g}; gets a small separate test budget.")

@@ -86,3 +86,57 @@ def test_cutoff_is_anchored_to_best_non_competitor():
     best_non_comp = next(s for s in scores if not is_comp(s) and s.components[0].value >= 0.2)
     assert best_non_comp.recommended
     assert "below cutoff" not in best_non_comp.reason
+
+
+# ---- D26: relevance = topic link OR stated audience; exploration -----------------------------------------------
+def test_audience_density_is_a_share_of_the_hosts_shoppers():
+    from disco_planner.data import catalog
+    from disco_planner.planning.publisher_scoring import audience_density
+    prof = dog_food_profile(target_gender="female", target_age_range="30-55")
+    everbody = catalog.publisher_by_id()["pub_006"]      # 99% female, ages 30-55
+    pawline = catalog.publisher_by_id()["pub_007"]       # 62% female, ages 30-55
+    d_e, _ = audience_density(prof, everbody)
+    d_p, _ = audience_density(prof, pawline)
+    assert abs(d_e - 0.99) < 0.01 and abs(d_p - 0.62) < 0.01   # gender share x (age range inside target = 100%)
+
+
+def test_stated_audience_can_make_a_host_relevant_without_a_topic_link():
+    from disco_planner.data import catalog
+    from disco_planner.planning.publisher_scoring import relevance
+    skincare_like = dog_food_profile(relevant_tags=[TagRelevance(tag="skincare", weight=1, why="x")], competing_tags=[],
+                                     target_gender="female", target_age_range="30-55")
+    everbody = catalog.publisher_by_id()["pub_006"]
+    value, detail, source = relevance(skincare_like, everbody, 0.0, "no category link")
+    assert source == "audience" and 0.55 < value < 0.62 and "of this host's shoppers" in detail
+    pawline = catalog.publisher_by_id()["pub_007"]       # only 62% in the audience: below the 0.7 evidence bar
+    assert relevance(skincare_like, pawline, 0.0, "no category link")[2] == "none"
+
+
+def test_one_broad_demographic_is_not_evidence():
+    from disco_planner.data import catalog
+    from disco_planner.planning.publisher_scoring import relevance
+    gender_only = dog_food_profile(relevant_tags=[TagRelevance(tag="skincare", weight=1, why="x")], competing_tags=[],
+                                   target_gender="female", target_age_range=None)
+    assert relevance(gender_only, catalog.publisher_by_id()["pub_006"], 0.0, "no category link")[2] == "none"
+
+
+def test_a_topic_link_still_beats_an_audience_only_guess():
+    from disco_planner.data import catalog
+    from disco_planner.planning.publisher_scoring import relevance
+    prof = dog_food_profile(target_gender="female", target_age_range="30-55")
+    value, _, source = relevance(prof, catalog.publisher_by_id()["pub_006"], 0.9, "strong topic link")
+    assert source == "topic" and value == 0.9
+
+
+def test_exploration_hosts_are_excluded_from_the_main_plan_and_capped():
+    from disco_planner.data import catalog
+    ranked = rank_publishers(dog_food_profile(), TODAY)
+    explore = [s for s in ranked if s.exploration]
+    assert 0 < len(explore) <= catalog.config("scoring")["exploration"]["max_hosts"]
+    assert all(not s.recommended for s in explore)
+    assert all(not any(f.startswith("competitor_conflict") for f in s.flags) for s in explore)
+
+
+def test_no_exploration_when_nothing_is_recommended():
+    prof = dog_food_profile(gate="off_network", gate_reason="B2B", is_consumer_product=False)
+    assert not any(s.exploration for s in rank_publishers(prof, TODAY))

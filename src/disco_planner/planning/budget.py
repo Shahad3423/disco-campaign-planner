@@ -78,6 +78,7 @@ def host_markets(scores: list[PublisherScore], brief: str, eco: Economics, input
     if not picks:
         return []
     top = picks[0].score
+    picks = picks + [s for s in scores if s.exploration]  # exploration hosts get a small separate test budget (D26)
     cvr_all = category_cvr(category)
     k_share = _cfg()["aggressiveness"][inputs.aggressiveness]
     out = []
@@ -95,7 +96,7 @@ def host_markets(scores: list[PublisherScore], brief: str, eco: Economics, input
         views = pubs[s.publisher_id].monthly_impressions * days / 30
         out.append(dict(score=s, fit=fit, ctr=ctr, cvr=cvr, needed=needed, k_max=k_max, audience=audience,
                         unit_per_view=unit_per_view, views=views, bucket=views / len(needed),
-                        competitor=any(f.startswith("competitor_conflict") for f in s.flags)))
+                        competitor=any(f.startswith("competitor_conflict") for f in s.flags), explore=s.exploration))
     return out
 
 
@@ -138,6 +139,7 @@ def _summary(markets: list[dict], taken: dict[str, int]) -> tuple[float, float]:
 
 def pricing_plan(eco: Economics, inputs: AdvertiserInputs, markets: list[dict]) -> PricingPlan:
     pri, pm = _cfg()["priors"], _cfg()["pricing_models"]
+    markets = [m for m in markets if not m.get("explore")]  # the price range describes the main plan, not test hosts
     q = lambda p: round(sorted(market.quantile(m["needed"], p) for m in markets)[len(markets) // 2], 2)
     cpc = Range(low=q(0.25), mid=q(0.5), high=q(0.75)) if markets else None
     unlock = (f"tCPA unlocks after conversion tracking is verified and {pm['tcpa_requirements']['min_conversions']} "
@@ -173,18 +175,26 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
     unit = OBJECTIVE_UNIT[inputs.objective]
     goal = float(inputs.goal_target) if inputs.goal_target else None
     stop_at_goal = goal is not None and inputs.when_goal_met == "stop"
+    all_markets = markets
+    markets = [m for m in all_markets if not m.get("explore")]      # the main plan: all the logic below works on these
+    explore = [m for m in all_markets if m.get("explore")]
+    budget_total = budget
+    ex_budget = budget_total * catalog.config("scoring")["exploration"]["budget_share"] if explore and not stop_at_goal else 0.0
+    budget = budget_total - ex_budget
     share_cap = inputs.max_share_per_host or cfg["allocation"]["max_share_per_host_default"]
     share_cap = max(share_cap, 1 / len(markets))  # a cap below 1/n hosts could never spend the budget
 
     taken = allocate(markets, budget, goal if stop_at_goal else None, share_cap)
+    taken.update(allocate(explore, ex_budget, None, 1.0) if ex_budget else {m["score"].publisher_id: 0 for m in explore})
     spend, units = _summary(markets, taken)
+    spend_ex, _ = _summary(explore, taken)
     _, units_uncapped = _summary(markets, allocate(markets, budget, goal if stop_at_goal else None, 1.0))
     full = {m["score"].publisher_id: m["k_max"] for m in markets}
     spend_full, max_deliverable = _summary(markets, full)
     lo, hi = cfg["allocation"]["forecast_spread"][inputs.objective]
 
     status, options, to_goal = "no_goal", [], None
-    exhausted = all(taken[pid] >= full[pid] for pid in taken)
+    exhausted = all(taken[pid] >= full[pid] for pid in full)
     binding = "inventory" if exhausted else "budget"
     aggressive_more = inputs.aggressiveness != "aggressive"
     if goal is not None:
@@ -216,7 +226,8 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
 
     pri = cfg["priors"]
     allocations = []
-    for m in markets:
+    total_spend = spend + spend_ex
+    for m in all_markets:
         s, pid = m["score"], m["score"].publisher_id
         k = taken[pid]
         spent_h = sum(_bucket_cost(m, i) for i in range(k))
@@ -227,7 +238,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
         avg_paid = spent_h / clicks if clicks else 0.0
         p25, p50, p75 = (round(market.quantile(m["needed"], q), 2) for q in (0.25, 0.5, 0.75))
         allocations.append(Allocation(
-            publisher_id=pid, publisher_name=s.publisher_name, share=round(spent_h / spend, 3) if spend else 0,
+            publisher_id=pid, publisher_name=s.publisher_name, share=round(spent_h / total_spend, 3) if total_spend else 0,
             budget_usd=round(spent_h, 2), cpc_bid_usd=bid, start_bid_usd=bid, win_share=round(k / len(m["needed"]), 3),
             avg_price_paid=round(avg_paid, 2), market_price=Range(low=p25, mid=p50, high=p75),
             audience_weight=round(m["audience"], 2),
@@ -236,8 +247,9 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
             expected_units=Range(low=round(units_h * lo, 1), mid=round(units_h, 1), high=round(units_h * hi, 1)),
             capacity_usd=round(sum(_bucket_cost(m, i) for i in range(m["k_max"])), 2),
             expected_impressions=round(impressions), expected_reach=round(impressions / pri["avg_frequency"]),
-            requires_host_approval=m["competitor"],
-            rationale=((f"not funded at this budget: cheaper {unit} are available on the other hosts first "
+            requires_host_approval=m["competitor"], exploration=bool(m.get("explore")),
+            rationale=(("EXPLORATION TEST (not in the main plan: " + s.reason.split(" Flags:")[0].replace("Excluded: ", "") + "). "
+                        if m.get("explore") else "") + (f"not funded at this budget: cheaper {unit} are available on the other hosts first "
                         f"(market price here ${p25:.2f}-${p75:.2f}); it gets budget as the budget grows or if a funded host declines"
                         if not k else
                         f"market price ${p25:.2f}-${p75:.2f} (median ${p50:.2f}); bidding ${bid:.2f} wins ~{k / len(m['needed']):.0%} "
@@ -252,7 +264,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
         pacing += "; stop when the goal is reached"
     total_impr = sum(a.expected_impressions for a in allocations)
     return BudgetPlan(
-        monthly_budget_usd=round(budget, 2), planned_spend_usd=round(spend, 2), objective=inputs.objective, unit=unit,
+        monthly_budget_usd=round(budget_total, 2), planned_spend_usd=round(total_spend, 2), objective=inputs.objective, unit=unit,
         goal_target=inputs.goal_target, when_goal_met=inputs.when_goal_met, aggressiveness=inputs.aggressiveness,
         max_share_per_host=round(share_cap, 2),
         forecast=Range(low=round(units * lo, 1), mid=round(units, 1), high=round(units * hi, 1)),
@@ -260,7 +272,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
         spend_to_reach_goal_usd=to_goal, max_deliverable=round(max_deliverable, 1),
         spend_at_full_inventory_usd=round(spend_full, 2), replan_options=options,
         expected_impressions=total_impr, expected_reach=round(total_impr / pri["avg_frequency"]),
-        daily_cap_usd=round(budget / days, 2), flight_start=today.isoformat(),
+        daily_cap_usd=round(budget_total / days, 2), flight_start=today.isoformat(),
         flight_end=(today + timedelta(days=days)).isoformat(), pacing=pacing, allocations=allocations, warnings=[],
     )
 

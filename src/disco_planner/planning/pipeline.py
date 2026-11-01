@@ -87,7 +87,7 @@ def run(
         economics=eco, pricing=pricing, budget=plan, bid_strategy=bids,
         targeting={
             "publishers_include": sorted(allowed_hosts),
-            "publishers_exclude": [{"id": s.publisher_id, "reason": s.reason} for s in scores if not s.recommended],
+            "publishers_exclude": [{"id": s.publisher_id, "reason": s.reason} for s in scores if not s.recommended and not s.exploration],
             "personas": [m.persona_id for m in selected],
             "geo": "US (no advertiser geo restriction stated)",
             "serve_time_signals": {

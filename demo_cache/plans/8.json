@@ -101,7 +101,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_016",
@@ -153,7 +155,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_004",
@@ -205,7 +209,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_002",
@@ -257,7 +263,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_005",
@@ -309,7 +317,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_012",
@@ -361,7 +371,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "relevance_source": "topic",
+   "exploration": false
   },
   {
    "publisher_id": "pub_001",
@@ -413,7 +425,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_003",
@@ -465,7 +479,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_007",
@@ -517,7 +533,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_008",
@@ -569,7 +587,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_009",
@@ -621,7 +641,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_010",
@@ -673,7 +695,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_011",
@@ -725,7 +749,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_013",
@@ -777,7 +803,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_014",
@@ -829,7 +857,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_015",
@@ -881,7 +911,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_017",
@@ -933,7 +965,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_018",
@@ -985,7 +1019,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_019",
@@ -1037,7 +1073,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   },
   {
    "publisher_id": "pub_020",
@@ -1089,7 +1127,9 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product."
+   "reason": "Excluded: no category link (multiplier) for this product.",
+   "relevance_source": "none",
+   "exploration": false
   }
  ],
  "personas": [
@@ -1553,7 +1593,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 44.66
+  "creative": 0.01
  },
  "creative_log": {
   "rounds": 2,
