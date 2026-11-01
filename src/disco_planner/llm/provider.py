@@ -15,6 +15,7 @@ import hashlib
 import json
 import os
 import re
+import threading
 import time
 from pathlib import Path
 from typing import Protocol, TypeVar
@@ -32,10 +33,14 @@ CACHE_ENABLED: contextvars.ContextVar[bool] = contextvars.ContextVar("cache_enab
 CALL_STATS: contextvars.ContextVar[dict | None] = contextvars.ContextVar("call_stats", default=None)
 
 
+_COUNT_LOCK = threading.Lock()  # intake samples run in threads; the counter is a read-then-write
+
+
 def _count(kind: str) -> None:
     stats = CALL_STATS.get()
     if stats is not None:
-        stats[kind] = stats.get(kind, 0) + 1
+        with _COUNT_LOCK:
+            stats[kind] = stats.get(kind, 0) + 1
 
 
 def _load_dotenv() -> None:
