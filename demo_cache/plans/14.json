@@ -23,14 +23,14 @@
     "why": "Core category: advertiser sells linen bedding."
    },
    {
-    "tag": "home_textiles",
-    "weight": 0.667,
-    "why": "Adjacent category: linen bedding falls under home textiles."
-   },
-   {
     "tag": "home",
     "weight": 0.667,
     "why": "Adjacent category: bedding is a home product."
+   },
+   {
+    "tag": "home_textiles",
+    "weight": 0.667,
+    "why": "Adjacent category: linen bedding falls under home textiles."
    }
   ],
   "competing_tags": [
@@ -94,7 +94,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches bedding, home_textiles, home (specific) (multiplier)"
+     "detail": "matches bedding, home, home_textiles (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -137,7 +137,7 @@
     "competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches bedding, home_textiles, home (specific) (multiplier); strongest supporting signal notes_fit (Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers.). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand",
+   "reason": "Recommended: matches bedding, home, home_textiles (specific) (multiplier); strongest supporting signal notes_fit (Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers.). Flags: competitor_conflict: host also sells bedding (100% of samples agree); it may need to opt in to show a competing brand",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -1324,60 +1324,63 @@
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "{first_name}, ready for a grown-up bedroom?",
-   "body": "Ditch the basic sheets everyone has. This is the mature aesthetic alternative you've been searching for.",
+   "headline": "Beyond the basic starter-pack sheets",
+   "body": "Grown-up linen bedding made in Portugal, for when you're ready to graduate.",
    "cta": "Shop linen sheets",
-   "headline_no_name": "Ready for a grown-up bedroom?",
-   "angle": "aesthetic-forward",
+   "headline_no_name": "Beyond the basic starter-pack sheets",
+   "angle": "swap",
    "claims_used": [
+    "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_003",
    "variant": 2,
-   "headline": "No tricks, just treats for your bed, {first_name}",
-   "body": "This Halloween, treat yourself to a grown-up aesthetic alternative to Brooklinen. Actually-breathable linen made in Portugal.",
-   "cta": "Shop linen bedding",
-   "headline_no_name": "No tricks, just treats for your bed",
-   "angle": "playful",
+   "headline": "No more scary sheets",
+   "body": "Skip the basic starter bedding. Get actually-breathable linen made in Portugal.",
+   "cta": "Shop the bedding",
+   "headline_no_name": "No more scary sheets",
+   "angle": "twist",
    "claims_used": [
-    "Grown-up aesthetic alternative to Brooklinen/Parachute",
-    "Actually-breathable stuff made in Portugal"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_005",
    "variant": 1,
-   "headline": "{first_name}, discover Portuguese craftsmanship",
-   "body": "Discover actually-breathable linen bedding meticulously made in Portugal. Designed for those who appreciate understated quality.",
-   "cta": "Shop linen bedding",
-   "headline_no_name": "Discover Portuguese craftsmanship",
-   "angle": "craftsmanship",
+   "headline": "Beyond the trendy bedding brands",
+   "body": "A grown-up aesthetic alternative. Actually-breathable linen made in Portugal.",
+   "cta": "Shop the linen",
+   "headline_no_name": "Beyond the trendy bedding brands",
+   "angle": "swap",
    "claims_used": [
-    "Actually-breathable stuff made in Portugal"
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
-   "headline": "A mature aesthetic for your home",
-   "body": "A grown-up aesthetic alternative to Brooklinen or Parachute. Experience the refined comfort of premium linen bedding.",
-   "cta": "Shop the collection",
-   "headline_no_name": "A mature aesthetic for your home",
-   "angle": "understated",
+   "headline": "A truly mature aesthetic",
+   "body": "Linen bedding made in Portugal that is actually breathable, not just trendy.",
+   "cta": "Shop the aesthetic",
+   "headline_no_name": "A truly mature aesthetic",
+   "angle": "payoff",
    "claims_used": [
+    "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "headline": "{first_name}, bedding made in Portugal",
-   "body": "Skip vague eco-buzzwords. Our actually-breathable linen is made in Portugal, offering a grown-up alternative to Brooklinen.",
-   "cta": "Shop linen bedding",
-   "headline_no_name": "Bedding made in Portugal",
-   "angle": "supply chain transparency",
+   "headline": "Where was your bedding made?",
+   "body": "Ours is made in Portugal. Actually-breathable linen with a mature aesthetic.",
+   "cta": "Shop Portuguese bedding",
+   "headline_no_name": "Where was your bedding made?",
+   "angle": "question",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
@@ -1386,11 +1389,11 @@
   {
    "persona_id": "persona_006",
    "variant": 2,
-   "headline": "{first_name}, transparently made in Portugal",
-   "body": "Know where your sheets are crafted. Get actually-breathable linen made in Portugal, a grown-up alternative to Parachute.",
-   "cta": "Shop linen sheets",
-   "headline_no_name": "Bedding transparently made in Portugal",
-   "angle": "supply chain transparency",
+   "headline": "Trade mass-market for Portuguese linen",
+   "body": "A grown-up aesthetic alternative. Actually-breathable bedding made in Portugal.",
+   "cta": "Shop the alternative",
+   "headline_no_name": "Trade mass-market for Portuguese linen",
+   "angle": "swap",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
@@ -1399,24 +1402,24 @@
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "Give a more grown-up gift, {first_name}",
-   "body": "Gift them a mature aesthetic alternative to standard bedding. Actually-breathable linen beautifully made in Portugal.",
-   "cta": "Shop gift sets",
-   "headline_no_name": "Give a more grown-up gift",
-   "angle": "giftable",
-   "claims_used": [
-    "Grown-up aesthetic alternative to Brooklinen/Parachute",
-    "Actually-breathable stuff made in Portugal"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 2,
-   "headline": "The ultimate housewarming gift",
-   "body": "Delight them with actually-breathable linen made in Portugal. A mature aesthetic alternative to ordinary bedding.",
+   "headline": "Better than another basic gift",
+   "body": "Give them actually-breathable linen made in Portugal, with a mature aesthetic.",
    "cta": "Shop premium linen",
-   "headline_no_name": "The ultimate housewarming gift",
-   "angle": "premium presentation",
+   "headline_no_name": "Better than another basic gift",
+   "angle": "swap",
+   "claims_used": [
+    "Actually-breathable stuff made in Portugal",
+    "Grown-up aesthetic alternative to Brooklinen/Parachute"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "Looking for a more mature gift?",
+   "body": "Give them actually-breathable linen bedding made in Portugal.",
+   "cta": "Buy the bedding",
+   "headline_no_name": "Looking for a more mature gift?",
+   "angle": "question",
    "claims_used": [
     "Actually-breathable stuff made in Portugal",
     "Grown-up aesthetic alternative to Brooklinen/Parachute"
@@ -1427,111 +1430,98 @@
   {
    "persona_id": "persona_003",
    "variant": 1,
+   "punch": 4,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen sheets"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_003",
    "variant": 2,
+   "punch": 4,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen",
-    "linen bedding"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "Seasonal Halloween reference limits the ad's evergreen usability and creates irrelevant urgency outside of October."
-   ],
-   "passed": false
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_005",
    "variant": 1,
-   "persona_fit": 5,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen bedding"
-   ],
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
+   "punch": 4,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen bedding"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "persona_fit": 3,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen",
-    "linen bedding"
-   ],
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "The copy tells the user to 'skip vague eco-buzzwords' but fails to provide any of the specific sustainability claims or certifications this persona actively looks for."
-   ],
-   "passed": false
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
-   "persona_fit": 3,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen",
-    "linen sheets"
-   ],
-   "distinct_from_others": false,
-   "issues": [
-    "The angle is nearly identical to Variant 1, relying on 'made in Portugal' as a proxy for transparency without offering actual supply chain details.",
-    "Uses the vague term 'transparently made' which the persona is skeptical of without concrete proof."
-   ],
-   "passed": false
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_010",
    "variant": 1,
+   "punch": 4,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen",
-    "gift sets"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [
-    "The CTA references 'gift sets' which are not supported by the stated claims."
-   ],
-   "passed": false
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
+   "punch": 4,
    "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "linen"
-   ],
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   }
  ],
  "config": {
@@ -1749,12 +1739,12 @@
     {
      "name": "learning",
      "until": "14 days",
-     "rule": "planned bid per host; pacing only",
+     "rule": "planned bid per host, no adjustments",
      "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "rule": "planned bid x conversion likelihood, up to the ceiling",
      "why": "most units for the budget"
     }
    ],
@@ -1785,12 +1775,6 @@
     }
    ],
    "adjustments": [
-    {
-     "signal": "pacing",
-     "min_multiplier": 0.85,
-     "max_multiplier": 1.15,
-     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
-    },
     {
      "signal": "conversion_likelihood",
      "min_multiplier": 0.8,
@@ -1897,9 +1881,9 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "{first_name}, ready for a grown-up bedroom?",
-    "headline_no_name": "Ready for a grown-up bedroom?",
-    "body": "Ditch the basic sheets everyone has. This is the mature aesthetic alternative you've been searching for.",
+    "headline_template": "Beyond the basic starter-pack sheets",
+    "headline_no_name": "Beyond the basic starter-pack sheets",
+    "body": "Grown-up linen bedding made in Portugal, for when you're ready to graduate.",
     "cta": "Shop linen sheets"
    },
    {
@@ -1909,10 +1893,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "No tricks, just treats for your bed, {first_name}",
-    "headline_no_name": "No tricks, just treats for your bed",
-    "body": "This Halloween, treat yourself to a grown-up aesthetic alternative to Brooklinen. Actually-breathable linen made in Portugal.",
-    "cta": "Shop linen bedding"
+    "headline_template": "No more scary sheets",
+    "headline_no_name": "No more scary sheets",
+    "body": "Skip the basic starter bedding. Get actually-breathable linen made in Portugal.",
+    "cta": "Shop the bedding"
    },
    {
     "variant_id": "persona_005:1",
@@ -1921,10 +1905,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "{first_name}, discover Portuguese craftsmanship",
-    "headline_no_name": "Discover Portuguese craftsmanship",
-    "body": "Discover actually-breathable linen bedding meticulously made in Portugal. Designed for those who appreciate understated quality.",
-    "cta": "Shop linen bedding"
+    "headline_template": "Beyond the trendy bedding brands",
+    "headline_no_name": "Beyond the trendy bedding brands",
+    "body": "A grown-up aesthetic alternative. Actually-breathable linen made in Portugal.",
+    "cta": "Shop the linen"
    },
    {
     "variant_id": "persona_005:2",
@@ -1933,10 +1917,10 @@
      "pub_014",
      "pub_011"
     ],
-    "headline_template": "A mature aesthetic for your home",
-    "headline_no_name": "A mature aesthetic for your home",
-    "body": "A grown-up aesthetic alternative to Brooklinen or Parachute. Experience the refined comfort of premium linen bedding.",
-    "cta": "Shop the collection"
+    "headline_template": "A truly mature aesthetic",
+    "headline_no_name": "A truly mature aesthetic",
+    "body": "Linen bedding made in Portugal that is actually breathable, not just trendy.",
+    "cta": "Shop the aesthetic"
    },
    {
     "variant_id": "persona_006:1",
@@ -1945,10 +1929,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "{first_name}, bedding made in Portugal",
-    "headline_no_name": "Bedding made in Portugal",
-    "body": "Skip vague eco-buzzwords. Our actually-breathable linen is made in Portugal, offering a grown-up alternative to Brooklinen.",
-    "cta": "Shop linen bedding"
+    "headline_template": "Where was your bedding made?",
+    "headline_no_name": "Where was your bedding made?",
+    "body": "Ours is made in Portugal. Actually-breathable linen with a mature aesthetic.",
+    "cta": "Shop Portuguese bedding"
    },
    {
     "variant_id": "persona_006:2",
@@ -1957,10 +1941,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "{first_name}, transparently made in Portugal",
-    "headline_no_name": "Bedding transparently made in Portugal",
-    "body": "Know where your sheets are crafted. Get actually-breathable linen made in Portugal, a grown-up alternative to Parachute.",
-    "cta": "Shop linen sheets"
+    "headline_template": "Trade mass-market for Portuguese linen",
+    "headline_no_name": "Trade mass-market for Portuguese linen",
+    "body": "A grown-up aesthetic alternative. Actually-breathable bedding made in Portugal.",
+    "cta": "Shop the alternative"
    },
    {
     "variant_id": "persona_010:1",
@@ -1969,10 +1953,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "Give a more grown-up gift, {first_name}",
-    "headline_no_name": "Give a more grown-up gift",
-    "body": "Gift them a mature aesthetic alternative to standard bedding. Actually-breathable linen beautifully made in Portugal.",
-    "cta": "Shop gift sets"
+    "headline_template": "Better than another basic gift",
+    "headline_no_name": "Better than another basic gift",
+    "body": "Give them actually-breathable linen made in Portugal, with a mature aesthetic.",
+    "cta": "Shop premium linen"
    },
    {
     "variant_id": "persona_010:2",
@@ -1981,10 +1965,10 @@
      "pub_011",
      "pub_014"
     ],
-    "headline_template": "The ultimate housewarming gift",
-    "headline_no_name": "The ultimate housewarming gift",
-    "body": "Delight them with actually-breathable linen made in Portugal. A mature aesthetic alternative to ordinary bedding.",
-    "cta": "Shop premium linen"
+    "headline_template": "Looking for a more mature gift?",
+    "headline_no_name": "Looking for a more mature gift?",
+    "body": "Give them actually-breathable linen bedding made in Portugal.",
+    "cta": "Buy the bedding"
    }
   ],
   "frequency_cap": {
@@ -2018,21 +2002,13 @@
   ]
  },
  "timings_s": {
-  "intake": 0.0,
+  "intake": 0.01,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 45.1
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   [
-    "persona_006",
-    1
-   ],
-   [
-    "persona_006",
-    2
-   ]
-  ]
+  "rounds": 1,
+  "rewritten": [],
+  "candidates": 16
  }
 }

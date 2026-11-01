@@ -145,21 +145,23 @@ class PersonaMatch(BaseModel):
 class CreativeVariant(BaseModel):
     persona_id: str
     variant: int = Field(default=1, ge=1, le=5, description="1..n within the persona: different angles to A/B/C test")
-    headline: str = Field(description="<= 60 chars. May contain {first_name} once.")
-    body: str = Field(description="<= 140 chars, fits a thank-you-page offer card")
+    headline: str = Field(description="<= 40 chars. May contain {first_name} once.")
+    body: str = Field(description="<= 90 chars: the one detail that makes the headline believable")
     cta: str
     headline_no_name: str = Field(description="Fallback when the shopper's name is unusable")
-    angle: str = Field(description="Which persona preference this variant leans on")
+    angle: str = Field(description="The hook used (payoff, moment, swap, twist, detail, question, offer) and the persona preference it leans on")
     claims_used: list[str] = Field(default_factory=list)
 
 
 class CreativeReview(BaseModel):
     persona_id: str
     variant: int = 1
+    punch: int | None = Field(default=None, ge=1, le=5, description="would a stranger stop and click? (v5 reviewer)")
     persona_fit: int = Field(ge=1, le=5)
     claims_ok: bool
     unsupported_claims: list[str] = Field(default_factory=list)
     distinct_from_others: bool
+    voice_issues: list[str] = Field(default_factory=list)
     issues: list[str] = Field(default_factory=list)
     passed: bool
 

@@ -101,7 +101,7 @@ def test_n_variants_per_persona_and_targeted_rewrite():
             calls["n"] += 1
             if "Rewrite ONLY" in user:
                 return rewrite
-            if "Variants:" in user:
+            if "Candidates:" in user:
                 return review(calls["n"] > 2)
             return first
 

@@ -1,8 +1,10 @@
-"""Stage 3: persona-tuned creatives = generate -> rule checks + LLM review -> one rewrite.
+"""Stage 3: persona-tuned creatives = draft candidates -> rule checks + LLM review -> keep the best -> one rewrite.
 
+Write many, keep the best: the writer drafts candidates_per_persona lines per persona with different hooks;
+code keeps the variants_per_persona highest-scoring passing ones (punch, then persona fit, distinct hooks).
 Two independent gates, because each catches what the other misses:
-- rule checks (code): lengths, placeholder count, banned patterns. Cheap, exact.
-- LLM review (separate call): persona fit, unsupported claims, distinctness. Semantic.
+- rule checks (code): lengths, placeholder count, banned and generic words. Cheap, exact.
+- LLM review (separate call): punch, persona fit, unsupported claims, distinctness. Semantic.
 """
 from __future__ import annotations
 
@@ -34,16 +36,23 @@ class ReviewSet(BaseModel):
 
 
 def rule_check(v: CreativeVariant) -> list[str]:
+    cfg = catalog.config("scoring")["creative"]
     issues = []
     headline_len = len(v.headline.replace(PLACEHOLDER, "x" * NAME_LEN))
-    if headline_len > 60:
-        issues.append(f"headline {headline_len} chars > 60")
-    if len(v.headline_no_name) > 60:
-        issues.append(f"headline_no_name {len(v.headline_no_name)} chars > 60")
-    if len(v.body) > 140:
-        issues.append(f"body {len(v.body)} chars > 140")
-    if len(v.cta) > 20:
-        issues.append(f"cta {len(v.cta)} chars > 20")
+    if headline_len > cfg["max_headline"]:
+        issues.append(f"headline {headline_len} chars > {cfg['max_headline']}")
+    if len(v.headline_no_name) > cfg["max_headline"]:
+        issues.append(f"headline_no_name {len(v.headline_no_name)} chars > {cfg['max_headline']}")
+    if len(v.body) > cfg["max_body"]:
+        issues.append(f"body {len(v.body)} chars > {cfg['max_body']}")
+    if len(v.cta) > cfg["max_cta"]:
+        issues.append(f"cta {len(v.cta)} chars > {cfg['max_cta']}")
+    text = f"{v.headline} {v.body} {v.cta}".lower()
+    generic = [w for w in cfg["banned_words"] if re.search(rf"\b{re.escape(w)}\b", text)]
+    if generic:
+        issues.append(f"generic or corporate wording: {generic}")
+    if not cfg["use_first_name"] and PLACEHOLDER in v.headline:
+        issues.append("uses {first_name}, but personalisation by name is switched off")
     if v.headline.count(PLACEHOLDER) > 1:
         issues.append("placeholder used more than once")
     for rule in claims.violations(f"{v.headline} {v.headline_no_name} {v.body} {v.cta}"):
@@ -80,37 +89,63 @@ def generate_creatives(
         claims=json.dumps(profile.stated_claims), values=json.dumps(profile.values),
         fulfillment=profile.fulfillment_notes or "none stated",
         moments=", ".join(moments) or "none", personas=personas,
+        name_rule=("`headline` may contain the literal placeholder {first_name} once, only where a friend would say "
+                   "the name. Never write a real name. `headline_no_name` is the same line without it."
+                   if catalog.config("scoring")["creative"]["use_first_name"] else
+                   "never use the shopper's name or any placeholder. Set `headline_no_name` to exactly the same text as `headline`."),
     )
-    n_variants = catalog.config("scoring")["personas"]["variants_per_persona"]
+    cfg = catalog.config("scoring")["personas"]
+    n_variants, n_candidates = cfg["variants_per_persona"], max(cfg["variants_per_persona"], cfg["candidates_per_persona"])
     key = lambda x: (x.persona_id, x.variant)
-    log = {"rounds": 0, "rewritten": []}
+    log = {"rounds": 0, "rewritten": [], "candidates": 0}
     feedback = ""
     variants: list[CreativeVariant] = []
     reviews: list[CreativeReview] = []
 
-    for round_ in range(2):  # generate, then at most one rewrite of failures
-        log["rounds"] = round_ + 1
-        system, user = prompts.render("creative_generate", feedback=feedback, n_variants=str(n_variants), **context)
-        new = {key(v): v for v in generate(provider, system, user, CreativeSet, temperature=0.7).variants}
-        if not variants:
-            wanted = [(m.persona_id, i) for m in selected for i in range(1, n_variants + 1)]
-            variants = [new[k] for k in wanted if k in new]
-        else:
-            rewritten = {tuple(k) for k in log["rewritten"]}
-            variants = [new.get(key(v), v) if key(v) in rewritten else v for v in variants]
-
+    def review(batch: list[CreativeVariant]) -> dict:
         system, user = prompts.render(
             "creative_review", claims=context["claims"], personas=personas,
-            variants=json.dumps([v.model_dump() for v in variants], indent=1),
+            variants=json.dumps([v.model_dump() for v in batch], indent=1),
         )
-        reviews = generate(provider, system, user, ReviewSet, temperature=0.0).reviews
-        review_by_key = {key(r): r for r in reviews}
-        for v in variants:
-            r = review_by_key.get(key(v))
-            rules = rule_check(v)
+        out = {key(r): r for r in generate(provider, system, user, ReviewSet, temperature=0.0).reviews}
+        for v in batch:
+            r, rules = out.get(key(v)), rule_check(v)
             if r and rules:
                 r.issues.extend(rules)
                 r.passed = False
+        return out
+
+    for round_ in range(2):  # draft candidates and keep the best, then at most one rewrite of failures
+        log["rounds"] = round_ + 1
+        system, user = prompts.render("creative_generate", feedback=feedback, n_variants=str(n_variants),
+                                      n_candidates=str(n_candidates if not variants else n_variants), **context)
+        new = {key(v): v for v in generate(provider, system, user, CreativeSet, temperature=0.7).variants}
+        if not variants:
+            wanted = {m.persona_id for m in selected}
+            drafts = [v for v in new.values() if v.persona_id in wanted]
+            log["candidates"] = len(drafts)
+            by_key = review(drafts)
+            variants, reviews = [], []
+            for m in selected:
+                own = sorted((v for v in drafts if v.persona_id == m.persona_id and key(v) in by_key),
+                             key=lambda v: (not by_key[key(v)].passed, -(by_key[key(v)].punch or 0), -by_key[key(v)].persona_fit))
+                kept, hooks = [], set()
+                for v in own:  # best first; a second line must use a different hook
+                    hook = v.angle.split(":")[0].split(" ")[0].lower()
+                    if len(kept) < n_variants and hook not in hooks:
+                        kept.append(v)
+                        hooks.add(hook)
+                kept += [v for v in own if v not in kept][: n_variants - len(kept)]
+                for i, v in enumerate(kept, start=1):
+                    r = by_key[key(v)]
+                    v.variant = r.variant = i
+                    variants.append(v)
+                    reviews.append(r)
+        else:
+            rewritten = {tuple(k) for k in log["rewritten"]}
+            variants = [new.get(key(v), v) if key(v) in rewritten else v for v in variants]
+            by_key = review(variants)
+            reviews = [by_key.get(key(v)) for v in variants if by_key.get(key(v))]
 
         failed = [r for r in reviews if not r.passed]
         if not failed or round_ == 1:

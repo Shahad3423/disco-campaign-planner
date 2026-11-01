@@ -1254,11 +1254,11 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, optimize your daily well-being",
-   "body": "We help people feel better with a systematic approach to daily wellness. Upgrade your routine today.",
-   "cta": "Feel better today",
-   "headline_no_name": "Optimize your daily well-being",
-   "angle": "Outcome-focused optimization",
+   "headline": "A simpler way to feel better",
+   "body": "No complicated routines. We just help people feel better.",
+   "cta": "Start feeling better",
+   "headline_no_name": "A simpler way to feel better",
+   "angle": "the payoff: appeals to the optimizer looking for direct results without fluff",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1266,11 +1266,11 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "The direct path to feeling better, {first_name}",
-   "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better every single day.",
+   "headline": "Ready to feel better?",
+   "body": "We have one straightforward mission. We help people feel better.",
    "cta": "Start feeling better",
-   "headline_no_name": "The direct path to feeling better",
-   "angle": "No-nonsense outcome focus",
+   "headline_no_name": "Ready to feel better?",
+   "angle": "the question: a direct, evidence-focused query on personal state",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1278,11 +1278,11 @@
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "headline": "An easier way to feel better, {first_name}",
-   "body": "Busy days demand simple solutions. With easy subscriptions, we help people feel better without the hassle.",
-   "cta": "Start your routine",
-   "headline_no_name": "An easier way to feel better",
-   "angle": "Time-saving convenience",
+   "headline": "A moment to feel better",
+   "body": "In the middle of everything, we are here to help people feel better.",
+   "cta": "Start feeling better",
+   "headline_no_name": "A moment to feel better",
+   "angle": "the moment: captures the busy parent's need for a quick personal pause",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1290,11 +1290,11 @@
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "headline": "{first_name}, make feeling better effortless",
-   "body": "No complicated setups or extra stress. We help people feel better, fitting seamlessly into your busy schedule.",
-   "cta": "Feel better today",
-   "headline_no_name": "Make feeling better effortless",
-   "angle": "family-friendly",
+   "headline": "Put your wellness first",
+   "body": "Stop putting yourself last. We help people feel better.",
+   "cta": "Start feeling better",
+   "headline_no_name": "Put your wellness first",
+   "angle": "the swap: replacing self-neglect with a simple step to feel better",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1302,11 +1302,11 @@
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "No tricks, {first_name}, just feeling better",
-   "body": "Skip the spooky vibes. We help people feel better with routines designed to elevate your daily aesthetic.",
-   "cta": "Elevate your vibe",
-   "headline_no_name": "No tricks, just feeling better",
-   "angle": "Playful seasonal aesthetic",
+   "headline": "Ready to actually feel better?",
+   "body": "No corporate fluff. We just help people feel better.",
+   "cta": "Start feeling better",
+   "headline_no_name": "Ready to actually feel better?",
+   "angle": "question - leverages dislike of corporate voice",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1314,11 +1314,11 @@
   {
    "persona_id": "persona_003",
    "variant": 2,
-   "headline": "{first_name}, match your vibe to how you feel",
-   "body": "Beautifully designed wellness for your space. Our only mission? We help people feel better, inside and out.",
-   "cta": "Feel better now",
-   "headline_no_name": "Match your vibe to how you feel",
-   "angle": "Aesthetic-forward wellness",
+   "headline": "We help people feel better",
+   "body": "That is our entire mission. No fuss, just helping people feel better.",
+   "cta": "Start feeling better",
+   "headline_no_name": "We help people feel better",
+   "angle": "the detail: an honest, minimalist statement that appeals to aesthetic simplicity",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1328,62 +1328,87 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "persona_fit": 4,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "No complicated routines. We just help people feel better."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 4,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
+   "voice_issues": [
+    "We have one straightforward mission."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "In the middle of everything, we are here to help people feel better."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "persona_fit": 4,
+   "punch": 2,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "Put your wellness first",
+    "Stop putting yourself last."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 3,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "No corporate fluff."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_003",
    "variant": 2,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
+   "voice_issues": [
+    "That is our entire mission. No fuss, just helping people feel better."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   }
  ],
  "config": {
@@ -1501,55 +1526,55 @@
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "{first_name}, optimize your daily well-being",
-    "headline_no_name": "Optimize your daily well-being",
-    "body": "We help people feel better with a systematic approach to daily wellness. Upgrade your routine today.",
-    "cta": "Feel better today"
+    "headline_template": "A simpler way to feel better",
+    "headline_no_name": "A simpler way to feel better",
+    "body": "No complicated routines. We just help people feel better.",
+    "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "The direct path to feeling better, {first_name}",
-    "headline_no_name": "The direct path to feeling better",
-    "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better every single day.",
+    "headline_template": "Ready to feel better?",
+    "headline_no_name": "Ready to feel better?",
+    "body": "We have one straightforward mission. We help people feel better.",
     "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "An easier way to feel better, {first_name}",
-    "headline_no_name": "An easier way to feel better",
-    "body": "Busy days demand simple solutions. With easy subscriptions, we help people feel better without the hassle.",
-    "cta": "Start your routine"
+    "headline_template": "A moment to feel better",
+    "headline_no_name": "A moment to feel better",
+    "body": "In the middle of everything, we are here to help people feel better.",
+    "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "{first_name}, make feeling better effortless",
-    "headline_no_name": "Make feeling better effortless",
-    "body": "No complicated setups or extra stress. We help people feel better, fitting seamlessly into your busy schedule.",
-    "cta": "Feel better today"
+    "headline_template": "Put your wellness first",
+    "headline_no_name": "Put your wellness first",
+    "body": "Stop putting yourself last. We help people feel better.",
+    "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
     "publisher_ids": [],
-    "headline_template": "No tricks, {first_name}, just feeling better",
-    "headline_no_name": "No tricks, just feeling better",
-    "body": "Skip the spooky vibes. We help people feel better with routines designed to elevate your daily aesthetic.",
-    "cta": "Elevate your vibe"
+    "headline_template": "Ready to actually feel better?",
+    "headline_no_name": "Ready to actually feel better?",
+    "body": "No corporate fluff. We just help people feel better.",
+    "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_003:2",
     "persona_id": "persona_003",
     "publisher_ids": [],
-    "headline_template": "{first_name}, match your vibe to how you feel",
-    "headline_no_name": "Match your vibe to how you feel",
-    "body": "Beautifully designed wellness for your space. Our only mission? We help people feel better, inside and out.",
-    "cta": "Feel better now"
+    "headline_template": "We help people feel better",
+    "headline_no_name": "We help people feel better",
+    "body": "That is our entire mission. No fuss, just helping people feel better.",
+    "cta": "Start feeling better"
    }
   ],
   "frequency_cap": {
@@ -1583,15 +1608,32 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 52.56
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
+    "persona_001",
+    1
+   ],
+   [
+    "persona_001",
+    2
+   ],
+   [
+    "persona_002",
+    1
+   ],
+   [
     "persona_002",
     2
+   ],
+   [
+    "persona_003",
+    2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }

@@ -1260,11 +1260,11 @@
   {
    "persona_id": "persona_008",
    "variant": 1,
-   "headline": "A special offer for you, {first_name}",
-   "body": "Try a new kind of thing for moms and get our best introductory offer today.",
-   "cta": "Get the deal",
-   "headline_no_name": "A special offer for moms",
-   "angle": "discount-forward",
+   "headline": "A new kind of thing for moms",
+   "body": "A new kind of thing for moms. Simple, direct value.",
+   "cta": "Shop the new thing",
+   "headline_no_name": "A new kind of thing for moms",
+   "angle": "the payoff",
    "claims_used": [
     "A new kind of thing for moms."
    ]
@@ -1272,11 +1272,11 @@
   {
    "persona_id": "persona_008",
    "variant": 2,
-   "headline": "{first_name}, try this new thing for moms",
-   "body": "Discover a new kind of thing for moms. Save more when you buy our exclusive starter bundle.",
-   "cta": "Shop starter bundle",
-   "headline_no_name": "Try this new thing for moms",
-   "angle": "bundle offers",
+   "headline": "Ready for a new kind of thing?",
+   "body": "A new kind of thing for moms.",
+   "cta": "Shop the new thing",
+   "headline_no_name": "Ready for a new kind of thing?",
+   "angle": "the question",
    "claims_used": [
     "A new kind of thing for moms."
    ]
@@ -1284,47 +1284,47 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, elevate your daily routine",
-   "body": "Experience a new kind of thing for moms, intentionally designed for your lifestyle.",
+   "headline": "A new kind of thing for moms",
+   "body": "A new kind of thing for moms, focused on what matters.",
    "cta": "Shop the new thing",
-   "headline_no_name": "Elevate your daily routine",
-   "angle": "outcome-focused",
+   "headline_no_name": "A new kind of thing for moms",
+   "angle": "the detail",
    "claims_used": [
     "A new kind of thing for moms."
    ]
   },
   {
    "persona_id": "persona_001",
+   "variant": 2,
+   "headline": "The new kind of thing for moms",
+   "body": "A new kind of thing for moms. No fluff, just what you need.",
+   "cta": "Shop the new thing",
+   "headline_no_name": "The new kind of thing for moms",
+   "angle": "the payoff",
+   "claims_used": [
+    "A new kind of thing for moms."
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 1,
+   "headline": "A Halloween treat for moms",
+   "body": "A new kind of thing for moms.",
+   "cta": "Shop the new thing",
+   "headline_no_name": "A Halloween treat for moms",
+   "angle": "the moment",
+   "claims_used": [
+    "A new kind of thing for moms."
+   ]
+  },
+  {
+   "persona_id": "persona_002",
    "variant": 2,
    "headline": "A new kind of thing for moms",
-   "body": "Upgrade your daily system. This is a new kind of thing for moms, mindfully designed for those who prioritize quality in every detail.",
-   "cta": "Order yours today",
+   "body": "A new kind of thing for moms. Swap your usual routine.",
+   "cta": "Shop the new thing",
    "headline_no_name": "A new kind of thing for moms",
-   "angle": "mindful wellness design",
-   "claims_used": [
-    "A new kind of thing for moms."
-   ]
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 1,
-   "headline": "{first_name}, try something simple",
-   "body": "We make it easy to try a new kind of thing for moms with free, simple returns on every order.",
-   "cta": "Try it risk-free",
-   "headline_no_name": "Try something simple",
-   "angle": "easy returns",
-   "claims_used": [
-    "A new kind of thing for moms."
-   ]
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "headline": "A new option for you, {first_name}",
-   "body": "Simplify your routine. Get a new kind of thing for moms delivered directly to your door.",
-   "cta": "Start subscription",
-   "headline_no_name": "A new option for moms",
-   "angle": "convenience",
+   "angle": "the swap",
    "claims_used": [
     "A new kind of thing for moms."
    ]
@@ -1334,66 +1334,96 @@
   {
    "persona_id": "persona_008",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [
+    "Simple, direct value is explaining instead of showing"
+   ],
+   "issues": [
+    "The product is completely undefined ('thing') and offers no actual discount or clear value proposition for a value-conscious shopper."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_008",
    "variant": 2,
-   "persona_fit": 5,
+   "punch": 1,
+   "persona_fit": 1,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [
+    "Ready for a new kind of thing? is generic and empty"
+   ],
+   "issues": [
+    "Completely lacks any value-conscious messaging, discounts, or reviews."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "persona_fit": 3,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "focused on what matters is corporate fluff"
+   ],
    "issues": [
-    "Does not address the persona's preference for science-backed claims or ingredient transparency, and leans into novelty which this persona avoids."
+    "Does not speak to wellness optimization, ingredients, or outcomes."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 3,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
+   "voice_issues": [
+    "No fluff, just what you need is generic"
+   ],
    "issues": [
-    "Lacks the science-backed or ingredient-transparent messaging preferred by this persona, focusing instead on vague lifestyle design."
+    "Lacks any science-backed or outcome-focused messaging for the wellness optimizer."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [],
+   "issues": [
+    "The Halloween hook is random and does not address the busy parent's need for time-saving, family-friendly, or trusted products."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [
+    "Swap your usual routine is generic"
+   ],
+   "issues": [
+    "Does not address the busy parent persona's preferences (time-saving, trusted by parents)."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1511,55 +1541,55 @@
     "variant_id": "persona_008:1",
     "persona_id": "persona_008",
     "publisher_ids": [],
-    "headline_template": "A special offer for you, {first_name}",
-    "headline_no_name": "A special offer for moms",
-    "body": "Try a new kind of thing for moms and get our best introductory offer today.",
-    "cta": "Get the deal"
+    "headline_template": "A new kind of thing for moms",
+    "headline_no_name": "A new kind of thing for moms",
+    "body": "A new kind of thing for moms. Simple, direct value.",
+    "cta": "Shop the new thing"
    },
    {
     "variant_id": "persona_008:2",
     "persona_id": "persona_008",
     "publisher_ids": [],
-    "headline_template": "{first_name}, try this new thing for moms",
-    "headline_no_name": "Try this new thing for moms",
-    "body": "Discover a new kind of thing for moms. Save more when you buy our exclusive starter bundle.",
-    "cta": "Shop starter bundle"
+    "headline_template": "Ready for a new kind of thing?",
+    "headline_no_name": "Ready for a new kind of thing?",
+    "body": "A new kind of thing for moms.",
+    "cta": "Shop the new thing"
    },
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "{first_name}, elevate your daily routine",
-    "headline_no_name": "Elevate your daily routine",
-    "body": "Experience a new kind of thing for moms, intentionally designed for your lifestyle.",
+    "headline_template": "A new kind of thing for moms",
+    "headline_no_name": "A new kind of thing for moms",
+    "body": "A new kind of thing for moms, focused on what matters.",
     "cta": "Shop the new thing"
    },
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "A new kind of thing for moms",
-    "headline_no_name": "A new kind of thing for moms",
-    "body": "Upgrade your daily system. This is a new kind of thing for moms, mindfully designed for those who prioritize quality in every detail.",
-    "cta": "Order yours today"
+    "headline_template": "The new kind of thing for moms",
+    "headline_no_name": "The new kind of thing for moms",
+    "body": "A new kind of thing for moms. No fluff, just what you need.",
+    "cta": "Shop the new thing"
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "{first_name}, try something simple",
-    "headline_no_name": "Try something simple",
-    "body": "We make it easy to try a new kind of thing for moms with free, simple returns on every order.",
-    "cta": "Try it risk-free"
+    "headline_template": "A Halloween treat for moms",
+    "headline_no_name": "A Halloween treat for moms",
+    "body": "A new kind of thing for moms.",
+    "cta": "Shop the new thing"
    },
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "A new option for you, {first_name}",
-    "headline_no_name": "A new option for moms",
-    "body": "Simplify your routine. Get a new kind of thing for moms delivered directly to your door.",
-    "cta": "Start subscription"
+    "headline_template": "A new kind of thing for moms",
+    "headline_no_name": "A new kind of thing for moms",
+    "body": "A new kind of thing for moms. Swap your usual routine.",
+    "cta": "Shop the new thing"
    }
   ],
   "frequency_cap": {
@@ -1593,7 +1623,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 62.18
  },
  "creative_log": {
   "rounds": 2,
@@ -1611,6 +1641,10 @@
     1
    ],
    [
+    "persona_001",
+    2
+   ],
+   [
     "persona_002",
     1
    ],
@@ -1618,6 +1652,7 @@
     "persona_002",
     2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }
