@@ -97,7 +97,6 @@ class AdvertiserProfile(BaseModel):
     persona_affinity_tags: list[str] = Field(default_factory=list)
     persona_conflicts: list[PersonaConflict] = Field(default_factory=list)
     note_signals: list[NoteSignal] = Field(default_factory=list)
-    confidence: float = Field(ge=0, le=1)
     gate: Gate
     gate_reason: str
     missing_info: list[str] = Field(default_factory=list)
@@ -315,7 +314,6 @@ class CampaignConfig(BaseModel):
     status: Literal["draft", "needs_clarification", "not_eligible"]
     planning_date: str
     advertiser_summary: str
-    confidence: float
     objective: Objective
     economics: Economics | None
     pricing: PricingPlan | None

@@ -132,7 +132,7 @@ customer?" Steps:
 
 ## D7. Uncertain advertiser input → ask, don't guess
 
-The parser returns a **confidence** and the **missing fields** that matter (product, price point,
+The parser returns the **missing fields** that matter (product, price point,
 audience, goal). Below a threshold, the UI asks 2–4 specific questions ("What does it cost?",
 "Who buys it?") and shows a clearly labeled *exploratory* draft, or none at all for meaningless
 input ("idk just try it"). Advertisers outside the network's model (B2B SaaS for dentists) get an
@@ -382,3 +382,14 @@ shows the same headline to everyone.
 words per ad 23.4 -> 16.1, punch 3.16 -> 3.35, persona fit 3.64 -> 3.26 (shorter lines carry fewer persona cues: a
 real cost). A first version invented offers ("trial pack", "value pack") and outcomes ("puppy energy"); the claims
 rules above fixed that. One-claim briefs produce repetitive lines; a follow-up should ask for a second claim.
+
+## D31. No intake confidence score
+The intake used to report a `confidence` (mean of the model's own 0-1 self-rating x (0.5 + 0.5 x tag agreement across the
+3 samples)). Nothing branched on it: it was shown in the app and written to the config and the eval output. It was an
+unanchored LLM self-report, never checked against outcomes, so it looked like a calibrated probability without being one.
+Removed from `AdvertiserProfile`, `CampaignConfig`, the prompt, the app, and the holdout eval (`mean_confidence`,
+`confidence_by_clarity`). What stays: the `gate` (majority vote over the 3 samples), `missing_info` and the clarifying
+questions, which are what actually change behaviour, and `sample_agreement` / `tag_stability`, which are measured, not
+self-reported. Shopper-feature confidences at serving time are a different thing (they temper the posterior) and are
+unchanged. Stored plans still carry the old field; it is ignored on load.
+

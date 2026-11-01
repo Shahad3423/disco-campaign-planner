@@ -83,7 +83,7 @@ def run(
                      else {s.publisher_id for s in scores if s.recommended})
     config = CampaignConfig(
         status=status, planning_date=today.isoformat(), advertiser_summary=profile.business_summary or brief,
-        confidence=profile.confidence, objective=inputs.objective,
+        objective=inputs.objective,
         economics=eco, pricing=pricing, budget=plan, bid_strategy=bids,
         targeting={
             "publishers_include": sorted(allowed_hosts),

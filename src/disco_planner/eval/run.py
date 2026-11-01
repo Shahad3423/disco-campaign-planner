@@ -60,7 +60,6 @@ def grade_case(case: dict, plan: CampaignPlan) -> dict:
         # intake
         "gate": gate, "expected_gate": expected, "gate_ok": gate == expected,
         "gate_adjacent": frozenset({gate, expected}) in ADJACENT_GATES,
-        "confidence": plan.profile.confidence,
         # matching
         "recommended": rec,
         "must_include_recall": len(must & set(top5)) / len(must) if must else None,

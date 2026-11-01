@@ -40,7 +40,7 @@ def test_claims_field_is_owned_by_code():
         "business_summary": "Self-cleaning litter box", "product": "litter box", "is_consumer_product": True,
         "stated_claims": ["Works with any litter"], "claims_needing_substantiation": ["Self-cleaning", "Vet-recommended"],
         "relevant_tags": [{"tag": "pet_supplies", "weight": 1, "why": "x"}],
-        "confidence": 0.9, "gate": "proceed", "gate_reason": "clear",
+        "gate": "proceed", "gate_reason": "clear",
     }
     p = parse_brief("We sell a self-cleaning litter box for cats", FakeProvider({"litter": json.dumps(profile)}), date(2026, 10, 30), n_samples=1)
     assert "Self-cleaning" in p.stated_claims
@@ -91,7 +91,7 @@ def test_n_variants_per_persona_and_targeted_rewrite():
         {"persona_id": p, "variant": i, "persona_fit": 5, "claims_ok": True, "distinct_from_others": True,
          "passed": passed_all or not (p == "persona_002" and i == 2)} for p in ("persona_004", "persona_002") for i in ids]})
     profile = AdvertiserProfile(business_summary="dog food", product="dog food", is_consumer_product=True,
-                                confidence=0.9, gate="proceed", gate_reason="x")
+                                gate="proceed", gate_reason="x")
     selected = [PersonaMatch(persona_id=p, persona_name=p, score=0.5, selected=True, reasons=[]) for p in ("persona_004", "persona_002")]
     rewrite = json.dumps({"variants": [variant("persona_002", 2, "Rewritten headline")]})
     calls = {"n": 0}

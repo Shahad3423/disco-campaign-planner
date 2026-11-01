@@ -30,7 +30,6 @@ Your job is to understand the advertiser accurately and honestly. Rules:
    - `reject_low_signal`: no usable information about the business: the text names no product,
      category, or audience at all (e.g. "idk just try it", "we sell stuff").
    - `off_network`: not a consumer product a DTC checkout shopper could buy (e.g. B2B software).
-   `confidence` is your confidence that the profile is right (0-1).
 7. Ask clarifying questions an advertiser can answer in one line each (price, who buys it,
    one-time vs subscription, goal). Ask them even on `proceed` if price or margin is missing.
 

@@ -18,7 +18,7 @@ def dog_food_profile(**overrides) -> AdvertiserProfile:
         ],
         competing_tags=["pet_food"],
         note_signals=[NoteSignal(publisher_id="pub_007", alignment=1, why="premium, health-conscious owners")],
-        confidence=0.9, gate="proceed", gate_reason="clear",
+        gate="proceed", gate_reason="clear",
     )
     return AdvertiserProfile(**(base | overrides))
 

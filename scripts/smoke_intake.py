@@ -20,7 +20,7 @@ for num, brief in briefs:
     p = parse_brief(brief, provider, date(2026, 10, 30))
     ranked = rank_publishers(p, date(2026, 10, 30))
     rec = [f"{s.publisher_name}({s.score:.2f}{'!' if s.flags else ''})" for s in ranked if s.recommended]
-    print(f"#{num} [{p.gate} conf={p.confidence:.2f} {time.time()-t:.1f}s] tier={p.price_tier} ${p.price_point_usd} "
+    print(f"#{num} [{p.gate} {time.time()-t:.1f}s] tier={p.price_tier} ${p.price_point_usd} "
           f"tags={[f'{x.tag}:{x.weight}' for x in p.relevant_tags]} compete={p.competing_tags}")
     print(f"    -> {rec}")
     print(f"    conflicts={[(c.persona_id, c.conflict) for c in p.persona_conflicts]}  Q={p.clarifying_questions[:2]}")
