@@ -47,7 +47,7 @@ def components(plan) -> dict[str, np.ndarray]:
     """Per host: [category, price, audience, persona, notes, scale, seasonality] under the current config."""
     out = {}
     for s in rank_publishers(plan.profile, TODAY):
-        c = {x.name: x.value for x in s.components}
+        c = {x.name: (np.nan if x.value is None else x.value) for x in s.components}  # NaN = not stated
         out[s.publisher_id] = np.array([c["category_fit"], c["price_fit"]] + [c[q] for q in QUALITY])
     return out
 
@@ -61,13 +61,17 @@ def theta0() -> np.ndarray:
 def log_score(theta: np.ndarray, X: np.ndarray) -> np.ndarray:
     a, b, p = theta[0], theta[1], theta[2]
     w = np.exp(theta[4:]) / np.exp(theta[4:]).sum()
-    X = np.maximum(X, EPS)
-    q = X[:, 2:]
+    known = ~np.isnan(X)
+    X = np.maximum(np.nan_to_num(X, nan=1.0), EPS)
+    q, qk = X[:, 2:], known[:, 2:]
+    wk = w * qk
+    wk = wk / np.maximum(wk.sum(axis=1, keepdims=True), 1e-12)   # renormalise over known components (D25)
     if abs(p) < 1e-3:
-        log_m = (np.log(q) * w).sum(axis=1)
+        log_m = (np.log(q) * wk).sum(axis=1)
     else:
-        log_m = np.log((w * q**p).sum(axis=1)) / p
-    return a * np.log(X[:, 0]) + b * np.log(X[:, 1]) + log_m
+        log_m = np.log(np.maximum((wk * q**p).sum(axis=1), 1e-12)) / p
+    log_price = np.where(known[:, 1], np.log(X[:, 1]), 0.0)          # unknown price: no information
+    return a * np.log(X[:, 0]) + b * log_price + log_m
 
 
 def nll(theta, XA, XB, y, th0, fit_mask):

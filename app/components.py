@@ -239,6 +239,10 @@ def render_component_breakdown(score) -> None:
     """One bar per score component, read generically so new components appear automatically."""
     for c in score.components:
         left, right = st.columns([2, 5])
+        if c.value is None:  # not stated by the advertiser: left out of the score, not filled in
+            left.markdown(f"**{c.name.replace('_', ' ')}**  \n<span class='muted'>left out</span>", unsafe_allow_html=True)
+            right.markdown(f"<div class='muted'>{html.escape(c.detail)}</div>", unsafe_allow_html=True)
+            continue
         left.markdown(f"**{c.name.replace('_', ' ')}**  \n<span class='muted'>value {c.value:.2f}, weight {c.weight:g}</span>", unsafe_allow_html=True)
         right.markdown(bar(c.value) + f"<div class='muted'>{html.escape(c.detail)}</div>", unsafe_allow_html=True)
 

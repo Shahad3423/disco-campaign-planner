@@ -1,28 +1,28 @@
 cv_dev:
   fitted:
-    accuracy: 0.705
-    log_loss: 0.56
+    accuracy: 0.753
+    log_loss: 0.535
   hand_set:
-    accuracy: 0.704
-    log_loss: 0.567
+    accuracy: 0.745
+    log_loss: 0.548
 fitted:
-  price_exponent: 0.572
-  quality_p: 0.987
+  price_exponent: 0.621
+  quality_p: 0.981
   quality_weights:
-    audience_fit: 0.299
+    audience_fit: 0.301
     notes_fit: 0.207
-    persona_fit: 0.344
+    persona_fit: 0.341
     scale: 0.05
-    seasonality: 0.1
-  relevance_exponent: 0.893
+    seasonality: 0.101
+  relevance_exponent: 0.859
 golden:
   fitted:
-    precision: 0.97
-    recall: 0.65
-    top5_change_vs_hand_set: 0.108
+    precision: 0.939
+    recall: 0.7
+    top5_change_vs_hand_set: 0.061
   hand_set:
-    precision: 0.97
-    recall: 0.6
+    precision: 0.939
+    recall: 0.7
 hand_set:
   price_exponent: 0.5
   quality_p: 1.0
@@ -36,7 +36,7 @@ hand_set:
 test:
   fitted:
     accuracy: 0.7857142857142857
-    log_loss: 0.5463478186673241
+    log_loss: 0.5162828814920628
   hand_set:
-    accuracy: 0.7857142857142857
-    log_loss: 0.5562319514267453
+    accuracy: 0.7896825396825397
+    log_loss: 0.535232798459148
