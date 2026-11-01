@@ -143,6 +143,8 @@ def _context_multiplier(features: ShopperFeatures, plan: CampaignPlan, use_house
 
 def _render(template: str, fallback: str, features: ShopperFeatures) -> tuple[str, bool]:
     name = features.display_name.value
+    if not catalog.config("scoring")["creative"]["use_first_name"]:
+        return fallback, False
     if name and "{first_name}" in template:
         return template.replace("{first_name}", str(name)), True
     return fallback, False

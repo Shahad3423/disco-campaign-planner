@@ -75,6 +75,8 @@ personas:
   min_selected: 3        # the brief asks for 3-5 variants; below this we say the extras are exploratory
   max_selected: 5
   variants_per_persona: 2   # creatives per persona, each a different angle (A/B tested: split evenly at serving until a bandit learns)
+  candidates_per_persona: 4 # the writer drafts this many per persona; the critic scores them and code keeps the best
+                            # variants_per_persona (write many, keep the best)
   # rows: advertiser price tier; columns: persona price_sensitivity
   price_compat:
     luxury:  {low: 1.0, low-medium: 0.8, medium: 0.5, medium-high: 0.3, high: 0.15}
@@ -103,3 +105,15 @@ persona_shape:
   audience_age_floor: 0.3
   host_category_match: 1.0        # host_fit category term when persona interests meet host tags
   host_category_miss: 0.4
+
+# Creative rules checked in code (planning/creative.py rule_check). Short offer-card copy:
+# one headline idea, one supporting detail, a 2-4 word action.
+creative:
+  use_first_name: false    # off for now: no {first_name} in copy; serving shows the same headline to everyone
+  max_headline: 40
+  max_body: 90
+  max_cta: 24
+  # words that mark copy as generic or corporate; any one fails the rule check
+  banned_words: [elevate, unlock, discover, seamless, seamlessly, curated, indulge, journey, game-changer,
+                 revolutionize, revolutionary, empower, "designed to", "crafted to", "perfect for", "the ultimate",
+                 "look no further", "whether you're", "treat yourself", "you deserve"]

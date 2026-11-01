@@ -22,9 +22,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "sustainable",
+    "tag": "activewear",
     "weight": 1.0,
-    "why": "Key product value stated as made from recycled ocean plastic."
+    "why": "Core category of the brand's products."
    },
    {
     "tag": "women",
@@ -32,9 +32,9 @@
     "why": "Target demographic is women."
    },
    {
-    "tag": "activewear",
+    "tag": "sustainable",
     "weight": 1.0,
-    "why": "Core category of the brand's products."
+    "why": "Key product value stated as made from recycled ocean plastic."
    },
    {
     "tag": "apparel",
@@ -115,7 +115,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches women, activewear, apparel (specific) (multiplier)"
+     "detail": "matches activewear, women, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -158,7 +158,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches women, activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.74)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.74)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -171,7 +171,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches sustainable, activewear, apparel (specific) (multiplier)"
+     "detail": "matches activewear, sustainable, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -214,7 +214,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches sustainable, activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.64)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.64)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -227,7 +227,7 @@
      "name": "category_fit",
      "value": 0.7,
      "weight": 1.0,
-     "detail": "matches sustainable, women, apparel (category only) (multiplier)"
+     "detail": "matches women, sustainable, apparel (category only) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -268,7 +268,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches sustainable, women, apparel (category only) (multiplier); strongest supporting signal audience_fit (94% female).",
+   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal audience_fit (94% female).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -1357,11 +1357,11 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, optimize your active recovery",
-   "body": "Gear up for peak physical output. Our sustainable activewear brand for women uses material made from recycled ocean plastic to support you.",
+   "headline": "What is your activewear made of?",
+   "body": "This sustainable activewear for women is made from recycled ocean plastic.",
    "cta": "Shop activewear",
-   "headline_no_name": "Optimize your active recovery",
-   "angle": "outcome-focused physical optimization",
+   "headline_no_name": "What is your activewear made of?",
+   "angle": "question - appeals to ingredient transparency and material awareness",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1370,11 +1370,11 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "{first_name}, transparent inputs for your body",
-   "body": "Track what goes on your body. Our sustainable activewear brand for women crafts high-grade apparel made from recycled ocean plastic.",
-   "cta": "Shop recycled gear",
-   "headline_no_name": "Transparent inputs for your body",
-   "angle": "ingredient and material transparency",
+   "headline": "Activewear from ocean plastic",
+   "body": "Sustainable women's activewear made from recycled ocean plastic.",
+   "cta": "Shop activewear",
+   "headline_no_name": "Activewear from ocean plastic",
+   "angle": "the detail: highlights transparent material sourcing for the wellness optimizer",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1383,11 +1383,11 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "{first_name}, built for high-performance training",
-   "body": "Run, lift, and move. This sustainable activewear brand for women designs high-performance gear made from recycled ocean plastic.",
-   "cta": "Shop performance",
-   "headline_no_name": "Built for high-performance training",
-   "angle": "athletic performance and high-intensity utility",
+   "headline": "Ready for your next sweat session?",
+   "body": "Sustainable women's activewear made from recycled ocean plastic.",
+   "cta": "Shop women's activewear",
+   "headline_no_name": "Ready for your next sweat session?",
+   "angle": "the moment: connects the apparel directly to the workout routine",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1396,11 +1396,11 @@
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "headline": "{first_name}, engineered for your toughest workouts",
-   "body": "Experience athletic gear that holds up. Our sustainable activewear brand for women makes durable wear from recycled ocean plastic.",
-   "cta": "Shop durable gear",
-   "headline_no_name": "Engineered for your toughest workouts",
-   "angle": "technical fabric and durability",
+   "headline": "Activewear made from ocean plastic",
+   "body": "Sustainable clothing for women, made from recycled ocean plastic.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Activewear made from ocean plastic",
+   "angle": "the payoff: highlights the environmental result of their purchase",
    "claims_used": [
     "Made from recycled ocean plastic",
     "Sustainable activewear brand for women"
@@ -1409,27 +1409,27 @@
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "headline": "Activewear made from recycled ocean plastic",
-   "body": "We are a sustainable activewear brand for women. Our products are made from recycled ocean plastic to reduce waste.",
-   "cta": "Shop eco-activewear",
-   "headline_no_name": "Activewear made from recycled ocean plastic",
-   "angle": "Direct focus on specific recycled ocean plastic claim",
+   "headline": "Can activewear clean the ocean?",
+   "body": "Ours does. Sustainable activewear for women made from recycled ocean plastic.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Can activewear clean the ocean?",
+   "angle": "question - appeals to environmental footprint curiosity and skepticism of greenwashing",
    "claims_used": [
-    "Sustainable activewear brand for women",
-    "Made from recycled ocean plastic"
+    "Made from recycled ocean plastic",
+    "Sustainable activewear brand for women"
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
-   "headline": "Your sustainable activewear choice, {first_name}",
-   "body": "Make a conscious choice. Our sustainable activewear brand for women creates apparel made from recycled ocean plastic.",
-   "cta": "Shop recycled gear",
-   "headline_no_name": "Your sustainable activewear choice",
-   "angle": "Focuses on the brand's core sustainability values",
+   "headline": "From ocean plastic to activewear",
+   "body": "A sustainable women's brand making activewear from recycled ocean plastic.",
+   "cta": "Shop sustainable gear",
+   "headline_no_name": "From ocean plastic to activewear",
+   "angle": "the detail: appeals to the sustainability buyer's focus on material origin",
    "claims_used": [
-    "Sustainable activewear brand for women",
-    "Made from recycled ocean plastic"
+    "Made from recycled ocean plastic",
+    "Sustainable activewear brand for women"
    ]
   }
  ],
@@ -1437,73 +1437,84 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "persona_fit": 4,
+   "punch": 3,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "high-grade apparel"
-   ],
-   "distinct_from_others": true,
-   "issues": [
-    "The claim 'high-grade apparel' is unsupported by the stated claims."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 1,
-   "persona_fit": 5,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "high-performance gear"
-   ],
-   "distinct_from_others": true,
-   "issues": [
-    "The claim 'high-performance gear' is unsupported by the stated claims."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "gear that holds up",
-    "durable wear"
-   ],
-   "distinct_from_others": true,
-   "issues": [
-    "The claims 'gear that holds up' and 'durable wear' are unsupported by the stated claims."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_006",
-   "variant": 1,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "Very flat, just restating the claims in both headline and body"
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 1,
+   "punch": 3,
+   "persona_fit": 2,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [
+    "Fails to include any performance claims or technical fabric details, which this persona requires to avoid 'fashion-only' positioning."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "punch": 2,
+   "persona_fit": 2,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": false,
+   "voice_issues": [
+    "Extremely dry and repetitive"
+   ],
+   "issues": [
+    "Fails to include any performance claims or technical fabric details, which this persona requires to avoid 'fashion-only' positioning."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 1,
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Ours does [clean the ocean]"
+   ],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [
+    "The active claim that the activewear 'cleans the ocean' is an unsupported exaggeration of 'made from recycled ocean plastic'."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
+   "punch": 4,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
    "passed": true
   }
@@ -1871,12 +1882,12 @@
     {
      "name": "learning",
      "until": "14 days",
-     "rule": "planned bid per host; pacing only",
+     "rule": "planned bid per host, no adjustments",
      "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "rule": "planned bid x conversion likelihood, up to the ceiling",
      "why": "most units for the budget"
     }
    ],
@@ -1931,12 +1942,6 @@
     }
    ],
    "adjustments": [
-    {
-     "signal": "pacing",
-     "min_multiplier": 0.85,
-     "max_multiplier": 1.15,
-     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
-    },
     {
      "signal": "conversion_likelihood",
      "min_multiplier": 0.8,
@@ -2031,9 +2036,9 @@
      "pub_006",
      "pub_002"
     ],
-    "headline_template": "{first_name}, optimize your active recovery",
-    "headline_no_name": "Optimize your active recovery",
-    "body": "Gear up for peak physical output. Our sustainable activewear brand for women uses material made from recycled ocean plastic to support you.",
+    "headline_template": "What is your activewear made of?",
+    "headline_no_name": "What is your activewear made of?",
+    "body": "This sustainable activewear for women is made from recycled ocean plastic.",
     "cta": "Shop activewear"
    },
    {
@@ -2044,10 +2049,10 @@
      "pub_006",
      "pub_002"
     ],
-    "headline_template": "{first_name}, transparent inputs for your body",
-    "headline_no_name": "Transparent inputs for your body",
-    "body": "Track what goes on your body. Our sustainable activewear brand for women crafts high-grade apparel made from recycled ocean plastic.",
-    "cta": "Shop recycled gear"
+    "headline_template": "Activewear from ocean plastic",
+    "headline_no_name": "Activewear from ocean plastic",
+    "body": "Sustainable women's activewear made from recycled ocean plastic.",
+    "cta": "Shop activewear"
    },
    {
     "variant_id": "persona_009:1",
@@ -2057,10 +2062,10 @@
      "pub_002",
      "pub_010"
     ],
-    "headline_template": "{first_name}, built for high-performance training",
-    "headline_no_name": "Built for high-performance training",
-    "body": "Run, lift, and move. This sustainable activewear brand for women designs high-performance gear made from recycled ocean plastic.",
-    "cta": "Shop performance"
+    "headline_template": "Ready for your next sweat session?",
+    "headline_no_name": "Ready for your next sweat session?",
+    "body": "Sustainable women's activewear made from recycled ocean plastic.",
+    "cta": "Shop women's activewear"
    },
    {
     "variant_id": "persona_009:2",
@@ -2070,10 +2075,10 @@
      "pub_002",
      "pub_010"
     ],
-    "headline_template": "{first_name}, engineered for your toughest workouts",
-    "headline_no_name": "Engineered for your toughest workouts",
-    "body": "Experience athletic gear that holds up. Our sustainable activewear brand for women makes durable wear from recycled ocean plastic.",
-    "cta": "Shop durable gear"
+    "headline_template": "Activewear made from ocean plastic",
+    "headline_no_name": "Activewear made from ocean plastic",
+    "body": "Sustainable clothing for women, made from recycled ocean plastic.",
+    "cta": "Shop the collection"
    },
    {
     "variant_id": "persona_006:1",
@@ -2083,10 +2088,10 @@
      "pub_010",
      "pub_002"
     ],
-    "headline_template": "Activewear made from recycled ocean plastic",
-    "headline_no_name": "Activewear made from recycled ocean plastic",
-    "body": "We are a sustainable activewear brand for women. Our products are made from recycled ocean plastic to reduce waste.",
-    "cta": "Shop eco-activewear"
+    "headline_template": "Can activewear clean the ocean?",
+    "headline_no_name": "Can activewear clean the ocean?",
+    "body": "Ours does. Sustainable activewear for women made from recycled ocean plastic.",
+    "cta": "Shop the collection"
    },
    {
     "variant_id": "persona_006:2",
@@ -2096,10 +2101,10 @@
      "pub_010",
      "pub_002"
     ],
-    "headline_template": "Your sustainable activewear choice, {first_name}",
-    "headline_no_name": "Your sustainable activewear choice",
-    "body": "Make a conscious choice. Our sustainable activewear brand for women creates apparel made from recycled ocean plastic.",
-    "cta": "Shop recycled gear"
+    "headline_template": "From ocean plastic to activewear",
+    "headline_no_name": "From ocean plastic to activewear",
+    "body": "A sustainable women's brand making activewear from recycled ocean plastic.",
+    "cta": "Shop sustainable gear"
    }
   ],
   "frequency_cap": {
@@ -2136,17 +2141,13 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 56.35
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
     "persona_001",
-    1
-   ],
-   [
-    "persona_001",
     2
    ],
    [
@@ -2155,8 +2156,13 @@
    ],
    [
     "persona_009",
+    2
+   ],
+   [
+    "persona_006",
     2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }

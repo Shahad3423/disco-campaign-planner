@@ -18,9 +18,9 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "pet_supplies",
+    "tag": "pet",
     "weight": 1.0,
-    "why": "Includes toys and supplies for cats."
+    "why": "Core category for pet products and services."
    },
    {
     "tag": "subscription",
@@ -28,9 +28,9 @@
     "why": "Offered as a subscription service."
    },
    {
-    "tag": "pet",
+    "tag": "pet_supplies",
     "weight": 1.0,
-    "why": "Core category for pet products and services."
+    "why": "Includes toys and supplies for cats."
    },
    {
     "tag": "toys",
@@ -105,7 +105,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, pet, pet_food (specific) (multiplier)"
+     "detail": "matches pet, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -146,7 +146,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, pet, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.95)).",
+   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.95)).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -159,7 +159,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, subscription, pet, pet_food (specific) (multiplier)"
+     "detail": "matches pet, subscription, pet_supplies, pet_food (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -200,7 +200,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, subscription, pet, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.93)).",
+   "reason": "Recommended: matches pet, subscription, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.93)).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -213,7 +213,7 @@
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches pet_supplies, subscription, pet, toys (specific) (multiplier)"
+     "detail": "matches pet, subscription, pet_supplies, toys (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
@@ -254,7 +254,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet_supplies, subscription, pet, toys (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.85)).",
+   "reason": "Recommended: matches pet, subscription, pet_supplies, toys (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.85)).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -1343,11 +1343,11 @@
   {
    "persona_id": "persona_004",
    "variant": 1,
-   "headline": "Welcome your new family member, {first_name}",
-   "body": "Give your new kitten the best start. Get toys, food samples, and a helpful guide for their first three months of life.",
-   "cta": "Start their journey",
-   "headline_no_name": "Welcome your new furry family member",
-   "angle": "emotional connection",
+   "headline": "The new kitten survival kit",
+   "body": "A booklet of what to expect, plus toys and food samples for their first three months.",
+   "cta": "Get the kit",
+   "headline_no_name": "The new kitten survival kit",
+   "angle": "the detail - leans on ingredient transparency and quality by listing exactly what comes in the box",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1356,11 +1356,11 @@
   {
    "persona_id": "persona_004",
    "variant": 2,
-   "headline": "{first_name}, inspect every ingredient for your new kitten",
-   "body": "Get food samples to review, plus toys and an educational booklet covering the first three months of your cat's life.",
-   "cta": "Get your kitten kit",
-   "headline_no_name": "Inspect every ingredient for your new kitten",
-   "angle": "ingredient transparency",
+   "headline": "Kitten parenthood, minus the panic",
+   "body": "A booklet on what to expect, plus toys and food samples for their first three months.",
+   "cta": "Get the box",
+   "headline_no_name": "Kitten parenthood, minus the panic",
+   "angle": "the twist: emotional connection and removing the stress of the first three months",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1369,11 +1369,11 @@
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "headline": "{first_name}, simplify your new kitten routine",
-   "body": "Save time with toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-   "cta": "Order the kitten kit",
-   "headline_no_name": "Simplify your new kitten routine",
-   "angle": "time-saving",
+   "headline": "Stop guessing what your kitten needs",
+   "body": "Get toys, food samples, and a handy booklet for their first three months.",
+   "cta": "Get the kitten box",
+   "headline_no_name": "Stop guessing what your kitten needs",
+   "angle": "the swap - leans on time-saving by replacing confusion with a simple box",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1382,11 +1382,11 @@
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "headline": "Help your family raise your new kitten",
-   "body": "Simplify your kitten's first three months with toys, food samples, and an easy guide on what to expect.",
-   "cta": "Get your first box",
-   "headline_no_name": "Help your family raise your new kitten",
-   "angle": "family-friendly",
+   "headline": "Their first three months, sorted",
+   "body": "We send the toys, food samples, and a booklet on what to expect straight to you.",
+   "cta": "Get the box",
+   "headline_no_name": "Their first three months, sorted",
+   "angle": "the moment: saving time for busy parents during the crucial first three months",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1395,11 +1395,11 @@
   {
    "persona_id": "persona_008",
    "variant": 1,
-   "headline": "{first_name}, get a complete kitten bundle",
-   "body": "All-in-one value: toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-   "cta": "Claim your kit",
-   "headline_no_name": "Get a complete kitten bundle",
-   "angle": "bundle offers",
+   "headline": "Toys, food, and a guide in one box",
+   "body": "Everything you need for their first three months, without buying it all separately.",
+   "cta": "Get the box",
+   "headline_no_name": "Toys, food, and a guide in one box",
+   "angle": "the detail: framing the contents as a high-value, all-in-one package",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1408,11 +1408,11 @@
   {
    "persona_id": "persona_008",
    "variant": 2,
-   "headline": "{first_name}, top-rated value for new kittens",
-   "body": "Highly reviewed: get toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-   "cta": "Shop the kitten pack",
-   "headline_no_name": "Top-rated value for new kittens",
-   "angle": "reviews",
+   "headline": "Why shop around for kitten gear?",
+   "body": "Get toys, food samples, and a helpful booklet for their first three months in one go.",
+   "cta": "Get the kit",
+   "headline_no_name": "Why shop around for kitten gear?",
+   "angle": "the question: appealing to value-conscious shoppers looking to avoid extra shopping trips",
    "claims_used": [
     "First three months of their cat's life",
     "Toys, food samples, a little booklet about what to expect"
@@ -1423,67 +1423,80 @@
   {
    "persona_id": "persona_004",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 3,
+   "persona_fit": 2,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "The copy fails to deliver on the promised angle of ingredient transparency or quality."
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_004",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 1,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 1,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 2,
+   "punch": 4,
    "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 1,
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 2,
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 1,
+   "punch": 3,
+   "persona_fit": 3,
    "claims_ok": false,
    "unsupported_claims": [
-    "top-rated",
-    "Highly reviewed"
+    "Everything you need for their first three months"
    ],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [
-    "The claims 'top-rated' and 'Highly reviewed' are not supported by the advertiser's stated claims."
+    "The claim 'Everything you need' is unsupported and inaccurate, as a kitten requires many essentials (like a litter box, bowls, and collar) not included in this basic kit."
    ],
    "passed": false
+  },
+  {
+   "persona_id": "persona_008",
+   "variant": 2,
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1738,12 +1751,12 @@
     {
      "name": "learning",
      "until": "14 days",
-     "rule": "planned bid per host; pacing only",
+     "rule": "planned bid per host, no adjustments",
      "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "rule": "planned bid x conversion likelihood, up to the ceiling",
      "why": "most units for the budget"
     }
    ],
@@ -1780,12 +1793,6 @@
     }
    ],
    "adjustments": [
-    {
-     "signal": "pacing",
-     "min_multiplier": 0.85,
-     "max_multiplier": 1.15,
-     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
-    },
     {
      "signal": "conversion_likelihood",
      "min_multiplier": 0.8,
@@ -1889,10 +1896,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "Welcome your new family member, {first_name}",
-    "headline_no_name": "Welcome your new furry family member",
-    "body": "Give your new kitten the best start. Get toys, food samples, and a helpful guide for their first three months of life.",
-    "cta": "Start their journey"
+    "headline_template": "The new kitten survival kit",
+    "headline_no_name": "The new kitten survival kit",
+    "body": "A booklet of what to expect, plus toys and food samples for their first three months.",
+    "cta": "Get the kit"
    },
    {
     "variant_id": "persona_004:2",
@@ -1902,10 +1909,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, inspect every ingredient for your new kitten",
-    "headline_no_name": "Inspect every ingredient for your new kitten",
-    "body": "Get food samples to review, plus toys and an educational booklet covering the first three months of your cat's life.",
-    "cta": "Get your kitten kit"
+    "headline_template": "Kitten parenthood, minus the panic",
+    "headline_no_name": "Kitten parenthood, minus the panic",
+    "body": "A booklet on what to expect, plus toys and food samples for their first three months.",
+    "cta": "Get the box"
    },
    {
     "variant_id": "persona_002:1",
@@ -1915,10 +1922,10 @@
      "pub_009",
      "pub_018"
     ],
-    "headline_template": "{first_name}, simplify your new kitten routine",
-    "headline_no_name": "Simplify your new kitten routine",
-    "body": "Save time with toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-    "cta": "Order the kitten kit"
+    "headline_template": "Stop guessing what your kitten needs",
+    "headline_no_name": "Stop guessing what your kitten needs",
+    "body": "Get toys, food samples, and a handy booklet for their first three months.",
+    "cta": "Get the kitten box"
    },
    {
     "variant_id": "persona_002:2",
@@ -1928,10 +1935,10 @@
      "pub_009",
      "pub_018"
     ],
-    "headline_template": "Help your family raise your new kitten",
-    "headline_no_name": "Help your family raise your new kitten",
-    "body": "Simplify your kitten's first three months with toys, food samples, and an easy guide on what to expect.",
-    "cta": "Get your first box"
+    "headline_template": "Their first three months, sorted",
+    "headline_no_name": "Their first three months, sorted",
+    "body": "We send the toys, food samples, and a booklet on what to expect straight to you.",
+    "cta": "Get the box"
    },
    {
     "variant_id": "persona_008:1",
@@ -1941,10 +1948,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, get a complete kitten bundle",
-    "headline_no_name": "Get a complete kitten bundle",
-    "body": "All-in-one value: toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-    "cta": "Claim your kit"
+    "headline_template": "Toys, food, and a guide in one box",
+    "headline_no_name": "Toys, food, and a guide in one box",
+    "body": "Everything you need for their first three months, without buying it all separately.",
+    "cta": "Get the box"
    },
    {
     "variant_id": "persona_008:2",
@@ -1954,10 +1961,10 @@
      "pub_007",
      "pub_018"
     ],
-    "headline_template": "{first_name}, top-rated value for new kittens",
-    "headline_no_name": "Top-rated value for new kittens",
-    "body": "Highly reviewed: get toys, food samples, and a booklet about what to expect, covering the first three months of your cat's life.",
-    "cta": "Shop the kitten pack"
+    "headline_template": "Why shop around for kitten gear?",
+    "headline_no_name": "Why shop around for kitten gear?",
+    "body": "Get toys, food samples, and a helpful booklet for their first three months in one go.",
+    "cta": "Get the kit"
    }
   ],
   "frequency_cap": {
@@ -1988,9 +1995,9 @@
   ]
  },
  "timings_s": {
-  "intake": 0.0,
+  "intake": 0.01,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 63.28
  },
  "creative_log": {
   "rounds": 2,
@@ -2001,7 +2008,7 @@
    ],
    [
     "persona_002",
-    1
+    2
    ],
    [
     "persona_008",
@@ -2011,6 +2018,7 @@
     "persona_008",
     2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }

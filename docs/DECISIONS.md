@@ -369,3 +369,16 @@ under-delivering, down when over-delivering) is removed from the bid formula, th
 config: smoothing spend over a flight needs delivery data we do not have, and it made the bid harder to explain. The
 flight plan still states a daily cap (budget / days, front-loaded in gifting moments). Pacing and bandit-style
 exploration are future work. Plans generated before this change still show a pacing adjustment in their stored config.
+
+## D30. Creatives: short lines, write many and keep the best, no names for now
+The writer is prompted as a DTC agency copywriter: one idea per card, concrete words, seven hooks (payoff, moment,
+swap, twist, detail, question, offer), a banned list of corporate words, headline <= 40 chars, body <= 90, CTA 2-4
+words. It drafts 4 candidates per persona; the reviewer (creative director) scores punch 1-5 and persona fit 1-5 and
+checks claims, where offers (packs, trials, savings, prices) and promised outcomes count as claims; code keeps the 2
+best passing candidates with different hooks, then rewrites failures once. Personalisation by first name is switched
+off (`creative.use_first_name: false`): the writer is told not to use it, the rule check fails a placeholder, serving
+shows the same headline to everyone.
+**Evidence** (15 demo briefs, old and new copy scored by the same new reviewer): unsupported claims per ad 0.89 -> 0.14,
+words per ad 23.4 -> 16.1, punch 3.16 -> 3.35, persona fit 3.64 -> 3.26 (shorter lines carry fewer persona cues: a
+real cost). A first version invented offers ("trial pack", "value pack") and outcomes ("puppy energy"); the claims
+rules above fixed that. One-claim briefs produce repetitive lines; a follow-up should ask for a second claim.

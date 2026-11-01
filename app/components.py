@@ -20,6 +20,7 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))  # lets Streamlit Cloud import the package without installing it
 
+from disco_planner.data import catalog  # noqa: E402
 from disco_planner.domain.models import AdvertiserInputs  # noqa: E402
 from disco_planner.llm.provider import LLMError, default_provider  # noqa: E402
 from disco_planner.planning import pipeline  # noqa: E402
@@ -330,9 +331,11 @@ def render_creatives(plan: CampaignPlan) -> None:
     if not plan.creatives:
         st.info("No creatives were generated for this brief.")
         return
-    mode = st.radio("Preview", ["With sample name", "Name unavailable"], horizontal=True, key="creative_mode")
+    use_name = catalog.config("scoring")["creative"]["use_first_name"]
+    mode = st.radio("Preview", ["With sample name", "Name unavailable"], horizontal=True, key="creative_mode") if use_name else "Name unavailable"
     sample = st.text_input("Sample name", "Sarah", key="creative_name") if mode == "With sample name" else None
-    st.caption("The stored creative keeps the `{first_name}` placeholder; the name is filled in at serve time, with the no-name headline as fallback.")
+    if use_name:
+        st.caption("The stored creative keeps the `{first_name}` placeholder; the name is filled in at serve time, with the no-name headline as fallback.")
     reviews = {(r.persona_id, r.variant): r for r in plan.reviews}
     names = {m.persona_id: m.persona_name for m in plan.personas}
     by_persona: dict[str, list] = {}

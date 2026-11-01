@@ -27,14 +27,14 @@
     "why": "Protein bars are a core wellness and nutrition DTC product category."
    },
    {
-    "tag": "groceries",
-    "weight": 0.5,
-    "why": "Protein bars are frequently purchased as grocery or snack items."
-   },
-   {
     "tag": "fitness_classes",
     "weight": 0.5,
     "why": "Fitness class attendees often consume protein bars for pre- or post-workout nutrition."
+   },
+   {
+    "tag": "groceries",
+    "weight": 0.5,
+    "why": "Protein bars are frequently purchased as grocery or snack items."
    }
   ],
   "competing_tags": [],
@@ -1328,11 +1328,11 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, optimize your daily fuel",
-   "body": "Upgrade your nutrition system with protein bars that don't taste like cardboard. Fuel your body with what it actually deserves.",
+   "headline": "Formulated to taste good",
+   "body": "Finally, a protein bar formulated to taste good instead of like cardboard.",
    "cta": "Shop protein bars",
-   "headline_no_name": "Optimize your daily fuel",
-   "angle": "Outcome-focused optimization",
+   "headline_no_name": "Formulated to taste good",
+   "angle": "the swap (appeals to the Wellness Optimizer's preference for ingredient and formulation transparency)",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1340,11 +1340,11 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "System-grade nutrition for {first_name}",
-   "body": "Meet the protein bars that don't taste like cardboard. High-quality fuel engineered to fit seamlessly into your wellness routine.",
-   "cta": "Order protein bars",
-   "headline_no_name": "System-grade daily nutrition",
-   "angle": "Quality fuel and transparency",
+   "headline": "The flavor formulation",
+   "body": "We formulated these protein bars to taste good, not like cardboard.",
+   "cta": "Buy protein bars",
+   "headline_no_name": "The flavor formulation",
+   "angle": "the detail (appeals to the Wellness Optimizer's preference for systematic, outcome-focused formulation)",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1352,11 +1352,11 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "{first_name}, fuel your next workout",
-   "body": "Power your recovery with protein bars that don't taste like cardboard. The perfect post-training fuel for your active lifestyle.",
+   "headline": "Stop chewing on cardboard",
+   "body": "Swap your dry protein bars for ones formulated to taste good.",
    "cta": "Shop protein bars",
-   "headline_no_name": "Fuel your next workout",
-   "angle": "Performance and recovery",
+   "headline_no_name": "Stop chewing on cardboard",
+   "angle": "swap",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1364,11 +1364,11 @@
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "headline": "Post-workout fuel just got better, {first_name}",
-   "body": "Stop settling for bad snacks. Get the protein bars that don't taste like cardboard to keep your training on track and tasting great.",
-   "cta": "Get your bars",
-   "headline_no_name": "Post-workout fuel just got better",
-   "angle": "Athlete identity and taste performance",
+   "headline": "Fuel that tastes like real food",
+   "body": "Your post-workout protein bars shouldn't taste like cardboard.",
+   "cta": "Shop the bars",
+   "headline_no_name": "Fuel that tastes like real food",
+   "angle": "the moment (appeals to the Fitness Enthusiast's post-workout recovery routine)",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1376,11 +1376,11 @@
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "The perfect premium snack gift, {first_name}",
-   "body": "Gift your favorite fitness lover protein bars that don't taste like cardboard. A delicious, premium treat they will actually enjoy.",
-   "cta": "Shop gift options",
-   "headline_no_name": "The perfect premium snack gift",
-   "angle": "Premium presentation gifting",
+   "headline": "A premium fitness gift set",
+   "body": "Gift a premium box of protein bars formulated to taste good, not like cardboard.",
+   "cta": "Shop gift sets",
+   "headline_no_name": "A premium fitness gift set",
+   "angle": "the detail (appeals to the Gifter's preference for premium presentation and gift sets)",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1388,11 +1388,11 @@
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "headline": "Need a premium gift for your active friend, {first_name}?",
-   "body": "Give them a beautifully presented gift box of protein bars that don't taste like cardboard. Delicious flavor in every bite.",
+   "headline": "No tricks, just real taste",
+   "body": "Gift a premium box of protein bars that don't taste like cardboard this Halloween.",
    "cta": "Shop gift boxes",
-   "headline_no_name": "A premium gift for the active person in your life",
-   "angle": "premium presentation and gift sets",
+   "headline_no_name": "No tricks, just real taste",
+   "angle": "the twist (uses the Halloween moment to frame the product as a premium gift box)",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1402,62 +1402,93 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 3,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [
+    "formulated to taste good"
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 5,
+   "punch": 2,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": true,
+   "distinct_from_others": false,
+   "voice_issues": [
+    "The flavor formulation"
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "persona_fit": 5,
+   "punch": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 1,
+   "punch": 4,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_010",
-   "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "variant": 1,
+   "punch": 2,
+   "persona_fit": 2,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "premium fitness gift set",
+    "premium box of protein bars",
+    "gift sets"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [
+    "A premium fitness gift set"
+   ],
+   "issues": [
+    "Invented product format (gift sets/boxes) not supported by stated claims."
+   ],
+   "passed": false
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "punch": 2,
+   "persona_fit": 2,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "premium box of protein bars",
+    "gift boxes"
+   ],
+   "distinct_from_others": false,
+   "voice_issues": [
+    "No tricks, just real taste"
+   ],
+   "issues": [
+    "Invented product format (gift boxes) and seasonal Halloween context not supported by stated claims."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1675,12 +1706,12 @@
     {
      "name": "learning",
      "until": "14 days",
-     "rule": "planned bid per host; pacing only",
+     "rule": "planned bid per host, no adjustments",
      "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "rule": "planned bid x conversion likelihood, up to the ceiling",
      "why": "most units for the budget"
     }
    ],
@@ -1711,12 +1742,6 @@
     }
    ],
    "adjustments": [
-    {
-     "signal": "pacing",
-     "min_multiplier": 0.85,
-     "max_multiplier": 1.15,
-     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
-    },
     {
      "signal": "conversion_likelihood",
      "min_multiplier": 0.8,
@@ -1822,9 +1847,9 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, optimize your daily fuel",
-    "headline_no_name": "Optimize your daily fuel",
-    "body": "Upgrade your nutrition system with protein bars that don't taste like cardboard. Fuel your body with what it actually deserves.",
+    "headline_template": "Formulated to taste good",
+    "headline_no_name": "Formulated to taste good",
+    "body": "Finally, a protein bar formulated to taste good instead of like cardboard.",
     "cta": "Shop protein bars"
    },
    {
@@ -1834,10 +1859,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "System-grade nutrition for {first_name}",
-    "headline_no_name": "System-grade daily nutrition",
-    "body": "Meet the protein bars that don't taste like cardboard. High-quality fuel engineered to fit seamlessly into your wellness routine.",
-    "cta": "Order protein bars"
+    "headline_template": "The flavor formulation",
+    "headline_no_name": "The flavor formulation",
+    "body": "We formulated these protein bars to taste good, not like cardboard.",
+    "cta": "Buy protein bars"
    },
    {
     "variant_id": "persona_009:1",
@@ -1846,9 +1871,9 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, fuel your next workout",
-    "headline_no_name": "Fuel your next workout",
-    "body": "Power your recovery with protein bars that don't taste like cardboard. The perfect post-training fuel for your active lifestyle.",
+    "headline_template": "Stop chewing on cardboard",
+    "headline_no_name": "Stop chewing on cardboard",
+    "body": "Swap your dry protein bars for ones formulated to taste good.",
     "cta": "Shop protein bars"
    },
    {
@@ -1858,10 +1883,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "Post-workout fuel just got better, {first_name}",
-    "headline_no_name": "Post-workout fuel just got better",
-    "body": "Stop settling for bad snacks. Get the protein bars that don't taste like cardboard to keep your training on track and tasting great.",
-    "cta": "Get your bars"
+    "headline_template": "Fuel that tastes like real food",
+    "headline_no_name": "Fuel that tastes like real food",
+    "body": "Your post-workout protein bars shouldn't taste like cardboard.",
+    "cta": "Shop the bars"
    },
    {
     "variant_id": "persona_010:1",
@@ -1870,10 +1895,10 @@
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "The perfect premium snack gift, {first_name}",
-    "headline_no_name": "The perfect premium snack gift",
-    "body": "Gift your favorite fitness lover protein bars that don't taste like cardboard. A delicious, premium treat they will actually enjoy.",
-    "cta": "Shop gift options"
+    "headline_template": "A premium fitness gift set",
+    "headline_no_name": "A premium fitness gift set",
+    "body": "Gift a premium box of protein bars formulated to taste good, not like cardboard.",
+    "cta": "Shop gift sets"
    },
    {
     "variant_id": "persona_010:2",
@@ -1882,9 +1907,9 @@
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "Need a premium gift for your active friend, {first_name}?",
-    "headline_no_name": "A premium gift for the active person in your life",
-    "body": "Give them a beautifully presented gift box of protein bars that don't taste like cardboard. Delicious flavor in every bite.",
+    "headline_template": "No tricks, just real taste",
+    "headline_no_name": "No tricks, just real taste",
+    "body": "Gift a premium box of protein bars that don't taste like cardboard this Halloween.",
     "cta": "Shop gift boxes"
    }
   ],
@@ -1919,15 +1944,32 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.0
+  "creative": 53.39
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
+    "persona_001",
+    1
+   ],
+   [
+    "persona_001",
+    2
+   ],
+   [
+    "persona_009",
+    2
+   ],
+   [
+    "persona_010",
+    1
+   ],
+   [
     "persona_010",
     2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }

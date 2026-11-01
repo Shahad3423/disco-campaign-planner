@@ -1337,11 +1337,25 @@
   {
    "persona_id": "persona_005",
    "variant": 1,
-   "headline": "{first_name}, discover heritage craftsmanship",
-   "body": "Italian-made and handcrafted in Florence, these custom-fit leather handbags represent a lifetime of understated style.",
-   "cta": "Shop custom handbags",
-   "headline_no_name": "Discover heritage craftsmanship",
-   "angle": "heritage and craftsmanship focus",
+   "headline": "Handcrafted in Florence",
+   "body": "Italian-made, custom-fit leather handbags built on generations of heritage.",
+   "cta": "Shop custom leather",
+   "headline_no_name": "Handcrafted in Florence",
+   "angle": "the detail",
+   "claims_used": [
+    "Handcrafted in Florence",
+    "Italian-made",
+    "Custom-fit leather handbags"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "A custom fit that lasts",
+   "body": "Italian-made leather handbags handcrafted in Florence with classic heritage.",
+   "cta": "Customize your bag",
+   "headline_no_name": "A custom fit that lasts",
+   "angle": "the payoff",
    "claims_used": [
     "Italian-made",
     "Handcrafted in Florence",
@@ -1349,41 +1363,27 @@
    ]
   },
   {
-   "persona_id": "persona_005",
-   "variant": 2,
-   "headline": "An understated classic, custom-fit for {first_name}",
-   "body": "Skip the trends. Choose Italian-made, custom-fit leather handbags handcrafted in Florence with dedicated heritage craftsmanship.",
-   "cta": "Design your handbag",
-   "headline_no_name": "An understated classic, custom-fit for you",
-   "angle": "understated quality and custom-fit focus",
-   "claims_used": [
-    "Italian-made",
-    "Custom-fit leather handbags",
-    "Handcrafted in Florence"
-   ]
-  },
-  {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "{first_name}, give a masterpiece handcrafted in Florence",
-   "body": "Delight them with custom-fit leather handbags, handcrafted in Florence. A timeless Italian-made gift of pure heritage.",
-   "cta": "Shop custom gifts",
-   "headline_no_name": "Give a masterpiece handcrafted in Florence",
-   "angle": "premium presentation",
+   "headline": "Looking for a truly custom gift?",
+   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
+   "cta": "Design a handbag",
+   "headline_no_name": "Looking for a truly custom gift?",
+   "angle": "question - leans on premium presentation and giftable nature",
    "claims_used": [
-    "Custom-fit leather handbags",
     "Italian-made",
+    "Custom-fit leather handbags",
     "Handcrafted in Florence"
    ]
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "headline": "The ultimate gift of Italian craftsmanship",
-   "body": "Surprise them with custom-fit leather handbags, handcrafted in Florence. Exquisite Italian-made quality for a premium presentation.",
-   "cta": "Order a custom gift",
-   "headline_no_name": "The ultimate gift of Italian craftsmanship",
-   "angle": "premium presentation and impressive presentation focus",
+   "headline": "Unboxing true Florentine luxury",
+   "body": "An Italian-made, custom-fit leather handbag handcrafted in Florence.",
+   "cta": "Customize a handbag",
+   "headline_no_name": "Unboxing true Florentine luxury",
+   "angle": "the moment",
    "claims_used": [
     "Italian-made",
     "Custom-fit leather handbags",
@@ -1393,28 +1393,28 @@
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "headline": "{first_name}, discover handbags handcrafted in Florence",
-   "body": "Our custom-fit leather handbags are handcrafted in Florence. We honor traditional heritage and Italian-made quality.",
-   "cta": "Shop custom handbags",
-   "headline_no_name": "Discover handbags handcrafted in Florence",
-   "angle": "supply chain transparency",
+   "headline": "Why buy off the rack?",
+   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
+   "cta": "Shop custom fit",
+   "headline_no_name": "Why buy off the rack?",
+   "angle": "question - leans on slow fashion and tailored quality preferences",
    "claims_used": [
-    "Custom-fit leather handbags",
     "Italian-made",
+    "Custom-fit leather handbags",
     "Handcrafted in Florence"
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
-   "headline": "{first_name}, experience custom-fit Italian heritage",
-   "body": "Made in Florence, Italy. Every handbag is custom-fit and handcrafted, focusing entirely on heritage and authentic craftsmanship.",
-   "cta": "Shop Italian-made",
-   "headline_no_name": "Experience custom-fit Italian heritage",
-   "angle": "craftsmanship focused",
+   "headline": "Goodbye, throwaway fashion",
+   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence to endure.",
+   "cta": "Shop custom leather",
+   "headline_no_name": "Goodbye, throwaway fashion",
+   "angle": "the swap",
    "claims_used": [
-    "Custom-fit leather handbags",
     "Italian-made",
+    "Custom-fit leather handbags",
     "Handcrafted in Florence"
    ]
   }
@@ -1423,65 +1423,91 @@
   {
    "persona_id": "persona_005",
    "variant": 1,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "generations of heritage"
+   ],
    "distinct_from_others": true,
+   "voice_issues": [
+    "built on generations of heritage"
+   ],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "punch": 3,
+   "persona_fit": 4,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "lasts",
+    "classic heritage"
+   ],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_010",
    "variant": 1,
+   "punch": 4,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "punch": 3,
+   "persona_fit": 3,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "unboxing"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "voice_issues": [
+    "Unboxing true Florentine luxury"
+   ],
+   "issues": [
+    "Implies a specific premium unboxing experience or packaging that is not supported by the stated claims."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "persona_fit": 2,
+   "punch": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": false,
+   "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [
-    "Does not address the sustainability persona's core preferences (sustainability claims, supply chain transparency, certifications).",
-    "The angle claims 'supply chain transparency' but the copy only mentions 'handcrafted in Florence' which is a basic origin claim, not transparency."
+    "Does not address the sustainability buyer's preference for specific sustainability claims or supply chain transparency."
    ],
    "passed": false
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
+   "punch": 4,
    "persona_fit": 2,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": false,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "to endure"
+   ],
+   "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [
-    "Fails to target the sustainability persona; contains no sustainability, ethical, or eco-friendly messaging."
+    "Uses vague eco-positioning ('Goodbye, throwaway fashion') which this persona explicitly avoids in favor of specific claims and certifications."
    ],
    "passed": false
   }
@@ -1738,12 +1764,12 @@
     {
      "name": "learning",
      "until": "14 days",
-     "rule": "planned bid per host; pacing only",
+     "rule": "planned bid per host, no adjustments",
      "why": "stable bids so measured rates aren't confounded"
     },
     {
      "name": "maximize",
-     "rule": "planned bid x pacing x conversion likelihood, up to the ceiling",
+     "rule": "planned bid x conversion likelihood, up to the ceiling",
      "why": "most units for the budget"
     }
    ],
@@ -1780,12 +1806,6 @@
     }
    ],
    "adjustments": [
-    {
-     "signal": "pacing",
-     "min_multiplier": 0.85,
-     "max_multiplier": 1.15,
-     "reason": "Under-delivering vs the daily plan -> bid up a little; over-delivering -> bid down."
-    },
     {
      "signal": "conversion_likelihood",
      "min_multiplier": 0.8,
@@ -1889,10 +1909,10 @@
      "pub_004",
      "pub_016"
     ],
-    "headline_template": "{first_name}, discover heritage craftsmanship",
-    "headline_no_name": "Discover heritage craftsmanship",
-    "body": "Italian-made and handcrafted in Florence, these custom-fit leather handbags represent a lifetime of understated style.",
-    "cta": "Shop custom handbags"
+    "headline_template": "Handcrafted in Florence",
+    "headline_no_name": "Handcrafted in Florence",
+    "body": "Italian-made, custom-fit leather handbags built on generations of heritage.",
+    "cta": "Shop custom leather"
    },
    {
     "variant_id": "persona_005:2",
@@ -1902,10 +1922,10 @@
      "pub_004",
      "pub_016"
     ],
-    "headline_template": "An understated classic, custom-fit for {first_name}",
-    "headline_no_name": "An understated classic, custom-fit for you",
-    "body": "Skip the trends. Choose Italian-made, custom-fit leather handbags handcrafted in Florence with dedicated heritage craftsmanship.",
-    "cta": "Design your handbag"
+    "headline_template": "A custom fit that lasts",
+    "headline_no_name": "A custom fit that lasts",
+    "body": "Italian-made leather handbags handcrafted in Florence with classic heritage.",
+    "cta": "Customize your bag"
    },
    {
     "variant_id": "persona_010:1",
@@ -1915,10 +1935,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "{first_name}, give a masterpiece handcrafted in Florence",
-    "headline_no_name": "Give a masterpiece handcrafted in Florence",
-    "body": "Delight them with custom-fit leather handbags, handcrafted in Florence. A timeless Italian-made gift of pure heritage.",
-    "cta": "Shop custom gifts"
+    "headline_template": "Looking for a truly custom gift?",
+    "headline_no_name": "Looking for a truly custom gift?",
+    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
+    "cta": "Design a handbag"
    },
    {
     "variant_id": "persona_010:2",
@@ -1928,10 +1948,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "The ultimate gift of Italian craftsmanship",
-    "headline_no_name": "The ultimate gift of Italian craftsmanship",
-    "body": "Surprise them with custom-fit leather handbags, handcrafted in Florence. Exquisite Italian-made quality for a premium presentation.",
-    "cta": "Order a custom gift"
+    "headline_template": "Unboxing true Florentine luxury",
+    "headline_no_name": "Unboxing true Florentine luxury",
+    "body": "An Italian-made, custom-fit leather handbag handcrafted in Florence.",
+    "cta": "Customize a handbag"
    },
    {
     "variant_id": "persona_006:1",
@@ -1941,10 +1961,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "{first_name}, discover handbags handcrafted in Florence",
-    "headline_no_name": "Discover handbags handcrafted in Florence",
-    "body": "Our custom-fit leather handbags are handcrafted in Florence. We honor traditional heritage and Italian-made quality.",
-    "cta": "Shop custom handbags"
+    "headline_template": "Why buy off the rack?",
+    "headline_no_name": "Why buy off the rack?",
+    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
+    "cta": "Shop custom fit"
    },
    {
     "variant_id": "persona_006:2",
@@ -1954,10 +1974,10 @@
      "pub_004",
      "pub_005"
     ],
-    "headline_template": "{first_name}, experience custom-fit Italian heritage",
-    "headline_no_name": "Experience custom-fit Italian heritage",
-    "body": "Made in Florence, Italy. Every handbag is custom-fit and handcrafted, focusing entirely on heritage and authentic craftsmanship.",
-    "cta": "Shop Italian-made"
+    "headline_template": "Goodbye, throwaway fashion",
+    "headline_no_name": "Goodbye, throwaway fashion",
+    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence to endure.",
+    "cta": "Shop custom leather"
    }
   ],
   "frequency_cap": {
@@ -1991,23 +2011,28 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 0.01
+  "creative": 55.37
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_010",
+    "persona_005",
     1
    ],
    [
-    "persona_006",
-    1
+    "persona_005",
+    2
+   ],
+   [
+    "persona_010",
+    2
    ],
    [
     "persona_006",
     2
    ]
-  ]
+  ],
+  "candidates": 12
  }
 }
