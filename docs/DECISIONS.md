@@ -327,3 +327,16 @@ much better and the others can't absorb the spend; it stays an advertiser settin
 **Evaluation (reports/bidding_eval.md):** clearing CPC median in benchmark range on 20/20 hosts; forecast range
 covers 77% of replayed flights (target 80%; next: derive the range from replays to include price uncertainty);
 allocation beats equal, score-proportional and all-on-best-host splits; truthful bidding is optimal in all plans.
+
+## D25. Missing information is left out, not filled in; price is penalised only when it exceeds the typical order
+
+**Missing values.** The old neutral 0.6 (used whenever the brief didn't state gender, age, price...) was one of the
+most influential constants (Morris mu* 0.12): applied to every host it added a constant inside the quality average,
+compressing real differences and moving hosts across the relative cutoff. Now an unstated component is left out
+and the remaining weights are renormalised; an unknown price multiplier is 1 (no information); persona price and
+audience compatibility are 1 when the tier or audience isn't stated. Kept: notes "no flag" = 0.5, because the LLM
+read every note and judged that one not relevant (a reading, not missing data).
+**Price.** If the product costs the same as or less than the host's typical order, the shopper can afford it:
+price_fit = 1. Only a product costing more is penalised: exp(-ln(price/AOV) / 1.5).
+**Measured:** golden metrics unchanged; holdout TEST: judge prefers recommended hosts 84% (was 82%), ranking
+agreement 0.790 (was 0.786); the fill constant no longer exists and the price exponent's sensitivity fell 0.17 -> 0.10.

@@ -64,13 +64,19 @@ def test_advertiser_max_cpc_is_never_exceeded():
     assert all(h.max_bid <= 0.8 for h in bids.host_bids)
 
 
-def test_more_aggressive_wins_more_and_pays_more_per_unit():
-    res = {}
+def test_more_aggressive_wins_more_and_pays_more_at_the_margin_per_host():
+    # The law is per host: winning a larger share of the SAME host needs a higher bid. The average across hosts
+    # can even fall (aggressive can go deep on cheap hosts instead of being forced onto an expensive one).
+    plans = {}
     for agg in ("conservative", "aggressive"):
         _, _, plan, _, _ = plan_for(AdvertiserInputs(monthly_budget_usd=1_000_000, aggressiveness=agg, objective="clicks"))
-        res[agg] = (plan.forecast.mid, plan.planned_spend_usd / plan.forecast.mid)
-    assert res["aggressive"][0] > res["conservative"][0]           # more units available
-    assert res["aggressive"][1] >= res["conservative"][1]          # at a higher cost per unit
+        plans[agg] = plan
+    assert plans["aggressive"].forecast.mid > plans["conservative"].forecast.mid
+    cons = {a.publisher_id: a for a in plans["conservative"].allocations}
+    for a in plans["aggressive"].allocations:
+        c = cons[a.publisher_id]
+        if a.win_share > c.win_share:
+            assert a.cpc_bid_usd >= c.cpc_bid_usd
 
 
 def test_goal_status_reachable_money_and_inventory_limited():

@@ -22,10 +22,10 @@ def _range(text: str | None) -> tuple[int, int] | None:
     return (nums[0], nums[1]) if len(nums) >= 2 else None
 
 
-def _overlap(a: tuple[int, int] | None, b: tuple[int, int] | None) -> float:
-    """Share of range `a` covered by `b`; 0.6 (neutral) when either is unknown."""
+def _overlap(a: tuple[int, int] | None, b: tuple[int, int] | None) -> float | None:
+    """Share of range `a` covered by `b`; None when either is unknown (left out, D25)."""
     if not a or not b:
-        return _ps()["overlap_neutral"]
+        return None
     return max(0, min(a[1], b[1]) - max(a[0], b[0])) / max(1, a[1] - a[0])
 
 
@@ -37,28 +37,34 @@ def affinity(profile: AdvertiserProfile, persona: Persona) -> tuple[float, list[
 
 
 def price_compat(profile: AdvertiserProfile, persona: Persona) -> float:
+    """1.0 (no information) when the price tier is unknown: it can't favour one persona over another."""
     table = catalog.config("scoring")["personas"]["price_compat"]
-    return table.get(profile.price_tier, table["unknown"]).get(persona.price_sensitivity, 0.7)
+    if profile.price_tier not in table:
+        return 1.0
+    return table[profile.price_tier].get(persona.price_sensitivity, 1.0)
 
 
 def audience_compat(profile: AdvertiserProfile, persona: Persona) -> float:
-    gender = 1.0
+    """Weighted average of what the advertiser stated: gender match (1.0 / 0.8 balanced / 0.3 opposite) and age
+    overlap (share of the advertiser's range the persona covers, floored). 1.0 (no information) if neither."""
+    shape = _ps()
+    parts = []
     if profile.target_gender in ("female", "male"):
         skew = persona.gender_skew
-        if skew == "balanced":
-            gender = _ps()["gender_balanced"]
-        elif skew.startswith(profile.target_gender):
-            gender = 1.0
-        else:
-            gender = _ps()["gender_mismatch"]
+        gender = (shape["gender_balanced"] if skew == "balanced"
+                  else 1.0 if skew.startswith(profile.target_gender) else shape["gender_mismatch"])
+        parts.append((gender, shape["audience_gender_weight"]))
     age = _overlap(_range(profile.target_age_range), _range(persona.age_range))
-    w = _ps()["audience_gender_weight"]
-    return w * gender + (1 - w) * max(age, _ps()["audience_age_floor"])
+    if age is not None:
+        parts.append((max(age, shape["audience_age_floor"]), 1 - shape["audience_gender_weight"]))
+    if not parts:
+        return 1.0
+    return sum(v * w for v, w in parts) / sum(w for _, w in parts)
 
 
 def host_fit(persona: Persona, pub: Publisher) -> float:
     """How likely this persona is among this host's shoppers: demographics + category."""
-    age = _overlap(_range(persona.age_range), _range(pub.audience.age_skew))
+    age = _overlap(_range(persona.age_range), _range(pub.audience.age_skew)) or 0.0  # catalog ranges are always known
     female = pub.audience.gender_split.get("female", 0.5)
     gender = {"female": female, "female-leaning": 0.5 + female / 2, "balanced": 1 - abs(female - 0.5)}.get(
         persona.gender_skew, 0.5

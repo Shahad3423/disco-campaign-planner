@@ -67,23 +67,20 @@ personas:
     premium: {low: 1.0, low-medium: 0.9, medium: 0.7, medium-high: 0.5, high: 0.35}
     mid:     {low: 0.8, low-medium: 0.9, medium: 1.0, medium-high: 0.9, high: 0.8}
     budget:  {low: 0.5, low-medium: 0.7, medium: 0.9, medium-high: 1.0, high: 1.0}
-    unknown: {low: 0.7, low-medium: 0.7, medium: 0.7, medium-high: 0.7, high: 0.7}
 
 intake:
   self_consistency_samples: 3   # 1 = single greedy call; 3 = majority vote over tags/competitors/conflicts
 
 # Component shapes (were hard-coded; moved here so every number can be tuned and swept).
 shape:
-  neutral: 0.6                    # value when the advertiser didn't state something: mild, not zero
-  price_spread_above: 1.5         # price_fit = exp(-|ln(price/AOV)| / spread); price ABOVE host AOV
-  price_spread_below: 2.5         # ... price BELOW host AOV (more forgiving)
+  # No fill-in value for missing information (D25): unknown components are left out of the average.
+  price_spread_above: 1.5         # price_fit = exp(-ln(price/AOV) / spread) when the product costs MORE than the typical order;
+                                  # 1.0 when it costs the same or less (the shopper can afford it)
   income_gap_penalty: 0.7         # x per income tier the host is below what the price tier needs
-  tier_match_value: 0.8           # price unknown but host income suits the tier
-  notes_values: {aligned: 1.0, neutral: 0.5, misaligned: 0.0}
-  seasonality_values: {in_season: 1.0, off_season: 0.75, non_gift_host: 0.3, non_gift_product: 0.5}
+  notes_values: {aligned: 1.0, neutral: 0.5, misaligned: 0.0}   # neutral = the LLM read the note and found it not relevant
+  seasonality_values: {in_season: 1.0, off_season: 0.75, non_gift_host: 0.3}   # only for gifting products
 
 persona_shape:
-  overlap_neutral: 0.6            # age-range overlap when either side is unknown
   affinity_base: 0.6              # one shared interest tag
   affinity_step: 0.2              # + per extra shared tag (cap 1)
   gender_balanced: 0.8            # advertiser targets one gender, persona is balanced

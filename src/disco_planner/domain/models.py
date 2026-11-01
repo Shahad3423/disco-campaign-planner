@@ -113,7 +113,7 @@ class AdvertiserProfile(BaseModel):
 
 class ScoreComponent(BaseModel):
     name: str
-    value: float = Field(ge=0, le=1)
+    value: float | None = Field(default=None, ge=0, le=1, description="None = not stated, left out of the score")
     weight: float
     detail: str
 

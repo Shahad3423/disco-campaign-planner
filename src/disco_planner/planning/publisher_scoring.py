@@ -16,10 +16,8 @@ def _shape() -> dict:
     return catalog.config("scoring")["shape"]
 
 
-def __getattr__(name: str):  # NEUTRAL kept as a read-only alias for older callers/tests
-    if name == "NEUTRAL":
-        return _shape()["neutral"]
-    raise AttributeError(name)
+# Missing information is LEFT OUT, not filled in (D25): a component the brief gives no evidence for
+# returns None, and the quality average is taken over the components we do know (weights renormalised).
 
 
 def _age_range(text: str | None) -> tuple[int, int] | None:
@@ -57,51 +55,46 @@ def category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str
     return min(1.0, base + bonus), detail
 
 
-def audience_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
+def audience_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float | None, str]:
+    """Average of the parts the advertiser actually stated (gender share, age overlap); None if neither."""
     parts, details = [], []
     if profile.target_gender in ("female", "male"):
         share = pub.audience.gender_split.get(profile.target_gender, 0.0)
         parts.append(share)
         details.append(f"{share:.0%} {profile.target_gender}")
-    else:
-        parts.append(_shape()["neutral"])
-        details.append("gender not stated")
-
     target, host = _age_range(profile.target_age_range), _age_range(pub.audience.age_skew)
     if target and host:
         overlap = max(0, min(target[1], host[1]) - max(target[0], host[0]))
         parts.append(overlap / max(1, target[1] - target[0]))
         details.append(f"age {pub.audience.age_skew} vs target {profile.target_age_range}")
-    else:
-        parts.append(_shape()["neutral"])
-        details.append("age not stated")
+    if not parts:
+        return None, "audience not stated (left out)"
     return sum(parts) / len(parts), "; ".join(details)
 
 
-def price_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
-    """Asymmetric: a $650 product on a $28-AOV host is worse than a $20 product on a $150 host."""
+def price_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float | None, str]:
+    """One-sided: a shopper whose typical order is at least the product's price can afford it (1.0);
+    only a product that costs MORE than the host's typical order is penalised. None if no price info."""
     cfg = catalog.config("scoring")
     tiers = cfg["income_tiers"]
     shape = _shape()
-    score, details = shape["neutral"], []
-
+    score, details = None, []
     if profile.price_point_usd:
         ratio = profile.price_point_usd / pub.avg_order_value_usd
-        spread = shape["price_spread_above"] if ratio > 1 else shape["price_spread_below"]
-        score = math.exp(-abs(math.log(ratio)) / spread)
-        details.append(f"price ${profile.price_point_usd:.0f} vs host AOV ${pub.avg_order_value_usd:.0f}")
-
+        score = 1.0 if ratio <= 1 else math.exp(-math.log(ratio) / shape["price_spread_above"])
+        details.append(f"price ${profile.price_point_usd:.0f} vs host AOV ${pub.avg_order_value_usd:.0f}"
+                       + (" (affordable)" if ratio <= 1 else f" ({ratio:.1f}x the typical order)"))
     needed = cfg["price_tier_to_income"].get(profile.price_tier)
     if needed and pub.audience.income_tier in tiers:
         gap = tiers.index(needed) - tiers.index(pub.audience.income_tier)
+        score = 1.0 if score is None else score
         if gap > 0:
             score *= shape["income_gap_penalty"] ** gap
             details.append(f"host income {pub.audience.income_tier} below {needed} needed for {profile.price_tier}")
         elif not profile.price_point_usd:
-            score = shape["tier_match_value"]
             details.append(f"host income {pub.audience.income_tier} suits {profile.price_tier}")
-    if not details:
-        details.append("price not stated")
+    if score is None:
+        return None, "price not stated (left out)"
     return score, "; ".join(details)
 
 
@@ -120,7 +113,7 @@ def persona_fit(pub: Publisher, weights: dict[str, float]) -> tuple[float, str]:
     from disco_planner.planning.personas import host_fit  # local import: personas imports this module's types
 
     if not weights:
-        return _shape()["neutral"], "no plausible personas yet"
+        return None, "no plausible personas (left out)"
     by_id = catalog.persona_by_id()
     fits = {pid: host_fit(by_id[pid], pub) for pid in weights}
     value = sum(weights[pid] * fits[pid] for pid in weights) / sum(weights.values())
@@ -140,7 +133,7 @@ def seasonality_fit(profile: AdvertiserProfile, pub: Publisher, today: date) -> 
     giftable_product = profile.purchase_model == "gift" or any(t.tag == "gifting" for t in profile.relevant_tags)
     giftable_host = "gifting" in pub.tags or "gift" in pub.notes.lower()
     if not giftable_product:
-        return v["non_gift_product"], "not a gifting product"
+        return None, "not a gifting product (left out)"
     in_season = any(
         0 <= (date(today.year, m, 1) - today).days <= cfg["lookahead_days"] or today.month == m
         for m in cfg["season_months"]
@@ -178,7 +171,8 @@ def score_publisher(
     components = [
         ScoreComponent(name="category_fit", value=cat, weight=1.0, detail=cat_d + " (multiplier)"),
         ScoreComponent(name="audience_fit", value=aud, weight=w["audience_fit"], detail=aud_d),
-        ScoreComponent(name="price_fit", value=price, weight=1.0, detail=price_d + f" (multiplier ^{cfg['price_exponent']})"),
+        ScoreComponent(name="price_fit", value=price, weight=1.0,
+                       detail=price_d + (f" (multiplier ^{cfg['price_exponent']})" if price is not None else "")),
         ScoreComponent(name="persona_fit", value=pfit, weight=w["persona_fit"], detail=pfit_d),
         ScoreComponent(name="notes_fit", value=notes, weight=w["notes_fit"], detail=notes_d),
         ScoreComponent(name="scale", value=scale, weight=w["scale"], detail=scale_d),
@@ -186,9 +180,11 @@ def score_publisher(
     ]
     # score = relevance^a x affordability^b x M_p(quality)  (docs/SCORING.md):
     # relevance ~ will they click, affordability ~ will they buy, quality ~ everything else.
-    quality_parts = [(c.value, c.weight) for c in components if c.name not in ("category_fit", "price_fit")]
-    quality = power_mean(quality_parts, cfg["quality_p"])
-    score = cat ** cfg["relevance_exponent"] * price ** cfg["price_exponent"] * quality
+    quality_parts = [(c.value, c.weight) for c in components
+                     if c.name not in ("category_fit", "price_fit") and c.value is not None]  # known parts only
+    quality = power_mean(quality_parts, cfg["quality_p"]) if quality_parts else 1.0
+    price_term = price ** cfg["price_exponent"] if price is not None else 1.0  # unknown price: no information
+    score = cat ** cfg["relevance_exponent"] * price_term * quality
 
     flags = []
     competing = sorted(pub.tags & set(profile.competing_tags))
@@ -238,8 +234,8 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
     # If no host matches a specific subcategory, the network has no strong home for this
     # product: say so and propose a small test on a few hosts instead of a full spread.
     def is_strong(s: PublisherScore) -> bool:
-        cat, _, price = s.components[0], s.components[1], next(c for c in s.components if c.name == "price_fit")
-        return "(specific)" in cat.detail and price.value >= rec["strong_min_price_fit"]
+        cat, price = s.components[0], next(c for c in s.components if c.name == "price_fit")
+        return "(specific)" in cat.detail and (price.value is None or price.value >= rec["strong_min_price_fit"])
 
     strong = any(is_strong(s) for s in scores if s.score >= cutoff)
     max_picks = rec["max_publishers"] if strong else rec["weak_fit_max_publishers"]
@@ -252,14 +248,15 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
             s.reason = (f"Excluded: linked only by a broad category ({cat.detail}) and the shoppers this product is for "
                         f"are rare here (persona fit {_component(s, 'persona_fit'):.2f}).")
         elif s.score < cutoff:
-            weakest = min(s.components[:3], key=lambda c: c.value)  # among relevance, audience, price
+            weakest = min((c for c in s.components[:3] if c.value is not None), key=lambda c: c.value)
             s.reason = f"Excluded: score {s.score:.2f} below cutoff {cutoff:.2f}; weakest signal {weakest.name} ({weakest.detail})."
         elif picked >= max_picks:
             s.reason = "Excluded: viable, but below the top picks; kept as an exploration candidate."
         else:
             s.recommended = True
             picked += 1
-            best_quality = max(s.components[1:], key=lambda c: c.value * c.weight)
+            best_quality = max((c for c in s.components[1:] if c.value is not None and c.name != "price_fit"),
+                               key=lambda c: c.value * c.weight, default=s.components[0])
             s.reason = f"Recommended: {s.components[0].detail}; strongest supporting signal {best_quality.name} ({best_quality.detail})."
             if not strong:
                 s.flags.append("weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test")
