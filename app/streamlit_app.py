@@ -13,6 +13,7 @@ import streamlit as st
 import components as ui
 from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserInputs
+from disco_planner.planning import pipeline
 from disco_planner.serving.features import ShopperSignals, build_features
 
 st.set_page_config(page_title="Disco campaign planner", layout="wide")
@@ -82,6 +83,8 @@ def run_and_store(brief: str, inputs: AdvertiserInputs, live: bool = False) -> N
     if plan:
         st.session_state["plan"], st.session_state["model"], st.session_state["brief"] = plan, model, brief
         st.session_state.setdefault("session_plans", []).append(plan)
+        # a live run shows everything but the creatives first; a cached fallback already has them
+        st.session_state["creatives_pending"] = model != "cached run" and pipeline.needs_creatives(plan)
 
 
 with tab_plan:
@@ -106,7 +109,16 @@ with tab_plan:
         if qa:
             run_and_store(ui.brief_with_answers(st.session_state["brief"], qa), inputs, live=live)
             st.rerun()
-        ui.render_plan(plan, st.session_state.get("model", "unknown"))
+        pending = st.session_state.get("creatives_pending", False)
+        ui.render_plan(plan, st.session_state.get("model", "unknown"), creatives_pending=pending)
+        if pending:  # the page above is already on screen; the slow creative step runs now, then the page refreshes
+            with st.spinner("Writing creatives..."):
+                plan, notice, calls = ui.add_creatives_live(plan, live)
+            session = st.session_state["session_plans"]
+            session[-1] = plan
+            st.session_state.update(plan=plan, creatives_pending=False, notice=notice,
+                                    model=f"{st.session_state['model']}; creatives: {calls}" if calls else st.session_state["model"])
+            st.rerun()
 
 # ---------------------------------------------------------------- shopper simulator
 

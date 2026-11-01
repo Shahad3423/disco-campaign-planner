@@ -142,7 +142,7 @@ def plan_campaign(brief: str, inputs: AdvertiserInputs, live: bool = False) -> t
         stats_token = CALL_STATS.set({})
         try:
             provider = default_provider()
-            plan = pipeline.run(brief, provider, PLANNING_DATE, inputs)
+            plan = pipeline.run(brief, provider, PLANNING_DATE, inputs, with_creatives=False)  # creatives follow (add_creatives)
             return plan, None, describe_calls(provider, CALL_STATS.get())
         except Exception as e:  # LLMError, quota, network: any failure should degrade gracefully
             error = f"Live planning failed ({type(e).__name__}: {str(e)[:160]})."
@@ -167,6 +167,21 @@ GATE_BANNERS = {
     "reject_low_signal": ("error", "Not enough signal to plan. The brief is too vague to match to publishers or personas, and guessing would waste the advertiser's budget."),
     "off_network": ("info", "Off-network. This is not a consumer product that fits post-purchase offers on DTC checkout pages, so recommending zero publishers is the correct answer, not a failure."),
 }
+
+def add_creatives_live(plan: CampaignPlan, live: bool) -> tuple[CampaignPlan, str | None, str]:
+    """Second phase of a live run: write the creatives for a plan that is already on screen.
+    Returns (plan, notice, call description); on failure the plan is returned unchanged with a notice."""
+    from disco_planner.llm.provider import CACHE_ENABLED, CALL_STATS
+
+    cache_token, stats_token = CACHE_ENABLED.set(not live), CALL_STATS.set({})
+    try:
+        provider = default_provider()
+        return pipeline.add_creatives(plan, provider, PLANNING_DATE), None, describe_calls(provider, CALL_STATS.get())
+    except Exception as e:
+        return plan, f"Creatives failed ({type(e).__name__}: {str(e)[:160]}). The rest of the plan above is unaffected.", ""
+    finally:
+        CACHE_ENABLED.reset(cache_token)
+        CALL_STATS.reset(stats_token)
 
 
 def render_gate_banner(plan: CampaignPlan) -> None:
@@ -452,13 +467,17 @@ def render_footer(plan: CampaignPlan, model_label: str) -> None:
     st.caption(f"Stage timings: {timings or 'n/a'} | LLM: {model_label}")
 
 
-def render_plan(plan: CampaignPlan, model_label: str) -> None:
-    """All sections, in reading order."""
+def render_plan(plan: CampaignPlan, model_label: str, creatives_pending: bool = False) -> None:
+    """All sections, in reading order. While the creatives are still being written their slot shows a placeholder."""
     render_gate_banner(plan)
     render_understanding(plan)
     render_publishers(plan)
     render_personas(plan)
-    render_creatives(plan)
+    if creatives_pending:
+        st.subheader("Creatives")
+        st.info("Writing creatives... the rest of the plan below is already final.")
+    else:
+        render_creatives(plan)
     render_config(plan)
     render_footer(plan, model_label)
 
