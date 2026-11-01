@@ -57,21 +57,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -87,9 +87,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -109,21 +109,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -139,9 +139,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -161,21 +161,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -191,9 +191,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -213,21 +213,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -243,9 +243,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -265,21 +265,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -295,9 +295,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -317,21 +317,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -347,9 +347,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -369,21 +369,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -399,9 +399,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -421,21 +421,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -451,9 +451,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -473,21 +473,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -503,9 +503,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -525,21 +525,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -555,9 +555,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -577,21 +577,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -607,9 +607,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -629,21 +629,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -659,9 +659,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -681,21 +681,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -711,9 +711,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -733,21 +733,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -763,9 +763,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -785,21 +785,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -815,9 +815,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -837,21 +837,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -867,9 +867,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -889,21 +889,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -919,9 +919,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -941,21 +941,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -971,9 +971,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -993,21 +993,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -1023,9 +1023,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1045,21 +1045,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -1075,9 +1075,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1094,8 +1094,8 @@
    "reasons": [
     "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.00); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1107,8 +1107,8 @@
    "reasons": [
     "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.00); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1120,8 +1120,8 @@
    "reasons": [
     "EXPLORATORY: weak fit for the product, but common on the recommended hosts (presence 0.00); included to reach 3 variants",
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium-high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium-high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1132,8 +1132,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1144,8 +1144,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1156,8 +1156,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1168,8 +1168,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1180,8 +1180,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1192,8 +1192,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1204,8 +1204,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   }
@@ -1214,11 +1214,11 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "Optimize your daily baseline, {first_name}",
-   "body": "We focus on one simple, essential outcome to support your system: we help people feel better. Elevate your routine.",
+   "headline": "{first_name}, optimize your daily well-being",
+   "body": "We help people feel better with a systematic approach to daily wellness. Upgrade your routine today.",
    "cta": "Feel better today",
-   "headline_no_name": "Optimize your daily baseline",
-   "angle": "outcome-focused",
+   "headline_no_name": "Optimize your daily well-being",
+   "angle": "Outcome-focused optimization",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1226,23 +1226,11 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "{first_name}, optimize how you feel",
-   "body": "We focus on one simple outcome: we help people feel better. Add this seamless step to your daily optimization routine.",
-   "cta": "Feel better today",
-   "headline_no_name": "Optimize how you feel",
-   "angle": "Outcome-focused",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "headline": "The ultimate metric: how you feel",
-   "body": "Track your progress and simplify your daily ritual. We help people feel better, pure and simple.",
-   "cta": "Feel better now",
-   "headline_no_name": "The ultimate metric: how you feel",
-   "angle": "outcome-focused",
+   "headline": "The direct path to feeling better, {first_name}",
+   "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better every single day.",
+   "cta": "Start feeling better",
+   "headline_no_name": "The direct path to feeling better",
+   "angle": "No-nonsense outcome focus",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1250,11 +1238,11 @@
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "headline": "A simpler way to feel better, {first_name}",
-   "body": "Busy days demand simple solutions. We help people feel better with zero hassle and easy routines.",
-   "cta": "Feel better today",
-   "headline_no_name": "A simpler way to feel better",
-   "angle": "time-saving",
+   "headline": "An easier way to feel better, {first_name}",
+   "body": "Busy days demand simple solutions. With easy subscriptions, we help people feel better without the hassle.",
+   "cta": "Start your routine",
+   "headline_no_name": "An easier way to feel better",
+   "angle": "Time-saving convenience",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1262,35 +1250,23 @@
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "headline": "Made to help your family feel better",
-   "body": "Trusted support for hectic schedules. We help people feel better so you can focus on what matters most.",
-   "cta": "Start feeling better",
-   "headline_no_name": "Made to help your family feel better",
+   "headline": "{first_name}, make feeling better effortless",
+   "body": "No complicated setups or extra stress. We help people feel better, fitting seamlessly into your busy schedule.",
+   "cta": "Feel better today",
+   "headline_no_name": "Make feeling better effortless",
    "angle": "family-friendly",
    "claims_used": [
     "We help people feel better."
    ]
   },
   {
-   "persona_id": "persona_002",
-   "variant": 3,
-   "headline": "{first_name}, easy routines to feel better",
-   "body": "With a busy household, simple is best. We help people feel better with straightforward routines that fit into your hectic schedule.",
-   "cta": "Feel better today",
-   "headline_no_name": "Easy routines to feel better",
-   "angle": "Time-saving",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "{first_name}, match your vibe to your wellness",
-   "body": "Good energy only. We help people feel better, inside and out.",
-   "cta": "Feel better now",
-   "headline_no_name": "Match your vibe to your wellness",
-   "angle": "aesthetic-forward",
+   "headline": "No tricks, {first_name}, just feeling better",
+   "body": "Skip the spooky vibes. We help people feel better with routines designed to elevate your daily aesthetic.",
+   "cta": "Elevate your vibe",
+   "headline_no_name": "No tricks, just feeling better",
+   "angle": "Playful seasonal aesthetic",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1298,23 +1274,11 @@
   {
    "persona_id": "persona_003",
    "variant": 2,
-   "headline": "A better way to feel better",
-   "body": "Real care, no corporate fluff. We help people feel better on their own terms.",
-   "cta": "Start feeling better",
-   "headline_no_name": "A better way to feel better",
-   "angle": "values-aligned",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
-   "persona_id": "persona_003",
-   "variant": 3,
-   "headline": "Upgrade your daily mood, {first_name}",
-   "body": "Shift your perspective. We help people feel better with a routine you will actually look forward to.",
-   "cta": "Feel better today",
-   "headline_no_name": "Upgrade your daily mood",
-   "angle": "playful",
+   "headline": "{first_name}, match your vibe to how you feel",
+   "body": "Beautifully designed wellness for your space. Our only mission? We help people feel better, inside and out.",
+   "cta": "Feel better now",
+   "headline_no_name": "Match your vibe to how you feel",
+   "angle": "Aesthetic-forward wellness",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1337,15 +1301,13 @@
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": false,
-   "issues": [
-    "Too similar to Variant 1 in both angle and body copy phrasing."
-   ],
-   "passed": false
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
   },
   {
-   "persona_id": "persona_001",
-   "variant": 3,
+   "persona_id": "persona_002",
+   "variant": 1,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1355,48 +1317,6 @@
   },
   {
    "persona_id": "persona_002",
-   "variant": 1,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 3,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": false,
-   "issues": [
-    "Too similar to Variant 1 in angle, messaging, and phrasing."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_003",
-   "variant": 1,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_003",
    "variant": 2,
    "persona_fit": 4,
    "claims_ok": true,
@@ -1407,8 +1327,18 @@
   },
   {
    "persona_id": "persona_003",
-   "variant": 3,
-   "persona_fit": 4,
+   "variant": 1,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "issues": [],
+   "passed": true
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 2,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1531,82 +1461,55 @@
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "Optimize your daily baseline, {first_name}",
-    "headline_no_name": "Optimize your daily baseline",
-    "body": "We focus on one simple, essential outcome to support your system: we help people feel better. Elevate your routine.",
+    "headline_template": "{first_name}, optimize your daily well-being",
+    "headline_no_name": "Optimize your daily well-being",
+    "body": "We help people feel better with a systematic approach to daily wellness. Upgrade your routine today.",
     "cta": "Feel better today"
    },
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
     "publisher_ids": [],
-    "headline_template": "{first_name}, optimize how you feel",
-    "headline_no_name": "Optimize how you feel",
-    "body": "We focus on one simple outcome: we help people feel better. Add this seamless step to your daily optimization routine.",
-    "cta": "Feel better today"
-   },
-   {
-    "variant_id": "persona_001:3",
-    "persona_id": "persona_001",
-    "publisher_ids": [],
-    "headline_template": "The ultimate metric: how you feel",
-    "headline_no_name": "The ultimate metric: how you feel",
-    "body": "Track your progress and simplify your daily ritual. We help people feel better, pure and simple.",
-    "cta": "Feel better now"
+    "headline_template": "The direct path to feeling better, {first_name}",
+    "headline_no_name": "The direct path to feeling better",
+    "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better every single day.",
+    "cta": "Start feeling better"
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "A simpler way to feel better, {first_name}",
-    "headline_no_name": "A simpler way to feel better",
-    "body": "Busy days demand simple solutions. We help people feel better with zero hassle and easy routines.",
-    "cta": "Feel better today"
+    "headline_template": "An easier way to feel better, {first_name}",
+    "headline_no_name": "An easier way to feel better",
+    "body": "Busy days demand simple solutions. With easy subscriptions, we help people feel better without the hassle.",
+    "cta": "Start your routine"
    },
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
     "publisher_ids": [],
-    "headline_template": "Made to help your family feel better",
-    "headline_no_name": "Made to help your family feel better",
-    "body": "Trusted support for hectic schedules. We help people feel better so you can focus on what matters most.",
-    "cta": "Start feeling better"
-   },
-   {
-    "variant_id": "persona_002:3",
-    "persona_id": "persona_002",
-    "publisher_ids": [],
-    "headline_template": "{first_name}, easy routines to feel better",
-    "headline_no_name": "Easy routines to feel better",
-    "body": "With a busy household, simple is best. We help people feel better with straightforward routines that fit into your hectic schedule.",
+    "headline_template": "{first_name}, make feeling better effortless",
+    "headline_no_name": "Make feeling better effortless",
+    "body": "No complicated setups or extra stress. We help people feel better, fitting seamlessly into your busy schedule.",
     "cta": "Feel better today"
    },
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
     "publisher_ids": [],
-    "headline_template": "{first_name}, match your vibe to your wellness",
-    "headline_no_name": "Match your vibe to your wellness",
-    "body": "Good energy only. We help people feel better, inside and out.",
-    "cta": "Feel better now"
+    "headline_template": "No tricks, {first_name}, just feeling better",
+    "headline_no_name": "No tricks, just feeling better",
+    "body": "Skip the spooky vibes. We help people feel better with routines designed to elevate your daily aesthetic.",
+    "cta": "Elevate your vibe"
    },
    {
     "variant_id": "persona_003:2",
     "persona_id": "persona_003",
     "publisher_ids": [],
-    "headline_template": "A better way to feel better",
-    "headline_no_name": "A better way to feel better",
-    "body": "Real care, no corporate fluff. We help people feel better on their own terms.",
-    "cta": "Start feeling better"
-   },
-   {
-    "variant_id": "persona_003:3",
-    "persona_id": "persona_003",
-    "publisher_ids": [],
-    "headline_template": "Upgrade your daily mood, {first_name}",
-    "headline_no_name": "Upgrade your daily mood",
-    "body": "Shift your perspective. We help people feel better with a routine you will actually look forward to.",
-    "cta": "Feel better today"
+    "headline_template": "{first_name}, match your vibe to how you feel",
+    "headline_no_name": "Match your vibe to how you feel",
+    "body": "Beautifully designed wellness for your space. Our only mission? We help people feel better, inside and out.",
+    "cta": "Feel better now"
    }
   ],
   "frequency_cap": {
@@ -1640,18 +1543,14 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 45.51
+  "creative": 43.5
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_001",
-    2
-   ],
-   [
     "persona_002",
-    3
+    2
    ]
   ]
  }

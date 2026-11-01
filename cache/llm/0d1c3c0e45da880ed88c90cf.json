@@ -1,0 +1,76 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily well-being",
+      "body": "We focus on one simple outcome: we help people feel better. Discover a streamlined approach to wellness.",
+      "cta": "Feel better now",
+      "headline_no_name": "Optimize your daily well-being",
+      "angle": "outcome-focused",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Systematic wellness for {first_name}",
+      "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better. Upgrade your routine today.",
+      "cta": "Start your routine",
+      "headline_no_name": "Systematic daily wellness",
+      "angle": "science-backed claims",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "A simpler way to feel better, {first_name}",
+      "body": "With zero complicated steps, we help people feel better. Get back to what matters with an easy routine.",
+      "cta": "Simplify my routine",
+      "headline_no_name": "A simpler way to feel better",
+      "angle": "time-saving",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, make feeling better effortless",
+      "body": "No complicated setups or extra stress. We help people feel better, fitting seamlessly into your busy schedule.",
+      "cta": "Feel better today",
+      "headline_no_name": "Make feeling better effortless",
+      "angle": "family-friendly",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "A vibe shift for {first_name}",
+      "body": "Designed to look as good as it works. Our mission is simple: we help people feel better. Elevate your daily routine.",
+      "cta": "Elevate my routine",
+      "headline_no_name": "A total vibe shift",
+      "angle": "aesthetic-forward",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "No tricks, {first_name}, just feeling better",
+      "body": "Skip the spooky vibes. We help people feel better, plain and simple. Treat yourself to a better routine this Halloween.",
+      "cta": "Get started today",
+      "headline_no_name": "No tricks, just feeling better",
+      "angle": "playful",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    }
+  ]
+}

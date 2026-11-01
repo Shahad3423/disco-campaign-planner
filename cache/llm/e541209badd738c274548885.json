@@ -1,0 +1,76 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get 15% off this new thing",
+      "body": "Save on a new kind of thing for moms. Try it today with our special introductory discount and see why parents love it.",
+      "cta": "Get 15% off",
+      "headline_no_name": "Get 15% off this new thing for moms",
+      "angle": "discount-forward pricing",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "A new kind of thing for moms, now in bundles",
+      "body": "Discover a new kind of thing for moms. Save more when you bundle your order today. Top-rated by parents looking for real value.",
+      "cta": "Shop bundle deals",
+      "headline_no_name": "A new kind of thing for moms, now in bundles",
+      "angle": "bundle offers and reviews",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, discover a new thing for moms",
+      "body": "Designed to fit into your daily routine. Experience this new kind of thing for moms, created to support your day-to-day wellness.",
+      "cta": "Shop the new thing",
+      "headline_no_name": "Discover a new kind of thing for moms",
+      "angle": "outcome-focused routine integration",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "A new kind of thing for moms",
+      "body": "Upgrade your daily system. This is a new kind of thing for moms, mindfully designed for those who prioritize quality in every detail.",
+      "cta": "Order yours today",
+      "headline_no_name": "A new kind of thing for moms",
+      "angle": "mindful wellness design",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "A simpler Halloween with a new thing for moms",
+      "body": "Don't let the busy season tire you out. Try a new kind of thing for moms designed to save you time during hectic weeks.",
+      "cta": "Try it today",
+      "headline_no_name": "A simpler Halloween with a new thing for moms",
+      "angle": "time-saving convenience with seasonal touch",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, try this new thing for moms",
+      "body": "A new kind of thing for moms, trusted by parents and delivered on your schedule. Enjoy hassle-free parenting with easy returns.",
+      "cta": "Start subscription",
+      "headline_no_name": "Try this new kind of thing for moms",
+      "angle": "trusted by parents and subscription convenience",
+      "claims_used": [
+        "A new kind of thing for moms."
+      ]
+    }
+  ]
+}

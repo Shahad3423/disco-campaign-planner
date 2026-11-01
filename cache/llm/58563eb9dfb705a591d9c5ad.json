@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_005",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_005",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "persona_fit": 3,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Ships in 6 weeks"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward {first_name} placement in 'Give {first_name} a gift' which implies self-gifting or incorrectly assumes the recipient's name.",
+        "Unsupported shipping timeline claim ('Ships in 6 weeks')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "persona_fit": 2,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "Italian-made only when ordered"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague eco/sustainability terms ('slow fashion') which this persona explicitly avoids.",
+        "Unsupported supply chain claim ('only when ordered')."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_006",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Uses vague longevity and eco claims ('built to last', 'avoid mass production') without the specific sustainability metrics or certifications this persona requires."
+      ],
+      "passed": false
+    }
+  ]
+}

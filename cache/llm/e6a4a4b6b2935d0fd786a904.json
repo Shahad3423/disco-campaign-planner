@@ -1,0 +1,73 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "No fillers"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward possessive name placement: 'Premium, grain-free nutrition for {first_name}'s dog.'"
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Refers to the product as 'treats' ('No tricks, just healthy treats') when the product is dog food.",
+        "Forced seasonal Halloween angle that may not align with evergreen ad delivery."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_007",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "Awkward double possessive name placement in headline: 'Upgrade {first_name}'s dog's bowl...'"
+      ],
+      "passed": false
+    }
+  ]
+}

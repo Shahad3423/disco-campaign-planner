@@ -50,21 +50,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -80,9 +80,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -102,21 +102,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -132,9 +132,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -154,21 +154,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -184,9 +184,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -206,21 +206,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -236,9 +236,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -258,21 +258,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -288,9 +288,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -310,21 +310,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -340,9 +340,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -362,21 +362,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -392,9 +392,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -414,21 +414,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -444,9 +444,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -466,21 +466,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -496,9 +496,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -518,21 +518,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -548,9 +548,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -570,21 +570,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -600,9 +600,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -622,21 +622,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -652,9 +652,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -674,21 +674,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -704,9 +704,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -726,21 +726,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -756,9 +756,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -778,21 +778,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -808,9 +808,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -830,21 +830,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -860,9 +860,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -882,21 +882,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -912,9 +912,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -934,21 +934,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -964,9 +964,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -986,21 +986,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -1016,9 +1016,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1038,21 +1038,21 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.35,
-     "detail": "no plausible personas yet"
+     "detail": "no plausible personas (left out)"
     },
     {
      "name": "notes_fit",
@@ -1068,9 +1068,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1086,8 +1086,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1098,8 +1098,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1110,8 +1110,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium-high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium-high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1122,8 +1122,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1134,8 +1134,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1146,8 +1146,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1158,8 +1158,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1170,8 +1170,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1182,8 +1182,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   },
@@ -1194,8 +1194,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": []
   }

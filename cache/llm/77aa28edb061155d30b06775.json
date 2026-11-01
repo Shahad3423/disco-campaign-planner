@@ -1,0 +1,76 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily well-being",
+      "body": "We help people feel better with a systematic approach to daily wellness. Upgrade your routine today.",
+      "cta": "Feel better today",
+      "headline_no_name": "Optimize your daily well-being",
+      "angle": "Outcome-focused optimization",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "The direct path to feeling better, {first_name}",
+      "body": "No gimmicks, just results. Our sole purpose is simple: we help people feel better every single day.",
+      "cta": "Start feeling better",
+      "headline_no_name": "The direct path to feeling better",
+      "angle": "No-nonsense outcome focus",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "An easier way to feel better, {first_name}",
+      "body": "Busy days demand simple solutions. With easy subscriptions, we help people feel better without the hassle.",
+      "cta": "Start your routine",
+      "headline_no_name": "An easier way to feel better",
+      "angle": "Time-saving convenience",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "{first_name}, feel better made simple",
+      "body": "Trusted by families to keep everyone at their best. We help people feel better with zero complicated steps.",
+      "cta": "Shop family wellness",
+      "headline_no_name": "Feel better made simple",
+      "angle": "Family-friendly simplicity",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 1,
+      "headline": "No tricks, {first_name}, just feeling better",
+      "body": "Skip the spooky vibes. We help people feel better with routines designed to elevate your daily aesthetic.",
+      "cta": "Elevate your vibe",
+      "headline_no_name": "No tricks, just feeling better",
+      "angle": "Playful seasonal aesthetic",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    },
+    {
+      "persona_id": "persona_003",
+      "variant": 2,
+      "headline": "{first_name}, match your vibe to how you feel",
+      "body": "Beautifully designed wellness for your space. Our only mission? We help people feel better, inside and out.",
+      "cta": "Feel better now",
+      "headline_no_name": "Match your vibe to how you feel",
+      "angle": "Aesthetic-forward wellness",
+      "claims_used": [
+        "We help people feel better."
+      ]
+    }
+  ]
+}

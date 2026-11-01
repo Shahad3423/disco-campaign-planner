@@ -1,0 +1,79 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "Fuel your training, {first_name}",
+      "body": "Get the same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+      "cta": "Shop formulations",
+      "headline_no_name": "Fuel your training",
+      "angle": "Performance and formulation parity",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "No tricks, {first_name}, just pure performance",
+      "body": "Skip the expensive marketing. Get the same supplement formulations as the expensive brands for half the cost.",
+      "cta": "Shop supplements",
+      "headline_no_name": "No tricks, just pure performance",
+      "angle": "Halloween themed performance focus",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "Optimize your stack, {first_name}",
+      "body": "Get the exact same formulations as the expensive brands for half the cost. We compete on price, not on marketing.",
+      "cta": "Shop formulas",
+      "headline_no_name": "Optimize your supplement stack",
+      "angle": "Systematic optimization of supplement stack",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "Smart formulation sourcing for {first_name}",
+      "body": "Why pay for branding? Get the same formulations as the expensive brands for half the cost.",
+      "cta": "Shop supplements",
+      "headline_no_name": "Smart formulation sourcing",
+      "angle": "Logical and evidence-based pricing efficiency",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "Identical formulations at half price, {first_name}",
+      "body": "Stop paying for expensive marketing. Get the same supplement formulations as the big brands for half the cost.",
+      "cta": "Shop half-price",
+      "headline_no_name": "Identical formulations at half price",
+      "angle": "Clear value and price comparison",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost."
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "Same formulations, half the price for {first_name}",
+      "body": "We compete on price, not on marketing. Get the exact same formulations as expensive brands for half the cost.",
+      "cta": "Shop supplements",
+      "headline_no_name": "Same formulations, half the price",
+      "angle": "No marketing markup value proposition",
+      "claims_used": [
+        "Same formulations as the expensive brands for half the cost.",
+        "We compete on price, not on marketing."
+      ]
+    }
+  ]
+}

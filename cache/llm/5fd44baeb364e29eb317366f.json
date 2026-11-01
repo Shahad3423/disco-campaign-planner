@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "persona_fit": 4,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": false,
+      "issues": [
+        "This variant uses the exact same 'emotional connection' angle as Variant 1, missing the opportunity to test other persona preferences like 'ingredient transparency' or 'vet-recommended'."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "persona_fit": 5,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "subscription box"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim of being a 'subscription box' is not supported by the advertiser's stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "persona_fit": 5,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "persona_fit": 4,
+      "claims_ok": false,
+      "unsupported_claims": [
+        "subscription"
+      ],
+      "distinct_from_others": true,
+      "issues": [
+        "The claim of being a 'subscription' is not supported by the advertiser's stated claims."
+      ],
+      "passed": false
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "persona_fit": 3,
+      "claims_ok": true,
+      "unsupported_claims": [],
+      "distinct_from_others": true,
+      "issues": [
+        "The copy does not effectively address the value-conscious persona's preferences (discounts, reviews, or clear price-to-value articulation), opting instead for a generic playful tone."
+      ],
+      "passed": false
+    }
+  ]
+}

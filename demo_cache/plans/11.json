@@ -27,14 +27,14 @@
     "why": "Protein bars are a core wellness and nutrition DTC product category."
    },
    {
-    "tag": "groceries",
-    "weight": 0.5,
-    "why": "Protein bars are frequently purchased as grocery or snack items."
-   },
-   {
     "tag": "fitness_classes",
     "weight": 0.5,
     "why": "Fitness class attendees often consume protein bars for pre- or post-workout nutrition."
+   },
+   {
+    "tag": "groceries",
+    "weight": 0.5,
+    "why": "Protein bars are frequently purchased as grocery or snack items."
    }
   ],
   "competing_tags": [],
@@ -94,7 +94,7 @@
   {
    "publisher_id": "pub_012",
    "publisher_name": "Daily Form",
-   "score": 0.4778,
+   "score": 0.6448,
    "components": [
     {
      "name": "category_fit",
@@ -104,15 +104,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -134,19 +134,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches supplements, wellness_dtc (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.96))."
   },
   {
    "publisher_id": "pub_003",
    "publisher_name": "Studiogrid",
-   "score": 0.2633,
+   "score": 0.3748,
    "components": [
     {
      "name": "category_fit",
@@ -156,15 +156,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -186,19 +186,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal price_fit (price not stated (multiplier ^0.5))."
+   "reason": "Recommended: matches fitness_classes (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.71))."
   },
   {
    "publisher_id": "pub_015",
    "publisher_name": "Kitchenly",
-   "score": 0.2317,
+   "score": 0.3068,
    "components": [
     {
      "name": "category_fit",
@@ -208,15 +208,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -238,19 +238,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.23 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+   "reason": "Excluded: score 0.31 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_008",
    "publisher_name": "Pantrygood",
-   "score": 0.2227,
+   "score": 0.2875,
    "components": [
     {
      "name": "category_fit",
@@ -260,19 +260,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6448181818181817,
+     "value": 0.6448181818181818,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
@@ -290,19 +290,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.22 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+   "reason": "Excluded: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_001",
    "publisher_name": "Swiftcart",
-   "score": 0.2226,
+   "score": 0.2872,
    "components": [
     {
      "name": "category_fit",
@@ -312,15 +312,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -342,14 +342,14 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.22 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+   "reason": "Excluded: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
   },
   {
    "publisher_id": "pub_002",
@@ -364,19 +364,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.7777272727272727,
+     "value": 0.7777272727272726,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.84)"
     },
@@ -394,9 +394,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -416,19 +416,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.45745454545454545,
+     "value": 0.4574545454545454,
      "weight": 0.35,
      "detail": "reaches The Gifter best (host fit 0.66)"
     },
@@ -446,9 +446,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -468,15 +468,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -498,9 +498,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -520,19 +520,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6544545454545455,
+     "value": 0.6544545454545454,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
@@ -550,9 +550,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -572,15 +572,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -602,9 +602,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -624,19 +624,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6954545454545453,
+     "value": 0.6954545454545454,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.70)"
     },
@@ -654,9 +654,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -676,15 +676,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -706,9 +706,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -728,19 +728,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.647090909090909,
+     "value": 0.6470909090909092,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
@@ -758,9 +758,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -780,15 +780,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -810,9 +810,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -832,19 +832,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6389090909090909,
+     "value": 0.638909090909091,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.73)"
     },
@@ -862,9 +862,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -884,19 +884,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6783636363636363,
+     "value": 0.6783636363636364,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
@@ -914,9 +914,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -936,15 +936,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -966,9 +966,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -988,19 +988,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
-     "value": 0.661090909090909,
+     "value": 0.6610909090909091,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.71)"
     },
@@ -1018,9 +1018,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1040,15 +1040,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -1070,9 +1070,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1092,15 +1092,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 1.0,
-     "detail": "price not stated (multiplier ^0.5)"
+     "detail": "price not stated (left out)"
     },
     {
      "name": "persona_fit",
@@ -1122,9 +1122,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1136,12 +1136,12 @@
   {
    "persona_id": "persona_001",
    "persona_name": "The Wellness Optimizer",
-   "score": 0.448,
+   "score": 0.8,
    "selected": true,
    "reasons": [
     "category affinity 0.80 (fitness, supplements)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1151,12 +1151,12 @@
   {
    "persona_id": "persona_009",
    "persona_name": "The Fitness Enthusiast",
-   "score": 0.448,
+   "score": 0.8,
    "selected": true,
    "reasons": [
     "category affinity 0.80 (recovery, supplements)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1166,12 +1166,12 @@
   {
    "persona_id": "persona_010",
    "persona_name": "The Gifter",
-   "score": 0.336,
+   "score": 0.6,
    "selected": true,
    "reasons": [
     "category affinity 0.60 (gourmet_food)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1185,8 +1185,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1200,8 +1200,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium-high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium-high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1215,8 +1215,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1230,8 +1230,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs low price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs low price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_012",
@@ -1245,8 +1245,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1260,8 +1260,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs medium price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1275,8 +1275,8 @@
    "selected": false,
    "reasons": [
     "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (unknown product vs high price sensitivity)",
-    "audience fit 0.80"
+    "price fit 1.00 (unknown product vs high price sensitivity)",
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_003",
@@ -1288,11 +1288,11 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, optimize your post-workout fuel",
-   "body": "Treat your body like a system. Refuel with premium protein bars that don't taste like cardboard, designed for your daily routine.",
+   "headline": "{first_name}, optimize your daily fuel",
+   "body": "Upgrade your nutrition system with protein bars that don't taste like cardboard. Fuel your body with what it actually deserves.",
    "cta": "Shop protein bars",
-   "headline_no_name": "Optimize your post-workout fuel",
-   "angle": "outcome-focused",
+   "headline_no_name": "Optimize your daily fuel",
+   "angle": "Outcome-focused optimization",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1300,23 +1300,11 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "{first_name}, upgrade your daily nutrition",
-   "body": "You track your inputs carefully. Choose protein bars that don't taste like cardboard and support your wellness goals.",
+   "headline": "System-grade nutrition for {first_name}",
+   "body": "Meet the protein bars that don't taste like cardboard. High-quality fuel engineered to fit seamlessly into your wellness routine.",
    "cta": "Order protein bars",
-   "headline_no_name": "Upgrade your daily nutrition",
-   "angle": "ingredient transparency",
-   "claims_used": [
-    "protein bars that don't taste like cardboard"
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "headline": "Optimize your daily system, {first_name}",
-   "body": "Fuel your routine with protein bars that don't taste like cardboard. Integrate clean macros into your tracking without sacrificing flavor.",
-   "cta": "Shop protein bars",
-   "headline_no_name": "Optimize your daily system",
-   "angle": "outcome-focused system integration",
+   "headline_no_name": "System-grade daily nutrition",
+   "angle": "Quality fuel and transparency",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1324,11 +1312,11 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "{first_name}, fuel your recovery right",
-   "body": "You work out hard, so don't settle for dry snacks. Get protein bars that don't taste like cardboard to power your active lifestyle.",
+   "headline": "{first_name}, fuel your next workout",
+   "body": "Power your recovery with protein bars that don't taste like cardboard. The perfect post-training fuel for your active lifestyle.",
    "cta": "Shop protein bars",
-   "headline_no_name": "Fuel your recovery right",
-   "angle": "performance claims",
+   "headline_no_name": "Fuel your next workout",
+   "angle": "Performance and recovery",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1336,23 +1324,11 @@
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "headline": "Serious training deserves better protein",
-   "body": "Stop choking down chalky snacks after your workout. Try protein bars that don't taste like cardboard.",
-   "cta": "Order protein bars",
-   "headline_no_name": "Serious training deserves better protein",
-   "angle": "performance claims",
-   "claims_used": [
-    "protein bars that don't taste like cardboard"
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 3,
-   "headline": "{first_name}, power up with real flavor",
-   "body": "Your active lifestyle demands quality fuel. Enjoy protein bars that don't taste like cardboard.",
-   "cta": "Shop the collection",
-   "headline_no_name": "Power up with real flavor",
-   "angle": "performance claims",
+   "headline": "Post-workout fuel just got better, {first_name}",
+   "body": "Stop settling for bad snacks. Get the protein bars that don't taste like cardboard to keep your training on track and tasting great.",
+   "cta": "Get your bars",
+   "headline_no_name": "Post-workout fuel just got better",
+   "angle": "Athlete identity and taste performance",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1360,11 +1336,11 @@
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "The perfect treat to share, {first_name}",
-   "body": "Gift the active people in your life protein bars that don't taste like cardboard. A delicious way to show you care.",
-   "cta": "Shop protein bars",
-   "headline_no_name": "The perfect treat to share",
-   "angle": "gifting and sharing",
+   "headline": "The perfect premium snack gift, {first_name}",
+   "body": "Gift your favorite fitness lover protein bars that don't taste like cardboard. A delicious, premium treat they will actually enjoy.",
+   "cta": "Shop gift options",
+   "headline_no_name": "The perfect premium snack gift",
+   "angle": "Premium presentation gifting",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1372,23 +1348,11 @@
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "headline": "A delicious Halloween treat they will love",
-   "body": "Skip the candy and gift premium protein bars that don't taste like cardboard. Perfect for the active people in your life.",
-   "cta": "Shop Halloween gifts",
-   "headline_no_name": "A delicious Halloween treat they will love",
-   "angle": "giftable",
-   "claims_used": [
-    "protein bars that don't taste like cardboard"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 3,
-   "headline": "A Halloween treat they'll love, {first_name}",
-   "body": "Skip the candy and share protein bars that don't taste like cardboard. The ultimate Halloween surprise for your fitness friends.",
-   "cta": "Shop protein bars",
-   "headline_no_name": "A Halloween treat they'll love",
-   "angle": "seasonal gifting",
+   "headline": "Need a premium gift for your active friend, {first_name}?",
+   "body": "Give them a beautifully presented gift box of protein bars that don't taste like cardboard. Delicious flavor in every bite.",
+   "cta": "Shop gift boxes",
+   "headline_no_name": "A premium gift for the active person in your life",
+   "angle": "premium presentation and gift sets",
    "claims_used": [
     "protein bars that don't taste like cardboard"
    ]
@@ -1408,16 +1372,6 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1446,16 +1400,6 @@
    "passed": true
   },
   {
-   "persona_id": "persona_009",
-   "variant": 3,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
    "persona_id": "persona_010",
    "variant": 1,
    "persona_fit": 4,
@@ -1468,24 +1412,12 @@
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "issues": [],
    "passed": true
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 3,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": false,
-   "issues": [
-    "Extremely similar to variant 2 (both use 'Skip the candy' and focus on Halloween gifting for active friends)."
-   ],
-   "passed": false
   }
  ],
  "config": {
@@ -1520,7 +1452,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4928.14,
+   "planned_spend_usd": 4839.04,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1528,19 +1460,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 188.0,
-    "mid": 376.0,
-    "high": 676.8
+    "low": 190.5,
+    "mid": 381.1,
+    "high": 685.9
    },
-   "forecast_without_share_cap": 376.0,
+   "forecast_without_share_cap": 381.1,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 13435.1,
-   "spend_at_full_inventory_usd": 257983.61,
+   "max_deliverable": 13839.8,
+   "spend_at_full_inventory_usd": 258042.75,
    "replan_options": [],
-   "expected_impressions": 288000,
-   "expected_reach": 180000,
+   "expected_impressions": 314000,
+   "expected_reach": 196250,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1549,12 +1481,12 @@
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.426,
-     "budget_usd": 2101.57,
-     "cpc_bid_usd": 0.63,
-     "start_bid_usd": 0.63,
-     "win_share": 0.02,
-     "avg_price_paid": 0.6,
+     "share": 0.206,
+     "budget_usd": 999.13,
+     "cpc_bid_usd": 0.62,
+     "start_bid_usd": 0.62,
+     "win_share": 0.01,
+     "avg_price_paid": 0.57,
      "market_price": {
       "low": 0.78,
       "mid": 0.9,
@@ -1562,61 +1494,61 @@
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 2822.0,
-      "mid": 3528.0,
-      "high": 4234.0
+      "low": 1411.0,
+      "mid": 1764.0,
+      "high": 2117.0
      },
      "expected_conversions": {
-      "low": 77.1,
-      "mid": 160.5,
-      "high": 288.9
+      "low": 38.5,
+      "mid": 80.3,
+      "high": 144.5
      },
      "expected_units": {
-      "low": 80.3,
-      "mid": 160.5,
-      "high": 288.9
+      "low": 40.1,
+      "mid": 80.3,
+      "high": 144.5
      },
      "capacity_usd": 84666.42,
-     "expected_impressions": 84000,
-     "expected_reach": 52500,
+     "expected_impressions": 42000,
+     "expected_reach": 26250,
      "requires_host_approval": false,
-     "rationale": "market price $0.78-$1.06 (median $0.90); bidding $0.63 wins ~2% of page views, paying ~$0.60 per click (second price)"
+     "rationale": "market price $0.78-$1.06 (median $0.90); bidding $0.62 wins ~1% of page views, paying ~$0.57 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.574,
-     "budget_usd": 2826.56,
+     "share": 0.794,
+     "budget_usd": 3839.91,
      "cpc_bid_usd": 0.47,
      "start_bid_usd": 0.47,
-     "win_share": 0.015,
+     "win_share": 0.02,
      "avg_price_paid": 0.44,
      "market_price": {
-      "low": 0.67,
-      "mid": 0.79,
-      "high": 0.93
+      "low": 0.65,
+      "mid": 0.77,
+      "high": 0.91
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 5096.0,
-      "mid": 6370.0,
-      "high": 7644.0
+      "low": 6952.0,
+      "mid": 8691.0,
+      "high": 10429.0
      },
      "expected_conversions": {
-      "low": 103.4,
-      "mid": 215.5,
-      "high": 387.9
+      "low": 144.4,
+      "mid": 300.8,
+      "high": 541.4
      },
      "expected_units": {
-      "low": 107.7,
-      "mid": 215.5,
-      "high": 387.9
+      "low": 150.4,
+      "mid": 300.8,
+      "high": 541.4
      },
-     "capacity_usd": 173317.19,
-     "expected_impressions": 204000,
-     "expected_reach": 127500,
+     "capacity_usd": 173376.33,
+     "expected_impressions": 272000,
+     "expected_reach": 170000,
      "requires_host_approval": false,
-     "rationale": "market price $0.67-$0.93 (median $0.79); bidding $0.47 wins ~2% of page views, paying ~$0.44 per click (second price)"
+     "rationale": "market price $0.65-$0.91 (median $0.77); bidding $0.47 wins ~2% of page views, paying ~$0.44 per click (second price)"
     }
    ],
    "warnings": []
@@ -1639,14 +1571,14 @@
    "host_bids": [
     {
      "publisher_id": "pub_012",
-     "start_bid": 0.63,
+     "start_bid": 0.62,
      "max_bid": 0.96,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
      "start_bid": 0.47,
-     "max_bid": 0.83,
+     "max_bid": 0.81,
      "floor": 0.05
     }
    ],
@@ -1674,15 +1606,15 @@
    "publishers_exclude": [
     {
      "id": "pub_015",
-     "reason": "Excluded: score 0.23 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+     "reason": "Excluded: score 0.31 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: score 0.22 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+     "reason": "Excluded: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: score 0.22 below cutoff 0.24; weakest signal category_fit (matches groceries (category only) (multiplier))."
+     "reason": "Excluded: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier))."
     },
     {
      "id": "pub_002",
@@ -1768,9 +1700,9 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, optimize your post-workout fuel",
-    "headline_no_name": "Optimize your post-workout fuel",
-    "body": "Treat your body like a system. Refuel with premium protein bars that don't taste like cardboard, designed for your daily routine.",
+    "headline_template": "{first_name}, optimize your daily fuel",
+    "headline_no_name": "Optimize your daily fuel",
+    "body": "Upgrade your nutrition system with protein bars that don't taste like cardboard. Fuel your body with what it actually deserves.",
     "cta": "Shop protein bars"
    },
    {
@@ -1780,22 +1712,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, upgrade your daily nutrition",
-    "headline_no_name": "Upgrade your daily nutrition",
-    "body": "You track your inputs carefully. Choose protein bars that don't taste like cardboard and support your wellness goals.",
+    "headline_template": "System-grade nutrition for {first_name}",
+    "headline_no_name": "System-grade daily nutrition",
+    "body": "Meet the protein bars that don't taste like cardboard. High-quality fuel engineered to fit seamlessly into your wellness routine.",
     "cta": "Order protein bars"
-   },
-   {
-    "variant_id": "persona_001:3",
-    "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
-    "headline_template": "Optimize your daily system, {first_name}",
-    "headline_no_name": "Optimize your daily system",
-    "body": "Fuel your routine with protein bars that don't taste like cardboard. Integrate clean macros into your tracking without sacrificing flavor.",
-    "cta": "Shop protein bars"
    },
    {
     "variant_id": "persona_009:1",
@@ -1804,9 +1724,9 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "{first_name}, fuel your recovery right",
-    "headline_no_name": "Fuel your recovery right",
-    "body": "You work out hard, so don't settle for dry snacks. Get protein bars that don't taste like cardboard to power your active lifestyle.",
+    "headline_template": "{first_name}, fuel your next workout",
+    "headline_no_name": "Fuel your next workout",
+    "body": "Power your recovery with protein bars that don't taste like cardboard. The perfect post-training fuel for your active lifestyle.",
     "cta": "Shop protein bars"
    },
    {
@@ -1816,22 +1736,10 @@
      "pub_012",
      "pub_003"
     ],
-    "headline_template": "Serious training deserves better protein",
-    "headline_no_name": "Serious training deserves better protein",
-    "body": "Stop choking down chalky snacks after your workout. Try protein bars that don't taste like cardboard.",
-    "cta": "Order protein bars"
-   },
-   {
-    "variant_id": "persona_009:3",
-    "persona_id": "persona_009",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
-    "headline_template": "{first_name}, power up with real flavor",
-    "headline_no_name": "Power up with real flavor",
-    "body": "Your active lifestyle demands quality fuel. Enjoy protein bars that don't taste like cardboard.",
-    "cta": "Shop the collection"
+    "headline_template": "Post-workout fuel just got better, {first_name}",
+    "headline_no_name": "Post-workout fuel just got better",
+    "body": "Stop settling for bad snacks. Get the protein bars that don't taste like cardboard to keep your training on track and tasting great.",
+    "cta": "Get your bars"
    },
    {
     "variant_id": "persona_010:1",
@@ -1840,10 +1748,10 @@
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "The perfect treat to share, {first_name}",
-    "headline_no_name": "The perfect treat to share",
-    "body": "Gift the active people in your life protein bars that don't taste like cardboard. A delicious way to show you care.",
-    "cta": "Shop protein bars"
+    "headline_template": "The perfect premium snack gift, {first_name}",
+    "headline_no_name": "The perfect premium snack gift",
+    "body": "Gift your favorite fitness lover protein bars that don't taste like cardboard. A delicious, premium treat they will actually enjoy.",
+    "cta": "Shop gift options"
    },
    {
     "variant_id": "persona_010:2",
@@ -1852,22 +1760,10 @@
      "pub_003",
      "pub_012"
     ],
-    "headline_template": "A delicious Halloween treat they will love",
-    "headline_no_name": "A delicious Halloween treat they will love",
-    "body": "Skip the candy and gift premium protein bars that don't taste like cardboard. Perfect for the active people in your life.",
-    "cta": "Shop Halloween gifts"
-   },
-   {
-    "variant_id": "persona_010:3",
-    "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_003",
-     "pub_012"
-    ],
-    "headline_template": "A Halloween treat they'll love, {first_name}",
-    "headline_no_name": "A Halloween treat they'll love",
-    "body": "Skip the candy and share protein bars that don't taste like cardboard. The ultimate Halloween surprise for your fitness friends.",
-    "cta": "Shop protein bars"
+    "headline_template": "Need a premium gift for your active friend, {first_name}?",
+    "headline_no_name": "A premium gift for the active person in your life",
+    "body": "Give them a beautifully presented gift box of protein bars that don't taste like cardboard. Delicious flavor in every bite.",
+    "cta": "Shop gift boxes"
    }
   ],
   "frequency_cap": {
@@ -1901,22 +1797,14 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 50.36
+  "creative": 39.96
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_001",
-    3
-   ],
-   [
     "persona_010",
-    1
-   ],
-   [
-    "persona_010",
-    3
+    2
    ]
   ]
  }

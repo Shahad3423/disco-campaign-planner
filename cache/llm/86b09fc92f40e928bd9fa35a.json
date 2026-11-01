@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_006",
+      "variant": 1,
+      "headline": "{first_name}, discover natural soy wax candles.",
+      "body": "Poured by hand in Vermont using natural soy wax and absolutely no synthetic fragrances. Experience small-batch quality.",
+      "cta": "Shop soy candles",
+      "headline_no_name": "Natural soy wax candles, hand-poured in Vermont.",
+      "angle": "specific sustainability claims",
+      "claims_used": [
+        "Natural soy wax",
+        "No synthetic fragrances",
+        "Small-batch candles poured by hand in Vermont"
+      ]
+    }
+  ]
+}

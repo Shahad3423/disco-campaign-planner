@@ -1,0 +1,82 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_004",
+      "variant": 1,
+      "headline": "Welcome your new family member, {first_name}",
+      "body": "Give your new kitten the best start. Get toys, food samples, and a helpful guide for their first three months of life.",
+      "cta": "Start their journey",
+      "headline_no_name": "Welcome your new furry family member",
+      "angle": "emotional connection",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_004",
+      "variant": 2,
+      "headline": "Bond with your new kitten, {first_name}",
+      "body": "Start your kitten's first three months with toys, food samples, and a booklet on what to expect as they grow.",
+      "cta": "Get your starter box",
+      "headline_no_name": "Bond with your new kitten",
+      "angle": "emotional connection",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 1,
+      "headline": "{first_name}, kitten prep made simple",
+      "body": "Save time with a subscription box for your kitten's first three months. Includes toys, food samples, and a helpful guide.",
+      "cta": "Subscribe now",
+      "headline_no_name": "Kitten preparation made simple",
+      "angle": "time-saving",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_002",
+      "variant": 2,
+      "headline": "Help your family raise your new kitten",
+      "body": "Simplify your kitten's first three months with toys, food samples, and an easy guide on what to expect.",
+      "cta": "Get your first box",
+      "headline_no_name": "Help your family raise your new kitten",
+      "angle": "family-friendly",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 1,
+      "headline": "{first_name}, get your kitten's essential box",
+      "body": "Everything you need for their first three months: toys, food samples, and a guide, bundled in one subscription.",
+      "cta": "Claim your box",
+      "headline_no_name": "Get your new kitten's essential box",
+      "angle": "bundle offers",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    },
+    {
+      "persona_id": "persona_008",
+      "variant": 2,
+      "headline": "No tricks, just treats for your kitten, {first_name}",
+      "body": "Pack their first three months with fun. Get toys, food samples, and a guide on what to expect in one handy box.",
+      "cta": "Order a box",
+      "headline_no_name": "No tricks, just treats for your new kitten",
+      "angle": "clear value props",
+      "claims_used": [
+        "First three months of their cat's life",
+        "Toys, food samples, a little booklet about what to expect"
+      ]
+    }
+  ]
+}

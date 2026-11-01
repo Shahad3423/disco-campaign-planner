@@ -18,14 +18,14 @@
   "fulfillment_notes": null,
   "relevant_tags": [
    {
-    "tag": "apparel",
-    "weight": 1.0,
-    "why": "Core category as jackets and outerwear."
-   },
-   {
     "tag": "activewear",
     "weight": 1.0,
     "why": "Core category for technical outerwear and shells."
+   },
+   {
+    "tag": "apparel",
+    "weight": 1.0,
+    "why": "Core category as jackets and outerwear."
    }
   ],
   "competing_tags": [],
@@ -68,25 +68,25 @@
   {
    "publisher_id": "pub_002",
    "publisher_name": "Movewell",
-   "score": 0.2882,
+   "score": 0.3221,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches apparel, activewear (specific) (multiplier)"
+     "detail": "matches activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.17030165587605517,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $78; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $78 (8.3x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -108,43 +108,43 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.74)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_017",
    "publisher_name": "Cloudfoot",
-   "score": 0.2735,
+   "score": 0.2742,
    "components": [
     {
      "name": "category_fit",
      "value": 1.0,
      "weight": 1.0,
-     "detail": "matches apparel, activewear (specific) (multiplier)"
+     "detail": "matches activewear, apparel (specific) (multiplier)"
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.22442805230204088,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $118; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $118 (5.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6758101265822786,
+     "value": 0.6758101265822785,
      "weight": 0.35,
      "detail": "reaches The Gifter best (host fit 0.85)"
     },
@@ -162,21 +162,21 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, activewear (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches activewear, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.85)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_016",
    "publisher_name": "Stride & Stem",
-   "score": 0.167,
+   "score": 0.163,
    "components": [
     {
      "name": "category_fit",
@@ -186,19 +186,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.3627298741093486,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $142 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $142 (4.6x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6364430379746836,
+     "value": 0.6364430379746835,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.78)"
     },
@@ -216,21 +216,21 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal price_fit (price $650 vs host AOV $142 (multiplier ^0.5)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
+   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.78)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
   },
   {
    "publisher_id": "pub_005",
    "publisher_name": "Linden Park",
-   "score": 0.1564,
+   "score": 0.1491,
    "components": [
     {
      "name": "category_fit",
@@ -240,19 +240,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.3384784903567116,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $128 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.5595189873417722,
+     "value": 0.5595189873417721,
      "weight": 0.35,
      "detail": "reaches The Affluent Classic best (host fit 0.79)"
     },
@@ -270,19 +270,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+   "reason": "Excluded: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_004",
    "publisher_name": "Marlowe & Co.",
-   "score": 0.1508,
+   "score": 0.1446,
    "components": [
     {
      "name": "category_fit",
@@ -292,15 +292,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.3096490681205675,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $112 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -322,19 +322,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+   "reason": "Excluded: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_010",
    "publisher_name": "Heartfoot",
-   "score": 0.1044,
+   "score": 0.1049,
    "components": [
     {
      "name": "category_fit",
@@ -344,15 +344,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.12996448734115779,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -374,19 +374,19 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_006",
    "publisher_name": "Everbody",
-   "score": 0.1036,
+   "score": 0.1035,
    "components": [
     {
      "name": "category_fit",
@@ -396,19 +396,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.13017088175564073,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $89 (7.3x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6557215189873418,
+     "value": 0.6557215189873417,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.74)"
     },
@@ -426,14 +426,14 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
+   "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $89 (7.3x the typical order); host income mid below high needed for luxury (multiplier ^0.5))."
   },
   {
    "publisher_id": "pub_001",
@@ -448,19 +448,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.060213313918256274,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $28; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $28 (23.2x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.4865696202531646,
+     "value": 0.48656962025316447,
      "weight": 0.35,
      "detail": "reaches The Gifter best (host fit 0.55)"
     },
@@ -478,9 +478,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -500,19 +500,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.16102400435517242,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $42 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $42 (15.5x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.5793670886075949,
+     "value": 0.5793670886075948,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.71)"
     },
@@ -530,9 +530,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -552,15 +552,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.14925966122797096,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $64; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $64 (10.2x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -582,9 +582,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -604,19 +604,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.2596510379791811,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $86 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $86 (7.6x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.5804303797468354,
+     "value": 0.5804303797468353,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.70)"
     },
@@ -634,9 +634,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -656,15 +656,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.11406062553132588,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $73; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $73 (8.9x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -686,9 +686,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -708,15 +708,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.39928867662587103,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $164 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $164 (4.0x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -738,9 +738,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -760,19 +760,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.10544148975615293,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $38; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $38 (17.1x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6782784810126583,
+     "value": 0.6782784810126582,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.96)"
     },
@@ -790,9 +790,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -812,19 +812,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.10119065310450354,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $61; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $61 (10.7x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.545759493670886,
+     "value": 0.5457594936708859,
      "weight": 0.35,
      "detail": "reaches The Gifter best (host fit 0.62)"
     },
@@ -842,9 +842,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -864,15 +864,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.4527250816676583,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $198 (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $198 (3.3x the typical order) (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -894,9 +894,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -916,19 +916,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.16442844464100892,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $74; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $74 (8.8x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6007974683544304,
+     "value": 0.6007974683544303,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.69)"
     },
@@ -946,9 +946,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -968,15 +968,15 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.06987136137944983,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $35; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $35 (18.6x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
@@ -998,9 +998,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1020,19 +1020,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.08624779494964814,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $48; host income mid below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $48 (13.5x the typical order); host income mid below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.5993164556962025,
+     "value": 0.5993164556962024,
      "weight": 0.35,
      "detail": "reaches The Wellness Optimizer best (host fit 0.72)"
     },
@@ -1050,9 +1050,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1072,19 +1072,19 @@
     },
     {
      "name": "audience_fit",
-     "value": 0.6,
+     "value": null,
      "weight": 0.3,
-     "detail": "gender not stated; age not stated"
+     "detail": "audience not stated (left out)"
     },
     {
      "name": "price_fit",
      "value": 0.11271680304862068,
      "weight": 1.0,
-     "detail": "price $650 vs host AOV $42; host income mid-high below high needed for luxury (multiplier ^0.5)"
+     "detail": "price $650 vs host AOV $42 (15.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5)"
     },
     {
      "name": "persona_fit",
-     "value": 0.6234683544303798,
+     "value": 0.6234683544303797,
      "weight": 0.35,
      "detail": "reaches The Fitness Enthusiast best (host fit 0.93)"
     },
@@ -1102,9 +1102,9 @@
     },
     {
      "name": "seasonality",
-     "value": 0.5,
+     "value": null,
      "weight": 0.1,
-     "detail": "not a gifting product"
+     "detail": "not a gifting product (left out)"
     }
    ],
    "flags": [],
@@ -1116,12 +1116,12 @@
   {
    "persona_id": "persona_001",
    "persona_name": "The Wellness Optimizer",
-   "score": 0.48,
+   "score": 0.6,
    "selected": true,
    "reasons": [
     "category affinity 0.60 (fitness)",
     "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_016",
@@ -1132,12 +1132,12 @@
   {
    "persona_id": "persona_005",
    "persona_name": "The Affluent Classic",
-   "score": 0.48,
+   "score": 0.6,
    "selected": true,
    "reasons": [
     "category affinity 0.60 (travel)",
     "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_016",
@@ -1148,12 +1148,12 @@
   {
    "persona_id": "persona_010",
    "persona_name": "The Gifter",
-   "score": 0.48,
+   "score": 0.6,
    "selected": true,
    "reasons": [
     "category affinity 0.60 (apparel)",
     "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1164,12 +1164,12 @@
   {
    "persona_id": "persona_009",
    "persona_name": "The Fitness Enthusiast",
-   "score": 0.384,
+   "score": 0.48,
    "selected": true,
    "reasons": [
     "category affinity 0.60 (activewear)",
     "price fit 0.80 (luxury product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1180,12 +1180,12 @@
   {
    "persona_id": "persona_008",
    "persona_name": "The Value-Conscious Shopper",
-   "score": 0.072,
+   "score": 0.09,
    "selected": false,
    "reasons": [
     "category affinity 0.60 (apparel)",
     "price fit 0.15 (luxury product vs high price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_016",
@@ -1201,7 +1201,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1217,7 +1217,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.30 (luxury product vs medium-high price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_002",
@@ -1233,7 +1233,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.80 (luxury product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1249,7 +1249,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1265,7 +1265,7 @@
    "reasons": [
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "audience fit 1.00"
    ],
    "best_publishers": [
     "pub_017",
@@ -1278,154 +1278,102 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "{first_name}, optimize your backcountry system",
-   "body": "Technical outerwear engineered for serious backcountry skiers. Experience the shells that professional patrollers trust.",
-   "cta": "Shop technical gear",
-   "headline_no_name": "Optimize your backcountry system",
-   "angle": "outcome-focused and technical system optimization",
+   "headline": "{first_name}, optimize your backcountry system.",
+   "body": "Technical outerwear for serious backcountry skiers. Designed to handle the elements so you can perform at your peak.",
+   "cta": "Shop outer shells",
+   "headline_no_name": "Optimize your backcountry system.",
+   "angle": "outcome-focused performance optimization",
    "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
+    "Technical outerwear for serious backcountry skiers"
    ]
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "Optimize your backcountry system, {first_name}",
-   "body": "Protect your physical output. Our technical outerwear shells are what patrollers wear, built for serious backcountry skiers.",
-   "cta": "Shop our shells",
-   "headline_no_name": "Optimize your backcountry system",
-   "angle": "Outcome-focused physical system optimization",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "headline": "{first_name}, gear built for the backcountry",
-   "body": "Elevate your winter performance. Discover technical outerwear designed specifically for serious backcountry skiers.",
-   "cta": "Shop our shells",
-   "headline_no_name": "Gear built for the backcountry",
-   "angle": "outcome-focused physical performance optimization",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers"
-   ]
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 1,
-   "headline": "{first_name}, the choice of mountain patrollers",
-   "body": "Invest in lasting quality. Our technical outerwear shells are what patrollers wear for serious backcountry skiing.",
-   "cta": "Shop quality shells",
-   "headline_no_name": "The choice of mountain patrollers",
-   "angle": "heritage and trust-focused professional standard",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 2,
-   "headline": "Technical outerwear for serious skiers",
-   "body": "Built for the demanding conditions of the backcountry. Discover the shells trusted and worn by professional patrollers.",
-   "cta": "Shop our shells",
-   "headline_no_name": "Technical outerwear for serious skiers",
-   "angle": "understated quality and longevity",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 3,
-   "headline": "{first_name}, understated backcountry protection",
-   "body": "Classic design meets elite performance. Explore the technical outerwear shells designed for serious backcountry skiers.",
-   "cta": "Shop the collection",
-   "headline_no_name": "Understated backcountry protection",
-   "angle": "understated aesthetic and premium craftsmanship",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 1,
-   "headline": "{first_name}, the ultimate gift for serious skiers",
-   "body": "Gift the technical outerwear shells that professional patrollers wear. Perfect for the serious backcountry skier in your life.",
-   "cta": "Shop premium gifts",
-   "headline_no_name": "The ultimate gift for serious skiers",
-   "angle": "premium and impressive gifting",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 2,
-   "headline": "Give the shells that professional patrollers wear",
-   "body": "Make an impression with technical outerwear designed for serious backcountry skiers. A premium gift built for the mountains.",
-   "cta": "Gift our shells",
-   "headline_no_name": "Give the shells that professional patrollers wear",
-   "angle": "impressive presentation and elite standard gift",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 3,
-   "headline": "{first_name}, early winter gifting made easy",
-   "body": "Beat the winter rush. Gift them the technical outerwear shells worn by professional patrollers and serious backcountry skiers.",
-   "cta": "Shop winter gifts",
-   "headline_no_name": "Early winter gifting made easy",
-   "angle": "seasonal gifting convenience",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 1,
-   "headline": "{first_name}, high-performance backcountry shells",
-   "body": "Engineered for peak performance. Our technical outerwear shells are designed for serious backcountry skiers.",
-   "cta": "Shop technical gear",
-   "headline_no_name": "High-performance backcountry shells",
-   "angle": "technical fabric and high performance",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers"
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "headline": "Wear what professional patrollers wear",
-   "body": "Train hard in technical outerwear built for serious backcountry skiers. These shells are what professional patrollers rely on.",
+   "headline": "Engineered for the harshest alpine environments.",
+   "body": "Our shells are what patrollers wear. Get the ultimate technical outerwear designed for serious backcountry skiers.",
    "cta": "Shop patroller gear",
-   "headline_no_name": "Wear what professional patrollers wear",
-   "angle": "athlete and professional endorsement",
+   "headline_no_name": "Engineered for the harshest alpine environments.",
+   "angle": "evidence-backed professional standards",
+   "claims_used": [
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 1,
+   "headline": "{first_name}, invest in enduring alpine quality.",
+   "body": "Technical outerwear for serious backcountry skiers. Built for longevity and trusted by the pros who spend every day on the mountain.",
+   "cta": "Shop the collection",
+   "headline_no_name": "Invest in enduring alpine quality.",
+   "angle": "quality-focused and longevity",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "Professional-grade protection on the slopes.",
+   "body": "Our shells are what patrollers wear. Understated, durable, and designed specifically for serious backcountry skiers.",
+   "cta": "Shop durable shells",
+   "headline_no_name": "Professional-grade protection on the slopes.",
+   "angle": "understated heritage and trust",
+   "claims_used": [
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "headline": "{first_name}, give the ultimate ski gift.",
+   "body": "Technical outerwear for serious backcountry skiers. Our premium shells are what patrollers wear, making them the perfect gift.",
+   "cta": "Shop premium gifts",
+   "headline_no_name": "Give the ultimate ski gift.",
+   "angle": "premium giftable presentation",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
    ]
   },
   {
-   "persona_id": "persona_009",
-   "variant": 3,
-   "headline": "{first_name}, gear for serious backcountry skiing",
-   "body": "Match your intensity. Experience technical outerwear shells built for serious backcountry skiers and trusted by patrollers.",
-   "cta": "Shop our shells",
-   "headline_no_name": "Gear for serious backcountry skiing",
-   "angle": "identity-adjacent athletic intensity",
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "Gift the gear trusted by mountain professionals.",
+   "body": "Surprise the skier in your life. Our shells are what patrollers wear, offering technical outerwear for serious backcountry skiers.",
+   "cta": "Gift a shell",
+   "headline_no_name": "Gift the gear trusted by mountain professionals.",
+   "angle": "impressive professional-grade gift",
    "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 1,
+   "headline": "{first_name}, gear up for serious backcountry lines.",
+   "body": "High-performance technical outerwear for serious backcountry skiers. Engineered to keep up with your most demanding winter workouts.",
+   "cta": "Shop technical gear",
+   "headline_no_name": "Gear up for serious backcountry lines.",
+   "angle": "performance claims",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 2,
+   "headline": "High-performance shells built for the elements.",
+   "body": "Our shells are what patrollers wear. Get the technical outerwear designed for serious backcountry skiers who demand peak performance.",
+   "cta": "Shop technical gear",
+   "headline_no_name": "High-performance shells built for the elements.",
+   "angle": "technical fabric and athlete standard",
+   "claims_used": [
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
    ]
   }
  ],
@@ -1443,54 +1391,44 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": false,
+   "persona_fit": 3,
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Engineered for the harshest alpine environments"
+   ],
+   "distinct_from_others": true,
    "issues": [
-    "Headline and angle are nearly identical to Variant 1, only shifting the placement of the first name placeholder."
+    "The angle is too generic for a wellness optimizer and relies on an unsupported engineering claim."
    ],
    "passed": false
   },
   {
-   "persona_id": "persona_001",
-   "variant": 3,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
    "persona_id": "persona_005",
    "variant": 1,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "Built for longevity"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "Contains an unsupported claim regarding product longevity."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "durable"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 3,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "Contains an unsupported claim regarding durability."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_010",
@@ -1513,44 +1451,32 @@
    "passed": true
   },
   {
-   "persona_id": "persona_010",
-   "variant": 3,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
    "persona_id": "persona_009",
    "variant": 1,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "High-performance"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "Contains an unsupported performance claim."
+   ],
+   "passed": false
   },
   {
    "persona_id": "persona_009",
    "variant": 2,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "High-performance"
+   ],
    "distinct_from_others": true,
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 3,
-   "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "issues": [],
-   "passed": true
+   "issues": [
+    "Contains an unsupported performance claim."
+   ],
+   "passed": false
   }
  ],
  "config": {
@@ -1572,12 +1498,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.51-$0.70 per click (median $0.59), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.54-$0.74 per click (median $0.62), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.51,
-    "mid": 0.59,
-    "high": 0.7
+    "low": 0.54,
+    "mid": 0.62,
+    "high": 0.74
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1585,7 +1511,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4972.47,
+   "planned_spend_usd": 4971.7,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1593,19 +1519,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 221.5,
-    "mid": 443.0,
-    "high": 797.3
+    "low": 212.4,
+    "mid": 424.7,
+    "high": 764.5
    },
-   "forecast_without_share_cap": 443.0,
+   "forecast_without_share_cap": 424.7,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
-   "max_deliverable": 25854.6,
-   "spend_at_full_inventory_usd": 407040.14,
+   "max_deliverable": 25141.1,
+   "spend_at_full_inventory_usd": 406924.71,
    "replan_options": [],
-   "expected_impressions": 313000,
-   "expected_reach": 195625,
+   "expected_impressions": 308500,
+   "expected_reach": 192812,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1614,12 +1540,12 @@
     {
      "publisher_id": "pub_002",
      "publisher_name": "Movewell",
-     "share": 0.364,
-     "budget_usd": 1810.2,
-     "cpc_bid_usd": 0.41,
-     "start_bid_usd": 0.41,
-     "win_share": 0.005,
-     "avg_price_paid": 0.39,
+     "share": 0.75,
+     "budget_usd": 3730.33,
+     "cpc_bid_usd": 0.42,
+     "start_bid_usd": 0.42,
+     "win_share": 0.01,
+     "avg_price_paid": 0.4,
      "market_price": {
       "low": 0.53,
       "mid": 0.62,
@@ -1627,97 +1553,97 @@
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 3696.0,
-      "mid": 4620.0,
-      "high": 5544.0
+      "low": 7392.0,
+      "mid": 9240.0,
+      "high": 11088.0
      },
      "expected_conversions": {
-      "low": 77.6,
-      "mid": 161.7,
-      "high": 291.1
+      "low": 155.2,
+      "mid": 323.4,
+      "high": 582.1
      },
      "expected_units": {
-      "low": 80.8,
-      "mid": 161.7,
-      "high": 291.1
+      "low": 161.7,
+      "mid": 323.4,
+      "high": 582.1
      },
      "capacity_usd": 302021.19,
-     "expected_impressions": 110000,
-     "expected_reach": 68750,
+     "expected_impressions": 220000,
+     "expected_reach": 137500,
      "requires_host_approval": false,
-     "rationale": "market price $0.53-$0.74 (median $0.62); bidding $0.41 wins ~0% of page views, paying ~$0.39 per click (second price)"
+     "rationale": "market price $0.53-$0.74 (median $0.62); bidding $0.42 wins ~1% of page views, paying ~$0.40 per click (second price)"
     },
     {
      "publisher_id": "pub_017",
      "publisher_name": "Cloudfoot",
-     "share": 0.636,
-     "budget_usd": 3162.26,
-     "cpc_bid_usd": 0.4,
-     "start_bid_usd": 0.4,
-     "win_share": 0.035,
+     "share": 0.214,
+     "budget_usd": 1065.15,
+     "cpc_bid_usd": 0.39,
+     "start_bid_usd": 0.39,
+     "win_share": 0.013,
      "avg_price_paid": 0.38,
      "market_price": {
-      "low": 0.51,
-      "mid": 0.58,
-      "high": 0.69
+      "low": 0.54,
+      "mid": 0.61,
+      "high": 0.73
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 6622.0,
-      "mid": 8277.0,
-      "high": 9933.0
+      "low": 2229.0,
+      "mid": 2786.0,
+      "high": 3343.0
      },
      "expected_conversions": {
-      "low": 135.0,
-      "mid": 281.3,
-      "high": 506.3
+      "low": 42.8,
+      "mid": 89.2,
+      "high": 160.6
      },
      "expected_units": {
-      "low": 140.6,
-      "mid": 281.3,
-      "high": 506.3
+      "low": 44.6,
+      "mid": 89.2,
+      "high": 160.6
      },
-     "capacity_usd": 72941.4,
-     "expected_impressions": 203000,
-     "expected_reach": 126875,
+     "capacity_usd": 72859.8,
+     "expected_impressions": 72500,
+     "expected_reach": 45312,
      "requires_host_approval": false,
-     "rationale": "market price $0.51-$0.69 (median $0.58); bidding $0.40 wins ~4% of page views, paying ~$0.38 per click (second price)"
+     "rationale": "market price $0.54-$0.73 (median $0.61); bidding $0.39 wins ~1% of page views, paying ~$0.38 per click (second price)"
     },
     {
      "publisher_id": "pub_016",
      "publisher_name": "Stride & Stem",
-     "share": 0.0,
-     "budget_usd": 0.0,
-     "cpc_bid_usd": 0.51,
-     "start_bid_usd": 0.51,
-     "win_share": 0.0,
-     "avg_price_paid": 0.0,
+     "share": 0.035,
+     "budget_usd": 176.23,
+     "cpc_bid_usd": 0.37,
+     "start_bid_usd": 0.37,
+     "win_share": 0.005,
+     "avg_price_paid": 0.37,
      "market_price": {
-      "low": 0.51,
-      "mid": 0.59,
-      "high": 0.7
+      "low": 0.54,
+      "mid": 0.63,
+      "high": 0.74
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 386.0,
+      "mid": 482.0,
+      "high": 579.0
      },
      "expected_conversions": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 5.8,
+      "mid": 12.1,
+      "high": 21.8
      },
      "expected_units": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 6.1,
+      "mid": 12.1,
+      "high": 21.8
      },
-     "capacity_usd": 32077.55,
-     "expected_impressions": 0,
-     "expected_reach": 0,
+     "capacity_usd": 32043.72,
+     "expected_impressions": 16000,
+     "expected_reach": 10000,
      "requires_host_approval": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.51-$0.70); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "market price $0.54-$0.74 (median $0.63); bidding $0.37 wins ~0% of page views, paying ~$0.37 per click (second price)"
     }
    ],
    "warnings": []
@@ -1740,20 +1666,20 @@
    "host_bids": [
     {
      "publisher_id": "pub_002",
-     "start_bid": 0.41,
+     "start_bid": 0.42,
      "max_bid": 0.66,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_017",
-     "start_bid": 0.4,
-     "max_bid": 0.62,
+     "start_bid": 0.39,
+     "max_bid": 0.65,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_016",
-     "start_bid": 0.51,
-     "max_bid": 0.64,
+     "start_bid": 0.37,
+     "max_bid": 0.67,
      "floor": 0.05
     }
    ],
@@ -1782,19 +1708,19 @@
    "publishers_exclude": [
     {
      "id": "pub_005",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+     "reason": "Excluded: score 0.15 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $128 (5.1x the typical order) (multiplier ^0.5))."
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+     "reason": "Excluded: score 0.14 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $112 (5.8x the typical order) (multiplier ^0.5))."
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $52; host income mid-high below high needed for luxury (multiplier ^0.5))."
+     "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $52 (12.5x the typical order); host income mid-high below high needed for luxury (multiplier ^0.5))."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: score 0.10 below cutoff 0.14; weakest signal price_fit (price $650 vs host AOV $89; host income mid below high needed for luxury (multiplier ^0.5))."
+     "reason": "Excluded: score 0.10 below cutoff 0.16; weakest signal price_fit (price $650 vs host AOV $89 (7.3x the typical order); host income mid below high needed for luxury (multiplier ^0.5))."
     },
     {
      "id": "pub_001",
@@ -1874,10 +1800,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "{first_name}, optimize your backcountry system",
-    "headline_no_name": "Optimize your backcountry system",
-    "body": "Technical outerwear engineered for serious backcountry skiers. Experience the shells that professional patrollers trust.",
-    "cta": "Shop technical gear"
+    "headline_template": "{first_name}, optimize your backcountry system.",
+    "headline_no_name": "Optimize your backcountry system.",
+    "body": "Technical outerwear for serious backcountry skiers. Designed to handle the elements so you can perform at your peak.",
+    "cta": "Shop outer shells"
    },
    {
     "variant_id": "persona_001:2",
@@ -1887,23 +1813,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "Optimize your backcountry system, {first_name}",
-    "headline_no_name": "Optimize your backcountry system",
-    "body": "Protect your physical output. Our technical outerwear shells are what patrollers wear, built for serious backcountry skiers.",
-    "cta": "Shop our shells"
-   },
-   {
-    "variant_id": "persona_001:3",
-    "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_016",
-     "pub_002",
-     "pub_017"
-    ],
-    "headline_template": "{first_name}, gear built for the backcountry",
-    "headline_no_name": "Gear built for the backcountry",
-    "body": "Elevate your winter performance. Discover technical outerwear designed specifically for serious backcountry skiers.",
-    "cta": "Shop our shells"
+    "headline_template": "Engineered for the harshest alpine environments.",
+    "headline_no_name": "Engineered for the harshest alpine environments.",
+    "body": "Our shells are what patrollers wear. Get the ultimate technical outerwear designed for serious backcountry skiers.",
+    "cta": "Shop patroller gear"
    },
    {
     "variant_id": "persona_005:1",
@@ -1913,10 +1826,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "{first_name}, the choice of mountain patrollers",
-    "headline_no_name": "The choice of mountain patrollers",
-    "body": "Invest in lasting quality. Our technical outerwear shells are what patrollers wear for serious backcountry skiing.",
-    "cta": "Shop quality shells"
+    "headline_template": "{first_name}, invest in enduring alpine quality.",
+    "headline_no_name": "Invest in enduring alpine quality.",
+    "body": "Technical outerwear for serious backcountry skiers. Built for longevity and trusted by the pros who spend every day on the mountain.",
+    "cta": "Shop the collection"
    },
    {
     "variant_id": "persona_005:2",
@@ -1926,23 +1839,10 @@
      "pub_002",
      "pub_017"
     ],
-    "headline_template": "Technical outerwear for serious skiers",
-    "headline_no_name": "Technical outerwear for serious skiers",
-    "body": "Built for the demanding conditions of the backcountry. Discover the shells trusted and worn by professional patrollers.",
-    "cta": "Shop our shells"
-   },
-   {
-    "variant_id": "persona_005:3",
-    "persona_id": "persona_005",
-    "publisher_ids": [
-     "pub_016",
-     "pub_002",
-     "pub_017"
-    ],
-    "headline_template": "{first_name}, understated backcountry protection",
-    "headline_no_name": "Understated backcountry protection",
-    "body": "Classic design meets elite performance. Explore the technical outerwear shells designed for serious backcountry skiers.",
-    "cta": "Shop the collection"
+    "headline_template": "Professional-grade protection on the slopes.",
+    "headline_no_name": "Professional-grade protection on the slopes.",
+    "body": "Our shells are what patrollers wear. Understated, durable, and designed specifically for serious backcountry skiers.",
+    "cta": "Shop durable shells"
    },
    {
     "variant_id": "persona_010:1",
@@ -1952,9 +1852,9 @@
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "{first_name}, the ultimate gift for serious skiers",
-    "headline_no_name": "The ultimate gift for serious skiers",
-    "body": "Gift the technical outerwear shells that professional patrollers wear. Perfect for the serious backcountry skier in your life.",
+    "headline_template": "{first_name}, give the ultimate ski gift.",
+    "headline_no_name": "Give the ultimate ski gift.",
+    "body": "Technical outerwear for serious backcountry skiers. Our premium shells are what patrollers wear, making them the perfect gift.",
     "cta": "Shop premium gifts"
    },
    {
@@ -1965,23 +1865,10 @@
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "Give the shells that professional patrollers wear",
-    "headline_no_name": "Give the shells that professional patrollers wear",
-    "body": "Make an impression with technical outerwear designed for serious backcountry skiers. A premium gift built for the mountains.",
-    "cta": "Gift our shells"
-   },
-   {
-    "variant_id": "persona_010:3",
-    "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_017",
-     "pub_002",
-     "pub_016"
-    ],
-    "headline_template": "{first_name}, early winter gifting made easy",
-    "headline_no_name": "Early winter gifting made easy",
-    "body": "Beat the winter rush. Gift them the technical outerwear shells worn by professional patrollers and serious backcountry skiers.",
-    "cta": "Shop winter gifts"
+    "headline_template": "Gift the gear trusted by mountain professionals.",
+    "headline_no_name": "Gift the gear trusted by mountain professionals.",
+    "body": "Surprise the skier in your life. Our shells are what patrollers wear, offering technical outerwear for serious backcountry skiers.",
+    "cta": "Gift a shell"
    },
    {
     "variant_id": "persona_009:1",
@@ -1991,9 +1878,9 @@
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "{first_name}, high-performance backcountry shells",
-    "headline_no_name": "High-performance backcountry shells",
-    "body": "Engineered for peak performance. Our technical outerwear shells are designed for serious backcountry skiers.",
+    "headline_template": "{first_name}, gear up for serious backcountry lines.",
+    "headline_no_name": "Gear up for serious backcountry lines.",
+    "body": "High-performance technical outerwear for serious backcountry skiers. Engineered to keep up with your most demanding winter workouts.",
     "cta": "Shop technical gear"
    },
    {
@@ -2004,23 +1891,10 @@
      "pub_002",
      "pub_016"
     ],
-    "headline_template": "Wear what professional patrollers wear",
-    "headline_no_name": "Wear what professional patrollers wear",
-    "body": "Train hard in technical outerwear built for serious backcountry skiers. These shells are what professional patrollers rely on.",
-    "cta": "Shop patroller gear"
-   },
-   {
-    "variant_id": "persona_009:3",
-    "persona_id": "persona_009",
-    "publisher_ids": [
-     "pub_017",
-     "pub_002",
-     "pub_016"
-    ],
-    "headline_template": "{first_name}, gear for serious backcountry skiing",
-    "headline_no_name": "Gear for serious backcountry skiing",
-    "body": "Match your intensity. Experience technical outerwear shells built for serious backcountry skiers and trusted by patrollers.",
-    "cta": "Shop our shells"
+    "headline_template": "High-performance shells built for the elements.",
+    "headline_no_name": "High-performance shells built for the elements.",
+    "body": "Our shells are what patrollers wear. Get the technical outerwear designed for serious backcountry skiers who demand peak performance.",
+    "cta": "Shop technical gear"
    }
   ],
   "frequency_cap": {
@@ -2052,15 +1926,15 @@
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.0,
-  "creative": 44.54
+  "matching": 0.01,
+  "creative": 52.65
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_001",
-    2
+    "persona_009",
+    1
    ]
   ]
  }

@@ -1,0 +1,76 @@
+{
+  "variants": [
+    {
+      "persona_id": "persona_001",
+      "variant": 1,
+      "headline": "{first_name}, optimize your daily fuel",
+      "body": "Upgrade your nutrition system with protein bars that don't taste like cardboard. Fuel your body with what it actually deserves.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Optimize your daily fuel",
+      "angle": "Outcome-focused optimization",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_001",
+      "variant": 2,
+      "headline": "System-grade nutrition for {first_name}",
+      "body": "Meet the protein bars that don't taste like cardboard. High-quality fuel engineered to fit seamlessly into your wellness routine.",
+      "cta": "Order protein bars",
+      "headline_no_name": "System-grade daily nutrition",
+      "angle": "Quality fuel and transparency",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 1,
+      "headline": "{first_name}, fuel your next workout",
+      "body": "Power your recovery with protein bars that don't taste like cardboard. The perfect post-training fuel for your active lifestyle.",
+      "cta": "Shop protein bars",
+      "headline_no_name": "Fuel your next workout",
+      "angle": "Performance and recovery",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_009",
+      "variant": 2,
+      "headline": "Post-workout fuel just got better, {first_name}",
+      "body": "Stop settling for bad snacks. Get the protein bars that don't taste like cardboard to keep your training on track and tasting great.",
+      "cta": "Get your bars",
+      "headline_no_name": "Post-workout fuel just got better",
+      "angle": "Athlete identity and taste performance",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 1,
+      "headline": "The perfect premium snack gift, {first_name}",
+      "body": "Gift your favorite fitness lover protein bars that don't taste like cardboard. A delicious, premium treat they will actually enjoy.",
+      "cta": "Shop gift options",
+      "headline_no_name": "The perfect premium snack gift",
+      "angle": "Premium presentation gifting",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    },
+    {
+      "persona_id": "persona_010",
+      "variant": 2,
+      "headline": "{first_name}, give a better treat this Halloween",
+      "body": "Ditch the candy. Gift them premium protein bars that don't taste like cardboard for a spooky-season snack everyone will love.",
+      "cta": "Shop Halloween boxes",
+      "headline_no_name": "Give a better treat this Halloween",
+      "angle": "Seasonal Halloween gifting",
+      "claims_used": [
+        "protein bars that don't taste like cardboard"
+      ]
+    }
+  ]
+}
