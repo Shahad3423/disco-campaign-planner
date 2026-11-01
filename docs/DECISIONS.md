@@ -362,3 +362,10 @@ forecast or the main plan's goal math. They exist so outcomes exist for pairs th
 measure was tuned on dev examples, so read this as optimistic). Holdout TEST, used once: 83.5% -> 82.5%, ranking agreement
 71.4% -> 72.2%: neutral. 12 audience-led recommendations across the dev briefs, each with the reason spelled out. The judge
 and golden labels are category-minded and cannot reward cross-category placements; click and conversion outcomes will.
+
+## D28. Bids carry no pacing multiplier
+The serving bid is `clamp(start bid x conversion likelihood, floor, ceiling)`. The pacing multiplier (bid up when
+under-delivering, down when over-delivering) is removed from the bid formula, the bid strategy's adjustments and the
+config: smoothing spend over a flight needs delivery data we do not have, and it made the bid harder to explain. The
+flight plan still states a daily cap (budget / days, front-loaded in gifting moments). Pacing and bandit-style
+exploration are future work. Plans generated before this change still show a pacing adjustment in their stored config.
