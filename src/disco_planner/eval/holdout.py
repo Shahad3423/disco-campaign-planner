@@ -4,7 +4,6 @@ No golden publisher labels exist here, so we test *behaviour* that should hold f
 advertiser, which is exactly what overfitting to the 15 examples would break:
   - gates: B2B/local/vague briefs get off_network / clarify, not confident plans
   - honesty: out-of-catalog products get weak-fit or small-test answers more often
-  - calibration: confidence is lower for vague briefs
   - concentration: a few hosts shouldn't be recommended for everything
   - robustness: no crashes; sensitive categories don't get regulated claims in copy
 
@@ -63,7 +62,6 @@ def main() -> None:
         rows.append({
             **c,
             "gate": plan.profile.gate,
-            "confidence": plan.profile.confidence,
             "agreement": plan.profile.sample_agreement,
             "n_recommended": len(rec),
             "recommended": [s.publisher_id for s in rec],
@@ -92,14 +90,10 @@ def main() -> None:
             seg: {
                 "n": len(rs),
                 "gates": dict(Counter(r["gate"] for r in rs)),
-                "mean_confidence": _mean([r["confidence"] for r in rs]),
                 "mean_recommended": _mean([r["n_recommended"] for r in rs]),
                 "weak_fit_rate_when_planned": _mean([r["weak_fit"] for r in rs if r["n_recommended"]]),
             }
             for seg, rs in sorted(by_segment.items())
-        },
-        "confidence_by_clarity": {
-            cl: _mean([r["confidence"] for r in ok if r["clarity"] == cl]) for cl in ("clear", "medium", "vague")
         },
         "host_recommendation_share": {
             catalog.publisher_by_id()[p].name: round(n / max(1, len(planned)), 2) for p, n in host_counts.most_common()

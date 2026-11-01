@@ -196,11 +196,10 @@ def render_understanding(plan: CampaignPlan) -> None:
     p = plan.profile
     st.subheader("What we understood")
     st.write(p.business_summary)
-    c1, c2, c3, c4 = st.columns(4)
+    c1, c2, c3 = st.columns(3)
     c1.metric("Price tier", p.price_tier)
     c2.metric("Purchase model", p.purchase_model.replace("_", " "))
     c3.metric("Price point", f"${p.price_point_usd:,.0f}" if p.price_point_usd else "not stated")
-    c4.metric("Confidence", f"{p.confidence:.0%}")
     if p.stated_claims:
         st.markdown("**Claims the advertiser made** (the only claims creatives may use)")
         st.markdown(" ".join(badge(c) for c in p.stated_claims), unsafe_allow_html=True)

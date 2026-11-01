@@ -109,7 +109,6 @@ def merge_samples(samples: list[AdvertiserProfile]) -> AdvertiserProfile:
     pairs = [(a, b) for idx, a in enumerate(tag_sets) for b in tag_sets[idx + 1:]]
     agreement = sum(len(a & b) / max(1, len(a | b)) for a, b in pairs) / len(pairs)
     primary.sample_agreement = round(agreement, 2)
-    primary.confidence = round(sum(s.confidence for s in samples) / n * (0.5 + 0.5 * agreement), 2)
     return primary
 
 
@@ -118,7 +117,7 @@ def parse_brief(brief: str, provider: Provider, today: date, n_samples: int | No
     if len(brief.split()) < MIN_WORDS:
         # Not worth an LLM call; answer instantly and cheaply.
         return AdvertiserProfile(
-            business_summary="", product="", is_consumer_product=False, confidence=0.0,
+            business_summary="", product="", is_consumer_product=False,
             gate="reject_low_signal", gate_reason="The description is too short to tell what you sell.",
             missing_info=["product", "audience", "price"],
             clarifying_questions=["What do you sell, in one sentence?", "Who usually buys it?", "Roughly what does it cost?"],
