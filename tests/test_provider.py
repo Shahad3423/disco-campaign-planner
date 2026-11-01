@@ -102,7 +102,7 @@ def test_n_variants_per_persona_and_targeted_rewrite():
             if "Rewrite ONLY" in user:
                 return rewrite
             if "Candidates:" in user:
-                return review(calls["n"] > 2)
+                return review("Rewritten headline" in user)  # after the rewrite everything passes
             return first
 
     variants, reviews, log = generate_creatives(profile, selected, [], Scripted({}))
