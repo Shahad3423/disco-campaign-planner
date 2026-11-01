@@ -60,12 +60,6 @@ def run(
 
     eligible = profile.gate in ("proceed", "clarify")
     selected = [m for m in persona_matches if m.selected]
-    variants, reviews, log = [], [], {}
-    if eligible and with_creatives and selected:
-        start = time.perf_counter()
-        variants, reviews, log = creative.generate_creatives(profile, selected, moment_names, provider)
-        t["creative"] = time.perf_counter() - start
-
     eco = pricing = plan = bids = None
     if eligible and any(s.recommended for s in scores):
         category = _primary_category(profile, scores)
@@ -77,7 +71,6 @@ def run(
         bids = budget.bid_strategy(pricing, markets, inputs, plan)
 
     status = {"proceed": "draft", "clarify": "needs_clarification"}.get(profile.gate, "not_eligible")
-    by_persona = {m.persona_id: m for m in persona_matches}
     # without a budget the plan still names its hosts; nothing is allocated until the advertiser sets one
     allowed_hosts = ({a.publisher_id for a in plan.allocations} if plan
                      else {s.publisher_id for s in scores if s.recommended})
@@ -97,14 +90,7 @@ def run(
             },
             "seasonal_moments": moment_names,
         },
-        creatives=[
-            CreativeAssignment(
-                variant_id=f"{v.persona_id}:{v.variant}", persona_id=v.persona_id,
-                publisher_ids=[p for p in by_persona[v.persona_id].best_publishers if p in allowed_hosts],
-                headline_template=v.headline, headline_no_name=v.headline_no_name, body=v.body, cta=v.cta,
-            )
-            for i, v in enumerate(variants) if v.persona_id in by_persona
-        ],
+        creatives=[],  # filled by add_creatives(), which can run after the rest of the plan is shown
         frequency_cap=catalog.config("pricing")["network"]["frequency_cap"],
         guardrails={
             "claims_allowed": profile.stated_claims,
@@ -127,8 +113,38 @@ def run(
             [] if inputs.monthly_budget_usd or status == "not_eligible"
             else ["What's your budget for this flight? We don't suggest one; enter it to see the allocation and forecast."]),
     )
-    return CampaignPlan(
-        brief=brief, profile=profile, publishers=scores, personas=persona_matches,
-        creatives=variants, reviews=reviews, config=config,
-        timings_s={k: round(v, 2) for k, v in t.items()}, creative_log=log,
+    plan_out = CampaignPlan(
+        brief=brief, profile=profile, publishers=scores, personas=persona_matches, config=config,
+        timings_s={k: round(v, 2) for k, v in t.items()},
     )
+    return add_creatives(plan_out, provider, today) if with_creatives else plan_out
+
+
+def needs_creatives(plan: CampaignPlan) -> bool:
+    return plan.profile.gate in ("proceed", "clarify") and any(m.selected for m in plan.personas)
+
+
+def add_creatives(plan: CampaignPlan, provider: Provider, today: date) -> CampaignPlan:
+    """Stage 3 (the slow LLM part): needs only the profile and the chosen personas, nothing from the budget, so the
+    app shows the rest of the plan first and calls this afterwards. Returns a new plan with the creatives filled in."""
+    if not needs_creatives(plan):
+        return plan
+    moment_names = [m.name for m in active_moments(datetime(today.year, today.month, today.day, 12)) if m.intensity > 0]
+    selected = [m for m in plan.personas if m.selected]
+    start = time.perf_counter()
+    variants, reviews, log = creative.generate_creatives(plan.profile, selected, moment_names, provider)
+    by_persona = {m.persona_id: m for m in plan.personas}
+    allowed_hosts = set(plan.config.targeting["publishers_include"])
+    assignments = [
+        CreativeAssignment(
+            variant_id=f"{v.persona_id}:{v.variant}", persona_id=v.persona_id,
+            publisher_ids=[p for p in by_persona[v.persona_id].best_publishers if p in allowed_hosts],
+            headline_template=v.headline, headline_no_name=v.headline_no_name, body=v.body, cta=v.cta,
+        )
+        for v in variants if v.persona_id in by_persona
+    ]
+    return plan.model_copy(update={
+        "creatives": variants, "reviews": reviews, "creative_log": log,
+        "config": plan.config.model_copy(update={"creatives": assignments}),
+        "timings_s": {**plan.timings_s, "creative": round(time.perf_counter() - start, 2)},
+    })
