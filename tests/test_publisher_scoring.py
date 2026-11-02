@@ -33,7 +33,7 @@ def test_pet_hosts_beat_unrelated_hosts():
     # so it's always recommended, whatever the competitors score
     assert scores["pub_018"].recommended
     assert not scores["pub_003"].recommended  # Studiogrid: fitness classes
-    assert "no category link" in scores["pub_003"].reason
+    assert "doesn't sell anything related" in scores["pub_003"].reason
 
 
 def test_competitor_is_flagged_not_silently_ranked_first():
@@ -85,7 +85,7 @@ def test_cutoff_is_anchored_to_best_non_competitor():
     is_comp = lambda s: any(f.startswith("competitor_conflict") for f in s.flags)
     best_non_comp = next(s for s in scores if not is_comp(s) and s.components[0].value >= 0.2)
     assert best_non_comp.recommended
-    assert "below cutoff" not in best_non_comp.reason
+    assert "below this plan's bar" not in best_non_comp.reason
 
 
 # ---- D26: relevance = topic link OR stated audience; exploration -----------------------------------------------

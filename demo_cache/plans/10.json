@@ -134,7 +134,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Affluent Classic best (host fit 0.79)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Affluent Classic (79% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -190,7 +190,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Affluent Classic best (host fit 0.73)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Affluent Classic (73% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -246,7 +246,7 @@
     "weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test"
    ],
    "recommended": true,
-   "reason": "Recommended: matches apparel, sustainable (category only) (multiplier); strongest supporting signal persona_fit (reaches The Gifter best (host fit 0.71)). Flags: weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Gifter (71% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -300,7 +300,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate. Exploration test: would score 0.10 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -354,7 +354,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate. Exploration test: would score 0.10 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -408,7 +408,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate.",
+   "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -462,7 +462,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: score 0.07 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89 (13.5x the typical order); host income mid below high needed for luxury (multiplier ^0.5)).",
+   "reason": "Excluded: overall fit 0.07 is below this plan's bar of 0.08. Weakest point, affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -516,7 +516,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -570,7 +570,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -624,7 +624,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -678,7 +678,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -732,7 +732,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -786,7 +786,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -840,7 +840,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -894,7 +894,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -948,7 +948,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1002,7 +1002,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1056,7 +1056,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1110,7 +1110,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1164,7 +1164,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   }
@@ -1176,9 +1176,9 @@
    "score": 0.8,
    "selected": true,
    "reasons": [
-    "category affinity 0.80 (home_goods, travel)",
-    "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: home goods, travel (strength 0.80)",
+    "Price: a luxury product for someone with low price sensitivity (fit 1.00)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1187,9 +1187,9 @@
    "score": 0.6,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (home_goods)",
-    "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: home goods (strength 0.60)",
+    "Price: a luxury product for someone with low price sensitivity (fit 1.00)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1198,9 +1198,9 @@
    "score": 0.3,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (home_goods)",
-    "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: home goods (strength 0.60)",
+    "Price: a luxury product for someone with medium price sensitivity (fit 0.50)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1209,9 +1209,9 @@
    "score": 0.18,
    "selected": false,
    "reasons": [
-    "category affinity 0.60 (fashion)",
-    "price fit 0.30 (luxury product vs medium-high price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: fashion (strength 0.60)",
+    "Price: a luxury product for someone with medium-high price sensitivity (fit 0.30)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1220,9 +1220,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (luxury product vs low price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a luxury product for someone with low price sensitivity (fit 1.00)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1231,9 +1231,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a luxury product for someone with medium price sensitivity (fit 0.50)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1242,9 +1242,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.80 (luxury product vs low-medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a luxury product for someone with low-medium price sensitivity (fit 0.80)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1253,10 +1253,10 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "EXCLUDED: conflicts with 'Dislikes delayed fulfillment' because the brief says: Minimum order ships in 6 weeks.",
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.50 (luxury product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "Left out: they dislike 'Dislikes delayed fulfillment', and your brief says: Minimum order ships in 6 weeks.",
+    "No shared interests with this product",
+    "Price: a luxury product for someone with medium price sensitivity (fit 0.50)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1265,9 +1265,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.15 (luxury product vs high price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a luxury product for someone with high price sensitivity (fit 0.15)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1276,9 +1276,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.80 (luxury product vs low-medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a luxury product for someone with low-medium price sensitivity (fit 0.80)",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   }
  ],
@@ -1553,7 +1553,8 @@
      "expected_reach": 97844,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.44-$0.61 (median $0.51); bidding $0.34 wins ~3% of page views, paying ~$0.31 per click (second price)"
+     "rationale": "market price $0.44-$0.61 (median $0.51); bidding $0.34 wins ~3% of page views, paying ~$0.31 per click (second price)",
+     "bid_reason": "About $8.98 per purchase (3.5% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_004",
@@ -1590,7 +1591,8 @@
      "expected_reach": 126339,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.42-$0.58 (median $0.49); bidding $0.33 wins ~2% of page views, paying ~$0.31 per click (second price)"
+     "rationale": "market price $0.42-$0.58 (median $0.49); bidding $0.33 wins ~2% of page views, paying ~$0.31 per click (second price)",
+     "bid_reason": "About $9.15 per purchase (3.4% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_016",
@@ -1627,7 +1629,8 @@
      "expected_reach": 5500,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.43-$0.58 (median $0.49); bidding $0.29 wins ~0% of page views, paying ~$0.28 per click (second price)"
+     "rationale": "market price $0.43-$0.58 (median $0.49); bidding $0.29 wins ~0% of page views, paying ~$0.28 per click (second price)",
+     "bid_reason": "About $9.28 per purchase (3.0% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_010",
@@ -1664,7 +1667,8 @@
      "expected_reach": 13212,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: viable, but below the top picks; kept as an exploration candidate. Exploration test: would score 0.10 with a relevance of 0.2; gets a small separate test budget.). market price $0.52-$0.68 (median $0.59); bidding $0.38 wins ~0% of page views, paying ~$0.36 per click (second price)"
+     "rationale": "EXPLORATION TEST (not in the main plan: a reasonable fit, but the stronger hosts above already cover this plan.). market price $0.52-$0.68 (median $0.59); bidding $0.38 wins ~0% of page views, paying ~$0.36 per click (second price)",
+     "bid_reason": "About $12.95 per purchase (2.8% of clicks expected to buy). A small learning test: we accept a higher cost here to find out whether this host works."
     },
     {
      "publisher_id": "pub_017",
@@ -1701,7 +1705,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: viable, but below the top picks; kept as an exploration candidate. Exploration test: would score 0.10 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.65-$0.88); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: a reasonable fit, but the stronger hosts above already cover this plan.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.65-$0.88); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     }
    ],
    "warnings": []
@@ -1774,63 +1779,63 @@
    "publishers_exclude": [
     {
      "id": "pub_002",
-     "reason": "Excluded: viable, but below the top picks; kept as an exploration candidate."
+     "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: score 0.07 below cutoff 0.08; weakest signal price_fit (price $1200 vs host AOV $89 (13.5x the typical order); host income mid below high needed for luxury (multiplier ^0.5))."
+     "reason": "Excluded: overall fit 0.07 is below this plan's bar of 0.08. Weakest point, affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high)."
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     }
    ],
    "personas": [

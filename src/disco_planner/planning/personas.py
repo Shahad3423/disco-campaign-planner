@@ -11,6 +11,7 @@ import re
 
 from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, Persona, PersonaMatch, Publisher, PublisherScore
+from disco_planner.planning import explain
 
 
 def _ps() -> dict:
@@ -98,15 +99,18 @@ def select_personas(profile: AdvertiserProfile, publisher_scores: list[Publisher
         price = price_compat(profile, persona)
         aud = audience_compat(profile, persona)
         score = aff * price * aud
+        stated = profile.target_gender in ("female", "male") or bool(profile.target_age_range)
         reasons = [
-            f"category affinity {aff:.2f}" + (f" ({', '.join(hits)})" if hits else " (no shared interests)"),
-            f"price fit {price:.2f} ({profile.price_tier} product vs {persona.price_sensitivity} price sensitivity)",
-            f"audience fit {aud:.2f}",
+            (f"Interested in what you sell: {', '.join(h.replace('_', ' ') for h in hits)} (strength {aff:.2f})" if hits
+             else "No shared interests with this product"),
+            f"Price: a {profile.price_tier} product for someone with {persona.price_sensitivity} price sensitivity (fit {price:.2f})"
+            if profile.price_tier != "unknown" else "Price: not stated, so it doesn't count for or against",
+            f"Audience: {aud:.0%} match with the audience you stated" if stated else "Audience: none stated, so it doesn't count for or against",
         ]
         if persona.id in conflicts:
             c = conflicts[persona.id]
             score = 0.0
-            reasons.insert(0, f"EXCLUDED: conflicts with '{c.conflict}' because the brief says: {c.evidence}")
+            reasons.insert(0, explain.plain_text(f"Left out: they dislike '{c.conflict}', and your brief says: {c.evidence}"))
         matches.append(PersonaMatch(
             persona_id=persona.id, persona_name=persona.name, score=round(score, 3), selected=False,
             reasons=reasons,
@@ -128,6 +132,6 @@ def select_personas(profile: AdvertiserProfile, publisher_scores: list[Publisher
     fill = sorted((m for m in matches if not m.selected and m.persona_id not in conflicts), key=lambda m: (-m.score, -presence(m)))
     for m in fill[: max(0, cfg["min_selected"] - sum(m.selected for m in matches))]:
         m.selected = True
-        m.reasons.insert(0, f"EXPLORATORY: weak fit for the product, but common on the recommended hosts "
-                            f"(presence {presence(m):.2f}); included to reach {cfg['min_selected']} variants")
+        m.reasons.insert(0, f"Added to reach {cfg['min_selected']} creative sets: a weak fit for the product, but common among "
+                            f"the recommended hosts' shoppers (presence {presence(m):.0%})")
     return matches

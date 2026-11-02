@@ -41,15 +41,3 @@ ui.render_plan(plan, "cached run")
     at = AppTest.from_string(script, default_timeout=30).run()
     assert not at.exception
 
-
-def test_shopper_features_render():
-    script = f"""
-import sys; sys.path.insert(0, r"{APP}")
-from datetime import datetime, timezone
-import components as ui
-from disco_planner.serving.features import ShopperSignals, build_features
-f = build_features(ShopperSignals(publisher_id="pub_001", zip="10001", first_name="Sarah", zip_source="billing"),
-                   datetime(2026, 10, 30, 18, tzinfo=timezone.utc))
-ui.render_features(f)
-"""
-    assert not AppTest.from_string(script, default_timeout=30).run().exception

@@ -11,7 +11,7 @@ import json
 import os
 import re
 import sys
-from datetime import date, datetime
+from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT / "src"))  # lets Streamlit Cloud import the package
 from disco_planner.data import catalog  # noqa: E402
 from disco_planner.domain.models import AdvertiserInputs  # noqa: E402
 from disco_planner.llm.provider import LLMError, default_provider  # noqa: E402
-from disco_planner.planning import pipeline  # noqa: E402
+from disco_planner.planning import explain, pipeline  # noqa: E402
 from disco_planner.planning.pipeline import CampaignPlan  # noqa: E402
 
 PLANNING_DATE = date(2026, 10, 30)  # matches the eval report and the cached demo plans
@@ -219,14 +219,14 @@ def render_understanding(plan: CampaignPlan) -> None:
         st.markdown("**Claims the advertiser made** (the only claims creatives may use)")
         st.markdown(" ".join(badge(c) for c in p.stated_claims), unsafe_allow_html=True)
     if p.relevant_tags:
-        st.markdown("**Relevant publisher tags**")
+        st.markdown("**What hosts it relates to** (the product words we match against each host)")
         st.dataframe(
-            pd.DataFrame([{"tag": t.tag, "weight": t.weight, "why": t.why} for t in sorted(p.relevant_tags, key=lambda t: -t.weight)]),
+            pd.DataFrame([{"tag": explain.tags(t.tag), "weight": t.weight, "why": t.why} for t in sorted(p.relevant_tags, key=lambda t: -t.weight)]),
             hide_index=True, width="stretch",
             column_config={"weight": st.column_config.ProgressColumn("weight", min_value=0, max_value=1, format="%.2f")},
         )
     if p.competing_tags:
-        st.markdown("**Competing tags** (hosts that sell the same thing)  \n" + " ".join(badge(t, "warn") for t in p.competing_tags), unsafe_allow_html=True)
+        st.markdown("**Competing products** (hosts that sell these may need to opt in)  \n" + " ".join(badge(explain.tags(t), "warn") for t in p.competing_tags), unsafe_allow_html=True)
     if p.missing_info:
         st.markdown("**Missing information**")
         for m in p.missing_info:
@@ -251,20 +251,31 @@ def render_economics(plan: CampaignPlan) -> None:
 
 
 def render_component_breakdown(score) -> None:
-    """One bar per score component, read generically so new components appear automatically."""
+    """One bar per score component, in plain words. Product match and affordability multiply the score; the rest
+    are averaged into "quality" with the weights shown."""
     for c in score.components:
         left, right = st.columns([2, 5])
+        name = explain.NAMES.get(c.name, c.name.replace("_", " "))
         if c.value is None:  # not stated by the advertiser: left out of the score, not filled in
-            left.markdown(f"**{c.name.replace('_', ' ')}**  \n<span class='muted'>left out</span>", unsafe_allow_html=True)
-            right.markdown(f"<div class='muted'>{html.escape(c.detail)}</div>", unsafe_allow_html=True)
+            left.markdown(f"**{name}**  \n<span class='muted'>not used</span>", unsafe_allow_html=True)
+            right.markdown(f"<div class='muted'>{html.escape(explain.component(c))}</div>", unsafe_allow_html=True)
             continue
-        left.markdown(f"**{c.name.replace('_', ' ')}**  \n<span class='muted'>value {c.value:.2f}, weight {c.weight:g}</span>", unsafe_allow_html=True)
-        right.markdown(bar(c.value) + f"<div class='muted'>{html.escape(c.detail)}</div>", unsafe_allow_html=True)
+        role = "multiplies the score" if c.name in ("category_fit", "price_fit") else f"{c.weight:.0%} of quality"
+        left.markdown(f"**{name}**  \n<span class='muted'>{c.value:.2f} · {role}</span>", unsafe_allow_html=True)
+        right.markdown(bar(c.value) + f"<div class='muted'>{html.escape(explain.component(c))}</div>", unsafe_allow_html=True)
+
+
+def usd(x: float) -> str:
+    return f"${x:,.2f}"
+
+
+def md(text: str) -> str:
+    """Escape $ so Streamlit markdown shows money instead of typesetting '$0.57-$0.77' as a formula."""
+    return text.replace("$", "\\$")
 
 
 def flag_badges(flags: list[str]) -> str:
-    labels = {"competitor_conflict": "needs host approval"}
-    return " ".join(badge(labels.get(f, f.replace("_", " ")), "warn") for f in flags)
+    return " ".join(badge(explain.badge(f), "warn") for f in flags)
 
 
 def render_publishers(plan: CampaignPlan) -> None:
@@ -277,14 +288,12 @@ def render_publishers(plan: CampaignPlan) -> None:
         with st.expander(f"{rank}. {s.publisher_name}  |  score {s.score:.2f}", expanded=rank <= 2):
             if s.flags:
                 st.markdown(flag_badges(s.flags), unsafe_allow_html=True)
-            st.write(s.reason)
+            st.markdown(md(s.reason))
             render_component_breakdown(s)
     st.markdown(f"**Excluded and why** ({len(excluded)})")
     if excluded:
-        st.dataframe(
-            pd.DataFrame([{"publisher": s.publisher_name, "score": round(s.score, 2), "reason": s.reason} for s in excluded]),
-            hide_index=True, width="stretch",
-        )
+        st.markdown("\n".join(f"- **{html.escape(s.publisher_name)}** <span class='muted'>(fit {s.score:.2f})</span>: "
+                              f"{md(s.reason.removeprefix('Excluded: '))}" for s in excluded), unsafe_allow_html=True)
         with st.expander("Score components for excluded publishers"):
             for s in excluded:
                 st.markdown(f"**{s.publisher_name}**")
@@ -401,11 +410,8 @@ def render_config(plan: CampaignPlan) -> None:
     st.markdown(f"Status: {badge(cfg.status)}", unsafe_allow_html=True)
     if cfg.pricing:
         pr = cfg.pricing
-        st.markdown(f"**Pricing: {pr.model} · bidding: {pr.bidding.replace('_', ' ')}**  \n{html.escape(pr.rationale)}", unsafe_allow_html=True)
-        if pr.cpc_range:
-            st.markdown(f"Market price to win on these hosts: ${pr.cpc_range.low:.2f}-${pr.cpc_range.high:.2f} per click "
-                        f"(median ${pr.cpc_range.mid:.2f}) · bidding: {pr.aggressiveness}"
-                        + (f" · your max CPC ${pr.max_cpc:.2f}" if pr.max_cpc else "") + f" · *tCPA unlock:* {pr.tcpa_unlock}")
+        st.markdown(f"**Pricing: {pr.model} · bidding: {pr.bidding.replace('_', ' ')} · aggressiveness: {pr.aggressiveness}**  \n"
+                    f"{md(html.escape(pr.rationale))}  \n<span class='muted'>{md(pr.tcpa_unlock)}</span>", unsafe_allow_html=True)
     if not cfg.budget:
         st.info("No budget set. Enter your budget in Campaign setup to see the allocation and the forecast; "
                 "we don't suggest one.")
@@ -415,41 +421,70 @@ def render_config(plan: CampaignPlan) -> None:
         c1.metric("Budget (your cap)", f"${b.monthly_budget_usd:,.0f}")
         c2.metric("Planned spend", f"${b.planned_spend_usd:,.0f}")
         c3.metric(f"Forecast {b.unit}", f"{b.forecast.mid:,.0f}", help=f"range {b.forecast.low:,.0f} to {b.forecast.high:,.0f}")
-        c4.metric("Flight", f"{b.flight_start} to {b.flight_end}")
+        c4.metric("Flight", f"{(date.fromisoformat(b.flight_end) - date.fromisoformat(b.flight_start)).days} days",
+                  help=f"{b.flight_start} to {b.flight_end}")
         status_text = {"no_goal": "no goal set", "reachable": "goal reachable", "money_limited": "budget-limited",
                        "inventory_limited": "inventory-limited"}[b.goal_status]
         goal_txt = f"{b.goal_target:,} {b.unit}" if b.goal_target else "none"
         st.markdown(f"Goal: {goal_txt} · status: {badge(status_text, 'ok' if b.goal_status in ('reachable', 'no_goal') else 'assumed')} · "
                     f"binding constraint: **{b.binding_constraint}** · Pacing: {html.escape(b.pacing)}", unsafe_allow_html=True)
         for opt in b.replan_options:
-            st.markdown(f"- {html.escape(opt)}")
+            st.markdown(f"- {md(html.escape(opt))}")
         cap_cost = ""
         if b.forecast_without_share_cap and b.forecast_without_share_cap > b.forecast.mid * 1.001:
             cap_cost = (f" The {b.max_share_per_host:.0%} per-host cap costs ~{1 - b.forecast.mid / b.forecast_without_share_cap:.0%} "
                         f"of forecast {b.unit} ({b.forecast_without_share_cap:,.0f} without it) in exchange for spreading risk.")
-        st.caption(f"At '{b.aggressiveness}' bidding these hosts offer up to {b.max_deliverable:,.0f} {b.unit} in the flight "
-                   f"(~${b.spend_at_full_inventory_usd:,.0f}). Expected impressions {b.expected_impressions:,}, reach {b.expected_reach:,}." + cap_cost)
+        st.caption(md(f"At '{b.aggressiveness}' bidding these hosts offer up to {b.max_deliverable:,.0f} {b.unit} in the flight "
+                   f"(~${b.spend_at_full_inventory_usd:,.0f}). Expected impressions {b.expected_impressions:,}, reach {b.expected_reach:,}." + cap_cost))
         if b.allocations:
-            df = pd.DataFrame([{
-                "publisher": a.publisher_name, "role": "exploration test" if a.exploration else "main plan",
-                "share_pct": round(a.share * 100), "budget_usd": a.budget_usd,
-                f"{b.unit} (mid)": a.expected_units.mid, "bid_usd": a.cpc_bid_usd, "win_share": a.win_share,
-                "avg_price_paid": a.avg_price_paid, "market_price (p25-p75)": f"${a.market_price.low:.2f}-${a.market_price.high:.2f}",
-                "impressions": a.expected_impressions, "clicks (mid)": a.expected_clicks.mid,
-                "host approval": "confirm opt-in" if a.requires_host_approval else "", "rationale": a.rationale,
-            } for a in b.allocations])
+            noun = {"conversions": "purchase", "clicks": "click", "impressions": "1,000 views", "reach": "1,000 people"}[b.objective]
+            scale = 1000 if b.objective in ("impressions", "reach") else 1
+            bids = {h.publisher_id: h for h in (cfg.bid_strategy.host_bids if cfg.bid_strategy else [])}
+            rows = []
+            for a in b.allocations:
+                h, funded = bids.get(a.publisher_id), a.budget_usd > 0
+                rows.append({
+                    "host": a.publisher_name, "role": "learning test" if a.exploration else "main plan",
+                    "budget": a.budget_usd, "share": round(a.share * 100),
+                    "start bid": usd(a.cpc_bid_usd) if funded else "-", "max bid": usd(h.max_bid) if h else "-",
+                    "page views won": a.win_share, "avg price paid": usd(a.avg_price_paid) if funded else "-",
+                    f"expected {b.unit}": a.expected_units.mid,
+                    "range": f"{a.expected_units.low:,.0f}-{a.expected_units.high:,.0f}" if funded else "",
+                    f"cost per {noun}": usd(a.budget_usd / a.expected_units.mid * scale) if funded and a.expected_units.mid else "-",
+                    "note": "confirm the host allows competing brands" if a.requires_host_approval else "",
+                })
+            df = pd.DataFrame(rows)
             st.dataframe(df, hide_index=True, width="stretch", column_config={
-                "share_pct": st.column_config.ProgressColumn("share", min_value=0, max_value=100, format="%d%%"),
+                "budget": st.column_config.NumberColumn(format="$%.0f"),
+                "share": st.column_config.ProgressColumn("share", min_value=0, max_value=100, format="%d%%"),
+                "page views won": st.column_config.NumberColumn(format="percent"),
+                f"expected {b.unit}": st.column_config.NumberColumn(format="%.0f"),
             })
-            st.bar_chart(df.set_index("publisher")["budget_usd"], color=ACCENT, horizontal=True)
+            floor = cfg.bid_strategy.host_bids[0].floor if cfg.bid_strategy and cfg.bid_strategy.host_bids else 0.05
+            st.markdown("**Why each host gets this bid and budget**  \n" + "\n".join(
+                f"- **{html.escape(a.publisher_name)}**: {md(a.bid_reason)}" for a in b.allocations if a.bid_reason))
+            st.caption(md(f"**Start bid**: what we bid per click on day one: the price that wins this host's planned share of page views. "
+                       f"**Max bid**: the most the bidder may go to on this host (your aggressiveness setting, never above your max CPC). "
+                       f"Bids never go below ${floor:.2f}. **Avg price paid** is below the bid because the auction charges the "
+                       f"second price. **Expected {b.unit}**: the likely value, with the range we expect."))
+            with st.expander("Host-by-host detail (market price range, impressions, clicks)"):
+                st.dataframe(pd.DataFrame([{
+                    "host": a.publisher_name, "market price to win (p25-p75)": f"${a.market_price.low:.2f}-${a.market_price.high:.2f}",
+                    "impressions": a.expected_impressions, "clicks": a.expected_clicks.mid, "detail": a.rationale,
+                } for a in b.allocations]), hide_index=True, width="stretch")
         for w in b.warnings:
             st.warning(w)
     if cfg.bid_strategy:
         bs = cfg.bid_strategy
-        st.markdown(f"**Bid strategy** (current phase: {badge(bs.current_phase)})  \n{html.escape(bs.rationale)}", unsafe_allow_html=True)
-        st.dataframe(pd.DataFrame(bs.phases), hide_index=True, width="stretch")
+        st.markdown(f"**How bids change over the flight** (now: {badge(bs.current_phase.replace('_', ' '))})  \n{html.escape(bs.rationale)}",
+                    unsafe_allow_html=True)
+        st.dataframe(pd.DataFrame([{"phase": ph.get("name", "").replace("_", " "), "until": ph.get("until", ""),
+                                    "what the bidder does": ph.get("rule", ""), "why": ph.get("why", "")} for ph in bs.phases]),
+                     hide_index=True, width="stretch")
         if bs.adjustments:
-            st.dataframe(pd.DataFrame([a.model_dump() for a in bs.adjustments]), hide_index=True, width="stretch")
+            st.dataframe(pd.DataFrame([{"adjusts for": a.signal.replace("_", " "),
+                                        "bid range": f"x{a.min_multiplier:.2f} to x{a.max_multiplier:.2f} of the start bid",
+                                        "why": a.reason} for a in bs.adjustments]), hide_index=True, width="stretch")
     if cfg.budget and cfg.budget.allocations:
         render_auction_insights(plan)
     for q in cfg.open_questions:
@@ -479,53 +514,7 @@ def render_plan(plan: CampaignPlan, model_label: str, creatives_pending: bool = 
     render_footer(plan, model_label)
 
 
-# ------------------------------------------------------------------ shopper simulator
-
-FEATURE_GROUPS = {
-    "Name": ["name_valid", "display_name", "p_female", "age_bucket"],
-    "Geography": ["state", "region", "timezone", "urbanicity", "urbanicity_proxy", "income_tier", "climate_band", "mountain",
-                  "cold_or_mountain", "coast_distance_km", "is_coastal", "hurricane_coast", "sun_belt", "nearest_metro",
-                  "metro_distance_km", "ski_distance_km", "near_ski_area", "delivery_speed_proxy"],
-    "Time and calendar": ["local_hour", "day_of_week", "is_weekend", "daypart", "active_moments"],
-    "Gift signal": ["gift_signal"],
-    "Settlement and household (3rd-order, see source for the inference chain)": [
-        "settlement_type", "p_has_kids", "p_homeowner", "life_stage", "car_dependent", "outdoor_lifestyle",
-        "cold_season_now", "hot_season_now"],
-}
-
-
-def _format_feature_value(f) -> str:
-    if f.distribution:
-        top = sorted(f.distribution.items(), key=lambda kv: -kv[1])[:4]
-        return ", ".join(f"{k} {v:.2f}" for k, v in top)
-    return "none" if f.value is None else str(f.value)
-
-
-def feature_rows(features) -> dict[str, list[dict]]:
-    """Group ShopperFeatures into display rows. Unlisted Feature fields land in 'Other' automatically."""
-    grouped: dict[str, list[dict]] = {g: [] for g in FEATURE_GROUPS}
-    known = {n for names in FEATURE_GROUPS.values() for n in names}
-    for name in type(features).model_fields:
-        value = getattr(features, name)
-        if name == "cart_prior" or not hasattr(value, "confidence"):
-            continue
-        group = next((g for g, names in FEATURE_GROUPS.items() if name in names), "Other" if name not in known else None)
-        grouped.setdefault(group, []).append(
-            {"feature": name, "value": _format_feature_value(value), "confidence": value.confidence, "source": value.source})
-    cp = features.cart_prior
-    grouped["Cart prior (from publisher)"] = [
-        {"feature": "category", "value": cp.category or "none", "confidence": cp.confidence, "source": cp.source},
-        {"feature": "subcategories", "value": ", ".join(cp.subcategories) or "none", "confidence": cp.confidence, "source": cp.source},
-        {"feature": "avg_order_value_usd", "value": str(cp.avg_order_value_usd), "confidence": cp.confidence, "source": cp.source},
-    ]
-    return {g: rows for g, rows in grouped.items() if rows}
-
-
-def render_features(features) -> None:
-    for group, rows in feature_rows(features).items():
-        st.markdown(f"**{group}**")
-        st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", column_config={
-            "confidence": st.column_config.ProgressColumn("confidence", min_value=0, max_value=1, format="%.2f")})
+# ------------------------------------------------------------------ rival plans (auction insights)
 
 
 def load_holdout_plans() -> list[CampaignPlan]:
@@ -538,104 +527,3 @@ def load_holdout_plans() -> list[CampaignPlan]:
         except Exception:  # an older plan shape shouldn't break the page
             continue
     return plans
-
-
-def try_serve(signals, now_utc: datetime, plans: list[CampaignPlan], **kwargs):
-    """Call the serving decision engine if it exists yet. Returns (decision, None) or (None, reason)."""
-    try:
-        from disco_planner.serving.decision import serve
-    except ImportError:
-        return None, "decision engine: coming in next build"
-    try:
-        return serve(signals, now_utc, plans, **kwargs), None
-    except Exception as e:
-        return None, f"decision engine raised {type(e).__name__}: {e}"
-
-
-def render_decision(decision, plans: list[CampaignPlan]) -> None:
-    """Render a ServeDecision defensively: its exact fields may still change, so unknown
-    shapes fall back to JSON instead of crashing."""
-    data = json.loads(decision.model_dump_json()) if hasattr(decision, "model_dump_json") else decision
-    posterior = data.get("persona_posterior") or data.get("posterior")
-    if isinstance(posterior, dict):
-        st.markdown("**Persona posterior**")
-        df = pd.DataFrame({"persona": list(posterior), "probability": list(posterior.values())}).sort_values("probability", ascending=False)
-        st.dataframe(df, hide_index=True, width="stretch", column_config={
-            "probability": st.column_config.ProgressColumn("probability", min_value=0, max_value=1, format="%.2f")})
-    reasons = data.get("reasons")
-    if isinstance(reasons, list):
-        st.markdown("**Reasons**")
-        for r in reasons:
-            st.markdown(f"- {r}")
-    offers = data.get("offers") or []
-    if offers:
-        st.markdown("**Page auction: ranked by eCPM (final bid x expected CTR x 1000); each slot pays the second price**")
-        st.dataframe(pd.DataFrame([{k: o.get(k) for k in ("slot", "campaign", "pricing_model", "bid", "price_paid", "expected_ctr", "ecpm",
-                                                          "host_budget_left_usd", "host_revenue_per_1000", "bid_breakdown")}
-                                   for o in offers]), hide_index=True, width="stretch")
-    headline, body, cta = (data.get(k) for k in ("headline", "body", "cta"))
-    if headline and body and cta:
-        render_offer_card(headline, body, cta)
-    with st.expander("Raw decision"):
-        st.json(data)
-
-
-# ------------------------------------------------------------------ evaluation page
-
-
-def eval_reports() -> dict[str, Path]:
-    return {p.stem.removeprefix("eval_"): p for p in sorted((ROOT / "reports").glob("eval_*.md"))}
-
-
-def _table_to_df(lines: list[str]) -> pd.DataFrame:
-    rows = [[c.strip() for c in ln.strip().strip("|").split("|")] for ln in lines]
-    header, body = rows[0], rows[2:]  # rows[1] is the --- separator
-    return pd.DataFrame([r + [""] * (len(header) - len(r)) for r in body], columns=header)
-
-
-def split_markdown(md: str) -> list[tuple[str, object]]:
-    """Split a markdown report into ('text', str) and ('table', DataFrame) chunks."""
-    chunks: list[tuple[str, object]] = []
-    buf: list[str] = []
-    table: list[str] = []
-
-    def flush_text():
-        if buf and "\n".join(buf).strip():
-            chunks.append(("text", "\n".join(buf)))
-        buf.clear()
-
-    for line in md.splitlines():
-        if line.startswith("|"):
-            flush_text()
-            table.append(line)
-        else:
-            if table:
-                chunks.append(("table", _table_to_df(table)))
-                table = []
-            buf.append(line)
-    if table:
-        chunks.append(("table", _table_to_df(table)))
-    flush_text()
-    return chunks
-
-
-def render_eval(path: Path) -> None:
-    for kind, content in split_markdown(path.read_text()):
-        if kind == "table":
-            st.dataframe(content, hide_index=True, width="stretch")
-        else:
-            st.markdown(content)
-
-
-# ------------------------------------------------------------------ how it works
-
-
-def decision_sections() -> list[tuple[str, str, str]]:
-    """(title, github anchor, body) for each '## ' heading in docs/DECISIONS.md."""
-    text = (ROOT / "docs" / "DECISIONS.md").read_text()
-    out = []
-    for part in re.split(r"^## ", text, flags=re.M)[1:]:
-        title, _, body = part.partition("\n")
-        anchor = re.sub(r"[^a-z0-9 -]", "", title.lower()).replace(" ", "-")
-        out.append((title.strip(), anchor, body.strip().rstrip("-").strip()))
-    return out

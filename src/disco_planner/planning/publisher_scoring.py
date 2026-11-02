@@ -11,6 +11,7 @@ from datetime import date
 
 from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserProfile, Publisher, PublisherScore, ScoreComponent
+from disco_planner.planning import explain
 
 def _shape() -> dict:
     return catalog.config("scoring")["shape"]
@@ -23,6 +24,8 @@ def _shape() -> dict:
 def _age_range(text: str | None) -> tuple[int, int] | None:
     nums = [int(n) for n in re.findall(r"\d+", text or "")]
     return (nums[0], nums[1]) if len(nums) >= 2 else None
+
+NOTE = " Note: "  # starts the plain-English notes (flags) at the end of a reason
 
 
 def category_fit(profile: AdvertiserProfile, pub: Publisher) -> tuple[float, str]:
@@ -288,25 +291,26 @@ def rank_publishers(profile: AdvertiserProfile, today: date) -> list[PublisherSc
     for s in scores:
         cat = next(c for c in s.components if c.name == "category_fit")
         if cat.value < rec["min_category_fit"]:
-            s.reason = f"Excluded: {cat.detail} for this product."
+            s.reason = f"Excluded: {explain.match(cat.detail, cat.value)}."
         elif "(category only)" in cat.detail and _component(s, "persona_fit") < rec["category_only_min_persona_fit"]:
-            s.reason = (f"Excluded: linked only by a broad category ({cat.detail}) and the shoppers this product is for "
-                        f"are rare here (persona fit {_component(s, 'persona_fit'):.2f}).")
+            s.reason = f"Excluded: {explain.match(cat.detail, cat.value)}, and the shoppers your product is for are rare here."
         elif s.score < cutoff:
             weakest = min((c for c in s.components[:3] if c.value is not None), key=lambda c: c.value)
-            s.reason = f"Excluded: score {s.score:.2f} below cutoff {cutoff:.2f}; weakest signal {weakest.name} ({weakest.detail})."
+            s.reason = (f"Excluded: overall fit {s.score:.2f} is below this plan's bar of {cutoff:.2f}. "
+                        f"Weakest point, {explain.NAMES[weakest.name].lower()}: {explain.component(weakest)}.")
         elif picked >= max_picks:
-            s.reason = "Excluded: viable, but below the top picks; kept as an exploration candidate."
+            s.reason = "Excluded: a reasonable fit, but the stronger hosts above already cover this plan."
         else:
             s.recommended = True
             picked += 1
             best_quality = max((c for c in s.components[1:] if c.value is not None and c.name != "price_fit"),
                                key=lambda c: c.value * c.weight, default=s.components[0])
-            s.reason = f"Recommended: {s.components[0].detail}; strongest supporting signal {best_quality.name} ({best_quality.detail})."
+            s.reason = (f"Recommended: {explain.match(s.components[0].detail, s.components[0].value, recommended=True)}. "
+                        f"Strongest point, {explain.NAMES[best_quality.name].lower()}: {explain.component(best_quality)}.")
             if not strong:
                 s.flags.append("weak_network_fit: no host both sells this subcategory and has shoppers at this price; treat as a small test")
         if s.flags:
-            s.reason += " Flags: " + " | ".join(s.flags)
+            s.reason += NOTE + "; ".join(explain.flag(f) for f in s.flags) + "."
 
     mark_exploration(scores, picked > 0)
     return scores
@@ -326,5 +330,4 @@ def mark_exploration(scores: list[PublisherScore], has_plan: bool) -> None:
         candidates.append((combine(s.components, max(s.components[0].value, cfg["relevance_floor"])), s))
     for floor_score, s in sorted(candidates, key=lambda x: -x[0])[: cfg["max_hosts"]]:
         s.exploration = True
-        s.reason = (s.reason.split(" Flags:")[0] + f" Exploration test: would score {floor_score:.2f} with a relevance of "
-                    f"{cfg['relevance_floor']:g}; gets a small separate test budget.")
+        s.reason = s.reason.split(NOTE)[0] + " We'll still test it with a small separate budget, to learn whether it works."

@@ -145,7 +145,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.95)).",
+   "reason": "Recommended: it sells pet supplies and pet food (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (95% match).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -199,7 +199,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies, pet_food (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.93)).",
+   "reason": "Recommended: it sells pet supplies and pet food (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (93% match).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -253,7 +253,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches pet, subscription, pet_supplies, toys (specific) (multiplier); strongest supporting signal persona_fit (reaches The Pet Parent best (host fit 0.85)).",
+   "reason": "Recommended: it sells pet supplies and toys (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (85% match).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -307,7 +307,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches gifting (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: the only link is a shared trait (gifting), not the product itself. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -361,7 +361,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: the only link is a shared trait (subscription), not the product itself. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -415,7 +415,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product.",
+   "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -469,7 +469,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product.",
+   "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -523,7 +523,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product.",
+   "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -577,7 +577,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -631,7 +631,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -685,7 +685,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -739,7 +739,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -793,7 +793,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -847,7 +847,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -901,7 +901,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -955,7 +955,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1009,7 +1009,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1063,7 +1063,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1117,7 +1117,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1171,7 +1171,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   }
@@ -1183,9 +1183,9 @@
    "score": 1.0,
    "selected": true,
    "reasons": [
-    "category affinity 1.00 (pet_food, pet_supplies, subscription_boxes)",
-    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: pet food, pet supplies, subscription boxes (strength 1.00)",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1194,9 +1194,9 @@
    "score": 0.6,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (pet_food)",
-    "price fit 1.00 (unknown product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: pet food (strength 0.60)",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1205,9 +1205,9 @@
    "score": 0.6,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (family_products)",
-    "price fit 1.00 (unknown product vs high price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: family products (strength 0.60)",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1216,9 +1216,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs low price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1227,9 +1227,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs medium-high price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1238,9 +1238,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs low price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1249,9 +1249,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1260,9 +1260,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1271,9 +1271,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs low-medium price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   },
   {
@@ -1282,9 +1282,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (unknown product vs low price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: not stated, so it doesn't count for or against",
+    "Audience: none stated, so it doesn't count for or against"
    ]
   }
  ],
@@ -1540,7 +1540,8 @@
      "expected_reach": 191283,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.54-$0.71 (median $0.62); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price)"
+     "rationale": "market price $0.54-$0.71 (median $0.62); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price)",
+     "bid_reason": "About $9.53 per purchase (3.9% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_007",
@@ -1577,7 +1578,8 @@
      "expected_reach": 1500,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.62-$0.83 (median $0.71); bidding $0.36 wins ~0% of page views, paying ~$0.36 per click (second price)"
+     "rationale": "market price $0.62-$0.83 (median $0.71); bidding $0.36 wins ~0% of page views, paying ~$0.36 per click (second price)",
+     "bid_reason": "About $9.59 per purchase (3.7% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_018",
@@ -1614,7 +1616,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.62-$0.87); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.62-$0.87); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     },
     {
      "publisher_id": "pub_010",
@@ -1651,7 +1654,8 @@
      "expected_reach": 13614,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: matches gifting (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.). market price $0.81-$1.07 (median $0.92); bidding $0.58 wins ~0% of page views, paying ~$0.55 per click (second price)"
+     "rationale": "EXPLORATION TEST (not in the main plan: the only link is a shared trait (gifting), not the product itself.). market price $0.81-$1.07 (median $0.92); bidding $0.58 wins ~0% of page views, paying ~$0.55 per click (second price)",
+     "bid_reason": "About $28.41 per purchase (1.9% of clicks expected to buy). A small learning test: we accept a higher cost here to find out whether this host works."
     },
     {
      "publisher_id": "pub_015",
@@ -1688,7 +1692,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.06-$1.47); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: the only link is a shared trait (subscription), not the product itself.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.06-$1.47); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     }
    ],
    "warnings": []
@@ -1761,63 +1766,63 @@
    "publishers_exclude": [
     {
      "id": "pub_008",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
     },
     {
      "id": "pub_002",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: matches subscription (attribute tags only) (multiplier) for this product."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     }
    ],
    "personas": [
