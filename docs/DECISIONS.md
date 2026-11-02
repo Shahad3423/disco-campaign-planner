@@ -393,3 +393,11 @@ questions, which are what actually change behaviour, and `sample_agreement` / `t
 self-reported. Shopper-feature confidences at serving time are a different thing (they temper the posterior) and are
 unchanged. Stored plans still carry the old field; it is ignored on load.
 
+
+## D32. Creatives are not tied to hosts in the plan
+Each persona's creative used to carry `publisher_ids` ("best on" the three recommended hosts where `host_fit` is highest), shown as badges
+in the app and written to the config. Serving never read it: at checkout the creative is chosen from the shopper's persona posterior
+(prior = `host_fit` of the host being served), so the label could not change what ran, and it repeated information the config already has
+(`targeting.publishers_include`, the per-host allocations). Removed from `PersonaMatch.best_publishers` and `CreativeAssignment.publisher_ids`.
+`host_fit` itself stays: it is inside `persona_fit` (host score), the EXPLORATORY fill tie-break, and the serving prior. Stored plans still
+carry both fields; they are ignored on load.

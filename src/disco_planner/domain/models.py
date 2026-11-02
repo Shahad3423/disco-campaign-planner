@@ -135,7 +135,6 @@ class PersonaMatch(BaseModel):
     score: float
     selected: bool
     reasons: list[str]
-    best_publishers: list[str] = Field(default_factory=list)
 
 
 # ---------------------------------------------------------------- stage 3: creative
@@ -302,7 +301,6 @@ class BidStrategy(BaseModel):
 class CreativeAssignment(BaseModel):
     variant_id: str
     persona_id: str
-    publisher_ids: list[str]
     headline_template: str
     headline_no_name: str
     body: str
