@@ -1,5 +1,5 @@
 """Market-based planning (D24): budget is the advertiser's cap, prices come from the simulated auction."""
-import itertools
+import math
 import random
 from datetime import date
 from types import SimpleNamespace
@@ -94,25 +94,88 @@ def test_share_cap_is_respected_and_its_cost_reported():
     assert plan.forecast_without_share_cap >= plan.forecast.mid - 1e-6
 
 
-def test_greedy_allocation_matches_brute_force():
+def _random_markets(rng, hosts=3, buckets=6):
+    markets = []
+    for h in range(hosts):
+        needed = sorted(rng.uniform(0.2, 3.0) for _ in range(buckets))
+        markets.append(dict(score=SimpleNamespace(publisher_id=f"h{h}"), needed=needed, k_max=rng.randint(1, buckets),
+                            unit_per_view=rng.uniform(0.01, 0.05), bucket=rng.choice([50.0, 100.0, 1500.0]), ctr=0.03))
+    return markets
+
+
+def _lp_best_units(markets, budget_usd, share_cap):
+    """Exact optimum of the allocation LP: x[h,k] in [0,1] = share of bucket k of host h bought."""
+    linprog = pytest.importorskip("scipy.optimize").linprog
+    idx = [(h, k) for h, m in enumerate(markets) for k in range(m["k_max"])]
+    cost = [budget._bucket_cost(markets[h], k) for h, k in idx]
+    gain = [markets[h]["unit_per_view"] * markets[h]["bucket"] for h, _ in idx]
+    rows = [cost] + [[c if hh == h else 0.0 for (hh, _), c in zip(idx, cost)] for h in range(len(markets))]
+    caps = [budget_usd] + [share_cap * budget_usd] * len(markets)
+    res = linprog([-g for g in gain], A_ub=rows, b_ub=caps, bounds=[(0, 1)] * len(idx), method="highs")
+    return -res.fun
+
+
+def test_allocation_equals_the_lp_optimum():
+    # The allocation is a linear program (partial buckets allowed); cheapest-first must hit its exact optimum,
+    # with and without a per-host share cap. No slack: the old whole-bucket version needed one bucket of it.
     rng = random.Random(1)
-    for _ in range(30):
-        markets = []
-        for h in range(3):
-            needed = sorted(rng.uniform(0.2, 3.0) for _ in range(5))
-            markets.append(dict(score=SimpleNamespace(publisher_id=f"h{h}"), needed=needed, k_max=5,
-                                unit_per_view=rng.uniform(0.01, 0.05), bucket=100.0, ctr=0.03))
-        budget_usd = rng.uniform(5, 40)
-        greedy = budget._summary(markets, budget.allocate(markets, budget_usd, None, 1.0))[1]
-        best = 0.0
-        for ks in itertools.product(range(6), repeat=3):
-            taken = {f"h{i}": k for i, k in enumerate(ks)}
-            spend, units = budget._summary(markets, taken)
-            if spend <= budget_usd + 1e-9:
-                best = max(best, units)
-        # greedy is optimal up to the last indivisible bucket (a knapsack edge); allow one bucket of slack
-        slack = max(m["unit_per_view"] * m["bucket"] for m in markets)
-        assert greedy >= best - slack - 1e-9
+    for _ in range(200):
+        markets = _random_markets(rng)
+        budget_usd, cap = rng.uniform(5, 400), rng.choice([1.0, 0.5, 0.4])
+        ours = budget._summary(markets, budget.allocate(markets, budget_usd, None, cap))[1]
+        assert ours == pytest.approx(_lp_best_units(markets, budget_usd, cap), rel=1e-6, abs=1e-9)
+
+
+def test_allocation_optimality_certificate():
+    # Without scipy: with only the budget binding, every bucket bought must be at least as cheap per unit as every
+    # bucket left on the table (an LP's optimality condition), and the budget is spent unless inventory runs out.
+    rng = random.Random(2)
+    for _ in range(200):
+        markets = _random_markets(rng)
+        budget_usd = rng.uniform(5, 400)
+        taken = budget.allocate(markets, budget_usd, None, 1.0)
+        bought, left = [], []
+        for m in markets:
+            t = taken[m["score"].publisher_id]
+            for k in range(m["k_max"]):
+                ratio = budget._bucket_cost(m, k) / (m["unit_per_view"] * m["bucket"])  # cost per unit
+                (bought if k < t - 1e-9 else left).append(ratio)
+        if bought and left:
+            assert max(bought) <= min(left) + 1e-9
+        spend = budget._summary(markets, taken)[0]
+        assert spend == pytest.approx(budget_usd, rel=1e-9) or not left
+
+
+def test_goal_is_met_exactly_at_the_lowest_cost():
+    rng = random.Random(3)
+    for _ in range(100):
+        markets = _random_markets(rng)
+        full = budget._summary(markets, {m["score"].publisher_id: float(m["k_max"]) for m in markets})[1]
+        goal = rng.uniform(0.1, 0.9) * full
+        spend, units = budget._summary(markets, budget.allocate(markets, math.inf, goal, 1.0))
+        assert units == pytest.approx(goal, rel=1e-9)
+        cheapest = sorted((budget._bucket_cost(m, k) / (m["unit_per_view"] * m["bucket"]), m["unit_per_view"] * m["bucket"])
+                          for m in markets for k in range(m["k_max"]))
+        need, best = goal, 0.0
+        for per_unit, units_in_bucket in cheapest:  # buy the cheapest units until the goal: the minimum spend
+            take = min(need, units_in_bucket)
+            best, need = best + take * per_unit, need - take
+            if need <= 0:
+                break
+        assert spend == pytest.approx(best, rel=1e-9)
+
+
+def test_whole_budget_is_spent_and_the_split_moves_smoothly():
+    # The whole-bucket version left $30-400 unspent and moved ~$2,000 between hosts when the budget rose by $250.
+    prev = None
+    for b in range(2000, 8001, 250):
+        _, _, plan, _, _ = plan_for(AdvertiserInputs(monthly_budget_usd=b))
+        assert plan.planned_spend_usd == pytest.approx(b, abs=0.05)
+        spend = {a.publisher_id: a.budget_usd for a in plan.allocations}
+        if prev:
+            assert plan.forecast.mid >= prev[0].forecast.mid
+            assert all(abs(spend[h] - prev[1][h]) <= 250 + 0.05 for h in spend)  # no host moves more than the budget did
+        prev = (plan, spend)
 
 
 def test_quantile():
@@ -140,3 +203,9 @@ def test_exploration_gets_a_small_separate_test_budget_and_never_touches_the_goa
 def test_no_exploration_budget_when_stopping_at_a_goal():
     _, _, plan, *_ = plan_for(AdvertiserInputs(monthly_budget_usd=50_000, objective="clicks", goal_target=300))
     assert all(a.budget_usd == 0 for a in plan.allocations if a.exploration)
+
+
+def test_bid_for_a_partial_bucket_lies_between_its_price_levels():
+    m = dict(needed=[0.5, 0.6, 1.0, 1.4])
+    assert budget._bid_for(m, 1.0) == 0.5 and budget._bid_for(m, 3.0) == 1.0 and budget._bid_for(m, 0.3) == 0.5
+    assert budget._bid_for(m, 2.25) == pytest.approx(0.6 + 0.25 * 0.4)

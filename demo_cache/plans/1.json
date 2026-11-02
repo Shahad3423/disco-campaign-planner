@@ -81,7 +81,6 @@
     "why": "Pet publisher catering to millennials treating dogs as family, aligning well with premium senior dog care."
    }
   ],
-  "confidence": 0.83,
   "gate": "proceed",
   "gate_reason": "Clear product, audience, and purchase model provided, enabling effective campaign planning.",
   "missing_info": [
@@ -1201,11 +1200,6 @@
     "category affinity 1.00 (pet_food, pet_health, pet_supplies, subscription_boxes)",
     "price fit 0.90 (premium product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_007",
-    "pub_018"
    ]
   },
   {
@@ -1217,11 +1211,6 @@
     "category affinity 0.60 (pet_food)",
     "price fit 0.70 (premium product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_007",
-    "pub_009",
-    "pub_018"
    ]
   },
   {
@@ -1233,11 +1222,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (premium product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_018",
-    "pub_009",
-    "pub_007"
    ]
   },
   {
@@ -1249,11 +1233,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 0.50 (premium product vs medium-high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_018",
-    "pub_009",
-    "pub_007"
    ]
   },
   {
@@ -1265,11 +1244,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (premium product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_007",
-    "pub_018"
    ]
   },
   {
@@ -1281,11 +1255,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (premium product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_018",
-    "pub_007"
    ]
   },
   {
@@ -1298,11 +1267,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 0.70 (premium product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_018",
-    "pub_007"
    ]
   },
   {
@@ -1314,11 +1278,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 0.35 (premium product vs high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_007",
-    "pub_018"
    ]
   },
   {
@@ -1330,11 +1289,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 0.90 (premium product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_018",
-    "pub_007"
    ]
   },
   {
@@ -1346,11 +1300,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (premium product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_009",
-    "pub_007",
-    "pub_018"
    ]
   }
  ],
@@ -1533,7 +1482,6 @@
   "status": "draft",
   "planning_date": "2026-10-30",
   "advertiser_summary": "DTC brand selling premium grain-free, vet-formulated dog food for senior dogs, focused on joint health and longevity on a subscription basis.",
-  "confidence": 0.83,
   "objective": "conversions",
   "economics": {
    "price_usd": 90.0,
@@ -1547,12 +1495,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.58-$0.79 per click (median $0.67), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.57-$0.77 per click (median $0.66), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.58,
-    "mid": 0.67,
-    "high": 0.79
+    "low": 0.57,
+    "mid": 0.66,
+    "high": 0.77
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1560,7 +1508,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4595.75,
+   "planned_spend_usd": 5000.0,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1568,19 +1516,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 218.5,
-    "mid": 437.0,
-    "high": 786.5
+    "low": 229.1,
+    "mid": 458.2,
+    "high": 824.8
    },
-   "forecast_without_share_cap": 437.0,
+   "forecast_without_share_cap": 458.2,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 62241.7,
-   "spend_at_full_inventory_usd": 1049719.05,
+   "spend_at_full_inventory_usd": 1043499.45,
    "replan_options": [],
-   "expected_impressions": 287000,
-   "expected_reach": 179375,
+   "expected_impressions": 331033,
+   "expected_reach": 206896,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1589,90 +1537,90 @@
     {
      "publisher_id": "pub_007",
      "publisher_name": "Pawline",
-     "share": 0.516,
-     "budget_usd": 2371.07,
-     "cpc_bid_usd": 0.45,
-     "start_bid_usd": 0.45,
-     "win_share": 0.028,
-     "avg_price_paid": 0.43,
+     "share": 0.159,
+     "budget_usd": 796.02,
+     "cpc_bid_usd": 0.42,
+     "start_bid_usd": 0.42,
+     "win_share": 0.01008,
+     "avg_price_paid": 0.39,
      "market_price": {
-      "low": 0.58,
-      "mid": 0.67,
-      "high": 0.79
+      "low": 0.57,
+      "mid": 0.66,
+      "high": 0.77
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 4435.0,
-      "mid": 5544.0,
-      "high": 6653.0
+      "low": 1626.0,
+      "mid": 2033.0,
+      "high": 2439.0
      },
      "expected_conversions": {
-      "low": 102.5,
-      "mid": 213.4,
-      "high": 384.2
+      "low": 37.6,
+      "mid": 78.3,
+      "high": 140.9
      },
      "expected_units": {
-      "low": 106.7,
-      "mid": 213.4,
-      "high": 384.2
+      "low": 39.1,
+      "mid": 78.3,
+      "high": 140.9
      },
-     "capacity_usd": 71223.72,
-     "expected_impressions": 132000,
-     "expected_reach": 82500,
+     "capacity_usd": 70042.48,
+     "expected_impressions": 48395,
+     "expected_reach": 30247,
      "requires_host_approval": true,
      "exploration": false,
-     "rationale": "market price $0.58-$0.79 (median $0.67); bidding $0.45 wins ~3% of page views, paying ~$0.43 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.57-$0.77 (median $0.66); bidding $0.42 wins ~1% of page views, paying ~$0.39 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_009",
      "publisher_name": "Ruffco",
-     "share": 0.484,
-     "budget_usd": 2224.68,
-     "cpc_bid_usd": 0.36,
-     "start_bid_usd": 0.36,
-     "win_share": 0.003,
-     "avg_price_paid": 0.36,
+     "share": 0.791,
+     "budget_usd": 3953.98,
+     "cpc_bid_usd": 0.39,
+     "start_bid_usd": 0.39,
+     "win_share": 0.00425,
+     "avg_price_paid": 0.38,
      "market_price": {
-      "low": 0.57,
-      "mid": 0.66,
-      "high": 0.76
+      "low": 0.56,
+      "mid": 0.65,
+      "high": 0.75
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 4918.0,
-      "mid": 6148.0,
-      "high": 7377.0
+      "low": 8361.0,
+      "mid": 10451.0,
+      "high": 12542.0
      },
      "expected_conversions": {
-      "low": 107.3,
-      "mid": 223.5,
-      "high": 402.3
+      "low": 182.4,
+      "mid": 380.0,
+      "high": 684.0
      },
      "expected_units": {
-      "low": 111.8,
-      "mid": 223.5,
-      "high": 402.3
+      "low": 190.0,
+      "mid": 380.0,
+      "high": 684.0
      },
-     "capacity_usd": 854583.28,
-     "expected_impressions": 155000,
-     "expected_reach": 96875,
+     "capacity_usd": 849119.95,
+     "expected_impressions": 263500,
+     "expected_reach": 164688,
      "requires_host_approval": true,
      "exploration": false,
-     "rationale": "market price $0.57-$0.76 (median $0.66); bidding $0.36 wins ~0% of page views, paying ~$0.36 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.56-$0.75 (median $0.65); bidding $0.39 wins ~0% of page views, paying ~$0.38 per click (second price); host also sells this kind of product: confirm it allows competing brands"
     },
     {
      "publisher_id": "pub_018",
      "publisher_name": "Tailcrate",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.82,
-     "start_bid_usd": 0.82,
+     "cpc_bid_usd": 0.83,
+     "start_bid_usd": 0.83,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.82,
+      "low": 0.83,
       "mid": 0.96,
-      "high": 1.11
+      "high": 1.15
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1690,26 +1638,26 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 123912.05,
+     "capacity_usd": 124337.02,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.82-$1.11); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.83-$1.15); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 1.56,
-     "start_bid_usd": 1.56,
+     "cpc_bid_usd": 1.58,
+     "start_bid_usd": 1.58,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 1.56,
+      "low": 1.58,
       "mid": 1.83,
-      "high": 2.11
+      "high": 2.13
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1727,49 +1675,49 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 87731.06,
+     "capacity_usd": 88184.06,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier)). Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.56-$2.11); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.13 below cutoff 0.21; weakest signal category_fit (matches subscription, wellness_dtc (category only) (multiplier)). Exploration test: would score 0.13 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.58-$2.13); it gets budget as the budget grows or if a funded host declines"
     },
     {
      "publisher_id": "pub_015",
      "publisher_name": "Kitchenly",
-     "share": 0.0,
-     "budget_usd": 0.0,
-     "cpc_bid_usd": 1.04,
-     "start_bid_usd": 1.04,
-     "win_share": 0.0,
-     "avg_price_paid": 0.0,
+     "share": 0.05,
+     "budget_usd": 250.0,
+     "cpc_bid_usd": 0.65,
+     "start_bid_usd": 0.65,
+     "win_share": 0.00053,
+     "avg_price_paid": 0.63,
      "market_price": {
-      "low": 1.04,
+      "low": 1.05,
       "mid": 1.22,
       "high": 1.47
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 319.0,
+      "mid": 398.0,
+      "high": 478.0
      },
      "expected_conversions": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 3.6,
+      "mid": 7.6,
+      "high": 13.7
      },
      "expected_units": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 3.8,
+      "mid": 7.6,
+      "high": 13.7
      },
-     "capacity_usd": 479714.59,
-     "expected_impressions": 0,
-     "expected_reach": 0,
+     "capacity_usd": 482967.16,
+     "expected_impressions": 19138,
+     "expected_reach": 11961,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $1.04-$1.47); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: matches subscription (attribute tags only) (multiplier) for this product. Exploration test: would score 0.14 with a relevance of 0.2; gets a small separate test budget.). market price $1.05-$1.47 (median $1.22); bidding $0.65 wins ~0% of page views, paying ~$0.63 per click (second price)"
     }
    ],
    "warnings": []
@@ -1792,32 +1740,32 @@
    "host_bids": [
     {
      "publisher_id": "pub_007",
-     "start_bid": 0.45,
-     "max_bid": 0.71,
-     "floor": 0.05
-    },
-    {
-     "publisher_id": "pub_009",
-     "start_bid": 0.36,
+     "start_bid": 0.42,
      "max_bid": 0.7,
      "floor": 0.05
     },
     {
+     "publisher_id": "pub_009",
+     "start_bid": 0.39,
+     "max_bid": 0.69,
+     "floor": 0.05
+    },
+    {
      "publisher_id": "pub_018",
-     "start_bid": 0.82,
-     "max_bid": 1.01,
+     "start_bid": 0.83,
+     "max_bid": 1.03,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_012",
-     "start_bid": 1.56,
-     "max_bid": 1.96,
+     "start_bid": 1.58,
+     "max_bid": 1.94,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_015",
-     "start_bid": 1.04,
-     "max_bid": 1.32,
+     "start_bid": 0.65,
+     "max_bid": 1.3,
      "floor": 0.05
     }
    ],
@@ -1920,11 +1868,6 @@
    {
     "variant_id": "persona_004:1",
     "persona_id": "persona_004",
-    "publisher_ids": [
-     "pub_009",
-     "pub_007",
-     "pub_018"
-    ],
     "headline_template": "More good years with your dog",
     "headline_no_name": "More good years with your dog",
     "body": "Premium grain-free food formulated by vets to support senior joints.",
@@ -1933,11 +1876,6 @@
    {
     "variant_id": "persona_004:2",
     "persona_id": "persona_004",
-    "publisher_ids": [
-     "pub_009",
-     "pub_007",
-     "pub_018"
-    ],
     "headline_template": "Reading their food labels?",
     "headline_no_name": "Reading their food labels?",
     "body": "Our premium senior dog food is grain-free and vet-formulated for joint health.",
@@ -1946,11 +1884,6 @@
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "publisher_ids": [
-     "pub_007",
-     "pub_009",
-     "pub_018"
-    ],
     "headline_template": "Keep your senior dog moving",
     "headline_no_name": "Keep your senior dog moving",
     "body": "Grain-free food to support joint health and longevity. Vet-formulated.",
@@ -1959,11 +1892,6 @@
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
-    "publisher_ids": [
-     "pub_007",
-     "pub_009",
-     "pub_018"
-    ],
     "headline_template": "Caring for a senior dog?",
     "headline_no_name": "Caring for a senior dog?",
     "body": "Our vet-formulated recipe targets joint health and longevity. Grain-free.",
@@ -1972,11 +1900,6 @@
    {
     "variant_id": "persona_007:1",
     "persona_id": "persona_007",
-    "publisher_ids": [
-     "pub_009",
-     "pub_018",
-     "pub_007"
-    ],
     "headline_template": "Vet-formulated joint support",
     "headline_no_name": "Vet-formulated joint support",
     "body": "Premium grain-free food made for your senior dog's longevity.",
@@ -1985,11 +1908,6 @@
    {
     "variant_id": "persona_007:2",
     "persona_id": "persona_007",
-    "publisher_ids": [
-     "pub_009",
-     "pub_018",
-     "pub_007"
-    ],
     "headline_template": "More healthy years together",
     "headline_no_name": "More healthy years together",
     "body": "Grain-free food that supports joint health in senior dogs. Vet-formulated.",
@@ -2030,7 +1948,7 @@
  },
  "timings_s": {
   "intake": 0.02,
-  "matching": 0.0,
+  "matching": 0.01,
   "creative": 47.52
  },
  "creative_log": {

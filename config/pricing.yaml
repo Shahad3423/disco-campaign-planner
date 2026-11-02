@@ -57,7 +57,9 @@ market:
   # [benchmark-shaped] per-page-view variation of each rival's bid (pacing state, shopper-level adjustments).
   # Winning-price distributions in ad auctions are close to log-normal (Cui et al., KDD 2011).
   per_view_sigma: 0.35
-  samples_per_host: 400           # simulated page views per host to estimate the bid landscape
+  samples_per_host: 4000          # simulated page views per host. Small budgets buy only the cheapest ~0.5% of views, i.e. the
+                                  # landscape's far tail: with 400 samples that rested on 1-2 draws and the split between hosts
+                                  # moved by up to 20 points between random draws; 4000 keeps it within a few points (D33)
   # Calibration: the CPC benchmarks above are prices advertisers PAY. In a one-slot auction the price is set
   # by the strongest of many rivals, so raw bids would clear far above them. All rival bids are scaled so the
   # median clearing price (for an average campaign, across hosts) equals this [benchmark] figure.

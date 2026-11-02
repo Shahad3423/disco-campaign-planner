@@ -43,12 +43,19 @@ def run(
     with_creatives: bool = True,
 ) -> CampaignPlan:
     inputs = inputs or AdvertiserInputs()
-    t: dict[str, float] = {}
-
     start = time.perf_counter()
     profile = intake.parse_brief(brief, provider, today)
-    t["intake"] = time.perf_counter() - start
+    intake_s = time.perf_counter() - start
+    plan = plan_from_profile(brief, profile, today, inputs)
+    plan = plan.model_copy(update={"timings_s": {"intake": round(intake_s, 2), **plan.timings_s}})
+    return add_creatives(plan, provider, today) if with_creatives else plan
 
+
+def plan_from_profile(brief: str, profile: AdvertiserProfile, today: date, inputs: AdvertiserInputs | None = None) -> CampaignPlan:
+    """Everything after intake that is plain code (no LLM): hosts, personas, budget, bids, config. Used by run(), and to
+    refresh stored plans when the code changes without re-asking the LLM (scripts/precompute_demo.py --keep-llm)."""
+    inputs = inputs or AdvertiserInputs()
+    t: dict[str, float] = {}
     start = time.perf_counter()
     scores = publisher_scoring.rank_publishers(profile, today)
     persona_matches = personas.select_personas(profile, scores)
@@ -113,11 +120,10 @@ def run(
             [] if inputs.monthly_budget_usd or status == "not_eligible"
             else ["What's your budget for this flight? We don't suggest one; enter it to see the allocation and forecast."]),
     )
-    plan_out = CampaignPlan(
+    return CampaignPlan(
         brief=brief, profile=profile, publishers=scores, personas=persona_matches, config=config,
         timings_s={k: round(v, 2) for k, v in t.items()},
     )
-    return add_creatives(plan_out, provider, today) if with_creatives else plan_out
 
 
 def needs_creatives(plan: CampaignPlan) -> bool:
@@ -133,8 +139,13 @@ def add_creatives(plan: CampaignPlan, provider: Provider, today: date) -> Campai
     selected = [m for m in plan.personas if m.selected]
     start = time.perf_counter()
     variants, reviews, log = creative.generate_creatives(plan.profile, selected, moment_names, provider)
+    return attach_creatives(plan, variants, reviews, log, time.perf_counter() - start)
+
+
+def attach_creatives(plan: CampaignPlan, variants: list[CreativeVariant], reviews: list[CreativeReview], log: dict,
+                     seconds: float | None = None) -> CampaignPlan:
+    """Put written creatives into a plan and its config (also used to keep stored creatives when refreshing a plan)."""
     by_persona = {m.persona_id: m for m in plan.personas}
-    allowed_hosts = set(plan.config.targeting["publishers_include"])
     assignments = [
         CreativeAssignment(
             variant_id=f"{v.persona_id}:{v.variant}", persona_id=v.persona_id,
@@ -142,8 +153,8 @@ def add_creatives(plan: CampaignPlan, provider: Provider, today: date) -> Campai
         )
         for v in variants if v.persona_id in by_persona
     ]
+    timings = {**plan.timings_s, **({"creative": round(seconds, 2)} if seconds is not None else {})}
     return plan.model_copy(update={
         "creatives": variants, "reviews": reviews, "creative_log": log,
-        "config": plan.config.model_copy(update={"creatives": assignments}),
-        "timings_s": {**plan.timings_s, "creative": round(time.perf_counter() - start, 2)},
+        "config": plan.config.model_copy(update={"creatives": assignments}), "timings_s": timings,
     })

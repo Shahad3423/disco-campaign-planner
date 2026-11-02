@@ -46,16 +46,16 @@ def realism() -> list[str]:
              "| host | rival campaigns | p25 | median | p75 | implied CPM | median in range |", "|---|---|---|---|---|---|---|"] + rows)
 
 
-def replay(markets: list[dict], taken: dict[str, int], budget_usd: float, objective: str, rng: random.Random) -> tuple[float, float]:
+def replay(markets: list[dict], taken: dict[str, float], budget_usd: float, objective: str, rng: random.Random) -> tuple[float, float]:
     """One realised flight: fresh rival bids per page view (new landscape draw), true CTR/CVR drawn from the
     prior ranges, Poisson-ish noise on clicks. Our bid per host = the planned bid."""
     pri = catalog.config("pricing")["priors"]
     spend = units = 0.0
     for m in markets:
         k = taken[m["score"].publisher_id]
-        if not k:
+        if k <= 1e-9:
             continue
-        bid = m["needed"][k - 1]
+        bid = budget._bid_for(m, k)
         # fresh market: re-scale the landscape by a common per-flight factor (market conditions) + resample
         shift = math.exp(rng.gauss(0, 0.15))
         fresh = sorted(rng.choice(m["needed"]) * shift * math.exp(rng.gauss(0, 0.10)) for _ in m["needed"])
@@ -82,6 +82,8 @@ def allocation_baselines(markets: list[dict], budget_usd: float, share_cap: floa
             while k < m["k_max"] and cash >= budget._bucket_cost(m, k):
                 cash -= budget._bucket_cost(m, k)
                 k += 1
+            if k < m["k_max"] and cash > 0:  # partial last bucket, as in our allocation, so the comparison is fair
+                k += cash / budget._bucket_cost(m, k)
             units += m["unit_per_view"] * m["bucket"] * k
         return units
     pids = [m["score"].publisher_id for m in markets]
