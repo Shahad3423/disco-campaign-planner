@@ -29,8 +29,9 @@ rejected alternative: `docs/DECISIONS.md` (D1–D36). The score with a worked ex
 ## How I know it works (`docs/EXPERIMENTS.md`, `reports/`)
 Hosts: labels for the 15 briefs written blind; 100 unseen brands split 49 dev / 51 test (test touched once per decision); an LLM
 judge on host pairs; sensitivity on every constant. Money: an LP-solver check; replays with fresh rival bids. Copy: a separate critic
-+ code rule checks. A change ships only if it holds on these; each decision lists the alternatives that lost (an additive score,
+and code rule checks. A change ships only if it holds on these; each decision lists the alternatives that lost (an additive score,
 dropping the persona branch), and a fit that had trained on the test set was withdrawn.
+
 | hosts (15 briefs, labels written blind) | | creatives (fresh run, 44 personas) | | money (simulated market) | |
 |---|---|---|---|---|---|
 | precision of recommended hosts | **0.91** | personas with a passing line | 43% → **73%** | split vs LP optimum | **exact** |
