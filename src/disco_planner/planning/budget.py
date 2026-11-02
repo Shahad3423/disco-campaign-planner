@@ -105,34 +105,64 @@ def _bucket_cost(m: dict, k: int) -> float:
     return m["bucket"] * m["ctr"] * m["needed"][k]
 
 
-def allocate(markets: list[dict], budget: float, goal: float | None, share_cap: float) -> dict[str, int]:
-    """Greedy: always buy the bucket with the most units per dollar. Each host's unit cost only rises as we
-    buy more of it, so this is optimal for the separable problem (tested against brute force)."""
-    taken = {m["score"].publisher_id: 0 for m in markets}
+def _spend(m: dict, taken: float) -> float:
+    """Spend for `taken` buckets, the last one possibly partial (taken = 2.4: buckets 0-1 and 40% of bucket 2)."""
+    whole = int(taken)
+    part = taken - whole
+    return sum(_bucket_cost(m, k) for k in range(whole)) + (part * _bucket_cost(m, whole) if part > 1e-12 else 0.0)
+
+
+def _bid_for(m: dict, taken: float) -> float:
+    """The bid that wins `taken` buckets of page views. Whole buckets: the price level of the last one. A partial last
+    bucket: part of the way from the price level below it to its own (bidding inside its range wins part of its views)."""
+    j = math.ceil(taken - 1e-9) - 1  # index of the last bucket bought into
+    part = taken - int(taken)
+    if part <= 1e-9 or j == 0:
+        return m["needed"][j]
+    return m["needed"][j - 1] + part * (m["needed"][j] - m["needed"][j - 1])
+
+
+def allocate(markets: list[dict], budget: float, goal: float | None, share_cap: float) -> dict[str, float]:
+    """Buy the cheapest units first, across all hosts, until the budget, the goal, a host's k_max or its share cap stops it.
+
+    Returns buckets bought per host; the last bucket on a host may be PARTIAL. A bucket is a slice of the host's page
+    views at one price level, and bidding inside that price range wins part of it, so the budget (or goal, or cap) is
+    met exactly instead of to the nearest bucket. Each host's cost per unit only rises bucket by bucket, so the problem
+    is a linear program whose optimum is exactly this cheapest-first fill (checked against an LP solver in the tests).
+    """
+    taken = {m["score"].publisher_id: 0.0 for m in markets}
     spent = {pid: 0.0 for pid in taken}
-    heap = [(-(m["unit_per_view"] * m["bucket"]) / _bucket_cost(m, 0), i) for i, m in enumerate(markets) if m["k_max"] > 0]
+    gain = lambda m: m["unit_per_view"] * m["bucket"]  # units per bucket: the same for every bucket of a host
+    heap = [(-gain(m) / _bucket_cost(m, 0), i) for i, m in enumerate(markets) if m["k_max"] > 0]
     heapq.heapify(heap)
     total, units = 0.0, 0.0
     while heap:
         _, i = heapq.heappop(heap)
         m = markets[i]
-        pid, k = m["score"].publisher_id, taken[m["score"].publisher_id]
+        pid = m["score"].publisher_id
+        k = int(taken[pid])
         cost = _bucket_cost(m, k)
-        if total + cost > budget + 1e-9 or spent[pid] + cost > share_cap * budget + 1e-9:
-            continue  # this host is done (budget or its share cap): its next buckets only cost more
-        taken[pid] += 1
-        spent[pid] += cost
-        total += cost
-        units += m["unit_per_view"] * m["bucket"]
-        if goal is not None and units >= goal:
+        frac = min(1.0, (budget - total) / cost, (share_cap * budget - spent[pid]) / cost)
+        if goal is not None:
+            frac = min(frac, (goal - units) / gain(m))
+        if frac <= 1e-12:
+            if budget - total <= 1e-9:
+                break  # the budget is gone
+            continue  # only this host is done (its share cap); the others can still buy
+        taken[pid] += frac
+        spent[pid] += frac * cost
+        total += frac * cost
+        units += frac * gain(m)
+        if budget - total <= 1e-9 or (goal is not None and units >= goal - 1e-9):
             break
-        if taken[pid] < m["k_max"]:
-            heapq.heappush(heap, (-(m["unit_per_view"] * m["bucket"]) / _bucket_cost(m, taken[pid]), i))
+        if frac >= 1.0 - 1e-12 and taken[pid] < m["k_max"] - 1e-9:
+            taken[pid] = round(taken[pid])  # whole bucket: keep the count exact
+            heapq.heappush(heap, (-gain(m) / _bucket_cost(m, int(taken[pid])), i))
     return taken
 
 
-def _summary(markets: list[dict], taken: dict[str, int]) -> tuple[float, float]:
-    spend = sum(sum(_bucket_cost(m, k) for k in range(taken[m["score"].publisher_id])) for m in markets)
+def _summary(markets: list[dict], taken: dict[str, float]) -> tuple[float, float]:
+    spend = sum(_spend(m, taken[m["score"].publisher_id]) for m in markets)
     units = sum(m["unit_per_view"] * m["bucket"] * taken[m["score"].publisher_id] for m in markets)
     return spend, units
 
@@ -180,21 +210,21 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
     explore = [m for m in all_markets if m.get("explore")]
     budget_total = budget
     ex_budget = budget_total * catalog.config("scoring")["exploration"]["budget_share"] if explore and not stop_at_goal else 0.0
-    budget = budget_total - ex_budget
+    taken = allocate(explore, ex_budget, None, 1.0) if ex_budget else {m["score"].publisher_id: 0.0 for m in explore}
+    spend_ex, _ = _summary(explore, taken)
+    budget = budget_total - spend_ex  # whatever the test hosts can't absorb goes back to the main plan
     share_cap = inputs.max_share_per_host or cfg["allocation"]["max_share_per_host_default"]
     share_cap = max(share_cap, 1 / len(markets))  # a cap below 1/n hosts could never spend the budget
 
-    taken = allocate(markets, budget, goal if stop_at_goal else None, share_cap)
-    taken.update(allocate(explore, ex_budget, None, 1.0) if ex_budget else {m["score"].publisher_id: 0 for m in explore})
+    taken.update(allocate(markets, budget, goal if stop_at_goal else None, share_cap))
     spend, units = _summary(markets, taken)
-    spend_ex, _ = _summary(explore, taken)
     _, units_uncapped = _summary(markets, allocate(markets, budget, goal if stop_at_goal else None, 1.0))
-    full = {m["score"].publisher_id: m["k_max"] for m in markets}
+    full = {m["score"].publisher_id: float(m["k_max"]) for m in markets}
     spend_full, max_deliverable = _summary(markets, full)
     lo, hi = cfg["allocation"]["forecast_spread"][inputs.objective]
 
     status, options, to_goal = "no_goal", [], None
-    exhausted = all(taken[pid] >= full[pid] for pid in full)
+    exhausted = all(taken[pid] >= full[pid] - 1e-9 for pid in full)
     binding = "inventory" if exhausted else "budget"
     aggressive_more = inputs.aggressiveness != "aggressive"
     if goal is not None:
@@ -229,17 +259,18 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
     total_spend = spend + spend_ex
     for m in all_markets:
         s, pid = m["score"], m["score"].publisher_id
-        k = taken[pid]
-        spent_h = sum(_bucket_cost(m, i) for i in range(k))
+        k = taken[pid]  # buckets bought, the last one possibly partial
+        funded = k > 1e-9
+        spent_h = _spend(m, k)
         impressions = m["bucket"] * k
         clicks = impressions * m["ctr"]
         units_h = m["unit_per_view"] * impressions
-        bid = round(m["needed"][k - 1], 2) if k else round(market.quantile(m["needed"], 0.25), 2)
+        bid = round(_bid_for(m, k), 2) if funded else round(market.quantile(m["needed"], 0.25), 2)
         avg_paid = spent_h / clicks if clicks else 0.0
         p25, p50, p75 = (round(market.quantile(m["needed"], q), 2) for q in (0.25, 0.5, 0.75))
         allocations.append(Allocation(
             publisher_id=pid, publisher_name=s.publisher_name, share=round(spent_h / total_spend, 3) if total_spend else 0,
-            budget_usd=round(spent_h, 2), cpc_bid_usd=bid, start_bid_usd=bid, win_share=round(k / len(m["needed"]), 3),
+            budget_usd=round(spent_h, 2), cpc_bid_usd=bid, start_bid_usd=bid, win_share=round(k / len(m["needed"]), 5),
             avg_price_paid=round(avg_paid, 2), market_price=Range(low=p25, mid=p50, high=p75),
             audience_weight=round(m["audience"], 2),
             expected_clicks=Range(low=round(clicks * 0.8), mid=round(clicks), high=round(clicks * 1.2)),
@@ -251,7 +282,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
             rationale=(("EXPLORATION TEST (not in the main plan: " + s.reason.split(" Flags:")[0].replace("Excluded: ", "") + "). "
                         if m.get("explore") else "") + (f"not funded at this budget: cheaper {unit} are available on the other hosts first "
                         f"(market price here ${p25:.2f}-${p75:.2f}); it gets budget as the budget grows or if a funded host declines"
-                        if not k else
+                        if not funded else
                         f"market price ${p25:.2f}-${p75:.2f} (median ${p50:.2f}); bidding ${bid:.2f} wins ~{k / len(m['needed']):.0%} "
                         f"of page views, paying ~${avg_paid:.2f} per click (second price)")
                        + (f"; {m['audience']:.0%} of units counted as in-audience" if m["audience"] < 1 else "")

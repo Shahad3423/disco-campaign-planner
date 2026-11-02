@@ -318,8 +318,8 @@ post-purchase offers, vendor claim).
 **Bid landscape and diminishing returns.** Per host: the bid needed to win each simulated page view = top rival's
 eCPM / our CTR (second price = what we pay). Winning more of a host means outbidding stronger rivals, so each extra
 unit costs more: the diminishing return comes from the auction, not an assumed curve.
-**Allocation.** Greedy cheapest-units-first across hosts (optimal for this separable problem; tested against brute
-force), stopped by budget, goal, aggressiveness (win up to 30/60/90% of a host's page views), the advertiser's max
+**Allocation.** Cheapest-units-first across hosts, with a partial last bucket per host: a linear program, and this is
+its exact optimum (D33; tested against an LP solver), stopped by budget, goal, aggressiveness (win up to 30/60/90% of a host's page views), the advertiser's max
 CPC or target, and an optional per-host share cap. Output per host: bid, win share, average price paid, spend,
 units, market price range (the "sensible starting bid range").
 **Share cap: off by default.** The bidding eval showed a 50% default cost 24-79% of forecast units when one host is
@@ -401,3 +401,31 @@ in the app and written to the config. Serving never read it: at checkout the cre
 (`targeting.publishers_include`, the per-host allocations). Removed from `PersonaMatch.best_publishers` and `CreativeAssignment.publisher_ids`.
 `host_fit` itself stays: it is inside `persona_fit` (host score), the EXPLORATORY fill tie-break, and the serving prior. Stored plans still
 carry both fields; they are ignored on load.
+
+## D33. The budget split is an exact optimum, and it spends the whole budget
+The allocation used to buy each host's page views in whole buckets (1/400 of a host's views each). When the next bucket
+did not fit the remaining money the host was dropped, so plans left $30-400 of a $5,000 budget unspent, the 5% exploration
+budget could buy nothing at all (plan #1: the cheapest test bucket cost $251.82 of $250), goals were overshot, and the
+split jumped: plan #1 went from Pawline $2,371 / Ruffco $2,225 at $5,000 to $383 / $4,584 at $5,250, because Ruffco's
+buckets (62M views a month) cost ~$2,300 each. The old test allowed "one bucket of slack", which hid this.
+Now the last bucket on a host may be partial: bidding inside that bucket's price range wins part of its views, and the
+bid is interpolated accordingly (`budget._bid_for`). With each host's cost per unit only rising, the problem is a linear
+program and cheapest-first is its exact optimum. Tests: equality with scipy's LP solver on 200 random markets (with and
+without share caps), the LP optimality condition (nothing bought is dearer per unit than anything left), goals met
+exactly at minimum cost, and on the dog-food fixture the whole budget is spent with no host moving more than the budget
+did. All four fail on the old code. Exploration is now funded first and anything it can't absorb goes back to the plan.
+Same inputs, same $5,000: +0.3% to +21.9% more purchases per demo plan (mean +4.1%), never fewer.
+**Market resolution.** A $5,000 plan buys the cheapest ~0.5% of a host's views, the far tail of the simulated landscape.
+With 400 samples per host that tail rested on one or two draws: across random draws plan #1 put 7%, 13% or 27% of its
+budget on Pawline. `samples_per_host` is now 4000 (17-24%; forecast 455-462 instead of 437-475); about +1 s to build the
+market once and +0.2 s per plan, nothing at serving. This changes the market estimate, so forecasts move either way
+(-1.8% to +21.7% against the old plans).
+**Fair baselines.** The bidding eval's equal / score-proportional / best-host baselines also bought whole buckets, which
+overstated our advantage (e.g. equal split at 31% of ours on plan #1). With partial buckets for everyone we still win or
+tie everywhere, but at $5,000 "everything on the best host" is often within 0-2% of us: at small budgets the top host
+absorbs everything, and the split matters as budgets grow.
+Bidding eval re-run (reports/bidding_eval.md): clearing prices in the benchmark range on 20/20 hosts; forecast range
+covers 79% of replayed flights (75% on the old code; target 80%); truthful bidding still optimal in every plan.
+Demo plans refreshed with `scripts/precompute_demo.py --keep-llm` (new `pipeline.plan_from_profile`): profiles, host
+scores, personas and creatives unchanged; only budget, pricing and bids recomputed.
+

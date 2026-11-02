@@ -62,7 +62,6 @@
     "why": "Daily Form audience is skeptical of unsubstantiated health claims, and the brief lacks nutritional or ingredient proof."
    }
   ],
-  "confidence": 0.78,
   "gate": "clarify",
   "gate_reason": "We know the exact product (protein bars), but missing pricing, purchase model (subscription vs one-time), and key details required to properly target and plan campaigns.",
   "missing_info": [
@@ -1182,10 +1181,6 @@
     "category affinity 0.80 (fitness, supplements)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_012",
-    "pub_003"
    ]
   },
   {
@@ -1197,10 +1192,6 @@
     "category affinity 0.80 (recovery, supplements)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_012",
-    "pub_003"
    ]
   },
   {
@@ -1212,10 +1203,6 @@
     "category affinity 0.60 (gourmet_food)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   },
   {
@@ -1227,10 +1214,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   },
   {
@@ -1242,10 +1225,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium-high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_012",
-    "pub_003"
    ]
   },
   {
@@ -1257,10 +1236,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   },
   {
@@ -1272,10 +1247,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_012",
-    "pub_003"
    ]
   },
   {
@@ -1287,10 +1258,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   },
   {
@@ -1302,10 +1269,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   },
   {
@@ -1317,10 +1280,6 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": [
-    "pub_003",
-    "pub_012"
    ]
   }
  ],
@@ -1496,7 +1455,6 @@
   "status": "needs_clarification",
   "planning_date": "2026-10-30",
   "advertiser_summary": "Sells protein bars formulated to taste good rather than like cardboard.",
-  "confidence": 0.78,
   "objective": "conversions",
   "economics": {
    "price_usd": 60.0,
@@ -1510,12 +1468,12 @@
    "model": "CPC",
    "bidding": "maximize",
    "aggressiveness": "balanced",
-   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.78-$1.06 per click (median $0.91), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
+   "rationale": "Pay per click (verifiable without trusting a pixel). Market price to win a page view on these hosts: $0.81-$1.09 per click (median $0.93), from the simulated auction against the other campaigns. 'balanced' bidding tries to win up to 60% of each host's page views; the planned bid per host is the price that wins its planned share.",
    "max_cpc": null,
    "cpc_range": {
-    "low": 0.78,
-    "mid": 0.91,
-    "high": 1.06
+    "low": 0.81,
+    "mid": 0.93,
+    "high": 1.09
    },
    "cpm_bid": null,
    "target_cpa": null,
@@ -1523,7 +1481,7 @@
   },
   "budget": {
    "monthly_budget_usd": 5000.0,
-   "planned_spend_usd": 4655.22,
+   "planned_spend_usd": 5000.0,
    "objective": "conversions",
    "unit": "conversions",
    "goal_target": null,
@@ -1531,19 +1489,19 @@
    "aggressiveness": "balanced",
    "max_share_per_host": 1.0,
    "forecast": {
-    "low": 180.5,
-    "mid": 361.0,
-    "high": 649.8
+    "low": 183.8,
+    "mid": 367.7,
+    "high": 661.8
    },
-   "forecast_without_share_cap": 361.0,
+   "forecast_without_share_cap": 367.7,
    "goal_status": "no_goal",
    "binding_constraint": "budget",
    "spend_to_reach_goal_usd": null,
    "max_deliverable": 13839.8,
-   "spend_at_full_inventory_usd": 255515.29,
+   "spend_at_full_inventory_usd": 261207.87,
    "replan_options": [],
-   "expected_impressions": 303500,
-   "expected_reach": 189688,
+   "expected_impressions": 305554,
+   "expected_reach": 190971,
    "daily_cap_usd": 166.67,
    "flight_start": "2026-10-30",
    "flight_end": "2026-11-29",
@@ -1552,127 +1510,127 @@
     {
      "publisher_id": "pub_012",
      "publisher_name": "Daily Form",
-     "share": 0.156,
-     "budget_usd": 726.55,
-     "cpc_bid_usd": 0.59,
-     "start_bid_usd": 0.59,
-     "win_share": 0.007,
-     "avg_price_paid": 0.55,
+     "share": 0.3,
+     "budget_usd": 1500.43,
+     "cpc_bid_usd": 0.62,
+     "start_bid_usd": 0.62,
+     "win_share": 0.0145,
+     "avg_price_paid": 0.59,
      "market_price": {
-      "low": 0.78,
-      "mid": 0.91,
-      "high": 1.06
+      "low": 0.81,
+      "mid": 0.93,
+      "high": 1.09
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 1058.0,
-      "mid": 1323.0,
-      "high": 1588.0
+      "low": 2046.0,
+      "mid": 2558.0,
+      "high": 3069.0
      },
      "expected_conversions": {
-      "low": 28.9,
-      "mid": 60.2,
-      "high": 108.4
+      "low": 55.9,
+      "mid": 116.4,
+      "high": 209.5
      },
      "expected_units": {
-      "low": 30.1,
-      "mid": 60.2,
-      "high": 108.4
+      "low": 58.2,
+      "mid": 116.4,
+      "high": 209.5
      },
-     "capacity_usd": 84850.69,
-     "expected_impressions": 31500,
-     "expected_reach": 19688,
+     "capacity_usd": 87524.24,
+     "expected_impressions": 60900,
+     "expected_reach": 38062,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.78-$1.06 (median $0.91); bidding $0.59 wins ~1% of page views, paying ~$0.55 per click (second price)"
+     "rationale": "market price $0.81-$1.09 (median $0.93); bidding $0.62 wins ~1% of page views, paying ~$0.59 per click (second price)"
     },
     {
      "publisher_id": "pub_003",
      "publisher_name": "Studiogrid",
-     "share": 0.844,
-     "budget_usd": 3928.67,
+     "share": 0.65,
+     "budget_usd": 3249.57,
      "cpc_bid_usd": 0.47,
      "start_bid_usd": 0.47,
-     "win_share": 0.02,
+     "win_share": 0.01671,
      "avg_price_paid": 0.45,
      "market_price": {
       "low": 0.65,
-      "mid": 0.76,
-      "high": 0.92
+      "mid": 0.77,
+      "high": 0.91
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 6952.0,
-      "mid": 8691.0,
-      "high": 10429.0
+      "low": 5808.0,
+      "mid": 7261.0,
+      "high": 8713.0
      },
      "expected_conversions": {
-      "low": 144.4,
-      "mid": 300.8,
-      "high": 541.4
+      "low": 120.6,
+      "mid": 251.3,
+      "high": 452.4
      },
      "expected_units": {
-      "low": 150.4,
-      "mid": 300.8,
-      "high": 541.4
+      "low": 125.7,
+      "mid": 251.3,
+      "high": 452.4
      },
-     "capacity_usd": 170664.6,
-     "expected_impressions": 272000,
-     "expected_reach": 170000,
+     "capacity_usd": 173683.63,
+     "expected_impressions": 227243,
+     "expected_reach": 142027,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.65-$0.92 (median $0.76); bidding $0.47 wins ~2% of page views, paying ~$0.45 per click (second price)"
+     "rationale": "market price $0.65-$0.91 (median $0.77); bidding $0.47 wins ~2% of page views, paying ~$0.45 per click (second price)"
     },
     {
      "publisher_id": "pub_015",
      "publisher_name": "Kitchenly",
-     "share": 0.0,
-     "budget_usd": 0.0,
-     "cpc_bid_usd": 0.78,
-     "start_bid_usd": 0.78,
-     "win_share": 0.0,
-     "avg_price_paid": 0.0,
+     "share": 0.05,
+     "budget_usd": 250.0,
+     "cpc_bid_usd": 0.5,
+     "start_bid_usd": 0.5,
+     "win_share": 0.00048,
+     "avg_price_paid": 0.49,
      "market_price": {
-      "low": 0.78,
+      "low": 0.76,
       "mid": 0.89,
-      "high": 1.03
+      "high": 1.05
      },
      "audience_weight": 1.0,
      "expected_clicks": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 410.0,
+      "mid": 512.0,
+      "high": 615.0
      },
      "expected_conversions": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 7.8,
+      "mid": 16.3,
+      "high": 29.4
      },
      "expected_units": {
-      "low": 0.0,
-      "mid": 0.0,
-      "high": 0.0
+      "low": 8.2,
+      "mid": 16.3,
+      "high": 29.4
      },
-     "capacity_usd": 503470.38,
-     "expected_impressions": 0,
-     "expected_reach": 0,
+     "capacity_usd": 494199.53,
+     "expected_impressions": 17411,
+     "expected_reach": 10882,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: score 0.31 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier)). Exploration test: would score 0.31 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.78-$1.03); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.31 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier)). Exploration test: would score 0.31 with a relevance of 0.2; gets a small separate test budget.). market price $0.76-$1.05 (median $0.89); bidding $0.50 wins ~0% of page views, paying ~$0.49 per click (second price)"
     },
     {
      "publisher_id": "pub_008",
      "publisher_name": "Pantrygood",
      "share": 0.0,
      "budget_usd": 0.0,
-     "cpc_bid_usd": 0.81,
-     "start_bid_usd": 0.81,
+     "cpc_bid_usd": 0.83,
+     "start_bid_usd": 0.83,
      "win_share": 0.0,
      "avg_price_paid": 0.0,
      "market_price": {
-      "low": 0.81,
-      "mid": 0.93,
-      "high": 1.08
+      "low": 0.83,
+      "mid": 0.95,
+      "high": 1.12
      },
      "audience_weight": 1.0,
      "expected_clicks": {
@@ -1690,12 +1648,12 @@
       "mid": 0.0,
       "high": 0.0
      },
-     "capacity_usd": 147641.47,
+     "capacity_usd": 151276.56,
      "expected_impressions": 0,
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier)). Exploration test: would score 0.29 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.81-$1.08); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "EXPLORATION TEST (not in the main plan: score 0.29 below cutoff 0.32; weakest signal category_fit (matches groceries (category only) (multiplier)). Exploration test: would score 0.29 with a relevance of 0.2; gets a small separate test budget.). not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.83-$1.12); it gets budget as the budget grows or if a funded host declines"
     }
    ],
    "warnings": []
@@ -1718,26 +1676,26 @@
    "host_bids": [
     {
      "publisher_id": "pub_012",
-     "start_bid": 0.59,
-     "max_bid": 0.96,
+     "start_bid": 0.62,
+     "max_bid": 0.99,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_003",
      "start_bid": 0.47,
-     "max_bid": 0.83,
+     "max_bid": 0.82,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_015",
-     "start_bid": 0.78,
+     "start_bid": 0.5,
      "max_bid": 0.94,
      "floor": 0.05
     },
     {
      "publisher_id": "pub_008",
-     "start_bid": 0.81,
-     "max_bid": 0.98,
+     "start_bid": 0.83,
+     "max_bid": 1.01,
      "floor": 0.05
     }
    ],
@@ -1843,10 +1801,6 @@
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
     "headline_template": "Formulated to taste good",
     "headline_no_name": "Formulated to taste good",
     "body": "Finally, a protein bar formulated to taste good instead of like cardboard.",
@@ -1855,10 +1809,6 @@
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
     "headline_template": "The flavor formulation",
     "headline_no_name": "The flavor formulation",
     "body": "We formulated these protein bars to taste good, not like cardboard.",
@@ -1867,10 +1817,6 @@
    {
     "variant_id": "persona_009:1",
     "persona_id": "persona_009",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
     "headline_template": "Stop chewing on cardboard",
     "headline_no_name": "Stop chewing on cardboard",
     "body": "Swap your dry protein bars for ones formulated to taste good.",
@@ -1879,10 +1825,6 @@
    {
     "variant_id": "persona_009:2",
     "persona_id": "persona_009",
-    "publisher_ids": [
-     "pub_012",
-     "pub_003"
-    ],
     "headline_template": "Fuel that tastes like real food",
     "headline_no_name": "Fuel that tastes like real food",
     "body": "Your post-workout protein bars shouldn't taste like cardboard.",
@@ -1891,10 +1833,6 @@
    {
     "variant_id": "persona_010:1",
     "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_003",
-     "pub_012"
-    ],
     "headline_template": "A premium fitness gift set",
     "headline_no_name": "A premium fitness gift set",
     "body": "Gift a premium box of protein bars formulated to taste good, not like cardboard.",
@@ -1903,10 +1841,6 @@
    {
     "variant_id": "persona_010:2",
     "persona_id": "persona_010",
-    "publisher_ids": [
-     "pub_003",
-     "pub_012"
-    ],
     "headline_template": "No tricks, just real taste",
     "headline_no_name": "No tricks, just real taste",
     "body": "Gift a premium box of protein bars that don't taste like cardboard this Halloween.",

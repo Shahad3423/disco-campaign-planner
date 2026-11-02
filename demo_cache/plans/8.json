@@ -28,7 +28,6 @@
   ],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 0.72,
   "gate": "clarify",
   "gate_reason": "The input is extremely vague, providing only that the product is 'for moms' without specifying what the product actually is, its price, purchase model, or category.",
   "missing_info": [
@@ -1142,8 +1141,7 @@
     "category affinity 0.60 (family_products)",
     "price fit 1.00 (unknown product vs high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_001",
@@ -1155,8 +1153,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_002",
@@ -1168,8 +1165,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_003",
@@ -1180,8 +1176,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium-high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_004",
@@ -1192,8 +1187,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_005",
@@ -1204,8 +1198,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_006",
@@ -1216,8 +1209,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_007",
@@ -1228,8 +1220,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_009",
@@ -1240,8 +1231,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_010",
@@ -1252,8 +1242,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 0.80"
-   ],
-   "best_publishers": []
+   ]
   }
  ],
  "creatives": [
@@ -1431,7 +1420,6 @@
   "status": "needs_clarification",
   "planning_date": "2026-10-30",
   "advertiser_summary": "A DTC brand offering a new product specifically targeted at moms.",
-  "confidence": 0.72,
   "objective": "conversions",
   "economics": null,
   "pricing": null,
@@ -1540,7 +1528,6 @@
    {
     "variant_id": "persona_008:1",
     "persona_id": "persona_008",
-    "publisher_ids": [],
     "headline_template": "A new kind of thing for moms",
     "headline_no_name": "A new kind of thing for moms",
     "body": "A new kind of thing for moms. Simple, direct value.",
@@ -1549,7 +1536,6 @@
    {
     "variant_id": "persona_008:2",
     "persona_id": "persona_008",
-    "publisher_ids": [],
     "headline_template": "Ready for a new kind of thing?",
     "headline_no_name": "Ready for a new kind of thing?",
     "body": "A new kind of thing for moms.",
@@ -1558,7 +1544,6 @@
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "publisher_ids": [],
     "headline_template": "A new kind of thing for moms",
     "headline_no_name": "A new kind of thing for moms",
     "body": "A new kind of thing for moms, focused on what matters.",
@@ -1567,7 +1552,6 @@
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
-    "publisher_ids": [],
     "headline_template": "The new kind of thing for moms",
     "headline_no_name": "The new kind of thing for moms",
     "body": "A new kind of thing for moms. No fluff, just what you need.",
@@ -1576,7 +1560,6 @@
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "publisher_ids": [],
     "headline_template": "A Halloween treat for moms",
     "headline_no_name": "A Halloween treat for moms",
     "body": "A new kind of thing for moms.",
@@ -1585,7 +1568,6 @@
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
-    "publisher_ids": [],
     "headline_template": "A new kind of thing for moms",
     "headline_no_name": "A new kind of thing for moms",
     "body": "A new kind of thing for moms. Swap your usual routine.",

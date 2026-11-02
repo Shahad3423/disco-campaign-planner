@@ -20,7 +20,6 @@
   "persona_affinity_tags": [],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 0.46,
   "gate": "clarify",
   "gate_reason": "The advertiser provided only a generic tagline ('We help people feel better.') with no information about the actual product, category, pricing, or target audience.",
   "missing_info": [
@@ -1136,8 +1135,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_002",
@@ -1149,8 +1147,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_003",
@@ -1162,8 +1159,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium-high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_004",
@@ -1174,8 +1170,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_005",
@@ -1186,8 +1181,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_006",
@@ -1198,8 +1192,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_007",
@@ -1210,8 +1203,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_008",
@@ -1222,8 +1214,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_009",
@@ -1234,8 +1225,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_010",
@@ -1246,8 +1236,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   }
  ],
  "creatives": [
@@ -1416,7 +1405,6 @@
   "status": "needs_clarification",
   "planning_date": "2026-10-30",
   "advertiser_summary": "An unspecified business whose stated purpose is helping people feel better.",
-  "confidence": 0.46,
   "objective": "conversions",
   "economics": null,
   "pricing": null,
@@ -1525,7 +1513,6 @@
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "publisher_ids": [],
     "headline_template": "A simpler way to feel better",
     "headline_no_name": "A simpler way to feel better",
     "body": "No complicated routines. We just help people feel better.",
@@ -1534,7 +1521,6 @@
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
-    "publisher_ids": [],
     "headline_template": "Ready to feel better?",
     "headline_no_name": "Ready to feel better?",
     "body": "We have one straightforward mission. We help people feel better.",
@@ -1543,7 +1529,6 @@
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "publisher_ids": [],
     "headline_template": "A moment to feel better",
     "headline_no_name": "A moment to feel better",
     "body": "In the middle of everything, we are here to help people feel better.",
@@ -1552,7 +1537,6 @@
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
-    "publisher_ids": [],
     "headline_template": "Put your wellness first",
     "headline_no_name": "Put your wellness first",
     "body": "Stop putting yourself last. We help people feel better.",
@@ -1561,7 +1545,6 @@
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
-    "publisher_ids": [],
     "headline_template": "Ready to actually feel better?",
     "headline_no_name": "Ready to actually feel better?",
     "body": "No corporate fluff. We just help people feel better.",
@@ -1570,7 +1553,6 @@
    {
     "variant_id": "persona_003:2",
     "persona_id": "persona_003",
-    "publisher_ids": [],
     "headline_template": "We help people feel better",
     "headline_no_name": "We help people feel better",
     "body": "That is our entire mission. No fuss, just helping people feel better.",

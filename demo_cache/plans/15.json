@@ -18,7 +18,6 @@
   "persona_affinity_tags": [],
   "persona_conflicts": [],
   "note_signals": [],
-  "confidence": 0.33,
   "gate": "reject_low_signal",
   "gate_reason": "The advertiser provided no information about their product, category, pricing, or audience.",
   "missing_info": [
@@ -1130,8 +1129,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_002",
@@ -1142,8 +1140,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_003",
@@ -1154,8 +1151,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium-high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_004",
@@ -1166,8 +1162,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_005",
@@ -1178,8 +1173,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_006",
@@ -1190,8 +1184,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_007",
@@ -1202,8 +1195,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_008",
@@ -1214,8 +1206,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs high price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_009",
@@ -1226,8 +1217,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low-medium price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   },
   {
    "persona_id": "persona_010",
@@ -1238,8 +1228,7 @@
     "category affinity 0.00 (no shared interests)",
     "price fit 1.00 (unknown product vs low price sensitivity)",
     "audience fit 1.00"
-   ],
-   "best_publishers": []
+   ]
   }
  ],
  "creatives": [],
@@ -1249,7 +1238,6 @@
   "status": "not_eligible",
   "planning_date": "2026-10-30",
   "advertiser_summary": "Unknown business providing no product or category details.",
-  "confidence": 0.33,
   "objective": "conversions",
   "economics": null,
   "pricing": null,
