@@ -157,7 +157,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, women, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.74)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "reason": "Recommended: it sells activewear (a direct match). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (74% match). Note: it also sells activewear, so it may need to opt in to show a competing brand.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -213,7 +213,7 @@
     "competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand"
    ],
    "recommended": true,
-   "reason": "Recommended: matches activewear, sustainable, apparel (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.64)). Flags: competitor_conflict: host also sells activewear (100% of samples agree); it may need to opt in to show a competing brand",
+   "reason": "Recommended: it sells activewear (a direct match). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (64% match). Note: it also sells activewear, so it may need to opt in to show a competing brand.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -267,7 +267,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, sustainable, apparel (category only) (multiplier); strongest supporting signal audience_fit (94% female).",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, audience match: 94% women.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -321,7 +321,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches yoga, fitness_classes (specific) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.71)).",
+   "reason": "Recommended: it sells yoga and fitness classes (a partial match). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (71% match).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -375,7 +375,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: it shares only the broad category (apparel), not your kind of product, and the shoppers your product is for are rare here. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -429,7 +429,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.",
+   "reason": "Excluded: it shares only the broad category (apparel), not your kind of product, and the shoppers your product is for are rare here. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
    "exploration": true
   },
@@ -483,7 +483,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches women, apparel (category only) (multiplier); strongest supporting signal audience_fit (99% female).",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, audience match: 99% women.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -537,7 +537,7 @@
    ],
    "flags": [],
    "recommended": true,
-   "reason": "Recommended: matches apparel (category only) (multiplier); strongest supporting signal persona_fit (reaches The Wellness Optimizer best (host fit 0.66)).",
+   "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (66% match).",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -591,7 +591,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product.",
+   "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
    "exploration": false
   },
@@ -645,7 +645,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -699,7 +699,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -753,7 +753,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -807,7 +807,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -861,7 +861,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -915,7 +915,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -969,7 +969,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1023,7 +1023,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1077,7 +1077,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1131,7 +1131,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   },
@@ -1185,7 +1185,7 @@
    ],
    "flags": [],
    "recommended": false,
-   "reason": "Excluded: no category link (multiplier) for this product.",
+   "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
    "exploration": false
   }
@@ -1197,9 +1197,9 @@
    "score": 0.8,
    "selected": true,
    "reasons": [
-    "category affinity 0.80 (fitness, wellness)",
-    "price fit 1.00 (premium product vs low price sensitivity)",
-    "audience fit 1.00"
+    "Interested in what you sell: fitness, wellness (strength 0.80)",
+    "Price: a premium product for someone with low price sensitivity (fit 1.00)",
+    "Audience: 100% match with the audience you stated"
    ]
   },
   {
@@ -1208,9 +1208,9 @@
    "score": 0.432,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (activewear)",
-    "price fit 0.90 (premium product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "Interested in what you sell: activewear (strength 0.60)",
+    "Price: a premium product for someone with low-medium price sensitivity (fit 0.90)",
+    "Audience: 80% match with the audience you stated"
    ]
   },
   {
@@ -1219,9 +1219,9 @@
    "score": 0.336,
    "selected": true,
    "reasons": [
-    "category affinity 0.60 (sustainable_apparel)",
-    "price fit 0.70 (premium product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "Interested in what you sell: sustainable apparel (strength 0.60)",
+    "Price: a premium product for someone with medium price sensitivity (fit 0.70)",
+    "Audience: 80% match with the audience you stated"
    ]
   },
   {
@@ -1230,9 +1230,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (premium product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "No shared interests with this product",
+    "Price: a premium product for someone with medium price sensitivity (fit 0.70)",
+    "Audience: 80% match with the audience you stated"
    ]
   },
   {
@@ -1241,9 +1241,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.50 (premium product vs medium-high price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a premium product for someone with medium-high price sensitivity (fit 0.50)",
+    "Audience: 100% match with the audience you stated"
    ]
   },
   {
@@ -1252,9 +1252,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.90 (premium product vs low-medium price sensitivity)",
-    "audience fit 0.80"
+    "No shared interests with this product",
+    "Price: a premium product for someone with low-medium price sensitivity (fit 0.90)",
+    "Audience: 80% match with the audience you stated"
    ]
   },
   {
@@ -1263,9 +1263,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (premium product vs low price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a premium product for someone with low price sensitivity (fit 1.00)",
+    "Audience: 100% match with the audience you stated"
    ]
   },
   {
@@ -1274,9 +1274,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.70 (premium product vs medium price sensitivity)",
-    "audience fit 0.80"
+    "No shared interests with this product",
+    "Price: a premium product for someone with medium price sensitivity (fit 0.70)",
+    "Audience: 80% match with the audience you stated"
    ]
   },
   {
@@ -1285,9 +1285,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 0.35 (premium product vs high price sensitivity)",
-    "audience fit 1.00"
+    "No shared interests with this product",
+    "Price: a premium product for someone with high price sensitivity (fit 0.35)",
+    "Audience: 100% match with the audience you stated"
    ]
   },
   {
@@ -1296,9 +1296,9 @@
    "score": 0.0,
    "selected": false,
    "reasons": [
-    "category affinity 0.00 (no shared interests)",
-    "price fit 1.00 (premium product vs low price sensitivity)",
-    "audience fit 0.80"
+    "No shared interests with this product",
+    "Price: a premium product for someone with low price sensitivity (fit 1.00)",
+    "Audience: 80% match with the audience you stated"
    ]
   }
  ],
@@ -1560,7 +1560,8 @@
      "expected_reach": 166919,
      "requires_host_approval": true,
      "exploration": false,
-     "rationale": "market price $0.57-$0.78 (median $0.66); bidding $0.42 wins ~1% of page views, paying ~$0.40 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.57-$0.78 (median $0.66); bidding $0.42 wins ~1% of page views, paying ~$0.40 per click (second price); host also sells this kind of product: confirm it allows competing brands",
+     "bid_reason": "About $11.46 per purchase (3.5% of clicks expected to buy). Its bid is higher than Stride & Stem's ($0.42 vs $0.31) because clicks here are harder to win, but 3.5% of them are expected to buy vs 2.7%, so a purchase costs $11.46 vs $11.29."
     },
     {
      "publisher_id": "pub_017",
@@ -1597,7 +1598,8 @@
      "expected_reach": 9969,
      "requires_host_approval": true,
      "exploration": false,
-     "rationale": "market price $0.55-$0.76 (median $0.64); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price); host also sells this kind of product: confirm it allows competing brands"
+     "rationale": "market price $0.55-$0.76 (median $0.64); bidding $0.38 wins ~0% of page views, paying ~$0.37 per click (second price); host also sells this kind of product: confirm it allows competing brands",
+     "bid_reason": "About $11.60 per purchase (3.2% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_016",
@@ -1634,7 +1636,8 @@
      "expected_reach": 1500,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "market price $0.51-$0.69 (median $0.59); bidding $0.31 wins ~0% of page views, paying ~$0.31 per click (second price)"
+     "rationale": "market price $0.51-$0.69 (median $0.59); bidding $0.31 wins ~0% of page views, paying ~$0.31 per click (second price)",
+     "bid_reason": "About $11.29 per purchase (2.7% of clicks expected to buy)."
     },
     {
      "publisher_id": "pub_003",
@@ -1671,7 +1674,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.71-$1.01); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.71-$1.01); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     },
     {
      "publisher_id": "pub_006",
@@ -1708,7 +1712,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.57-$0.80); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.57-$0.80); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     },
     {
      "publisher_id": "pub_010",
@@ -1745,7 +1750,8 @@
      "expected_reach": 0,
      "requires_host_approval": false,
      "exploration": false,
-     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.64-$0.84); it gets budget as the budget grows or if a funded host declines"
+     "rationale": "not funded at this budget: cheaper conversions are available on the other hosts first (market price here $0.64-$0.84); it gets budget as the budget grows or if a funded host declines",
+     "bid_reason": "Not funded at this budget: its next purchase would cost more than on the funded hosts. The bid shown is the market's lower quartile, a starting point if budget is added."
     },
     {
      "publisher_id": "pub_005",
@@ -1782,7 +1788,8 @@
      "expected_reach": 3875,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.39). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.). market price $0.70-$0.96 (median $0.82); bidding $0.43 wins ~0% of page views, paying ~$0.42 per click (second price)"
+     "rationale": "EXPLORATION TEST (not in the main plan: it shares only the broad category (apparel), not your kind of product, and the shoppers your product is for are rare here.). market price $0.70-$0.96 (median $0.82); bidding $0.43 wins ~0% of page views, paying ~$0.42 per click (second price)",
+     "bid_reason": "About $17.73 per purchase (2.4% of clicks expected to buy). A small learning test: we accept a higher cost here to find out whether this host works."
     },
     {
      "publisher_id": "pub_004",
@@ -1819,7 +1826,8 @@
      "expected_reach": 9176,
      "requires_host_approval": false,
      "exploration": true,
-     "rationale": "EXPLORATION TEST (not in the main plan: linked only by a broad category (matches women, apparel (category only) (multiplier)) and the shoppers this product is for are rare here (persona fit 0.38). Exploration test: would score 0.36 with a relevance of 0.2; gets a small separate test budget.). market price $0.67-$0.91 (median $0.77); bidding $0.44 wins ~0% of page views, paying ~$0.42 per click (second price)"
+     "rationale": "EXPLORATION TEST (not in the main plan: it shares only the broad category (apparel), not your kind of product, and the shoppers your product is for are rare here.). market price $0.67-$0.91 (median $0.77); bidding $0.44 wins ~0% of page views, paying ~$0.42 per click (second price)",
+     "bid_reason": "About $17.73 per purchase (2.4% of clicks expected to buy). A small learning test: we accept a higher cost here to find out whether this host works."
     }
    ],
    "warnings": []
@@ -1913,51 +1921,51 @@
    "publishers_exclude": [
     {
      "id": "pub_012",
-     "reason": "Excluded: matches women (attribute tags only) (multiplier) for this product."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: no category link (multiplier) for this product."
+     "reason": "Excluded: it doesn't sell anything related to your product."
     }
    ],
    "personas": [

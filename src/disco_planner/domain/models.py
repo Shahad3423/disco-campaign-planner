@@ -244,6 +244,7 @@ class Allocation(BaseModel):
     requires_host_approval: bool
     exploration: bool = Field(default=False, description="a small test outside the main plan, to learn where else the offer works")
     rationale: str
+    bid_reason: str = Field(default="", description="plain-English: why this host gets this bid and this budget")
 
 
 class BudgetPlan(BaseModel):

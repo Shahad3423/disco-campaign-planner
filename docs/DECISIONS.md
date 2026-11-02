@@ -429,3 +429,20 @@ covers 79% of replayed flights (75% on the old code; target 80%); truthful biddi
 Demo plans refreshed with `scripts/precompute_demo.py --keep-llm` (new `pipeline.plan_from_profile`): profiles, host
 scores, personas and creatives unchanged; only budget, pricing and bids recomputed.
 
+## D34. One page, and every reason in plain English
+The demo is the brief-to-plan page only; the shopper simulator, evaluation and "how it works" tabs are gone (the serving
+code, its tests and the evals stay in the repo). The assignment asks for ranked publishers with exclusions, persona-tuned
+creatives with visible persona reasoning, and a campaign config; all three are on the page.
+**Plain-English reasons, no LLM.** Host and persona reasons were built from internal names ("weakest signal category_fit
+(matches subscription (attribute tags only) (multiplier))"). `planning/explain.py` turns the score components into sentences
+with fixed templates ("the only link is a shared trait (subscription), not the product itself"); the wording follows the
+value, so a weak link is never called a direct match. Templates, not an LLM: instant, free, testable, and they cannot invent
+a reason. The internal detail strings stay (the logic reads them). Weakness: the templates parse those strings, so a changed
+format falls back to the raw text; `tests/test_explain.py` fails if any reason on the 115 stored brands leaks an internal
+name. In production the components would carry structured fields instead of strings.
+**Why each bid.** `Allocation.bid_reason` (computed in `budget._explain_bids` from the plan's numbers): cost per unit, the
+expected conversion rate, and when a host's bid is 25%+ above the cheapest funded host's, why it still gets money (e.g.
+"higher than Stride & Stem's ($0.42 vs $0.31) because clicks here are harder to win, but 3.5% of them are expected to buy
+vs 2.7%, so a purchase costs $11.46 vs $11.29"). The config table shows start bid, max bid (the ceiling) and the $0.05
+floor per host, which were already planned but sat in a separate bid-strategy object.
+

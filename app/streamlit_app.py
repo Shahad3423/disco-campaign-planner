@@ -1,9 +1,8 @@
 """Streamlit entry point: `streamlit run app/streamlit_app.py`.
 
-Pages are tabs; all drawing code lives in components.py.
+One page: brief -> plan (publishers, personas, creatives, campaign config). All drawing code lives in components.py.
 """
 import sys
-from datetime import datetime, time, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # so `import components` works anywhere
@@ -11,17 +10,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))  # so `import component
 import streamlit as st
 
 import components as ui
-from disco_planner.data import catalog
 from disco_planner.domain.models import AdvertiserInputs
 from disco_planner.planning import pipeline
-from disco_planner.serving.features import ShopperSignals, build_features
 
 st.set_page_config(page_title="Disco campaign planner", layout="wide")
 ui.inject_css()
 st.title("Disco campaign planner")
 st.caption("Turn a short advertiser brief into a reviewable campaign: publishers, personas, creatives, budget.")
-
-tab_plan, tab_sim, tab_eval, tab_how = st.tabs(["Plan a campaign", "Shopper simulator", "Evaluation", "How it works"])
 
 # ---------------------------------------------------------------- plan page
 
@@ -87,113 +82,34 @@ def run_and_store(brief: str, inputs: AdvertiserInputs, live: bool = False) -> N
         st.session_state["creatives_pending"] = model != "cached run" and pipeline.needs_creatives(plan)
 
 
-with tab_plan:
-    examples = ui.load_examples()
-    choice = st.selectbox("Start from an example advertiser", ["(write my own)"] + [f"#{n}: {t[:70]}..." for n, t in examples.items()])
-    default_brief = examples[int(choice.split(":")[0][1:])] if choice.startswith("#") else ""
-    # Changing the selectbox must replace the text area, so key it on the choice.
-    brief = st.text_area("Advertiser brief", value=default_brief, height=110, key=f"brief_{choice}",
-                         placeholder="Describe the product, who it's for, price, and any claims you can make.")
-    inputs = optional_inputs()
-    live = st.toggle("Run live (skip the LLM cache)", value=False,
-                     help="Off: identical inputs reuse earlier LLM answers, so results are reproducible and instant. "
-                          "On: fresh Gemini calls end to end (slower); nothing is written to the cache.")
-    if st.button("Plan campaign", type="primary", disabled=not brief.strip()):
-        run_and_store(brief.strip(), inputs, live=live)
+examples = ui.load_examples()
+choice = st.selectbox("Start from an example advertiser", ["(write my own)"] + [f"#{n}: {t[:70]}..." for n, t in examples.items()])
+default_brief = examples[int(choice.split(":")[0][1:])] if choice.startswith("#") else ""
+# Changing the selectbox must replace the text area, so key it on the choice.
+brief = st.text_area("Advertiser brief", value=default_brief, height=110, key=f"brief_{choice}",
+                     placeholder="Describe the product, who it's for, price, and any claims you can make.")
+inputs = optional_inputs()
+live = st.toggle("Run live (skip the LLM cache)", value=False,
+                 help="Off: identical inputs reuse earlier LLM answers, so results are reproducible and instant. "
+                      "On: fresh Gemini calls end to end (slower); nothing is written to the cache.")
+if st.button("Plan campaign", type="primary", disabled=not brief.strip()):
+    run_and_store(brief.strip(), inputs, live=live)
 
-    if st.session_state.get("notice"):
-        st.warning(st.session_state["notice"])
-    plan = st.session_state.get("plan")
-    if plan:
-        qa = ui.render_clarify_form(plan)
-        if qa:
-            run_and_store(ui.brief_with_answers(st.session_state["brief"], qa), inputs, live=live)
-            st.rerun()
-        pending = st.session_state.get("creatives_pending", False)
-        ui.render_plan(plan, st.session_state.get("model", "unknown"), creatives_pending=pending)
-        if pending:  # the page above is already on screen; the slow creative step runs now, then the page refreshes
-            with st.spinner("Writing creatives..."):
-                plan, notice, calls = ui.add_creatives_live(plan, live)
-            session = st.session_state["session_plans"]
-            session[-1] = plan
-            st.session_state.update(plan=plan, creatives_pending=False, notice=notice,
-                                    model=f"{st.session_state['model']}; creatives: {calls}" if calls else st.session_state["model"])
-            st.rerun()
-
-# ---------------------------------------------------------------- shopper simulator
-
-with tab_sim:
-    st.markdown("Serving stage: runs in milliseconds with **no LLM**. Only three signals arrive: publisher, zip code, first name.")
-    pubs = catalog.publishers()
-    c1, c2, c3 = st.columns(3)
-    pub_id = c1.selectbox("Publisher", [p.id for p in pubs], format_func=lambda i: f"{catalog.publisher_by_id()[i].name} ({i})")
-    zip_code = c2.text_input("Zip code", "10001")
-    first_name = c3.text_input("First name", "Sarah")
-    c4, c5, c6 = st.columns(3)
-    zip_source = c4.selectbox("Zip source", ["billing", "shipping", "unknown"])
-    day = c5.date_input("Request date (UTC)", value=ui.PLANNING_DATE)
-    clock = c6.time_input("Request time (UTC)", value=time(18, 0))
-    c7, c8 = st.columns(2)
-    phase = c7.selectbox("Bid phase", ["learning", "enhanced_cpc"],
-                         help="learning: fixed start bids; enhanced_cpc: bid up for shoppers who look likely to convert")
-    pacing = c8.slider("Pacing (spent share / time share)", 0.5, 1.5, 1.0, 0.05, help="<1 under-delivering, >1 over-delivering")
-    signals = ShopperSignals(publisher_id=pub_id, zip=zip_code, first_name=first_name, zip_source=zip_source)
-    now_utc = datetime.combine(day, clock, tzinfo=timezone.utc)
-
-    st.subheader("Features")
-    ui.render_features(build_features(signals, now_utc))
-
-    st.subheader("Decision")
-    plans = st.session_state.get("session_plans", []) + ui.load_all_cached_plans()
-    holdout = ui.load_holdout_plans()
-    if holdout and st.checkbox(f"Add the {len(holdout)} holdout brands as competing advertisers", value=True):
-        plans = plans + holdout
-    # Per-host budget caps: mark campaigns whose budget on THIS host is used up.
-    here = {}
-    for p in plans:
-        alloc = next((x for x in (p.config.budget.allocations if p.config.budget else []) if x.publisher_id == pub_id), None)
-        if alloc and p.config.status == "draft":
-            here[p.profile.product or p.brief[:40]] = alloc.budget_usd
-    out_of_budget = st.multiselect(
-        f"Campaigns that have used up their budget on {catalog.publisher_by_id()[pub_id].name}", sorted(here),
-        help="A campaign drops out of THIS host's auction when its allocated budget here is spent; it still bids on its other hosts")
-    spent = {(name, pub_id): here[name] for name in out_of_budget}
-    blocks = st.checkbox("This host blocks brands that sell what it sells", value=False,
-                         help="A host setting (D21). Off by default: most hosts allow non-identical brands.")
-    decision, note = ui.try_serve(signals, now_utc, plans, phase=phase, pacing_ratio=pacing, spent_usd=spent,
-                                  host_blocks_competitors=blocks)
-    if decision is not None:
-        ui.render_decision(decision, plans)
-    else:
-        st.info(f"{note} ({len(plans)} plans available to the simulator.)")
-
-# ---------------------------------------------------------------- evaluation
-
-with tab_eval:
-    reports = ui.eval_reports()
-    if reports:
-        label = st.selectbox("Report", list(reports))
-        ui.render_eval(reports[label])
-    else:
-        st.info("No reports/eval_*.md found. Run `python -m disco_planner.eval.run`.")
-
-# ---------------------------------------------------------------- how it works
-
-with tab_how:
-    st.subheader("Two stages, two budgets")
-    st.markdown("""
-| | Stage 1: planning | Stage 2: serving |
-|---|---|---|
-| Runs | once per advertiser | once per impression |
-| Latency | seconds are fine | tens of milliseconds |
-| LLM | yes (intake, creatives, critic) | **no** |
-| Output | `CampaignPlan` / `CampaignConfig` | one offer, rendered safely |
-""")
-    st.code("brief -> intake (LLM) -> gate -> publisher scoring (code) -> personas -> creatives (LLM) + critic -> budget + bids (code) -> CampaignConfig\n"
-            "shopper {publisher, zip, first name} -> features -> persona posterior -> eligible campaigns -> rank -> render", language=None)
-    st.markdown("The LLM handles language; code handles numbers and ranking.")
-    st.subheader("Design decisions")
-    for title, anchor, body in ui.decision_sections():
-        with st.expander(title):
-            st.markdown(body)
-            st.markdown(f"[Open in repo]({ui.REPO_URL}/blob/main/docs/DECISIONS.md#{anchor})")
+if st.session_state.get("notice"):
+    st.warning(st.session_state["notice"])
+plan = st.session_state.get("plan")
+if plan:
+    qa = ui.render_clarify_form(plan)
+    if qa:
+        run_and_store(ui.brief_with_answers(st.session_state["brief"], qa), inputs, live=live)
+        st.rerun()
+    pending = st.session_state.get("creatives_pending", False)
+    ui.render_plan(plan, st.session_state.get("model", "unknown"), creatives_pending=pending)
+    if pending:  # the page above is already on screen; the slow creative step runs now, then the page refreshes
+        with st.spinner("Writing creatives..."):
+            plan, notice, calls = ui.add_creatives_live(plan, live)
+        session = st.session_state["session_plans"]
+        session[-1] = plan
+        st.session_state.update(plan=plan, creatives_pending=False, notice=notice,
+                                model=f"{st.session_state['model']}; creatives: {calls}" if calls else st.session_state["model"])
+        st.rerun()

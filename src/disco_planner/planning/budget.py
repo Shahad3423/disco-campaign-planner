@@ -279,7 +279,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
             capacity_usd=round(sum(_bucket_cost(m, i) for i in range(m["k_max"])), 2),
             expected_impressions=round(impressions), expected_reach=round(impressions / pri["avg_frequency"]),
             requires_host_approval=m["competitor"], exploration=bool(m.get("explore")),
-            rationale=(("EXPLORATION TEST (not in the main plan: " + s.reason.split(" Flags:")[0].replace("Excluded: ", "") + "). "
+            rationale=(("EXPLORATION TEST (not in the main plan: " + s.reason.split(" Note:")[0].split(" We'll still test")[0].replace("Excluded: ", "") + "). "
                         if m.get("explore") else "") + (f"not funded at this budget: cheaper {unit} are available on the other hosts first "
                         f"(market price here ${p25:.2f}-${p75:.2f}); it gets budget as the budget grows or if a funded host declines"
                         if not funded else
@@ -293,6 +293,7 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
         pacing = f"front-loaded x{cfg['budget']['gifting_front_load']} during '{gifting_moment}', even otherwise"
     if stop_at_goal:
         pacing += "; stop when the goal is reached"
+    _explain_bids(allocations, inputs.objective)
     total_impr = sum(a.expected_impressions for a in allocations)
     return BudgetPlan(
         monthly_budget_usd=round(budget_total, 2), planned_spend_usd=round(total_spend, 2), objective=inputs.objective, unit=unit,
@@ -306,6 +307,40 @@ def budget_plan(markets: list[dict], inputs: AdvertiserInputs, today: date, gift
         daily_cap_usd=round(budget_total / days, 2), flight_start=today.isoformat(),
         flight_end=(today + timedelta(days=days)).isoformat(), pacing=pacing, allocations=allocations, warnings=[],
     )
+
+
+def _explain_bids(allocations: list[Allocation], objective: str) -> None:
+    """Fill each host's `bid_reason`: what a unit costs there and, when its bid is well above the cheapest funded host's,
+    why it still gets money. The split buys wherever the NEXT unit is cheapest, so a dearer click is worth it only if
+    more of those clicks turn into the goal (or, for a test host, to learn)."""
+    per = {"conversions": ("purchase", 1), "clicks": ("click", 1), "impressions": ("1,000 views", 1000), "reach": ("1,000 people", 1000)}
+    noun, scale = per[objective]
+    funded = [a for a in allocations if a.budget_usd > 0 and a.expected_units.mid > 0]
+    main = [a for a in funded if not a.exploration]
+    ref = min(main, key=lambda a: a.cpc_bid_usd) if main else None
+    cvr = lambda a: a.expected_conversions.mid / a.expected_clicks.mid if a.expected_clicks.mid else 0.0
+    for a in allocations:
+        if a not in funded:
+            a.bid_reason = ("Not funded at this budget: its next purchase would cost more than on the funded hosts. "
+                            "The bid shown is the market's lower quartile, a starting point if budget is added.")
+            continue
+        cost = a.budget_usd / a.expected_units.mid * scale
+        text = f"About ${cost:,.2f} per {noun}"
+        if objective == "conversions":
+            text += f" ({cvr(a):.1%} of clicks expected to buy)"
+        text += "."
+        if a.exploration:
+            text += " A small learning test: we accept a higher cost here to find out whether this host works."
+        elif ref and a is not ref and a.cpc_bid_usd >= 1.25 * ref.cpc_bid_usd:
+            ref_cost = ref.budget_usd / ref.expected_units.mid * scale
+            text += f" Its bid is higher than {ref.publisher_name}'s (${a.cpc_bid_usd:.2f} vs ${ref.cpc_bid_usd:.2f}) because clicks here are harder to win"
+            if objective == "conversions" and cvr(a) > 1.05 * cvr(ref):
+                text += (f", but {cvr(a):.1%} of them are expected to buy vs {cvr(ref):.1%}, so a purchase costs "
+                         f"${cost:,.2f} vs ${ref_cost:,.2f}.")
+            else:
+                text += (f"; it still gets budget because {ref.publisher_name}'s next {noun} would cost more than this one: "
+                         f"we spend wherever the next {noun} is cheapest.")
+        a.bid_reason = text
 
 
 # ------------------------------------------------------------------ 5. bid strategy

@@ -1,7 +1,8 @@
 # Disco Campaign Planner
 
 One sentence from an advertiser → ranked publishers (with exclusions and reasons), 3–5 persona-tuned creatives,
-and a launchable campaign config. A second tab simulates serving: one shopper, only **platform + zip + first name**.
+and a launchable campaign config, on one page. Serving (one shopper, only **platform + zip + first name**) is code in
+`src/disco_planner/serving/`, tested and evaluated but not part of the demo page.
 
 **Demo:** https://discocampaignplanner.streamlit.app · **Local:** `pip install -r requirements.txt`, put `GEMINI_API_KEY=…` in `.env`,
 `streamlit run app/streamlit_app.py` (no key: the 15 examples run from a committed cache) · `pytest` · `python -m disco_planner.eval.run --creatives --robustness`
