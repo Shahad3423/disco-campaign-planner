@@ -136,7 +136,16 @@
    "recommended": true,
    "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Affluent Classic (79% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (79% match).",
+    "Affordability: your price ($1200) is 9.4x what its shoppers usually spend ($128).",
+    "Host notes: Highest-average order value apparel publisher with a conservative brand sensibility matches luxury Italian craftsmanship."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -192,7 +201,16 @@
    "recommended": true,
    "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Affluent Classic (73% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (73% match).",
+    "Affordability: your price ($1200) is 10.7x what its shoppers usually spend ($112).",
+    "Host notes: Older affluent women with high average order value who respond to quality messaging align well with luxury handbags."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -248,7 +266,15 @@
    "recommended": true,
    "reason": "Recommended: it is in the same broad category (apparel). Strongest point, shopper-type match: its shoppers look most like The Gifter (71% match). Note: no host both sells this kind of product and has shoppers at this price, so treat it as a small test.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel and sustainable.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (71% match).",
+    "Affordability: your price ($1200) is 8.5x what its shoppers usually spend ($142)."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -302,7 +328,15 @@
    "recommended": false,
    "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel and gifting.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (92% match).",
+    "Affordability: your price ($1200) is 23.1x what its shoppers usually spend ($52); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -356,7 +390,15 @@
    "recommended": false,
    "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel and sustainable.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (85% match).",
+    "Affordability: your price ($1200) is 10.2x what its shoppers usually spend ($118); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -410,7 +452,15 @@
    "recommended": false,
    "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (74% match).",
+    "Affordability: your price ($1200) is 15.4x what its shoppers usually spend ($78); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -464,7 +514,15 @@
    "recommended": false,
    "reason": "Excluded: overall fit 0.07 is below this plan's bar of 0.08. Weakest point, affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: apparel.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (56% match).",
+    "Affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -518,7 +576,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (55% match).",
+    "Affordability: your price ($1200) is 42.9x what its shoppers usually spend ($28); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -572,7 +638,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (60% match).",
+    "Affordability: your price ($1200) is 28.6x what its shoppers usually spend ($42)."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -626,7 +700,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (67% match).",
+    "Affordability: your price ($1200) is 18.8x what its shoppers usually spend ($64); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -680,7 +762,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (59% match).",
+    "Affordability: your price ($1200) is 14.0x what its shoppers usually spend ($86)."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -734,7 +824,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (71% match).",
+    "Affordability: your price ($1200) is 16.4x what its shoppers usually spend ($73); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -788,7 +886,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (59% match).",
+    "Affordability: your price ($1200) is 7.3x what its shoppers usually spend ($164)."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -842,7 +948,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (43% match).",
+    "Affordability: your price ($1200) is 31.6x what its shoppers usually spend ($38); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -896,7 +1010,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (62% match).",
+    "Affordability: your price ($1200) is 19.7x what its shoppers usually spend ($61); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -950,7 +1072,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (56% match).",
+    "Affordability: your price ($1200) is 6.1x what its shoppers usually spend ($198)."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -1004,7 +1134,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (64% match).",
+    "Affordability: your price ($1200) is 16.2x what its shoppers usually spend ($74); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1058,7 +1196,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (58% match).",
+    "Affordability: your price ($1200) is 34.3x what its shoppers usually spend ($35); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1112,7 +1258,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (65% match).",
+    "Affordability: your price ($1200) is 25.0x what its shoppers usually spend ($48); its shoppers' income (mid) is below what a luxury product needs (high)."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1166,7 +1320,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: apparel (known for: gifting and sustainable).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (56% match).",
+    "Affordability: your price ($1200) is 28.6x what its shoppers usually spend ($42); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+   ]
   }
  ],
  "personas": [
@@ -1763,63 +1925,183 @@
    "publishers_exclude": [
     {
      "id": "pub_002",
-     "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan."
+     "reason": "Excluded: a reasonable fit, but the stronger hosts above already cover this plan.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: apparel.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (74% match).",
+      "Affordability: your price ($1200) is 15.4x what its shoppers usually spend ($78); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: overall fit 0.07 is below this plan's bar of 0.08. Weakest point, affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high)."
+     "reason": "Excluded: overall fit 0.07 is below this plan's bar of 0.08. Weakest point, affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high).",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: apparel.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Affluent Classic (56% match).",
+      "Affordability: your price ($1200) is 13.5x what its shoppers usually spend ($89); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (55% match).",
+      "Affordability: your price ($1200) is 42.9x what its shoppers usually spend ($28); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (60% match).",
+      "Affordability: your price ($1200) is 28.6x what its shoppers usually spend ($42)."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (67% match).",
+      "Affordability: your price ($1200) is 18.8x what its shoppers usually spend ($64); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (59% match).",
+      "Affordability: your price ($1200) is 14.0x what its shoppers usually spend ($86)."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (71% match).",
+      "Affordability: your price ($1200) is 16.4x what its shoppers usually spend ($73); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (59% match).",
+      "Affordability: your price ($1200) is 7.3x what its shoppers usually spend ($164)."
+     ]
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Affluent Classic (43% match).",
+      "Affordability: your price ($1200) is 31.6x what its shoppers usually spend ($38); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (62% match).",
+      "Affordability: your price ($1200) is 19.7x what its shoppers usually spend ($61); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (56% match).",
+      "Affordability: your price ($1200) is 6.1x what its shoppers usually spend ($198)."
+     ]
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and meal kits (known for: subscription).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (64% match).",
+      "Affordability: your price ($1200) is 16.2x what its shoppers usually spend ($74); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (58% match).",
+      "Affordability: your price ($1200) is 34.3x what its shoppers usually spend ($35); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (65% match).",
+      "Affordability: your price ($1200) is 25.0x what its shoppers usually spend ($48); its shoppers' income (mid) is below what a luxury product needs (high)."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: apparel (known for: gifting and sustainable).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (56% match).",
+      "Affordability: your price ($1200) is 28.6x what its shoppers usually spend ($42); its shoppers' income (mid-high) is below what a luxury product needs (high)."
+     ]
     }
    ],
    "personas": [

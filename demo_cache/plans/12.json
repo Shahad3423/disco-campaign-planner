@@ -147,7 +147,15 @@
    "recommended": true,
    "reason": "Recommended: it sells pet supplies and pet food (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (95% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: pet, pet supplies and pet food.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (95% match).",
+    "Host notes: Ruffco has the largest pet audience in the catalog."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -201,7 +209,15 @@
    "recommended": true,
    "reason": "Recommended: it sells pet supplies and pet food (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (93% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: pet, subscription, pet supplies and pet food.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (93% match).",
+    "Host notes: Pawline has a heavy subscription focus and health-conscious pet owners."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -255,7 +271,15 @@
    "recommended": true,
    "reason": "Recommended: it sells pet supplies and toys (a direct match). Strongest point, shopper-type match: its shoppers look most like The Pet Parent (85% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: pet, subscription, pet supplies and toys.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (85% match).",
+    "Host notes: Tailcrate specializes in pet supplies, subscriptions, toys, and treats."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -309,7 +333,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (gifting), not the product itself. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: gifting.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (77% match)."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -363,7 +394,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (subscription), not the product itself. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: subscription.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -417,7 +455,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: subscription.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (70% match)."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -471,7 +516,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: subscription.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (60% match)."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -525,7 +577,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: subscription.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (55% match)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -579,7 +638,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (55% match)."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -633,7 +699,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -687,7 +760,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -741,7 +821,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (73% match)."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -795,7 +882,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (61% match)."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -849,7 +943,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (71% match)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -903,7 +1004,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (42% match)."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -957,7 +1065,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (68% match)."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -1011,7 +1126,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (62% match)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -1065,7 +1187,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1119,7 +1248,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (47% match)."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1173,7 +1309,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Pet Parent (61% match)."
+   ]
   }
  ],
  "personas": [
@@ -1765,63 +1908,168 @@
    "publishers_exclude": [
     {
      "id": "pub_008",
-     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: subscription.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (70% match)."
+     ]
     },
     {
      "id": "pub_002",
-     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: subscription.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (60% match)."
+     ]
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (subscription), not the product itself.",
+     "why": [
+      "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: subscription.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (55% match)."
+     ]
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (55% match)."
+     ]
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (72% match)."
+     ]
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: casual, mid-life and women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+     ]
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: classic, mid-life and women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (73% match)."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (61% match)."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (71% match)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (42% match)."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (68% match)."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (62% match)."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (72% match)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (47% match)."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: pet, pet supplies, toys and pet food (known for: subscription and gifting).",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Pet Parent (61% match)."
+     ]
     }
    ],
    "personas": [

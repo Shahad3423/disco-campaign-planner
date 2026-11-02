@@ -289,14 +289,22 @@ def render_publishers(plan: CampaignPlan) -> None:
             if s.flags:
                 st.markdown(flag_badges(s.flags), unsafe_allow_html=True)
             st.markdown(md(s.reason))
-            render_component_breakdown(s)
-    st.markdown(f"**Excluded and why** ({len(excluded)})")
-    if excluded:
-        st.markdown("\n".join(f"- **{html.escape(s.publisher_name)}** <span class='muted'>(fit {s.score:.2f})</span>: "
-                              f"{md(s.reason.removeprefix('Excluded: '))}" for s in excluded), unsafe_allow_html=True)
-        with st.expander("Score components for excluded publishers"):
-            for s in excluded:
-                st.markdown(f"**{s.publisher_name}**")
+            if s.why:
+                st.markdown("\n".join(f"- {md(html.escape(w))}" for w in s.why))
+            with st.popover("Score breakdown"):
+                render_component_breakdown(s)
+    st.markdown(f"**Excluded and why** ({len(excluded)})  \n<span class='muted'>Open a host for what it sells against your "
+                "product, the audience check with its numbers, shopper types and price.</span>", unsafe_allow_html=True)
+    for s in excluded:
+        summary = s.reason.removeprefix("Excluded: ").split(" We'll still test")[0]
+        label = f"{s.publisher_name} · fit {s.score:.2f}" + (" · small learning test" if s.exploration else "")
+        with st.expander(label):
+            st.markdown(f"**Why not:** {md(html.escape(summary))}")
+            if s.why:
+                st.markdown("\n".join(f"- {md(html.escape(w))}" for w in s.why))
+            if s.exploration:
+                st.caption("We'll still test it with a small separate budget, to learn whether it works.")
+            with st.popover("Score breakdown"):
                 render_component_breakdown(s)
 
 

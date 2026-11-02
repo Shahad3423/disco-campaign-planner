@@ -464,3 +464,11 @@ with a passing line 43% -> 61% -> 73%; critic-approved claims 88% -> 95% -> 94%;
 mostly vague briefs still waiting on clarifying questions and personas with a weak link to the product. Not done: writing
 creatives only after a vague brief is clarified (a product decision).
 
+## D36. Every host verdict comes with its facts
+A one-line reason ("it doesn't sell anything related to your product") hid the case that matters most for D26: a host in
+the wrong category whose shoppers are the right audience. `PublisherScore.why` now lists, from the score's own inputs: what
+the host sells (and is known for) against the product's tags, what they have in common, the audience check with its numbers
+and its bar ("38% of its shoppers are in the audience you stated; recommending a host on audience alone needs at least 70%";
+or that no audience was stated, or that a gender alone can't qualify a host), shopper-type match, affordability and host
+notes. No scoring change. In the app each excluded host opens to these lines; the config's `publishers_exclude` carries them.
+

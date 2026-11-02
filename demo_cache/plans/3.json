@@ -141,7 +141,15 @@
    "recommended": true,
    "reason": "Recommended: it sells functional beverages and soda alternative (a direct match). Strongest point, shopper-type match: its shoppers look most like The Fitness Enthusiast (93% match). Note: it also sells functional beverages, so it may need to opt in to show a competing brand.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: beverages, functional beverages and soda alternative.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (93% match).",
+    "Host notes: Strong overlap with health-curious and functional beverage shoppers."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -195,7 +203,14 @@
    "recommended": true,
    "reason": "Recommended: it is in the same broad category (wellness direct-to-consumer). Strongest point, shopper-type match: its shoppers look most like The Fitness Enthusiast (87% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: wellness direct-to-consumer.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (87% match)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -249,7 +264,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "none",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (66% match).",
+    "Host notes: High-frequency impulse shoppers on an instant delivery platform are a great fit for a ready-to-drink beverage."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -303,7 +326,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "none",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (84% match)."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -357,7 +387,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (62% match)."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -411,7 +448,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (46% match)."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -465,7 +509,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (46% match)."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -519,7 +570,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -573,7 +631,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -627,7 +692,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -681,7 +753,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (70% match)."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -735,7 +814,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -789,7 +875,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (64% match)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -843,7 +936,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (98% match)."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -897,7 +997,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (61% match)."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -951,7 +1058,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (64% match)."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -1005,7 +1119,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (78% match)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -1059,7 +1180,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (94% match)."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1113,7 +1241,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (67% match)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1167,7 +1302,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (99% match)."
+   ]
   }
  ],
  "personas": [
@@ -1686,67 +1828,179 @@
    "publishers_exclude": [
     {
      "id": "pub_003",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (62% match)."
+     ]
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: casual, mid-life and women).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (46% match)."
+     ]
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: classic, mid-life and women).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (46% match)."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (74% match)."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+     ]
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (70% match)."
+     ]
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, basics, socks and underwear (known for: gifting).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (72% match)."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (64% match)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (98% match)."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (61% match)."
+     ]
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and meal kits (known for: subscription).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (64% match)."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (78% match)."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (94% match)."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (67% match)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: beverages, functional beverages, wellness direct-to-consumer and soda alternative.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (99% match)."
+     ]
     }
    ],
    "personas": [
@@ -1844,7 +2098,7 @@
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.05,
+  "matching": 0.0,
   "creative": 0.13
  },
  "creative_log": {

@@ -102,7 +102,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 99% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (100% match)."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -156,7 +163,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 94% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (90% match)."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -210,7 +224,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 96% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -264,7 +285,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 82% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (82% match)."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -318,7 +346,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 98% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (73% match)."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -372,7 +407,14 @@
    "recommended": false,
    "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: nothing specific (known for: women).",
+    "In common: women.",
+    "Audience: 89% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (61% match)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -426,7 +468,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 48% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (63% match)."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -480,7 +529,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 74% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (69% match)."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -534,7 +590,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 62% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -588,7 +651,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 71% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (86% match)."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -642,7 +712,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 64% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -696,7 +773,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 58% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (92% match)."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -750,7 +834,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 69% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (66% match)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -804,7 +895,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 91% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (51% match)."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -858,7 +956,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 78% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (67% match)."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -912,7 +1017,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 67% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (91% match)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -966,7 +1078,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 52% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1020,7 +1139,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 73% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (62% match)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1074,7 +1200,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 93% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (56% match)."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1128,7 +1261,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: nothing specific (known for: women).",
+    "In common: nothing.",
+    "Audience: 71% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+    "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (58% match)."
+   ]
   }
  ],
  "personas": [
@@ -1374,83 +1514,223 @@
    "publishers_exclude": [
     {
      "id": "pub_006",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 99% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (100% match)."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 94% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (90% match)."
+     ]
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: apparel and workwear (known for: casual, mid-life and women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 96% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+     ]
     },
     {
      "id": "pub_002",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 82% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (82% match)."
+     ]
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: apparel and workwear (known for: classic, mid-life and women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 98% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (73% match)."
+     ]
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: the only link is a shared trait (women), not the product itself."
+     "reason": "Excluded: the only link is a shared trait (women), not the product itself.",
+     "why": [
+      "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+      "Your product: nothing specific (known for: women).",
+      "In common: women.",
+      "Audience: 89% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (61% match)."
+     ]
     },
     {
      "id": "pub_001",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 48% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (63% match)."
+     ]
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 74% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (69% match)."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 62% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (74% match)."
+     ]
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 71% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (86% match)."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 64% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (74% match)."
+     ]
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, basics, socks and underwear (known for: gifting).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 58% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (92% match)."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 69% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (66% match)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 91% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (51% match)."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 78% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (67% match)."
+     ]
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and meal kits (known for: subscription).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 67% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (91% match)."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 52% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (79% match)."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 73% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (62% match)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 93% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (56% match)."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: nothing specific (known for: women).",
+      "In common: nothing.",
+      "Audience: 71% of its shoppers match the gender you stated, but one trait matches about half of all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.",
+      "Shopper-type match: its shoppers look most like The Value-Conscious Shopper (58% match)."
+     ]
     }
    ],
    "personas": [

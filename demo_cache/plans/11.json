@@ -142,7 +142,15 @@
    "recommended": true,
    "reason": "Recommended: it sells supplements (a direct match). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (96% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: supplements and wellness direct-to-consumer.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (96% match).",
+    "Host notes: Daily Form audience is skeptical of unsubstantiated health claims, and the brief lacks nutritional or ingredient proof."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -196,7 +204,15 @@
    "recommended": true,
    "reason": "Recommended: it sells fitness classes (a partial match). Strongest point, shopper-type match: its shoppers look most like The Wellness Optimizer (71% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: fitness classes.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (71% match).",
+    "Host notes: Studiogrid users actively spending on fitness and self-care align well with sports nutrition."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -250,7 +266,14 @@
    "recommended": false,
    "reason": "Excluded: overall fit 0.31 is below this plan's bar of 0.32. Weakest point, product match: it shares only the broad category (groceries), not your kind of product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: groceries.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (69% match)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -304,7 +327,14 @@
    "recommended": false,
    "reason": "Excluded: overall fit 0.29 is below this plan's bar of 0.32. Weakest point, product match: it shares only the broad category (groceries), not your kind of product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "topic",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: groceries.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (70% match)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -358,7 +388,14 @@
    "recommended": false,
    "reason": "Excluded: overall fit 0.29 is below this plan's bar of 0.32. Weakest point, product match: it shares only the broad category (groceries), not your kind of product.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: groceries.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (66% match)."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -412,7 +449,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (84% match).",
+    "Host notes: Fitness-engaged shoppers at Movewell are a direct audience for protein bars."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -466,7 +511,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (66% match)."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -520,7 +572,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (46% match)."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -574,7 +633,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -628,7 +694,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -682,7 +755,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (70% match)."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -736,7 +816,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -790,7 +877,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (70% match)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -844,7 +938,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (60% match)."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -898,7 +999,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (73% match)."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -952,7 +1060,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (78% match)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -1006,7 +1121,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (94% match)."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1060,7 +1182,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (71% match)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1114,7 +1243,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Wellness Optimizer (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1168,7 +1304,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Fitness Enthusiast (93% match)."
+   ]
   }
  ],
  "personas": [
@@ -1662,67 +1805,180 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Excluded: overall fit 0.29 is below this plan's bar of 0.32. Weakest point, product match: it shares only the broad category (groceries), not your kind of product."
+     "reason": "Excluded: overall fit 0.29 is below this plan's bar of 0.32. Weakest point, product match: it shares only the broad category (groceries), not your kind of product.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: groceries.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (66% match)."
+     ]
     },
     {
      "id": "pub_002",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (84% match).",
+      "Host notes: Fitness-engaged shoppers at Movewell are a direct audience for protein bars."
+     ]
     },
     {
      "id": "pub_004",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: casual, mid-life and women).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (66% match)."
+     ]
     },
     {
      "id": "pub_005",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and workwear (known for: classic, mid-life and women).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (46% match)."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (74% match)."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (63% match)."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (70% match)."
+     ]
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, basics, socks and underwear (known for: gifting).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (72% match)."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (70% match)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (60% match)."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (73% match)."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (78% match)."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (94% match)."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (71% match)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Wellness Optimizer (72% match)."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: supplements, wellness direct-to-consumer, fitness classes and groceries.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Fitness Enthusiast (93% match)."
+     ]
     }
    ],
    "personas": [

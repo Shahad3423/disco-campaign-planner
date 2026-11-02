@@ -138,7 +138,15 @@
    "recommended": true,
    "reason": "Recommended: it sells bedding and home textiles (a direct match). Strongest point, host notes: Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers. Note: it also sells bedding, so it may need to opt in to show a competing brand.",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: bedding, home and home textiles.",
+    "In common: bedding, home and home textiles.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (69% match).",
+    "Host notes: Northbed sells bedding, bath, and home textiles to design-conscious urban/suburban buyers."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -192,7 +200,14 @@
    "recommended": true,
    "reason": "Recommended: it is in the same broad category (home). Strongest point, shopper-type match: its shoppers look most like The Sustainability Buyer (66% match).",
    "relevance_source": "topic",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: bedding, home and home textiles.",
+    "In common: home.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (66% match)."
+   ]
   },
   {
    "publisher_id": "pub_001",
@@ -246,7 +261,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (71% match)."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -300,7 +322,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -354,7 +383,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (67% match)."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -408,7 +444,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "none",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (73% match).",
+    "Host notes: Marlowe & Co. features older affluent women who respond to quality messaging."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -462,7 +506,15 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product. We'll still test it with a small separate budget, to learn whether it works.",
    "relevance_source": "none",
-   "exploration": true
+   "exploration": true,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Affluent Classic (79% match).",
+    "Host notes: Linden Park targets high-spending, conservative brand sensibility shoppers."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -516,7 +568,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (74% match)."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -570,7 +629,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (68% match)."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -624,7 +690,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (68% match)."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -678,7 +751,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (75% match)."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -732,7 +812,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (92% match)."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -786,7 +873,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (66% match)."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -840,7 +934,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (98% match)."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -894,7 +995,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (69% match)."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -948,7 +1056,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (71% match)."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -1002,7 +1117,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gifter (85% match)."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1056,7 +1178,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Sustainability Buyer (72% match)."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1110,7 +1239,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (99% match)."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1164,7 +1300,14 @@
    "recommended": false,
    "reason": "Excluded: it doesn't sell anything related to your product.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: bedding, home and home textiles.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells.",
+    "Shopper-type match: its shoppers look most like The Gen Z Aesthete (83% match)."
+   ]
   }
  ],
  "personas": [
@@ -1667,67 +1810,179 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (71% match)."
+     ]
     },
     {
      "id": "pub_002",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (74% match)."
+     ]
     },
     {
      "id": "pub_003",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (67% match)."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (74% match)."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (68% match)."
+     ]
     },
     {
      "id": "pub_008",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (68% match)."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (75% match)."
+     ]
     },
     {
      "id": "pub_010",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel, basics, socks and underwear (known for: gifting).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (92% match)."
+     ]
     },
     {
      "id": "pub_012",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (66% match)."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (98% match)."
+     ]
     },
     {
      "id": "pub_015",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: groceries and meal kits (known for: subscription).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (69% match)."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (71% match)."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gifter (85% match)."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Sustainability Buyer (72% match)."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (99% match)."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Excluded: it doesn't sell anything related to your product."
+     "reason": "Excluded: it doesn't sell anything related to your product.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: bedding, home and home textiles.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells.",
+      "Shopper-type match: its shoppers look most like The Gen Z Aesthete (83% match)."
+     ]
     }
    ],
    "personas": [

@@ -90,7 +90,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: alcohol, convenience, groceries, household and instant delivery.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_002",
@@ -144,7 +150,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear and apparel (known for: men, subscription and women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_003",
@@ -198,7 +210,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_004",
@@ -252,7 +270,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: casual, mid-life and women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_005",
@@ -306,7 +330,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and workwear (known for: classic, mid-life and women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_006",
@@ -360,7 +390,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, intimates, plus size and workwear (known for: women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_007",
@@ -414,7 +450,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food and pet supplies (known for: subscription).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_008",
@@ -468,7 +510,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and pantry (known for: natural, organic and subscription).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_009",
@@ -522,7 +570,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet food, pet pharmacy and pet supplies.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_010",
@@ -576,7 +630,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel, basics, socks and underwear (known for: gifting).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_011",
@@ -630,7 +690,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: bath, bedding, home and home textiles.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_012",
@@ -684,7 +750,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_013",
@@ -738,7 +810,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_014",
@@ -792,7 +870,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: cookware, home, kitchen and non toxic.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_015",
@@ -846,7 +930,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: groceries and meal kits (known for: subscription).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_016",
@@ -900,7 +990,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: apparel and shoes (known for: sustainable and women).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_017",
@@ -954,7 +1050,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: activewear, apparel and shoes (known for: sustainable).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_018",
@@ -1008,7 +1110,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_019",
@@ -1062,7 +1170,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   },
   {
    "publisher_id": "pub_020",
@@ -1116,7 +1230,13 @@
    "recommended": false,
    "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
    "relevance_source": "none",
-   "exploration": false
+   "exploration": false,
+   "why": [
+    "Sells: beverages, functional beverages, gut health and soda alternative.",
+    "Your product: no tags were found.",
+    "In common: nothing.",
+    "Audience: you didn't state one, so this host can only qualify through what it sells."
+   ]
   }
  ],
  "personas": [
@@ -1248,83 +1368,203 @@
    "publishers_exclude": [
     {
      "id": "pub_001",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: alcohol, convenience, groceries, household and instant delivery.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_002",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: activewear and apparel (known for: men, subscription and women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_003",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: fitness classes, personal training, spa, wellness services and yoga.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_004",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: apparel and workwear (known for: casual, mid-life and women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_005",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: apparel and workwear (known for: classic, mid-life and women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_006",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: apparel, intimates, plus size and workwear (known for: women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_007",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: pet, pet food and pet supplies (known for: subscription).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_008",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: groceries and pantry (known for: natural, organic and subscription).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_009",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: pet, pet food, pet pharmacy and pet supplies.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_010",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: apparel, basics, socks and underwear (known for: gifting).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_011",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: bath, bedding, home and home textiles.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_012",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: supplements, vitamins and wellness direct-to-consumer (known for: subscription and women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_013",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: beauty, makeup and skincare (known for: direct-to-consumer).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_014",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: cookware, home, kitchen and non toxic.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_015",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: groceries and meal kits (known for: subscription).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_016",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: apparel and shoes (known for: sustainable and women).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_017",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: activewear, apparel and shoes (known for: sustainable).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_018",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: pet, pet supplies, toys and treats (known for: subscription).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_019",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: beauty and haircare (known for: direct-to-consumer and personalized).",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     },
     {
      "id": "pub_020",
-     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience."
+     "reason": "Not recommended: The advertiser provided no information about their product, category, pricing, or audience.",
+     "why": [
+      "Sells: beverages, functional beverages, gut health and soda alternative.",
+      "Your product: no tags were found.",
+      "In common: nothing.",
+      "Audience: you didn't state one, so this host can only qualify through what it sells."
+     ]
     }
    ],
    "personas": [],
