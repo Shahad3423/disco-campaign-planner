@@ -3,9 +3,9 @@
 "Before" = artifacts produced with the previous scoring (competitor penalty, hand-set exponents);
 "after" = re-runs with the current code (LLM outputs come from the cache, so differences are the code's).
 
-    python -m disco_planner.eval.pipeline_report --before-golden reports/eval_v3c_bids_goals.json \
-        --after-golden reports/eval_v5.json --before-holdout reports/holdout_before.json \
-        --after-holdout reports/holdout.json --before-plans reports/holdout_plans_before
+    python -m disco_planner.eval.pipeline_report --before-golden reports/history/eval_v3c_bids_goals.json \
+        --after-golden reports/history/eval_v5.json --before-holdout reports/history/holdout_before.json \
+        --after-holdout reports/holdout.json --before-plans reports/history/holdout_plans_before
 """
 from __future__ import annotations
 
