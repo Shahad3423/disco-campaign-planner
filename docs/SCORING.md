@@ -1,5 +1,64 @@
 # Scoring: what the numbers are, which ones matter, and how they become learned
 
+## 0. In plain language: how a host gets its score
+
+For every host we ask three questions, and multiply the answers:
+
+1. **Will this host's shoppers care about the product?** (`category_fit`, 0 to 1)
+2. **Can they afford it?** (`price_fit`, 0 to 1, entering as its square root)
+3. **Is everything else about the match good?** (`quality`, a weighted average of up to five parts)
+
+Multiplying is deliberate: a host that is irrelevant or unaffordable can't be rescued by a good audience match.
+
+**The five quality parts** (weights in `config/scoring.yaml`, hand-set):
+
+| Part | Weight | In one line |
+|---|---|---|
+| `persona_fit` | 0.35 | Would the shopper types who buy this product be shopping at this host? |
+| `audience_fit` | 0.30 | Gender and age overlap between the advertiser's stated buyer and the host's shoppers. |
+| `notes_fit` | 0.20 | Did the LLM find the host's free-text notes supportive, neutral or in conflict? |
+| `seasonality` | 0.10 | Gifting products only: is it gifting season and a gifting host? |
+| `scale` | 0.05 | Log of monthly impressions. Tiny, so big hosts don't win on size alone. |
+
+A part we have no information on (no stated audience, not a gifting product) is **left out and the remaining
+weights are rescaled**, rather than filled with a neutral number that would pretend to know something (D25).
+
+### Why `persona_fit` takes three steps
+
+The data has no direct link between an advertiser and a host. What it does have is **personas** (who buys what)
+and each **host's demographics**. So the chain goes advertiser -> plausible personas -> how present those
+personas are on this host. This is the "two-hop" design. The persona weights are computed anyway to choose which
+personas to write creatives for, so reusing them here costs almost nothing.
+
+```
+persona_fit(host) = sum over personas of  weight(persona) x host_fit(persona, host)  /  sum of weights
+
+weight(persona)  = affinity x price_compat x audience_compat      "how likely is this persona to buy THIS advertiser?"
+  affinity         0.6 for one shared interest tag, +0.2 per extra tag (cap 1); 0 if none
+  price_compat     lookup: advertiser price tier x persona price sensitivity (table in scoring.yaml)
+  audience_compat  0.5 x gender match + 0.5 x age overlap (1.0 if the advertiser stated neither)
+host_fit(persona, host) = mean(age overlap, gender term, category term)   "how present is this persona on THIS host?"
+```
+
+**Worked example** (a premium dog-walking-gear brand targeting women 25-45, scored on Pawline, whose shoppers are
+30-55 and 62% female). Two personas are plausible:
+
+| | weight = affinity x price x audience | host_fit = mean(age, gender, category) |
+|---|---|---|
+| Pet Parent | 0.60 x 0.90 x 0.825 = **0.446** | (0.91 + 0.88 + 1.0) / 3 = **0.930** |
+| Affluent Classic | 0.60 x 1.00 x 0.65 = **0.390** | (0.28 + 0.62 + 0.4) / 3 = **0.433** |
+
+`persona_fit = (0.446 x 0.930 + 0.390 x 0.433) / (0.446 + 0.390) = 0.698`. The Pet Parent fits the host well and
+counts for more; the Affluent Classic (50-68) is a weak fit and pulls the average down from 0.93.
+With all five parts known, Pawline's quality is 0.30 x 0.685 + 0.35 x 0.698 + 0.20 x 1.0 + 0.05 x 0.158 +
+0.10 x 0.3 = 0.688, and with `category_fit` = `price_fit` = 1.0 its score is 0.688.
+
+**Known weaknesses, stated plainly.** The numbers inside this chain (0.6 and 0.2 for tags, 0.8 and 0.3 for
+gender, 0.4 for a category miss, the whole `price_compat` table) are hand-set, not fitted. Price and audience
+enter twice: once inside the persona weights and again as `price_fit` and `audience_fit`. We tested what that
+costs (EXPERIMENTS.md, "Is the persona branch worth its length?"): removing `persona_fit` hurts, and removing the
+double counting changes nothing measurable.
+
 ## 1. The score
 
 ```
