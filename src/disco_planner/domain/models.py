@@ -127,6 +127,8 @@ class PublisherScore(BaseModel):
     reason: str
     relevance_source: Literal["topic", "audience", "none"] = "topic"
     exploration: bool = Field(default=False, description="excluded from the main plan, but worth a small paid test")
+    why: list[str] = Field(default_factory=list, description="plain-English breakdown: what it sells vs your product, "
+                           "the audience check with numbers, shopper types, price")
 
 
 class PersonaMatch(BaseModel):

@@ -40,8 +40,8 @@ def match(detail: str, value: float | None = None, recommended: bool = False) ->
 
     d = re.sub(r" \(multiplier[^)]*\)$", "", detail)
     if d.startswith("audience-led"):
-        m = re.search(r"(\d+)% of this host's shoppers are your likely buyers.*?([\d.]+)x the share", d)
-        return (f"it sells something different, but {m[1]}% of its shoppers are the people you target ({m[2]}x the usual share)"
+        m = re.search(r"(\d+)% of this host's shoppers are (?:in your stated audience|your likely buyers)", d)
+        return (f"it sells something different, but {m[1]}% of its shoppers are in the audience you stated"
                 if m else "it sells something different, but its shoppers are the people you target")
     if d.startswith("no category link"):
         return "it doesn't sell anything related to your product"
@@ -118,3 +118,50 @@ BADGES = {"competitor_conflict": "needs host approval", "weak_network_fit": "sma
 
 def badge(f: str) -> str:
     return next((v for k, v in BADGES.items() if f.startswith(k)), f.split(":")[0].replace("_", " "))
+
+
+def breakdown(profile, pub, components, relevance_source: str, audience: dict) -> list[str]:
+    """The facts behind a host's verdict, one line each: what it sells against your product, the audience check with its
+    numbers and its bar, shopper types, price and host notes. A host with the wrong category but the right audience can
+    still qualify (D26); this says how close it came."""
+    from disco_planner.data import catalog
+
+    traits = set(catalog.config("scoring")["generic_tags"])
+
+    def described(tag_list: list[str]) -> str:
+        sells = [t for t in tag_list if t not in traits]
+        known = [t for t in tag_list if t in traits]
+        text = tags(", ".join(sells)) if sells else "nothing specific"
+        return text + (f" (known for: {tags(', '.join(known))})" if known else "")
+
+    yours = [t.tag for t in sorted(profile.relevant_tags, key=lambda t: -t.weight)]
+    common = [t for t in yours if t in pub.tags]
+    lines = [f"Sells: {described(sorted(pub.tags))}.",
+             f"Your product: {described(yours[:6])}." if yours else "Your product: no tags were found.",
+             f"In common: {tags(', '.join(common))}." if common else "In common: nothing."]
+    density, minimum = audience["density"], audience["minimum"]
+    if density is None:
+        lines.append("Audience: you didn't state one, so this host can only qualify through what it sells.")
+    elif audience["needs_age"] and not audience["age_stated"]:
+        lines.append(f"Audience: {density:.0%} of its shoppers match the gender you stated, but one trait matches about half of "
+                     "all shoppers, so it can't qualify a host alone. Stating an age range would let the audience count.")
+    else:
+        text = f"Audience: {density:.0%} of its shoppers are in the audience you stated ({audience_words(audience['detail'])})."
+        if relevance_source == "audience":
+            text += " That is enough to recommend it on audience alone, even though it sells something different."
+        elif not common:
+            text += f" Recommending a host on audience alone needs at least {minimum:.0%}, so it falls short."
+        lines.append(text)
+    by_name = {c.name: c for c in components}
+    for name in ("persona_fit", "price_fit", "notes_fit"):
+        c = by_name.get(name)
+        if c is not None and c.value is not None and not (name == "notes_fit" and c.detail == "no read on notes"):
+            lines.append(f"{NAMES[name]}: {component(c)}.")
+    return lines
+
+
+def audience_words(detail: str) -> str:
+    """audience_density detail -> '62% women x 75% of ages 30-55 inside 25-45'."""
+    d = detail.replace("female", "women").replace(" male", " men").replace(" x ", " and ")
+    return re.sub(r"(\d+)% of ages (\S+) inside (\S+)", r"\1% of its ages \2 fall in your \3", d)
+

@@ -246,9 +246,14 @@ def score_publisher(
         score *= cfg["penalties"]["notes_misaligned"]
         flags.append(f"audience_note_conflict: {notes_d}")
 
+    rel = cfg["relevance"]
+    density, density_d = audience_density(profile, pub)
+    audience = dict(density=density, detail=density_d, age_stated=bool(_age_range(profile.target_age_range)),
+                    needs_age=rel["audience_requires_age"], minimum=rel["audience_evidence_min"])
     return PublisherScore(
         publisher_id=pub.id, publisher_name=pub.name, score=round(score, 4),
         components=components, flags=flags, recommended=False, reason="", relevance_source=rel_source,
+        why=explain.breakdown(profile, pub, components, rel_source, audience),
     )
 
 

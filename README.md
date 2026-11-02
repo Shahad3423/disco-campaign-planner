@@ -26,7 +26,7 @@ profile on the catalog's closed vocabularies; everything after that is determini
   eCPM auction, in milliseconds, no LLM. **Speed:** the plan shows after intake (~13 s); creatives stream in after (~45 s).
 
 Prompts: `prompts/`. Architecture, engineering decisions and the production path: `docs/ARCHITECTURE.md`. Every decision and
-rejected alternative: `docs/DECISIONS.md` (D1–D35). The score with a worked example: `docs/SCORING.md` §0.
+rejected alternative: `docs/DECISIONS.md` (D1–D36). The score with a worked example: `docs/SCORING.md` §0.
 
 ## Results (`docs/EXPERIMENTS.md`, `reports/`)
 | hosts (15 briefs, labels written blind) | | creatives (fresh run, 44 personas) | | money (simulated market) | |
