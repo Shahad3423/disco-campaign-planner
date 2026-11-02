@@ -44,3 +44,27 @@ back to the hand-set values; the holdout is split 49 DEV / 51 TEST (eval/holdout
 only and is adopted only if it holds on TEST; holdout behaviour is reported on TEST only. Milder leak to
 disclose: the competitor-flag frequency (~6%) that motivated D21 was measured on golden + holdout plans; that
 was descriptive, not tuning, but it was a look at the test set.
+
+## Is the persona branch worth its length?
+`persona_fit` is the longest chain in the score (advertiser -> plausible personas -> presence on the host) and has
+the largest quality weight (0.35). Two simplifications were tested with the same harness as the other rule
+comparisons (`eval/compare_rules.py` machinery; 15 golden briefs re-parsed with the current intake, 49 DEV holdout
+brands on their stored profiles; judge = pairs where exactly one host is recommended).
+
+| Variant | Golden precision | Recall | Must-exclude violations | Hosts/plan | DEV judge | DEV order |
+|---|---|---|---|---|---|---|
+| A. current: persona weight = affinity x price x audience | 0.914 | 0.77 | 1 | 2.47 | 89.7% (n=78) | 70.4% |
+| B. remove `persona_fit` from the score | 0.876 | 0.67 | 1 | 1.93 | 84.9% (n=86) | 68.2% |
+| C. persona weight = affinity only | 0.914 | 0.77 | 1 | 2.47 | 89.5% (n=76) | 70.4% |
+
+- **B hurts.** Dropping the branch loses 10 points of recall, 5 points of judge preference, and shrinks plans to
+  1.9 hosts. The persona hop is earning its place.
+- **C changes nothing.** `price_compat` and `audience_compat` inside the persona weights are redundant with
+  `price_fit` and `audience_fit`: results are identical on golden and within 0.2 points on DEV. They matter for
+  *choosing* personas (a luxury brief should not write for the value-conscious shopper), so selection keeps them.
+- Not adopted yet: C would make each signal appear once in the host score, but needs two weight functions (one for
+  host scoring, one for selection) in the code. Same caveat as the other comparisons: 15 golden briefs and a
+  category-minded judge, and the test split was not used.
+- The baseline here (0.914 / 0.77 / 1 violation) is lower than the earlier 0.939 / 0.70 / 0 because the golden
+  briefs were re-parsed live after the D31 prompt change; intake output moves a little between runs.
+

@@ -11,7 +11,7 @@ and a launchable campaign config. A second tab simulates serving: one shopper, o
 The LLM handles language on **closed catalog vocabularies**; code does every number and rank, so each score has a visible breakdown.
 **score = relevance × affordability^0.5 × quality × P(host accepts)**: multiplicative like pCTR×pCVR, so a perfect audience can't
 rescue an irrelevant host; competitors (hosts selling the same thing, which can block us on their thank-you page) are flagged and
-discounted. Vague briefs get questions, B2B gets zero publishers, regulated claims ("FDA approved") are blocked in code.
+discounted. Vague briefs get questions, B2B gets zero publishers, regulated claims ("FDA approved") are blocked in code. A plain-language walkthrough of the score with a worked example: `docs/SCORING.md` §0.
 Prompts: `prompts/`. Weights and priors: `config/`. Every decision and rejected alternative: `docs/DECISIONS.md`.
 
 **Config shape:** what billing, serving and an approver each need: pricing (CPC default; CPM for reach goals; tCPA only after verified
