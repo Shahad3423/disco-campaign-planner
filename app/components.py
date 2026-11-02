@@ -295,7 +295,6 @@ def render_personas(plan: CampaignPlan) -> None:
     st.subheader("Personas")
     selected = [m for m in plan.personas if m.selected]
     rejected = [m for m in plan.personas if not m.selected]
-    names = {s.publisher_id: s.publisher_name for s in plan.publishers}
     if not selected:
         st.info("No personas selected.")
     cols = st.columns(min(3, max(1, len(selected))))
@@ -305,8 +304,6 @@ def render_personas(plan: CampaignPlan) -> None:
             st.markdown(bar(m.score), unsafe_allow_html=True)
             for r in m.reasons:
                 st.markdown(f"- {r}")
-            if m.best_publishers:
-                st.markdown("Best on: " + " ".join(badge(names.get(p, p)) for p in m.best_publishers), unsafe_allow_html=True)
     conflicts = {c.persona_id: c for c in plan.profile.persona_conflicts}
     if rejected:
         with st.expander(f"Excluded personas ({len(rejected)})"):

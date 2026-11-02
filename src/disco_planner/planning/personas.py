@@ -107,10 +107,9 @@ def select_personas(profile: AdvertiserProfile, publisher_scores: list[Publisher
             c = conflicts[persona.id]
             score = 0.0
             reasons.insert(0, f"EXCLUDED: conflicts with '{c.conflict}' because the brief says: {c.evidence}")
-        hosts = sorted(recommended, key=lambda p: host_fit(persona, p), reverse=True)
         matches.append(PersonaMatch(
             persona_id=persona.id, persona_name=persona.name, score=round(score, 3), selected=False,
-            reasons=reasons, best_publishers=[p.id for p in hosts[:3]],
+            reasons=reasons,
         ))
 
     matches.sort(key=lambda m: m.score, reverse=True)
