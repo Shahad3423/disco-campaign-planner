@@ -68,3 +68,12 @@ brands on their stored profiles; judge = pairs where exactly one host is recomme
 - The baseline here (0.914 / 0.77 / 1 violation) is lower than the earlier 0.939 / 0.70 / 0 because the golden
   briefs were re-parsed live after the D31 prompt change; intake output moves a little between runs.
 
+## Creatives that pass the critic (D35)
+Fresh generation on the 15 demo briefs, stored profiles (so the same 44 personas), no cache.
+| variant | passing variants | personas with a passing line | critic: claims OK | mean punch / persona fit (shipped) | median creative stage |
+|---|---|---|---|---|---|
+| before (claims list only, 4 candidates) | 33 / 88 | 19 / 44 (43%) | 88% | 3.36 / 3.47 | 33 s |
+| fact sheet + persona link + passing bar, 4 candidates | 43 / 60 | 27 / 44 (61%) | 95% | 3.72 / 3.93 | 32 s |
+| same, 6 candidates (adopted) | 55 / 67 | 32 / 44 (73%) | 94% | 3.90 / 4.13 | 48 s |
+Shipped counts fall because a failed line is dropped when its persona has a passing one.
+

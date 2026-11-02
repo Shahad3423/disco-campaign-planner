@@ -1267,102 +1267,104 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "Leave the resort gear behind",
-   "body": "Upgrade to the technical shells worn by ski patrollers.",
-   "cta": "Shop technical shells",
-   "headline_no_name": "Leave the resort gear behind",
-   "angle": "swap - replaces basic resort wear with high-performance patroller gear",
+   "headline": "What the ski patrol wears",
+   "body": "Technical outerwear shells built for serious backcountry skiers.",
+   "cta": "Shop patroller shells",
+   "headline_no_name": "What the ski patrol wears",
+   "angle": "the detail: leveraging the high-performance credibility of ski patrollers for a wellness optimizer",
    "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
    ]
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
+   "headline": "Trade basic gear for patroller grade",
+   "body": "These $650 technical outerwear shells are built for serious backcountry skiers.",
+   "cta": "Shop the shells",
+   "headline_no_name": "Trade basic gear for patroller grade",
+   "angle": "the swap: replacing standard gear with professional-grade outerwear",
+   "claims_used": [
+    "Our shells are what patrollers wear",
+    "Price: about $650",
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 1,
+   "headline": "For serious backcountry skiers",
+   "body": "Pack the technical outerwear shells that ski patrollers wear.",
+   "cta": "Shop the shells",
+   "headline_no_name": "For serious backcountry skiers",
+   "angle": "detail - leans on quality-focused preference and travel link",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "Pack what the patrollers wear",
+   "body": "Swap standard travel gear for the technical outerwear serious backcountry skiers wear.",
+   "cta": "Shop the shells",
+   "headline_no_name": "Pack what the patrollers wear",
+   "angle": "swap - leans on craftsmanship and travel packing",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 1,
+   "headline": "Shopping for a serious skier?",
+   "body": "Get them the $650 outerwear shell that actual ski patrollers wear.",
+   "cta": "Shop the patroller shell",
+   "headline_no_name": "Shopping for a serious skier?",
+   "angle": "the question - directly addresses the gifter looking to buy high-end equipment",
+   "claims_used": [
+    "Technical outerwear for serious backcountry skiers",
+    "Our shells are what patrollers wear",
+    "Price: about $650"
+   ]
+  },
+  {
+   "persona_id": "persona_010",
+   "variant": 2,
+   "headline": "Gift the shell ski patrollers wear",
+   "body": "Serious backcountry protection for their next big run.",
+   "cta": "Shop the shell",
+   "headline_no_name": "Gift the shell ski patrollers wear",
+   "angle": "the detail - highlights that patrollers wear this shell to appeal to the gifter looking for premium gear",
+   "claims_used": [
+    "Our shells are what patrollers wear",
+    "Technical outerwear for serious backcountry skiers"
+   ]
+  },
+  {
+   "persona_id": "persona_009",
+   "variant": 1,
    "headline": "What the ski patrol wears",
-   "body": "Technical outerwear made for serious backcountry skiers.",
+   "body": "Technical outerwear shells built for serious backcountry skiers.",
    "cta": "Shop technical shells",
    "headline_no_name": "What the ski patrol wears",
-   "angle": "the detail",
+   "angle": "the detail: highlights that ski patrollers wear these shells",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
    ]
   },
   {
-   "persona_id": "persona_005",
-   "variant": 1,
-   "headline": "The shell ski patrollers wear",
-   "body": "Technical outerwear engineered for serious backcountry skiers.",
-   "cta": "Shop the shells",
-   "headline_no_name": "The shell ski patrollers wear",
-   "angle": "detail - focuses on understated, reliable quality trusted by patrollers",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_005",
+   "persona_id": "persona_009",
    "variant": 2,
    "headline": "Built for the backcountry",
-   "body": "Technical outerwear for serious skiers. The exact shells patrollers wear.",
-   "cta": "Shop technical shells",
+   "body": "Technical shells worn by ski patrol, made for serious skiers.",
+   "cta": "Shop the shells",
    "headline_no_name": "Built for the backcountry",
-   "angle": "twist - classic phrasing emphasizing craftsmanship and serious utility",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 1,
-   "headline": "Buying for a backcountry skier?",
-   "body": "Give them the technical outerwear shells that ski patrollers wear.",
-   "cta": "Shop backcountry shells",
-   "headline_no_name": "Buying for a backcountry skier?",
-   "angle": "question - targets the gifter looking for a serious, high-end present",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_010",
-   "variant": 2,
-   "headline": "Gift the shell patrollers wear",
-   "body": "Technical outerwear shells for serious backcountry skiers.",
-   "cta": "Shop the gift",
-   "headline_no_name": "Gift the shell patrollers wear",
-   "angle": "detail - frames patroller-grade gear as a premium, impressive gift",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 1,
-   "headline": "Ditch the fashion jackets",
-   "body": "Get the technical outerwear shells worn by real ski patrollers.",
-   "cta": "Shop technical outerwear",
-   "headline_no_name": "Ditch the fashion jackets",
-   "angle": "swap - appeals to fitness enthusiasts who value true performance over fashion",
-   "claims_used": [
-    "Technical outerwear for serious backcountry skiers",
-    "Our shells are what patrollers wear"
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "headline": "Worn by the ski patrol",
-   "body": "Technical outerwear shells built for serious backcountry performance.",
-   "cta": "Shop technical shells",
-   "headline_no_name": "Worn by the ski patrol",
-   "angle": "detail - focuses on the ultimate athlete/professional endorsement",
+   "angle": "the payoff: serious backcountry performance",
    "claims_used": [
     "Technical outerwear for serious backcountry skiers",
     "Our shells are what patrollers wear"
@@ -1373,30 +1375,26 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "punch": 3,
-   "persona_fit": 2,
+   "punch": 4,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Does not appeal to the Wellness Optimizer's preference for science-backed, outcome-focused, or system-optimization messaging."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "punch": 3,
-   "persona_fit": 2,
+   "punch": 4,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Misses the persona's core motivations around physical optimization, data, and evidence-backed outcomes."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_005",
@@ -1425,7 +1423,7 @@
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "punch": 4,
+   "punch": 5,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1438,20 +1436,18 @@
    "persona_id": "persona_010",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "The CTA 'Shop the gift' feels slightly generic compared to product-focused CTAs, but acceptable."
-   ],
+   "issues": [],
    "passed": true
   },
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "punch": 4,
+   "punch": 5,
    "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
@@ -1464,7 +1460,7 @@
    "persona_id": "persona_009",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1870,66 +1866,74 @@
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "headline_template": "Leave the resort gear behind",
-    "headline_no_name": "Leave the resort gear behind",
-    "body": "Upgrade to the technical shells worn by ski patrollers.",
-    "cta": "Shop technical shells"
+    "headline_template": "What the ski patrol wears",
+    "headline_no_name": "What the ski patrol wears",
+    "body": "Technical outerwear shells built for serious backcountry skiers.",
+    "cta": "Shop patroller shells",
+    "review_passed": true
    },
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
-    "headline_template": "What the ski patrol wears",
-    "headline_no_name": "What the ski patrol wears",
-    "body": "Technical outerwear made for serious backcountry skiers.",
-    "cta": "Shop technical shells"
+    "headline_template": "Trade basic gear for patroller grade",
+    "headline_no_name": "Trade basic gear for patroller grade",
+    "body": "These $650 technical outerwear shells are built for serious backcountry skiers.",
+    "cta": "Shop the shells",
+    "review_passed": true
    },
    {
     "variant_id": "persona_005:1",
     "persona_id": "persona_005",
-    "headline_template": "The shell ski patrollers wear",
-    "headline_no_name": "The shell ski patrollers wear",
-    "body": "Technical outerwear engineered for serious backcountry skiers.",
-    "cta": "Shop the shells"
+    "headline_template": "For serious backcountry skiers",
+    "headline_no_name": "For serious backcountry skiers",
+    "body": "Pack the technical outerwear shells that ski patrollers wear.",
+    "cta": "Shop the shells",
+    "review_passed": true
    },
    {
     "variant_id": "persona_005:2",
     "persona_id": "persona_005",
-    "headline_template": "Built for the backcountry",
-    "headline_no_name": "Built for the backcountry",
-    "body": "Technical outerwear for serious skiers. The exact shells patrollers wear.",
-    "cta": "Shop technical shells"
+    "headline_template": "Pack what the patrollers wear",
+    "headline_no_name": "Pack what the patrollers wear",
+    "body": "Swap standard travel gear for the technical outerwear serious backcountry skiers wear.",
+    "cta": "Shop the shells",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:1",
     "persona_id": "persona_010",
-    "headline_template": "Buying for a backcountry skier?",
-    "headline_no_name": "Buying for a backcountry skier?",
-    "body": "Give them the technical outerwear shells that ski patrollers wear.",
-    "cta": "Shop backcountry shells"
+    "headline_template": "Shopping for a serious skier?",
+    "headline_no_name": "Shopping for a serious skier?",
+    "body": "Get them the $650 outerwear shell that actual ski patrollers wear.",
+    "cta": "Shop the patroller shell",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:2",
     "persona_id": "persona_010",
-    "headline_template": "Gift the shell patrollers wear",
-    "headline_no_name": "Gift the shell patrollers wear",
-    "body": "Technical outerwear shells for serious backcountry skiers.",
-    "cta": "Shop the gift"
+    "headline_template": "Gift the shell ski patrollers wear",
+    "headline_no_name": "Gift the shell ski patrollers wear",
+    "body": "Serious backcountry protection for their next big run.",
+    "cta": "Shop the shell",
+    "review_passed": true
    },
    {
     "variant_id": "persona_009:1",
     "persona_id": "persona_009",
-    "headline_template": "Ditch the fashion jackets",
-    "headline_no_name": "Ditch the fashion jackets",
-    "body": "Get the technical outerwear shells worn by real ski patrollers.",
-    "cta": "Shop technical outerwear"
+    "headline_template": "What the ski patrol wears",
+    "headline_no_name": "What the ski patrol wears",
+    "body": "Technical outerwear shells built for serious backcountry skiers.",
+    "cta": "Shop technical shells",
+    "review_passed": true
    },
    {
     "variant_id": "persona_009:2",
     "persona_id": "persona_009",
-    "headline_template": "Worn by the ski patrol",
-    "headline_no_name": "Worn by the ski patrol",
-    "body": "Technical outerwear shells built for serious backcountry performance.",
-    "cta": "Shop technical shells"
+    "headline_template": "Built for the backcountry",
+    "headline_no_name": "Built for the backcountry",
+    "body": "Technical shells worn by ski patrol, made for serious skiers.",
+    "cta": "Shop the shells",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1962,16 +1966,12 @@
  "timings_s": {
   "intake": 0.01,
   "matching": 0.0,
-  "creative": 56.14
+  "creative": 0.32
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   [
-    "persona_001",
-    2
-   ]
-  ],
-  "candidates": 16
+  "rounds": 1,
+  "rewritten": [],
+  "candidates": 20,
+  "dropped": []
  }
 }

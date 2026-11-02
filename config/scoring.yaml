@@ -75,7 +75,8 @@ personas:
   min_selected: 3        # the brief asks for 3-5 variants; below this we say the extras are exploratory
   max_selected: 5
   variants_per_persona: 2   # creatives per persona, each a different angle (A/B tested: split evenly at serving until a bandit learns)
-  candidates_per_persona: 4 # the writer drafts this many per persona; the critic scores them and code keeps the best
+  candidates_per_persona: 6 # the writer drafts this many per persona; the critic scores them and code keeps the best.
+                            # 6 vs 4 on 44 personas: personas with a passing line 61% -> 73%, +16 s (D35)
                             # variants_per_persona (write many, keep the best)
   # rows: advertiser price tier; columns: persona price_sensitivity
   price_compat:

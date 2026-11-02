@@ -1297,25 +1297,11 @@
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "Smells like real life",
-   "body": "Hand-poured in Vermont with natural soy wax and zero synthetic fragrances.",
-   "cta": "Find your scent",
-   "headline_no_name": "Smells like real life",
-   "angle": "twist - play on \"smells like...\" emphasizing natural ingredients",
-   "claims_used": [
-    "Small-batch candles poured by hand in Vermont",
-    "Natural soy wax",
-    "No synthetic fragrances"
-   ]
-  },
-  {
-   "persona_id": "persona_003",
-   "variant": 2,
-   "headline": "Set a spooky mood naturally",
-   "body": "Hand-poured Vermont soy candles made without synthetic fragrances.",
-   "cta": "Shop Vermont candles",
-   "headline_no_name": "Set a spooky mood naturally",
-   "angle": "moment - Halloween spooky vibe with natural ingredients",
+   "headline": "Poured by hand, not by robots",
+   "body": "Small-batch soy candles from Vermont made with natural wax and zero synthetic fragrances.",
+   "cta": "Shop natural candles",
+   "headline_no_name": "Poured by hand, not by robots",
+   "angle": "the twist: playing on hand-poured vs industrial manufacturing",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
@@ -1325,84 +1311,86 @@
   {
    "persona_id": "persona_005",
    "variant": 1,
-   "headline": "A cleaner, quieter burn",
-   "body": "Natural soy wax hand-poured in Vermont with no synthetic fragrances.",
-   "cta": "Shop the collection",
-   "headline_no_name": "A cleaner, quieter burn",
-   "angle": "payoff - the tangible quality result of natural soy and no synthetics",
-   "claims_used": [
-    "Small-batch candles poured by hand in Vermont",
-    "Natural soy wax",
-    "No synthetic fragrances"
-   ]
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 2,
    "headline": "Poured by hand in Vermont",
-   "body": "Small-batch soy wax candles made with no synthetic fragrances.",
-   "cta": "Shop hand-poured candles",
+   "body": "Small-batch candles made with natural soy wax and no synthetic fragrances.",
+   "cta": "Shop Vermont candles",
    "headline_no_name": "Poured by hand in Vermont",
-   "angle": "the detail - focuses on heritage craftsmanship and origin",
+   "angle": "detail (craftsmanship)",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
     "No synthetic fragrances"
+   ]
+  },
+  {
+   "persona_id": "persona_005",
+   "variant": 2,
+   "headline": "The art of understated gifting",
+   "body": "Hand-poured in Vermont with natural soy wax and zero synthetic fragrances.",
+   "cta": "Shop gift candles",
+   "headline_no_name": "The art of understated gifting",
+   "angle": "moment (understated)",
+   "claims_used": [
+    "Small-batch candles poured by hand in Vermont",
+    "Natural soy wax",
+    "No synthetic fragrances",
+    "Mostly bought as gifts"
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "headline": "What is in your candle?",
-   "body": "Just natural soy wax and zero synthetic fragrances, hand-poured in Vermont.",
-   "cta": "Shop small-batch",
-   "headline_no_name": "What is in your candle?",
-   "angle": "question - provoking transparency-focused shoppers to inspect ingredients",
-   "claims_used": [
-    "Small-batch candles poured by hand in Vermont",
-    "Natural soy wax",
-    "No synthetic fragrances"
-   ]
-  },
-  {
-   "persona_id": "persona_006",
-   "variant": 2,
-   "headline": "Goodbye, synthetic fragrances",
-   "body": "We pour our candles by hand in Vermont using natural soy wax.",
-   "cta": "Shop natural soy candles",
-   "headline_no_name": "Goodbye, synthetic fragrances",
-   "angle": "the swap - replaces synthetic alternatives with clean, natural ingredients",
+   "headline": "Goodbye, synthetic scents",
+   "body": "These Vermont candles are hand-poured in small batches using natural soy wax.",
+   "cta": "Shop soy candles",
+   "headline_no_name": "Goodbye, synthetic scents",
+   "angle": "the swap - replaces synthetic fragrances with natural soy wax",
    "claims_used": [
     "No synthetic fragrances",
-    "Small-batch candles poured by hand in Vermont",
-    "Natural soy wax"
+    "Natural soy wax",
+    "Small-batch candles poured by hand in Vermont"
+   ]
+  },
+  {
+   "persona_id": "persona_006",
+   "variant": 2,
+   "headline": "Skeptical of synthetic scents?",
+   "body": "Our candles use natural soy wax, hand-poured in small Vermont batches.",
+   "cta": "Shop hand-poured",
+   "headline_no_name": "Skeptical of synthetic scents?",
+   "angle": "the question - addresses skepticism of greenwashing and synthetics",
+   "claims_used": [
+    "No synthetic fragrances",
+    "Natural soy wax",
+    "Small-batch candles poured by hand in Vermont"
    ]
   },
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "A thoughtful Halloween treat",
-   "body": "Hand-poured in Vermont with natural soy wax. A great gift for your host.",
-   "cta": "Shop seasonal gifts",
-   "headline_no_name": "A thoughtful Halloween treat",
-   "angle": "moment - Halloween host gifting context",
+   "headline": "Gifts they actually want to keep",
+   "body": "Hand-poured soy candles from Vermont, made with zero synthetic fragrances.",
+   "cta": "Shop hand-poured candles",
+   "headline_no_name": "Gifts they actually want to keep",
+   "angle": "payoff - leans on giftable preference",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
-    "Natural soy wax",
+    "No synthetic fragrances",
     "Mostly bought as gifts"
    ]
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "headline": "Giving made simple",
-   "body": "Hand-poured in Vermont with natural soy wax. These small-batch candles make great gifts.",
-   "cta": "Shop the collection",
-   "headline_no_name": "Giving made simple",
-   "angle": "twist - play on effortless gifting with high-quality small-batch items",
+   "headline": "To give is to receive (almost)",
+   "body": "Vermont soy candles, hand-poured in small batches without synthetic fragrances.",
+   "cta": "Shop Vermont candles",
+   "headline_no_name": "To give is to receive (almost)",
+   "angle": "twist - leans on giftable preference",
    "claims_used": [
     "Small-batch candles poured by hand in Vermont",
     "Natural soy wax",
+    "No synthetic fragrances",
     "Mostly bought as gifts"
    ]
   }
@@ -1421,34 +1409,16 @@
    "passed": true
   },
   {
-   "persona_id": "persona_003",
-   "variant": 2,
-   "punch": 3,
-   "persona_fit": 3,
+   "persona_id": "persona_005",
+   "variant": 1,
+   "punch": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Hardcoded seasonal reference ('spooky mood' / Halloween) limits the evergreen utility of the card."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_005",
-   "variant": 1,
-   "punch": 4,
-   "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "A cleaner, quieter burn"
-   ],
-   "distinct_from_others": true,
-   "voice_issues": [],
-   "issues": [
-    "The claim of a 'cleaner, quieter burn' is an unsupported performance claim not present in the stated claims."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_005",
@@ -1466,7 +1436,7 @@
    "persona_id": "persona_006",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1489,30 +1459,26 @@
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "punch": 3,
-   "persona_fit": 3,
+   "punch": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Hardcoded seasonal reference ('Halloween') limits the evergreen utility of the card."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "punch": 3,
-   "persona_fit": 4,
+   "punch": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "voice_issues": [
-    "Headline 'Giving made simple' is a generic, overused marketing cliché."
-   ],
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   }
  ],
  "config": {
@@ -1871,66 +1837,65 @@
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
-    "headline_template": "Smells like real life",
-    "headline_no_name": "Smells like real life",
-    "body": "Hand-poured in Vermont with natural soy wax and zero synthetic fragrances.",
-    "cta": "Find your scent"
-   },
-   {
-    "variant_id": "persona_003:2",
-    "persona_id": "persona_003",
-    "headline_template": "Set a spooky mood naturally",
-    "headline_no_name": "Set a spooky mood naturally",
-    "body": "Hand-poured Vermont soy candles made without synthetic fragrances.",
-    "cta": "Shop Vermont candles"
+    "headline_template": "Poured by hand, not by robots",
+    "headline_no_name": "Poured by hand, not by robots",
+    "body": "Small-batch soy candles from Vermont made with natural wax and zero synthetic fragrances.",
+    "cta": "Shop natural candles",
+    "review_passed": true
    },
    {
     "variant_id": "persona_005:1",
     "persona_id": "persona_005",
-    "headline_template": "A cleaner, quieter burn",
-    "headline_no_name": "A cleaner, quieter burn",
-    "body": "Natural soy wax hand-poured in Vermont with no synthetic fragrances.",
-    "cta": "Shop the collection"
+    "headline_template": "Poured by hand in Vermont",
+    "headline_no_name": "Poured by hand in Vermont",
+    "body": "Small-batch candles made with natural soy wax and no synthetic fragrances.",
+    "cta": "Shop Vermont candles",
+    "review_passed": true
    },
    {
     "variant_id": "persona_005:2",
     "persona_id": "persona_005",
-    "headline_template": "Poured by hand in Vermont",
-    "headline_no_name": "Poured by hand in Vermont",
-    "body": "Small-batch soy wax candles made with no synthetic fragrances.",
-    "cta": "Shop hand-poured candles"
+    "headline_template": "The art of understated gifting",
+    "headline_no_name": "The art of understated gifting",
+    "body": "Hand-poured in Vermont with natural soy wax and zero synthetic fragrances.",
+    "cta": "Shop gift candles",
+    "review_passed": true
    },
    {
     "variant_id": "persona_006:1",
     "persona_id": "persona_006",
-    "headline_template": "What is in your candle?",
-    "headline_no_name": "What is in your candle?",
-    "body": "Just natural soy wax and zero synthetic fragrances, hand-poured in Vermont.",
-    "cta": "Shop small-batch"
+    "headline_template": "Goodbye, synthetic scents",
+    "headline_no_name": "Goodbye, synthetic scents",
+    "body": "These Vermont candles are hand-poured in small batches using natural soy wax.",
+    "cta": "Shop soy candles",
+    "review_passed": true
    },
    {
     "variant_id": "persona_006:2",
     "persona_id": "persona_006",
-    "headline_template": "Goodbye, synthetic fragrances",
-    "headline_no_name": "Goodbye, synthetic fragrances",
-    "body": "We pour our candles by hand in Vermont using natural soy wax.",
-    "cta": "Shop natural soy candles"
+    "headline_template": "Skeptical of synthetic scents?",
+    "headline_no_name": "Skeptical of synthetic scents?",
+    "body": "Our candles use natural soy wax, hand-poured in small Vermont batches.",
+    "cta": "Shop hand-poured",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:1",
     "persona_id": "persona_010",
-    "headline_template": "A thoughtful Halloween treat",
-    "headline_no_name": "A thoughtful Halloween treat",
-    "body": "Hand-poured in Vermont with natural soy wax. A great gift for your host.",
-    "cta": "Shop seasonal gifts"
+    "headline_template": "Gifts they actually want to keep",
+    "headline_no_name": "Gifts they actually want to keep",
+    "body": "Hand-poured soy candles from Vermont, made with zero synthetic fragrances.",
+    "cta": "Shop hand-poured candles",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:2",
     "persona_id": "persona_010",
-    "headline_template": "Giving made simple",
-    "headline_no_name": "Giving made simple",
-    "body": "Hand-poured in Vermont with natural soy wax. These small-batch candles make great gifts.",
-    "cta": "Shop the collection"
+    "headline_template": "To give is to receive (almost)",
+    "headline_no_name": "To give is to receive (almost)",
+    "body": "Vermont soy candles, hand-poured in small batches without synthetic fragrances.",
+    "cta": "Shop Vermont candles",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1965,21 +1930,23 @@
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.0,
-  "creative": 58.83
+  "matching": 0.06,
+  "creative": 0.31
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_005",
-    2
-   ],
-   [
-    "persona_006",
+    "persona_003",
     2
    ]
   ],
-  "candidates": 16
+  "candidates": 20,
+  "dropped": [
+   [
+    "persona_003",
+    2
+   ]
+  ]
  }
 }

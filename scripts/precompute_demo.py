@@ -2,6 +2,7 @@
 
     python scripts/precompute_demo.py              # full run (LLM intake + creatives, cached where possible)
     python scripts/precompute_demo.py --keep-llm   # refresh only the code-computed parts of the stored plans
+    python scripts/precompute_demo.py --creatives  # keep each stored intake, re-run the code and rewrite the creatives (LLM)
 
 --keep-llm keeps each stored plan's intake profile and creatives and recomputes hosts, personas, budget, bids and
 config with today's code: no LLM calls, so the demo follows code changes without new copy.
@@ -55,9 +56,20 @@ def refresh(path: Path) -> None:
     print(f"#{path.stem}: refreshed" + (f", spend ${b.planned_spend_usd:,.0f}, {b.forecast.mid:,.1f} {b.unit}" if b else "") + note, flush=True)
 
 
+def recreate(path: Path, provider) -> None:
+    old = CampaignPlan.model_validate_json(path.read_text())
+    plan = pipeline.plan_from_profile(old.brief, old.profile, TODAY, AdvertiserInputs(monthly_budget_usd=5000))
+    plan = pipeline.add_creatives(plan, provider, TODAY)
+    plan = plan.model_copy(update={"timings_s": {**old.timings_s, **plan.timings_s}})
+    path.write_text(plan.model_dump_json(indent=1))
+    passed = sum(r.passed for r in plan.reviews)
+    print(f"#{path.stem}: creatives rewritten, {passed}/{len(plan.reviews)} passed review", flush=True)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--keep-llm", action="store_true", help="recompute only the code parts of the stored plans (no LLM)")
+    ap.add_argument("--creatives", action="store_true", help="keep the stored intake; recompute the code parts and rewrite creatives")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     if args.keep_llm:
@@ -65,6 +77,11 @@ def main() -> None:
             refresh(path)
         return
     provider = default_provider()
+    if args.creatives:
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(4) as pool:
+            list(pool.map(lambda p: recreate(p, provider), sorted(OUT.glob("*.json"), key=lambda p: int(p.stem))))
+        return
     for n, text in load_examples().items():
         plan = run_with_retries(text, provider)
         if plan is None:

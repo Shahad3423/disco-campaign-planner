@@ -1286,38 +1286,38 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "No hangover to ruin tomorrow's run",
-   "body": "A functional cocktail alternative with adaptogens so you feel good tomorrow.",
-   "cta": "Shop the alternative",
-   "headline_no_name": "No hangover to ruin tomorrow's run",
-   "angle": "the swap (swapping standard cocktails for a functional alternative to protect fitness goals)",
+   "headline": "Tomorrow morning's workout, saved",
+   "body": "A functional cocktail alternative with adaptogens. All the social fun, zero hangover.",
+   "cta": "Shop functional drinks",
+   "headline_no_name": "Tomorrow morning's workout, saved",
+   "angle": "moment: waking up fresh for the morning workout",
    "claims_used": [
     "Kind of like a functional cocktail alternative",
-    "For people who want to feel good without a hangover",
-    "Non-alcoholic sparkling drink with adaptogens"
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover"
    ]
   },
   {
    "persona_id": "persona_009",
    "variant": 2,
-   "headline": "For the 6 AM workout crowd",
-   "body": "A non-alcoholic sparkling drink with adaptogens. Feel good without the hangover.",
+   "headline": "Happy hour, active tomorrow",
+   "body": "This sparkling drink has adaptogens and zero alcohol. Feel good without the hangover.",
+   "cta": "Try the drinks",
+   "headline_no_name": "Happy hour, active tomorrow",
+   "angle": "twist: balancing social life with fitness discipline",
+   "claims_used": [
+    "Non-alcoholic sparkling drink with adaptogens",
+    "For people who want to feel good without a hangover"
+   ]
+  },
+  {
+   "persona_id": "persona_001",
+   "variant": 1,
+   "headline": "Feel good tomorrow morning",
+   "body": "A sparkling adaptogen drink made for zero hangovers.",
    "cta": "Shop sparkling drinks",
-   "headline_no_name": "For the 6 AM workout crowd",
-   "angle": "the moment (targeting the morning workout window for active lifestyles)",
-   "claims_used": [
-    "Non-alcoholic sparkling drink with adaptogens",
-    "For people who want to feel good without a hangover"
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 1,
-   "headline": "Functional sparkling adaptogens",
-   "body": "A non-alcoholic drink for people who want to feel good without a hangover.",
-   "cta": "Shop adaptogen sparkling",
-   "headline_no_name": "Functional sparkling adaptogens",
-   "angle": "detail",
+   "headline_no_name": "Feel good tomorrow morning",
+   "angle": "the payoff",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
     "For people who want to feel good without a hangover"
@@ -1326,37 +1326,25 @@
   {
    "persona_id": "persona_001",
    "variant": 2,
-   "headline": "Swap cocktails for adaptogens",
-   "body": "A sparkling drink with adaptogens. The functional cocktail alternative.",
-   "cta": "Order sparkling drinks",
-   "headline_no_name": "Swap cocktails for adaptogens",
-   "angle": "swap",
+   "headline": "Skip the hangover, keep the ritual",
+   "body": "Swap your usual drink for a functional cocktail alternative with adaptogens.",
+   "cta": "Buy adaptogen drinks",
+   "headline_no_name": "Skip the hangover, keep the ritual",
+   "angle": "the swap",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
-    "Kind of like a functional cocktail alternative"
+    "Kind of like a functional cocktail alternative",
+    "For people who want to feel good without a hangover"
    ]
   },
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "Why do hangovers still exist?",
-   "body": "They don't have to. Try a sparkling functional cocktail alternative with adaptogens.",
-   "cta": "Try the alternative",
-   "headline_no_name": "Why do hangovers still exist?",
-   "angle": "question",
-   "claims_used": [
-    "Non-alcoholic sparkling drink with adaptogens",
-    "Kind of like a functional cocktail alternative"
-   ]
-  },
-  {
-   "persona_id": "persona_003",
-   "variant": 2,
-   "headline": "Goodbye alcohol, hello adaptogens",
-   "body": "A non-alcoholic sparkling drink. Feel good without a hangover.",
-   "cta": "Shop non-alcoholic",
-   "headline_no_name": "Goodbye alcohol, hello adaptogens",
-   "angle": "swap",
+   "headline": "Happy hour, actually happy",
+   "body": "A sparkling drink with adaptogens to help you feel good tomorrow.",
+   "cta": "Shop sparkling drinks",
+   "headline_no_name": "Happy hour, actually happy",
+   "angle": "the twist - playful positioning of a hangover-free happy hour",
    "claims_used": [
     "Non-alcoholic sparkling drink with adaptogens",
     "For people who want to feel good without a hangover"
@@ -1380,7 +1368,7 @@
    "persona_id": "persona_009",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1391,16 +1379,14 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "punch": 3,
+   "punch": 4,
    "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "voice_issues": [
-    "A bit dry and generic, reads like a category label."
-   ],
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_001",
@@ -1425,20 +1411,6 @@
    "voice_issues": [],
    "issues": [],
    "passed": true
-  },
-  {
-   "persona_id": "persona_003",
-   "variant": 2,
-   "punch": 3,
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [
-    "Uses a highly generic ad template ('Goodbye alcohol, hello adaptogens')"
-   ],
-   "issues": [],
-   "passed": false
   }
  ],
  "config": {
@@ -1796,50 +1768,47 @@
    {
     "variant_id": "persona_009:1",
     "persona_id": "persona_009",
-    "headline_template": "No hangover to ruin tomorrow's run",
-    "headline_no_name": "No hangover to ruin tomorrow's run",
-    "body": "A functional cocktail alternative with adaptogens so you feel good tomorrow.",
-    "cta": "Shop the alternative"
+    "headline_template": "Tomorrow morning's workout, saved",
+    "headline_no_name": "Tomorrow morning's workout, saved",
+    "body": "A functional cocktail alternative with adaptogens. All the social fun, zero hangover.",
+    "cta": "Shop functional drinks",
+    "review_passed": true
    },
    {
     "variant_id": "persona_009:2",
     "persona_id": "persona_009",
-    "headline_template": "For the 6 AM workout crowd",
-    "headline_no_name": "For the 6 AM workout crowd",
-    "body": "A non-alcoholic sparkling drink with adaptogens. Feel good without the hangover.",
-    "cta": "Shop sparkling drinks"
+    "headline_template": "Happy hour, active tomorrow",
+    "headline_no_name": "Happy hour, active tomorrow",
+    "body": "This sparkling drink has adaptogens and zero alcohol. Feel good without the hangover.",
+    "cta": "Try the drinks",
+    "review_passed": true
    },
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "headline_template": "Functional sparkling adaptogens",
-    "headline_no_name": "Functional sparkling adaptogens",
-    "body": "A non-alcoholic drink for people who want to feel good without a hangover.",
-    "cta": "Shop adaptogen sparkling"
+    "headline_template": "Feel good tomorrow morning",
+    "headline_no_name": "Feel good tomorrow morning",
+    "body": "A sparkling adaptogen drink made for zero hangovers.",
+    "cta": "Shop sparkling drinks",
+    "review_passed": true
    },
    {
     "variant_id": "persona_001:2",
     "persona_id": "persona_001",
-    "headline_template": "Swap cocktails for adaptogens",
-    "headline_no_name": "Swap cocktails for adaptogens",
-    "body": "A sparkling drink with adaptogens. The functional cocktail alternative.",
-    "cta": "Order sparkling drinks"
+    "headline_template": "Skip the hangover, keep the ritual",
+    "headline_no_name": "Skip the hangover, keep the ritual",
+    "body": "Swap your usual drink for a functional cocktail alternative with adaptogens.",
+    "cta": "Buy adaptogen drinks",
+    "review_passed": true
    },
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
-    "headline_template": "Why do hangovers still exist?",
-    "headline_no_name": "Why do hangovers still exist?",
-    "body": "They don't have to. Try a sparkling functional cocktail alternative with adaptogens.",
-    "cta": "Try the alternative"
-   },
-   {
-    "variant_id": "persona_003:2",
-    "persona_id": "persona_003",
-    "headline_template": "Goodbye alcohol, hello adaptogens",
-    "headline_no_name": "Goodbye alcohol, hello adaptogens",
-    "body": "A non-alcoholic sparkling drink. Feel good without a hangover.",
-    "cta": "Shop non-alcoholic"
+    "headline_template": "Happy hour, actually happy",
+    "headline_no_name": "Happy hour, actually happy",
+    "body": "A sparkling drink with adaptogens to help you feel good tomorrow.",
+    "cta": "Shop sparkling drinks",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1875,21 +1844,23 @@
  },
  "timings_s": {
   "intake": 0.0,
-  "matching": 0.0,
-  "creative": 53.94
+  "matching": 0.05,
+  "creative": 0.13
  },
  "creative_log": {
   "rounds": 2,
   "rewritten": [
    [
-    "persona_009",
-    1
-   ],
-   [
-    "persona_009",
+    "persona_003",
     2
    ]
   ],
-  "candidates": 12
+  "candidates": 15,
+  "dropped": [
+   [
+    "persona_003",
+    2
+   ]
+  ]
  }
 }
