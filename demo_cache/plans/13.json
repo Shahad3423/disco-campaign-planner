@@ -1298,24 +1298,11 @@
   {
    "persona_id": "persona_009",
    "variant": 1,
-   "headline": "Ditch the expensive tub",
-   "body": "Get the exact same workout formulations for half the cost. We don't charge for marketing.",
-   "cta": "Shop the formulations",
-   "headline_no_name": "Ditch the expensive tub",
-   "angle": "the swap - appeals to performance-focused users looking to replace overpriced staples",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "headline": "Why pay double for your creatine?",
-   "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-   "cta": "Shop creatine",
-   "headline_no_name": "Why pay double for your creatine?",
-   "angle": "the question - challenges the enthusiast on why they spend more for the same performance",
+   "headline": "Stop paying for the fancy tub",
+   "body": "Get the exact same workout formulations at half the cost of expensive brands.",
+   "cta": "Shop the formulas",
+   "headline_no_name": "Stop paying for the fancy tub",
+   "angle": "swap",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost."
    ]
@@ -1323,49 +1310,23 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "Identical formulations, half the cost",
-   "body": "Get the exact same pre-workout and creatine formulas without paying for the marketing.",
-   "cta": "Shop formulas",
-   "headline_no_name": "Identical formulations, half the cost",
-   "angle": "the detail - appeals to the optimizer's focus on ingredient and formula transparency",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 2,
-   "headline": "Stop paying the marketing tax",
-   "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-   "cta": "Buy creatine",
-   "headline_no_name": "Stop paying the marketing tax",
-   "angle": "the swap - appeals to the optimizer's desire to cut out unnecessary system inefficiencies",
-   "claims_used": [
-    "Same formulations as the expensive brands for half the cost.",
-    "We compete on price, not on marketing."
-   ]
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 1,
-   "headline": "Swap the brand, keep the formula",
-   "body": "Get the exact same pre-workout, creatine, and protein for half the cost.",
-   "cta": "Shop the swap",
-   "headline_no_name": "Swap the brand, keep the formula",
-   "angle": "the swap - clear trade-off showing they lose nothing but the premium price tag",
+   "headline": "Swap the fancy label, keep the formula",
+   "body": "Same workout formulations as the expensive brands, for half the cost.",
+   "cta": "Shop formulations",
+   "headline_no_name": "Swap the fancy label, keep the formula",
+   "angle": "the swap: appeals to the system optimizer's desire to cut out marketing fluff and focus purely on the active ingredients",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost."
    ]
   },
   {
    "persona_id": "persona_008",
-   "variant": 2,
-   "headline": "Why pay for fancy marketing?",
-   "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-   "cta": "Shop the savings",
-   "headline_no_name": "Why pay for fancy marketing?",
-   "angle": "the question - addresses the budget-conscious shopper's dislike of paying for fluff",
+   "variant": 1,
+   "headline": "Why pay for expensive brands?",
+   "body": "We compete on price, not marketing. Get the same formulations for half the cost.",
+   "cta": "Shop half price",
+   "headline_no_name": "Why pay for expensive brands?",
+   "angle": "the question - appeals to the value-conscious shopper's dislike of paying for brand markup",
    "claims_used": [
     "Same formulations as the expensive brands for half the cost.",
     "We compete on price, not on marketing."
@@ -1386,58 +1347,22 @@
    "passed": true
   },
   {
-   "persona_id": "persona_009",
-   "variant": 2,
-   "punch": 4,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [],
-   "issues": [],
-   "passed": true
-  },
-  {
    "persona_id": "persona_001",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 4,
+   "persona_fit": 3,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
    "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 2,
-   "punch": 4,
-   "persona_fit": 4,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [],
-   "issues": [],
-   "passed": true
+   "passed": false
   },
   {
    "persona_id": "persona_008",
    "variant": 1,
    "punch": 4,
    "persona_fit": 5,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [],
-   "issues": [],
-   "passed": true
-  },
-  {
-   "persona_id": "persona_008",
-   "variant": 2,
-   "punch": 4,
-   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1883,50 +1808,29 @@
    {
     "variant_id": "persona_009:1",
     "persona_id": "persona_009",
-    "headline_template": "Ditch the expensive tub",
-    "headline_no_name": "Ditch the expensive tub",
-    "body": "Get the exact same workout formulations for half the cost. We don't charge for marketing.",
-    "cta": "Shop the formulations"
-   },
-   {
-    "variant_id": "persona_009:2",
-    "persona_id": "persona_009",
-    "headline_template": "Why pay double for your creatine?",
-    "headline_no_name": "Why pay double for your creatine?",
-    "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-    "cta": "Shop creatine"
+    "headline_template": "Stop paying for the fancy tub",
+    "headline_no_name": "Stop paying for the fancy tub",
+    "body": "Get the exact same workout formulations at half the cost of expensive brands.",
+    "cta": "Shop the formulas",
+    "review_passed": true
    },
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "headline_template": "Identical formulations, half the cost",
-    "headline_no_name": "Identical formulations, half the cost",
-    "body": "Get the exact same pre-workout and creatine formulas without paying for the marketing.",
-    "cta": "Shop formulas"
-   },
-   {
-    "variant_id": "persona_001:2",
-    "persona_id": "persona_001",
-    "headline_template": "Stop paying the marketing tax",
-    "headline_no_name": "Stop paying the marketing tax",
-    "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-    "cta": "Buy creatine"
+    "headline_template": "Swap the fancy label, keep the formula",
+    "headline_no_name": "Swap the fancy label, keep the formula",
+    "body": "Same workout formulations as the expensive brands, for half the cost.",
+    "cta": "Shop formulations",
+    "review_passed": false
    },
    {
     "variant_id": "persona_008:1",
     "persona_id": "persona_008",
-    "headline_template": "Swap the brand, keep the formula",
-    "headline_no_name": "Swap the brand, keep the formula",
-    "body": "Get the exact same pre-workout, creatine, and protein for half the cost.",
-    "cta": "Shop the swap"
-   },
-   {
-    "variant_id": "persona_008:2",
-    "persona_id": "persona_008",
-    "headline_template": "Why pay for fancy marketing?",
-    "headline_no_name": "Why pay for fancy marketing?",
-    "body": "Get the exact same workout formulations as the expensive brands for half the cost.",
-    "cta": "Shop the savings"
+    "headline_template": "Why pay for expensive brands?",
+    "headline_no_name": "Why pay for expensive brands?",
+    "body": "We compete on price, not marketing. Get the same formulations for half the cost.",
+    "cta": "Shop half price",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1962,11 +1866,42 @@
  "timings_s": {
   "intake": 0.01,
   "matching": 0.0,
-  "creative": 30.18
+  "creative": 0.01
  },
  "creative_log": {
-  "rounds": 1,
-  "rewritten": [],
-  "candidates": 12
+  "rounds": 2,
+  "rewritten": [
+   [
+    "persona_009",
+    2
+   ],
+   [
+    "persona_001",
+    2
+   ],
+   [
+    "persona_008",
+    1
+   ],
+   [
+    "persona_008",
+    2
+   ]
+  ],
+  "candidates": 15,
+  "dropped": [
+   [
+    "persona_009",
+    2
+   ],
+   [
+    "persona_001",
+    2
+   ],
+   [
+    "persona_008",
+    1
+   ]
+  ]
  }
 }

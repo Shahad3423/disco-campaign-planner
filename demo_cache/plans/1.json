@@ -1307,91 +1307,76 @@
   {
    "persona_id": "persona_004",
    "variant": 1,
-   "headline": "More good years with your dog",
-   "body": "Premium grain-free food formulated by vets to support senior joints.",
-   "cta": "Shop senior food",
-   "headline_no_name": "More good years with your dog",
-   "angle": "payoff - focuses on longevity and emotional connection",
+   "headline": "More good years with your senior dog",
+   "body": "A vet-formulated subscription built for joint health and longevity.",
+   "cta": "Subscribe now",
+   "headline_no_name": "More good years with your senior dog",
+   "angle": "the payoff - emotional connection to longevity",
    "claims_used": [
     "Premium dog food for senior dogs",
-    "Grain-free",
     "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
+    "Targets owners who care about joint health and longevity",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_004",
    "variant": 2,
-   "headline": "Reading their food labels?",
-   "body": "Our premium senior dog food is grain-free and vet-formulated for joint health.",
-   "cta": "Shop premium food",
-   "headline_no_name": "Reading their food labels?",
-   "angle": "question - appeals directly to label-reading pet parents",
+   "headline": "Healthy joints in every bowl",
+   "body": "Grain-free food for senior dogs, formulated by vets and delivered monthly.",
+   "cta": "Start subscription",
+   "headline_no_name": "Healthy joints in every bowl",
+   "angle": "the moment - monthly subscription delivery of joint health food",
    "claims_used": [
     "Premium dog food for senior dogs",
     "Grain-free",
     "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
+    "Targets owners who care about joint health and longevity",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "headline": "Keep your senior dog moving",
-   "body": "Grain-free food to support joint health and longevity. Vet-formulated.",
-   "cta": "Shop senior food",
-   "headline_no_name": "Keep your senior dog moving",
-   "angle": "the payoff",
+   "headline": "One less errand to run.",
+   "body": "Vet-formulated, grain-free senior food delivered on a subscription.",
+   "cta": "Subscribe today",
+   "headline_no_name": "One less errand to run.",
+   "angle": "the swap: replacing the weekly grocery chore with a convenient subscription",
    "claims_used": [
     "Premium dog food for senior dogs",
     "Grain-free",
     "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
-   ]
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "headline": "Caring for a senior dog?",
-   "body": "Our vet-formulated recipe targets joint health and longevity. Grain-free.",
-   "cta": "Get senior food",
-   "headline_no_name": "Caring for a senior dog?",
-   "angle": "the question",
-   "claims_used": [
-    "Premium dog food for senior dogs",
-    "Grain-free",
-    "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_007",
    "variant": 1,
-   "headline": "Vet-formulated joint support",
-   "body": "Premium grain-free food made for your senior dog's longevity.",
-   "cta": "Shop senior recipes",
-   "headline_no_name": "Vet-formulated joint support",
-   "angle": "the detail",
+   "headline": "Ditch the heavy dog food bags",
+   "body": "Get premium grain-free food for senior dogs delivered right to your door.",
+   "cta": "Start your subscription",
+   "headline_no_name": "Ditch the heavy dog food bags",
+   "angle": "the swap: replacing heavy store trips with delivery",
    "claims_used": [
     "Premium dog food for senior dogs",
     "Grain-free",
-    "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_007",
    "variant": 2,
-   "headline": "More healthy years together",
-   "body": "Grain-free food that supports joint health in senior dogs. Vet-formulated.",
-   "cta": "Get senior food",
-   "headline_no_name": "More healthy years together",
-   "angle": "the moment",
+   "headline": "Senior dog food on autopilot",
+   "body": "Vet-formulated and grain-free. Shipped straight to your door on your schedule.",
+   "cta": "Subscribe today",
+   "headline_no_name": "Senior dog food on autopilot",
+   "angle": "the offer: subscription convenience",
    "claims_used": [
     "Premium dog food for senior dogs",
-    "Grain-free",
     "Vet-formulated",
-    "Targets owners who care about joint health and longevity"
+    "Grain-free",
+    "Sold as a subscription"
    ]
   }
  ],
@@ -1412,7 +1397,7 @@
    "persona_id": "persona_004",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 5,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1424,57 +1409,37 @@
    "persona_id": "persona_002",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 2,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Fails to address the Busy Parent's preferences for convenience, bulk buying, subscriptions, or family-friendly messaging."
-   ],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "punch": 3,
-   "persona_fit": 2,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [],
-   "issues": [
-    "Fails to address the Busy Parent's preferences for convenience, bulk buying, subscriptions, or family-friendly messaging."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_007",
    "variant": 1,
-   "punch": 3,
-   "persona_fit": 2,
+   "punch": 5,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Fails to address the Convenience-First Millennial's preferences for speed, one-click ordering, or subscription perks."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_007",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 2,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Fails to address the Convenience-First Millennial's preferences for speed, one-click ordering, or subscription perks."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1873,50 +1838,47 @@
    {
     "variant_id": "persona_004:1",
     "persona_id": "persona_004",
-    "headline_template": "More good years with your dog",
-    "headline_no_name": "More good years with your dog",
-    "body": "Premium grain-free food formulated by vets to support senior joints.",
-    "cta": "Shop senior food"
+    "headline_template": "More good years with your senior dog",
+    "headline_no_name": "More good years with your senior dog",
+    "body": "A vet-formulated subscription built for joint health and longevity.",
+    "cta": "Subscribe now",
+    "review_passed": true
    },
    {
     "variant_id": "persona_004:2",
     "persona_id": "persona_004",
-    "headline_template": "Reading their food labels?",
-    "headline_no_name": "Reading their food labels?",
-    "body": "Our premium senior dog food is grain-free and vet-formulated for joint health.",
-    "cta": "Shop premium food"
+    "headline_template": "Healthy joints in every bowl",
+    "headline_no_name": "Healthy joints in every bowl",
+    "body": "Grain-free food for senior dogs, formulated by vets and delivered monthly.",
+    "cta": "Start subscription",
+    "review_passed": true
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "headline_template": "Keep your senior dog moving",
-    "headline_no_name": "Keep your senior dog moving",
-    "body": "Grain-free food to support joint health and longevity. Vet-formulated.",
-    "cta": "Shop senior food"
-   },
-   {
-    "variant_id": "persona_002:2",
-    "persona_id": "persona_002",
-    "headline_template": "Caring for a senior dog?",
-    "headline_no_name": "Caring for a senior dog?",
-    "body": "Our vet-formulated recipe targets joint health and longevity. Grain-free.",
-    "cta": "Get senior food"
+    "headline_template": "One less errand to run.",
+    "headline_no_name": "One less errand to run.",
+    "body": "Vet-formulated, grain-free senior food delivered on a subscription.",
+    "cta": "Subscribe today",
+    "review_passed": true
    },
    {
     "variant_id": "persona_007:1",
     "persona_id": "persona_007",
-    "headline_template": "Vet-formulated joint support",
-    "headline_no_name": "Vet-formulated joint support",
-    "body": "Premium grain-free food made for your senior dog's longevity.",
-    "cta": "Shop senior recipes"
+    "headline_template": "Ditch the heavy dog food bags",
+    "headline_no_name": "Ditch the heavy dog food bags",
+    "body": "Get premium grain-free food for senior dogs delivered right to your door.",
+    "cta": "Start your subscription",
+    "review_passed": true
    },
    {
     "variant_id": "persona_007:2",
     "persona_id": "persona_007",
-    "headline_template": "More healthy years together",
-    "headline_no_name": "More healthy years together",
-    "body": "Grain-free food that supports joint health in senior dogs. Vet-formulated.",
-    "cta": "Get senior food"
+    "headline_template": "Senior dog food on autopilot",
+    "headline_no_name": "Senior dog food on autopilot",
+    "body": "Vet-formulated and grain-free. Shipped straight to your door on your schedule.",
+    "cta": "Subscribe today",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1953,8 +1915,8 @@
  },
  "timings_s": {
   "intake": 0.02,
-  "matching": 0.01,
-  "creative": 47.52
+  "matching": 0.14,
+  "creative": 0.21
  },
  "creative_log": {
   "rounds": 2,
@@ -1962,20 +1924,9 @@
    [
     "persona_002",
     1
-   ],
-   [
-    "persona_002",
-    2
-   ],
-   [
-    "persona_007",
-    1
-   ],
-   [
-    "persona_007",
-    2
    ]
   ],
-  "candidates": 12
+  "candidates": 11,
+  "dropped": []
  }
 }

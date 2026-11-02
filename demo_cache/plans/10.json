@@ -1287,84 +1287,87 @@
    "persona_id": "persona_005",
    "variant": 1,
    "headline": "Handcrafted in Florence",
-   "body": "Italian-made, custom-fit leather handbags built on generations of heritage.",
-   "cta": "Shop custom leather",
+   "body": "Italian-made, custom-fit leather handbags. Each piece takes six weeks to ship.",
+   "cta": "Order your handbag",
    "headline_no_name": "Handcrafted in Florence",
-   "angle": "the detail",
+   "angle": "the detail hook leaning on craftsmanship preference",
    "claims_used": [
-    "Handcrafted in Florence",
+    "Custom-fit leather handbags",
     "Italian-made",
-    "Custom-fit leather handbags"
+    "Handcrafted in Florence",
+    "Minimum order ships in 6 weeks."
    ]
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
-   "headline": "A custom fit that lasts",
-   "body": "Italian-made leather handbags handcrafted in Florence with classic heritage.",
-   "cta": "Customize your bag",
-   "headline_no_name": "A custom fit that lasts",
-   "angle": "the payoff",
+   "headline": "Worth the six-week wait",
+   "body": "Handcrafted in Florence. Your custom-fit leather handbag is made to order for $1,200.",
+   "cta": "Shop Italian leather",
+   "headline_no_name": "Worth the six-week wait",
+   "angle": "the moment hook leaning on heritage preference",
    "claims_used": [
-    "Italian-made",
+    "Custom-fit leather handbags",
     "Handcrafted in Florence",
-    "Custom-fit leather handbags"
+    "Minimum order ships in 6 weeks.",
+    "Price: about $1,200"
    ]
   },
   {
    "persona_id": "persona_010",
    "variant": 1,
-   "headline": "Looking for a truly custom gift?",
-   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
-   "cta": "Design a handbag",
-   "headline_no_name": "Looking for a truly custom gift?",
-   "angle": "question - leans on premium presentation and giftable nature",
+   "headline": "A holiday gift worth the wait",
+   "body": "Handcrafted in Florence, this custom-fit handbag ships in 6 weeks.",
+   "cta": "Order their gift",
+   "headline_no_name": "A holiday gift worth the wait",
+   "angle": "the moment: captures the holiday gifting timeline for a planned custom gift",
    "claims_used": [
-    "Italian-made",
+    "Handcrafted in Florence",
     "Custom-fit leather handbags",
-    "Handcrafted in Florence"
+    "Minimum order ships in 6 weeks."
    ]
   },
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "headline": "Unboxing true Florentine luxury",
-   "body": "An Italian-made, custom-fit leather handbag handcrafted in Florence.",
-   "cta": "Customize a handbag",
-   "headline_no_name": "Unboxing true Florentine luxury",
-   "angle": "the moment",
+   "headline": "Give them Florence in a box",
+   "body": "Italian-made, custom-fit leather handbags handcrafted to order. Ships in 6 weeks.",
+   "cta": "Gift Italian leather",
+   "headline_no_name": "Give them Florence in a box",
+   "angle": "the twist: a play on gifting a piece of Florence heritage",
    "claims_used": [
     "Italian-made",
     "Custom-fit leather handbags",
-    "Handcrafted in Florence"
+    "Handcrafted in Florence",
+    "Minimum order ships in 6 weeks."
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
-   "headline": "Why buy off the rack?",
-   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
-   "cta": "Shop custom fit",
-   "headline_no_name": "Why buy off the rack?",
-   "angle": "question - leans on slow fashion and tailored quality preferences",
+   "headline": "Goodbye, fast fashion handbags",
+   "body": "Handcrafted in Florence and custom-fit for you. Ships in 6 weeks.",
+   "cta": "Shop custom handbags",
+   "headline_no_name": "Goodbye, fast fashion handbags",
+   "angle": "the swap: replacing mass-produced fast fashion with slow, custom Florentine craftsmanship",
    "claims_used": [
-    "Italian-made",
     "Custom-fit leather handbags",
-    "Handcrafted in Florence"
+    "Handcrafted in Florence",
+    "Minimum order ships in 6 weeks."
    ]
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
-   "headline": "Goodbye, throwaway fashion",
-   "body": "Italian-made, custom-fit leather handbags handcrafted in Florence to endure.",
+   "headline": "Tired of mass-produced bags?",
+   "body": "Get a custom-fit leather handbag handcrafted in Florence. Ships in 6 weeks.",
    "cta": "Shop custom leather",
-   "headline_no_name": "Goodbye, throwaway fashion",
-   "angle": "the swap",
+   "headline_no_name": "Tired of mass-produced bags?",
+   "angle": "the question: targeting the dislike of fast-fashion mass production",
    "claims_used": [
-    "Italian-made",
     "Custom-fit leather handbags",
-    "Handcrafted in Florence"
+    "Handcrafted in Florence",
+    "Minimum order ships in 6 weeks."
    ]
   }
  ],
@@ -1373,32 +1376,25 @@
    "persona_id": "persona_005",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "generations of heritage"
-   ],
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "voice_issues": [
-    "built on generations of heritage"
-   ],
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_005",
    "variant": 2,
-   "punch": 3,
-   "persona_fit": 4,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "lasts",
-    "classic heritage"
-   ],
+   "punch": 4,
+   "persona_fit": 5,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_010",
@@ -1415,50 +1411,38 @@
   {
    "persona_id": "persona_010",
    "variant": 2,
-   "punch": 3,
-   "persona_fit": 3,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "unboxing"
-   ],
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
-   "voice_issues": [
-    "Unboxing true Florentine luxury"
-   ],
-   "issues": [
-    "Implies a specific premium unboxing experience or packaging that is not supported by the stated claims."
-   ],
-   "passed": false
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_006",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 3,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Does not address the sustainability buyer's preference for specific sustainability claims or supply chain transparency."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_006",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 2,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "to endure"
-   ],
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "Uses vague eco-positioning ('Goodbye, throwaway fashion') which this persona explicitly avoids in favor of specific claims and certifications."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1859,48 +1843,54 @@
     "persona_id": "persona_005",
     "headline_template": "Handcrafted in Florence",
     "headline_no_name": "Handcrafted in Florence",
-    "body": "Italian-made, custom-fit leather handbags built on generations of heritage.",
-    "cta": "Shop custom leather"
+    "body": "Italian-made, custom-fit leather handbags. Each piece takes six weeks to ship.",
+    "cta": "Order your handbag",
+    "review_passed": true
    },
    {
     "variant_id": "persona_005:2",
     "persona_id": "persona_005",
-    "headline_template": "A custom fit that lasts",
-    "headline_no_name": "A custom fit that lasts",
-    "body": "Italian-made leather handbags handcrafted in Florence with classic heritage.",
-    "cta": "Customize your bag"
+    "headline_template": "Worth the six-week wait",
+    "headline_no_name": "Worth the six-week wait",
+    "body": "Handcrafted in Florence. Your custom-fit leather handbag is made to order for $1,200.",
+    "cta": "Shop Italian leather",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:1",
     "persona_id": "persona_010",
-    "headline_template": "Looking for a truly custom gift?",
-    "headline_no_name": "Looking for a truly custom gift?",
-    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
-    "cta": "Design a handbag"
+    "headline_template": "A holiday gift worth the wait",
+    "headline_no_name": "A holiday gift worth the wait",
+    "body": "Handcrafted in Florence, this custom-fit handbag ships in 6 weeks.",
+    "cta": "Order their gift",
+    "review_passed": true
    },
    {
     "variant_id": "persona_010:2",
     "persona_id": "persona_010",
-    "headline_template": "Unboxing true Florentine luxury",
-    "headline_no_name": "Unboxing true Florentine luxury",
-    "body": "An Italian-made, custom-fit leather handbag handcrafted in Florence.",
-    "cta": "Customize a handbag"
+    "headline_template": "Give them Florence in a box",
+    "headline_no_name": "Give them Florence in a box",
+    "body": "Italian-made, custom-fit leather handbags handcrafted to order. Ships in 6 weeks.",
+    "cta": "Gift Italian leather",
+    "review_passed": true
    },
    {
     "variant_id": "persona_006:1",
     "persona_id": "persona_006",
-    "headline_template": "Why buy off the rack?",
-    "headline_no_name": "Why buy off the rack?",
-    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence.",
-    "cta": "Shop custom fit"
+    "headline_template": "Goodbye, fast fashion handbags",
+    "headline_no_name": "Goodbye, fast fashion handbags",
+    "body": "Handcrafted in Florence and custom-fit for you. Ships in 6 weeks.",
+    "cta": "Shop custom handbags",
+    "review_passed": true
    },
    {
     "variant_id": "persona_006:2",
     "persona_id": "persona_006",
-    "headline_template": "Goodbye, throwaway fashion",
-    "headline_no_name": "Goodbye, throwaway fashion",
-    "body": "Italian-made, custom-fit leather handbags handcrafted in Florence to endure.",
-    "cta": "Shop custom leather"
+    "headline_template": "Tired of mass-produced bags?",
+    "headline_no_name": "Tired of mass-produced bags?",
+    "body": "Get a custom-fit leather handbag handcrafted in Florence. Ships in 6 weeks.",
+    "cta": "Shop custom leather",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1934,28 +1924,12 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 55.37
+  "creative": 0.24
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   [
-    "persona_005",
-    1
-   ],
-   [
-    "persona_005",
-    2
-   ],
-   [
-    "persona_010",
-    2
-   ],
-   [
-    "persona_006",
-    2
-   ]
-  ],
-  "candidates": 12
+  "rounds": 1,
+  "rewritten": [],
+  "candidates": 15,
+  "dropped": []
  }
 }

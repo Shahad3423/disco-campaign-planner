@@ -138,7 +138,7 @@ def add_creatives(plan: CampaignPlan, provider: Provider, today: date) -> Campai
     moment_names = [m.name for m in active_moments(datetime(today.year, today.month, today.day, 12)) if m.intensity > 0]
     selected = [m for m in plan.personas if m.selected]
     start = time.perf_counter()
-    variants, reviews, log = creative.generate_creatives(plan.profile, selected, moment_names, provider)
+    variants, reviews, log = creative.generate_creatives(plan.profile, selected, moment_names, provider, plan.brief)
     return attach_creatives(plan, variants, reviews, log, time.perf_counter() - start)
 
 
@@ -146,10 +146,12 @@ def attach_creatives(plan: CampaignPlan, variants: list[CreativeVariant], review
                      seconds: float | None = None) -> CampaignPlan:
     """Put written creatives into a plan and its config (also used to keep stored creatives when refreshing a plan)."""
     by_persona = {m.persona_id: m for m in plan.personas}
+    passed = {(r.persona_id, r.variant): r.passed for r in reviews}
     assignments = [
         CreativeAssignment(
             variant_id=f"{v.persona_id}:{v.variant}", persona_id=v.persona_id,
             headline_template=v.headline, headline_no_name=v.headline_no_name, body=v.body, cta=v.cta,
+            review_passed=passed.get((v.persona_id, v.variant), True),
         )
         for v in variants if v.persona_id in by_persona
     ]

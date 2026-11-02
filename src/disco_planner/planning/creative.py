@@ -69,27 +69,49 @@ def rule_check(v: CreativeVariant) -> list[str]:
     return issues
 
 
-def _persona_block(matches: list[PersonaMatch]) -> str:
+def _persona_block(matches: list[PersonaMatch], profile: AdvertiserProfile | None = None) -> str:
+    """Persona description for the writer and the critic, plus its link to THIS product (shared interests), so the line
+    can bridge a stated fact to what the persona cares about instead of guessing."""
+    from disco_planner.planning.personas import affinity  # local: personas imports this module's neighbours
+
     by_id = catalog.persona_by_id()
     lines = []
     for m in matches:
         p = by_id[m.persona_id]
+        hits = affinity(profile, p)[1] if profile else []
+        link = (f" Link to this product: {', '.join(h.replace('_', ' ') for h in hits)}." if hits else
+                " Link to this product: weak (no shared interest); bridge a stated fact to one of their preferences." if profile else "")
         lines.append(
             f"- {p.id} {p.name}: {p.description} Prefers: {p.messaging_preferences}. "
-            f"Avoid: {p.disinterested_in}. Price sensitivity: {p.price_sensitivity}."
+            f"Avoid: {p.disinterested_in}. Price sensitivity: {p.price_sensitivity}.{link}"
         )
     return "\n".join(lines)
 
 
+def offer_facts(profile: AdvertiserProfile, brief: str) -> list[str]:
+    """The facts copy may use: the stated claims plus offer terms the BRIEF states (subscription, fulfillment, price).
+    Offers count as claims, so without these a line could not say 'subscription' even when the brief does, and the
+    critic, seeing only the claims, would call it unsupported. Each term is checked against the brief text, so an
+    inferred purchase model never becomes a claim."""
+    facts = list(profile.stated_claims)
+    if profile.purchase_model == "subscription" and re.search(r"subscri", brief, re.IGNORECASE):
+        facts.append("Sold as a subscription")
+    if profile.fulfillment_notes:
+        facts.append(profile.fulfillment_notes)
+    if profile.price_point_usd and "$" in brief:
+        facts.append(f"Price: about ${profile.price_point_usd:,.0f}")
+    return list(dict.fromkeys(facts))
+
+
 def generate_creatives(
-    profile: AdvertiserProfile, selected: list[PersonaMatch], moments: list[str], provider: Provider,
+    profile: AdvertiserProfile, selected: list[PersonaMatch], moments: list[str], provider: Provider, brief: str = "",
 ) -> tuple[list[CreativeVariant], list[CreativeReview], dict]:
     """Returns variants, their final reviews, and a small log of what happened (for evals/UI).
     Each persona gets its own write -> review -> (rewrite) cycle and the cycles run in parallel: a call that writes
     for one persona produces a fraction of the text, so it is faster, and no persona waits for another's review."""
     context = dict(
         summary=profile.business_summary, product=profile.product,
-        claims=json.dumps(profile.stated_claims), values=json.dumps(profile.values),
+        claims=json.dumps(offer_facts(profile, brief)), values=json.dumps(profile.values), profile=profile,
         fulfillment=profile.fulfillment_notes or "none stated",
         moments=", ".join(moments) or "none",
         name_rule=("`headline` may contain the literal placeholder {first_name} once, only where a friend would say "
@@ -105,7 +127,8 @@ def generate_creatives(
     reviews = [x for r in results for x in r[1]]
     log = {"rounds": max((r[2]["rounds"] for r in results), default=0),
            "rewritten": [k for r in results for k in r[2]["rewritten"]],
-           "candidates": sum(r[2]["candidates"] for r in results)}
+           "candidates": sum(r[2]["candidates"] for r in results),
+           "dropped": [k for r in results for k in r[2].get("dropped", [])]}
     return variants, reviews, log
 
 
@@ -113,7 +136,7 @@ def _creatives_for_persona(
     m: PersonaMatch, context: dict, provider: Provider,
 ) -> tuple[list[CreativeVariant], list[CreativeReview], dict]:
     """Draft candidates for ONE persona and keep the best, then at most one rewrite of failures."""
-    personas = _persona_block([m])
+    personas = _persona_block([m], context["profile"])
     cfg = catalog.config("scoring")["personas"]
     n_variants, n_candidates = cfg["variants_per_persona"], max(cfg["variants_per_persona"], cfg["candidates_per_persona"])
     key = lambda x: (x.persona_id, x.variant)
@@ -140,7 +163,7 @@ def _creatives_for_persona(
         log["rounds"] = round_ + 1
         system, user = prompts.render("creative_generate", feedback=feedback, n_variants=str(n_variants),
                                       n_candidates=str(n_candidates if not variants else n_variants),
-                                      personas=personas, **context)
+                                      personas=personas, **{k: v for k, v in context.items() if k != "profile"})
         new = {key(v): v for v in generate(provider, system, user, CreativeSet, temperature=0.7).variants if mine(v)}
         if not variants:
             drafts = list(new.values())
@@ -172,5 +195,21 @@ def _creatives_for_persona(
         log["rewritten"] = [list(key(r)) for r in failed]
         feedback = "Rewrite ONLY these variants (keep their persona_id and variant number), fixing the reviewer's issues:\n" + "\n".join(
             f"- {r.persona_id} variant {r.variant}: issues={r.issues}; unsupported_claims={r.unsupported_claims}" for r in failed
-        )
+        ) + "\nTo fix persona fit, connect ONE stated fact to ONE of the persona's preferences. Never add a fact to do it."
+    # Never ship a failed line silently: drop failed variants when this persona has a passing one; if none passed, keep
+    # the single best for the advertiser to edit (the config and the app mark it "needs your edit").
+    by = {key(r): r for r in reviews}
+    good = [v for v in variants if key(v) in by and by[key(v)].passed]
+    keep = good or ([max(variants, key=lambda v: (by[key(v)].punch or 0) + by[key(v)].persona_fit if key(v) in by else -1)]
+                    if variants else [])
+    if len(keep) < len(variants):
+        log["dropped"] = [list(key(v)) for v in variants if v not in keep]
+        reviews = []
+        for i, v in enumerate(keep, start=1):  # renumber 1..k
+            r = by.get(key(v))
+            v.variant = i
+            if r:
+                r.variant = i
+                reviews.append(r)
+        variants = keep
     return variants, reviews, log

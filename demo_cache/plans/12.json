@@ -1292,79 +1292,84 @@
   {
    "persona_id": "persona_004",
    "variant": 1,
-   "headline": "The new kitten survival kit",
-   "body": "A booklet of what to expect, plus toys and food samples for their first three months.",
-   "cta": "Get the kit",
-   "headline_no_name": "The new kitten survival kit",
-   "angle": "the detail - leans on ingredient transparency and quality by listing exactly what comes in the box",
+   "headline": "Welcome your new kitten home",
+   "body": "A monthly subscription box with toys, food samples, and a helpful guide.",
+   "cta": "Start your subscription",
+   "headline_no_name": "Welcome your new kitten home",
+   "angle": "moment",
    "claims_used": [
-    "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_004",
    "variant": 2,
-   "headline": "Kitten parenthood, minus the panic",
-   "body": "A booklet on what to expect, plus toys and food samples for their first three months.",
-   "cta": "Get the box",
-   "headline_no_name": "Kitten parenthood, minus the panic",
-   "angle": "the twist: emotional connection and removing the stress of the first three months",
+   "headline": "Cat parenthood, simplified",
+   "body": "Toys, food samples, and a guide for their first three months, sent monthly.",
+   "cta": "Subscribe today",
+   "headline_no_name": "Cat parenthood, simplified",
+   "angle": "twist",
    "claims_used": [
     "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_002",
    "variant": 1,
-   "headline": "Stop guessing what your kitten needs",
-   "body": "Get toys, food samples, and a handy booklet for their first three months.",
-   "cta": "Get the kitten box",
-   "headline_no_name": "Stop guessing what your kitten needs",
-   "angle": "the swap - leans on time-saving by replacing confusion with a simple box",
+   "headline": "Toys and food samples on autopilot",
+   "body": "A subscription box covering their first three months with toys, food, and a guide.",
+   "cta": "Subscribe now",
+   "headline_no_name": "Toys and food samples on autopilot",
+   "angle": "detail - leans on pet food link and convenience",
    "claims_used": [
     "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_002",
    "variant": 2,
-   "headline": "Their first three months, sorted",
-   "body": "We send the toys, food samples, and a booklet on what to expect straight to you.",
-   "cta": "Get the box",
-   "headline_no_name": "Their first three months, sorted",
-   "angle": "the moment: saving time for busy parents during the crucial first three months",
+   "headline": "Got a new cat and no free time?",
+   "body": "Get toys, food samples, and a guide booklet for their first three months on subscription.",
+   "cta": "Start my subscription",
+   "headline_no_name": "Got a new cat and no free time?",
+   "angle": "question - leans on time-saving preference",
    "claims_used": [
     "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_008",
    "variant": 1,
-   "headline": "Toys, food, and a guide in one box",
-   "body": "Everything you need for their first three months, without buying it all separately.",
-   "cta": "Get the box",
-   "headline_no_name": "Toys, food, and a guide in one box",
-   "angle": "the detail: framing the contents as a high-value, all-in-one package",
+   "headline": "Skip the pet store guesswork",
+   "body": "Get toys, food samples, and a guide for your cat's first three months in one box.",
+   "cta": "Start the subscription",
+   "headline_no_name": "Skip the pet store guesswork",
+   "angle": "the swap: replaces buying individual items with a single bundle subscription",
    "claims_used": [
     "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   },
   {
    "persona_id": "persona_008",
    "variant": 2,
-   "headline": "Why shop around for kitten gear?",
-   "body": "Get toys, food samples, and a helpful booklet for their first three months in one go.",
-   "cta": "Get the kit",
-   "headline_no_name": "Why shop around for kitten gear?",
-   "angle": "the question: appealing to value-conscious shoppers looking to avoid extra shopping trips",
+   "headline": "Your kitten's first three months, sorted",
+   "body": "A subscription box with toys, food samples, and a booklet on what to expect.",
+   "cta": "Get the box",
+   "headline_no_name": "Your kitten's first three months, sorted",
+   "angle": "the moment: focuses on the exact timeframe of the new cat ownership",
    "claims_used": [
     "First three months of their cat's life",
-    "Toys, food samples, a little booklet about what to expect"
+    "Toys, food samples, a little booklet about what to expect",
+    "Sold as a subscription"
    ]
   }
  ],
@@ -1372,22 +1377,20 @@
   {
    "persona_id": "persona_004",
    "variant": 1,
-   "punch": 3,
-   "persona_fit": 2,
+   "punch": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
-   "voice_issues": [
-    "The copy fails to deliver on the promised angle of ingredient transparency or quality."
-   ],
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
   },
   {
    "persona_id": "persona_004",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1399,7 +1402,7 @@
    "persona_id": "persona_002",
    "variant": 1,
    "punch": 4,
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1411,7 +1414,7 @@
    "persona_id": "persona_002",
    "variant": 2,
    "punch": 4,
-   "persona_fit": 4,
+   "persona_fit": 5,
    "claims_ok": true,
    "unsupported_claims": [],
    "distinct_from_others": true,
@@ -1422,18 +1425,14 @@
   {
    "persona_id": "persona_008",
    "variant": 1,
-   "punch": 3,
-   "persona_fit": 3,
-   "claims_ok": false,
-   "unsupported_claims": [
-    "Everything you need for their first three months"
-   ],
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [],
-   "issues": [
-    "The claim 'Everything you need' is unsupported and inaccurate, as a kitten requires many essentials (like a litter box, bowls, and collar) not included in this basic kit."
-   ],
-   "passed": false
+   "issues": [],
+   "passed": true
   },
   {
    "persona_id": "persona_008",
@@ -1844,50 +1843,56 @@
    {
     "variant_id": "persona_004:1",
     "persona_id": "persona_004",
-    "headline_template": "The new kitten survival kit",
-    "headline_no_name": "The new kitten survival kit",
-    "body": "A booklet of what to expect, plus toys and food samples for their first three months.",
-    "cta": "Get the kit"
+    "headline_template": "Welcome your new kitten home",
+    "headline_no_name": "Welcome your new kitten home",
+    "body": "A monthly subscription box with toys, food samples, and a helpful guide.",
+    "cta": "Start your subscription",
+    "review_passed": true
    },
    {
     "variant_id": "persona_004:2",
     "persona_id": "persona_004",
-    "headline_template": "Kitten parenthood, minus the panic",
-    "headline_no_name": "Kitten parenthood, minus the panic",
-    "body": "A booklet on what to expect, plus toys and food samples for their first three months.",
-    "cta": "Get the box"
+    "headline_template": "Cat parenthood, simplified",
+    "headline_no_name": "Cat parenthood, simplified",
+    "body": "Toys, food samples, and a guide for their first three months, sent monthly.",
+    "cta": "Subscribe today",
+    "review_passed": true
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "headline_template": "Stop guessing what your kitten needs",
-    "headline_no_name": "Stop guessing what your kitten needs",
-    "body": "Get toys, food samples, and a handy booklet for their first three months.",
-    "cta": "Get the kitten box"
+    "headline_template": "Toys and food samples on autopilot",
+    "headline_no_name": "Toys and food samples on autopilot",
+    "body": "A subscription box covering their first three months with toys, food, and a guide.",
+    "cta": "Subscribe now",
+    "review_passed": true
    },
    {
     "variant_id": "persona_002:2",
     "persona_id": "persona_002",
-    "headline_template": "Their first three months, sorted",
-    "headline_no_name": "Their first three months, sorted",
-    "body": "We send the toys, food samples, and a booklet on what to expect straight to you.",
-    "cta": "Get the box"
+    "headline_template": "Got a new cat and no free time?",
+    "headline_no_name": "Got a new cat and no free time?",
+    "body": "Get toys, food samples, and a guide booklet for their first three months on subscription.",
+    "cta": "Start my subscription",
+    "review_passed": true
    },
    {
     "variant_id": "persona_008:1",
     "persona_id": "persona_008",
-    "headline_template": "Toys, food, and a guide in one box",
-    "headline_no_name": "Toys, food, and a guide in one box",
-    "body": "Everything you need for their first three months, without buying it all separately.",
-    "cta": "Get the box"
+    "headline_template": "Skip the pet store guesswork",
+    "headline_no_name": "Skip the pet store guesswork",
+    "body": "Get toys, food samples, and a guide for your cat's first three months in one box.",
+    "cta": "Start the subscription",
+    "review_passed": true
    },
    {
     "variant_id": "persona_008:2",
     "persona_id": "persona_008",
-    "headline_template": "Why shop around for kitten gear?",
-    "headline_no_name": "Why shop around for kitten gear?",
-    "body": "Get toys, food samples, and a helpful booklet for their first three months in one go.",
-    "cta": "Get the kit"
+    "headline_template": "Your kitten's first three months, sorted",
+    "headline_no_name": "Your kitten's first three months, sorted",
+    "body": "A subscription box with toys, food samples, and a booklet on what to expect.",
+    "cta": "Get the box",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1920,28 +1925,12 @@
  "timings_s": {
   "intake": 0.01,
   "matching": 0.0,
-  "creative": 63.28
+  "creative": 0.29
  },
  "creative_log": {
-  "rounds": 2,
-  "rewritten": [
-   [
-    "persona_004",
-    2
-   ],
-   [
-    "persona_002",
-    2
-   ],
-   [
-    "persona_008",
-    1
-   ],
-   [
-    "persona_008",
-    2
-   ]
-  ],
-  "candidates": 12
+  "rounds": 1,
+  "rewritten": [],
+  "candidates": 15,
+  "dropped": []
  }
 }

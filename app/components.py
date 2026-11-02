@@ -372,7 +372,7 @@ def render_creatives(plan: CampaignPlan) -> None:
                 st.code(f"headline: {v.headline}\nno-name:  {v.headline_no_name}", language=None)
                 r = reviews.get((v.persona_id, v.variant))
                 if r:
-                    verdict = badge("passed", "ok") if r.passed else badge("failed review", "bad")
+                    verdict = badge("passed", "ok") if r.passed else badge("needs your edit", "bad")
                     claims = badge("claims ok", "ok") if r.claims_ok else badge("unsupported claims", "bad")
                     st.markdown(f"{verdict} {claims} {badge(f'persona fit {r.persona_fit}/5')}", unsafe_allow_html=True)
                     for issue in [*r.issues, *[f"Unsupported: {cl}" for cl in r.unsupported_claims]]:

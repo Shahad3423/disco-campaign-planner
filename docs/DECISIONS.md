@@ -446,3 +446,21 @@ expected conversion rate, and when a host's bid is 25%+ above the cheapest funde
 vs 2.7%, so a purchase costs $11.46 vs $11.29"). The config table shows start bid, max bid (the ceiling) and the $0.05
 floor per host, which were already planned but sat in a separate bid-strategy object.
 
+## D35. Creatives that can pass the critic honestly
+Only 38% of freshly written variants passed the critic, and 25 of 44 personas had no passing line. Most failures were punch
+and persona fit together, and the cause was structural: the brief said "subscription" (or a delivery term, or a price), but
+the writer was only allowed the claims list ("offers count as claims") and the critic only saw that list, so a line could
+never speak to a convenience- or value-minded persona without being flagged.
+- **One fact sheet for writer and critic** (`creative.offer_facts`): the stated claims plus offer terms the brief states
+  (subscription, fulfillment notes, price), each checked against the brief text, so an inferred term never becomes a claim.
+- **The writer sees the bar and the bridge**: each persona's link to the product (shared interests, or "weak: bridge a stated
+  fact to one of their preferences") and the critic's passing rule; rewrites are told to connect one fact to one preference.
+- **More candidates**: 6 per persona instead of 4 (the critic keeps the best 2).
+- **Failed lines never ship silently**: a failed variant is dropped when its persona has a passing one; if none passed, the
+  best one ships alone with `review_passed: false` in the config and "needs your edit" in the app.
+Fresh runs on the 15 demo briefs (44 personas): passing variants 33 -> 43 (fact sheet) -> 55 (and 6 candidates); personas
+with a passing line 43% -> 61% -> 73%; critic-approved claims 88% -> 95% -> 94%; median creative stage 33 s -> 32 s -> 48 s
+(it no longer blocks the plan). One run each, so expect some LLM variance. The 12 personas still without a passing line are
+mostly vague briefs still waiting on clarifying questions and personas with a weak link to the product. Not done: writing
+creatives only after a vague brief is clarified (a product decision).
+

@@ -1243,47 +1243,23 @@
   {
    "persona_id": "persona_001",
    "variant": 1,
-   "headline": "A simpler way to feel better",
+   "headline": "The goal is feeling better",
+   "body": "We have one clear objective. We help people feel better.",
+   "cta": "Feel better now",
+   "headline_no_name": "The goal is feeling better",
+   "angle": "payoff - outcome-focused",
+   "claims_used": [
+    "We help people feel better."
+   ]
+  },
+  {
+   "persona_id": "persona_002",
+   "variant": 1,
+   "headline": "Feel better without the fuss",
    "body": "No complicated routines. We just help people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "A simpler way to feel better",
-   "angle": "the payoff: appeals to the optimizer looking for direct results without fluff",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 2,
-   "headline": "Ready to feel better?",
-   "body": "We have one straightforward mission. We help people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "Ready to feel better?",
-   "angle": "the question: a direct, evidence-focused query on personal state",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 1,
-   "headline": "A moment to feel better",
-   "body": "In the middle of everything, we are here to help people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "A moment to feel better",
-   "angle": "the moment: captures the busy parent's need for a quick personal pause",
-   "claims_used": [
-    "We help people feel better."
-   ]
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "headline": "Put your wellness first",
-   "body": "Stop putting yourself last. We help people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "Put your wellness first",
-   "angle": "the swap: replacing self-neglect with a simple step to feel better",
+   "cta": "Try it now",
+   "headline_no_name": "Feel better without the fuss",
+   "angle": "swap",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1291,11 +1267,11 @@
   {
    "persona_id": "persona_003",
    "variant": 1,
-   "headline": "Ready to actually feel better?",
-   "body": "No corporate fluff. We just help people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "Ready to actually feel better?",
-   "angle": "question - leverages dislike of corporate voice",
+   "headline": "Good vibes, actually delivered.",
+   "body": "We have one simple job: helping you feel better.",
+   "cta": "Feel better now",
+   "headline_no_name": "Good vibes, actually delivered.",
+   "angle": "twist",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1303,11 +1279,11 @@
   {
    "persona_id": "persona_003",
    "variant": 2,
-   "headline": "We help people feel better",
-   "body": "That is our entire mission. No fuss, just helping people feel better.",
-   "cta": "Start feeling better",
-   "headline_no_name": "We help people feel better",
-   "angle": "the detail: an honest, minimalist statement that appeals to aesthetic simplicity",
+   "headline": "Goodbye, daily dread.",
+   "body": "We believe in keeping it simple. We just help you feel better.",
+   "cta": "Feel better today",
+   "headline_no_name": "Goodbye, daily dread.",
+   "angle": "swap",
    "claims_used": [
     "We help people feel better."
    ]
@@ -1323,81 +1299,52 @@
    "unsupported_claims": [],
    "distinct_from_others": true,
    "voice_issues": [
-    "No complicated routines. We just help people feel better."
+    "We have one clear objective. We help people feel better."
    ],
-   "issues": [],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_001",
-   "variant": 2,
-   "punch": 2,
-   "persona_fit": 2,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": false,
-   "voice_issues": [
-    "We have one straightforward mission."
+   "issues": [
+    "Extremely repetitive and lacks any substance, hook, or bridge to the persona's interest in optimization or science."
    ],
-   "issues": [],
    "passed": false
   },
   {
    "persona_id": "persona_002",
-   "variant": 1,
-   "punch": 2,
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [
-    "In the middle of everything, we are here to help people feel better."
-   ],
-   "issues": [],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_002",
-   "variant": 2,
-   "punch": 2,
-   "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
-   "distinct_from_others": true,
-   "voice_issues": [
-    "Put your wellness first",
-    "Stop putting yourself last."
-   ],
-   "issues": [],
-   "passed": false
-  },
-  {
-   "persona_id": "persona_003",
    "variant": 1,
    "punch": 3,
    "persona_fit": 3,
-   "claims_ok": true,
-   "unsupported_claims": [],
+   "claims_ok": false,
+   "unsupported_claims": [
+    "No complicated routines."
+   ],
    "distinct_from_others": true,
    "voice_issues": [
-    "No corporate fluff."
+    "The body copy 'No complicated routines. We just help people feel better.' is flat and repetitive."
    ],
    "issues": [],
    "passed": false
   },
   {
    "persona_id": "persona_003",
-   "variant": 2,
-   "punch": 2,
-   "persona_fit": 2,
+   "variant": 1,
+   "punch": 4,
+   "persona_fit": 4,
    "claims_ok": true,
    "unsupported_claims": [],
-   "distinct_from_others": false,
-   "voice_issues": [
-    "That is our entire mission. No fuss, just helping people feel better."
-   ],
+   "distinct_from_others": true,
+   "voice_issues": [],
    "issues": [],
-   "passed": false
+   "passed": true
+  },
+  {
+   "persona_id": "persona_003",
+   "variant": 2,
+   "punch": 4,
+   "persona_fit": 4,
+   "claims_ok": true,
+   "unsupported_claims": [],
+   "distinct_from_others": true,
+   "voice_issues": [],
+   "issues": [],
+   "passed": true
   }
  ],
  "config": {
@@ -1513,50 +1460,38 @@
    {
     "variant_id": "persona_001:1",
     "persona_id": "persona_001",
-    "headline_template": "A simpler way to feel better",
-    "headline_no_name": "A simpler way to feel better",
-    "body": "No complicated routines. We just help people feel better.",
-    "cta": "Start feeling better"
-   },
-   {
-    "variant_id": "persona_001:2",
-    "persona_id": "persona_001",
-    "headline_template": "Ready to feel better?",
-    "headline_no_name": "Ready to feel better?",
-    "body": "We have one straightforward mission. We help people feel better.",
-    "cta": "Start feeling better"
+    "headline_template": "The goal is feeling better",
+    "headline_no_name": "The goal is feeling better",
+    "body": "We have one clear objective. We help people feel better.",
+    "cta": "Feel better now",
+    "review_passed": false
    },
    {
     "variant_id": "persona_002:1",
     "persona_id": "persona_002",
-    "headline_template": "A moment to feel better",
-    "headline_no_name": "A moment to feel better",
-    "body": "In the middle of everything, we are here to help people feel better.",
-    "cta": "Start feeling better"
-   },
-   {
-    "variant_id": "persona_002:2",
-    "persona_id": "persona_002",
-    "headline_template": "Put your wellness first",
-    "headline_no_name": "Put your wellness first",
-    "body": "Stop putting yourself last. We help people feel better.",
-    "cta": "Start feeling better"
+    "headline_template": "Feel better without the fuss",
+    "headline_no_name": "Feel better without the fuss",
+    "body": "No complicated routines. We just help people feel better.",
+    "cta": "Try it now",
+    "review_passed": false
    },
    {
     "variant_id": "persona_003:1",
     "persona_id": "persona_003",
-    "headline_template": "Ready to actually feel better?",
-    "headline_no_name": "Ready to actually feel better?",
-    "body": "No corporate fluff. We just help people feel better.",
-    "cta": "Start feeling better"
+    "headline_template": "Good vibes, actually delivered.",
+    "headline_no_name": "Good vibes, actually delivered.",
+    "body": "We have one simple job: helping you feel better.",
+    "cta": "Feel better now",
+    "review_passed": true
    },
    {
     "variant_id": "persona_003:2",
     "persona_id": "persona_003",
-    "headline_template": "We help people feel better",
-    "headline_no_name": "We help people feel better",
-    "body": "That is our entire mission. No fuss, just helping people feel better.",
-    "cta": "Start feeling better"
+    "headline_template": "Goodbye, daily dread.",
+    "headline_no_name": "Goodbye, daily dread.",
+    "body": "We believe in keeping it simple. We just help you feel better.",
+    "cta": "Feel better today",
+    "review_passed": true
    }
   ],
   "frequency_cap": {
@@ -1590,7 +1525,7 @@
  "timings_s": {
   "intake": 0.0,
   "matching": 0.0,
-  "creative": 52.56
+  "creative": 0.23
  },
  "creative_log": {
   "rounds": 2,
@@ -1605,17 +1540,19 @@
    ],
    [
     "persona_002",
-    1
+    2
+   ]
+  ],
+  "candidates": 15,
+  "dropped": [
+   [
+    "persona_001",
+    2
    ],
    [
     "persona_002",
     2
-   ],
-   [
-    "persona_003",
-    2
    ]
-  ],
-  "candidates": 12
+  ]
  }
 }

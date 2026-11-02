@@ -306,6 +306,8 @@ class CreativeAssignment(BaseModel):
     headline_no_name: str
     body: str
     cta: str
+    review_passed: bool = Field(default=True, description="False = the critic did not pass it; shipped only as the best "
+                                "line for its persona, for the advertiser to edit before launch")
 
 
 class CampaignConfig(BaseModel):
