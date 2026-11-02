@@ -16,8 +16,8 @@ profile on the catalog's closed vocabularies; everything after that is determini
 - **Personas → creatives:** 3–5 personas by interest × price × audience fit; per persona, in parallel: 6 candidates → a separate
   critic + code rule checks → keep 2 → one rewrite. Writer and critic share one fact sheet; failed lines never ship as approved.
 - **Money:** prices come from a simulated one-slot second-price auction against 115 other campaigns, so diminishing returns are
-  the market's, not an assumed curve. The budget split is a linear program solved exactly (cheapest unit first, partial last
-  bucket), with a forecast range and a reason for every bid.
+  the market's, not an assumed curve. The split is a cheapest-purchase-first fill (partial last bucket) that is provably the
+  optimum of the underlying linear program (checked against an LP solver in tests), with a forecast range and a reason per bid.
 - **Config shape:** what billing, serving and an approver each need: pricing, per-host budget and bids, bid phases, creatives,
   guardrails, measurement, open questions (rationale: D2, D6).
 - **Serving** (code + tests, not on the page): host + zip + first name → features with confidences → persona posterior → eCPM
@@ -54,7 +54,9 @@ shipping zip changes who you target, so features carry confidence and never trig
 1. **Check the evals against people:** label the 40 pending pairs + ~100 more; measure how often the LLM judge agrees.
 2. **A critic from another model family**, checked against human ratings on ~50 lines; creatives only after a vague brief is clarified.
 3. **Intake recall** (0.77; the misses are known) and the pending intake-prompt A/B.
-4. **Calibrated forecasts** (range from the replays: 79% → 80%+); aggressiveness as a CPC allowance above the start bid.
+4. **A better optimiser:** a minimum learnable spend per host (mixed-integer: $0 or enough to learn, no $35 slivers) and a
+   risk-aware split (purchases − λ·variance from the replays, a quadratic program) instead of the hand-set share cap; forecast
+   range from the same replays (79% → 80%+).
 5. **Ready for scale:** CI with the tests and cached golden eval as gates; a synthetic 1,000-host catalog for retrieval and latency.
 
 With logs (production, `docs/ARCHITECTURE.md` §4): learned pCTR/pCVR with this scorer as the prior, a bandit, a pacing service.
